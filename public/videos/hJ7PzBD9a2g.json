@@ -2,793 +2,2651 @@
   {
     "index": 1,
     "start": 0.08,
-    "end": 4.32,
-    "text": "If you do not watch the video until the"
+    "end": 2.16,
+    "text": "If you do not watch the video until the",
+    "pronunciation": "이프 유 두 낫 워치 더 비디오 언틸 더",
+    "translation": "만약 너가 끝까지 비디오를 보지 않으면",
+    "notes": [
+      {
+        "word": "watch the",
+        "actual": "워치 더",
+        "meaning": "자음 앞에서 the는 더로 발음"
+      },
+      {
+        "word": "until",
+        "actual": "언틸",
+        "meaning": "자연스러운 연음으로 음절 단순화"
+      }
+    ]
   },
   {
     "index": 2,
     "start": 2.16,
-    "end": 6.64,
-    "text": "end, you may miss the full method used"
+    "end": 4.32,
+    "text": "end, you may miss the full method used",
+    "pronunciation": "엔드 유 메이 미스 더 풀 메써드 유즈드",
+    "translation": "끝을, 너는 전체 방법을 놓칠 수 있어",
+    "notes": [
+      {
+        "word": "may miss",
+        "actual": "메이 미스",
+        "meaning": "연속 자음, 빠르게 발음"
+      },
+      {
+        "word": "method",
+        "actual": "메써드",
+        "meaning": "th 발음, 입 모양 변화"
+      }
+    ]
   },
   {
     "index": 3,
     "start": 4.32,
-    "end": 9.44,
-    "text": "to build longer English sentences."
+    "end": 6.64,
+    "text": "to build longer English sentences.",
+    "pronunciation": "투 빌드 롱거 잉글리시 센텐시즈",
+    "translation": "더 긴 영어 문장을 만들기 위해",
+    "notes": [
+      {
+        "word": "to build",
+        "actual": "투 빌드",
+        "meaning": "to 약형 발음, b 강조"
+      },
+      {
+        "word": "longer",
+        "actual": "롱거",
+        "meaning": "ng 콧소리, 어음으로 줄어듦"
+      }
+    ]
   },
   {
     "index": 4,
     "start": 6.64,
-    "end": 11.52,
-    "text": "Today, I'm going to say one long English"
+    "end": 9.44,
+    "text": "Today, I'm going to say one long English",
+    "pronunciation": "투데이 아임 거나 세이 원 롱 잉글리시",
+    "translation": "오늘, 나는 하나의 긴 영어 문장을 말할 거야",
+    "notes": [
+      {
+        "word": "going to",
+        "actual": "거나",
+        "meaning": "gonna 축약형"
+      },
+      {
+        "word": "one long",
+        "actual": "원 롱",
+        "meaning": "n이 다음 l로 연결, 자연스러운 연음"
+      }
+    ]
   },
   {
     "index": 5,
     "start": 9.44,
-    "end": 13.84,
-    "text": "sentence. A sentence made of small"
+    "end": 11.52,
+    "text": "sentence. A sentence made of small",
+    "pronunciation": "센텐스 어 센텐스 메이드 어브 스몰",
+    "translation": "문장이야. 작은 것들로 만든 문장",
+    "notes": [
+      {
+        "word": "made of",
+        "actual": "메이드 어브",
+        "meaning": "of는 약형으로 어브"
+      },
+      {
+        "word": "A sentence",
+        "actual": "어 센텐스",
+        "meaning": "A는 매우 약하게 발음"
+      }
+    ]
   },
   {
     "index": 6,
     "start": 11.52,
-    "end": 15.84,
-    "text": "phrases. A sentence that sounds natural"
+    "end": 13.84,
+    "text": "phrases. A sentence that sounds natural",
+    "pronunciation": "프레이지즈 어 센텐스 댓 사운즈 내쳐럴",
+    "translation": "구문들이야. 자연스럽게 들리는 문장",
+    "notes": [
+      {
+        "word": "sounds natural",
+        "actual": "사운즈 내쳐럴",
+        "meaning": "natural에서 t 부드러운 플랩"
+      },
+      {
+        "word": "that",
+        "actual": "댓",
+        "meaning": "th 발음, 빠르게 댓"
+      }
+    ]
   },
   {
     "index": 7,
     "start": 13.84,
-    "end": 18.32,
-    "text": "in spoken English, but may look"
+    "end": 15.84,
+    "text": "in spoken English, but may look",
+    "pronunciation": "인 스포큰 잉글리시 벗 메이 룩",
+    "translation": "말로 표현된 영어에서, 하지만 보일 수도",
+    "notes": [
+      {
+        "word": "spoken",
+        "actual": "스포큰",
+        "meaning": "o 약형, en은 음절화 자음"
+      },
+      {
+        "word": "but may",
+        "actual": "벗 메이",
+        "meaning": "t와 m 사이 부드러운 이행"
+      }
+    ]
   },
   {
     "index": 8,
     "start": 15.84,
-    "end": 20.24,
-    "text": "difficult at first, and then by the end"
+    "end": 18.32,
+    "text": "difficult at first, and then by the end",
+    "pronunciation": "디피컬트 앳 퍼스트 앤 덴 바이 디 엔드",
+    "translation": "처음엔 어렵지만, 그 다음 끝에는",
+    "notes": [
+      {
+        "word": "at first",
+        "actual": "앳 퍼스트",
+        "meaning": "at과 first 연음"
+      },
+      {
+        "word": "and then",
+        "actual": "앤 덴",
+        "meaning": "and 약형, then도 약형"
+      }
+    ]
   },
   {
     "index": 9,
     "start": 18.32,
-    "end": 22.48,
-    "text": "of this video, you will clearly"
+    "end": 20.24,
+    "text": "of this video, you will clearly",
+    "pronunciation": "어브 디스 비디오 유 윌 클리얼리",
+    "translation": "이 비디오의, 너는 명확히",
+    "notes": [
+      {
+        "word": "of this",
+        "actual": "어브 디스",
+        "meaning": "of 약형 어브"
+      },
+      {
+        "word": "clearly",
+        "actual": "클리얼리",
+        "meaning": "ly는 가볍게 발음"
+      }
+    ]
   },
   {
     "index": 10,
     "start": 20.24,
-    "end": 25.92,
-    "text": "understand how this long sentence is"
+    "end": 22.48,
+    "text": "understand how this long sentence is",
+    "pronunciation": "언더스탠드 하우 디스 롱 센텐스 이즈",
+    "translation": "이 긴 문장이 어떻게",
+    "notes": [
+      {
+        "word": "understand",
+        "actual": "언더스탠드",
+        "meaning": "첫 음절 강음, 마지막 d 약함"
+      },
+      {
+        "word": "how this",
+        "actual": "하우 디스",
+        "meaning": "how의 ow 크고, this 명확"
+      }
+    ]
   },
   {
     "index": 11,
     "start": 22.48,
-    "end": 28.4,
-    "text": "built step by step."
+    "end": 25.92,
+    "text": "built step by step.",
+    "pronunciation": "빌트 스텝 바이 스텝",
+    "translation": "단계별로 만들어져",
+    "notes": [
+      {
+        "word": "built",
+        "actual": "빌트",
+        "meaning": "t 약간 약함"
+      },
+      {
+        "word": "step by step",
+        "actual": "스텝 바이 스텝",
+        "meaning": "반복으로 리듬감"
+      }
+    ]
   },
   {
     "index": 12,
     "start": 25.92,
-    "end": 31.04,
-    "text": "I am learning English every day at home"
+    "end": 28.4,
+    "text": "I am learning English every day at home",
+    "pronunciation": "아이 엠 러닝 잉글리시 에브리 데이 앳 홈",
+    "translation": "나는 매일 집에서 영어를 배우고 있어",
+    "notes": [
+      {
+        "word": "learning",
+        "actual": "러닝",
+        "meaning": "ear 짧고 약함"
+      },
+      {
+        "word": "every day",
+        "actual": "에브리 데이",
+        "meaning": "every 첫 음절 약함"
+      },
+      {
+        "word": "at home",
+        "actual": "앳 홈",
+        "meaning": "at 약형"
+      }
+    ]
   },
   {
     "index": 13,
     "start": 28.4,
-    "end": 33.92,
-    "text": "with full focus and strong motivation to"
+    "end": 31.04,
+    "text": "with full focus and strong motivation to",
+    "pronunciation": "위드 풀 포커스 앤 스트롱 모티베이션 투",
+    "translation": "충분한 집중력과 강한 동기를 가지고",
+    "notes": [
+      {
+        "word": "motivation",
+        "actual": "모티베이션",
+        "meaning": "tion은 션으로 발음"
+      },
+      {
+        "word": "strong",
+        "actual": "스트롱",
+        "meaning": "str 자음 클러스터"
+      }
+    ]
   },
   {
     "index": 14,
     "start": 31.04,
-    "end": 36.08,
-    "text": "improve my speaking skills. Now do not"
+    "end": 33.92,
+    "text": "improve my speaking skills. Now do not",
+    "pronunciation": "임프루브 마이 스피킹 스킬즈 나우 두 낫",
+    "translation": "내 말하기 능력을 향상시키기 위해. 이제 걱정하지 마",
+    "notes": [
+      {
+        "word": "improve",
+        "actual": "임프루브",
+        "meaning": "ov 약형"
+      },
+      {
+        "word": "do not",
+        "actual": "두 낫",
+        "meaning": "not의 t 약간 약함"
+      }
+    ]
   },
   {
     "index": 15,
     "start": 33.92,
-    "end": 38.32,
-    "text": "worry if this sentence looks long or"
+    "end": 36.08,
+    "text": "worry if this sentence looks long or",
+    "pronunciation": "워리 이프 디스 센텐스 룩스 롱 오어",
+    "translation": "길거나 이 문장이 길어 보인다면 걱정하지 마",
+    "notes": [
+      {
+        "word": "worry",
+        "actual": "워리",
+        "meaning": "ry의 r 약형"
+      },
+      {
+        "word": "or",
+        "actual": "오어",
+        "meaning": "or 약형으로 어에 가까움"
+      }
+    ]
   },
   {
     "index": 16,
     "start": 36.08,
-    "end": 40.32,
-    "text": "confusing because by watching this video"
+    "end": 38.32,
+    "text": "confusing because by watching this video",
+    "pronunciation": "컨퓨징 비카즈 바이 워칭 디스 비디오",
+    "translation": "혼란스러우니까 이 비디오를 보는 것으로",
+    "notes": [
+      {
+        "word": "confusing",
+        "actual": "컨퓨징",
+        "meaning": "ing 가볍게"
+      },
+      {
+        "word": "because",
+        "actual": "비카즈",
+        "meaning": "cause 약형으로 매우 짧음"
+      }
+    ]
   },
   {
     "index": 17,
     "start": 38.32,
-    "end": 42.56,
-    "text": "till the end, you will learn how to"
+    "end": 40.32,
+    "text": "till the end, you will learn how to",
+    "pronunciation": "틸 디 엔드 유 윌 러른 하우 투",
+    "translation": "끝까지, 너는 어떻게 하는지 배울 거야",
+    "notes": [
+      {
+        "word": "till the",
+        "actual": "틸 디",
+        "meaning": "이중 l 한 번에, the 약함"
+      },
+      {
+        "word": "learn how",
+        "actual": "러른 하우",
+        "meaning": "earn의 e 약형"
+      }
+    ]
   },
   {
     "index": 18,
     "start": 40.32,
-    "end": 44.72,
-    "text": "build sentences like this easily,"
+    "end": 42.56,
+    "text": "build sentences like this easily,",
+    "pronunciation": "빌드 센텐시즈 라이크 디스 이질리",
+    "translation": "이런 문장들을 쉽게 만들어",
+    "notes": [
+      {
+        "word": "like this",
+        "actual": "라이크 디스",
+        "meaning": "ike 약형, this 명확"
+      },
+      {
+        "word": "easily",
+        "actual": "이질리",
+        "meaning": "eas의 e 약형"
+      }
+    ]
   },
   {
     "index": 19,
     "start": 42.56,
-    "end": 46.8,
-    "text": "naturally, and without memorizing"
+    "end": 44.72,
+    "text": "naturally, and without memorizing",
+    "pronunciation": "내쳐럴리 앤 위다웃 메머라이징",
+    "translation": "자연스럽고, 외우지 않고",
+    "notes": [
+      {
+        "word": "naturally",
+        "actual": "내쳐럴리",
+        "meaning": "t는 플랩, ally 약형"
+      },
+      {
+        "word": "without",
+        "actual": "위다웃",
+        "meaning": "out 약형, t 약함"
+      },
+      {
+        "word": "memorizing",
+        "actual": "메머라이징",
+        "meaning": "emor 음절화"
+      }
+    ]
   },
   {
     "index": 20,
     "start": 44.72,
-    "end": 49.04,
-    "text": "grammar rules. To build English"
+    "end": 46.8,
+    "text": "grammar rules. To build English",
+    "pronunciation": "그래머 룰즈 투 빌드 잉글리시",
+    "translation": "문법 규칙들을. 영어를 만들기 위해",
+    "notes": [
+      {
+        "word": "grammar",
+        "actual": "그래머",
+        "meaning": "이중 m 한 번에"
+      },
+      {
+        "word": "rules",
+        "actual": "룰즈",
+        "meaning": "s는 z로 발음"
+      }
+    ]
   },
   {
     "index": 21,
     "start": 46.8,
-    "end": 50.88,
-    "text": "sentences correctly, the first and most"
+    "end": 49.04,
+    "text": "sentences correctly, the first and most",
+    "pronunciation": "센텐시즈 커렉틀리 더 퍼스트 앤 모우스트",
+    "translation": "문장들을 올바르게, 처음이자 가장",
+    "notes": [
+      {
+        "word": "correctly",
+        "actual": "커렉틀리",
+        "meaning": "ect 약형, ly 가볍게"
+      },
+      {
+        "word": "and most",
+        "actual": "앤 모우스트",
+        "meaning": "and 약형, most 강음"
+      }
+    ]
   },
   {
     "index": 22,
     "start": 49.04,
-    "end": 53.28,
-    "text": "important step is to understand the"
+    "end": 50.88,
+    "text": "important step is to understand the",
+    "pronunciation": "임포어턴트 스텝 이즈 투 언더스탠드 더",
+    "translation": "중요한 단계는 이해하기 위한",
+    "notes": [
+      {
+        "word": "important",
+        "actual": "임포어턴트",
+        "meaning": "둘째 음절 약형, t 약함"
+      },
+      {
+        "word": "understand",
+        "actual": "언더스탠드",
+        "meaning": "첫 음절 강음"
+      }
+    ]
   },
   {
     "index": 23,
     "start": 50.88,
-    "end": 54.96,
-    "text": "basic sentence pattern. Every simple"
+    "end": 53.28,
+    "text": "basic sentence pattern. Every simple",
+    "pronunciation": "베이식 센텐스 패턴 에브리 심플",
+    "translation": "기본 문장 패턴이야. 모든 간단한",
+    "notes": [
+      {
+        "word": "pattern",
+        "actual": "패턴",
+        "meaning": "이중 t 하나처럼 발음"
+      },
+      {
+        "word": "every",
+        "actual": "에브리",
+        "meaning": "첫 음절 매우 약함"
+      }
+    ]
   },
   {
     "index": 24,
     "start": 53.28,
-    "end": 56.96,
-    "text": "English sentence follows one main"
+    "end": 54.96,
+    "text": "English sentence follows one main",
+    "pronunciation": "잉글리시 센텐스 팔로우즈 원 메인",
+    "translation": "영어 문장은 하나의 주요",
+    "notes": [
+      {
+        "word": "follows",
+        "actual": "팔로우즈",
+        "meaning": "이중 l 한 번에"
+      },
+      {
+        "word": "one main",
+        "actual": "원 메인",
+        "meaning": "n이 m과 연결, 연음"
+      }
+    ]
   },
   {
     "index": 25,
     "start": 54.96,
-    "end": 59.12,
-    "text": "pattern. Subject plus verb plus"
+    "end": 56.96,
+    "text": "pattern. Subject plus verb plus",
+    "pronunciation": "패턴 섭젝트 플러스 버브 플러스",
+    "translation": "패턴을 따르지. 주어 더하기 동사 더하기",
+    "notes": [
+      {
+        "word": "subject",
+        "actual": "섭젝트",
+        "meaning": "bj 함께, ect 약형"
+      },
+      {
+        "word": "verb",
+        "actual": "버브",
+        "meaning": "er 플랩 음"
+      }
+    ]
   },
   {
     "index": 26,
     "start": 56.96,
-    "end": 61.52,
-    "text": "information. The subject tells us who is"
+    "end": 59.12,
+    "text": "information. The subject tells us who is",
+    "pronunciation": "인포어메이션 더 섭젝트 텔즈 어스 후 이즈",
+    "translation": "정보야. 주어는 우리에게 누가",
+    "notes": [
+      {
+        "word": "information",
+        "actual": "인포어메이션",
+        "meaning": "tion은 션으로 발음"
+      },
+      {
+        "word": "tells us",
+        "actual": "텔즈 어스",
+        "meaning": "us 약형으로 매우 짧음"
+      }
+    ]
   },
   {
     "index": 27,
     "start": 59.12,
-    "end": 63.52,
-    "text": "doing the action. The verb tells us what"
+    "end": 61.52,
+    "text": "doing the action. The verb tells us what",
+    "pronunciation": "두잉 더 액션 더 버브 텔즈 어스 왓",
+    "translation": "하고 있는 동작을. 동사는 우리에게 뭘",
+    "notes": [
+      {
+        "word": "action",
+        "actual": "액션",
+        "meaning": "tion 약형으로 션"
+      },
+      {
+        "word": "what",
+        "actual": "왓",
+        "meaning": "wh 함께 발음"
+      }
+    ]
   },
   {
     "index": 28,
     "start": 61.52,
-    "end": 65.92,
-    "text": "action is happening. The information"
+    "end": 63.52,
+    "text": "action is happening. The information",
+    "pronunciation": "액션 이즈 해펀닝 더 인포어메이션",
+    "translation": "동작이 일어나고 있어. 정보는",
+    "notes": [
+      {
+        "word": "happening",
+        "actual": "해펀닝",
+        "meaning": "이중 p 한 번에, ing 가볍게"
+      },
+      {
+        "word": "is happening",
+        "actual": "이즈 해펀닝",
+        "meaning": "is 약형, 자연스러운 연결"
+      }
+    ]
   },
   {
     "index": 29,
     "start": 63.52,
-    "end": 68.08,
-    "text": "tells us more details about the action."
+    "end": 65.92,
+    "text": "tells us more details about the action.",
+    "pronunciation": "텔즈 어스 모어 디테일즈 어바웃 더 액션",
+    "translation": "우리에게 그 동작에 대한 더 많은 세부사항을 말해줘",
+    "notes": [
+      {
+        "word": "details",
+        "actual": "디테일즈",
+        "meaning": "tail 약형, z 음 명확"
+      },
+      {
+        "word": "about the",
+        "actual": "어바웃 더",
+        "meaning": "about 약형, the 매우 약함"
+      }
+    ]
   },
   {
     "index": 30,
     "start": 65.92,
-    "end": 71.28,
-    "text": "For example, in the sentence I learn"
+    "end": 68.08,
+    "text": "For example, in the sentence I learn",
+    "pronunciation": "포어 이그잼플 인 더 센텐스 아이 러른",
+    "translation": "예를 들어, 그 문장에서 나는 배우는",
+    "notes": [
+      {
+        "word": "example",
+        "actual": "이그잼플",
+        "meaning": "ex 약형"
+      },
+      {
+        "word": "in the sentence",
+        "actual": "인 더 센텐스",
+        "meaning": "in 약함, the 매우 약함"
+      }
+    ]
   },
   {
     "index": 31,
     "start": 68.08,
-    "end": 74.48,
-    "text": "English, I is the subject. Learn is the"
+    "end": 71.28,
+    "text": "English, I is the subject. Learn is the",
+    "pronunciation": "잉글리시 아이 이즈 더 섭젝트 러른 이즈 더",
+    "translation": "영어는, 나는 그 주어야. 배우는 것은",
+    "notes": [
+      {
+        "word": "is the subject",
+        "actual": "이즈 더 섭젝트",
+        "meaning": "is 약형, the 매우 약함"
+      },
+      {
+        "word": "learn is",
+        "actual": "러른 이즈",
+        "meaning": "n과 is 연결, 연음"
+      }
+    ]
   },
   {
     "index": 32,
     "start": 71.28,
-    "end": 76.8,
-    "text": "verb and English is the information."
+    "end": 74.48,
+    "text": "verb and English is the information.",
+    "pronunciation": "버브 앤 잉글리시 이즈 더 인포어메이션",
+    "translation": "동사이고 영어는 그 정보야",
+    "notes": [
+      {
+        "word": "verb and",
+        "actual": "버브 앤",
+        "meaning": "and 약형으로 앤"
+      },
+      {
+        "word": "information",
+        "actual": "인포어메이션",
+        "meaning": "tion 약형 마지막 음절"
+      }
+    ]
   },
   {
     "index": 33,
     "start": 74.48,
-    "end": 79.36,
-    "text": "This is a complete and correct English"
+    "end": 76.8,
+    "text": "This is a complete and correct English",
+    "pronunciation": "디스 이즈 어 컴플릿 앤 커렉트 잉글리시",
+    "translation": "이것은 완전하고 올바른 영어",
+    "notes": [
+      {
+        "word": "complete",
+        "actual": "컴플릿",
+        "meaning": "om 약형"
+      },
+      {
+        "word": "and correct",
+        "actual": "앤 커렉트",
+        "meaning": "and 약형, ct 함께 발음"
+      }
+    ]
   },
   {
     "index": 34,
     "start": 76.8,
-    "end": 81.44,
-    "text": "sentence. Now it is very important to"
+    "end": 79.36,
+    "text": "sentence. Now it is very important to",
+    "pronunciation": "나우 잇 이즈 베리 임포어턴트 투",
+    "translation": "이제 이것은 매우 중요해",
+    "notes": [
+      {
+        "word": "now it is",
+        "actual": "나우 잇 이즈",
+        "meaning": "it 약형, is 약형"
+      },
+      {
+        "word": "very important",
+        "actual": "베리 임포어턴트",
+        "meaning": "to 약형"
+      }
+    ]
   },
   {
     "index": 35,
     "start": 79.36,
-    "end": 83.76,
-    "text": "understand that if you can build one"
+    "end": 81.44,
+    "text": "understand that if you can build one",
+    "pronunciation": "언더스탠드 댓 이프 유 캔 빌드 원",
+    "translation": "이해하기 위해 만약 너가 만들 수 있다면",
+    "notes": [
+      {
+        "word": "understand that",
+        "actual": "언더스탠드 댓",
+        "meaning": "that 빠르게"
+      },
+      {
+        "word": "can build",
+        "actual": "캔 빌드",
+        "meaning": "n과 b 연결"
+      }
+    ]
   },
   {
     "index": 36,
     "start": 81.44,
-    "end": 86.16,
-    "text": "correct simple sentence, you can build"
+    "end": 83.76,
+    "text": "correct simple sentence, you can build",
+    "pronunciation": "커렉트 심플 센텐스 유 캔 빌드",
+    "translation": "올바른 간단한 문장을, 너는 만들 수 있어",
+    "notes": [
+      {
+        "word": "correct simple",
+        "actual": "커렉트 심플",
+        "meaning": "t와 s 연결"
+      },
+      {
+        "word": "hundreds or",
+        "actual": "헌드리즈 오어",
+        "meaning": "hundreds 약형"
+      }
+    ]
   },
   {
     "index": 37,
     "start": 83.76,
-    "end": 88.8,
-    "text": "hundreds or even thousands of sentences"
+    "end": 86.16,
+    "text": "hundreds or even thousands of sentences",
+    "pronunciation": "헌드리즈 오어 이빈 싸우진즈 어브 센텐시즈",
+    "translation": "수백 개 심지어 수천 개의 문장을",
+    "notes": [
+      {
+        "word": "even thousands",
+        "actual": "이빈 싸우진즈",
+        "meaning": "en 약형"
+      },
+      {
+        "word": "by changing",
+        "actual": "바이 체인징",
+        "meaning": "b와 c 약함"
+      }
+    ]
   },
   {
     "index": 38,
     "start": 86.16,
-    "end": 90.96,
-    "text": "by changing only one part of it. Let's"
+    "end": 88.8,
+    "text": "by changing only one part of it. Let's",
+    "pronunciation": "바이 체인징 온리 원 파트 어브 잇",
+    "translation": "그것의 단 하나의 부분만 변경해서",
+    "notes": [
+      {
+        "word": "only one",
+        "actual": "온리 원",
+        "meaning": "y와 w 연결"
+      },
+      {
+        "word": "part of it",
+        "actual": "파트 어브 잇",
+        "meaning": "of 약형 어브"
+      }
+    ]
   },
   {
     "index": 39,
     "start": 88.8,
-    "end": 93.2,
-    "text": "take the simple sentence I learn"
+    "end": 90.96,
+    "text": "take the simple sentence I learn",
+    "pronunciation": "렛스 테이크 더 심플 센텐스 아이 러른",
+    "translation": "간단한 문장을 봐봐, 나는 배워",
+    "notes": [
+      {
+        "word": "let's take",
+        "actual": "렛스 테이크",
+        "meaning": "s와 t 연결"
+      },
+      {
+        "word": "simple sentence",
+        "actual": "심플 센텐스",
+        "meaning": "e 약형"
+      }
+    ]
   },
   {
     "index": 40,
     "start": 90.96,
-    "end": 95.92,
-    "text": "English. If we change the subject, the"
+    "end": 93.2,
+    "text": "English. If we change the subject, the",
+    "pronunciation": "잉글리시 이프 위 체인지 더 섭젝트 더",
+    "translation": "영어를. 만약 우리가 주어를 바꾸면",
+    "notes": [
+      {
+        "word": "if we change",
+        "actual": "이프 위 체인지",
+        "meaning": "we 약형"
+      },
+      {
+        "word": "the subject",
+        "actual": "더 섭젝트",
+        "meaning": "the 매우 약함"
+      }
+    ]
   },
   {
     "index": 41,
     "start": 93.2,
-    "end": 98.0,
-    "text": "sentence becomes she learns English or"
+    "end": 95.92,
+    "text": "sentence becomes she learns English or",
+    "pronunciation": "센텐스 비컴즈 시 러즈 잉글리시 오어",
+    "translation": "문장이 되지 그녀가 배워 영어 또는",
+    "notes": [
+      {
+        "word": "becomes she",
+        "actual": "비컴즈 시",
+        "meaning": "s와 sh 약함"
+      },
+      {
+        "word": "learns english",
+        "actual": "러즈 잉글리시",
+        "meaning": "s는 z로"
+      }
+    ]
   },
   {
     "index": 42,
     "start": 95.92,
-    "end": 100.48,
-    "text": "they learn English. If we change the"
+    "end": 98.0,
+    "text": "they learn English. If we change the",
+    "pronunciation": "데이 러른 잉글리시 이프 위 체인지 더",
+    "translation": "그들이 배워 영어. 만약 우리가 바꾸면",
+    "notes": [
+      {
+        "word": "they learn",
+        "actual": "데이 러른",
+        "meaning": "y 약형"
+      },
+      {
+        "word": "the information",
+        "actual": "더 인포어메이션",
+        "meaning": "the 약함"
+      }
+    ]
   },
   {
     "index": 43,
     "start": 98.0,
-    "end": 102.8,
-    "text": "information, the sentence becomes I"
+    "end": 100.48,
+    "text": "information, the sentence becomes I",
+    "pronunciation": "인포어메이션 더 센텐스 비컴즈 아이",
+    "translation": "정보를, 문장이 되지 나는",
+    "notes": [
+      {
+        "word": "information the",
+        "actual": "인포어메이션 더",
+        "meaning": "n과 t 연결"
+      },
+      {
+        "word": "becomes i",
+        "actual": "비컴즈 아이",
+        "meaning": "z와 i 연결"
+      }
+    ]
   },
   {
     "index": 44,
     "start": 100.48,
-    "end": 105.6,
-    "text": "learn English online or I learn English"
+    "end": 102.8,
+    "text": "learn English online or I learn English",
+    "pronunciation": "러른 잉글리시 언라인 오어 아이 러른 잉글리시",
+    "translation": "온라인으로 영어를 배워 또는 나는 배워",
+    "notes": [
+      {
+        "word": "learn english",
+        "actual": "러른 잉글리시",
+        "meaning": "n과 ing 연결"
+      },
+      {
+        "word": "every day",
+        "actual": "에브리 데이",
+        "meaning": "every 약형"
+      }
+    ]
   },
   {
     "index": 45,
     "start": 102.8,
-    "end": 107.84,
-    "text": "every day. So, the structure stays the"
+    "end": 105.6,
+    "text": "every day. So, the structure stays the",
+    "pronunciation": "에브리 데이 소우 더 스트럭처 스테이즈 더",
+    "translation": "매일. 그래서 구조가 같지만",
+    "notes": [
+      {
+        "word": "so the",
+        "actual": "소우 더",
+        "meaning": "o 약형"
+      },
+      {
+        "word": "structure stays",
+        "actual": "스트럭처 스테이즈",
+        "meaning": "ure 약형"
+      }
+    ]
   },
   {
     "index": 46,
     "start": 105.6,
-    "end": 109.68,
-    "text": "same, but the meaning changes. Now,"
+    "end": 107.84,
+    "text": "same, but the meaning changes. Now,",
+    "pronunciation": "세임 벗 더 미닝 체인지즈 나우",
+    "translation": "의미가 바뀌어. 이제",
+    "notes": [
+      {
+        "word": "same but",
+        "actual": "세임 벗",
+        "meaning": "t 약형"
+      },
+      {
+        "word": "meaning changes",
+        "actual": "미닝 체인지즈",
+        "meaning": "ing 약형"
+      }
+    ]
   },
   {
     "index": 47,
     "start": 107.84,
-    "end": 111.76,
-    "text": "let's move to the most important part of"
+    "end": 109.68,
+    "text": "let's move to the most important part of",
+    "pronunciation": "렛스 무브 투 더 모우스트 임포어턴트 파트 어브",
+    "translation": "가장 중요한 부분으로 이동해봐",
+    "notes": [
+      {
+        "word": "let's move",
+        "actual": "렛스 무브",
+        "meaning": "s와 m 약함"
+      },
+      {
+        "word": "most important",
+        "actual": "모우스트 임포어턴트",
+        "meaning": "t 약함"
+      }
+    ]
   },
   {
     "index": 48,
     "start": 109.68,
-    "end": 114.96,
-    "text": "this video, which is making sentences"
+    "end": 111.76,
+    "text": "this video, which is making sentences",
+    "pronunciation": "디스 비디오 위치 이즈 메이킹 센텐시즈",
+    "translation": "이 비디오의, 어떤 것이 문장을 만드는",
+    "notes": [
+      {
+        "word": "which is",
+        "actual": "위치 이즈",
+        "meaning": "ch와 i 약함"
+      },
+      {
+        "word": "making sentences",
+        "actual": "메이킹 센텐시즈",
+        "meaning": "ing 가볍게"
+      }
+    ]
   },
   {
     "index": 49,
     "start": 111.76,
-    "end": 116.56,
-    "text": "longer by adding phrases. A phrase is a"
+    "end": 114.96,
+    "text": "longer by adding phrases. A phrase is a",
+    "pronunciation": "롱거 바이 애딩 프레이지즈 어 프레이즈 이즈 어",
+    "translation": "더 긴 구문을 추가해서. 구문은 하나의",
+    "notes": [
+      {
+        "word": "longer by",
+        "actual": "롱거 바이",
+        "meaning": "er와 by 약함"
+      },
+      {
+        "word": "phrase is",
+        "actual": "프레이즈 이즈",
+        "meaning": "is 약형"
+      }
+    ]
   },
   {
     "index": 50,
     "start": 114.96,
-    "end": 118.56,
-    "text": "group of words that gives extra"
+    "end": 116.56,
+    "text": "group of words that gives extra",
+    "pronunciation": "그룹 어브 워즈 댓 기브즈 엑스트라",
+    "translation": "단어들의 그룹이 추가 정보를 주는",
+    "notes": [
+      {
+        "word": "group of",
+        "actual": "그룹 어브",
+        "meaning": "of 약형 어브"
+      },
+      {
+        "word": "gives extra",
+        "actual": "기브즈 엑스트라",
+        "meaning": "s는 z로"
+      }
+    ]
   },
   {
     "index": 51,
     "start": 116.56,
-    "end": 120.72,
-    "text": "information, but it does not change the"
+    "end": 118.56,
+    "text": "information, but it does not change the",
+    "pronunciation": "인포어메이션 벗 잇 더즈 낫 체인지 더",
+    "translation": "정보인데, 그것이 기본 구조를 바꾸지 않아",
+    "notes": [
+      {
+        "word": "but it",
+        "actual": "벗 잇",
+        "meaning": "it 약형"
+      },
+      {
+        "word": "basic structure",
+        "actual": "베이식 스트럭처",
+        "meaning": "ure 약형"
+      }
+    ]
   },
   {
     "index": 52,
     "start": 118.56,
-    "end": 123.12,
-    "text": "basic structure of the sentence. First,"
+    "end": 120.72,
+    "text": "basic structure of the sentence. First,",
+    "pronunciation": "베이식 스트럭처 어브 더 센텐스 퍼스트",
+    "translation": "기본 구조를. 첫째",
+    "notes": [
+      {
+        "word": "of the sentence",
+        "actual": "어브 더 센텐스",
+        "meaning": "of 약형"
+      },
+      {
+        "word": "first we",
+        "actual": "퍼스트 위",
+        "meaning": "we 약형"
+      }
+    ]
   },
   {
     "index": 53,
     "start": 120.72,
-    "end": 124.96,
-    "text": "we start with a very short sentence. I"
+    "end": 123.12,
+    "text": "we start with a very short sentence. I",
+    "pronunciation": "위 스타트 위드 어 베리 쇼어트 센텐스 아이",
+    "translation": "매우 짧은 문장으로 시작해 나는",
+    "notes": [
+      {
+        "word": "very short",
+        "actual": "베리 쇼어트",
+        "meaning": "ort 약형"
+      },
+      {
+        "word": "sentence i",
+        "actual": "센텐스 아이",
+        "meaning": "i 약형"
+      }
+    ]
   },
   {
     "index": 54,
     "start": 123.12,
-    "end": 127.36,
-    "text": "learn English. Now, we add a short"
+    "end": 124.96,
+    "text": "learn English. Now, we add a short",
+    "pronunciation": "러른 잉글리시 나우 위 애드 어 쇼어트",
+    "translation": "영어를 배워. 이제 우리가 짧은",
+    "notes": [
+      {
+        "word": "learn english",
+        "actual": "러른 잉글리시",
+        "meaning": "n과 ing 연결"
+      },
+      {
+        "word": "add a",
+        "actual": "애드 어",
+        "meaning": "a 약형"
+      }
+    ]
   },
   {
     "index": 55,
     "start": 124.96,
-    "end": 129.76,
-    "text": "phrase that tells time. I learn English"
+    "end": 127.36,
+    "text": "phrase that tells time. I learn English",
+    "pronunciation": "프레이즈 댓 텔즈 타임 아이 러른 잉글리시",
+    "translation": "시간을 말하는 구문을. 나는 영어를 배워",
+    "notes": [
+      {
+        "word": "phrase that",
+        "actual": "프레이즈 댓",
+        "meaning": "that 빠르게"
+      },
+      {
+        "word": "tells time",
+        "actual": "텔즈 타임",
+        "meaning": "s는 z로"
+      }
+    ]
   },
   {
     "index": 56,
     "start": 127.36,
-    "end": 132.16,
-    "text": "every day. The sentence is now longer,"
+    "end": 129.76,
+    "text": "every day. The sentence is now longer,",
+    "pronunciation": "에브리 데이 더 센텐스 이즈 나우 롱거",
+    "translation": "매일. 문장이 이제 더 길어",
+    "notes": [
+      {
+        "word": "every day",
+        "actual": "에브리 데이",
+        "meaning": "every 약형"
+      },
+      {
+        "word": "is now",
+        "actual": "이즈 나우",
+        "meaning": "is 약형"
+      }
+    ]
   },
   {
     "index": 57,
     "start": 129.76,
-    "end": 134.16,
-    "text": "but the base is still the same. Next, we"
+    "end": 132.16,
+    "text": "but the base is still the same. Next, we",
+    "pronunciation": "벗 더 베이스 이즈 스틸 더 세임 넥스트 위",
+    "translation": "하지만 기초는 여전히 같아. 다음으로 우리는",
+    "notes": [
+      {
+        "word": "but the",
+        "actual": "벗 더",
+        "meaning": "the 매우 약함"
+      },
+      {
+        "word": "still the",
+        "actual": "스틸 더",
+        "meaning": "the 약함"
+      }
+    ]
   },
   {
     "index": 58,
     "start": 132.16,
-    "end": 136.56,
-    "text": "add a phrase that tells place. I learn"
+    "end": 134.16,
+    "text": "add a phrase that tells place. I learn",
+    "pronunciation": "애드 어 프레이즈 댓 텔즈 플레이스 아이 러른",
+    "translation": "장소를 말하는 구문을 추가해. 나는 배워",
+    "notes": [
+      {
+        "word": "add a",
+        "actual": "애드 어",
+        "meaning": "a 약형"
+      },
+      {
+        "word": "tells place",
+        "actual": "텔즈 플레이스",
+        "meaning": "s는 z로"
+      }
+    ]
   },
   {
     "index": 59,
     "start": 134.16,
-    "end": 139.04,
-    "text": "English everyday at home. Now, we add a"
+    "end": 136.56,
+    "text": "English everyday at home. Now, we add a",
+    "pronunciation": "잉글리시 에브리데이 앳 홈 나우 위 애드 어",
+    "translation": "영어를 매일 집에서. 이제 우리가 추가해",
+    "notes": [
+      {
+        "word": "everyday at",
+        "actual": "에브리데이 앳",
+        "meaning": "y와 a 약함"
+      },
+      {
+        "word": "add a",
+        "actual": "애드 어",
+        "meaning": "a 약형"
+      }
+    ]
   },
   {
     "index": 60,
     "start": 136.56,
-    "end": 140.88,
-    "text": "phrase that tells method or way. I learn"
+    "end": 139.04,
+    "text": "phrase that tells method or way. I learn",
+    "pronunciation": "프레이즈 댓 텔즈 메써드 오어 웨이 아이 러른",
+    "translation": "방법을 말하는 구문을. 나는 배워",
+    "notes": [
+      {
+        "word": "method or",
+        "actual": "메써드 오어",
+        "meaning": "th 발음"
+      },
+      {
+        "word": "way i",
+        "actual": "웨이 아이",
+        "meaning": "i 약형"
+      }
+    ]
   },
   {
     "index": 61,
     "start": 139.04,
-    "end": 143.68,
-    "text": "English everyday at home by watching"
+    "end": 140.88,
+    "text": "English everyday at home by watching",
+    "pronunciation": "잉글리시 에브리데이 앳 홈 바이 워칭",
+    "translation": "영어를 매일 집에서 비디오를 보면서",
+    "notes": [
+      {
+        "word": "every day",
+        "actual": "에브리데이",
+        "meaning": "y와 d 약함"
+      },
+      {
+        "word": "by watching",
+        "actual": "바이 워칭",
+        "meaning": "ing 가볍게"
+      }
+    ]
   },
   {
     "index": 62,
     "start": 140.88,
-    "end": 146.08,
-    "text": "videos. Next, we add a phrase that tells"
+    "end": 143.68,
+    "text": "videos. Next, we add a phrase that tells",
+    "pronunciation": "비디오즈 넥스트 위 애드 어 프레이즈 댓 텔즈",
+    "translation": "비디오. 다음으로 우리가 추가하는 구문이 말하는",
+    "notes": [
+      {
+        "word": "videos next",
+        "actual": "비디오즈 넥스트",
+        "meaning": "s는 z로"
+      },
+      {
+        "word": "add a",
+        "actual": "애드 어",
+        "meaning": "a 약형"
+      }
+    ]
   },
   {
     "index": 63,
     "start": 143.68,
-    "end": 148.08,
-    "text": "purpose. I learn English every day at"
+    "end": 146.08,
+    "text": "purpose. I learn English every day at",
+    "pronunciation": "퍼퍼스 아이 러른 잉글리시 에브리 데이 앳",
+    "translation": "목적을. 나는 매일 영어를 배워",
+    "notes": [
+      {
+        "word": "purpose i",
+        "actual": "퍼퍼스 아이",
+        "meaning": "s는 z로"
+      },
+      {
+        "word": "every day",
+        "actual": "에브리 데이",
+        "meaning": "every 약형"
+      }
+    ]
   },
   {
     "index": 64,
     "start": 146.08,
-    "end": 150.24,
-    "text": "home by watching videos to improve my"
+    "end": 148.08,
+    "text": "home by watching videos to improve my",
+    "pronunciation": "홈 바이 워칭 비디오즈 투 임프루브 마이",
+    "translation": "집에서 비디오를 보면서 내",
+    "notes": [
+      {
+        "word": "by watching",
+        "actual": "바이 워칭",
+        "meaning": "ing 가볍게"
+      },
+      {
+        "word": "to improve",
+        "actual": "투 임프루브",
+        "meaning": "to 약형"
+      }
+    ]
   },
   {
     "index": 65,
     "start": 148.08,
-    "end": 152.08,
-    "text": "speaking skills."
+    "end": 150.24,
+    "text": "speaking skills.",
+    "pronunciation": "스피킹 스킬즈",
+    "translation": "말하기 능력을 향상시키기 위해",
+    "notes": [
+      {
+        "word": "speaking",
+        "actual": "스피킹",
+        "meaning": "ing 약형"
+      },
+      {
+        "word": "skills",
+        "actual": "스킬즈",
+        "meaning": "s는 z로"
+      }
+    ]
   },
   {
     "index": 66,
     "start": 150.24,
-    "end": 154.72,
-    "text": "You can see that we did not change the"
+    "end": 152.08,
+    "text": "You can see that we did not change the",
+    "pronunciation": "유 캔 씨 댓 위 디드 낫 체인지 더",
+    "translation": "너는 볼 수 있어 우리가 주어를 바꾸지 않았다는",
+    "notes": [
+      {
+        "word": "can see",
+        "actual": "캔 씨",
+        "meaning": "s는 sh로"
+      },
+      {
+        "word": "did not",
+        "actual": "디드 낫",
+        "meaning": "not 약형"
+      }
+    ]
   },
   {
     "index": 67,
     "start": 152.08,
-    "end": 157.12,
-    "text": "subject or the verb. We only added short"
+    "end": 154.72,
+    "text": "subject or the verb. We only added short",
+    "pronunciation": "섭젝트 오어 더 버브 위 온리 애디드 쇼어트",
+    "translation": "또는 동사를. 우리는 단지 짧은",
+    "notes": [
+      {
+        "word": "or the",
+        "actual": "오어 더",
+        "meaning": "the 약함"
+      },
+      {
+        "word": "added short",
+        "actual": "애디드 쇼어트",
+        "meaning": "d와 sh 약함"
+      }
+    ]
   },
   {
     "index": 68,
     "start": 154.72,
-    "end": 159.2,
-    "text": "phrases one by one. This is the key to"
+    "end": 157.12,
+    "text": "phrases one by one. This is the key to",
+    "pronunciation": "프레이지즈 원 바이 원 디스 이즈 더 키 투",
+    "translation": "구문들을 하나씩. 이것이 핵심이야",
+    "notes": [
+      {
+        "word": "one by",
+        "actual": "원 바이",
+        "meaning": "n과 b 약함"
+      },
+      {
+        "word": "key to",
+        "actual": "키 투",
+        "meaning": "to 약형"
+      }
+    ]
   },
   {
     "index": 69,
     "start": 157.12,
-    "end": 161.6,
-    "text": "building long and natural English"
+    "end": 159.2,
+    "text": "building long and natural English",
+    "pronunciation": "빌딩 롱 앤 내쳐럴 잉글리시 센텐시즈",
+    "translation": "길고 자연스러운 영어 문장을 만드는 것",
+    "notes": [
+      {
+        "word": "building",
+        "actual": "빌딩",
+        "meaning": "ing 약형"
+      },
+      {
+        "word": "long and",
+        "actual": "롱 앤",
+        "meaning": "and 약형"
+      }
+    ]
   },
   {
     "index": 70,
     "start": 159.2,
-    "end": 164.16,
-    "text": "sentences. You do not need to think of"
+    "end": 161.6,
+    "text": "sentences. You do not need to think of",
+    "pronunciation": "유 두 낫 니드 투 씽크 어브 롱 센텐시즈 앳",
+    "translation": "너는 긴 문장을 한 번에 생각할 필요가 없어",
+    "notes": [
+      {
+        "word": "do not",
+        "actual": "두 낫",
+        "meaning": "not 약형"
+      },
+      {
+        "word": "need to",
+        "actual": "니드 투",
+        "meaning": "to 약형"
+      }
+    ]
   },
   {
     "index": 71,
     "start": 161.6,
-    "end": 166.48,
-    "text": "long sentences at once. You only need to"
+    "end": 164.16,
+    "text": "long sentences at once. You only need to",
+    "pronunciation": "언스 유 온리 니드 투 스타트 위드 어 쇼어트",
+    "translation": "한 번에. 너는 단지 짧은",
+    "notes": [
+      {
+        "word": "only need",
+        "actual": "온리 니드",
+        "meaning": "y와 n 약함"
+      },
+      {
+        "word": "to start",
+        "actual": "투 스타트",
+        "meaning": "to 약형"
+      }
+    ]
   },
   {
     "index": 72,
     "start": 164.16,
-    "end": 169.04,
-    "text": "start with a short sentence and then add"
+    "end": 166.48,
+    "text": "start with a short sentence and then add",
+    "pronunciation": "센텐스 앤 덴 애드 스몰 프레이시즈 스텝 바이",
+    "translation": "문장을 그리고 작은 구문을 추가해",
+    "notes": [
+      {
+        "word": "and then",
+        "actual": "앤 덴",
+        "meaning": "and 약형"
+      },
+      {
+        "word": "add small",
+        "actual": "애드 스몰",
+        "meaning": "d와 s 약함"
+      }
+    ]
   },
   {
     "index": 73,
     "start": 166.48,
-    "end": 171.44,
-    "text": "small phrases step by step. Let's look"
+    "end": 169.04,
+    "text": "small phrases step by step. Let's look",
+    "pronunciation": "스텝 렛스 룩 앳 어나더 이그잼플 스타트",
+    "translation": "단계별로. 다른 예를 봐봐",
+    "notes": [
+      {
+        "word": "step let's",
+        "actual": "스텝 렛스",
+        "meaning": "s와 l 약함"
+      },
+      {
+        "word": "look at",
+        "actual": "룩 앳",
+        "meaning": "k와 a 약함"
+      }
+    ]
   },
   {
     "index": 74,
     "start": 169.04,
-    "end": 174.4,
-    "text": "at another example. Start with a simple"
+    "end": 171.44,
+    "text": "at another example. Start with a simple",
+    "pronunciation": "윗 어 심플 센텐스 시 웍스 나우 애드 어",
+    "translation": "간단한 문장으로 시작해. 그녀가 일해. 이제 추가해",
+    "notes": [
+      {
+        "word": "with a",
+        "actual": "윗 어",
+        "meaning": "h는 약함"
+      },
+      {
+        "word": "simple sentence",
+        "actual": "심플 센텐스",
+        "meaning": "e 약형"
+      }
+    ]
   },
   {
     "index": 75,
     "start": 171.44,
-    "end": 177.28,
-    "text": "sentence. She works. Now add a phrase"
+    "end": 174.4,
+    "text": "sentence. She works. Now add a phrase",
+    "pronunciation": "프레이즈 포어 플레이스 시 웍스 인 앤 어피스",
+    "translation": "장소를 위한 구문을. 그녀는 사무실에서 일해",
+    "notes": [
+      {
+        "word": "phrase for",
+        "actual": "프레이즈 포어",
+        "meaning": "for 약형"
+      },
+      {
+        "word": "works in",
+        "actual": "웍스 인",
+        "meaning": "s는 z로"
+      }
+    ]
   },
   {
     "index": 76,
     "start": 174.4,
-    "end": 179.68,
-    "text": "for place. She works in an office. Now"
+    "end": 177.28,
+    "text": "for place. She works in an office. Now",
+    "pronunciation": "나우 애드 어 프레이즈 포어 타임 시 웍스 인",
+    "translation": "사무실에서. 이제 시간을 위한 구문을 추가해",
+    "notes": [
+      {
+        "word": "add a",
+        "actual": "애드 어",
+        "meaning": "a 약형"
+      },
+      {
+        "word": "phrase for",
+        "actual": "프레이즈 포어",
+        "meaning": "for 약형"
+      }
+    ]
   },
   {
     "index": 77,
     "start": 177.28,
-    "end": 182.16,
-    "text": "add a phrase for time. She works in an"
+    "end": 179.68,
+    "text": "add a phrase for time. She works in an",
+    "pronunciation": "앤 어피스 듀링 더 데이 나우 애드 어 프레이즈",
+    "translation": "사무실에서 낮 동안. 이제 구문을 추가해",
+    "notes": [
+      {
+        "word": "an office",
+        "actual": "앤 어피스",
+        "meaning": "office 약형"
+      },
+      {
+        "word": "during the",
+        "actual": "듀링 더",
+        "meaning": "the 약함"
+      }
+    ]
   },
   {
     "index": 78,
     "start": 179.68,
-    "end": 184.32,
-    "text": "office during the day. Now add a phrase"
+    "end": 182.16,
+    "text": "office during the day. Now add a phrase",
+    "pronunciation": "포어 리즌 시 웍스 인 앤 어피스 듀링 더",
+    "translation": "이유를 위한. 그녀는 사무실에서 낮 동안 일해",
+    "notes": [
+      {
+        "word": "for reason",
+        "actual": "포어 리즌",
+        "meaning": "son 약형"
+      },
+      {
+        "word": "works in",
+        "actual": "웍스 인",
+        "meaning": "s는 z로"
+      }
+    ]
   },
   {
     "index": 79,
     "start": 182.16,
-    "end": 186.64,
-    "text": "for reason. She works in an office"
+    "end": 184.32,
+    "text": "for reason. She works in an office",
+    "pronunciation": "데이 투 서포트 허 패밀리 디스 이즈 하우",
+    "translation": "그녀의 가족을 돕기 위해. 이것이 어떻게",
+    "notes": [
+      {
+        "word": "to support",
+        "actual": "투 서포트",
+        "meaning": "to 약형"
+      },
+      {
+        "word": "her family",
+        "actual": "허 패밀리",
+        "meaning": "family 약형"
+      }
+    ]
   },
   {
     "index": 80,
     "start": 184.32,
-    "end": 188.88,
-    "text": "during the day to support her family."
+    "end": 186.64,
+    "text": "during the day to support her family.",
+    "pronunciation": "쇼어트 센텐시즈 그로우 인투 롱거 미닝풀",
+    "translation": "짧은 문장들이 더 긴 의미 있는",
+    "notes": [
+      {
+        "word": "short sentences",
+        "actual": "쇼어트 센텐시즈",
+        "meaning": "s는 z로"
+      },
+      {
+        "word": "grow into",
+        "actual": "그로우 인투",
+        "meaning": "to 약형"
+      }
+    ]
   },
   {
     "index": 81,
     "start": 186.64,
-    "end": 191.92,
-    "text": "This is how short sentences grow into"
+    "end": 188.88,
+    "text": "This is how short sentences grow into",
+    "pronunciation": "센텐시즈 렛스 룩 앳 어나더 이그잼플 더",
+    "translation": "문장들. 다른 예를 봐봐",
+    "notes": [
+      {
+        "word": "let's look",
+        "actual": "렛스 룩",
+        "meaning": "s와 l 약함"
+      },
+      {
+        "word": "another example",
+        "actual": "어나더 이그잼플",
+        "meaning": "example 약형"
+      }
+    ]
   },
   {
     "index": 82,
     "start": 188.88,
-    "end": 194.88,
-    "text": "longer meaningful sentences. Let's look"
+    "end": 191.92,
+    "text": "longer meaningful sentences. Let's look",
+    "pronunciation": "트레인 어라이브드 나우 위 애드 어 프레이즈",
+    "translation": "기차가 도착했어. 이제 구문을 추가해",
+    "notes": [
+      {
+        "word": "train arrived",
+        "actual": "트레인 어라이브드",
+        "meaning": "d 약함"
+      },
+      {
+        "word": "add a",
+        "actual": "애드 어",
+        "meaning": "a 약형"
+      }
+    ]
   },
   {
     "index": 83,
     "start": 191.92,
-    "end": 197.2,
-    "text": "at another example. The train arrived."
+    "end": 194.88,
+    "text": "at another example. The train arrived.",
+    "pronunciation": "댓 텔즈 플레이스 더 트레인 어라이브드 앳 더",
+    "translation": "장소를 말하는. 기차가 역에 도착했어",
+    "notes": [
+      {
+        "word": "that tells",
+        "actual": "댓 텔즈",
+        "meaning": "s는 z로"
+      },
+      {
+        "word": "the station",
+        "actual": "더 스테이션",
+        "meaning": "the 약함"
+      }
+    ]
   },
   {
     "index": 84,
     "start": 194.88,
-    "end": 199.84,
-    "text": "Now we add a phrase that tells place."
+    "end": 197.2,
+    "text": "Now we add a phrase that tells place.",
+    "pronunciation": "스테이션 넥스트 위 애드 어 프레이즈 댓 텔즈",
+    "translation": "스테이션에서. 다음으로 구문을 추가해",
+    "notes": [
+      {
+        "word": "next we",
+        "actual": "넥스트 위",
+        "meaning": "we 약형"
+      },
+      {
+        "word": "add a",
+        "actual": "애드 어",
+        "meaning": "a 약형"
+      }
+    ]
   },
   {
     "index": 85,
     "start": 197.2,
-    "end": 202.4,
-    "text": "The train arrived at the station. Next"
+    "end": 199.84,
+    "text": "The train arrived at the station. Next",
+    "pronunciation": "타임 더 트레인 어라이브드 앳 더 스테이션",
+    "translation": "시간을. 기차가 역에 일찍 도착했어",
+    "notes": [
+      {
+        "word": "time the",
+        "actual": "타임 더",
+        "meaning": "the 약함"
+      },
+      {
+        "word": "arrived at",
+        "actual": "어라이브드 앳",
+        "meaning": "at 약형"
+      }
+    ]
   },
   {
     "index": 86,
     "start": 199.84,
-    "end": 204.32,
-    "text": "we add a phrase that tells time. The"
+    "end": 202.4,
+    "text": "we add a phrase that tells time. The",
+    "pronunciation": "얼리 인 더 모닝 나우 위 애드 어 프레이즈",
+    "translation": "아침 일찍. 이제 구문을 추가해",
+    "notes": [
+      {
+        "word": "early in",
+        "actual": "얼리 인",
+        "meaning": "in 약형"
+      },
+      {
+        "word": "the morning",
+        "actual": "더 모닝",
+        "meaning": "the 약함"
+      }
+    ]
   },
   {
     "index": 87,
     "start": 202.4,
-    "end": 206.8,
-    "text": "train arrived at the station early in"
+    "end": 204.32,
+    "text": "train arrived at the station early in",
+    "pronunciation": "댓 텔즈 매너 더 트레인 어라이브드 앳 더",
+    "translation": "방법을 말하는. 기차가",
+    "notes": [
+      {
+        "word": "tells manner",
+        "actual": "텔즈 매너",
+        "meaning": "s는 z로"
+      },
+      {
+        "word": "the train",
+        "actual": "더 트레인",
+        "meaning": "the 약함"
+      }
+    ]
   },
   {
     "index": 88,
     "start": 204.32,
-    "end": 209.12,
-    "text": "the morning. Now we add a phrase that"
+    "end": 206.8,
+    "text": "the morning. Now we add a phrase that",
+    "pronunciation": "스테이션 얼리 인 더 모닝 위다웃 에니 딜레이",
+    "translation": "역에 지연 없이 아침 일찍 도착했어",
+    "notes": [
+      {
+        "word": "without any",
+        "actual": "위다웃 에니",
+        "meaning": "any 약형"
+      },
+      {
+        "word": "delay next",
+        "actual": "딜레이 넥스트",
+        "meaning": "next 약형"
+      }
+    ]
   },
   {
     "index": 89,
     "start": 206.8,
-    "end": 211.2,
-    "text": "tells manner. The train arrived at the"
+    "end": 209.12,
+    "text": "tells manner. The train arrived at the",
+    "pronunciation": "넥스트 위 애드 어 프레이즈 댓 텔즈 리즌 더",
+    "translation": "다음으로 우리가 이유를 말하는 구문을 추가해",
+    "notes": [
+      {
+        "word": "add a",
+        "actual": "애드 어",
+        "meaning": "a 약형"
+      },
+      {
+        "word": "tells reason",
+        "actual": "텔즈 리즌",
+        "meaning": "s는 z로"
+      }
+    ]
   },
   {
     "index": 90,
     "start": 209.12,
-    "end": 213.84,
-    "text": "station early in the morning without any"
+    "end": 211.2,
+    "text": "station early in the morning without any",
+    "pronunciation": "트레인 어라이브드 앳 더 스테이션 얼리 인 더",
+    "translation": "기차가 역에 아침 일찍",
+    "notes": [
+      {
+        "word": "arrived at",
+        "actual": "어라이브드 앳",
+        "meaning": "at 약형"
+      },
+      {
+        "word": "early in",
+        "actual": "얼리 인",
+        "meaning": "in 약형"
+      }
+    ]
   },
   {
     "index": 91,
     "start": 211.2,
-    "end": 216.32,
-    "text": "delay. Next we add a phrase that tells"
+    "end": 213.84,
+    "text": "delay. Next we add a phrase that tells",
+    "pronunciation": "모닝 위다웃 에니 딜레이 비카즈 더 웨더 워즈",
+    "translation": "날씨가 맑았기 때문에 지연 없이",
+    "notes": [
+      {
+        "word": "without any",
+        "actual": "위다웃 에니",
+        "meaning": "any 약형"
+      },
+      {
+        "word": "weather was",
+        "actual": "웨더 워즈",
+        "meaning": "s는 z로"
+      }
+    ]
   },
   {
     "index": 92,
     "start": 213.84,
-    "end": 218.8,
-    "text": "reason. The train arrived at the station"
+    "end": 216.32,
+    "text": "reason. The train arrived at the station",
+    "pronunciation": "클리어 파이널리 위 애드 어 프레이즈 댓 기브즈",
+    "translation": "맑았어. 마지막으로 우리가 추가하는 구문이 주는",
+    "notes": [
+      {
+        "word": "finally we",
+        "actual": "파이널리 위",
+        "meaning": "we 약형"
+      },
+      {
+        "word": "add a",
+        "actual": "애드 어",
+        "meaning": "a 약형"
+      }
+    ]
   },
   {
     "index": 93,
     "start": 216.32,
-    "end": 221.52,
-    "text": "early in the morning without any delay"
+    "end": 218.8,
+    "text": "early in the morning without any delay",
+    "pronunciation": "엑스트라 디테일 더 트레인 어라이브드 앳 더",
+    "translation": "추가 세부사항을. 기차가",
+    "notes": [
+      {
+        "word": "extra detail",
+        "actual": "엑스트라 디테일",
+        "meaning": "detail 약형"
+      },
+      {
+        "word": "arrived at",
+        "actual": "어라이브드 앳",
+        "meaning": "at 약형"
+      }
+    ]
   },
   {
     "index": 94,
     "start": 218.8,
-    "end": 224.32,
-    "text": "because the weather was clear. Finally,"
+    "end": 221.52,
+    "text": "because the weather was clear. Finally,",
+    "pronunciation": "스테이션 얼리 인 더 모닝 위다웃 에니 딜레이",
+    "translation": "역에 지연 없이 아침 일찍",
+    "notes": [
+      {
+        "word": "without any",
+        "actual": "위다웃 에니",
+        "meaning": "any 약형"
+      },
+      {
+        "word": "delay because",
+        "actual": "딜레이 비카즈",
+        "meaning": "because 약형"
+      }
+    ]
   },
   {
     "index": 95,
     "start": 221.52,
-    "end": 226.4,
-    "text": "we add a phrase that gives extra detail."
+    "end": 224.32,
+    "text": "we add a phrase that gives extra detail.",
+    "pronunciation": "비카즈 더 웨더 워즈 클리어 앤 더 트랙스",
+    "translation": "날씨가 맑았고 선로들이",
+    "notes": [
+      {
+        "word": "because the",
+        "actual": "비카즈 더",
+        "meaning": "the 약함"
+      },
+      {
+        "word": "and the",
+        "actual": "앤 더",
+        "meaning": "and 약형"
+      }
+    ]
   },
   {
     "index": 96,
     "start": 224.32,
-    "end": 228.72,
-    "text": "The train arrived at the station early"
+    "end": 226.4,
+    "text": "The train arrived at the station early",
+    "pronunciation": "위어 엠프티 디스 이그잼플 쇼우즈 댓 위",
+    "translation": "비어있었어. 이 예가 우리가",
+    "notes": [
+      {
+        "word": "were empty",
+        "actual": "위어 엠프티",
+        "meaning": "y 약형"
+      },
+      {
+        "word": "example shows",
+        "actual": "이그잼플 쇼우즈",
+        "meaning": "s는 z로"
+      }
+    ]
   },
   {
     "index": 97,
     "start": 226.4,
-    "end": 230.88,
-    "text": "in the morning without any delay because"
+    "end": 228.72,
+    "text": "in the morning without any delay because",
+    "pronunciation": "두우 낫 체인지 더 베이식 센텐스 위 온리",
+    "translation": "기본 문장을 바꾸지 않는다는 것을. 우리는 단지",
+    "notes": [
+      {
+        "word": "do not",
+        "actual": "두우 낫",
+        "meaning": "not 약형"
+      },
+      {
+        "word": "basic sentence",
+        "actual": "베이식 센텐스",
+        "meaning": "e 약형"
+      }
+    ]
   },
   {
     "index": 98,
     "start": 228.72,
-    "end": 233.6,
-    "text": "the weather was clear and the tracks"
+    "end": 230.88,
+    "text": "the weather was clear and the tracks",
+    "pronunciation": "애드 쇼어트 프레이지즈 투 기브 모어 인포어메이션",
+    "translation": "짧은 구문을 추가해서 더 많은 정보를 주고",
+    "notes": [
+      {
+        "word": "add short",
+        "actual": "애드 쇼어트",
+        "meaning": "d와 sh 약함"
+      },
+      {
+        "word": "more information",
+        "actual": "모어 인포어메이션",
+        "meaning": "tion 약형"
+      }
+    ]
   },
   {
     "index": 99,
     "start": 230.88,
-    "end": 235.76,
-    "text": "were empty. This example shows that we"
+    "end": 233.6,
+    "text": "were empty. This example shows that we",
+    "pronunciation": "앤 메이크 더 센텐스 롱거 앤 클리어러 나우",
+    "translation": "문장을 더 길고 명확하게 만들어. 이제",
+    "notes": [
+      {
+        "word": "and make",
+        "actual": "앤 메이크",
+        "meaning": "and 약형"
+      },
+      {
+        "word": "longer and",
+        "actual": "롱거 앤",
+        "meaning": "and 약형"
+      }
+    ]
   },
   {
     "index": 100,
     "start": 233.6,
-    "end": 237.84,
-    "text": "do not change the basic sentence. We"
+    "end": 235.76,
+    "text": "do not change the basic sentence. We",
+    "pronunciation": "리맴버 원 베리 임포어턴트 룰 인 잉글리시",
+    "translation": "하나의 매우 중요한 규칙을 기억해줄래",
+    "notes": [
+      {
+        "word": "remember one",
+        "actual": "리맴버 원",
+        "meaning": "member 약형"
+      },
+      {
+        "word": "very important",
+        "actual": "베리 임포어턴트",
+        "meaning": "tant 약형"
+      }
+    ]
   },
   {
     "index": 101,
     "start": 235.76,
-    "end": 240.08,
-    "text": "only add short phrases to give more"
+    "end": 237.84,
+    "text": "only add short phrases to give more",
+    "pronunciation": "프레이지즈 유저얼리 컴 애프터 더 메인 센텐스",
+    "translation": "구문들은 보통 주 문장 뒤에 와",
+    "notes": [
+      {
+        "word": "phrases usually",
+        "actual": "프레이지즈 유저얼리",
+        "meaning": "usually 약형"
+      },
+      {
+        "word": "main sentence",
+        "actual": "메인 센텐스",
+        "meaning": "e 약형"
+      }
+    ]
   },
   {
     "index": 102,
     "start": 237.84,
-    "end": 242.64,
-    "text": "information and make the sentence longer"
+    "end": 240.08,
+    "text": "information and make the sentence longer",
+    "pronunciation": "낫 비포어 잇 퍼스트 컴즈 더 섭젝트 덴",
+    "translation": "그 전에는 아니야. 먼저 주어가 오고",
+    "notes": [
+      {
+        "word": "not before",
+        "actual": "낫 비포어",
+        "meaning": "before 약형"
+      },
+      {
+        "word": "first comes",
+        "actual": "퍼스트 컴즈",
+        "meaning": "s는 z로"
+      }
+    ]
   },
   {
     "index": 103,
     "start": 240.08,
-    "end": 245.04,
-    "text": "and clearer. Now remember one very"
+    "end": 242.64,
+    "text": "and clearer. Now remember one very",
+    "pronunciation": "더 버브 덴 더 메인 인포어메이션 애프터 댓",
+    "translation": "동사, 그리고 주 정보. 그 뒤에",
+    "notes": [
+      {
+        "word": "then the",
+        "actual": "덴 더",
+        "meaning": "the 약함"
+      },
+      {
+        "word": "main information",
+        "actual": "메인 인포어메이션",
+        "meaning": "tion 약형"
+      }
+    ]
   },
   {
     "index": 104,
     "start": 242.64,
-    "end": 247.68,
-    "text": "important rule in English phrases"
+    "end": 245.04,
+    "text": "important rule in English phrases",
+    "pronunciation": "위 애드 프레이지즈 이프 유 팔로우 디스 오어더",
+    "translation": "구문을 추가해. 만약 너가 이 순서를 따르면",
+    "notes": [
+      {
+        "word": "add phrases",
+        "actual": "애드 프레이지즈",
+        "meaning": "s는 z로"
+      },
+      {
+        "word": "follow this",
+        "actual": "팔로우 디스",
+        "meaning": "this 명확"
+      }
+    ]
   },
   {
     "index": 105,
     "start": 245.04,
-    "end": 250.32,
-    "text": "usually come after the main sentence not"
+    "end": 247.68,
+    "text": "usually come after the main sentence not",
+    "pronunciation": "유어 센텐시즈 윌 올웨이즈 사운드 클리어 앤",
+    "translation": "너의 문장들이 항상 명확하고",
+    "notes": [
+      {
+        "word": "your sentences",
+        "actual": "유어 센텐시즈",
+        "meaning": "s는 z로"
+      },
+      {
+        "word": "will always",
+        "actual": "윌 올웨이즈",
+        "meaning": "s는 z로"
+      }
+    ]
   },
   {
     "index": 106,
     "start": 247.68,
-    "end": 252.96,
-    "text": "before it. First comes the subject then"
+    "end": 250.32,
+    "text": "before it. First comes the subject then",
+    "pronunciation": "내쳐럴 투 프랙티스 디스 스킬 유 슈드 팔로우",
+    "translation": "자연스러워. 이 기술을 연습하려면 너는 따라야 해",
+    "notes": [
+      {
+        "word": "natural to",
+        "actual": "내쳐럴 투",
+        "meaning": "to 약형"
+      },
+      {
+        "word": "practice this",
+        "actual": "프랙티스 디스",
+        "meaning": "this 명확"
+      }
+    ]
   },
   {
     "index": 107,
     "start": 250.32,
-    "end": 255.52,
-    "text": "the verb then the main information."
+    "end": 252.96,
+    "text": "the verb then the main information.",
+    "pronunciation": "어 베리 심플 메써드 퍼스트 세이 원 쇼어트",
+    "translation": "매우 간단한 방법을. 첫 번째, 짧은",
+    "notes": [
+      {
+        "word": "very simple",
+        "actual": "베리 심플",
+        "meaning": "e 약형"
+      },
+      {
+        "word": "first say",
+        "actual": "퍼스트 세이",
+        "meaning": "s는 sh로"
+      }
+    ]
   },
   {
     "index": 108,
     "start": 252.96,
-    "end": 257.84,
-    "text": "After that we add phrases. If you follow"
+    "end": 255.52,
+    "text": "After that we add phrases. If you follow",
+    "pronunciation": "센텐스 세컨드 애스크 유어셀프 스몰 퀘스천즈",
+    "translation": "문장을 두 번째, 자신에게 작은 질문을 해",
+    "notes": [
+      {
+        "word": "second ask",
+        "actual": "세컨드 애스크",
+        "meaning": "sk 함께"
+      },
+      {
+        "word": "yourself small",
+        "actual": "유어셀프 스몰",
+        "meaning": "f와 s 약함"
+      }
+    ]
   },
   {
     "index": 109,
     "start": 255.52,
-    "end": 260.4,
-    "text": "this order your sentences will always"
+    "end": 257.84,
+    "text": "this order your sentences will always",
+    "pronunciation": "라이크 웬 웨어 하우 와이 이치 앤서 비컴즈",
+    "translation": "언제, 어디서, 어떻게, 왜 같은. 각 답변이",
+    "notes": [
+      {
+        "word": "like when",
+        "actual": "라이크 웬",
+        "meaning": "ke와 wh 약함"
+      },
+      {
+        "word": "each answer",
+        "actual": "이치 앤서",
+        "meaning": "each 약형"
+      }
+    ]
   },
   {
     "index": 110,
     "start": 257.84,
-    "end": 262.8,
-    "text": "sound clear and natural. To practice"
+    "end": 260.4,
+    "text": "sound clear and natural. To practice",
+    "pronunciation": "어 프레이즈 앤 이치 프레이즈 메이크스 유어",
+    "translation": "구문이 되고 각 구문이 너의",
+    "notes": [
+      {
+        "word": "becomes a",
+        "actual": "비컴즈 어",
+        "meaning": "a 약형"
+      },
+      {
+        "word": "each phrase",
+        "actual": "이치 프레이즈",
+        "meaning": "phrase 약형"
+      }
+    ]
   },
   {
     "index": 111,
     "start": 260.4,
-    "end": 265.44,
-    "text": "this skill you should follow a very"
+    "end": 262.8,
+    "text": "this skill you should follow a very",
+    "pronunciation": "센텐스 롱거 앤 클리어러 바이 유징 디스 메써드",
+    "translation": "문장을 더 길고 명확하게 만들어. 이 방법을 사용해",
+    "notes": [
+      {
+        "word": "longer and",
+        "actual": "롱거 앤",
+        "meaning": "and 약형"
+      },
+      {
+        "word": "using this",
+        "actual": "유징 디스",
+        "meaning": "this 명확"
+      }
+    ]
   },
   {
     "index": 112,
     "start": 262.8,
-    "end": 268.16,
-    "text": "simple method. First say one short"
+    "end": 265.44,
+    "text": "simple method. First say one short",
+    "pronunciation": "유 캔 스피크 롱거 센텐시즈 위다웃 피어",
+    "translation": "너는 두려움 없이 더 긴 문장을 말할 수 있어",
+    "notes": [
+      {
+        "word": "can speak",
+        "actual": "캔 스피크",
+        "meaning": "sp 함께"
+      },
+      {
+        "word": "without fear",
+        "actual": "위다웃 피어",
+        "meaning": "fear 약형"
+      }
+    ]
   },
   {
     "index": 113,
     "start": 265.44,
-    "end": 272.08,
-    "text": "sentence. Second, ask yourself small"
+    "end": 268.16,
+    "text": "sentence. Second, ask yourself small",
+    "pronunciation": "위다웃 컨퓨전 앤 위다웃 스탑핑 소우 리맴버",
+    "translation": "혼란 없이, 멈추지 않고. 그래서 기억해봐",
+    "notes": [
+      {
+        "word": "without confusion",
+        "actual": "위다웃 컨퓨전",
+        "meaning": "confusion 약형"
+      },
+      {
+        "word": "without stopping",
+        "actual": "위다웃 스탑핑",
+        "meaning": "ping 약형"
+      }
+    ]
   },
   {
     "index": 114,
     "start": 268.16,
-    "end": 274.48,
-    "text": "questions like when, where, how, why."
+    "end": 272.08,
+    "text": "questions like when, where, how, why.",
+    "pronunciation": "잉글리시 센텐스 빌딩 이즈 낫 어바웃 메머라이징",
+    "translation": "영어 문장 만들기는 외우는 것이 아니야",
+    "notes": [
+      {
+        "word": "english sentence",
+        "actual": "잉글리시 센텐스",
+        "meaning": "e 약형"
+      },
+      {
+        "word": "memorizing",
+        "actual": "메머라이징",
+        "meaning": "izing 약형"
+      }
+    ]
   },
   {
     "index": 115,
     "start": 272.08,
-    "end": 276.56,
-    "text": "Each answer becomes a phrase, and each"
+    "end": 274.48,
+    "text": "Each answer becomes a phrase, and each",
+    "pronunciation": "그래머 룰즈 잇 이즈 어바웃 언더스탠딩 패턴즈",
+    "translation": "문법 규칙들. 패턴을 이해하는 것에 관해서야",
+    "notes": [
+      {
+        "word": "grammar rules",
+        "actual": "그래머 룰즈",
+        "meaning": "s는 z로"
+      },
+      {
+        "word": "understanding patterns",
+        "actual": "언더스탠딩 패턴즈",
+        "meaning": "ing 약형"
+      }
+    ]
   },
   {
     "index": 116,
     "start": 274.48,
-    "end": 279.28,
-    "text": "phrase makes your sentence longer and"
+    "end": 276.56,
+    "text": "phrase makes your sentence longer and",
+    "pronunciation": "앤 애딩 인포어메이션 스텝 바이 스텝 이프 유",
+    "translation": "단계별로 정보를 추가하는 것. 만약 너가",
+    "notes": [
+      {
+        "word": "and adding",
+        "actual": "앤 애딩",
+        "meaning": "and 약형"
+      },
+      {
+        "word": "step by",
+        "actual": "스텝 바이",
+        "meaning": "by 약형"
+      }
+    ]
   },
   {
     "index": 117,
     "start": 276.56,
-    "end": 281.92,
-    "text": "clearer. By using this method, you can"
+    "end": 279.28,
+    "text": "clearer. By using this method, you can",
+    "pronunciation": "마스터 원 심플 센텐스 유 캔 크리에이트 싸우진즈",
+    "translation": "하나의 간단한 문장을 마스터해 너는 수천 개의",
+    "notes": [
+      {
+        "word": "master one",
+        "actual": "마스터 원",
+        "meaning": "ter 약형"
+      },
+      {
+        "word": "create thousands",
+        "actual": "크리에이트 싸우진즈",
+        "meaning": "ands 약형"
+      }
+    ]
   },
   {
     "index": 118,
     "start": 279.28,
-    "end": 284.64,
-    "text": "speak longer sentences without fear,"
+    "end": 281.92,
+    "text": "speak longer sentences without fear,",
+    "pronunciation": "어브 센텐시즈 이프 유 러른 하우 투 애드",
+    "translation": "문장을 만들 수 있어. 만약 너가 구문을 추가하는 것을 배우면",
+    "notes": [
+      {
+        "word": "of sentences",
+        "actual": "어브 센텐시즈",
+        "meaning": "s는 z로"
+      },
+      {
+        "word": "learn how",
+        "actual": "러른 하우",
+        "meaning": "how 약형"
+      }
+    ]
   },
   {
     "index": 119,
     "start": 281.92,
-    "end": 287.12,
-    "text": "without confusion, and without stopping."
+    "end": 284.64,
+    "text": "without confusion, and without stopping.",
+    "pronunciation": "프레이지즈 유 캔 스피크 롱거 앤 모어 플루언트",
+    "translation": "너는 더 길고 더 유창한 영어를 말할 수 있어",
+    "notes": [
+      {
+        "word": "phrases you",
+        "actual": "프레이지즈 유",
+        "meaning": "you 약형"
+      },
+      {
+        "word": "longer and",
+        "actual": "롱거 앤",
+        "meaning": "and 약형"
+      }
+    ]
   },
   {
     "index": 120,
     "start": 284.64,
-    "end": 289.76,
-    "text": "So remember, English sentence building"
+    "end": 287.12,
+    "text": "So remember, English sentence building",
+    "pronunciation": "잉글리시 키프 프랙티싱 쇼어트 센텐시즈 퍼스트 앤",
+    "translation": "영어를. 짧은 문장들을 먼저 계속 연습해",
+    "notes": [
+      {
+        "word": "keep practicing",
+        "actual": "키프 프랙티싱",
+        "meaning": "ing 약형"
+      },
+      {
+        "word": "sentences first",
+        "actual": "센텐시즈 퍼스트",
+        "meaning": "first 약형"
+      }
+    ]
   },
   {
     "index": 121,
     "start": 287.12,
-    "end": 292.16,
-    "text": "is not about memorizing grammar rules."
+    "end": 289.76,
+    "text": "is not about memorizing grammar rules.",
+    "pronunciation": "덴 슬로우리 빌드 뎀 인투 롱거 센텐시즈",
+    "translation": "그리고 천천히 그들을 더 긴 문장으로 만들어",
+    "notes": [
+      {
+        "word": "then slowly",
+        "actual": "덴 슬로우리",
+        "meaning": "slowly 약형"
+      },
+      {
+        "word": "build them",
+        "actual": "빌드 뎀",
+        "meaning": "them 약형"
+      }
+    ]
   },
   {
     "index": 122,
     "start": 289.76,
-    "end": 295.36,
-    "text": "It is about understanding patterns and"
+    "end": 292.16,
+    "text": "It is about understanding patterns and",
+    "pronunciation": "앤 베리 순 유 윌 노티스 댓 유어 스포큰",
+    "translation": "그리고 아주 곧 너는 알아챌 거야 너의 말한",
+    "notes": [
+      {
+        "word": "and very",
+        "actual": "앤 베리",
+        "meaning": "and 약형"
+      },
+      {
+        "word": "will notice",
+        "actual": "윌 노티스",
+        "meaning": "ice는 이스"
+      }
+    ]
   },
   {
     "index": 123,
     "start": 292.16,
-    "end": 297.68,
-    "text": "adding information step by step. If you"
+    "end": 295.36,
+    "text": "adding information step by step. If you",
+    "pronunciation": "잉글리시 비컴즈 클리어러 스트롱거 앤 모어",
+    "translation": "영어가 더 명확하고 강하고",
+    "notes": [
+      {
+        "word": "english becomes",
+        "actual": "잉글리시 비컴즈",
+        "meaning": "z와 b 약함"
+      },
+      {
+        "word": "stronger and",
+        "actual": "스트롱거 앤",
+        "meaning": "and 약형"
+      }
+    ]
   },
   {
     "index": 124,
     "start": 295.36,
-    "end": 300.48,
-    "text": "master one simple sentence, you can"
+    "end": 297.68,
+    "text": "master one simple sentence, you can",
+    "pronunciation": "마스터 원 심플 센텐스 유 캔",
+    "translation": "하나의 간단한 문장을 마스터하면 너는",
+    "notes": [
+      {
+        "word": "master one",
+        "actual": "마스터 원",
+        "meaning": "ter 약형"
+      },
+      {
+        "word": "simple sentence",
+        "actual": "심플 센텐스",
+        "meaning": "e 약형"
+      }
+    ]
   },
   {
     "index": 125,
     "start": 297.68,
-    "end": 302.64,
-    "text": "create thousands of sentences. If you"
+    "end": 300.48,
+    "text": "create thousands of sentences. If you",
+    "pronunciation": "크리에이트 싸우진즈 어브 센텐시즈 이프 유",
+    "translation": "수천 개의 문장을 만들 수 있어. 만약 너가",
+    "notes": [
+      {
+        "word": "create thousands",
+        "actual": "크리에이트 싸우진즈",
+        "meaning": "ands 약형"
+      },
+      {
+        "word": "if you",
+        "actual": "이프 유",
+        "meaning": "you 약형"
+      }
+    ]
   },
   {
     "index": 126,
     "start": 300.48,
-    "end": 305.2,
-    "text": "learn how to add phrases, you can speak"
+    "end": 302.64,
+    "text": "learn how to add phrases, you can speak",
+    "pronunciation": "러른 하우 투 애드 프레이지즈 유 캔 스피크",
+    "translation": "구문을 추가하는 것을 배우면 너는 말할 수 있어",
+    "notes": [
+      {
+        "word": "learn how",
+        "actual": "러른 하우",
+        "meaning": "how 약형"
+      },
+      {
+        "word": "add phrases",
+        "actual": "애드 프레이지즈",
+        "meaning": "s는 z로"
+      }
+    ]
   },
   {
     "index": 127,
     "start": 302.64,
-    "end": 307.92,
-    "text": "longer and more fluent English. Keep"
+    "end": 305.2,
+    "text": "longer and more fluent English. Keep",
+    "pronunciation": "롱거 앤 모어 플루언트 잉글리시 키프",
+    "translation": "더 길고 더 유창한 영어를. 계속",
+    "notes": [
+      {
+        "word": "longer and",
+        "actual": "롱거 앤",
+        "meaning": "and 약형"
+      },
+      {
+        "word": "fluent english",
+        "actual": "플루언트 잉글리시",
+        "meaning": "e 약형"
+      }
+    ]
   },
   {
     "index": 128,
     "start": 305.2,
-    "end": 309.92,
-    "text": "practicing short sentences first and"
+    "end": 307.92,
+    "text": "practicing short sentences first and",
+    "pronunciation": "프랙티싱 쇼어트 센텐시즈 퍼스트 앤",
+    "translation": "짧은 문장들을 먼저 연습하고",
+    "notes": [
+      {
+        "word": "practicing",
+        "actual": "프랙티싱",
+        "meaning": "ing 약형"
+      },
+      {
+        "word": "first and",
+        "actual": "퍼스트 앤",
+        "meaning": "and 약형"
+      }
+    ]
   },
   {
     "index": 129,
     "start": 307.92,
-    "end": 312.8,
-    "text": "then slowly build them into longer"
+    "end": 309.92,
+    "text": "then slowly build them into longer",
+    "pronunciation": "덴 슬로우리 빌드 뎀 인투 롱거",
+    "translation": "그리고 천천히 그들을 더 긴",
+    "notes": [
+      {
+        "word": "then slowly",
+        "actual": "덴 슬로우리",
+        "meaning": "slowly 약형"
+      },
+      {
+        "word": "build them",
+        "actual": "빌드 뎀",
+        "meaning": "them 약형"
+      }
+    ]
   },
   {
     "index": 130,
     "start": 309.92,
-    "end": 314.8,
-    "text": "sentences, and very soon you will notice"
+    "end": 312.8,
+    "text": "sentences, and very soon you will notice",
+    "pronunciation": "센텐시즈 앤 베리 순 유 윌 노티스",
+    "translation": "문장으로 만들어, 그리고 아주 곧 너는 알아챌 거야",
+    "notes": [
+      {
+        "word": "sentences and",
+        "actual": "센텐시즈 앤",
+        "meaning": "and 약형"
+      },
+      {
+        "word": "very soon",
+        "actual": "베리 순",
+        "meaning": "very 약형"
+      }
+    ]
   },
   {
     "index": 131,
     "start": 312.8,
-    "end": 319.92,
-    "text": "that your spoken English becomes"
+    "end": 314.8,
+    "text": "that your spoken English becomes",
+    "pronunciation": "댓 유어 스포큰 잉글리시 비컴즈",
+    "translation": "너의 말한 영어가 된다는 것을",
+    "notes": [
+      {
+        "word": "that your",
+        "actual": "댓 유어",
+        "meaning": "your 약형"
+      },
+      {
+        "word": "english becomes",
+        "actual": "잉글리시 비컴즈",
+        "meaning": "z와 b 약함"
+      }
+    ]
   },
   {
     "index": 132,
     "start": 314.8,
     "end": 319.92,
-    "text": "clearer, stronger, and more confident."
+    "text": "clearer, stronger, and more confident.",
+    "pronunciation": "클리어러 스트롱거 앤 모어 컨피던트",
+    "translation": "더 명확하고 강하고 더 자신감 있다",
+    "notes": [
+      {
+        "word": "clearer stronger",
+        "actual": "클리어러 스트롱거",
+        "meaning": "er와 st 약함"
+      },
+      {
+        "word": "more confident",
+        "actual": "모어 컨피던트",
+        "meaning": "dent 약형"
+      }
+    ]
   }
 ]

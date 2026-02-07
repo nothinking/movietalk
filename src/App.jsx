@@ -1405,8 +1405,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
               }}
             >
               {subtitles.map((sub, i) => {
-                const isActive =
-                  currentTime >= sub.start && currentTime < sub.end;
+                const isActive = activeSubtitle && sub.index === activeSubtitle.index;
                 return (
                   <div
                     key={i}
@@ -1496,14 +1495,18 @@ function parseHash() {
   return { videoId: params.get("v"), subtitleIndex: params.get("s") ? parseInt(params.get("s")) : null };
 }
 
-function setHash(videoId, subtitleIndex) {
+function setHash(videoId, subtitleIndex, push = false) {
   if (!videoId) {
     history.replaceState(null, "", window.location.pathname);
     return;
   }
   let h = `#v=${videoId}`;
   if (subtitleIndex != null) h += `&s=${subtitleIndex}`;
-  history.replaceState(null, "", h);
+  if (push) {
+    history.pushState(null, "", h);
+  } else {
+    history.replaceState(null, "", h);
+  }
 }
 
 // ── Main App ──
@@ -1515,6 +1518,20 @@ export default function MovieEnglishApp() {
   const [loading, setLoading] = useState(true);
   const [showSaved, setShowSaved] = useState(false);
   const [ytApiReady, setYtApiReady] = useState(false);
+
+  // 뒤로가기(popstate) 시 영상 목록으로 복귀
+  useEffect(() => {
+    const handlePopState = () => {
+      const { videoId } = parseHash();
+      if (!videoId) {
+        setSelectedVideo(null);
+        setSubtitles([]);
+        setShowSaved(false);
+      }
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
 
   // Load YouTube IFrame API
   useEffect(() => {
@@ -1577,7 +1594,7 @@ export default function MovieEnglishApp() {
 
   const handleSelectVideo = (video) => {
     setInitialSubIndex(null);
-    setHash(video.id);
+    setHash(video.id, null, true);
     loadVideo(video);
   };
 
