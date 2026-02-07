@@ -263,6 +263,21 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
         return;
       }
 
+      // R: 현재 문장 반복 재생
+      if (e.key === "r" || e.key === "R") {
+        e.preventDefault();
+        const ct = playerInstanceRef.current.getCurrentTime();
+        const sub = subtitles.find((s) => ct >= s.start && ct < s.end);
+        if (sub) {
+          loopTargetRef.current = { start: sub.start, end: sub.end };
+          setIsLooping(true);
+          setShowPanel(false);
+          playerInstanceRef.current.seekTo(sub.start);
+          playerInstanceRef.current.playVideo();
+        }
+        return;
+      }
+
       // ←→: 문장 이동
       if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
       if (subtitles.length === 0) return;
