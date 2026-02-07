@@ -266,47 +266,15 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
       // R: 현재 문장 반복 재생
       if (e.key === "r" || e.key === "R") {
         e.preventDefault();
-        const ct = playerInstanceRef.current.getCurrentTime();
-        const sub = subtitles.find((s) => ct >= s.start && ct < s.end);
-        if (sub) {
-          loopTargetRef.current = { start: sub.start, end: sub.end };
-          setIsLooping(true);
-          setShowPanel(false);
-          playerInstanceRef.current.seekTo(sub.start);
-          playerInstanceRef.current.playVideo();
-        }
+        repeatCurrentSentence();
         return;
       }
 
       // ←→: 문장 이동
       if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
-      if (subtitles.length === 0) return;
       e.preventDefault();
-
-      const ct = playerInstanceRef.current.getCurrentTime();
-      let currentIdx = subtitles.findIndex(
-        (s) => ct >= s.start && ct < s.end
-      );
-      if (currentIdx === -1) {
-        currentIdx = subtitles.findIndex((s) => s.start > ct);
-        if (currentIdx === -1) currentIdx = subtitles.length - 1;
-        else if (currentIdx > 0) currentIdx -= 1;
-      }
-
-      let nextIdx;
-      if (e.key === "ArrowLeft") {
-        nextIdx = Math.max(0, currentIdx - 1);
-      } else {
-        nextIdx = Math.min(subtitles.length - 1, currentIdx + 1);
-      }
-
-      const target = subtitles[nextIdx];
-      loopTargetRef.current = null;
-      setIsLooping(false);
-      setShowPanel(false);
-      setHash(video.id, target.index);
-      playerInstanceRef.current.seekTo(target.start);
-      playerInstanceRef.current.playVideo();
+      if (e.key === "ArrowLeft") goToPrevSentence();
+      else goToNextSentence();
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
@@ -455,6 +423,58 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
           sentence: currentSubtitle?.text || activeSubtitle?.text,
         },
       ]);
+    }
+  };
+
+  // 문장 이동/반복 함수 (키보드 + 모바일 버튼 공용)
+  const goToPrevSentence = () => {
+    if (!playerInstanceRef.current || subtitles.length === 0) return;
+    const ct = playerInstanceRef.current.getCurrentTime();
+    let currentIdx = subtitles.findIndex((s) => ct >= s.start && ct < s.end);
+    if (currentIdx === -1) {
+      currentIdx = subtitles.findIndex((s) => s.start > ct);
+      if (currentIdx === -1) currentIdx = subtitles.length - 1;
+      else if (currentIdx > 0) currentIdx -= 1;
+    }
+    const nextIdx = Math.max(0, currentIdx - 1);
+    const target = subtitles[nextIdx];
+    loopTargetRef.current = null;
+    setIsLooping(false);
+    setShowPanel(false);
+    setHash(video.id, target.index);
+    playerInstanceRef.current.seekTo(target.start);
+    playerInstanceRef.current.playVideo();
+  };
+
+  const goToNextSentence = () => {
+    if (!playerInstanceRef.current || subtitles.length === 0) return;
+    const ct = playerInstanceRef.current.getCurrentTime();
+    let currentIdx = subtitles.findIndex((s) => ct >= s.start && ct < s.end);
+    if (currentIdx === -1) {
+      currentIdx = subtitles.findIndex((s) => s.start > ct);
+      if (currentIdx === -1) currentIdx = subtitles.length - 1;
+      else if (currentIdx > 0) currentIdx -= 1;
+    }
+    const nextIdx = Math.min(subtitles.length - 1, currentIdx + 1);
+    const target = subtitles[nextIdx];
+    loopTargetRef.current = null;
+    setIsLooping(false);
+    setShowPanel(false);
+    setHash(video.id, target.index);
+    playerInstanceRef.current.seekTo(target.start);
+    playerInstanceRef.current.playVideo();
+  };
+
+  const repeatCurrentSentence = () => {
+    if (!playerInstanceRef.current) return;
+    const ct = playerInstanceRef.current.getCurrentTime();
+    const sub = subtitles.find((s) => ct >= s.start && ct < s.end);
+    if (sub) {
+      loopTargetRef.current = { start: sub.start, end: sub.end };
+      setIsLooping(true);
+      setShowPanel(false);
+      playerInstanceRef.current.seekTo(sub.start);
+      playerInstanceRef.current.playVideo();
     }
   };
 
@@ -866,6 +886,99 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
               <option value={1.25}>1.25x</option>
               <option value={1.5}>1.5x</option>
             </select>
+          </div>
+
+          {/* Mobile sentence controls */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "8px 16px",
+              gap: "8px",
+              background: "#0d0d14",
+              borderBottom: "1px solid #1a1a2e",
+            }}
+          >
+            <button
+              onClick={goToPrevSentence}
+              disabled={!playerReady}
+              style={{
+                background: "#1a1a2e",
+                border: "1px solid #2a2a3e",
+                color: "#a5b4fc",
+                cursor: playerReady ? "pointer" : "not-allowed",
+                padding: "8px 16px",
+                borderRadius: "8px",
+                fontSize: "13px",
+                fontWeight: "600",
+                opacity: playerReady ? 1 : 0.5,
+              }}
+              title="이전 문장 (←)"
+            >
+              ⏮ 이전
+            </button>
+            <button
+              onClick={togglePlay}
+              disabled={!playerReady}
+              style={{
+                background: "#6366f1",
+                border: "none",
+                color: "white",
+                cursor: playerReady ? "pointer" : "not-allowed",
+                padding: "8px 20px",
+                borderRadius: "8px",
+                fontSize: "13px",
+                fontWeight: "700",
+                opacity: playerReady ? 1 : 0.5,
+              }}
+              title="재생/일시정지 (Space)"
+            >
+              {isPlaying ? "⏸ 일시정지" : "▶ 재생"}
+            </button>
+            <button
+              onClick={() => {
+                if (isLooping) {
+                  loopTargetRef.current = null;
+                  setIsLooping(false);
+                } else {
+                  repeatCurrentSentence();
+                }
+              }}
+              disabled={!playerReady}
+              style={{
+                background: isLooping ? "#4f46e5" : "#1a1a2e",
+                border: isLooping ? "1px solid #6366f1" : "1px solid #2a2a3e",
+                color: isLooping ? "#e0e7ff" : "#a5b4fc",
+                cursor: playerReady ? "pointer" : "not-allowed",
+                padding: "8px 16px",
+                borderRadius: "8px",
+                fontSize: "13px",
+                fontWeight: "600",
+                opacity: playerReady ? 1 : 0.5,
+              }}
+              title="반복 재생 (R)"
+            >
+              🔄 반복
+            </button>
+            <button
+              onClick={goToNextSentence}
+              disabled={!playerReady}
+              style={{
+                background: "#1a1a2e",
+                border: "1px solid #2a2a3e",
+                color: "#a5b4fc",
+                cursor: playerReady ? "pointer" : "not-allowed",
+                padding: "8px 16px",
+                borderRadius: "8px",
+                fontSize: "13px",
+                fontWeight: "600",
+                opacity: playerReady ? 1 : 0.5,
+              }}
+              title="다음 문장 (→)"
+            >
+              다음 ⏭
+            </button>
           </div>
 
           {/* Learning Panel on pause */}
