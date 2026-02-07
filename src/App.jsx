@@ -217,6 +217,8 @@ function PlayerScreen({ video, subtitles, onBack }) {
   const [showSaved, setShowSaved] = useState(false);
   const [speed, setSpeed] = useState(1);
   const pollIntervalRef = useRef(null);
+  const loopTargetRef = useRef(null);
+  const [isLooping, setIsLooping] = useState(false);
 
   const hasPronunciation =
     subtitles.length > 0 && "pronunciation" in subtitles[0];
@@ -249,6 +251,8 @@ function PlayerScreen({ video, subtitles, onBack }) {
               startPolling();
             } else if (event.data === YT.PlayerState.PAUSED) {
               setIsPlaying(false);
+              loopTargetRef.current = null;
+              setIsLooping(false);
               stopPolling();
               const ct = playerInstanceRef.current.getCurrentTime();
               setCurrentTime(ct);
@@ -286,8 +290,13 @@ function PlayerScreen({ video, subtitles, onBack }) {
       if (
         playerInstanceRef.current &&
         playerInstanceRef.current.getCurrentTime
-      )
-        setCurrentTime(playerInstanceRef.current.getCurrentTime());
+      ) {
+        const ct = playerInstanceRef.current.getCurrentTime();
+        setCurrentTime(ct);
+        if (loopTargetRef.current && ct >= loopTargetRef.current.end) {
+          playerInstanceRef.current.seekTo(loopTargetRef.current.start);
+        }
+      }
     }, 100);
   };
   const stopPolling = () => {
@@ -503,13 +512,25 @@ function PlayerScreen({ video, subtitles, onBack }) {
           {/* Real-time subtitle bar */}
           <div
             style={{
-              background: "#111118",
-              borderBottom: "1px solid #1a1a2e",
+              background: isLooping ? "#1a1528" : "#111118",
+              borderBottom: isLooping ? "1px solid #6366f1" : "1px solid #1a1a2e",
               padding: activeSubtitle ? "12px 20px" : "8px 20px",
               minHeight: "20px",
               transition: "all 0.2s",
             }}
           >
+            {isLooping && (
+              <div
+                style={{
+                  fontSize: "11px",
+                  color: "#a5b4fc",
+                  marginBottom: "6px",
+                  fontWeight: "600",
+                }}
+              >
+                🔄 반복 재생 중 — 일시정지하면 해제됩니다
+              </div>
+            )}
             {activeSubtitle ? (
               <div>
                 <div
@@ -924,7 +945,13 @@ function PlayerScreen({ video, subtitles, onBack }) {
               <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
                 <button
                   onClick={() => {
-                    if (playerInstanceRef.current) {
+                    if (playerInstanceRef.current && currentSubtitle) {
+                      loopTargetRef.current = {
+                        start: currentSubtitle.start,
+                        end: currentSubtitle.end,
+                      };
+                      setIsLooping(true);
+                      setShowPanel(false);
                       playerInstanceRef.current.seekTo(currentSubtitle.start);
                       playerInstanceRef.current.playVideo();
                     }
@@ -941,10 +968,12 @@ function PlayerScreen({ video, subtitles, onBack }) {
                     fontWeight: "700",
                   }}
                 >
-                  🔄 다시 듣기
+                  🔄 반복 듣기
                 </button>
                 <button
                   onClick={() => {
+                    loopTargetRef.current = null;
+                    setIsLooping(false);
                     setShowPanel(false);
                     if (playerInstanceRef.current)
                       playerInstanceRef.current.playVideo();
@@ -998,12 +1027,12 @@ function PlayerScreen({ video, subtitles, onBack }) {
                     key={i}
                     onClick={() => {
                       if (playerInstanceRef.current) {
+                        loopTargetRef.current = null;
+                        setIsLooping(false);
+                        setShowPanel(false);
                         playerInstanceRef.current.seekTo(sub.start);
-                        playerInstanceRef.current.pauseVideo();
+                        playerInstanceRef.current.playVideo();
                       }
-                      setCurrentSubtitle(sub);
-                      setShowPanel(true);
-                      setExpandedNote(null);
                     }}
                     style={{
                       padding: "10px 14px",
