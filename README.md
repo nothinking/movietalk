@@ -8,6 +8,11 @@ YouTube 영상을 보면서 **실시간 한글 발음 자막**으로 영어 듣�
 
 - **실시간 한글 발음 자막** — 재생 중 영어 원문 + 한글 발음 + 한국어 해석을 동시 표시
 - **상세 학습 패널** — 일시정지 시 발음 포인트(축약/연음/탈락) 상세 설명
+- **문장 반복 재생** — 반복 듣기 버튼 또는 R 키로 현재 문장 루프 (토글)
+- **발음/해석 편집** — 웹앱에서 직접 수정 가능 (Cmd+E 편집, Cmd+S 저장)
+- **키보드 단축키** — ←→ 문장 이동, Space 재생/일시정지, R 반복, Cmd+E 편집, Cmd+S 저장
+- **모바일 컨트롤** — 이전/재생/반복/다음 문장 버튼 (터치 조작)
+- **퍼머링크** — URL 해시로 특정 영상의 특정 문장 공유 가능
 - **다중 영상 지원** — 영상 목록에서 선택하여 학습 (현재 2개 영상, 555개 자막)
 - **새 영상 추가 파이프라인** — YouTube URL로 자막 추출 + 발음 데이터 자동 생성
 - 표현 저장, 재생 속도 조절 (0.5x~1.5x), 문장 타임라인 클릭 이동
@@ -63,7 +68,7 @@ python add_video.py --skip-pronunciation "https://www.youtube.com/watch?v=VIDEO_
 ```
 movietalk/
 ├── src/
-│   ├── App.jsx                 # React 앱 (VideoListScreen + PlayerScreen)
+│   ├── App.jsx                 # React 앱 (~1,600줄, VideoListScreen + PlayerScreen)
 │   └── main.jsx                # React 엔트리포인트
 ├── public/
 │   └── videos/
@@ -72,7 +77,7 @@ movietalk/
 │       └── 1IaFHFSvqoQ.json    # 영상 2: 399개 자막+발음
 ├── index.html                  # HTML 엔트리포인트
 ├── package.json                # npm 의존성
-├── vite.config.js              # Vite 설정 (port 3000)
+├── vite.config.js              # Vite 설정 (port 3000, 발음편집 API)
 ├── add_video.py                # 새 영상 추가 CLI
 ├── extract_subtitles.py        # YouTube 자막 추출 모듈
 ├── detail.md                   # 프로젝트 기획 문서
