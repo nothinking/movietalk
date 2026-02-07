@@ -514,9 +514,12 @@ function PlayerScreen({ video, subtitles, onBack }) {
             style={{
               background: isLooping ? "#1a1528" : "#111118",
               borderBottom: isLooping ? "1px solid #6366f1" : "1px solid #1a1a2e",
-              padding: activeSubtitle ? "12px 20px" : "8px 20px",
-              minHeight: "20px",
-              transition: "all 0.2s",
+              padding: "12px 20px",
+              height: "100px",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              overflow: "hidden",
             }}
           >
             {isLooping && (
