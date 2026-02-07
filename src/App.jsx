@@ -1,0 +1,1211 @@
+import { useState, useRef, useEffect } from "react";
+
+const PlayIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M8 5v14l11-7z" />
+  </svg>
+);
+
+const PauseIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+  </svg>
+);
+
+const SkipBackIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
+  </svg>
+);
+
+const SkipForwardIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" />
+  </svg>
+);
+
+// ── Video List Screen ──
+function VideoListScreen({ videos, onSelect }) {
+  const formatDuration = (sec) => {
+    if (!sec) return "";
+    const m = Math.floor(sec / 60);
+    const s = sec % 60;
+    return `${m}:${String(s).padStart(2, "0")}`;
+  };
+
+  return (
+    <div style={{ padding: "20px", maxWidth: "640px", margin: "0 auto" }}>
+      <div
+        style={{
+          textAlign: "center",
+          marginBottom: "32px",
+          paddingTop: "20px",
+        }}
+      >
+        <div style={{ fontSize: "48px", marginBottom: "12px" }}>🎬</div>
+        <h2
+          style={{
+            fontSize: "22px",
+            fontWeight: "700",
+            marginBottom: "8px",
+          }}
+        >
+          학습할 영상을 선택하세요
+        </h2>
+        <p style={{ color: "#666", fontSize: "14px" }}>
+          {videos.length}개의 영상이 준비되어 있습니다
+        </p>
+      </div>
+
+      <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+        {videos.map((video) => (
+          <div
+            key={video.id}
+            onClick={() => onSelect(video)}
+            style={{
+              background: "#111118",
+              borderRadius: "14px",
+              padding: "20px",
+              cursor: "pointer",
+              border: "1px solid #1a1a2e",
+              transition: "all 0.2s",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = "#6366f1";
+              e.currentTarget.style.background = "#15151f";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = "#1a1a2e";
+              e.currentTarget.style.background = "#111118";
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                gap: "16px",
+                alignItems: "center",
+              }}
+            >
+              {/* Thumbnail placeholder */}
+              <div
+                style={{
+                  width: "120px",
+                  height: "68px",
+                  borderRadius: "8px",
+                  background: `url(https://img.youtube.com/vi/${video.id}/mqdefault.jpg) center/cover`,
+                  flexShrink: 0,
+                  position: "relative",
+                }}
+              >
+                {video.duration > 0 && (
+                  <span
+                    style={{
+                      position: "absolute",
+                      bottom: "4px",
+                      right: "4px",
+                      background: "rgba(0,0,0,0.8)",
+                      padding: "1px 5px",
+                      borderRadius: "3px",
+                      fontSize: "11px",
+                      fontWeight: "600",
+                    }}
+                  >
+                    {formatDuration(video.duration)}
+                  </span>
+                )}
+              </div>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div
+                  style={{
+                    fontSize: "15px",
+                    fontWeight: "600",
+                    color: "#e8e8ed",
+                    marginBottom: "6px",
+                    lineHeight: "1.4",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                  }}
+                >
+                  {video.title}
+                </div>
+                <div style={{ fontSize: "12px", color: "#888", marginBottom: "6px" }}>
+                  {video.channel}
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "8px",
+                    alignItems: "center",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontSize: "11px",
+                      color: "#a5b4fc",
+                      background: "#1a1a3e",
+                      padding: "2px 8px",
+                      borderRadius: "4px",
+                    }}
+                  >
+                    자막 {video.subtitleCount}개
+                  </span>
+                  {video.hasPronunciation !== false && (
+                    <span
+                      style={{
+                        fontSize: "11px",
+                        color: "#34d399",
+                        background: "#0a2e1e",
+                        padding: "2px 8px",
+                        borderRadius: "4px",
+                      }}
+                    >
+                      🔊 발음 데이터
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Add video hint */}
+      <div
+        style={{
+          marginTop: "32px",
+          padding: "20px",
+          background: "#0d0d14",
+          borderRadius: "12px",
+          border: "1px dashed #333",
+          textAlign: "center",
+        }}
+      >
+        <p style={{ fontSize: "13px", color: "#555", lineHeight: "1.8" }}>
+          새 영상을 추가하려면 터미널에서:
+          <br />
+          <code
+            style={{
+              background: "#1a1a2e",
+              padding: "4px 10px",
+              borderRadius: "6px",
+              fontSize: "12px",
+              color: "#a5b4fc",
+            }}
+          >
+            python add_video.py "YouTube URL"
+          </code>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+// ── Player Screen ──
+function PlayerScreen({ video, subtitles, onBack }) {
+  const playerRef = useRef(null);
+  const playerInstanceRef = useRef(null);
+  const [playerReady, setPlayerReady] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [showPanel, setShowPanel] = useState(false);
+  const [currentSubtitle, setCurrentSubtitle] = useState(null);
+  const [expandedNote, setExpandedNote] = useState(null);
+  const [savedExpressions, setSavedExpressions] = useState([]);
+  const [showSaved, setShowSaved] = useState(false);
+  const [speed, setSpeed] = useState(1);
+  const pollIntervalRef = useRef(null);
+
+  const hasPronunciation =
+    subtitles.length > 0 && "pronunciation" in subtitles[0];
+
+  // Create YouTube player
+  useEffect(() => {
+    const container = playerRef.current;
+    if (!container || !window.YT || !window.YT.Player) return;
+
+    container.innerHTML = `<div id="yt-player-${video.id}"></div>`;
+
+    playerInstanceRef.current = new window.YT.Player(
+      `yt-player-${video.id}`,
+      {
+        height: "390",
+        width: "100%",
+        videoId: video.id,
+        events: {
+          onReady: () => {
+            setPlayerReady(true);
+            if (speed !== 1)
+              playerInstanceRef.current.setPlaybackRate(speed);
+          },
+          onStateChange: (event) => {
+            const YT = window.YT;
+            if (!YT) return;
+            if (event.data === YT.PlayerState.PLAYING) {
+              setIsPlaying(true);
+              setShowPanel(false);
+              startPolling();
+            } else if (event.data === YT.PlayerState.PAUSED) {
+              setIsPlaying(false);
+              stopPolling();
+              const ct = playerInstanceRef.current.getCurrentTime();
+              setCurrentTime(ct);
+              const sub = subtitles.find(
+                (s) => ct >= s.start && ct < s.end
+              );
+              if (sub) {
+                setCurrentSubtitle(sub);
+                setShowPanel(true);
+                setExpandedNote(null);
+              }
+            } else if (event.data === YT.PlayerState.ENDED) {
+              setIsPlaying(false);
+              stopPolling();
+            }
+          },
+          onError: (e) => console.error("YT Error:", e.data),
+        },
+        playerVars: { controls: 1, modestbranding: 1 },
+      }
+    );
+
+    return () => {
+      stopPolling();
+      if (playerInstanceRef.current) {
+        playerInstanceRef.current.destroy();
+        playerInstanceRef.current = null;
+      }
+    };
+  }, [video.id]);
+
+  const startPolling = () => {
+    if (pollIntervalRef.current) clearInterval(pollIntervalRef.current);
+    pollIntervalRef.current = setInterval(() => {
+      if (
+        playerInstanceRef.current &&
+        playerInstanceRef.current.getCurrentTime
+      )
+        setCurrentTime(playerInstanceRef.current.getCurrentTime());
+    }, 100);
+  };
+  const stopPolling = () => {
+    if (pollIntervalRef.current) {
+      clearInterval(pollIntervalRef.current);
+      pollIntervalRef.current = null;
+    }
+  };
+
+  const activeSubtitle = subtitles.find(
+    (s) => currentTime >= s.start && currentTime < s.end
+  );
+
+  const togglePlay = () => {
+    if (!playerInstanceRef.current) return;
+    isPlaying
+      ? playerInstanceRef.current.pauseVideo()
+      : playerInstanceRef.current.playVideo();
+  };
+  const skipBack = () => {
+    if (!playerInstanceRef.current) return;
+    playerInstanceRef.current.seekTo(
+      Math.max(0, playerInstanceRef.current.getCurrentTime() - 3)
+    );
+  };
+  const skipForward = () => {
+    if (!playerInstanceRef.current) return;
+    const d = playerInstanceRef.current.getDuration();
+    playerInstanceRef.current.seekTo(
+      Math.min(d, playerInstanceRef.current.getCurrentTime() + 3)
+    );
+  };
+  const seekTo = (t) =>
+    playerInstanceRef.current && playerInstanceRef.current.seekTo(t);
+  const updateSpeed = (s) => {
+    setSpeed(s);
+    if (playerInstanceRef.current) playerInstanceRef.current.setPlaybackRate(s);
+  };
+
+  const getDuration = () =>
+    playerInstanceRef.current?.getDuration?.() || 0;
+
+  const formatTime = (t) => {
+    if (typeof t !== "number" || isNaN(t)) return "0:00";
+    return `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}`;
+  };
+
+  const saveExpression = (note) => {
+    if (!savedExpressions.find((e) => e.word === note.word)) {
+      setSavedExpressions((prev) => [
+        ...prev,
+        {
+          ...note,
+          sentence: currentSubtitle?.text || activeSubtitle?.text,
+        },
+      ]);
+    }
+  };
+
+  return (
+    <>
+      {/* Sub-header: back button + title */}
+      <div
+        style={{
+          padding: "10px 20px",
+          borderBottom: "1px solid #1a1a2e",
+          display: "flex",
+          alignItems: "center",
+          gap: "12px",
+        }}
+      >
+        <button
+          onClick={onBack}
+          style={{
+            background: "#1a1a2e",
+            border: "none",
+            color: "#a5b4fc",
+            padding: "6px 12px",
+            borderRadius: "6px",
+            cursor: "pointer",
+            fontSize: "13px",
+            fontWeight: "600",
+          }}
+        >
+          ← 목록
+        </button>
+        <span
+          style={{
+            fontSize: "13px",
+            color: "#888",
+            flex: 1,
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+          }}
+        >
+          {video.title}
+        </span>
+      </div>
+
+      {showSaved ? (
+        <div
+          style={{ padding: "20px", maxWidth: "640px", margin: "0 auto" }}
+        >
+          <h3 style={{ marginBottom: "16px", fontSize: "16px" }}>
+            저장한 표현들
+          </h3>
+          {savedExpressions.length === 0 ? (
+            <div
+              style={{
+                textAlign: "center",
+                color: "#666",
+                padding: "40px",
+                background: "#111118",
+                borderRadius: "12px",
+              }}
+            >
+              <p style={{ fontSize: "32px", marginBottom: "12px" }}>📭</p>
+              <p>아직 저장한 표현이 없어요</p>
+            </div>
+          ) : (
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "10px",
+              }}
+            >
+              {savedExpressions.map((expr, i) => (
+                <div
+                  key={i}
+                  style={{
+                    background: "#111118",
+                    borderRadius: "12px",
+                    padding: "16px",
+                    borderLeft: "3px solid #6366f1",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <div>
+                      <span
+                        style={{
+                          color: "#a5b4fc",
+                          fontWeight: "700",
+                          fontSize: "16px",
+                        }}
+                      >
+                        {expr.word}
+                      </span>
+                      <span
+                        style={{
+                          color: "#fbbf24",
+                          marginLeft: "10px",
+                          fontSize: "15px",
+                        }}
+                      >
+                        {expr.actual}
+                      </span>
+                    </div>
+                    <button
+                      onClick={() =>
+                        setSavedExpressions((prev) =>
+                          prev.filter((_, idx) => idx !== i)
+                        )
+                      }
+                      style={{
+                        background: "none",
+                        border: "none",
+                        color: "#555",
+                        cursor: "pointer",
+                        fontSize: "18px",
+                      }}
+                    >
+                      ×
+                    </button>
+                  </div>
+                  <div
+                    style={{
+                      color: "#888",
+                      fontSize: "13px",
+                      marginTop: "6px",
+                    }}
+                  >
+                    {expr.meaning}
+                  </div>
+                  <div
+                    style={{
+                      color: "#555",
+                      fontSize: "12px",
+                      marginTop: "8px",
+                      fontStyle: "italic",
+                    }}
+                  >
+                    "{expr.sentence}"
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      ) : (
+        <div style={{ maxWidth: "640px", margin: "0 auto" }}>
+          {/* YouTube Player */}
+          <div ref={playerRef} style={{ width: "100%", background: "#000" }}>
+            <div id={`yt-player-${video.id}`}></div>
+          </div>
+
+          {/* Real-time subtitle bar */}
+          <div
+            style={{
+              background: "#111118",
+              borderBottom: "1px solid #1a1a2e",
+              padding: activeSubtitle ? "12px 20px" : "8px 20px",
+              minHeight: "20px",
+              transition: "all 0.2s",
+            }}
+          >
+            {activeSubtitle ? (
+              <div>
+                <div
+                  style={{
+                    fontSize: "14px",
+                    color: "#ccc",
+                    marginBottom: hasPronunciation ? "6px" : "0",
+                    lineHeight: "1.4",
+                  }}
+                >
+                  {activeSubtitle.text}
+                </div>
+                {hasPronunciation && (
+                  <>
+                    <div
+                      style={{
+                        fontSize: "18px",
+                        fontWeight: "700",
+                        color: "#fbbf24",
+                        lineHeight: "1.4",
+                      }}
+                    >
+                      🔊 {activeSubtitle.pronunciation}
+                    </div>
+                    <div
+                      style={{
+                        fontSize: "13px",
+                        color: "#a5f3c4",
+                        marginTop: "4px",
+                        lineHeight: "1.4",
+                      }}
+                    >
+                      {activeSubtitle.translation}
+                    </div>
+                  </>
+                )}
+              </div>
+            ) : (
+              <div
+                style={{
+                  fontSize: "12px",
+                  color: "#444",
+                  textAlign: "center",
+                }}
+              >
+                자막 대기 중...
+              </div>
+            )}
+          </div>
+
+          {/* Progress bar */}
+          {playerReady && (
+            <div
+              style={{
+                position: "relative",
+                height: "4px",
+                background: "#1a1a2e",
+                cursor: "pointer",
+              }}
+              onClick={(e) => {
+                const rect = e.currentTarget.getBoundingClientRect();
+                seekTo(
+                  ((e.clientX - rect.left) / rect.width) * getDuration()
+                );
+              }}
+            >
+              <div
+                style={{
+                  height: "100%",
+                  width: `${getDuration() > 0 ? (currentTime / getDuration()) * 100 : 0}%`,
+                  background: "linear-gradient(90deg, #6366f1, #8b5cf6)",
+                  borderRadius: "2px",
+                  transition: isPlaying ? "none" : "width 0.2s",
+                }}
+              />
+              {subtitles.map((sub, i) => {
+                const d = getDuration() || 100;
+                return (
+                  <div
+                    key={i}
+                    style={{
+                      position: "absolute",
+                      top: "-1px",
+                      left: `${(sub.start / d) * 100}%`,
+                      width: `${((sub.end - sub.start) / d) * 100}%`,
+                      height: "6px",
+                      background: "rgba(99,102,241,0.2)",
+                      borderRadius: "1px",
+                    }}
+                  />
+                );
+              })}
+            </div>
+          )}
+
+          {/* Controls */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              padding: "10px 16px",
+              gap: "12px",
+              background: "#0d0d14",
+              borderBottom: "1px solid #1a1a2e",
+            }}
+          >
+            <button
+              onClick={skipBack}
+              disabled={!playerReady}
+              style={{
+                background: "none",
+                border: "none",
+                color: "#888",
+                cursor: playerReady ? "pointer" : "not-allowed",
+                padding: "4px",
+                opacity: playerReady ? 1 : 0.5,
+              }}
+            >
+              <SkipBackIcon />
+            </button>
+            <button
+              onClick={togglePlay}
+              disabled={!playerReady}
+              style={{
+                background: "#6366f1",
+                border: "none",
+                color: "white",
+                cursor: playerReady ? "pointer" : "not-allowed",
+                borderRadius: "50%",
+                width: "40px",
+                height: "40px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                opacity: playerReady ? 1 : 0.5,
+              }}
+            >
+              {isPlaying ? <PauseIcon /> : <PlayIcon />}
+            </button>
+            <button
+              onClick={skipForward}
+              disabled={!playerReady}
+              style={{
+                background: "none",
+                border: "none",
+                color: "#888",
+                cursor: playerReady ? "pointer" : "not-allowed",
+                padding: "4px",
+                opacity: playerReady ? 1 : 0.5,
+              }}
+            >
+              <SkipForwardIcon />
+            </button>
+            <span
+              style={{ fontSize: "12px", color: "#666", minWidth: "70px" }}
+            >
+              {formatTime(currentTime)} / {formatTime(getDuration())}
+            </span>
+            <div style={{ flex: 1 }} />
+            <select
+              value={speed}
+              onChange={(e) => updateSpeed(Number(e.target.value))}
+              disabled={!playerReady}
+              style={{
+                background: "#1a1a2e",
+                border: "1px solid #333",
+                color: "#888",
+                padding: "4px 8px",
+                borderRadius: "6px",
+                fontSize: "12px",
+                cursor: playerReady ? "pointer" : "not-allowed",
+                opacity: playerReady ? 1 : 0.5,
+              }}
+            >
+              <option value={0.5}>0.5x</option>
+              <option value={0.75}>0.75x</option>
+              <option value={1}>1x</option>
+              <option value={1.25}>1.25x</option>
+              <option value={1.5}>1.5x</option>
+            </select>
+          </div>
+
+          {/* Learning Panel on pause */}
+          {showPanel && currentSubtitle && hasPronunciation && (
+            <div style={{ padding: "20px", animation: "slideUp 0.3s ease-out" }}>
+              <style>{`
+                @keyframes slideUp {
+                  from { opacity: 0; transform: translateY(16px); }
+                  to { opacity: 1; transform: translateY(0); }
+                }
+              `}</style>
+
+              <div
+                style={{
+                  background: "#111118",
+                  borderRadius: "14px",
+                  padding: "20px",
+                  marginBottom: "12px",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "11px",
+                    color: "#6366f1",
+                    fontWeight: "700",
+                    textTransform: "uppercase",
+                    letterSpacing: "1px",
+                    marginBottom: "10px",
+                  }}
+                >
+                  Original
+                </div>
+                <div
+                  style={{
+                    fontSize: "18px",
+                    fontWeight: "600",
+                    lineHeight: "1.5",
+                    color: "#fff",
+                  }}
+                >
+                  {currentSubtitle.text}
+                </div>
+              </div>
+
+              <div
+                style={{
+                  background: "linear-gradient(135deg, #1a1520, #1a1a2e)",
+                  borderRadius: "14px",
+                  padding: "20px",
+                  marginBottom: "12px",
+                  border: "1px solid #2a2040",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "11px",
+                    color: "#fbbf24",
+                    fontWeight: "700",
+                    textTransform: "uppercase",
+                    letterSpacing: "1px",
+                    marginBottom: "10px",
+                  }}
+                >
+                  🔊 실제 발음
+                </div>
+                <div
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: "700",
+                    lineHeight: "1.5",
+                    color: "#fbbf24",
+                  }}
+                >
+                  {currentSubtitle.pronunciation}
+                </div>
+              </div>
+
+              <div
+                style={{
+                  background: "#111118",
+                  borderRadius: "14px",
+                  padding: "20px",
+                  marginBottom: "16px",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "11px",
+                    color: "#34d399",
+                    fontWeight: "700",
+                    textTransform: "uppercase",
+                    letterSpacing: "1px",
+                    marginBottom: "10px",
+                  }}
+                >
+                  🇰🇷 해석
+                </div>
+                <div
+                  style={{
+                    fontSize: "17px",
+                    fontWeight: "500",
+                    lineHeight: "1.5",
+                    color: "#a5f3c4",
+                  }}
+                >
+                  {currentSubtitle.translation}
+                </div>
+              </div>
+
+              {/* Notes */}
+              {currentSubtitle.notes && currentSubtitle.notes.length > 0 && (
+                <div style={{ marginBottom: "12px" }}>
+                  <div
+                    style={{
+                      fontSize: "11px",
+                      color: "#888",
+                      fontWeight: "700",
+                      textTransform: "uppercase",
+                      letterSpacing: "1px",
+                      marginBottom: "10px",
+                      padding: "0 4px",
+                    }}
+                  >
+                    💡 발음 포인트
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "8px",
+                    }}
+                  >
+                    {currentSubtitle.notes.map((note, i) => (
+                      <div
+                        key={i}
+                        style={{
+                          background: "#111118",
+                          borderRadius: "12px",
+                          padding: "14px 16px",
+                          cursor: "pointer",
+                          border:
+                            expandedNote === i
+                              ? "1px solid #6366f1"
+                              : "1px solid transparent",
+                          transition: "all 0.2s",
+                        }}
+                        onClick={() =>
+                          setExpandedNote(expandedNote === i ? null : i)
+                        }
+                      >
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                          }}
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "12px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "#a5b4fc",
+                                fontWeight: "700",
+                                fontSize: "15px",
+                                fontFamily: "monospace",
+                              }}
+                            >
+                              {note.word}
+                            </span>
+                            <span style={{ color: "#444" }}>→</span>
+                            <span
+                              style={{
+                                color: "#fbbf24",
+                                fontWeight: "700",
+                                fontSize: "15px",
+                              }}
+                            >
+                              {note.actual}
+                            </span>
+                          </div>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              saveExpression(note);
+                            }}
+                            style={{
+                              background: savedExpressions.find(
+                                (e) => e.word === note.word
+                              )
+                                ? "#22c55e"
+                                : "#2a2a3e",
+                              border: "none",
+                              color: "white",
+                              padding: "4px 10px",
+                              borderRadius: "6px",
+                              cursor: "pointer",
+                              fontSize: "12px",
+                            }}
+                          >
+                            {savedExpressions.find(
+                              (e) => e.word === note.word
+                            )
+                              ? "✓"
+                              : "+"}
+                          </button>
+                        </div>
+                        {expandedNote === i && (
+                          <div
+                            style={{
+                              marginTop: "10px",
+                              paddingTop: "10px",
+                              borderTop: "1px solid #222",
+                              color: "#999",
+                              fontSize: "13px",
+                              lineHeight: "1.6",
+                            }}
+                          >
+                            {note.meaning}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
+                <button
+                  onClick={() => {
+                    if (playerInstanceRef.current) {
+                      playerInstanceRef.current.seekTo(currentSubtitle.start);
+                      playerInstanceRef.current.playVideo();
+                    }
+                  }}
+                  style={{
+                    flex: 1,
+                    background: "#6366f1",
+                    border: "none",
+                    color: "white",
+                    padding: "14px",
+                    borderRadius: "12px",
+                    cursor: "pointer",
+                    fontSize: "14px",
+                    fontWeight: "700",
+                  }}
+                >
+                  🔄 다시 듣기
+                </button>
+                <button
+                  onClick={() => {
+                    setShowPanel(false);
+                    if (playerInstanceRef.current)
+                      playerInstanceRef.current.playVideo();
+                  }}
+                  style={{
+                    flex: 1,
+                    background: "#1a1a2e",
+                    border: "1px solid #333",
+                    color: "#e8e8ed",
+                    padding: "14px",
+                    borderRadius: "12px",
+                    cursor: "pointer",
+                    fontSize: "14px",
+                    fontWeight: "700",
+                  }}
+                >
+                  ▶ 계속 재생
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Sentence Timeline */}
+          <div
+            style={{ padding: "16px 20px", borderTop: "1px solid #1a1a2e" }}
+          >
+            <div
+              style={{
+                fontSize: "11px",
+                color: "#555",
+                fontWeight: "700",
+                textTransform: "uppercase",
+                letterSpacing: "1px",
+                marginBottom: "10px",
+              }}
+            >
+              문장 목록
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "4px",
+              }}
+            >
+              {subtitles.map((sub, i) => {
+                const isActive =
+                  currentTime >= sub.start && currentTime < sub.end;
+                return (
+                  <div
+                    key={i}
+                    onClick={() => {
+                      if (playerInstanceRef.current) {
+                        playerInstanceRef.current.seekTo(sub.start);
+                        playerInstanceRef.current.pauseVideo();
+                      }
+                      setCurrentSubtitle(sub);
+                      setShowPanel(true);
+                      setExpandedNote(null);
+                    }}
+                    style={{
+                      padding: "10px 14px",
+                      borderRadius: "10px",
+                      cursor: "pointer",
+                      background: isActive ? "#1a1a3e" : "transparent",
+                      border: isActive
+                        ? "1px solid #6366f1"
+                        : "1px solid transparent",
+                      transition: "all 0.2s",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "12px",
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontSize: "11px",
+                        color: "#555",
+                        minWidth: "36px",
+                        fontFamily: "monospace",
+                      }}
+                    >
+                      {formatTime(sub.start)}
+                    </span>
+                    <span
+                      style={{
+                        fontSize: "13px",
+                        color: isActive ? "#a5b4fc" : "#777",
+                        flex: 1,
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {sub.text}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
+// ── Main App ──
+export default function MovieEnglishApp() {
+  const [videos, setVideos] = useState([]);
+  const [selectedVideo, setSelectedVideo] = useState(null);
+  const [subtitles, setSubtitles] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [showSaved, setShowSaved] = useState(false);
+  const [ytApiReady, setYtApiReady] = useState(false);
+
+  // Load YouTube IFrame API
+  useEffect(() => {
+    if (window.YT && window.YT.Player) {
+      setYtApiReady(true);
+    } else {
+      window.onYouTubeIframeAPIReady = () => setYtApiReady(true);
+      const s = document.createElement("script");
+      s.src = "https://www.youtube.com/iframe_api";
+      s.async = true;
+      document.body.appendChild(s);
+    }
+    return () => {
+      delete window.onYouTubeIframeAPIReady;
+    };
+  }, []);
+
+  // Load video index
+  useEffect(() => {
+    fetch("/videos/index.json")
+      .then((r) => {
+        if (!r.ok) throw new Error("index.json not found");
+        return r.json();
+      })
+      .then((data) => setVideos(data))
+      .catch((err) => console.log("영상 목록 로드 실패:", err.message))
+      .finally(() => setLoading(false));
+  }, []);
+
+  // Load subtitle data when video is selected
+  const handleSelectVideo = (video) => {
+    setLoading(true);
+    fetch(`/videos/${video.id}.json`)
+      .then((r) => {
+        if (!r.ok) throw new Error("data not found");
+        return r.json();
+      })
+      .then((data) => {
+        setSubtitles(data);
+        setSelectedVideo(video);
+      })
+      .catch((err) => {
+        console.error("자막 로드 실패:", err);
+        alert("자막 데이터를 로드할 수 없습니다.");
+      })
+      .finally(() => setLoading(false));
+  };
+
+  const handleBack = () => {
+    setSelectedVideo(null);
+    setSubtitles([]);
+    setShowSaved(false);
+  };
+
+  return (
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "#0a0a0f",
+        color: "#e8e8ed",
+        fontFamily:
+          '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+      }}
+    >
+      {/* Header */}
+      <div
+        style={{
+          padding: "16px 20px",
+          borderBottom: "1px solid #1a1a2e",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "10px",
+            cursor: selectedVideo ? "pointer" : "default",
+          }}
+          onClick={selectedVideo ? handleBack : undefined}
+        >
+          <div
+            style={{
+              width: "32px",
+              height: "32px",
+              borderRadius: "8px",
+              background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "16px",
+            }}
+          >
+            🎬
+          </div>
+          <span style={{ fontWeight: "700", fontSize: "18px" }}>
+            MovieTalk
+          </span>
+        </div>
+        {selectedVideo && (
+          <button
+            onClick={() => setShowSaved(!showSaved)}
+            style={{
+              background: showSaved ? "#6366f1" : "#1a1a2e",
+              border: "none",
+              color: "#e8e8ed",
+              padding: "8px 16px",
+              borderRadius: "20px",
+              cursor: "pointer",
+              fontSize: "13px",
+              fontWeight: "600",
+            }}
+          >
+            📚 저장한 표현
+          </button>
+        )}
+      </div>
+
+      {/* Loading */}
+      {loading && (
+        <div
+          style={{
+            textAlign: "center",
+            padding: "60px 20px",
+            color: "#666",
+          }}
+        >
+          <div style={{ fontSize: "24px", marginBottom: "12px" }}>⏳</div>
+          로딩 중...
+        </div>
+      )}
+
+      {/* Video list or Player */}
+      {!loading && !selectedVideo && (
+        <VideoListScreen videos={videos} onSelect={handleSelectVideo} />
+      )}
+
+      {!loading && selectedVideo && ytApiReady && (
+        <PlayerScreen
+          video={selectedVideo}
+          subtitles={subtitles}
+          onBack={handleBack}
+        />
+      )}
+    </div>
+  );
+}

@@ -1,0 +1,11 @@
+# MovieTalk Python 의존성 패키지
+
+# 유튜브 자막 추출 (1차: transcript api, 2차: yt-dlp)
+youtube-transcript-api>=0.6.0
+yt-dlp>=2024.1.1
+
+# Anthropic Claude API
+anthropic>=0.28.0
+
+# 추가 의존성 (Python 3.8+)
+# requests는 이미 anthropic과 yt-dlp에 의해 자동으로 설치됩니다.
