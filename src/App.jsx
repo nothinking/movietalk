@@ -204,7 +204,7 @@ function VideoListScreen({ videos, onSelect }) {
 }
 
 // ── Player Screen ──
-function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle }) {
+function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIndex }) {
   const playerRef = useRef(null);
   const playerInstanceRef = useRef(null);
   const [playerReady, setPlayerReady] = useState(false);
@@ -225,6 +225,8 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle }) {
   const [isSaving, setIsSaving] = useState(false);
   const saveEditRef = useRef(null);
   const startEditingRef = useRef(null);
+  const isEditingRef = useRef(false);
+  const isSavingRef = useRef(false);
 
   const hasPronunciation =
     subtitles.length > 0 && "pronunciation" in subtitles[0];
@@ -235,18 +237,18 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle }) {
       // Cmd+E / Ctrl+E: 편집 모드 진입
       if ((e.metaKey || e.ctrlKey) && e.key === "e") {
         e.preventDefault();
-        if (!isEditing && startEditingRef.current) startEditingRef.current();
+        if (!isEditingRef.current && startEditingRef.current) startEditingRef.current();
         return;
       }
 
       // Cmd+S / Ctrl+S: 편집 저장
       if ((e.metaKey || e.ctrlKey) && e.key === "s") {
         e.preventDefault();
-        if (isEditing && !isSaving && saveEditRef.current) saveEditRef.current();
+        if (isEditingRef.current && !isSavingRef.current && saveEditRef.current) saveEditRef.current();
         return;
       }
 
-      if (isEditing) return;
+      if (isEditingRef.current) return;
       if (!playerInstanceRef.current) return;
 
       // Space: 일시정지/재생 토글
@@ -287,12 +289,13 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle }) {
       loopTargetRef.current = null;
       setIsLooping(false);
       setShowPanel(false);
+      setHash(video.id, target.index);
       playerInstanceRef.current.seekTo(target.start);
       playerInstanceRef.current.playVideo();
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [subtitles, isEditing, isSaving]);
+  }, [subtitles]);
 
   // Create YouTube player
   useEffect(() => {
@@ -312,6 +315,14 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle }) {
             setPlayerReady(true);
             if (speed !== 1)
               playerInstanceRef.current.setPlaybackRate(speed);
+            // 퍼머링크로 진입 시 해당 자막 위치로 이동
+            if (initialSubIndex != null) {
+              const target = subtitles.find((s) => s.index === initialSubIndex);
+              if (target) {
+                playerInstanceRef.current.seekTo(target.start);
+                setCurrentTime(target.start);
+              }
+            }
           },
           onStateChange: (event) => {
             const YT = window.YT;
@@ -380,6 +391,11 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle }) {
   const activeSubtitle = subtitles.find(
     (s) => currentTime >= s.start && currentTime < s.end
   );
+  const lastHashIndexRef = useRef(null);
+  if (activeSubtitle && activeSubtitle.index !== lastHashIndexRef.current) {
+    lastHashIndexRef.current = activeSubtitle.index;
+    setHash(video.id, activeSubtitle.index);
+  }
 
   const togglePlay = () => {
     if (!playerInstanceRef.current) return;
@@ -434,18 +450,21 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle }) {
         translation: currentSubtitle.translation || "",
       });
       setIsEditing(true);
+      isEditingRef.current = true;
     }
   };
   startEditingRef.current = startEditing;
 
   const cancelEditing = () => {
     setIsEditing(false);
+    isEditingRef.current = false;
     setEditData({ pronunciation: "", translation: "" });
   };
 
   const saveEdit = async () => {
     if (!currentSubtitle) return;
     setIsSaving(true);
+    isSavingRef.current = true;
     try {
       const res = await fetch(
         `/api/subtitle/${video.id}/${currentSubtitle.index}`,
@@ -464,10 +483,12 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle }) {
       if (onUpdateSubtitle) onUpdateSubtitle(result.subtitle);
       setCurrentSubtitle(result.subtitle);
       setIsEditing(false);
+      isEditingRef.current = false;
     } catch (err) {
       alert("저장 실패: " + err.message);
     } finally {
       setIsSaving(false);
+      isSavingRef.current = false;
     }
   };
   saveEditRef.current = saveEdit;
@@ -1266,6 +1287,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle }) {
                         loopTargetRef.current = null;
                         setIsLooping(false);
                         setShowPanel(false);
+                        setHash(video.id, sub.index);
                         playerInstanceRef.current.seekTo(sub.start);
                         playerInstanceRef.current.playVideo();
                       }
@@ -1306,6 +1328,28 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle }) {
                     >
                       {sub.text}
                     </span>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const url = `${window.location.origin}${window.location.pathname}#v=${video.id}&s=${sub.index}`;
+                        navigator.clipboard.writeText(url);
+                        e.currentTarget.textContent = "✓";
+                        setTimeout(() => { e.currentTarget.textContent = "🔗"; }, 1000);
+                      }}
+                      style={{
+                        background: "transparent",
+                        border: "none",
+                        color: "#444",
+                        cursor: "pointer",
+                        fontSize: "12px",
+                        padding: "2px 6px",
+                        borderRadius: "4px",
+                        flexShrink: 0,
+                      }}
+                      title="퍼머링크 복사"
+                    >
+                      🔗
+                    </button>
                   </div>
                 );
               })}
@@ -1317,11 +1361,29 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle }) {
   );
 }
 
+// ── Hash helpers ──
+function parseHash() {
+  const hash = window.location.hash.slice(1);
+  const params = new URLSearchParams(hash);
+  return { videoId: params.get("v"), subtitleIndex: params.get("s") ? parseInt(params.get("s")) : null };
+}
+
+function setHash(videoId, subtitleIndex) {
+  if (!videoId) {
+    history.replaceState(null, "", window.location.pathname);
+    return;
+  }
+  let h = `#v=${videoId}`;
+  if (subtitleIndex != null) h += `&s=${subtitleIndex}`;
+  history.replaceState(null, "", h);
+}
+
 // ── Main App ──
 export default function MovieEnglishApp() {
   const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [subtitles, setSubtitles] = useState([]);
+  const [initialSubIndex, setInitialSubIndex] = useState(null);
   const [loading, setLoading] = useState(true);
   const [showSaved, setShowSaved] = useState(false);
   const [ytApiReady, setYtApiReady] = useState(false);
@@ -1342,20 +1404,32 @@ export default function MovieEnglishApp() {
     };
   }, []);
 
-  // Load video index
+  // Load video index + handle permalink on init
   useEffect(() => {
     fetch("/videos/index.json")
       .then((r) => {
         if (!r.ok) throw new Error("index.json not found");
         return r.json();
       })
-      .then((data) => setVideos(data))
+      .then((data) => {
+        setVideos(data);
+        // 해시에 영상 ID가 있으면 자동 선택
+        const { videoId, subtitleIndex } = parseHash();
+        if (videoId) {
+          const found = data.find((v) => v.id === videoId);
+          if (found) {
+            setInitialSubIndex(subtitleIndex);
+            loadVideo(found);
+            return;
+          }
+        }
+      })
       .catch((err) => console.log("영상 목록 로드 실패:", err.message))
       .finally(() => setLoading(false));
   }, []);
 
-  // Load subtitle data when video is selected
-  const handleSelectVideo = (video) => {
+  // Load subtitle data
+  const loadVideo = (video) => {
     setLoading(true);
     fetch(`/videos/${video.id}.json`)
       .then((r) => {
@@ -1373,10 +1447,17 @@ export default function MovieEnglishApp() {
       .finally(() => setLoading(false));
   };
 
+  const handleSelectVideo = (video) => {
+    setInitialSubIndex(null);
+    setHash(video.id);
+    loadVideo(video);
+  };
+
   const handleBack = () => {
     setSelectedVideo(null);
     setSubtitles([]);
     setShowSaved(false);
+    setHash(null);
   };
 
   const handleUpdateSubtitle = (updated) => {
@@ -1476,6 +1557,7 @@ export default function MovieEnglishApp() {
           subtitles={subtitles}
           onBack={handleBack}
           onUpdateSubtitle={handleUpdateSubtitle}
+          initialSubIndex={initialSubIndex}
         />
       )}
     </div>
