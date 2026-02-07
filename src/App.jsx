@@ -204,7 +204,7 @@ function VideoListScreen({ videos, onSelect }) {
 }
 
 // ── Player Screen ──
-function PlayerScreen({ video, subtitles, onBack }) {
+function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle }) {
   const playerRef = useRef(null);
   const playerInstanceRef = useRef(null);
   const [playerReady, setPlayerReady] = useState(false);
@@ -219,9 +219,80 @@ function PlayerScreen({ video, subtitles, onBack }) {
   const pollIntervalRef = useRef(null);
   const loopTargetRef = useRef(null);
   const [isLooping, setIsLooping] = useState(false);
+  const sentenceRefs = useRef([]);
+  const [isEditing, setIsEditing] = useState(false);
+  const [editData, setEditData] = useState({ pronunciation: "", translation: "" });
+  const [isSaving, setIsSaving] = useState(false);
+  const saveEditRef = useRef(null);
+  const startEditingRef = useRef(null);
 
   const hasPronunciation =
     subtitles.length > 0 && "pronunciation" in subtitles[0];
+
+  // 키보드 단축키: ←→ 문장 이동, Space 일시정지/재생, Cmd+S 저장
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      // Cmd+E / Ctrl+E: 편집 모드 진입
+      if ((e.metaKey || e.ctrlKey) && e.key === "e") {
+        e.preventDefault();
+        if (!isEditing && startEditingRef.current) startEditingRef.current();
+        return;
+      }
+
+      // Cmd+S / Ctrl+S: 편집 저장
+      if ((e.metaKey || e.ctrlKey) && e.key === "s") {
+        e.preventDefault();
+        if (isEditing && !isSaving && saveEditRef.current) saveEditRef.current();
+        return;
+      }
+
+      if (isEditing) return;
+      if (!playerInstanceRef.current) return;
+
+      // Space: 일시정지/재생 토글
+      if (e.key === " " || e.code === "Space") {
+        e.preventDefault();
+        const state = playerInstanceRef.current.getPlayerState();
+        if (state === window.YT.PlayerState.PLAYING) {
+          playerInstanceRef.current.pauseVideo();
+        } else {
+          playerInstanceRef.current.playVideo();
+        }
+        return;
+      }
+
+      // ←→: 문장 이동
+      if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+      if (subtitles.length === 0) return;
+      e.preventDefault();
+
+      const ct = playerInstanceRef.current.getCurrentTime();
+      let currentIdx = subtitles.findIndex(
+        (s) => ct >= s.start && ct < s.end
+      );
+      if (currentIdx === -1) {
+        currentIdx = subtitles.findIndex((s) => s.start > ct);
+        if (currentIdx === -1) currentIdx = subtitles.length - 1;
+        else if (currentIdx > 0) currentIdx -= 1;
+      }
+
+      let nextIdx;
+      if (e.key === "ArrowLeft") {
+        nextIdx = Math.max(0, currentIdx - 1);
+      } else {
+        nextIdx = Math.min(subtitles.length - 1, currentIdx + 1);
+      }
+
+      const target = subtitles[nextIdx];
+      loopTargetRef.current = null;
+      setIsLooping(false);
+      setShowPanel(false);
+      playerInstanceRef.current.seekTo(target.start);
+      playerInstanceRef.current.playVideo();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [subtitles, isEditing, isSaving]);
 
   // Create YouTube player
   useEffect(() => {
@@ -355,6 +426,51 @@ function PlayerScreen({ video, subtitles, onBack }) {
       ]);
     }
   };
+
+  const startEditing = () => {
+    if (currentSubtitle && showPanel) {
+      setEditData({
+        pronunciation: currentSubtitle.pronunciation || "",
+        translation: currentSubtitle.translation || "",
+      });
+      setIsEditing(true);
+    }
+  };
+  startEditingRef.current = startEditing;
+
+  const cancelEditing = () => {
+    setIsEditing(false);
+    setEditData({ pronunciation: "", translation: "" });
+  };
+
+  const saveEdit = async () => {
+    if (!currentSubtitle) return;
+    setIsSaving(true);
+    try {
+      const res = await fetch(
+        `/api/subtitle/${video.id}/${currentSubtitle.index}`,
+        {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            pronunciation: editData.pronunciation,
+            translation: editData.translation,
+          }),
+        }
+      );
+      if (!res.ok) throw new Error("저장 실패");
+      const result = await res.json();
+      // 로컬 state 업데이트
+      if (onUpdateSubtitle) onUpdateSubtitle(result.subtitle);
+      setCurrentSubtitle(result.subtitle);
+      setIsEditing(false);
+    } catch (err) {
+      alert("저장 실패: " + err.message);
+    } finally {
+      setIsSaving(false);
+    }
+  };
+  saveEditRef.current = saveEdit;
 
   return (
     <>
@@ -769,26 +885,76 @@ function PlayerScreen({ video, subtitles, onBack }) {
               >
                 <div
                   style={{
-                    fontSize: "11px",
-                    color: "#fbbf24",
-                    fontWeight: "700",
-                    textTransform: "uppercase",
-                    letterSpacing: "1px",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
                     marginBottom: "10px",
                   }}
                 >
-                  🔊 실제 발음
+                  <div
+                    style={{
+                      fontSize: "11px",
+                      color: "#fbbf24",
+                      fontWeight: "700",
+                      textTransform: "uppercase",
+                      letterSpacing: "1px",
+                    }}
+                  >
+                    🔊 실제 발음
+                  </div>
+                  {!isEditing && (
+                    <button
+                      onClick={startEditing}
+                      style={{
+                        background: "transparent",
+                        border: "1px solid #444",
+                        color: "#888",
+                        padding: "3px 10px",
+                        borderRadius: "6px",
+                        cursor: "pointer",
+                        fontSize: "12px",
+                      }}
+                    >
+                      ✏️ 수정
+                    </button>
+                  )}
                 </div>
-                <div
-                  style={{
-                    fontSize: "20px",
-                    fontWeight: "700",
-                    lineHeight: "1.5",
-                    color: "#fbbf24",
-                  }}
-                >
-                  {currentSubtitle.pronunciation}
-                </div>
+                {isEditing ? (
+                  <input
+                    type="text"
+                    value={editData.pronunciation}
+                    onChange={(e) =>
+                      setEditData((d) => ({ ...d, pronunciation: e.target.value }))
+                    }
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" && !isSaving) saveEdit();
+                    }}
+                    style={{
+                      width: "100%",
+                      fontSize: "20px",
+                      fontWeight: "700",
+                      lineHeight: "1.5",
+                      color: "#fbbf24",
+                      background: "#0d0d14",
+                      border: "1px solid #6366f1",
+                      borderRadius: "8px",
+                      padding: "8px 12px",
+                      outline: "none",
+                      boxSizing: "border-box",
+                    }}
+                  />
+                ) : (
+                  <div
+                    style={{
+                      fontSize: "20px",
+                      fontWeight: "700",
+                      lineHeight: "1.5",
+                      color: "#fbbf24",
+                    }}
+                  >
+                    {currentSubtitle.pronunciation}
+                  </div>
+                )}
               </div>
 
               <div
@@ -811,17 +977,84 @@ function PlayerScreen({ video, subtitles, onBack }) {
                 >
                   🇰🇷 해석
                 </div>
-                <div
-                  style={{
-                    fontSize: "17px",
-                    fontWeight: "500",
-                    lineHeight: "1.5",
-                    color: "#a5f3c4",
-                  }}
-                >
-                  {currentSubtitle.translation}
-                </div>
+                {isEditing ? (
+                  <input
+                    type="text"
+                    value={editData.translation}
+                    onChange={(e) =>
+                      setEditData((d) => ({ ...d, translation: e.target.value }))
+                    }
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" && !isSaving) saveEdit();
+                    }}
+                    style={{
+                      width: "100%",
+                      fontSize: "17px",
+                      fontWeight: "500",
+                      lineHeight: "1.5",
+                      color: "#a5f3c4",
+                      background: "#0d0d14",
+                      border: "1px solid #6366f1",
+                      borderRadius: "8px",
+                      padding: "8px 12px",
+                      outline: "none",
+                      boxSizing: "border-box",
+                    }}
+                  />
+                ) : (
+                  <div
+                    style={{
+                      fontSize: "17px",
+                      fontWeight: "500",
+                      lineHeight: "1.5",
+                      color: "#a5f3c4",
+                    }}
+                  >
+                    {currentSubtitle.translation}
+                  </div>
+                )}
               </div>
+
+              {/* 편집 모드 저장/취소 버튼 */}
+              {isEditing && (
+                <div style={{ display: "flex", gap: "8px", marginBottom: "12px" }}>
+                  <button
+                    onClick={saveEdit}
+                    disabled={isSaving}
+                    style={{
+                      flex: 1,
+                      background: "#22c55e",
+                      border: "none",
+                      color: "white",
+                      padding: "12px",
+                      borderRadius: "10px",
+                      cursor: isSaving ? "wait" : "pointer",
+                      fontSize: "14px",
+                      fontWeight: "700",
+                      opacity: isSaving ? 0.6 : 1,
+                    }}
+                  >
+                    {isSaving ? "저장 중..." : "✓ 저장"}
+                  </button>
+                  <button
+                    onClick={cancelEditing}
+                    disabled={isSaving}
+                    style={{
+                      flex: 1,
+                      background: "#1a1a2e",
+                      border: "1px solid #333",
+                      color: "#999",
+                      padding: "12px",
+                      borderRadius: "10px",
+                      cursor: "pointer",
+                      fontSize: "14px",
+                      fontWeight: "700",
+                    }}
+                  >
+                    ✕ 취소
+                  </button>
+                </div>
+              )}
 
               {/* Notes */}
               {currentSubtitle.notes && currentSubtitle.notes.length > 0 && (
@@ -1146,6 +1379,12 @@ export default function MovieEnglishApp() {
     setShowSaved(false);
   };
 
+  const handleUpdateSubtitle = (updated) => {
+    setSubtitles((prev) =>
+      prev.map((s) => (s.index === updated.index ? updated : s))
+    );
+  };
+
   return (
     <div
       style={{
@@ -1236,6 +1475,7 @@ export default function MovieEnglishApp() {
           video={selectedVideo}
           subtitles={subtitles}
           onBack={handleBack}
+          onUpdateSubtitle={handleUpdateSubtitle}
         />
       )}
     </div>
