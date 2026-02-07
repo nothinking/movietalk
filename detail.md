@@ -162,12 +162,20 @@ yt-dlp (자막 + 오디오 추출)
 
 ---
 
-## 7. 다음 단계 (TODO)
+## 7. 진행 현황 (TODO)
 
-- [ ] 유튜브 자막 추출 파이프라인 구현 (yt-dlp)
-- [ ] Claude API 연동하여 발음 변환 자동화
-- [ ] YouTube IFrame API 연동하여 실제 영상 재생
+### 완료
+- [x] 유튜브 자막 추출 파이프라인 구현 (youtube-transcript-api + yt-dlp fallback)
+- [x] Claude API 연동하여 발음 변환 자동화 (555개 자막 처리 완료)
+- [x] YouTube IFrame API 연동하여 실제 영상 재생
+- [x] 실시간 한글 발음 자막 표시 (재생 중 상시)
+- [x] 일시정지 시 상세 학습 패널 (발음 포인트 설명)
+- [x] 다중 영상 지원 (영상 목록 → 선택 → 재생)
+- [x] 새 영상 추가 CLI 파이프라인 (add_video.py)
+
+### 미완료
 - [ ] Whisper 통합으로 실제 발화 기반 발음 추출
 - [ ] 쉐도잉 모드 (녹음 & 비교)
 - [ ] 간격 반복(Spaced Repetition) 복습 시스템
 - [ ] 발음 드릴 (R/L, F/P, V/B, TH/D 최소 대립쌍 훈련)
+- [ ] 모바일 반응형 UI
