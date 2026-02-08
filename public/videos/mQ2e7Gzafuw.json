@@ -1,0 +1,3252 @@
+[
+  {
+    "index": 1,
+    "start": 0.48,
+    "end": 3.36,
+    "text": "damn rolos",
+    "pronunciation": "댐 롤로스",
+    "translation": "망할 롤로스",
+    "notes": [
+      {
+        "word": "damn",
+        "actual": "댐",
+        "meaning": "망할, 저주하는"
+      },
+      {
+        "word": "rolos",
+        "actual": "롤로스",
+        "meaning": "롤로스 (사탕 브랜드)"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "start": 4.08,
+    "end": 6.0,
+    "text": "hey you're back hey how was your",
+    "pronunciation": "헤이 유어 백 헤이 하우 와즈 유어",
+    "translation": "안녕 넌 돌아왔네 안녕 어땠어",
+    "notes": [
+      {
+        "word": "hey",
+        "actual": "헤이",
+        "meaning": "안녕, 이봐"
+      },
+      {
+        "word": "you're",
+        "actual": "유어",
+        "meaning": "넌, 당신은"
+      },
+      {
+        "word": "back",
+        "actual": "백",
+        "meaning": "돌아왔다"
+      },
+      {
+        "word": "how",
+        "actual": "하우",
+        "meaning": "어떻게, 어떤"
+      },
+      {
+        "word": "was",
+        "actual": "와즈",
+        "meaning": "있었다"
+      },
+      {
+        "word": "your",
+        "actual": "유어",
+        "meaning": "당신의, 넌"
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "start": 6.0,
+    "end": 8.32,
+    "text": "conference that was terrible i fought",
+    "pronunciation": "컨퍼런스 댓 와즈 터리블 아이 포트",
+    "translation": "컨퍼런스는 끔찍했어 난 싸웠어",
+    "notes": [
+      {
+        "word": "conference",
+        "actual": "컨퍼런스",
+        "meaning": "회의, 학술대회"
+      },
+      {
+        "word": "that",
+        "actual": "댓",
+        "meaning": "그것, 저것"
+      },
+      {
+        "word": "was",
+        "actual": "와즈",
+        "meaning": "있었다"
+      },
+      {
+        "word": "terrible",
+        "actual": "터리블",
+        "meaning": "끔찍한, 형편없는"
+      },
+      {
+        "word": "i",
+        "actual": "아이",
+        "meaning": "나는"
+      },
+      {
+        "word": "fought",
+        "actual": "포트",
+        "meaning": "싸웠다"
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "start": 8.32,
+    "end": 9.28,
+    "text": "with",
+    "pronunciation": "윗",
+    "translation": "~와, ~같은, ~에",
+    "notes": [
+      {
+        "word": "with",
+        "actual": "윗",
+        "meaning": "~와 함께, ~을 가지고"
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "start": 9.28,
+    "end": 11.44,
+    "text": "my colleagues you know the entire time",
+    "pronunciation": "마이 칼리그즈 유노우 디 엔타이어 타임",
+    "translation": "내 동료들과 당신도 알다시피 내내",
+    "notes": [
+      {
+        "word": "my",
+        "actual": "마이",
+        "meaning": "내, 나의"
+      },
+      {
+        "word": "colleagues",
+        "actual": "칼리그즈",
+        "meaning": "동료들"
+      },
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신, 너"
+      },
+      {
+        "word": "know",
+        "actual": "노우",
+        "meaning": "알다"
+      },
+      {
+        "word": "the",
+        "actual": "디",
+        "meaning": "그, 저"
+      },
+      {
+        "word": "entire",
+        "actual": "엔타이어",
+        "meaning": "전체의, 전부"
+      },
+      {
+        "word": "time",
+        "actual": "타임",
+        "meaning": "시간, 때"
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "start": 11.44,
+    "end": 14.48,
+    "text": "are you kidding with this",
+    "pronunciation": "아 소 유어 위켄드 와즈 어 토탈 버스트 어",
+    "translation": "아 그래서 넌 이번 주말이 완전히 실패했어 어",
+    "notes": [
+      {
+        "word": "are",
+        "actual": "아",
+        "meaning": "~이다, 있다"
+      },
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신, 너"
+      },
+      {
+        "word": "kidding",
+        "actual": "키딩",
+        "meaning": "농담치다, 장난치다"
+      },
+      {
+        "word": "with",
+        "actual": "윗",
+        "meaning": "~과 함께"
+      },
+      {
+        "word": "this",
+        "actual": "디스",
+        "meaning": "이것, 이런"
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "start": 14.48,
+    "end": 16.56,
+    "text": "uh so your weekend was a total bust uh",
+    "pronunciation": "어 소 유어 위켄드 와즈 어 토탈 버스트 어",
+    "translation": "어 그래서 당신 주말이 완전히 실패했어",
+    "notes": [
+      {
+        "word": "uh",
+        "actual": "어",
+        "meaning": "음, 어"
+      },
+      {
+        "word": "so",
+        "actual": "소우",
+        "meaning": "그래서, 따라서"
+      },
+      {
+        "word": "your",
+        "actual": "유어",
+        "meaning": "당신의"
+      },
+      {
+        "word": "weekend",
+        "actual": "위켄드",
+        "meaning": "주말"
+      },
+      {
+        "word": "was",
+        "actual": "와즈",
+        "meaning": "있었다"
+      },
+      {
+        "word": "a",
+        "actual": "어",
+        "meaning": "하나, 한 개"
+      },
+      {
+        "word": "total",
+        "actual": "토탈",
+        "meaning": "완전한, 전부"
+      },
+      {
+        "word": "bust",
+        "actual": "버스트",
+        "meaning": "실패"
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "start": 16.56,
+    "end": 18.16,
+    "text": "no i got to see donald trump waiting for",
+    "pronunciation": "노우 아이 갓 투 씨 도널드 트럼프 웨이팅 포르",
+    "translation": "아니오 난 도널드 트럼프를 봤어 기다리고 있었어",
+    "notes": [
+      {
+        "word": "no",
+        "actual": "노우",
+        "meaning": "아니오"
+      },
+      {
+        "word": "i",
+        "actual": "아이",
+        "meaning": "나는"
+      },
+      {
+        "word": "got",
+        "actual": "갓",
+        "meaning": "얻었다"
+      },
+      {
+        "word": "to",
+        "actual": "투",
+        "meaning": "~하기 위해"
+      },
+      {
+        "word": "see",
+        "actual": "씨",
+        "meaning": "보다"
+      },
+      {
+        "word": "donald",
+        "actual": "도널드",
+        "meaning": "도널드 (이름)"
+      },
+      {
+        "word": "trump",
+        "actual": "트럼프",
+        "meaning": "트럼프"
+      },
+      {
+        "word": "waiting",
+        "actual": "웨이팅",
+        "meaning": "기다리는, 대기하는"
+      },
+      {
+        "word": "for",
+        "actual": "포르",
+        "meaning": "~을 위해"
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "start": 18.16,
+    "end": 20.64,
+    "text": "an elevator",
+    "pronunciation": "언 엘리베이터",
+    "translation": "엘리베이터",
+    "notes": [
+      {
+        "word": "an",
+        "actual": "언",
+        "meaning": "하나의 (a의 변형)"
+      },
+      {
+        "word": "elevator",
+        "actual": "엘리베이터",
+        "meaning": "엘리베이터, 승강기"
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "start": 21.68,
+    "end": 25.04,
+    "text": "hi hey you're back too yeah um jenna can",
+    "pronunciation": "하이 헤이 유어 백 투 예 어 제나 캔",
+    "translation": "안녕 헤이 넌 돌아왔어도 네 어 제나 할 수 있어",
+    "notes": [
+      {
+        "word": "hi",
+        "actual": "하이",
+        "meaning": "안녕, 하이"
+      },
+      {
+        "word": "hey",
+        "actual": "헤이",
+        "meaning": "안녕, 이봐"
+      },
+      {
+        "word": "you're",
+        "actual": "유어",
+        "meaning": "당신은"
+      },
+      {
+        "word": "back",
+        "actual": "백",
+        "meaning": "돌아왔다"
+      },
+      {
+        "word": "too",
+        "actual": "투",
+        "meaning": "또한, 역시"
+      },
+      {
+        "word": "yeah",
+        "actual": "예",
+        "meaning": "네, 그래"
+      },
+      {
+        "word": "um",
+        "actual": "어",
+        "meaning": "음, 어"
+      },
+      {
+        "word": "jenna",
+        "actual": "제나",
+        "meaning": "제나 (이름)"
+      },
+      {
+        "word": "can",
+        "actual": "캔",
+        "meaning": "할 수 있다"
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "start": 25.04,
+    "end": 26.48,
+    "text": "i talk to you outside for just a second",
+    "pronunciation": "아이 토크 투 유 아웃사이드 포르 저스트 어 세컨드",
+    "translation": "난 너한테 밖에서 얘기할 수 있어 그냥 잠깐",
+    "notes": [
+      {
+        "word": "i",
+        "actual": "아이",
+        "meaning": "나는"
+      },
+      {
+        "word": "talk",
+        "actual": "토크",
+        "meaning": "말하다"
+      },
+      {
+        "word": "to",
+        "actual": "투",
+        "meaning": "~에게"
+      },
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "너, 당신"
+      },
+      {
+        "word": "outside",
+        "actual": "아웃사이드",
+        "meaning": "밖에, 외부에"
+      },
+      {
+        "word": "for",
+        "actual": "포르",
+        "meaning": "~을 위해"
+      },
+      {
+        "word": "just",
+        "actual": "저스트",
+        "meaning": "방금, 그냥"
+      },
+      {
+        "word": "a",
+        "actual": "어",
+        "meaning": "하나"
+      },
+      {
+        "word": "second",
+        "actual": "세컨드",
+        "meaning": "초, 잠깐"
+      }
+    ]
+  },
+  {
+    "index": 12,
+    "start": 26.48,
+    "end": 29.92,
+    "text": "hey how was your chef thing it's awful i",
+    "pronunciation": "헤이 하우 와즈 유어 셰프 싱 잇스 어풀 아이",
+    "translation": "안녕 당신 요리사 일은 어땠어 끔찍해 난",
+    "notes": [
+      {
+        "word": "hey",
+        "actual": "헤이",
+        "meaning": "안녕, 이봐"
+      },
+      {
+        "word": "how",
+        "actual": "하우",
+        "meaning": "어떻게"
+      },
+      {
+        "word": "was",
+        "actual": "와즈",
+        "meaning": "있었다"
+      },
+      {
+        "word": "your",
+        "actual": "유어",
+        "meaning": "당신의"
+      },
+      {
+        "word": "chef",
+        "actual": "셰프",
+        "meaning": "요리사, 셰프"
+      },
+      {
+        "word": "thing",
+        "actual": "싱",
+        "meaning": "것, 일"
+      },
+      {
+        "word": "it's",
+        "actual": "잇스",
+        "meaning": "그것은"
+      },
+      {
+        "word": "awful",
+        "actual": "어풀",
+        "meaning": "끔찍한"
+      },
+      {
+        "word": "i",
+        "actual": "아이",
+        "meaning": "나는"
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "start": 29.92,
+    "end": 31.36,
+    "text": "guess some people just don't appreciate",
+    "pronunciation": "게스 썸 피플 저스트 돈트 어프리셰이트",
+    "translation": "추측해봐 어떤 사람들은 그냥 감상하지 않아",
+    "notes": [
+      {
+        "word": "guess",
+        "actual": "게스",
+        "meaning": "추측하다"
+      },
+      {
+        "word": "some",
+        "actual": "썸",
+        "meaning": "어떤, 일부"
+      },
+      {
+        "word": "people",
+        "actual": "피플",
+        "meaning": "사람들"
+      },
+      {
+        "word": "just",
+        "actual": "저스트",
+        "meaning": "그냥, 방금"
+      },
+      {
+        "word": "don't",
+        "actual": "돈트",
+        "meaning": "~하지 않는다"
+      },
+      {
+        "word": "appreciate",
+        "actual": "어프리셰이트",
+        "meaning": "감상하다, 고마워하다"
+      }
+    ]
+  },
+  {
+    "index": 14,
+    "start": 31.36,
+    "end": 32.64,
+    "text": "really good food",
+    "pronunciation": "릴리 굿 푸드",
+    "translation": "정말 좋은 음식",
+    "notes": [
+      {
+        "word": "really",
+        "actual": "릴리",
+        "meaning": "정말, 진정으로"
+      },
+      {
+        "word": "good",
+        "actual": "굿",
+        "meaning": "좋다"
+      },
+      {
+        "word": "food",
+        "actual": "푸드",
+        "meaning": "음식"
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "start": 32.64,
+    "end": 33.84,
+    "text": "well maybe it was the kind of food that",
+    "pronunciation": "웰 메이비 잇 와즈 더 카인드 어브 푸드 댓",
+    "translation": "글쎄 아마도 그건 그런 종류의 음식이었어",
+    "notes": [
+      {
+        "word": "well",
+        "actual": "웰",
+        "meaning": "글쎄, 음"
+      },
+      {
+        "word": "maybe",
+        "actual": "메이비",
+        "meaning": "아마도, 혹시"
+      },
+      {
+        "word": "it",
+        "actual": "잇",
+        "meaning": "그것"
+      },
+      {
+        "word": "was",
+        "actual": "와즈",
+        "meaning": "있었다"
+      },
+      {
+        "word": "the",
+        "actual": "더",
+        "meaning": "그, 저"
+      },
+      {
+        "word": "kind",
+        "actual": "카인드",
+        "meaning": "종류"
+      },
+      {
+        "word": "of",
+        "actual": "어브",
+        "meaning": "~의"
+      },
+      {
+        "word": "food",
+        "actual": "푸드",
+        "meaning": "음식"
+      },
+      {
+        "word": "that",
+        "actual": "댓",
+        "meaning": "그, 저"
+      }
+    ]
+  },
+  {
+    "index": 16,
+    "start": 33.84,
+    "end": 35.76,
+    "text": "tasted good at first but then",
+    "pronunciation": "테이스티드 굿 앳 퍼스트 벗 덴",
+    "translation": "처음에는 맛이 좋았지만 그 다음에",
+    "notes": [
+      {
+        "word": "tasted",
+        "actual": "테이스티드",
+        "meaning": "맛을 보았다"
+      },
+      {
+        "word": "good",
+        "actual": "굿",
+        "meaning": "좋다"
+      },
+      {
+        "word": "at",
+        "actual": "앳",
+        "meaning": "~에, ~에서"
+      },
+      {
+        "word": "first",
+        "actual": "퍼스트",
+        "meaning": "처음"
+      },
+      {
+        "word": "but",
+        "actual": "벗",
+        "meaning": "하지만"
+      },
+      {
+        "word": "then",
+        "actual": "덴",
+        "meaning": "그 다음, 그러면"
+      }
+    ]
+  },
+  {
+    "index": 17,
+    "start": 35.76,
+    "end": 39.6,
+    "text": "made everybody vomit and have diarrhea",
+    "pronunciation": "메이드 에브리바디 보밋 언드 해브 다이러리어",
+    "translation": "모두가 토하게 했고 설사를 하게 했어",
+    "notes": [
+      {
+        "word": "made",
+        "actual": "메이드",
+        "meaning": "만들었다"
+      },
+      {
+        "word": "everybody",
+        "actual": "에브리바디",
+        "meaning": "모두, 모든 사람"
+      },
+      {
+        "word": "vomit",
+        "actual": "보밋",
+        "meaning": "토하다"
+      },
+      {
+        "word": "and",
+        "actual": "언드",
+        "meaning": "그리고"
+      },
+      {
+        "word": "have",
+        "actual": "해브",
+        "meaning": "가지다"
+      },
+      {
+        "word": "diarrhea",
+        "actual": "다이러리어",
+        "meaning": "설사"
+      }
+    ]
+  },
+  {
+    "index": 18,
+    "start": 41.04,
+    "end": 44.4,
+    "text": "tander vinegar",
+    "pronunciation": "탠더 비니거",
+    "translation": "타이거 식초",
+    "notes": [
+      {
+        "word": "tander",
+        "actual": "탠더",
+        "meaning": "불명확한 단어"
+      },
+      {
+        "word": "vinegar",
+        "actual": "비니거",
+        "meaning": "식초"
+      }
+    ]
+  },
+  {
+    "index": 19,
+    "start": 44.4,
+    "end": 48.4,
+    "text": "all right hey mr bing",
+    "pronunciation": "올 라이트 헤이 미스터 빙",
+    "translation": "좋아 안녕 빙씨",
+    "notes": [
+      {
+        "word": "all",
+        "actual": "올",
+        "meaning": "모든, 전부"
+      },
+      {
+        "word": "right",
+        "actual": "라이트",
+        "meaning": "맞다, 좋다"
+      },
+      {
+        "word": "hey",
+        "actual": "헤이",
+        "meaning": "안녕, 이봐"
+      },
+      {
+        "word": "mr",
+        "actual": "미스터",
+        "meaning": "~씨, 남성 호칭"
+      },
+      {
+        "word": "bing",
+        "actual": "빙",
+        "meaning": "빙 (이름)"
+      }
+    ]
+  },
+  {
+    "index": 20,
+    "start": 48.4,
+    "end": 52.4,
+    "text": "that uh hotel you stayed at called",
+    "pronunciation": "댓 어 호텔 유 스테이드 앳 콜드",
+    "translation": "그 당신이 머물렀던 호텔이 불렀어",
+    "notes": [
+      {
+        "word": "that",
+        "actual": "댓",
+        "meaning": "그, 저"
+      },
+      {
+        "word": "uh",
+        "actual": "어",
+        "meaning": "음"
+      },
+      {
+        "word": "hotel",
+        "actual": "호텔",
+        "meaning": "호텔"
+      },
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신"
+      },
+      {
+        "word": "stayed",
+        "actual": "스테이드",
+        "meaning": "머물렀다"
+      },
+      {
+        "word": "at",
+        "actual": "앳",
+        "meaning": "~에"
+      },
+      {
+        "word": "called",
+        "actual": "콜드",
+        "meaning": "불렀다"
+      }
+    ]
+  },
+  {
+    "index": 21,
+    "start": 52.4,
+    "end": 54.24,
+    "text": "said someone left an eyelash curler in",
+    "pronunciation": "세이드 썸원 레프트 언 아이래시 컬러 인",
+    "translation": "누군가가 눈썹 컬러를 남겨뒀다고 했어",
+    "notes": [
+      {
+        "word": "said",
+        "actual": "세이드",
+        "meaning": "말했다"
+      },
+      {
+        "word": "someone",
+        "actual": "썸원",
+        "meaning": "누군가"
+      },
+      {
+        "word": "left",
+        "actual": "레프트",
+        "meaning": "남겼다"
+      },
+      {
+        "word": "an",
+        "actual": "언",
+        "meaning": "하나의"
+      },
+      {
+        "word": "eyelash",
+        "actual": "아이래시",
+        "meaning": "속눈썹"
+      },
+      {
+        "word": "curler",
+        "actual": "컬러",
+        "meaning": "컬러, 말기"
+      },
+      {
+        "word": "in",
+        "actual": "인",
+        "meaning": "~에, ~안에"
+      }
+    ]
+  },
+  {
+    "index": 22,
+    "start": 54.24,
+    "end": 58.08,
+    "text": "your room",
+    "pronunciation": "유어 룸",
+    "translation": "당신 방",
+    "notes": [
+      {
+        "word": "your",
+        "actual": "유어",
+        "meaning": "당신의"
+      },
+      {
+        "word": "room",
+        "actual": "룸",
+        "meaning": "방, 숙실"
+      }
+    ]
+  },
+  {
+    "index": 23,
+    "start": 58.08,
+    "end": 60.56,
+    "text": "i was mine",
+    "pronunciation": "아이 와즈 마인",
+    "translation": "그건 내 것이었어",
+    "notes": [
+      {
+        "word": "i",
+        "actual": "아이",
+        "meaning": "나는"
+      },
+      {
+        "word": "was",
+        "actual": "와즈",
+        "meaning": "있었다"
+      },
+      {
+        "word": "mine",
+        "actual": "마인",
+        "meaning": "나의 것"
+      }
+    ]
+  },
+  {
+    "index": 24,
+    "start": 61.28,
+    "end": 62.4,
+    "text": "because i figured you hooked up with",
+    "pronunciation": "비카즈 아이 피겨드 유 훅드 업 윗",
+    "translation": "왜냐하면 난 당신이 누군가와 올라갔다고 생각했어",
+    "notes": [
+      {
+        "word": "because",
+        "actual": "비카즈",
+        "meaning": "왜냐하면"
+      },
+      {
+        "word": "i",
+        "actual": "아이",
+        "meaning": "나는"
+      },
+      {
+        "word": "figured",
+        "actual": "피겨드",
+        "meaning": "생각했다"
+      },
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신"
+      },
+      {
+        "word": "hooked",
+        "actual": "훅드",
+        "meaning": "올라갔다"
+      },
+      {
+        "word": "up",
+        "actual": "업",
+        "meaning": "올라가다"
+      },
+      {
+        "word": "with",
+        "actual": "윗",
+        "meaning": "~과 함께"
+      }
+    ]
+  },
+  {
+    "index": 25,
+    "start": 62.4,
+    "end": 64.72,
+    "text": "some girl and she left it there",
+    "pronunciation": "썸 걸 언드 쉬 레프트 잇 데어",
+    "translation": "어떤 여자애가 있었고 그녀가 그걸 거기에 남겼어",
+    "notes": [
+      {
+        "word": "some",
+        "actual": "썸",
+        "meaning": "어떤, 일부"
+      },
+      {
+        "word": "girl",
+        "actual": "걸",
+        "meaning": "여자애, 소녀"
+      },
+      {
+        "word": "and",
+        "actual": "언드",
+        "meaning": "그리고"
+      },
+      {
+        "word": "she",
+        "actual": "쉬",
+        "meaning": "그녀는"
+      },
+      {
+        "word": "left",
+        "actual": "레프트",
+        "meaning": "남겼다"
+      },
+      {
+        "word": "it",
+        "actual": "잇",
+        "meaning": "그것"
+      },
+      {
+        "word": "there",
+        "actual": "데어",
+        "meaning": "거기, 저기"
+      }
+    ]
+  },
+  {
+    "index": 26,
+    "start": 64.72,
+    "end": 68.0,
+    "text": "yes that would have made more sense",
+    "pronunciation": "예스 댓 우드 해브 메이드 모어 센스",
+    "translation": "네 그게 더 말이 됐을 거야",
+    "notes": [
+      {
+        "word": "yes",
+        "actual": "예스",
+        "meaning": "네, 그렇다"
+      },
+      {
+        "word": "that",
+        "actual": "댓",
+        "meaning": "그, 저"
+      },
+      {
+        "word": "would",
+        "actual": "우드",
+        "meaning": "~할 것이다"
+      },
+      {
+        "word": "have",
+        "actual": "해브",
+        "meaning": "가지다"
+      },
+      {
+        "word": "made",
+        "actual": "메이드",
+        "meaning": "만들었다"
+      },
+      {
+        "word": "more",
+        "actual": "모어",
+        "meaning": "더"
+      },
+      {
+        "word": "sense",
+        "actual": "센스",
+        "meaning": "의미, 말이 되다"
+      }
+    ]
+  },
+  {
+    "index": 27,
+    "start": 68.16,
+    "end": 69.84,
+    "text": "you know i i don't even feel like i know",
+    "pronunciation": "유 노우 아이 아이 돈트 이븐 필 라이크 아이 노우",
+    "translation": "당신도 알다시피 난 너를 아는 것 같지도 않아",
+    "notes": [
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신"
+      },
+      {
+        "word": "know",
+        "actual": "노우",
+        "meaning": "알다"
+      },
+      {
+        "word": "i",
+        "actual": "아이",
+        "meaning": "나는"
+      },
+      {
+        "word": "don't",
+        "actual": "돈트",
+        "meaning": "~하지 않는다"
+      },
+      {
+        "word": "even",
+        "actual": "이븐",
+        "meaning": "~조차, 심지어"
+      },
+      {
+        "word": "feel",
+        "actual": "필",
+        "meaning": "느끼다"
+      },
+      {
+        "word": "like",
+        "actual": "라이크",
+        "meaning": "~처럼, 좋아하다"
+      }
+    ]
+  },
+  {
+    "index": 28,
+    "start": 69.84,
+    "end": 72.08,
+    "text": "you anymore man",
+    "pronunciation": "유 애니모어 맨",
+    "translation": "너를 더 이상 몰라 남자",
+    "notes": [
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신"
+      },
+      {
+        "word": "anymore",
+        "actual": "애니모어",
+        "meaning": "더 이상, 이제는"
+      },
+      {
+        "word": "man",
+        "actual": "맨",
+        "meaning": "남자, 친구"
+      }
+    ]
+  },
+  {
+    "index": 29,
+    "start": 72.08,
+    "end": 74.8,
+    "text": "all right uh look i'm just gonna ask you",
+    "pronunciation": "올 라이트 어 룩 아임 저스트 건나 애스크 유",
+    "translation": "좋아 이봐 난 그냥 너한테 물어볼 거야",
+    "notes": [
+      {
+        "word": "all",
+        "actual": "올",
+        "meaning": "모든, 전부"
+      },
+      {
+        "word": "right",
+        "actual": "라이트",
+        "meaning": "맞다"
+      },
+      {
+        "word": "uh",
+        "actual": "어",
+        "meaning": "음"
+      },
+      {
+        "word": "look",
+        "actual": "룩",
+        "meaning": "보다, 봐"
+      },
+      {
+        "word": "i'm",
+        "actual": "아임",
+        "meaning": "나는 ~이다"
+      },
+      {
+        "word": "just",
+        "actual": "저스트",
+        "meaning": "그냥"
+      },
+      {
+        "word": "gonna",
+        "actual": "건나",
+        "meaning": "~할 것이다"
+      },
+      {
+        "word": "ask",
+        "actual": "애스크",
+        "meaning": "물어보다"
+      },
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신"
+      }
+    ]
+  },
+  {
+    "index": 30,
+    "start": 74.8,
+    "end": 75.68,
+    "text": "this one time",
+    "pronunciation": "디스 원 타임",
+    "translation": "이 한 번",
+    "notes": [
+      {
+        "word": "this",
+        "actual": "디스",
+        "meaning": "이, 이것"
+      },
+      {
+        "word": "one",
+        "actual": "원",
+        "meaning": "하나, 한"
+      },
+      {
+        "word": "time",
+        "actual": "타임",
+        "meaning": "시간, 때"
+      }
+    ]
+  },
+  {
+    "index": 31,
+    "start": 75.68,
+    "end": 76.72,
+    "text": "all right and whatever you say i'll",
+    "pronunciation": "올 라이트 언드 해트에버 유 세이 아일",
+    "translation": "좋아 그리고 너가 뭐라고 말하든 난",
+    "notes": [
+      {
+        "word": "all",
+        "actual": "올",
+        "meaning": "모든, 전부"
+      },
+      {
+        "word": "right",
+        "actual": "라이트",
+        "meaning": "맞다"
+      },
+      {
+        "word": "and",
+        "actual": "언드",
+        "meaning": "그리고"
+      },
+      {
+        "word": "whatever",
+        "actual": "해트에버",
+        "meaning": "무엇이든"
+      },
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신"
+      },
+      {
+        "word": "say",
+        "actual": "세이",
+        "meaning": "말하다"
+      },
+      {
+        "word": "i'll",
+        "actual": "아일",
+        "meaning": "나는 ~할 것이다"
+      }
+    ]
+  },
+  {
+    "index": 32,
+    "start": 76.72,
+    "end": 79.2,
+    "text": "believe you",
+    "pronunciation": "빌리브 유",
+    "translation": "너를 믿을 거야",
+    "notes": [
+      {
+        "word": "believe",
+        "actual": "빌리브",
+        "meaning": "믿다"
+      },
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신"
+      }
+    ]
+  },
+  {
+    "index": 33,
+    "start": 79.6,
+    "end": 86.0,
+    "text": "were you or were you not on a gay cruise",
+    "pronunciation": "웨어 유 올 웨어 유 낫 온 에 게이 크루즈",
+    "translation": "너 게이 크루즈에 있었어 없었어",
+    "notes": [
+      {
+        "word": "were",
+        "actual": "웨어",
+        "meaning": "있었다"
+      },
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신"
+      },
+      {
+        "word": "or",
+        "actual": "올",
+        "meaning": "또는"
+      },
+      {
+        "word": "were",
+        "actual": "웨어",
+        "meaning": "있었다"
+      },
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신"
+      },
+      {
+        "word": "not",
+        "actual": "낫",
+        "meaning": "아니다"
+      },
+      {
+        "word": "on",
+        "actual": "온",
+        "meaning": "~에, ~위에"
+      },
+      {
+        "word": "a",
+        "actual": "에이",
+        "meaning": "하나의"
+      },
+      {
+        "word": "gay",
+        "actual": "게이",
+        "meaning": "게이의"
+      },
+      {
+        "word": "cruise",
+        "actual": "크루즈",
+        "meaning": "크루즈, 유람"
+      }
+    ]
+  },
+  {
+    "index": 34,
+    "start": 86.0,
+    "end": 89.2,
+    "text": "hey hey hey oh hey monica",
+    "pronunciation": "헤이 헤이 헤이 오우 헤이 모니카",
+    "translation": "안녕 안녕 안녕 오 안녕 모니카",
+    "notes": [
+      {
+        "word": "hey",
+        "actual": "헤이",
+        "meaning": "안녕, 이봐"
+      },
+      {
+        "word": "hey",
+        "actual": "헤이",
+        "meaning": "안녕"
+      },
+      {
+        "word": "hey",
+        "actual": "헤이",
+        "meaning": "안녕"
+      },
+      {
+        "word": "oh",
+        "actual": "오우",
+        "meaning": "오, 아"
+      },
+      {
+        "word": "hey",
+        "actual": "헤이",
+        "meaning": "안녕"
+      },
+      {
+        "word": "monica",
+        "actual": "모니카",
+        "meaning": "모니카 (이름)"
+      }
+    ]
+  },
+  {
+    "index": 35,
+    "start": 89.2,
+    "end": 90.72,
+    "text": "i heard you saw donald trump at your",
+    "pronunciation": "아이 허드 유 소우 도널드 트럼프 앳 유어",
+    "translation": "난 들었어 당신이 도널드 트럼프를 봤다고 당신의",
+    "notes": [
+      {
+        "word": "i",
+        "actual": "아이",
+        "meaning": "나는"
+      },
+      {
+        "word": "heard",
+        "actual": "허드",
+        "meaning": "들었다"
+      },
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신"
+      },
+      {
+        "word": "saw",
+        "actual": "소우",
+        "meaning": "봤다"
+      },
+      {
+        "word": "donald",
+        "actual": "도널드",
+        "meaning": "도널드"
+      },
+      {
+        "word": "trump",
+        "actual": "트럼프",
+        "meaning": "트럼프"
+      },
+      {
+        "word": "at",
+        "actual": "앳",
+        "meaning": "~에"
+      },
+      {
+        "word": "your",
+        "actual": "유어",
+        "meaning": "당신의"
+      }
+    ]
+  },
+  {
+    "index": 36,
+    "start": 90.72,
+    "end": 92.8,
+    "text": "convention yeah so i'm waiting for an",
+    "pronunciation": "컨벤션 예 소우 아임 웨이팅 포르 언",
+    "translation": "컨벤션 네 그래서 난 기다리고 있었어",
+    "notes": [
+      {
+        "word": "convention",
+        "actual": "컨벤션",
+        "meaning": "컨벤션, 회의"
+      },
+      {
+        "word": "yeah",
+        "actual": "예",
+        "meaning": "네"
+      },
+      {
+        "word": "so",
+        "actual": "소우",
+        "meaning": "그래서"
+      },
+      {
+        "word": "i'm",
+        "actual": "아임",
+        "meaning": "나는 ~이다"
+      },
+      {
+        "word": "waiting",
+        "actual": "웨이팅",
+        "meaning": "기다리는"
+      },
+      {
+        "word": "for",
+        "actual": "포르",
+        "meaning": "~을 위해"
+      },
+      {
+        "word": "an",
+        "actual": "언",
+        "meaning": "하나의"
+      }
+    ]
+  },
+  {
+    "index": 37,
+    "start": 92.8,
+    "end": 95.2,
+    "text": "elevator",
+    "pronunciation": "엘리베이터",
+    "translation": "엘리베이터",
+    "notes": [
+      {
+        "word": "elevator",
+        "actual": "엘리베이터",
+        "meaning": "엘리베이터, 승강기"
+      }
+    ]
+  },
+  {
+    "index": 38,
+    "start": 96.72,
+    "end": 98.4,
+    "text": "hey rach can i borrow your eyelash",
+    "pronunciation": "헤이 래치 캔 아이 보로우 유어 아이래시",
+    "translation": "안녕 래치 난 너 속눈썹을 빌릴 수 있어",
+    "notes": [
+      {
+        "word": "hey",
+        "actual": "헤이",
+        "meaning": "안녕"
+      },
+      {
+        "word": "rach",
+        "actual": "래치",
+        "meaning": "래치 (닉네임)"
+      },
+      {
+        "word": "can",
+        "actual": "캔",
+        "meaning": "할 수 있다"
+      },
+      {
+        "word": "i",
+        "actual": "아이",
+        "meaning": "나는"
+      },
+      {
+        "word": "borrow",
+        "actual": "보로우",
+        "meaning": "빌리다"
+      },
+      {
+        "word": "your",
+        "actual": "유어",
+        "meaning": "당신의"
+      },
+      {
+        "word": "eyelash",
+        "actual": "아이래시",
+        "meaning": "속눈썹"
+      }
+    ]
+  },
+  {
+    "index": 39,
+    "start": 98.4,
+    "end": 101.84,
+    "text": "curler i think i lost mine yeah",
+    "pronunciation": "컬러 아이 싱크 아이 로스트 마인 예",
+    "translation": "컬러 난 내 걸 잃어버렸어 네",
+    "notes": [
+      {
+        "word": "curler",
+        "actual": "컬러",
+        "meaning": "컬러, 말기"
+      },
+      {
+        "word": "i",
+        "actual": "아이",
+        "meaning": "나는"
+      },
+      {
+        "word": "think",
+        "actual": "싱크",
+        "meaning": "생각하다"
+      },
+      {
+        "word": "i",
+        "actual": "아이",
+        "meaning": "나는"
+      },
+      {
+        "word": "lost",
+        "actual": "로스트",
+        "meaning": "잃었다"
+      },
+      {
+        "word": "mine",
+        "actual": "마인",
+        "meaning": "나의 것"
+      },
+      {
+        "word": "yeah",
+        "actual": "예",
+        "meaning": "네"
+      }
+    ]
+  },
+  {
+    "index": 40,
+    "start": 112.84,
+    "end": 117.53,
+    "text": "oh",
+    "pronunciation": "오우",
+    "translation": "오",
+    "notes": [
+      {
+        "word": "oh",
+        "actual": "오우",
+        "meaning": "오, 아"
+      }
+    ]
+  },
+  {
+    "index": 41,
+    "start": 123.52,
+    "end": 128.08,
+    "text": "yes yes",
+    "pronunciation": "예스 예스",
+    "translation": "네 네",
+    "notes": [
+      {
+        "word": "yes",
+        "actual": "예스",
+        "meaning": "네"
+      },
+      {
+        "word": "yes",
+        "actual": "예스",
+        "meaning": "네"
+      }
+    ]
+  },
+  {
+    "index": 42,
+    "start": 128.08,
+    "end": 131.92,
+    "text": "you and and you",
+    "pronunciation": "유 언드 언드 유",
+    "translation": "너 그리고 그리고 너",
+    "notes": [
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신"
+      },
+      {
+        "word": "and",
+        "actual": "언드",
+        "meaning": "그리고"
+      },
+      {
+        "word": "and",
+        "actual": "언드",
+        "meaning": "그리고"
+      },
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신"
+      }
+    ]
+  },
+  {
+    "index": 43,
+    "start": 131.92,
+    "end": 133.68,
+    "text": "yes but you cannot tell anyone no one",
+    "pronunciation": "예스 벗 유 캐노트 텔 애니원 노우 원",
+    "translation": "네 하지만 너는 아무한테도 말할 수 없어 아무도 몰라",
+    "notes": [
+      {
+        "word": "yes",
+        "actual": "예스",
+        "meaning": "네"
+      },
+      {
+        "word": "but",
+        "actual": "벗",
+        "meaning": "하지만"
+      },
+      {
+        "word": "you",
+        "actual": "유",
+        "meaning": "당신"
+      },
+      {
+        "word": "cannot",
+        "actual": "캐노트",
+        "meaning": "~할 수 없다"
+      },
+      {
+        "word": "tell",
+        "actual": "텔",
+        "meaning": "말하다"
+      },
+      {
+        "word": "anyone",
+        "actual": "애니원",
+        "meaning": "누구든"
+      },
+      {
+        "word": "no",
+        "actual": "노우",
+        "meaning": "아니오"
+      },
+      {
+        "word": "one",
+        "actual": "원",
+        "meaning": "누구도"
+      }
+    ]
+  },
+  {
+    "index": 44,
+    "start": 133.68,
+    "end": 135.04,
+    "text": "knows how",
+    "pronunciation": "노우즈 하우",
+    "translation": "알아 어떻게",
+    "notes": [
+      {
+        "word": "knows",
+        "actual": "노우즈",
+        "meaning": "안다"
+      },
+      {
+        "word": "how",
+        "actual": "하우",
+        "meaning": "어떻게"
+      }
+    ]
+  },
+  {
+    "index": 45,
+    "start": 135.04,
+    "end": 138.16,
+    "text": "when it happened in london",
+    "pronunciation": "웬 잇 해펀드 인 런던",
+    "translation": "그게 런던에서 일어났을 때",
+    "notes": [
+      {
+        "word": "when",
+        "actual": "웬",
+        "meaning": "언제, ~할 때"
+      },
+      {
+        "word": "it",
+        "actual": "잇",
+        "meaning": "그것"
+      },
+      {
+        "word": "happened",
+        "actual": "해펀드",
+        "meaning": "일어났다"
+      },
+      {
+        "word": "in",
+        "actual": "인",
+        "meaning": "~에, ~안에"
+      },
+      {
+        "word": "london",
+        "actual": "런던",
+        "meaning": "런던"
+      }
+    ]
+  },
+  {
+    "index": 46,
+    "start": 138.16,
+    "end": 142.0,
+    "text": "in london",
+    "pronunciation": "인 런던",
+    "translation": "런던에서",
+    "notes": [
+      {
+        "word": "in",
+        "actual": "인",
+        "meaning": "~에, ~안에"
+      },
+      {
+        "word": "london",
+        "actual": "런던",
+        "meaning": "런던"
+      }
+    ]
+  },
+  {
+    "index": 47,
+    "start": 142.0,
+    "end": 143.76,
+    "text": "the reason we didn't tell anyone was",
+    "pronunciation": "디 리즌 위 디드 노우 텔 애니원 와즈",
+    "translation": "우리가 아무한테도 말하지 않은 이유는",
+    "notes": [
+      {
+        "word": "the",
+        "actual": "디",
+        "meaning": "그, 저"
+      },
+      {
+        "word": "reason",
+        "actual": "리즌",
+        "meaning": "이유"
+      },
+      {
+        "word": "we",
+        "actual": "위",
+        "meaning": "우리"
+      },
+      {
+        "word": "didn't",
+        "actual": "디드 노우",
+        "meaning": "~하지 않았다"
+      },
+      {
+        "word": "tell",
+        "actual": "텔",
+        "meaning": "말하다"
+      },
+      {
+        "word": "anyone",
+        "actual": "애니원",
+        "meaning": "누구든"
+      },
+      {
+        "word": "was",
+        "actual": "와즈",
+        "meaning": "있었다"
+      }
+    ]
+  },
+  {
+    "index": 48,
+    "start": 143.76,
+    "end": 144.88,
+    "text": "because we didn't want to make a big",
+    "pronunciation": "비카즈 위 디드 노우 완트 투 메이크 어 빅",
+    "translation": "왜냐하면 우리가 큰 일을 만들고 싶지 않았어",
+    "notes": [
+      {
+        "word": "because",
+        "actual": "비카즈",
+        "meaning": "왜냐하면"
+      },
+      {
+        "word": "we",
+        "actual": "위",
+        "meaning": "우리"
+      },
+      {
+        "word": "didn't",
+        "actual": "디드 노우",
+        "meaning": "~하지 않았다"
+      },
+      {
+        "word": "want",
+        "actual": "완트",
+        "meaning": "원하다"
+      },
+      {
+        "word": "to",
+        "actual": "투",
+        "meaning": "~하기 위해"
+      },
+      {
+        "word": "make",
+        "actual": "메이크",
+        "meaning": "만들다"
+      },
+      {
+        "word": "a",
+        "actual": "어",
+        "meaning": "하나의"
+      },
+      {
+        "word": "big",
+        "actual": "빅",
+        "meaning": "큰"
+      }
+    ]
+  },
+  {
+    "index": 49,
+    "start": 144.88,
+    "end": 145.84,
+    "text": "deal out of it",
+    "pronunciation": "딜 아웃 어브 잇",
+    "translation": "거래 빠져나가다",
+    "notes": [
+      {
+        "word": "deal",
+        "actual": "딜",
+        "meaning": "거래"
+      }
+    ]
+  },
+  {
+    "index": 50,
+    "start": 145.84,
+    "end": 149.12,
+    "text": "but it is a big deal i have to tell",
+    "pronunciation": "벗 잇 이즈 어 빅 딜 아이 해브 투 텔",
+    "translation": "하지만 그건 큰 문제야 나는 말해야 해",
+    "notes": [
+      {
+        "word": "big deal",
+        "actual": "빅 딜",
+        "meaning": "큰 문제"
+      }
+    ]
+  },
+  {
+    "index": 51,
+    "start": 149.12,
+    "end": 151.36,
+    "text": "someone",
+    "pronunciation": "섬원",
+    "translation": "누군가",
+    "notes": [
+      {
+        "word": "someone",
+        "actual": "섬원",
+        "meaning": "어떤 사람"
+      }
+    ]
+  },
+  {
+    "index": 52,
+    "start": 151.44,
+    "end": 153.6,
+    "text": "you can't please please we just don't",
+    "pronunciation": "유 캔트 플리즈 플리즈 위 저스트 돈트",
+    "translation": "넌 안 돼 제발 제발 우리는 그냥 안 돼",
+    "notes": [
+      {
+        "word": "can't",
+        "actual": "캔트",
+        "meaning": "할 수 없다"
+      }
+    ]
+  },
+  {
+    "index": 53,
+    "start": 153.6,
+    "end": 155.6,
+    "text": "want to deal with telling everyone okay",
+    "pronunciation": "원트 투 딜 윗 텔링 에브리원 오케이",
+    "translation": "모두한테 말하는 거 피하고 싶어 알겠지",
+    "notes": [
+      {
+        "word": "deal with",
+        "actual": "딜 윗",
+        "meaning": "대처하다"
+      }
+    ]
+  },
+  {
+    "index": 54,
+    "start": 155.6,
+    "end": 159.04,
+    "text": "please just promise you won't tell",
+    "pronunciation": "플리즈 저스트 프라미스 유 원트 텔",
+    "translation": "제발 그냥 말 안 할 거라고 약속해",
+    "notes": [
+      {
+        "word": "promise",
+        "actual": "프라미스",
+        "meaning": "약속하다"
+      }
+    ]
+  },
+  {
+    "index": 55,
+    "start": 161.68,
+    "end": 164.4,
+    "text": "all right",
+    "pronunciation": "올 라잇",
+    "translation": "좋아",
+    "notes": [
+      {
+        "word": "alright",
+        "actual": "올 라잇",
+        "meaning": "좋다"
+      }
+    ]
+  },
+  {
+    "index": 56,
+    "start": 164.88,
+    "end": 168.0,
+    "text": "man this is unbelievable i mean",
+    "pronunciation": "맨 디스 이즈 언빌리버블 아이 민",
+    "translation": "이건 정말 믿을 수 없어 내 말은",
+    "notes": [
+      {
+        "word": "man",
+        "actual": "맨",
+        "meaning": "오 (감탄사)"
+      }
+    ]
+  },
+  {
+    "index": 57,
+    "start": 168.0,
+    "end": 171.44,
+    "text": "it's great but",
+    "pronunciation": "잇츠 그레잇 벗",
+    "translation": "최고지만",
+    "notes": [
+      {
+        "word": "great",
+        "actual": "그레잇",
+        "meaning": "훌륭한"
+      }
+    ]
+  },
+  {
+    "index": 58,
+    "start": 171.44,
+    "end": 175.36,
+    "text": "i know it's great oh i don't want to see",
+    "pronunciation": "아이 노우 잇츠 그레잇 오우 아이 돈트 원트 투 씨",
+    "translation": "좋은 줄 알아 오 난 보고 싶지 않아",
+    "notes": [
+      {
+        "word": "know",
+        "actual": "노우",
+        "meaning": "알다"
+      }
+    ]
+  },
+  {
+    "index": 59,
+    "start": 175.36,
+    "end": 177.68,
+    "text": "that",
+    "pronunciation": "댓",
+    "translation": "그것",
+    "notes": [
+      {
+        "word": "that",
+        "actual": "댓",
+        "meaning": "그것"
+      }
+    ]
+  },
+  {
+    "index": 60,
+    "start": 179.84,
+    "end": 182.88,
+    "text": "we're so stupid do you know what's going",
+    "pronunciation": "위어 소우 스투피드 두 유 노우 왓츠 고잉",
+    "translation": "우리 정말 멍청해 넌 뭐가 일어나는지 알아",
+    "notes": [
+      {
+        "word": "stupid",
+        "actual": "스투피드",
+        "meaning": "멍청한"
+      }
+    ]
+  },
+  {
+    "index": 61,
+    "start": 182.88,
+    "end": 184.24,
+    "text": "on in there",
+    "pronunciation": "온 인 데어",
+    "translation": "그곳에서",
+    "notes": [
+      {
+        "word": "on",
+        "actual": "온",
+        "meaning": "~에서"
+      }
+    ]
+  },
+  {
+    "index": 62,
+    "start": 184.24,
+    "end": 187.6,
+    "text": "they're trying to take joey",
+    "pronunciation": "데어 트라이잉 투 테이크 조이",
+    "translation": "그들이 조이를 데려가려고 해",
+    "notes": [
+      {
+        "word": "trying",
+        "actual": "트라이잉",
+        "meaning": "시도하는"
+      }
+    ]
+  },
+  {
+    "index": 63,
+    "start": 191.44,
+    "end": 194.4,
+    "text": "i can't wait to be with you i'll sneak",
+    "pronunciation": "아이 캔트 웨잇 투 비 윗 유 아일 스닉",
+    "translation": "너와 있고 싶어 난 몰래 가",
+    "notes": [
+      {
+        "word": "sneak",
+        "actual": "스닉",
+        "meaning": "몰래"
+      }
+    ]
+  },
+  {
+    "index": 64,
+    "start": 194.4,
+    "end": 196.24,
+    "text": "over as soon as ross picks up ben",
+    "pronunciation": "오우버 애즈 순 애즈 로스 픽스 업 벤",
+    "translation": "로스가 벤을 픽업하자마자 가",
+    "notes": [
+      {
+        "word": "picks up",
+        "actual": "픽스 업",
+        "meaning": "데러 가다"
+      }
+    ]
+  },
+  {
+    "index": 65,
+    "start": 196.24,
+    "end": 197.44,
+    "text": "i'll just tell rachel i'm going to be",
+    "pronunciation": "아일 저스트 텔 레이첼 아임 고잉 투 비",
+    "translation": "난 그냥 레이첼한테 말할 거야",
+    "notes": [
+      {
+        "word": "tell",
+        "actual": "텔",
+        "meaning": "말하다"
+      }
+    ]
+  },
+  {
+    "index": 66,
+    "start": 197.44,
+    "end": 199.6,
+    "text": "doing laundry for a couple hours laundry",
+    "pronunciation": "두잉 로드리 포어 어 커플 아워즈 로드리",
+    "translation": "한 두 시간 빨래할 거라고 빨래",
+    "notes": [
+      {
+        "word": "laundry",
+        "actual": "로드리",
+        "meaning": "세탁물"
+      }
+    ]
+  },
+  {
+    "index": 67,
+    "start": 199.6,
+    "end": 200.08,
+    "text": "huh",
+    "pronunciation": "헛",
+    "translation": "음",
+    "notes": [
+      {
+        "word": "huh",
+        "actual": "헛",
+        "meaning": "응? (의문사)"
+      }
+    ]
+  },
+  {
+    "index": 68,
+    "start": 200.08,
+    "end": 203.04,
+    "text": "is that my new nickname",
+    "pronunciation": "이즈 댓 마이 뉴 닉네임",
+    "translation": "그게 내 새 별명이야",
+    "notes": [
+      {
+        "word": "nickname",
+        "actual": "닉네임",
+        "meaning": "별명"
+      }
+    ]
+  },
+  {
+    "index": 69,
+    "start": 204.4,
+    "end": 210.48,
+    "text": "ah you know what your nickname is mr",
+    "pronunciation": "아 유 노우 왓 유어 닉네임 이즈 미스터",
+    "translation": "아 넌 뭐가 별명이야 미스터",
+    "notes": [
+      {
+        "word": "mister",
+        "actual": "미스터",
+        "meaning": "미스터"
+      }
+    ]
+  },
+  {
+    "index": 70,
+    "start": 210.84,
+    "end": 215.64,
+    "text": "big",
+    "pronunciation": "빅",
+    "translation": "큼",
+    "notes": [
+      {
+        "word": "big",
+        "actual": "빅",
+        "meaning": "큰"
+      }
+    ]
+  },
+  {
+    "index": 71,
+    "start": 216.88,
+    "end": 220.96,
+    "text": "i can't believe he thinks i'm a cowboy",
+    "pronunciation": "아이 캔트 빌리브 히 싱크스 아임 어 카우보이",
+    "translation": "그가 날 카우보이라고 생각하다니 못 믿겠어",
+    "notes": [
+      {
+        "word": "cowboy",
+        "actual": "카우보이",
+        "meaning": "목동"
+      }
+    ]
+  },
+  {
+    "index": 72,
+    "start": 221.12,
+    "end": 227.84,
+    "text": "i would make a good cowboy",
+    "pronunciation": "아이 우드 메이크 어 굿 카우보이",
+    "translation": "난 좋은 카우보이가 될 수 있어",
+    "notes": [
+      {
+        "word": "make",
+        "actual": "메이크",
+        "meaning": "만들다"
+      }
+    ]
+  },
+  {
+    "index": 73,
+    "start": 228.96,
+    "end": 230.48,
+    "text": "okay now that everything's wrapped up",
+    "pronunciation": "오케이 나우 댓 에브리싱즈 랩트 업",
+    "translation": "좋아 이제 모든 게 끝났으니까",
+    "notes": [
+      {
+        "word": "wrapped up",
+        "actual": "랩트 업",
+        "meaning": "끝내다"
+      }
+    ]
+  },
+  {
+    "index": 74,
+    "start": 230.48,
+    "end": 232.0,
+    "text": "here i think i'm i'm gonna go do my",
+    "pronunciation": "히어 아이 싱크 아임 아임 궁나 고우 두 마이",
+    "translation": "여기서 난 글쎄 내 빨래 하러 갈 거야",
+    "notes": [
+      {
+        "word": "gonna",
+        "actual": "궁나",
+        "meaning": "~할 거야"
+      }
+    ]
+  },
+  {
+    "index": 75,
+    "start": 232.0,
+    "end": 232.64,
+    "text": "laundry",
+    "pronunciation": "로드리",
+    "translation": "빨래",
+    "notes": [
+      {
+        "word": "laundry",
+        "actual": "로드리",
+        "meaning": "세탁물"
+      }
+    ]
+  },
+  {
+    "index": 76,
+    "start": 232.64,
+    "end": 234.16,
+    "text": "miami too you know if this shirt is",
+    "pronunciation": "마이애미 투 유 노우 이프 디스 셔츠 이즈",
+    "translation": "마이애미도 너도 알지 이 셔츠가",
+    "notes": [
+      {
+        "word": "Miami",
+        "actual": "마이애미",
+        "meaning": "마이애미"
+      }
+    ]
+  },
+  {
+    "index": 77,
+    "start": 234.16,
+    "end": 241.76,
+    "text": "dirty yep",
+    "pronunciation": "더티 옙",
+    "translation": "더러우면 응",
+    "notes": [
+      {
+        "word": "dirty",
+        "actual": "더티",
+        "meaning": "더러운"
+      }
+    ]
+  },
+  {
+    "index": 78,
+    "start": 241.76,
+    "end": 244.4,
+    "text": "okay i'm gonna go too i'm gonna go to",
+    "pronunciation": "오케이 아임 궁나 고우 투 아임 궁나 고우 투",
+    "translation": "좋아 난 갈 거야 난",
+    "notes": [
+      {
+        "word": "gonna",
+        "actual": "궁나",
+        "meaning": "~할 거야"
+      }
+    ]
+  },
+  {
+    "index": 79,
+    "start": 244.4,
+    "end": 246.24,
+    "text": "the airport i figure if i hang around",
+    "pronunciation": "디 에어포트 아이 피거 이프 아이 행 어라운드",
+    "translation": "공항으로 내가 생각하길 내가 주변에 있으면",
+    "notes": [
+      {
+        "word": "airport",
+        "actual": "에어포트",
+        "meaning": "공항"
+      }
+    ]
+  },
+  {
+    "index": 80,
+    "start": 246.24,
+    "end": 247.6,
+    "text": "there long enough someone's bound to",
+    "pronunciation": "데어 롱 이넉 섬원즈 바운드 투",
+    "translation": "충분히 오래 있으면 누군가는 틀림없이",
+    "notes": [
+      {
+        "word": "bound",
+        "actual": "바운드",
+        "meaning": "반드시"
+      }
+    ]
+  },
+  {
+    "index": 81,
+    "start": 247.6,
+    "end": 251.12,
+    "text": "leave one of those planes unattended",
+    "pronunciation": "리브 원 어브 도우즈 플레인즈 어넷텐디드",
+    "translation": "저 비행기들 중 하나를 무인으로 둘 거야",
+    "notes": [
+      {
+        "word": "planes",
+        "actual": "플레인즈",
+        "meaning": "비행기들"
+      }
+    ]
+  },
+  {
+    "index": 82,
+    "start": 251.36,
+    "end": 255.84,
+    "text": "good luck honey bye",
+    "pronunciation": "굿 럭 허니 바이",
+    "translation": "행운을 빌어 자기야 잘 가",
+    "notes": [
+      {
+        "word": "honey",
+        "actual": "허니",
+        "meaning": "자기 (애칭)"
+      }
+    ]
+  },
+  {
+    "index": 83,
+    "start": 257.36,
+    "end": 259.68,
+    "text": "hey uh joey remember that big thing i",
+    "pronunciation": "헤이 어 조이 리멤버 댓 빅 싱 아이",
+    "translation": "이봐 조이 저 큰 일 기억해",
+    "notes": [
+      {
+        "word": "remember",
+        "actual": "리멤버",
+        "meaning": "기억하다"
+      }
+    ]
+  },
+  {
+    "index": 84,
+    "start": 259.68,
+    "end": 264.64,
+    "text": "was gonna tell you about",
+    "pronunciation": "와즈 궁나 텔 유 어바웃",
+    "translation": "내가 너한테 얘기하려던",
+    "notes": [
+      {
+        "word": "about",
+        "actual": "어바웃",
+        "meaning": "~에 대해"
+      }
+    ]
+  },
+  {
+    "index": 85,
+    "start": 264.64,
+    "end": 266.64,
+    "text": "i'm not gonna tell you but if you found",
+    "pronunciation": "아임 낫 궁나 텔 유 벗 이프 유 파운드",
+    "translation": "난 너한테 안 말할 거지만 넌 알아채면",
+    "notes": [
+      {
+        "word": "found",
+        "actual": "파운드",
+        "meaning": "발견하다"
+      }
+    ]
+  },
+  {
+    "index": 86,
+    "start": 266.64,
+    "end": 268.32,
+    "text": "out on your own",
+    "pronunciation": "아웃 온 유어 오운",
+    "translation": "스스로 알아내면",
+    "notes": [
+      {
+        "word": "own",
+        "actual": "오운",
+        "meaning": "자신의"
+      }
+    ]
+  },
+  {
+    "index": 87,
+    "start": 268.32,
+    "end": 269.6,
+    "text": "that would be okay and then we could",
+    "pronunciation": "댓 우드 비 오케이 앤드 덴 위 쿠드",
+    "translation": "그럼 괜찮고 그러면 우리는",
+    "notes": [
+      {
+        "word": "could",
+        "actual": "쿠드",
+        "meaning": "할 수 있다"
+      }
+    ]
+  },
+  {
+    "index": 88,
+    "start": 269.6,
+    "end": 271.6,
+    "text": "talk about it right well then it",
+    "pronunciation": "톡 어바웃 잇 라잇 웰 덴 잇",
+    "translation": "얘기할 수 있지 그런데 그럼 그건",
+    "notes": [
+      {
+        "word": "talk",
+        "actual": "톡",
+        "meaning": "말하다"
+      }
+    ]
+  },
+  {
+    "index": 89,
+    "start": 271.6,
+    "end": 272.96,
+    "text": "wouldn't be a secret",
+    "pronunciation": "우드빈 어 씨크릿",
+    "translation": "비밀이 아니지",
+    "notes": [
+      {
+        "word": "secret",
+        "actual": "씨크릿",
+        "meaning": "비밀"
+      }
+    ]
+  },
+  {
+    "index": 90,
+    "start": 272.96,
+    "end": 276.08,
+    "text": "so yeah that would be okay yeah yeah",
+    "pronunciation": "소우 여 댓 우드 비 오케이 여 여 여",
+    "translation": "그래서 응 그럼 괜찮고 응 응 응",
+    "notes": [
+      {
+        "word": "okay",
+        "actual": "오케이",
+        "meaning": "좋다"
+      }
+    ]
+  },
+  {
+    "index": 91,
+    "start": 276.08,
+    "end": 279.12,
+    "text": "yeah why",
+    "pronunciation": "와이",
+    "translation": "왜",
+    "notes": [
+      {
+        "word": "why",
+        "actual": "와이",
+        "meaning": "왜"
+      }
+    ]
+  },
+  {
+    "index": 92,
+    "start": 279.12,
+    "end": 280.88,
+    "text": "hey joe would you mind going over into",
+    "pronunciation": "헤이 조우 우드 유 마인드 고잉 오우버 인투",
+    "translation": "이봐 조 저리 가는 거 싫어",
+    "notes": [
+      {
+        "word": "mind",
+        "actual": "마인드",
+        "meaning": "싫어하다"
+      }
+    ]
+  },
+  {
+    "index": 93,
+    "start": 280.88,
+    "end": 282.64,
+    "text": "chandler's bedroom and getting that book",
+    "pronunciation": "챈들러즈 베드룸 앤드 게팅 댓 북",
+    "translation": "챈들러 침실 가서 그 책",
+    "notes": [
+      {
+        "word": "bedroom",
+        "actual": "베드룸",
+        "meaning": "침실"
+      }
+    ]
+  },
+  {
+    "index": 94,
+    "start": 282.64,
+    "end": 288.24,
+    "text": "back that he uh barred from me",
+    "pronunciation": "백 댓 히 어 바드 프럼 미",
+    "translation": "돌려줄래 그게 내한테서 빌려준",
+    "notes": [
+      {
+        "word": "barred",
+        "actual": "바드",
+        "meaning": "빌려주다"
+      }
+    ]
+  },
+  {
+    "index": 95,
+    "start": 288.24,
+    "end": 292.08,
+    "text": "now you want me to go over there now",
+    "pronunciation": "나우 유 원트 미 투 고우 오우버 데어 나우",
+    "translation": "지금 날 저리 보내길 원해",
+    "notes": [
+      {
+        "word": "now",
+        "actual": "나우",
+        "meaning": "지금"
+      }
+    ]
+  },
+  {
+    "index": 96,
+    "start": 293.12,
+    "end": 294.84,
+    "text": "do you know something do you know",
+    "pronunciation": "두 유 노우 섬싱 두 유 노우",
+    "translation": "넌 뭔가 알아 넌 알아",
+    "notes": [
+      {
+        "word": "know",
+        "actual": "노우",
+        "meaning": "알다"
+      }
+    ]
+  },
+  {
+    "index": 97,
+    "start": 294.84,
+    "end": 296.72,
+    "text": "something",
+    "pronunciation": "섬씽",
+    "translation": "무언가",
+    "notes": [
+      {
+        "word": "something",
+        "actual": "섬씽",
+        "meaning": "어떤 물건이나 것"
+      }
+    ]
+  },
+  {
+    "index": 98,
+    "start": 296.72,
+    "end": 298.08,
+    "text": "i might know something i might know",
+    "pronunciation": "아이 마잇 노우 섬씽 아이 마잇 노우",
+    "translation": "나 뭔가 알 수도 있어 나 알 수도 있어",
+    "notes": [
+      {
+        "word": "i might know something",
+        "actual": "아이 마잇 노우 섬씽",
+        "meaning": "나 뭔가 알 수도 있어"
+      }
+    ]
+  },
+  {
+    "index": 99,
+    "start": 298.08,
+    "end": 300.0,
+    "text": "something too",
+    "pronunciation": "섬씽 투",
+    "translation": "뭔가 너도",
+    "notes": [
+      {
+        "word": "something too",
+        "actual": "섬씽 투",
+        "meaning": "너도 뭔가"
+      }
+    ]
+  },
+  {
+    "index": 100,
+    "start": 300.0,
+    "end": 301.36,
+    "text": "what's the thing you know oh no i can't",
+    "pronunciation": "왓츠 더 띵 유 노우 오우 노우 아이 캔트",
+    "translation": "넌 뭘 아니 안 돼 난 못 말해",
+    "notes": [
+      {
+        "word": "what's the thing you know",
+        "actual": "왓츠 더 띵 유 노우",
+        "meaning": "넌 뭘 알아"
+      }
+    ]
+  },
+  {
+    "index": 101,
+    "start": 301.36,
+    "end": 302.48,
+    "text": "tell you and she tell me what you know i",
+    "pronunciation": "텔 유 앤드 쉬 텔 미 왓 유 노우 아이",
+    "translation": "말할 수 없어 그리고 그녀 말해줘 넌 뭘 아니",
+    "notes": [
+      {
+        "word": "tell you",
+        "actual": "텔 유",
+        "meaning": "너한테 말하다"
+      }
+    ]
+  },
+  {
+    "index": 102,
+    "start": 302.48,
+    "end": 303.52,
+    "text": "can't tell you what i know well then i",
+    "pronunciation": "캔트 텔 유 왓 아이 노우 웰 덴 아이",
+    "translation": "못 말해 내가 알 거 글쎄 그럼 나",
+    "notes": [
+      {
+        "word": "can't tell you",
+        "actual": "캔트 텔 유",
+        "meaning": "말할 수 없어"
+      }
+    ]
+  },
+  {
+    "index": 103,
+    "start": 303.52,
+    "end": 311.84,
+    "text": "can't tell you what i know okay fine",
+    "pronunciation": "캔트 텔 유 왓 아이 노우 오우케이 파인",
+    "translation": "못 말해 내가 알 거 알았어 좋아",
+    "notes": [
+      {
+        "word": "can't tell you",
+        "actual": "캔트 텔 유",
+        "meaning": "말할 수 없어"
+      }
+    ]
+  },
+  {
+    "index": 104,
+    "start": 314.0,
+    "end": 317.52,
+    "text": "you don't know all right how about i go",
+    "pronunciation": "유 돈트 노우 올 라잇 하우 어바웃 아이 고우",
+    "translation": "넌 모르지 좋아 어때 내가 가",
+    "notes": [
+      {
+        "word": "you don't know",
+        "actual": "유 돈트 노우",
+        "meaning": "넌 모른다"
+      }
+    ]
+  },
+  {
+    "index": 105,
+    "start": 317.52,
+    "end": 318.64,
+    "text": "over there and i will walk into",
+    "pronunciation": "오우버 데어 앤드 아이 윌 워크 인투",
+    "translation": "저기 그리고 나 들어가",
+    "notes": [
+      {
+        "word": "over there",
+        "actual": "오우버 데어",
+        "meaning": "저쪽에"
+      }
+    ]
+  },
+  {
+    "index": 106,
+    "start": 318.64,
+    "end": 319.92,
+    "text": "chandler's bedroom and i will see the",
+    "pronunciation": "챈들러즈 베드룸 앤드 아이 윌 씨 더",
+    "translation": "챈들러 침실이고 나 볼 거야",
+    "notes": [
+      {
+        "word": "Chandler's bedroom",
+        "actual": "챈들러즈 베드룸",
+        "meaning": "챈들러의 침실"
+      }
+    ]
+  },
+  {
+    "index": 107,
+    "start": 319.92,
+    "end": 320.88,
+    "text": "thing that i think that i know is",
+    "pronunciation": "띵 댓 아이 띵크 댓 아이 노우 이즈",
+    "translation": "내가 생각하는 그 것 내가 아는 그건",
+    "notes": [
+      {
+        "word": "thing that i think",
+        "actual": "띵 댓 아이 띵크",
+        "meaning": "내가 생각하는 것"
+      }
+    ]
+  },
+  {
+    "index": 108,
+    "start": 320.88,
+    "end": 322.84,
+    "text": "actually the thing that i think that i",
+    "pronunciation": "액추얼리 더 띵 댓 아이 띵크 댓 아이",
+    "translation": "사실 그 것 내가 생각하는 그것 나",
+    "notes": [
+      {
+        "word": "actually",
+        "actual": "액추얼리",
+        "meaning": "실제로"
+      }
+    ]
+  },
+  {
+    "index": 109,
+    "start": 322.84,
+    "end": 324.08,
+    "text": "know",
+    "pronunciation": "노우",
+    "translation": "안다",
+    "notes": [
+      {
+        "word": "know",
+        "actual": "노우",
+        "meaning": "알다"
+      }
+    ]
+  },
+  {
+    "index": 110,
+    "start": 324.08,
+    "end": 327.12,
+    "text": "you know and you know yeah i know",
+    "pronunciation": "유 노우 앤드 유 노우 예 아이 노우",
+    "translation": "넌 알지 그리고 넌 알지 응 나 알아",
+    "notes": [
+      {
+        "word": "you know",
+        "actual": "유 노우",
+        "meaning": "넌 알지"
+      }
+    ]
+  },
+  {
+    "index": 111,
+    "start": 327.12,
+    "end": 329.04,
+    "text": "she'll learn monica oh this is",
+    "pronunciation": "쉴 런 모니카 오우 디스 이즈",
+    "translation": "그녀는 배울 거야 모니카 오 이건",
+    "notes": [
+      {
+        "word": "she'll learn",
+        "actual": "쉴 런",
+        "meaning": "그녀가 배운다"
+      }
+    ]
+  },
+  {
+    "index": 112,
+    "start": 329.04,
+    "end": 330.32,
+    "text": "unbelievable",
+    "pronunciation": "언빌리버블",
+    "translation": "믿을 수 없어",
+    "notes": [
+      {
+        "word": "unbelievable",
+        "actual": "언빌리버블",
+        "meaning": "믿을 수 없는"
+      }
+    ]
+  },
+  {
+    "index": 113,
+    "start": 330.32,
+    "end": 332.64,
+    "text": "how long have you known too long oh my",
+    "pronunciation": "하우 롱 해브 유 노운 투 롱 오우 마이",
+    "translation": "얼마나 오래 알았어 너무 오래 오 신",
+    "notes": [
+      {
+        "word": "how long have you known",
+        "actual": "하우 롱 해브 유 노운",
+        "meaning": "얼마나 오래 알았어"
+      }
+    ]
+  },
+  {
+    "index": 114,
+    "start": 332.64,
+    "end": 334.16,
+    "text": "god rach i've been dying to talk to",
+    "pronunciation": "가드 래치 아이브 빈 다이잉 투 토크 투",
+    "translation": "신이시여 레이첼 나 말하고 싶어 죽겠어",
+    "notes": [
+      {
+        "word": "I've been dying",
+        "actual": "아이브 빈 다이잉",
+        "meaning": "죽도록 하고 싶다"
+      }
+    ]
+  },
+  {
+    "index": 115,
+    "start": 334.16,
+    "end": 336.48,
+    "text": "someone about this for so long",
+    "pronunciation": "섬원 어바웃 디스 포 소우 롱",
+    "translation": "누군가와 이거 대해 정말 오래",
+    "notes": [
+      {
+        "word": "someone about this",
+        "actual": "섬원 어바웃 디스",
+        "meaning": "누군가에게 이것에 대해"
+      }
+    ]
+  },
+  {
+    "index": 116,
+    "start": 336.48,
+    "end": 338.56,
+    "text": "listen you can't say anything to anybody",
+    "pronunciation": "리슨 유 캔트 세이 에니씽 투 에니바디",
+    "translation": "들어 넌 아무도한테 말할 수 없어",
+    "notes": [
+      {
+        "word": "you can't say anything",
+        "actual": "유 캔트 세이 에니씽",
+        "meaning": "넌 아무것도 말할 수 없어"
+      }
+    ]
+  },
+  {
+    "index": 117,
+    "start": 338.56,
+    "end": 342.32,
+    "text": "they're so weird about that listen",
+    "pronunciation": "데어 소우 위어드 어바웃 댓 리슨",
+    "translation": "그들 그것에 대해 정말 이상해 들어",
+    "notes": [
+      {
+        "word": "they're so weird",
+        "actual": "데어 소우 위어드",
+        "meaning": "그들은 정말 이상해"
+      }
+    ]
+  },
+  {
+    "index": 118,
+    "start": 342.88,
+    "end": 345.84,
+    "text": "hey it's raining and i like to fly in",
+    "pronunciation": "헤이 잇츠 레이닝 앤드 아이 라잇 투 플라이 인",
+    "translation": "안녕 비 와 나 날 것 좋아",
+    "notes": [
+      {
+        "word": "it's raining",
+        "actual": "잇츠 레이닝",
+        "meaning": "비가 온다"
+      }
+    ]
+  },
+  {
+    "index": 119,
+    "start": 345.84,
+    "end": 346.32,
+    "text": "the rain",
+    "pronunciation": "더 레인",
+    "translation": "빗속에서",
+    "notes": [
+      {
+        "word": "the rain",
+        "actual": "더 레인",
+        "meaning": "비"
+      }
+    ]
+  },
+  {
+    "index": 120,
+    "start": 346.32,
+    "end": 348.48,
+    "text": "so",
+    "pronunciation": "소우",
+    "translation": "그래서",
+    "notes": [
+      {
+        "word": "so",
+        "actual": "소우",
+        "meaning": "그래서"
+      }
+    ]
+  },
+  {
+    "index": 121,
+    "start": 349.76,
+    "end": 353.44,
+    "text": "oh i am gonna go for a walk in the rain",
+    "pronunciation": "오우 아이 앰 거나 고우 포어 어 워크 인 더 레인",
+    "translation": "오 나 가려고 빗속에 산책",
+    "notes": [
+      {
+        "word": "gonna go for a walk",
+        "actual": "거나 고우 포어 어 워크",
+        "meaning": "산책하러 가다"
+      }
+    ]
+  },
+  {
+    "index": 122,
+    "start": 353.44,
+    "end": 358.62,
+    "text": "oh yeah me too",
+    "pronunciation": "오우 예 미 투",
+    "translation": "오 응 나도",
+    "notes": [
+      {
+        "word": "me too",
+        "actual": "미 투",
+        "meaning": "나도"
+      }
+    ]
+  },
+  {
+    "index": 123,
+    "start": 359.44,
+    "end": 367.6,
+    "text": "it's weird i bet they're doing it",
+    "pronunciation": "잇츠 위어드 아이 벳 데어 두잉 잇",
+    "translation": "이상해 난 내기해 그들 하고 있어",
+    "notes": [
+      {
+        "word": "it's weird",
+        "actual": "잇츠 위어드",
+        "meaning": "이상해"
+      }
+    ]
+  },
+  {
+    "index": 124,
+    "start": 367.6,
+    "end": 370.72,
+    "text": "my god i love this apartment",
+    "pronunciation": "마이 가드 아이 러브 디스 어파트먼트",
+    "translation": "오 신이시여 나 이 아파트 사랑해",
+    "notes": [
+      {
+        "word": "I love this apartment",
+        "actual": "아이 러브 디스 어파트먼트",
+        "meaning": "나 이 아파트를 사랑해"
+      }
+    ]
+  },
+  {
+    "index": 125,
+    "start": 370.72,
+    "end": 373.12,
+    "text": "isn't it perfect i can't believe i never",
+    "pronunciation": "이즈닛 잇 퍼펙트 아이 캔트 벨리브 아이 네버",
+    "translation": "완벽하지 않아 난 못 믿어 나 몰랐어",
+    "notes": [
+      {
+        "word": "isn't it perfect",
+        "actual": "이즈닛 잇 퍼펙트",
+        "meaning": "완벽하지 않니"
+      }
+    ]
+  },
+  {
+    "index": 126,
+    "start": 373.12,
+    "end": 374.4,
+    "text": "realized how how",
+    "pronunciation": "릴라이즈드 하우 하우",
+    "translation": "깨달았어 얼마나 얼마나",
+    "notes": [
+      {
+        "word": "realized how",
+        "actual": "릴라이즈드 하우",
+        "meaning": "깨달았어 얼마나"
+      }
+    ]
+  },
+  {
+    "index": 127,
+    "start": 374.4,
+    "end": 376.64,
+    "text": "great it is well that is because your",
+    "pronunciation": "그레이트 잇 이즈 웰 댓 이즈 비코즈 유어",
+    "translation": "멋진 그거야 글쎄 그게 이유는 너의",
+    "notes": [
+      {
+        "word": "great it is",
+        "actual": "그레이트 잇 이즈",
+        "meaning": "멋진 것이야"
+      }
+    ]
+  },
+  {
+    "index": 128,
+    "start": 376.64,
+    "end": 378.84,
+    "text": "eye immediately goes to the big naked",
+    "pronunciation": "아이 이미디엇리 고우즈 투 더 빅 네이킷",
+    "translation": "눈 곧바로 가 저 큰 벗은",
+    "notes": [
+      {
+        "word": "eye immediately goes",
+        "actual": "아이 이미디엇리 고우즈",
+        "meaning": "눈이 곧바로 간다"
+      }
+    ]
+  },
+  {
+    "index": 129,
+    "start": 378.84,
+    "end": 381.2,
+    "text": "man it's amazing",
+    "pronunciation": "맨 잇츠 어메이징",
+    "translation": "남자 정말 신기해",
+    "notes": [
+      {
+        "word": "it's amazing",
+        "actual": "잇츠 어메이징",
+        "meaning": "정말 놀라워"
+      }
+    ]
+  },
+  {
+    "index": 130,
+    "start": 381.2,
+    "end": 382.48,
+    "text": "you better hurry up and fill out an",
+    "pronunciation": "유 베터 허리 업 앤드 필 아웃 앤",
+    "translation": "넌 빨리 해야 해 그리고 작성하고",
+    "notes": [
+      {
+        "word": "you better hurry up",
+        "actual": "유 베터 허리 업",
+        "meaning": "넌 빨리 해야 해"
+      }
+    ]
+  },
+  {
+    "index": 131,
+    "start": 382.48,
+    "end": 384.24,
+    "text": "application or i'm gonna beat you to it",
+    "pronunciation": "애플리케이션 오어 아임 거나 빗 유 투 잇",
+    "translation": "신청서 아니면 나 널 먼저 이겨",
+    "notes": [
+      {
+        "word": "gonna beat you to it",
+        "actual": "거나 빗 유 투 잇",
+        "meaning": "너보다 먼저 이기다"
+      }
+    ]
+  },
+  {
+    "index": 132,
+    "start": 384.24,
+    "end": 386.48,
+    "text": "oh",
+    "pronunciation": "오우",
+    "translation": "오",
+    "notes": [
+      {
+        "word": "oh",
+        "actual": "오우",
+        "meaning": "오"
+      }
+    ]
+  },
+  {
+    "index": 133,
+    "start": 389.36,
+    "end": 391.04,
+    "text": "well i never thought i'd say this but",
+    "pronunciation": "웰 아이 네버 쏫 아이드 세이 디스 벗",
+    "translation": "글쎄 나 절대 생각 못했어 난 말할",
+    "notes": [
+      {
+        "word": "I never thought",
+        "actual": "아이 네버 쏫",
+        "meaning": "나 절대 생각하지 못했어"
+      }
+    ]
+  },
+  {
+    "index": 134,
+    "start": 391.04,
+    "end": 392.84,
+    "text": "i'm gonna go use ugly naked guy's",
+    "pronunciation": "아임 거나 고우 유즈 어글리 네이킷 가이즈",
+    "translation": "나 가려고 못생긴 벗은 남자의",
+    "notes": [
+      {
+        "word": "gonna go use",
+        "actual": "거나 고우 유즈",
+        "meaning": "가서 사용할 거야"
+      }
+    ]
+  },
+  {
+    "index": 135,
+    "start": 392.84,
+    "end": 395.84,
+    "text": "bathroom",
+    "pronunciation": "배쓰룸",
+    "translation": "욕실",
+    "notes": [
+      {
+        "word": "bathroom",
+        "actual": "배쓰룸",
+        "meaning": "욕실"
+      }
+    ]
+  },
+  {
+    "index": 136,
+    "start": 397.52,
+    "end": 399.04,
+    "text": "oh look there's there's monica and",
+    "pronunciation": "오우 룩 데어즈 데어즈 모니카 앤드",
+    "translation": "오 봐 있어 있어 모니카 그리고",
+    "notes": [
+      {
+        "word": "there's monica",
+        "actual": "데어즈 모니카",
+        "meaning": "모니카가 있어"
+      }
+    ]
+  },
+  {
+    "index": 137,
+    "start": 399.04,
+    "end": 400.72,
+    "text": "chandler hey",
+    "pronunciation": "챈들러 헤이",
+    "translation": "챈들러 안녕",
+    "notes": [
+      {
+        "word": "Chandler hey",
+        "actual": "챈들러 헤이",
+        "meaning": "챈들러 인사"
+      }
+    ]
+  },
+  {
+    "index": 138,
+    "start": 400.72,
+    "end": 414.87,
+    "text": "hey you guys hey",
+    "pronunciation": "헤이 유 가이즈 헤이",
+    "translation": "안녕 너희들 안녕",
+    "notes": [
+      {
+        "word": "hey you guys",
+        "actual": "헤이 유 가이즈",
+        "meaning": "너희들 안녕"
+      }
+    ]
+  },
+  {
+    "index": 139,
+    "start": 420.84,
+    "end": 425.18,
+    "text": "oh",
+    "pronunciation": "오우",
+    "translation": "오",
+    "notes": [
+      {
+        "word": "oh",
+        "actual": "오우",
+        "meaning": "오"
+      }
+    ]
+  },
+  {
+    "index": 140,
+    "start": 430.08,
+    "end": 432.0,
+    "text": "yes i know and joey knows but ross",
+    "pronunciation": "예스 아이 노우 앤드 조이 노우즈 벗 로스",
+    "translation": "응 나 알아 그리고 조이 알아 하지만 로스",
+    "notes": [
+      {
+        "word": "I know and Joey knows",
+        "actual": "아이 노우 앤드 조이 노우즈",
+        "meaning": "나 알고 조이도 알아"
+      }
+    ]
+  },
+  {
+    "index": 141,
+    "start": 432.0,
+    "end": 433.12,
+    "text": "doesn't know so you have to stop",
+    "pronunciation": "더즈닛 노우 소우 유 해브 투 스탑",
+    "translation": "몰라 그래서 넌 멈춰야 해",
+    "notes": [
+      {
+        "word": "doesn't know",
+        "actual": "더즈닛 노우",
+        "meaning": "모른다"
+      }
+    ]
+  },
+  {
+    "index": 142,
+    "start": 433.12,
+    "end": 434.64,
+    "text": "screaming",
+    "pronunciation": "스크리밍",
+    "translation": "비명",
+    "notes": [
+      {
+        "word": "screaming",
+        "actual": "스크리밍",
+        "meaning": "비명 지르다"
+      }
+    ]
+  },
+  {
+    "index": 143,
+    "start": 434.64,
+    "end": 437.12,
+    "text": "hey what's",
+    "pronunciation": "헤이 왓츠",
+    "translation": "안녕 뭐야",
+    "notes": [
+      {
+        "word": "hey what's",
+        "actual": "헤이 왓츠",
+        "meaning": "안녕 뭐야"
+      }
+    ]
+  },
+  {
+    "index": 144,
+    "start": 443.68,
+    "end": 451.84,
+    "text": "actually it looks really good",
+    "pronunciation": "액추얼리 잇 룩스 릴리 굿",
+    "translation": "사실 그거 정말 좋아 보여",
+    "notes": [
+      {
+        "word": "it looks really good",
+        "actual": "잇 룩스 릴리 굿",
+        "meaning": "정말 좋아 보인다"
+      }
+    ]
+  }
+]
