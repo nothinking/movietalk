@@ -204,7 +204,7 @@ function VideoListScreen({ videos, onSelect }) {
 }
 
 // ── Player Screen ──
-function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIndex, initialMode }) {
+function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubtitles, initialSubIndex, initialMode }) {
   const playerRef = useRef(null);
   const playerInstanceRef = useRef(null);
   const [playerReady, setPlayerReady] = useState(false);
@@ -607,6 +607,33 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
   };
   saveEditRef.current = saveEdit;
 
+  const [isMerging, setIsMerging] = useState(false);
+
+  const mergeWithPrev = async () => {
+    if (!studyModeRef.current || studyIndexRef.current <= 0) return;
+    const curr = subtitles[studyIndexRef.current];
+    if (!curr) return;
+
+    if (!confirm(`"${subtitles[studyIndexRef.current - 1].text.slice(0, 30)}..." 에\n"${curr.text}" 를 합칩니다.\n\n계속할까요?`)) return;
+
+    setIsMerging(true);
+    try {
+      const res = await fetch(`/api/subtitle/merge/${video.id}/${curr.index}`, { method: "POST" });
+      if (!res.ok) throw new Error("합치기 실패");
+      const result = await res.json();
+      if (onMergeSubtitles) onMergeSubtitles(result.subtitles);
+      // 합쳐진 후 이전 자막(합쳐진 결과)으로 이동
+      const newIdx = Math.max(0, studyIndexRef.current - 1);
+      studyIndexRef.current = newIdx;
+      setStudyIndex(newIdx);
+      setHash(video.id, result.subtitles[newIdx].index, false, "study");
+    } catch (err) {
+      alert("합치기 실패: " + err.message);
+    } finally {
+      setIsMerging(false);
+    }
+  };
+
   return (
     <>
       {/* Sub-header: back button + title */}
@@ -903,12 +930,24 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
                         🔊 실제 발음
                       </div>
                       {!isEditing && (
-                        <button
-                          onClick={startEditing}
-                          style={{ background: "none", border: "none", color: "#666", cursor: "pointer", fontSize: "14px", padding: "2px 6px" }}
-                        >
-                          ✏️
-                        </button>
+                        <span style={{ display: "flex", gap: "4px", alignItems: "center" }}>
+                          {studyIndex > 0 && (
+                            <button
+                              onClick={mergeWithPrev}
+                              disabled={isMerging}
+                              style={{ background: "none", border: "none", color: "#555", cursor: isMerging ? "not-allowed" : "pointer", fontSize: "13px", padding: "2px 6px", opacity: isMerging ? 0.5 : 1 }}
+                              title="이전 문장에 합치기"
+                            >
+                              {isMerging ? "..." : "⤴"}
+                            </button>
+                          )}
+                          <button
+                            onClick={startEditing}
+                            style={{ background: "none", border: "none", color: "#666", cursor: "pointer", fontSize: "14px", padding: "2px 6px" }}
+                          >
+                            ✏️
+                          </button>
+                        </span>
                       )}
                     </div>
                     {isEditing ? (
@@ -1069,6 +1108,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
               >
                 🔊 이 문장 듣기
               </button>
+
             </div>
           )}
 
@@ -2029,6 +2069,10 @@ export default function MovieEnglishApp() {
     );
   };
 
+  const handleMergeSubtitles = (newSubtitles) => {
+    setSubtitles(newSubtitles);
+  };
+
   return (
     <div
       style={{
@@ -2120,6 +2164,7 @@ export default function MovieEnglishApp() {
           subtitles={subtitles}
           onBack={handleBack}
           onUpdateSubtitle={handleUpdateSubtitle}
+          onMergeSubtitles={handleMergeSubtitles}
           initialSubIndex={initialSubIndex}
           initialMode={initialMode}
         />
