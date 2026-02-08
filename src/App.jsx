@@ -276,6 +276,26 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
           setStudyIndex(newIdx);
           return;
         }
+        if (e.key === " " || e.code === "Space") {
+          e.preventDefault();
+          const sub = subtitles[studyIndexRef.current];
+          if (playerInstanceRef.current && sub) {
+            playerInstanceRef.current.seekTo(sub.start);
+            playerInstanceRef.current.playVideo();
+            const checkEnd = setInterval(() => {
+              if (playerInstanceRef.current) {
+                const ct = playerInstanceRef.current.getCurrentTime();
+                if (ct >= sub.end) {
+                  playerInstanceRef.current.pauseVideo();
+                  clearInterval(checkEnd);
+                }
+              } else {
+                clearInterval(checkEnd);
+              }
+            }, 100);
+          }
+          return;
+        }
         return;
       }
 
