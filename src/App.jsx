@@ -235,9 +235,12 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   const hasPronunciation =
     subtitles.length > 0 && "pronunciation" in subtitles[0];
 
-  // 퍼머링크로 학습 모드 진입
+  // 퍼머링크로 학습 모드 진입 (최초 1회만)
+  const studyModeInitRef = useRef(false);
   useEffect(() => {
+    if (studyModeInitRef.current) return;
     if (initialMode === "study" && hasPronunciation && subtitles.length > 0) {
+      studyModeInitRef.current = true;
       const idx = initialSubIndex != null
         ? Math.max(0, subtitles.findIndex((s) => s.index === initialSubIndex))
         : 0;
