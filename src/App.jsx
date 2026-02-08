@@ -204,7 +204,7 @@ function VideoListScreen({ videos, onSelect }) {
 }
 
 // ── Player Screen ──
-function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIndex }) {
+function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIndex, initialMode }) {
   const playerRef = useRef(null);
   const playerInstanceRef = useRef(null);
   const [playerReady, setPlayerReady] = useState(false);
@@ -235,6 +235,19 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
   const hasPronunciation =
     subtitles.length > 0 && "pronunciation" in subtitles[0];
 
+  // 퍼머링크로 학습 모드 진입
+  useEffect(() => {
+    if (initialMode === "study" && hasPronunciation && subtitles.length > 0) {
+      const idx = initialSubIndex != null
+        ? Math.max(0, subtitles.findIndex((s) => s.index === initialSubIndex))
+        : 0;
+      studyModeRef.current = true;
+      studyIndexRef.current = idx;
+      setStudyMode(true);
+      setStudyIndex(idx);
+    }
+  }, [initialMode, hasPronunciation, subtitles.length]);
+
   // 키보드 단축키: ←→ 문장 이동, Space 일시정지/재생, Cmd+S 저장
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -260,6 +273,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
           e.preventDefault();
           studyModeRef.current = false;
           setStudyMode(false);
+          setHash(video.id, null);
           return;
         }
         if (e.key === "ArrowLeft") {
@@ -267,6 +281,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
           const newIdx = Math.max(0, studyIndexRef.current - 1);
           studyIndexRef.current = newIdx;
           setStudyIndex(newIdx);
+          setHash(video.id, subtitles[newIdx].index, false, "study");
           return;
         }
         if (e.key === "ArrowRight") {
@@ -274,6 +289,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
           const newIdx = Math.min(subtitles.length - 1, studyIndexRef.current + 1);
           studyIndexRef.current = newIdx;
           setStudyIndex(newIdx);
+          setHash(video.id, subtitles[newIdx].index, false, "study");
           return;
         }
         if (e.key === " " || e.code === "Space") {
@@ -529,7 +545,17 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
   };
 
   const startEditing = () => {
-    if (currentSubtitle && showPanel) {
+    if (studyModeRef.current) {
+      const sub = subtitles[studyIndexRef.current];
+      if (sub) {
+        setEditData({
+          pronunciation: sub.pronunciation || "",
+          translation: sub.translation || "",
+        });
+        setIsEditing(true);
+        isEditingRef.current = true;
+      }
+    } else if (currentSubtitle && showPanel) {
       setEditData({
         pronunciation: currentSubtitle.pronunciation || "",
         translation: currentSubtitle.translation || "",
@@ -547,12 +573,13 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
   };
 
   const saveEdit = async () => {
-    if (!currentSubtitle) return;
+    const targetSub = studyModeRef.current ? subtitles[studyIndexRef.current] : currentSubtitle;
+    if (!targetSub) return;
     setIsSaving(true);
     isSavingRef.current = true;
     try {
       const res = await fetch(
-        `/api/subtitle/${video.id}/${currentSubtitle.index}`,
+        `/api/subtitle/${video.id}/${targetSub.index}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -566,7 +593,9 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
       const result = await res.json();
       // 로컬 state 업데이트
       if (onUpdateSubtitle) onUpdateSubtitle(result.subtitle);
-      setCurrentSubtitle(result.subtitle);
+      if (!studyModeRef.current) {
+        setCurrentSubtitle(result.subtitle);
+      }
       setIsEditing(false);
       isEditingRef.current = false;
     } catch (err) {
@@ -623,6 +652,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
               if (studyMode) {
                 studyModeRef.current = false;
                 setStudyMode(false);
+                setHash(video.id, activeSubtitle ? activeSubtitle.index : null);
               } else {
                 const idx = activeSubtitle
                   ? subtitles.findIndex((s) => s.index === activeSubtitle.index)
@@ -633,6 +663,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
                 setStudyMode(true);
                 setStudyIndex(newIdx);
                 setExpandedNote(null);
+                setHash(video.id, subtitles[newIdx].index, false, "study");
                 if (playerInstanceRef.current) playerInstanceRef.current.pauseVideo();
               }
             }}
@@ -784,6 +815,8 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
                     studyIndexRef.current = newIdx;
                     setStudyIndex(newIdx);
                     setExpandedNote(null);
+                    if (isEditing) cancelEditing();
+                    setHash(video.id, subtitles[newIdx].index, false, "study");
                   }}
                   disabled={studyIndex === 0}
                   style={{
@@ -799,15 +832,32 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
                 >
                   ← 이전
                 </button>
-                <span
-                  style={{
-                    fontSize: "14px",
-                    color: "#888",
-                    fontWeight: "600",
-                    fontFamily: "monospace",
-                  }}
-                >
-                  {studyIndex + 1} / {subtitles.length}
+                <span style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span
+                    style={{
+                      fontSize: "14px",
+                      color: "#888",
+                      fontWeight: "600",
+                      fontFamily: "monospace",
+                    }}
+                  >
+                    {studyIndex + 1} / {subtitles.length}
+                  </span>
+                  <button
+                    onClick={(e) => {
+                      const url = `${window.location.origin}${window.location.pathname}#v=${video.id}&s=${subtitles[studyIndex].index}&m=study`;
+                      navigator.clipboard.writeText(url);
+                      e.currentTarget.textContent = "✓";
+                      setTimeout(() => { e.currentTarget.textContent = "🔗"; }, 1000);
+                    }}
+                    style={{
+                      background: "transparent", border: "none", color: "#555",
+                      cursor: "pointer", fontSize: "13px", padding: "2px 4px",
+                    }}
+                    title="학습 퍼머링크 복사"
+                  >
+                    🔗
+                  </button>
                 </span>
                 <button
                   onClick={() => {
@@ -815,6 +865,8 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
                     studyIndexRef.current = newIdx;
                     setStudyIndex(newIdx);
                     setExpandedNote(null);
+                    if (isEditing) cancelEditing();
+                    setHash(video.id, subtitles[newIdx].index, false, "study");
                   }}
                   disabled={studyIndex === subtitles.length - 1}
                   style={{
@@ -846,22 +898,85 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
               {hasPronunciation && (
                 <>
                   <div style={{ background: "linear-gradient(135deg, #1a1520, #1a1a2e)", borderRadius: "14px", padding: "20px", marginBottom: "12px", border: "1px solid #2a2040" }}>
-                    <div style={{ fontSize: "11px", color: "#fbbf24", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "10px" }}>
-                      🔊 실제 발음
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                      <div style={{ fontSize: "11px", color: "#fbbf24", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px" }}>
+                        🔊 실제 발음
+                      </div>
+                      {!isEditing && (
+                        <button
+                          onClick={startEditing}
+                          style={{ background: "none", border: "none", color: "#666", cursor: "pointer", fontSize: "14px", padding: "2px 6px" }}
+                        >
+                          ✏️
+                        </button>
+                      )}
                     </div>
-                    <div style={{ fontSize: "20px", fontWeight: "700", lineHeight: "1.5", color: "#fbbf24" }}>
-                      {subtitles[studyIndex].pronunciation}
-                    </div>
+                    {isEditing ? (
+                      <input
+                        type="text"
+                        value={editData.pronunciation}
+                        onChange={(e) => setEditData({ ...editData, pronunciation: e.target.value })}
+                        style={{
+                          width: "100%", background: "#0d0d15", border: "1px solid #fbbf24", borderRadius: "8px",
+                          padding: "10px 12px", color: "#fbbf24", fontSize: "20px", fontWeight: "700",
+                          outline: "none", boxSizing: "border-box",
+                        }}
+                      />
+                    ) : (
+                      <div style={{ fontSize: "20px", fontWeight: "700", lineHeight: "1.5", color: "#fbbf24" }}>
+                        {subtitles[studyIndex].pronunciation}
+                      </div>
+                    )}
                   </div>
 
-                  <div style={{ background: "#111118", borderRadius: "14px", padding: "20px", marginBottom: "16px" }}>
+                  <div style={{ background: "#111118", borderRadius: "14px", padding: "20px", marginBottom: isEditing ? "12px" : "16px" }}>
                     <div style={{ fontSize: "11px", color: "#34d399", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "10px" }}>
                       🇰🇷 해석
                     </div>
-                    <div style={{ fontSize: "17px", fontWeight: "500", lineHeight: "1.5", color: "#a5f3c4" }}>
-                      {subtitles[studyIndex].translation}
-                    </div>
+                    {isEditing ? (
+                      <input
+                        type="text"
+                        value={editData.translation}
+                        onChange={(e) => setEditData({ ...editData, translation: e.target.value })}
+                        style={{
+                          width: "100%", background: "#0d0d15", border: "1px solid #34d399", borderRadius: "8px",
+                          padding: "10px 12px", color: "#a5f3c4", fontSize: "17px", fontWeight: "500",
+                          outline: "none", boxSizing: "border-box",
+                        }}
+                      />
+                    ) : (
+                      <div style={{ fontSize: "17px", fontWeight: "500", lineHeight: "1.5", color: "#a5f3c4" }}>
+                        {subtitles[studyIndex].translation}
+                      </div>
+                    )}
                   </div>
+
+                  {/* Save/Cancel buttons in edit mode */}
+                  {isEditing && (
+                    <div style={{ display: "flex", gap: "8px", marginBottom: "16px" }}>
+                      <button
+                        onClick={saveEdit}
+                        disabled={isSaving}
+                        style={{
+                          flex: 1, background: "#6366f1", border: "none", color: "white",
+                          padding: "12px", borderRadius: "10px", cursor: isSaving ? "not-allowed" : "pointer",
+                          fontSize: "14px", fontWeight: "700", opacity: isSaving ? 0.6 : 1,
+                        }}
+                      >
+                        {isSaving ? "저장 중..." : "💾 저장 (⌘S)"}
+                      </button>
+                      <button
+                        onClick={cancelEditing}
+                        style={{
+                          flex: 1, background: "#1a1a2e", border: "1px solid #2a2a3e", color: "#888",
+                          padding: "12px", borderRadius: "10px", cursor: "pointer",
+                          fontSize: "14px", fontWeight: "600",
+                        }}
+                      >
+                        취소 (Esc)
+                      </button>
+                    </div>
+                  )}
                 </>
               )}
 
@@ -1702,6 +1817,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
                           studyIndexRef.current = newIdx;
                           setStudyIndex(newIdx);
                           setExpandedNote(null);
+                          setHash(video.id, sub.index, false, "study");
                         }
                       } else if (playerInstanceRef.current) {
                         loopTargetRef.current = null;
@@ -1751,7 +1867,8 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
-                        const url = `${window.location.origin}${window.location.pathname}#v=${video.id}&s=${sub.index}`;
+                        let url = `${window.location.origin}${window.location.pathname}#v=${video.id}&s=${sub.index}`;
+                        if (studyMode) url += `&m=study`;
                         navigator.clipboard.writeText(url);
                         e.currentTarget.textContent = "✓";
                         setTimeout(() => { e.currentTarget.textContent = "🔗"; }, 1000);
@@ -1785,16 +1902,21 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
 function parseHash() {
   const hash = window.location.hash.slice(1);
   const params = new URLSearchParams(hash);
-  return { videoId: params.get("v"), subtitleIndex: params.get("s") ? parseInt(params.get("s")) : null };
+  return {
+    videoId: params.get("v"),
+    subtitleIndex: params.get("s") ? parseInt(params.get("s")) : null,
+    mode: params.get("m") || null,
+  };
 }
 
-function setHash(videoId, subtitleIndex, push = false) {
+function setHash(videoId, subtitleIndex, push = false, mode = null) {
   if (!videoId) {
     history.replaceState(null, "", window.location.pathname);
     return;
   }
   let h = `#v=${videoId}`;
   if (subtitleIndex != null) h += `&s=${subtitleIndex}`;
+  if (mode) h += `&m=${mode}`;
   if (push) {
     history.pushState(null, "", h);
   } else {
@@ -1808,6 +1930,7 @@ export default function MovieEnglishApp() {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [subtitles, setSubtitles] = useState([]);
   const [initialSubIndex, setInitialSubIndex] = useState(null);
+  const [initialMode, setInitialMode] = useState(null);
   const [loading, setLoading] = useState(true);
   const [showSaved, setShowSaved] = useState(false);
   const [ytApiReady, setYtApiReady] = useState(false);
@@ -1852,11 +1975,12 @@ export default function MovieEnglishApp() {
       .then((data) => {
         setVideos(data);
         // 해시에 영상 ID가 있으면 자동 선택
-        const { videoId, subtitleIndex } = parseHash();
+        const { videoId, subtitleIndex, mode } = parseHash();
         if (videoId) {
           const found = data.find((v) => v.id === videoId);
           if (found) {
             setInitialSubIndex(subtitleIndex);
+            setInitialMode(mode);
             loadVideo(found);
             return;
           }
@@ -1887,6 +2011,7 @@ export default function MovieEnglishApp() {
 
   const handleSelectVideo = (video) => {
     setInitialSubIndex(null);
+    setInitialMode(null);
     setHash(video.id, null, true);
     loadVideo(video);
   };
@@ -1996,6 +2121,7 @@ export default function MovieEnglishApp() {
           onBack={handleBack}
           onUpdateSubtitle={handleUpdateSubtitle}
           initialSubIndex={initialSubIndex}
+          initialMode={initialMode}
         />
       )}
     </div>

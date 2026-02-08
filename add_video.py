@@ -13,8 +13,14 @@ YouTube URL로 자막을 추출하고 발음 데이터를 생성하여
     # 자막 추출 + 발음 자동 생성 (API key 필요)
     ANTHROPIC_API_KEY=sk-... python add_video.py "https://www.youtube.com/watch?v=VIDEO_ID"
 
+    # Claude Code CLI로 발음 생성 (API key 불필요)
+    python add_video.py --use-claude-code "https://www.youtube.com/watch?v=VIDEO_ID"
+
     # 이미 추출된 자막에 발음 데이터 추가
     python add_video.py --generate-pronunciation VIDEO_ID
+
+    # Claude Code로 기존 자막에 발음 추가
+    python add_video.py --generate-pronunciation --use-claude-code VIDEO_ID
 """
 
 import json
@@ -199,7 +205,34 @@ def save_video_data(video_id: str, data: list):
     return filepath
 
 
-def add_video(youtube_url: str, skip_pronunciation: bool = False):
+def generate_pronunciation_claude_code(subtitles: list, video_id: str) -> list:
+    """Claude Code CLI로 발음 데이터를 생성합니다 (API 키 불필요)."""
+    try:
+        subprocess.run(['claude', '--version'], capture_output=True, timeout=5)
+    except (FileNotFoundError, subprocess.TimeoutExpired):
+        print("   ⚠ claude CLI를 찾을 수 없습니다.")
+        return None
+
+    # 자막 데이터를 임시 저장 후 gen_pronunciation.py 호출
+    from gen_pronunciation import generate_for_video
+
+    # 먼저 자막 파일을 임시 저장
+    filepath = VIDEOS_DIR / f"{video_id}.json"
+    VIDEOS_DIR.mkdir(parents=True, exist_ok=True)
+    with open(filepath, 'w', encoding='utf-8') as f:
+        json.dump(subtitles, f, ensure_ascii=False, indent=2)
+
+    # gen_pronunciation 실행
+    success = generate_for_video(video_id, batch_size=24)
+    if not success:
+        return None
+
+    # 결과 읽기
+    with open(filepath, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+
+def add_video(youtube_url: str, skip_pronunciation: bool = False, use_claude_code: bool = False):
     """새 영상을 추가합니다."""
     video_id = extract_video_id(youtube_url)
     full_url = f"https://www.youtube.com/watch?v={video_id}"
@@ -238,18 +271,23 @@ def add_video(youtube_url: str, skip_pronunciation: bool = False):
 
     if not skip_pronunciation:
         print(f"\n🔊 Step 3: 발음 데이터 생성...")
-        pronunciation_data = generate_pronunciation(subtitles)
+        if use_claude_code:
+            pronunciation_data = generate_pronunciation_claude_code(subtitles, video_id)
+        else:
+            pronunciation_data = generate_pronunciation(subtitles)
         if pronunciation_data:
             final_data = pronunciation_data
             has_pronunciation = True
             print(f"   ✓ {len(pronunciation_data)}개 발음 데이터 생성 완료")
         else:
-            if os.environ.get('ANTHROPIC_API_KEY'):
+            if use_claude_code:
+                print("   ⚠ Claude Code 발음 생성 실패, 자막만 저장합니다.")
+            elif os.environ.get('ANTHROPIC_API_KEY'):
                 print("   ⚠ 발음 생성 실패, 자막만 저장합니다.")
             else:
                 print("   ℹ ANTHROPIC_API_KEY가 없어 자막만 저장합니다.")
                 print("   ℹ 나중에 다음 명령으로 발음 데이터를 추가할 수 있습니다:")
-                print(f"     ANTHROPIC_API_KEY=sk-... python add_video.py --generate-pronunciation {video_id}")
+                print(f"     python add_video.py --generate-pronunciation --use-claude-code {video_id}")
     else:
         print(f"\n⏭ Step 3: 발음 생성 건너뜀 (--skip-pronunciation)")
 
@@ -333,11 +371,14 @@ def main():
   # 새 영상 추가 (자막 추출)
   python add_video.py "https://www.youtube.com/watch?v=VIDEO_ID"
 
-  # API key로 발음 데이터도 자동 생성
+  # Claude Code로 발음 데이터도 자동 생성 (API 키 불필요)
+  python add_video.py --use-claude-code "https://www.youtube.com/watch?v=VIDEO_ID"
+
+  # API key로 발음 데이터 자동 생성
   ANTHROPIC_API_KEY=sk-... python add_video.py "https://www.youtube.com/watch?v=VIDEO_ID"
 
-  # 기존 자막에 발음 데이터 추가
-  ANTHROPIC_API_KEY=sk-... python add_video.py --generate-pronunciation VIDEO_ID
+  # 기존 자막에 Claude Code로 발음 추가
+  python add_video.py --generate-pronunciation --use-claude-code VIDEO_ID
 
   # 자막만 추출 (발음 생성 건너뛰기)
   python add_video.py --skip-pronunciation "https://www.youtube.com/watch?v=VIDEO_ID"
@@ -349,13 +390,21 @@ def main():
                         help='발음 데이터 생성을 건너뜁니다')
     parser.add_argument('--generate-pronunciation', action='store_true',
                         help='기존 자막에 발음 데이터를 추가합니다')
+    parser.add_argument('--use-claude-code', action='store_true',
+                        help='Claude Code CLI로 발음 생성 (API 키 불필요)')
 
     args = parser.parse_args()
 
     if args.generate_pronunciation:
-        generate_pronunciation_for_existing(args.url)
+        if args.use_claude_code:
+            from gen_pronunciation import generate_for_video
+            print(f"🎬 Claude Code로 발음 데이터 생성: {args.url}")
+            generate_for_video(args.url)
+        else:
+            generate_pronunciation_for_existing(args.url)
     else:
-        add_video(args.url, skip_pronunciation=args.skip_pronunciation)
+        add_video(args.url, skip_pronunciation=args.skip_pronunciation,
+                  use_claude_code=args.use_claude_code)
 
 
 if __name__ == '__main__':
