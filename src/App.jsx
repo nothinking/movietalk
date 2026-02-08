@@ -227,6 +227,10 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
   const startEditingRef = useRef(null);
   const isEditingRef = useRef(false);
   const isSavingRef = useRef(false);
+  const [studyMode, setStudyMode] = useState(false);
+  const [studyIndex, setStudyIndex] = useState(0);
+  const studyModeRef = useRef(false);
+  const studyIndexRef = useRef(0);
 
   const hasPronunciation =
     subtitles.length > 0 && "pronunciation" in subtitles[0];
@@ -249,6 +253,32 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
       }
 
       if (isEditingRef.current) return;
+
+      // 학습 모드 네비게이션
+      if (studyModeRef.current) {
+        if (e.key === "Escape") {
+          e.preventDefault();
+          studyModeRef.current = false;
+          setStudyMode(false);
+          return;
+        }
+        if (e.key === "ArrowLeft") {
+          e.preventDefault();
+          const newIdx = Math.max(0, studyIndexRef.current - 1);
+          studyIndexRef.current = newIdx;
+          setStudyIndex(newIdx);
+          return;
+        }
+        if (e.key === "ArrowRight") {
+          e.preventDefault();
+          const newIdx = Math.min(subtitles.length - 1, studyIndexRef.current + 1);
+          studyIndexRef.current = newIdx;
+          setStudyIndex(newIdx);
+          return;
+        }
+        return;
+      }
+
       if (!playerInstanceRef.current) return;
 
       // Space: 일시정지/재생 토글
@@ -567,6 +597,40 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
         >
           {video.title}
         </span>
+        {hasPronunciation && (
+          <button
+            onClick={() => {
+              if (studyMode) {
+                studyModeRef.current = false;
+                setStudyMode(false);
+              } else {
+                const idx = activeSubtitle
+                  ? subtitles.findIndex((s) => s.index === activeSubtitle.index)
+                  : 0;
+                const newIdx = Math.max(0, idx);
+                studyModeRef.current = true;
+                studyIndexRef.current = newIdx;
+                setStudyMode(true);
+                setStudyIndex(newIdx);
+                setExpandedNote(null);
+                if (playerInstanceRef.current) playerInstanceRef.current.pauseVideo();
+              }
+            }}
+            style={{
+              background: studyMode ? "#6366f1" : "#1a1a2e",
+              border: "none",
+              color: studyMode ? "#fff" : "#a5b4fc",
+              padding: "6px 12px",
+              borderRadius: "6px",
+              cursor: "pointer",
+              fontSize: "13px",
+              fontWeight: "600",
+              flexShrink: 0,
+            }}
+          >
+            {studyMode ? "▶ 영상" : "📖 학습"}
+          </button>
+        )}
       </div>
 
       {showSaved ? (
@@ -676,6 +740,204 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
         </div>
       ) : (
         <div style={{ maxWidth: "640px", margin: "0 auto" }}>
+          {/* Study Mode */}
+          {studyMode && subtitles[studyIndex] && (
+            <div style={{ padding: "20px", animation: "slideUp 0.3s ease-out" }}>
+              <style>{`
+                @keyframes slideUp {
+                  from { opacity: 0; transform: translateY(16px); }
+                  to { opacity: 1; transform: translateY(0); }
+                }
+              `}</style>
+              {/* Navigation */}
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  marginBottom: "20px",
+                }}
+              >
+                <button
+                  onClick={() => {
+                    const newIdx = Math.max(0, studyIndex - 1);
+                    studyIndexRef.current = newIdx;
+                    setStudyIndex(newIdx);
+                    setExpandedNote(null);
+                  }}
+                  disabled={studyIndex === 0}
+                  style={{
+                    background: "#1a1a2e",
+                    border: "1px solid #2a2a3e",
+                    color: studyIndex === 0 ? "#444" : "#a5b4fc",
+                    cursor: studyIndex === 0 ? "not-allowed" : "pointer",
+                    padding: "10px 20px",
+                    borderRadius: "10px",
+                    fontSize: "14px",
+                    fontWeight: "600",
+                  }}
+                >
+                  ← 이전
+                </button>
+                <span
+                  style={{
+                    fontSize: "14px",
+                    color: "#888",
+                    fontWeight: "600",
+                    fontFamily: "monospace",
+                  }}
+                >
+                  {studyIndex + 1} / {subtitles.length}
+                </span>
+                <button
+                  onClick={() => {
+                    const newIdx = Math.min(subtitles.length - 1, studyIndex + 1);
+                    studyIndexRef.current = newIdx;
+                    setStudyIndex(newIdx);
+                    setExpandedNote(null);
+                  }}
+                  disabled={studyIndex === subtitles.length - 1}
+                  style={{
+                    background: "#1a1a2e",
+                    border: "1px solid #2a2a3e",
+                    color: studyIndex === subtitles.length - 1 ? "#444" : "#a5b4fc",
+                    cursor: studyIndex === subtitles.length - 1 ? "not-allowed" : "pointer",
+                    padding: "10px 20px",
+                    borderRadius: "10px",
+                    fontSize: "14px",
+                    fontWeight: "600",
+                  }}
+                >
+                  다음 →
+                </button>
+              </div>
+
+              {/* Original */}
+              <div style={{ background: "#111118", borderRadius: "14px", padding: "20px", marginBottom: "12px" }}>
+                <div style={{ fontSize: "11px", color: "#6366f1", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "10px" }}>
+                  Original
+                </div>
+                <div style={{ fontSize: "18px", fontWeight: "600", lineHeight: "1.5", color: "#fff" }}>
+                  {subtitles[studyIndex].text}
+                </div>
+              </div>
+
+              {/* Pronunciation + Translation */}
+              {hasPronunciation && (
+                <>
+                  <div style={{ background: "linear-gradient(135deg, #1a1520, #1a1a2e)", borderRadius: "14px", padding: "20px", marginBottom: "12px", border: "1px solid #2a2040" }}>
+                    <div style={{ fontSize: "11px", color: "#fbbf24", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "10px" }}>
+                      🔊 실제 발음
+                    </div>
+                    <div style={{ fontSize: "20px", fontWeight: "700", lineHeight: "1.5", color: "#fbbf24" }}>
+                      {subtitles[studyIndex].pronunciation}
+                    </div>
+                  </div>
+
+                  <div style={{ background: "#111118", borderRadius: "14px", padding: "20px", marginBottom: "16px" }}>
+                    <div style={{ fontSize: "11px", color: "#34d399", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "10px" }}>
+                      🇰🇷 해석
+                    </div>
+                    <div style={{ fontSize: "17px", fontWeight: "500", lineHeight: "1.5", color: "#a5f3c4" }}>
+                      {subtitles[studyIndex].translation}
+                    </div>
+                  </div>
+                </>
+              )}
+
+              {/* Notes */}
+              {subtitles[studyIndex].notes && subtitles[studyIndex].notes.length > 0 && (
+                <div style={{ marginBottom: "12px" }}>
+                  <div style={{ fontSize: "11px", color: "#888", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "10px", padding: "0 4px" }}>
+                    💡 발음 포인트
+                  </div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                    {subtitles[studyIndex].notes.map((note, i) => (
+                      <div
+                        key={i}
+                        style={{
+                          background: "#111118",
+                          borderRadius: "12px",
+                          padding: "14px 16px",
+                          cursor: "pointer",
+                          border: expandedNote === i ? "1px solid #6366f1" : "1px solid transparent",
+                          transition: "all 0.2s",
+                        }}
+                        onClick={() => setExpandedNote(expandedNote === i ? null : i)}
+                      >
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                            <span style={{ color: "#a5b4fc", fontWeight: "700", fontSize: "15px", fontFamily: "monospace" }}>
+                              {note.word}
+                            </span>
+                            <span style={{ color: "#444" }}>→</span>
+                            <span style={{ color: "#fbbf24", fontWeight: "700", fontSize: "15px" }}>
+                              {note.actual}
+                            </span>
+                          </div>
+                          <button
+                            onClick={(e) => { e.stopPropagation(); saveExpression(note); }}
+                            style={{
+                              background: savedExpressions.find((e) => e.word === note.word) ? "#22c55e" : "#2a2a3e",
+                              border: "none", color: "white", padding: "4px 10px",
+                              borderRadius: "6px", cursor: "pointer", fontSize: "12px",
+                            }}
+                          >
+                            {savedExpressions.find((e) => e.word === note.word) ? "✓" : "+"}
+                          </button>
+                        </div>
+                        {expandedNote === i && (
+                          <div style={{ marginTop: "10px", paddingTop: "10px", borderTop: "1px solid #222", color: "#999", fontSize: "13px", lineHeight: "1.6" }}>
+                            {note.meaning}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Listen button */}
+              <button
+                onClick={() => {
+                  const sub = subtitles[studyIndex];
+                  if (playerInstanceRef.current && sub) {
+                    playerInstanceRef.current.seekTo(sub.start);
+                    playerInstanceRef.current.playVideo();
+                    const checkEnd = setInterval(() => {
+                      if (playerInstanceRef.current) {
+                        const ct = playerInstanceRef.current.getCurrentTime();
+                        if (ct >= sub.end) {
+                          playerInstanceRef.current.pauseVideo();
+                          clearInterval(checkEnd);
+                        }
+                      } else {
+                        clearInterval(checkEnd);
+                      }
+                    }, 100);
+                  }
+                }}
+                disabled={!playerReady}
+                style={{
+                  width: "100%",
+                  background: "#6366f1",
+                  border: "none",
+                  color: "white",
+                  padding: "14px",
+                  borderRadius: "12px",
+                  cursor: playerReady ? "pointer" : "not-allowed",
+                  fontSize: "14px",
+                  fontWeight: "700",
+                  marginTop: "8px",
+                  opacity: playerReady ? 1 : 0.5,
+                }}
+              >
+                🔊 이 문장 듣기
+              </button>
+            </div>
+          )}
+
+          <div style={{ display: studyMode ? "none" : "block" }}>
           {/* YouTube Player */}
           <div ref={playerRef} style={{ width: "100%", background: "#000" }}>
             <div id={`yt-player-${video.id}`}></div>
@@ -1381,6 +1643,8 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
             </div>
           )}
 
+          </div>
+
           {/* Sentence Timeline */}
           <div
             style={{ padding: "16px 20px", borderTop: "1px solid #1a1a2e" }}
@@ -1405,12 +1669,21 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, initialSubIn
               }}
             >
               {subtitles.map((sub, i) => {
-                const isActive = activeSubtitle && sub.index === activeSubtitle.index;
+                const isActive = studyMode
+                  ? i === studyIndex
+                  : activeSubtitle && sub.index === activeSubtitle.index;
                 return (
                   <div
                     key={i}
                     onClick={() => {
-                      if (playerInstanceRef.current) {
+                      if (studyMode) {
+                        const newIdx = subtitles.findIndex((s) => s.index === sub.index);
+                        if (newIdx !== -1) {
+                          studyIndexRef.current = newIdx;
+                          setStudyIndex(newIdx);
+                          setExpandedNote(null);
+                        }
+                      } else if (playerInstanceRef.current) {
                         loopTargetRef.current = null;
                         setIsLooping(false);
                         setShowPanel(false);
