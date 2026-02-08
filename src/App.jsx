@@ -441,7 +441,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
     (s) => currentTime >= s.start && currentTime < s.end
   );
   const lastHashIndexRef = useRef(null);
-  if (activeSubtitle && activeSubtitle.index !== lastHashIndexRef.current) {
+  if (activeSubtitle && activeSubtitle.index !== lastHashIndexRef.current && !studyModeRef.current) {
     lastHashIndexRef.current = activeSubtitle.index;
     setHash(video.id, activeSubtitle.index);
   }
