@@ -2169,7 +2169,7 @@
     "start": 359.44,
     "end": 367.6,
     "text": "it's weird i bet they're doing it",
-    "pronunciation": "잇츠 위어드 아이 벳 데어 두잉 잇",
+    "pronunciation": "잇츠위어드 아이벳데어 두잉잇",
     "translation": "이상해 난 내기해 그들 하고 있어",
     "notes": [
       {
@@ -2184,7 +2184,7 @@
     "start": 367.6,
     "end": 370.72,
     "text": "my god i love this apartment",
-    "pronunciation": "마이 가드 아이 러브 디스 어파트먼트",
+    "pronunciation": "마이갇 아이러 브디스 어파트먼트",
     "translation": "오 신이시여 나 이 아파트 사랑해",
     "notes": [
       {
@@ -2199,7 +2199,7 @@
     "start": 370.72,
     "end": 374.4,
     "text": "isn't it perfect i can't believe i never realized how how",
-    "pronunciation": "이즌릿 퍼펙 아이 캔 빌리브 아이 네버 리얼라이즈드 하우 하우",
+    "pronunciation": "이즌릿퍼펙 아이캔빌리브 아이네버 리얼라이즈드 하우 하우",
     "translation": "완벽하지 않아? 난 어떻게 그걸 깨닫지 못했는지 믿을 수 없어",
     "notes": [
       {
@@ -2229,7 +2229,7 @@
     "start": 374.4,
     "end": 376.64,
     "text": "great it is well that is because your",
-    "pronunciation": "그레이트 잇 이즈 웰 댓 이즈 비코즈 유어",
+    "pronunciation": "그레이트잇이즈 웰 댓이즈 비코즈유어",
     "translation": "멋진 그거야 글쎄 그게 이유는 너의",
     "notes": [
       {
@@ -2244,7 +2244,7 @@
     "start": 376.64,
     "end": 381.2,
     "text": "eye immediately goes to the big naked man it's amazing",
-    "pronunciation": "아이 이미디얼리 고우즈 투 더 빅 네이킷 맨 잇츠 어메이징",
+    "pronunciation": "아이 이미디얼리 고우즈투더 빅네이킷맨 잇츠 어메이징",
     "translation": "시선이 즉시 그 벌거벗은 큰 남자에게 가 놀라워",
     "notes": [
       {
@@ -2267,26 +2267,16 @@
   {
     "index": 81,
     "start": 381.2,
-    "end": 382.48,
-    "text": "you better hurry up and fill out an",
-    "pronunciation": "유 베터 허리 업 앤드 필 아웃 앤",
-    "translation": "넌 빨리 해야 해 그리고 작성하고",
+    "end": 386.48,
+    "text": "you better hurry up and fill out an application or i'm gonna beat you to it oh",
+    "pronunciation": "유베터허리업 앤필라언 애플리케이션 오어 아임거너 빗유투잇 오",
+    "translation": "넌 빨리 해야 해 그리고 작성하고 지원서 아니면 내가 먼저 할 거야 오",
     "notes": [
       {
         "word": "you better hurry up",
         "actual": "유 베터 허리 업",
         "meaning": "넌 빨리 해야 해"
-      }
-    ]
-  },
-  {
-    "index": 82,
-    "start": 382.48,
-    "end": 386.48,
-    "text": "application or i'm gonna beat you to it oh",
-    "pronunciation": "애플리케이션 오어 아임 거너 빗 츄 투 잇 오",
-    "translation": "지원서 아니면 내가 먼저 할 거야 오",
-    "notes": [
+      },
       {
         "word": "or i'm",
         "actual": "오어 아임",
@@ -2305,11 +2295,11 @@
     ]
   },
   {
-    "index": 83,
+    "index": 82,
     "start": 389.36,
     "end": 391.04,
     "text": "well i never thought i'd say this but",
-    "pronunciation": "웰 아이 네버 쏫 아이드 세이 디스 벗",
+    "pronunciation": "웰 아이네버 쏫아이드 세이디스 벗",
     "translation": "글쎄 나 절대 생각 못했어 난 말할",
     "notes": [
       {
@@ -2320,11 +2310,11 @@
     ]
   },
   {
-    "index": 84,
+    "index": 83,
     "start": 391.04,
     "end": 395.84,
     "text": "i'm gonna go use ugly naked guy's bathroom",
-    "pronunciation": "아임 거너 고우 유즈 어글리 네이킷 가이즈 배쓰룸",
+    "pronunciation": "아임거너 고우유즈 어글리네이킷 가이즈배쓰룸",
     "translation": "난 못생긴 벌거벗은 남자의 화장실을 쓸 거야",
     "notes": [
       {
@@ -2345,7 +2335,7 @@
     ]
   },
   {
-    "index": 85,
+    "index": 84,
     "start": 397.52,
     "end": 400.72,
     "text": "oh look there's there's monica and chandler hey",
@@ -2370,7 +2360,7 @@
     ]
   },
   {
-    "index": 86,
+    "index": 85,
     "start": 400.72,
     "end": 425.18,
     "text": "hey you guys hey oh",
@@ -2395,7 +2385,7 @@
     ]
   },
   {
-    "index": 87,
+    "index": 86,
     "start": 430.08,
     "end": 432,
     "text": "yes i know and joey knows but ross",
@@ -2410,11 +2400,11 @@
     ]
   },
   {
-    "index": 88,
+    "index": 87,
     "start": 432,
     "end": 437.12,
     "text": "doesn't know so you have to stop screaming hey what's",
-    "pronunciation": "더즌 노우 소 유 해프 투 스탑 스크리밍 헤이 왓츠",
+    "pronunciation": "더즌노우 소유 해프투스탑 스크리밍 헤이 왓츠 고인온",
     "translation": "모르니까 소리 지르는 걸 멈춰야 해 헤이 뭐야",
     "notes": [
       {
@@ -2435,7 +2425,7 @@
     ]
   },
   {
-    "index": 89,
+    "index": 88,
     "start": 443.68,
     "end": 451.84,
     "text": "actually it looks really good",
