@@ -1712,10 +1712,10 @@
   {
     "index": 52,
     "start": 264.64,
-    "end": 269.6,
-    "text": "i'm not gonna tell you but if you found out on your own that would be okay and then we could",
-    "pronunciation": "낫거나텔유 벗이프유 파운드아웃 온유어오운 댓 우드 비 오케이 앤드 덴 위 쿠드",
-    "translation": "난 너한테 안 말할 거지만 넌 알아채면 스스로 알아내면 그럼 괜찮고 그러면 우리는",
+    "end": 267.91,
+    "text": "i'm not gonna tell you but if you found out on your own that",
+    "pronunciation": "낫거나텔유 벗이프유 파운드아웃 온유어오운 ",
+    "translation": "난 너한테 안 말할 거지만 넌 알아채면 스스로 알아내면",
     "notes": [
       {
         "word": "found",
@@ -1735,12 +1735,12 @@
     ]
   },
   {
+    "text": "would be okay and then we could talk about it right",
+    "start": 267.91,
+    "end": 270.9,
+    "pronunciation": "댓우드비 오케이 앤드덴위쿠드 톡어바웃잇 라잇",
+    "translation": "그럼 괜찮고 그러면 우리는 얘기할 수 있지 그런데",
     "index": 53,
-    "start": 269.6,
-    "end": 271.6,
-    "text": "talk about it right well then it",
-    "pronunciation": "톡 어바웃 잇 라잇 웰 덴 잇",
-    "translation": "얘기할 수 있지 그런데 그럼 그건",
     "notes": [
       {
         "word": "talk",
@@ -1750,12 +1750,12 @@
     ]
   },
   {
-    "index": 54,
-    "start": 271.6,
+    "text": "well then it wouldn't be a secret",
+    "start": 270.9,
     "end": 272.96,
-    "text": "wouldn't be a secret",
-    "pronunciation": "우드빈 어 씨크릿",
-    "translation": "비밀이 아니지",
+    "pronunciation": "웰 덴 잇운비 어 씨크릿",
+    "translation": "그럼 그건 비밀이 아니지",
+    "index": 54,
     "notes": [
       {
         "word": "secret",

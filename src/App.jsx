@@ -634,6 +634,43 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
     }
   };
 
+  const [splitMode, setSplitMode] = useState(false);
+  const [splitPoint, setSplitPoint] = useState(null);
+  const [isSplitting, setIsSplitting] = useState(false);
+
+  const startSplit = () => {
+    setSplitMode(true);
+    setSplitPoint(null);
+  };
+  const cancelSplit = () => {
+    setSplitMode(false);
+    setSplitPoint(null);
+  };
+  const confirmSplit = async () => {
+    if (splitPoint == null) return;
+    const sub = subtitles[studyIndexRef.current];
+    if (!sub) return;
+
+    setIsSplitting(true);
+    try {
+      const res = await fetch(`/api/subtitle/split/${video.id}/${sub.index}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ splitAfterWord: splitPoint }),
+      });
+      if (!res.ok) throw new Error("분리 실패");
+      const result = await res.json();
+      if (onMergeSubtitles) onMergeSubtitles(result.subtitles);
+      setHash(video.id, result.subtitles[studyIndexRef.current].index, false, "study");
+    } catch (err) {
+      alert("분리 실패: " + err.message);
+    } finally {
+      setIsSplitting(false);
+      setSplitMode(false);
+      setSplitPoint(null);
+    }
+  };
+
   return (
     <>
       {/* Sub-header: back button + title */}
@@ -843,6 +880,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     setStudyIndex(newIdx);
                     setExpandedNote(null);
                     if (isEditing) cancelEditing();
+                    if (splitMode) cancelSplit();
                     setHash(video.id, subtitles[newIdx].index, false, "study");
                   }}
                   disabled={studyIndex === 0}
@@ -893,6 +931,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     setStudyIndex(newIdx);
                     setExpandedNote(null);
                     if (isEditing) cancelEditing();
+                    if (splitMode) cancelSplit();
                     setHash(video.id, subtitles[newIdx].index, false, "study");
                   }}
                   disabled={studyIndex === subtitles.length - 1}
@@ -912,13 +951,68 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
               </div>
 
               {/* Original */}
-              <div style={{ background: "#111118", borderRadius: "14px", padding: "20px", marginBottom: "12px" }}>
+              <div style={{ background: splitMode ? "#111125" : "#111118", borderRadius: "14px", padding: "20px", marginBottom: "12px", border: splitMode ? "1px solid #6366f1" : "1px solid transparent", transition: "all 0.2s" }}>
                 <div style={{ fontSize: "11px", color: "#6366f1", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "10px" }}>
-                  Original
+                  {splitMode ? "✂️ 분리할 위치를 선택하세요" : "Original"}
                 </div>
-                <div style={{ fontSize: "18px", fontWeight: "600", lineHeight: "1.5", color: "#fff" }}>
-                  {subtitles[studyIndex].text}
-                </div>
+                {splitMode ? (
+                  <div style={{ fontSize: "18px", fontWeight: "600", lineHeight: "2", color: "#fff", display: "flex", flexWrap: "wrap", gap: "0px", alignItems: "center" }}>
+                    {subtitles[studyIndex].text.split(/\s+/).map((word, wi, arr) => (
+                      <span key={wi} style={{ display: "inline-flex", alignItems: "center" }}>
+                        <span style={{
+                          padding: "2px 4px", borderRadius: "4px",
+                          background: splitPoint != null && wi < splitPoint ? "#1a1a4e" : "transparent",
+                          color: splitPoint != null && wi < splitPoint ? "#a5b4fc" : "#fff",
+                        }}>{word}</span>
+                        {wi < arr.length - 1 && (
+                          <button
+                            onClick={() => setSplitPoint(wi + 1)}
+                            style={{
+                              background: splitPoint === wi + 1 ? "#ef4444" : "#2a2a3e",
+                              border: "none",
+                              color: splitPoint === wi + 1 ? "#fff" : "#666",
+                              cursor: "pointer",
+                              padding: "0 3px",
+                              margin: "0 2px",
+                              borderRadius: "3px",
+                              fontSize: "16px",
+                              lineHeight: "1.4",
+                              minWidth: "16px",
+                              fontWeight: "900",
+                            }}
+                            title={`"${arr.slice(0, wi + 1).join(' ')}" | "${arr.slice(wi + 1).join(' ')}"`}
+                          >|</button>
+                        )}
+                      </span>
+                    ))}
+                  </div>
+                ) : (
+                  <div style={{ fontSize: "18px", fontWeight: "600", lineHeight: "1.5", color: "#fff" }}>
+                    {subtitles[studyIndex].text}
+                  </div>
+                )}
+                {splitMode && (
+                  <div style={{ display: "flex", gap: "8px", marginTop: "14px" }}>
+                    <button
+                      onClick={confirmSplit}
+                      disabled={splitPoint == null || isSplitting}
+                      style={{
+                        flex: 1, background: splitPoint != null ? "#ef4444" : "#333", border: "none", color: "#fff",
+                        padding: "10px", borderRadius: "8px", cursor: splitPoint != null && !isSplitting ? "pointer" : "not-allowed",
+                        fontSize: "13px", fontWeight: "700", opacity: splitPoint != null ? 1 : 0.4,
+                      }}
+                    >
+                      {isSplitting ? "분리 중..." : "✂️ 여기서 분리"}
+                    </button>
+                    <button
+                      onClick={cancelSplit}
+                      style={{
+                        flex: 1, background: "#1a1a2e", border: "1px solid #2a2a3e", color: "#888",
+                        padding: "10px", borderRadius: "8px", cursor: "pointer", fontSize: "13px", fontWeight: "600",
+                      }}
+                    >취소</button>
+                  </div>
+                )}
               </div>
 
               {/* Pronunciation + Translation */}
@@ -929,7 +1023,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                       <div style={{ fontSize: "11px", color: "#fbbf24", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px" }}>
                         🔊 실제 발음
                       </div>
-                      {!isEditing && (
+                      {!isEditing && !splitMode && (
                         <span style={{ display: "flex", gap: "4px", alignItems: "center" }}>
                           {studyIndex > 0 && (
                             <button
@@ -939,6 +1033,15 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                               title="이전 문장에 합치기"
                             >
                               {isMerging ? "..." : "⤴"}
+                            </button>
+                          )}
+                          {subtitles[studyIndex].text.split(/\s+/).length >= 2 && (
+                            <button
+                              onClick={startSplit}
+                              style={{ background: "none", border: "none", color: "#555", cursor: "pointer", fontSize: "13px", padding: "2px 6px" }}
+                              title="문장 분리"
+                            >
+                              ✂️
                             </button>
                           )}
                           <button
