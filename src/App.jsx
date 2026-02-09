@@ -507,8 +507,9 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
     }
     const nextIdx = Math.max(0, currentIdx - 1);
     const target = subtitles[nextIdx];
-    loopTargetRef.current = null;
-    setIsLooping(false);
+    if (loopTargetRef.current) {
+      loopTargetRef.current = { start: target.start, end: target.end };
+    }
     setShowPanel(false);
     setHash(video.id, target.index);
     playerInstanceRef.current.seekTo(target.start);
@@ -526,8 +527,9 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
     }
     const nextIdx = Math.min(subtitles.length - 1, currentIdx + 1);
     const target = subtitles[nextIdx];
-    loopTargetRef.current = null;
-    setIsLooping(false);
+    if (loopTargetRef.current) {
+      loopTargetRef.current = { start: target.start, end: target.end };
+    }
     setShowPanel(false);
     setHash(video.id, target.index);
     playerInstanceRef.current.seekTo(target.start);
