@@ -1113,10 +1113,10 @@
   {
     "index": 28,
     "start": 131.92,
-    "end": 135.04,
-    "text": "yes but you cannot tell anyone no one knows how",
-    "pronunciation": "예스 벗유 캐낫텔애니원 노원노우즈 하우",
-    "translation": "그래, 하지만 아무에게도 말하면 안 돼, 아무도 어떻게 하는지 몰라",
+    "end": 134,
+    "text": "yes but you cannot tell anyone no one knows",
+    "pronunciation": "예스 벗유 캐낫텔애니원 노원노우즈",
+    "translation": "그래, 하지만 아무에게도 말하면 안 돼, 아무도 어떻게 하는지",
     "notes": [
       {
         "word": "but you",
@@ -1141,12 +1141,12 @@
     ]
   },
   {
-    "index": 29,
-    "start": 135.04,
+    "text": "how when it happened in london in london",
+    "start": 134.4,
     "end": 142,
-    "text": "when it happened in london in london",
-    "pronunciation": "웬 잇 해픈드 인 런던 인 런던",
-    "translation": "그것이 언제 일어났는지, 런던에서, 런던에서",
+    "pronunciation": "하우 웬 잇 해쁜인 런던 인 런던",
+    "translation": "몰라 그것이 언제 일어났는지, 런던에서, 런던에서",
+    "index": 29,
     "notes": [
       {
         "word": "when it",
