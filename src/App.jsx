@@ -276,6 +276,9 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
           e.preventDefault();
           studyModeRef.current = false;
           setStudyMode(false);
+          loopTargetRef.current = null;
+          setIsLooping(false);
+          if (playerInstanceRef.current) playerInstanceRef.current.pauseVideo();
           setHash(video.id, null);
           return;
         }
@@ -285,6 +288,12 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
           studyIndexRef.current = newIdx;
           setStudyIndex(newIdx);
           setHash(video.id, subtitles[newIdx].index, false, "study");
+          if (loopTargetRef.current && playerInstanceRef.current) {
+            const newSub = subtitles[newIdx];
+            loopTargetRef.current = { start: newSub.start, end: newSub.end };
+            playerInstanceRef.current.seekTo(newSub.start);
+            playerInstanceRef.current.playVideo();
+          }
           return;
         }
         if (e.key === "ArrowRight") {
@@ -293,25 +302,53 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
           studyIndexRef.current = newIdx;
           setStudyIndex(newIdx);
           setHash(video.id, subtitles[newIdx].index, false, "study");
+          if (loopTargetRef.current && playerInstanceRef.current) {
+            const newSub = subtitles[newIdx];
+            loopTargetRef.current = { start: newSub.start, end: newSub.end };
+            playerInstanceRef.current.seekTo(newSub.start);
+            playerInstanceRef.current.playVideo();
+          }
+          return;
+        }
+        if (e.key === "r" || e.key === "R") {
+          e.preventDefault();
+          const sub = subtitles[studyIndexRef.current];
+          if (!playerInstanceRef.current || !sub) return;
+          if (loopTargetRef.current) {
+            loopTargetRef.current = null;
+            setIsLooping(false);
+            playerInstanceRef.current.pauseVideo();
+          } else {
+            loopTargetRef.current = { start: sub.start, end: sub.end };
+            setIsLooping(true);
+            playerInstanceRef.current.seekTo(sub.start);
+            playerInstanceRef.current.playVideo();
+          }
           return;
         }
         if (e.key === " " || e.code === "Space") {
           e.preventDefault();
           const sub = subtitles[studyIndexRef.current];
           if (playerInstanceRef.current && sub) {
-            playerInstanceRef.current.seekTo(sub.start);
-            playerInstanceRef.current.playVideo();
-            const checkEnd = setInterval(() => {
-              if (playerInstanceRef.current) {
-                const ct = playerInstanceRef.current.getCurrentTime();
-                if (ct >= sub.end) {
-                  playerInstanceRef.current.pauseVideo();
+            if (loopTargetRef.current) {
+              // 반복 중이면 seekTo만 (loopTarget이 반복 처리)
+              playerInstanceRef.current.seekTo(sub.start);
+              playerInstanceRef.current.playVideo();
+            } else {
+              playerInstanceRef.current.seekTo(sub.start);
+              playerInstanceRef.current.playVideo();
+              const checkEnd = setInterval(() => {
+                if (playerInstanceRef.current) {
+                  const ct = playerInstanceRef.current.getCurrentTime();
+                  if (ct >= sub.end) {
+                    playerInstanceRef.current.pauseVideo();
+                    clearInterval(checkEnd);
+                  }
+                } else {
                   clearInterval(checkEnd);
                 }
-              } else {
-                clearInterval(checkEnd);
-              }
-            }, 100);
+              }, 100);
+            }
           }
           return;
         }
@@ -721,6 +758,9 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
               if (studyMode) {
                 studyModeRef.current = false;
                 setStudyMode(false);
+                loopTargetRef.current = null;
+                setIsLooping(false);
+                if (playerInstanceRef.current) playerInstanceRef.current.pauseVideo();
                 setHash(video.id, activeSubtitle ? activeSubtitle.index : null);
               } else {
                 const idx = activeSubtitle
@@ -887,6 +927,12 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     if (isEditing) cancelEditing();
                     if (splitMode) cancelSplit();
                     setHash(video.id, subtitles[newIdx].index, false, "study");
+                    if (loopTargetRef.current && playerInstanceRef.current) {
+                      const newSub = subtitles[newIdx];
+                      loopTargetRef.current = { start: newSub.start, end: newSub.end };
+                      playerInstanceRef.current.seekTo(newSub.start);
+                      playerInstanceRef.current.playVideo();
+                    }
                   }}
                   disabled={studyIndex === 0}
                   style={{
@@ -938,6 +984,12 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     if (isEditing) cancelEditing();
                     if (splitMode) cancelSplit();
                     setHash(video.id, subtitles[newIdx].index, false, "study");
+                    if (loopTargetRef.current && playerInstanceRef.current) {
+                      const newSub = subtitles[newIdx];
+                      loopTargetRef.current = { start: newSub.start, end: newSub.end };
+                      playerInstanceRef.current.seekTo(newSub.start);
+                      playerInstanceRef.current.playVideo();
+                    }
                   }}
                   disabled={studyIndex === subtitles.length - 1}
                   style={{
@@ -1179,43 +1231,84 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                 </div>
               )}
 
-              {/* Listen button */}
-              <button
-                onClick={() => {
-                  const sub = subtitles[studyIndex];
-                  if (playerInstanceRef.current && sub) {
-                    playerInstanceRef.current.seekTo(sub.start);
-                    playerInstanceRef.current.playVideo();
-                    const checkEnd = setInterval(() => {
-                      if (playerInstanceRef.current) {
-                        const ct = playerInstanceRef.current.getCurrentTime();
-                        if (ct >= sub.end) {
-                          playerInstanceRef.current.pauseVideo();
-                          clearInterval(checkEnd);
-                        }
+              {/* Listen & Loop buttons */}
+              <div style={{ display: "flex", gap: "8px", marginTop: "8px" }}>
+                <button
+                  onClick={() => {
+                    const sub = subtitles[studyIndex];
+                    if (playerInstanceRef.current && sub) {
+                      if (loopTargetRef.current) {
+                        // 반복 중이면 seekTo만 (loopTarget이 반복 처리)
+                        playerInstanceRef.current.seekTo(sub.start);
+                        playerInstanceRef.current.playVideo();
                       } else {
-                        clearInterval(checkEnd);
+                        playerInstanceRef.current.seekTo(sub.start);
+                        playerInstanceRef.current.playVideo();
+                        const checkEnd = setInterval(() => {
+                          if (playerInstanceRef.current) {
+                            const ct = playerInstanceRef.current.getCurrentTime();
+                            if (ct >= sub.end) {
+                              playerInstanceRef.current.pauseVideo();
+                              clearInterval(checkEnd);
+                            }
+                          } else {
+                            clearInterval(checkEnd);
+                          }
+                        }, 100);
                       }
-                    }, 100);
-                  }
-                }}
-                disabled={!playerReady}
-                style={{
-                  width: "100%",
-                  background: "#6366f1",
-                  border: "none",
-                  color: "white",
-                  padding: "14px",
-                  borderRadius: "12px",
-                  cursor: playerReady ? "pointer" : "not-allowed",
-                  fontSize: "14px",
-                  fontWeight: "700",
-                  marginTop: "8px",
-                  opacity: playerReady ? 1 : 0.5,
-                }}
-              >
-                🔊 이 문장 듣기
-              </button>
+                    }
+                  }}
+                  disabled={!playerReady}
+                  style={{
+                    flex: 1,
+                    background: "#6366f1",
+                    border: "none",
+                    color: "white",
+                    padding: "14px",
+                    borderRadius: "12px",
+                    cursor: playerReady ? "pointer" : "not-allowed",
+                    fontSize: "14px",
+                    fontWeight: "700",
+                    opacity: playerReady ? 1 : 0.5,
+                  }}
+                >
+                  🔊 이 문장 듣기
+                </button>
+                <button
+                  onClick={() => {
+                    const sub = subtitles[studyIndex];
+                    if (!playerInstanceRef.current || !sub) return;
+                    if (loopTargetRef.current) {
+                      // 반복 해제
+                      loopTargetRef.current = null;
+                      setIsLooping(false);
+                      playerInstanceRef.current.pauseVideo();
+                    } else {
+                      // 반복 시작
+                      loopTargetRef.current = { start: sub.start, end: sub.end };
+                      setIsLooping(true);
+                      playerInstanceRef.current.seekTo(sub.start);
+                      playerInstanceRef.current.playVideo();
+                    }
+                  }}
+                  disabled={!playerReady}
+                  style={{
+                    background: isLooping ? "#4f46e5" : "#1a1a2e",
+                    border: isLooping ? "1px solid #6366f1" : "1px solid #2a2a3e",
+                    color: isLooping ? "#e0e7ff" : "#a5b4fc",
+                    padding: "14px 18px",
+                    borderRadius: "12px",
+                    cursor: playerReady ? "pointer" : "not-allowed",
+                    fontSize: "14px",
+                    fontWeight: "700",
+                    opacity: playerReady ? 1 : 0.5,
+                    transition: "all 0.2s",
+                  }}
+                  title="반복 재생 (R)"
+                >
+                  🔄 {isLooping ? "반복 중" : "반복"}
+                </button>
+              </div>
 
             </div>
           )}
