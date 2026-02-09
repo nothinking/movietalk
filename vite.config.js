@@ -184,6 +184,7 @@ function subtitleEditPlugin() {
 export default defineConfig({
   plugins: [react(), subtitleEditPlugin()],
   server: {
+    host: true,
     port: 3000,
     open: true,
   },

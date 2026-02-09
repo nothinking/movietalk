@@ -219,6 +219,9 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   const pollIntervalRef = useRef(null);
   const loopTargetRef = useRef(null);
   const [isLooping, setIsLooping] = useState(false);
+  const continuousPlayRef = useRef(false);
+  const [isContinuousPlay, setIsContinuousPlay] = useState(false);
+  const [videoCollapsed, setVideoCollapsed] = useState(false);
   const sentenceRefs = useRef([]);
   const [isEditing, setIsEditing] = useState(false);
   const [editData, setEditData] = useState({ pronunciation: "", translation: "" });
@@ -278,6 +281,8 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
           setStudyMode(false);
           loopTargetRef.current = null;
           setIsLooping(false);
+          continuousPlayRef.current = false;
+          setIsContinuousPlay(false);
           if (playerInstanceRef.current) playerInstanceRef.current.pauseVideo();
           setHash(video.id, null);
           return;
@@ -424,6 +429,8 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
               setIsPlaying(false);
               loopTargetRef.current = null;
               setIsLooping(false);
+              continuousPlayRef.current = false;
+              setIsContinuousPlay(false);
               stopPolling();
               const ct = playerInstanceRef.current.getCurrentTime();
               setCurrentTime(ct);
@@ -466,6 +473,25 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
         setCurrentTime(ct);
         if (loopTargetRef.current && ct >= loopTargetRef.current.end) {
           playerInstanceRef.current.seekTo(loopTargetRef.current.start);
+        }
+        // 연속 재생: 현재 문장 끝나면 다음 문장으로 자동 이동
+        if (continuousPlayRef.current && studyModeRef.current) {
+          const sub = subtitles[studyIndexRef.current];
+          if (sub && ct >= sub.end) {
+            if (studyIndexRef.current < subtitles.length - 1) {
+              const newIdx = studyIndexRef.current + 1;
+              studyIndexRef.current = newIdx;
+              setStudyIndex(newIdx);
+              const newSub = subtitles[newIdx];
+              playerInstanceRef.current.seekTo(newSub.start);
+              setHash(video.id, newSub.index, false, "study");
+            } else {
+              // 마지막 문장 → 연속 재생 종료
+              continuousPlayRef.current = false;
+              setIsContinuousPlay(false);
+              playerInstanceRef.current.pauseVideo();
+            }
+          }
         }
       }
     }, 100);
@@ -760,6 +786,8 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                 setStudyMode(false);
                 loopTargetRef.current = null;
                 setIsLooping(false);
+                continuousPlayRef.current = false;
+                setIsContinuousPlay(false);
                 if (playerInstanceRef.current) playerInstanceRef.current.pauseVideo();
                 setHash(video.id, activeSubtitle ? activeSubtitle.index : null);
               } else {
@@ -1278,13 +1306,51 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                   onClick={() => {
                     const sub = subtitles[studyIndex];
                     if (!playerInstanceRef.current || !sub) return;
+                    if (continuousPlayRef.current) {
+                      // 연속 재생 해제
+                      continuousPlayRef.current = false;
+                      setIsContinuousPlay(false);
+                      playerInstanceRef.current.pauseVideo();
+                    } else {
+                      // 연속 재생 시작 (반복 모드 해제)
+                      loopTargetRef.current = null;
+                      setIsLooping(false);
+                      continuousPlayRef.current = true;
+                      setIsContinuousPlay(true);
+                      playerInstanceRef.current.seekTo(sub.start);
+                      playerInstanceRef.current.playVideo();
+                    }
+                  }}
+                  disabled={!playerReady}
+                  style={{
+                    background: isContinuousPlay ? "#059669" : "#1a1a2e",
+                    border: isContinuousPlay ? "1px solid #10b981" : "1px solid #2a2a3e",
+                    color: isContinuousPlay ? "#d1fae5" : "#a5b4fc",
+                    padding: "14px 18px",
+                    borderRadius: "12px",
+                    cursor: playerReady ? "pointer" : "not-allowed",
+                    fontSize: "14px",
+                    fontWeight: "700",
+                    opacity: playerReady ? 1 : 0.5,
+                    transition: "all 0.2s",
+                  }}
+                  title="연속 재생"
+                >
+                  ▶▶ {isContinuousPlay ? "재생 중" : "연속"}
+                </button>
+                <button
+                  onClick={() => {
+                    const sub = subtitles[studyIndex];
+                    if (!playerInstanceRef.current || !sub) return;
                     if (loopTargetRef.current) {
                       // 반복 해제
                       loopTargetRef.current = null;
                       setIsLooping(false);
                       playerInstanceRef.current.pauseVideo();
                     } else {
-                      // 반복 시작
+                      // 반복 시작 (연속 재생 해제)
+                      continuousPlayRef.current = false;
+                      setIsContinuousPlay(false);
                       loopTargetRef.current = { start: sub.start, end: sub.end };
                       setIsLooping(true);
                       playerInstanceRef.current.seekTo(sub.start);
@@ -1314,8 +1380,36 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
           )}
 
           <div style={{ display: studyMode ? "none" : "block" }}>
+          {/* Video collapse toggle */}
+          <div
+            onClick={() => setVideoCollapsed(!videoCollapsed)}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "6px",
+              background: "#0d0d14",
+              borderBottom: "1px solid #1a1a2e",
+              cursor: "pointer",
+              userSelect: "none",
+              gap: "6px",
+              fontSize: "12px",
+              color: "#666",
+            }}
+          >
+            <span style={{ transform: videoCollapsed ? "rotate(-90deg)" : "rotate(0deg)", transition: "transform 0.2s", display: "inline-block" }}>▼</span>
+            {videoCollapsed ? "영상 펼치기" : "영상 접기"}
+          </div>
+
           {/* YouTube Player */}
-          <div ref={playerRef} style={{ width: "100%", background: "#000" }}>
+          <div
+            ref={playerRef}
+            style={{
+              width: "100%",
+              background: "#000",
+              display: videoCollapsed ? "none" : "block",
+            }}
+          >
             <div id={`yt-player-${video.id}`}></div>
           </div>
 
