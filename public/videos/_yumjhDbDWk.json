@@ -1,0 +1,8314 @@
+[
+  {
+    "index": 0,
+    "start": 0,
+    "end": 2.4,
+    "text": "I'm here today to talk about thinking for yourself.",
+    "pronunciation": "아임 히어 투데이 투 톡 어바웃 씽킹 퍼 유어셀프. 앤",
+    "translation": "저는 오늘 사고에 대해 이야기하러 왔습니다 스스로 하는 것에",
+    "notes": [
+      {
+        "word": "thinking",
+        "actual": "씽킹",
+        "meaning": "th는 혀를 이 사이에 넣어 발음"
+      },
+      {
+        "word": "about",
+        "actual": "어바웃",
+        "meaning": "a가 약한 schwa '어'로 발음"
+      },
+      {
+        "word": "today",
+        "actual": "투데이",
+        "meaning": "t가 강하게 발음됨"
+      },
+      {
+        "word": "yourself",
+        "actual": "유어셀프",
+        "meaning": "your가 빠르게 '유어'로 축약"
+      },
+      {
+        "word": "admit",
+        "actual": "애드밋",
+        "meaning": "강세가 두 번째 음절에"
+      },
+      {
+        "word": "must",
+        "actual": "머스트",
+        "meaning": "빠른 발화에서 t가 거의 안 들림"
+      }
+    ]
+  },
+  {
+    "text": "And I must admit, I did",
+    "start": 2.4,
+    "end": 3.52,
+    "pronunciation": "나이 머스트 애드밋, 아이 디드",
+    "translation": "대해서요. 그리고 인정해야 하는데, 저는",
+    "index": 1
+  },
+  {
+    "index": 2,
+    "start": 3.52,
+    "end": 5.92,
+    "text": "use AI to help me think about it.",
+    "pronunciation": "유즈 에이아이 투 헬프 미 씽크 어바우릿",
+    "translation": "그것에 대해 생각하는 데 AI를 사용했습니다",
+    "notes": [
+      {
+        "word": "about it",
+        "actual": "어바우릿",
+        "meaning": "t+i 연음으로 '릿'이 됨"
+      },
+      {
+        "word": "think",
+        "actual": "씽크",
+        "meaning": "th 발음 + nk는 '응크'"
+      },
+      {
+        "word": "use",
+        "actual": "유즈",
+        "meaning": "동사로 쓰여 유성음 z 발음"
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "start": 5.92,
+    "end": 8.64,
+    "text": "The the irony is not lost on me. But the",
+    "pronunciation": "더 디 아이러니 이즈 낫 로스트 온 미. 벗 더",
+    "translation": "그 아이러니를 모르는 건 아닙니다. 하지만",
+    "notes": [
+      {
+        "word": "irony",
+        "actual": "아이러니",
+        "meaning": "강세가 첫 음절 'ai'에"
+      },
+      {
+        "word": "not lost",
+        "actual": "낫 로스트",
+        "meaning": "t가 성문 폐쇄음으로 짧게 끊김"
+      },
+      {
+        "word": "the the",
+        "actual": "더 디",
+        "meaning": "반복된 the, 두 번째는 강조로 '디'"
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "start": 8.64,
+    "end": 10.88,
+    "text": "way I did so is not by using AI as an",
+    "pronunciation": "웨이 아이 디드 소 이즈 낫 바이 유징 에이아이 에즈 언",
+    "translation": "제가 그렇게 한 방식은 AI를 하나의",
+    "notes": [
+      {
+        "word": "way I",
+        "actual": "웨이 아이",
+        "meaning": "연속 발음 시 자연스럽게 이어짐"
+      },
+      {
+        "word": "using",
+        "actual": "유징",
+        "meaning": "s가 유성음 z로 발음"
+      },
+      {
+        "word": "as an",
+        "actual": "에즈 언",
+        "meaning": "연음으로 부드럽게 연결"
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "start": 10.88,
+    "end": 12.72,
+    "text": "assistant to help me prepare this talk",
+    "pronunciation": "어시스턴트 투 헬프 미 프리페어 디스 톡",
+    "translation": "보조 도구로 이 발표를 준비하는 데 사용한 게 아닙니다",
+    "notes": [
+      {
+        "word": "assistant",
+        "actual": "어시스턴트",
+        "meaning": "강세가 두 번째 음절에"
+      },
+      {
+        "word": "prepare",
+        "actual": "프리페어",
+        "meaning": "pre가 '프리'로, 강세는 뒤에"
+      },
+      {
+        "word": "this",
+        "actual": "디스",
+        "meaning": "th가 유성음으로 '디'"
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "start": 12.72,
+    "end": 15.52,
+    "text": "faster. Rather, I use AI as a tool for",
+    "pronunciation": "패스터. 래더, 아이 유즈 에이아이 에즈 어 툴 포어",
+    "translation": "더 빠르게요. 오히려, 저는 AI를 하나의 도구로 사용했습니다",
+    "notes": [
+      {
+        "word": "faster",
+        "actual": "패스터",
+        "meaning": "t가 모음 사이에서 플랩 '러'에 가까움"
+      },
+      {
+        "word": "rather",
+        "actual": "래더",
+        "meaning": "th가 유성음 '더', 빠르게 발음"
+      },
+      {
+        "word": "tool",
+        "actual": "툴",
+        "meaning": "긴 모음 oo 강조"
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "start": 15.52,
+    "end": 18,
+    "text": "thought. And by the end of this talk, I",
+    "pronunciation": "쏘옷. 앤 바이 디 엔드 어브 디스 톡, 아이",
+    "translation": "생각의 도구로요. 그리고 이 발표가 끝날 때쯤, 저는",
+    "notes": [
+      {
+        "word": "thought",
+        "actual": "쏘옷",
+        "meaning": "th는 무성음 'ㅆ', ght는 묵음"
+      },
+      {
+        "word": "end of",
+        "actual": "엔드 어브",
+        "meaning": "d+of 연음으로 자연스럽게 이어짐"
+      },
+      {
+        "word": "by the",
+        "actual": "바이 더",
+        "meaning": "the가 약하게 '더'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "start": 18,
+    "end": 19.76,
+    "text": "would have explained what I mean by",
+    "pronunciation": "우드 해브 익스플레인드 왓 아이 민 바이",
+    "translation": "제가 의미하는 바를 설명했을 것입니다",
+    "notes": [
+      {
+        "word": "would have",
+        "actual": "우드 해브",
+        "meaning": "빠른 발화에서 '우더브'로 축약 가능"
+      },
+      {
+        "word": "explained",
+        "actual": "익스플레인드",
+        "meaning": "강세가 두 번째 음절 'plain'에"
+      },
+      {
+        "word": "mean",
+        "actual": "민",
+        "meaning": "긴 모음 ee 발음"
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "start": 19.76,
+    "end": 21.84,
+    "text": "that, why it's important, and given you",
+    "pronunciation": "댓, 와이 잇츠 임포어턴트, 앤 기븐 유",
+    "translation": "그것이 무엇인지, 왜 중요한지, 그리고 여러분에게",
+    "notes": [
+      {
+        "word": "that",
+        "actual": "댓",
+        "meaning": "th 유성음 + 짧은 a"
+      },
+      {
+        "word": "important",
+        "actual": "임포어턴트",
+        "meaning": "t가 성문 폐쇄음으로 약하게"
+      },
+      {
+        "word": "given",
+        "actual": "기븐",
+        "meaning": "i가 짧은 '이'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "start": 21.84,
+    "end": 23.36,
+    "text": "a glimpse of how it might work. But",
+    "pronunciation": "어 글림프스 어브 하우 잇 마잇 워크. 벗",
+    "translation": "그것이 어떻게 작동할 수 있는지 살짝 보여드렸을 것입니다. 하지만",
+    "notes": [
+      {
+        "word": "glimpse",
+        "actual": "글림프스",
+        "meaning": "gl 자음군이 빠르게 발음"
+      },
+      {
+        "word": "might",
+        "actual": "마잇",
+        "meaning": "gh 묵음, t는 약하게"
+      },
+      {
+        "word": "work",
+        "actual": "워크",
+        "meaning": "r이 혀를 말아 발음"
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "start": 23.36,
+    "end": 25.2,
+    "text": "first, I need to set the scene. Let's",
+    "pronunciation": "퍼스트, 아이 니드 투 셋 더 씬. 렛츠",
+    "translation": "먼저, 배경을 설명해야 합니다. 한번",
+    "notes": [
+      {
+        "word": "first",
+        "actual": "퍼스트",
+        "meaning": "ir이 '어'로, t는 약하게"
+      },
+      {
+        "word": "scene",
+        "actual": "씬",
+        "meaning": "sc가 's'로 발음, 긴 모음"
+      },
+      {
+        "word": "let's",
+        "actual": "렛츠",
+        "meaning": "t가 강하게 끊어 발음"
+      }
+    ]
+  },
+  {
+    "index": 12,
+    "start": 25.2,
+    "end": 26.88,
+    "text": "look at a day in the life of a 21st",
+    "pronunciation": "룩 앳 어 데이 인 더 라이프 어브 어 트웬티 퍼스트",
+    "translation": "21세기의 하루를 살펴봅시다",
+    "notes": [
+      {
+        "word": "look at a",
+        "actual": "룩 앳 어",
+        "meaning": "빠르게 '루캐러'로 연음 가능"
+      },
+      {
+        "word": "21st",
+        "actual": "트웬티 퍼스트",
+        "meaning": "twenty-first 풀어서 발음"
+      },
+      {
+        "word": "life of",
+        "actual": "라이프 어브",
+        "meaning": "f+of 연음으로 이어짐"
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "start": 26.88,
+    "end": 29.12,
+    "text": "century knowledge worker. I arrive at my",
+    "pronunciation": "센추리 날리지 워커. 아이 어라이브 앳 마이",
+    "translation": "지식 노동자의 일상을요. 저는 제 사무실에 도착해서",
+    "notes": [
+      {
+        "word": "century",
+        "actual": "센추리",
+        "meaning": "t가 'ㅊ'로 구개음화"
+      },
+      {
+        "word": "knowledge",
+        "actual": "날리지",
+        "meaning": "k 묵음, dge는 '지'"
+      },
+      {
+        "word": "arrive",
+        "actual": "어라이브",
+        "meaning": "강세가 두 번째 음절에"
+      }
+    ]
+  },
+  {
+    "index": 14,
+    "start": 29.12,
+    "end": 30.96,
+    "text": "office and look at my inbox full of",
+    "pronunciation": "오피스 앤 룩 앳 마이 인박스 풀 어브",
+    "translation": "가득 찬 받은편지함을 봅니다",
+    "notes": [
+      {
+        "word": "office",
+        "actual": "오피스",
+        "meaning": "강세가 첫 음절에"
+      },
+      {
+        "word": "inbox",
+        "actual": "인박스",
+        "meaning": "in+box 합성어"
+      },
+      {
+        "word": "full of",
+        "actual": "풀 어브",
+        "meaning": "연음으로 '풀러브'에 가깝게"
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "start": 30.96,
+    "end": 32.48,
+    "text": "emails.",
+    "pronunciation": "이메일즈.",
+    "translation": "이메일들이요.",
+    "notes": [
+      {
+        "word": "emails",
+        "actual": "이메일즈",
+        "meaning": "복수형 s가 유성음 z로 발음"
+      }
+    ]
+  },
+  {
+    "index": 16,
+    "start": 32.48,
+    "end": 35.28,
+    "text": "Let's summarize it. Okay, I'm struggling",
+    "pronunciation": "렛츠 서머라이즈 잇. 오케이, 아임 스트러글링",
+    "translation": "요약해 봅시다. 좋아요, 여기서 어떻게 답장해야 할지",
+    "notes": [
+      {
+        "word": "summarize",
+        "actual": "서머라이즈",
+        "meaning": "강세가 첫 음절, z로 끝남"
+      },
+      {
+        "word": "struggling",
+        "actual": "스트러글링",
+        "meaning": "str 자음군이 빠르게 발음"
+      },
+      {
+        "word": "okay",
+        "actual": "오케이",
+        "meaning": "강세가 두 번째 음절에"
+      }
+    ]
+  },
+  {
+    "index": 17,
+    "start": 35.28,
+    "end": 38,
+    "text": "to figure out how to respond here. So,",
+    "pronunciation": "투 피겨 아웃 하우 투 리스판드 히어. 소,",
+    "translation": "고민하고 있어요. 그래서,",
+    "notes": [
+      {
+        "word": "figure out",
+        "actual": "피겨 아웃",
+        "meaning": "빠른 발화에서 '피겨라웃' 연음"
+      },
+      {
+        "word": "respond",
+        "actual": "리스판드",
+        "meaning": "강세가 두 번째 음절에"
+      },
+      {
+        "word": "here",
+        "actual": "히어",
+        "meaning": "r이 약하게 발음"
+      }
+    ]
+  },
+  {
+    "index": 18,
+    "start": 38,
+    "end": 40.56,
+    "text": "let's get AI to write a response. Next,",
+    "pronunciation": "렛츠 겟 에이아이 투 롸잇 어 리스판스. 넥스트,",
+    "translation": "AI에게 답장을 쓰게 합시다. 다음으로,",
+    "notes": [
+      {
+        "word": "let's get",
+        "actual": "렛츠 겟",
+        "meaning": "t가 짧고 강하게 끊김"
+      },
+      {
+        "word": "write",
+        "actual": "롸잇",
+        "meaning": "wr에서 w만 발음, r은 혀 말기"
+      },
+      {
+        "word": "response",
+        "actual": "리스판스",
+        "meaning": "강세가 두 번째 음절에"
+      }
+    ]
+  },
+  {
+    "index": 19,
+    "start": 40.56,
+    "end": 43.04,
+    "text": "I need to write a report, but I'm struck",
+    "pronunciation": "아이 니드 투 롸잇 어 리포트, 벗 아임 스트럭",
+    "translation": "보고서를 써야 하는데, 저는 막혀 있습니다",
+    "notes": [
+      {
+        "word": "report",
+        "actual": "리포트",
+        "meaning": "강세가 두 번째 음절에"
+      },
+      {
+        "word": "struck",
+        "actual": "스트럭",
+        "meaning": "str 자음군 + 짧은 u"
+      },
+      {
+        "word": "need to",
+        "actual": "니드 투",
+        "meaning": "빠르게 '니드투'로 축약"
+      }
+    ]
+  },
+  {
+    "index": 20,
+    "start": 43.04,
+    "end": 45.28,
+    "text": "by the blank page problem. I know I'll",
+    "pronunciation": "바이 더 블랭크 페이지 프라블럼. 아이 노 아일",
+    "translation": "백지 앞의 막막함에요. 저는 알고 있어요",
+    "notes": [
+      {
+        "word": "blank",
+        "actual": "블랭크",
+        "meaning": "bl 자음군 + 비음 nk"
+      },
+      {
+        "word": "problem",
+        "actual": "프라블럼",
+        "meaning": "o가 '아'로, 강세 첫 음절"
+      },
+      {
+        "word": "I'll",
+        "actual": "아일",
+        "meaning": "I will의 축약형"
+      }
+    ]
+  },
+  {
+    "index": 21,
+    "start": 45.28,
+    "end": 46.96,
+    "text": "drop in some resources and get an AI",
+    "pronunciation": "드랍 인 섬 리소시즈 앤 게런 에이아이",
+    "translation": "자료를 좀 넣고 AI에게",
+    "notes": [
+      {
+        "word": "drop in",
+        "actual": "드랍 인",
+        "meaning": "p+i 연음으로 '드라핀'에 가깝게"
+      },
+      {
+        "word": "resources",
+        "actual": "리소시즈",
+        "meaning": "강세 두 번째 음절, ces는 '시즈'"
+      },
+      {
+        "word": "get an",
+        "actual": "게런",
+        "meaning": "t+an 연음, 플랩t로 '게런'"
+      }
+    ]
+  },
+  {
+    "index": 22,
+    "start": 46.96,
+    "end": 49.52,
+    "text": "draft. Looks good to me. By the way,",
+    "pronunciation": "드래프트. 룩스 굿 투 미. 바이 더 웨이,",
+    "translation": "초안을 만들게 할 거예요. 괜찮아 보이네요. 참고로,",
+    "notes": [
+      {
+        "word": "draft",
+        "actual": "드래프트",
+        "meaning": "a가 '애'로, ft는 약하게"
+      },
+      {
+        "word": "looks good",
+        "actual": "룩스 굿",
+        "meaning": "d가 성문 폐쇄음으로 약하게"
+      },
+      {
+        "word": "by the way",
+        "actual": "바이 더 웨이",
+        "meaning": "관용구, 빠르게 '바더웨이'"
+      }
+    ]
+  },
+  {
+    "index": 23,
+    "start": 49.52,
+    "end": 51.04,
+    "text": "writer's block used to be staring at a",
+    "pronunciation": "롸이러즈 블락 유스트 투 비 스테어링 앳 어",
+    "translation": "작가의 막힘은 원래 빈 페이지를 멍하니 쳐다보는 거였는데",
+    "notes": [
+      {
+        "word": "writer's",
+        "actual": "롸이러즈",
+        "meaning": "t가 모음 사이 플랩으로 '러'"
+      },
+      {
+        "word": "block",
+        "actual": "블락",
+        "meaning": "bl 자음군 + 짧은 o는 '아'"
+      },
+      {
+        "word": "staring",
+        "actual": "스테어링",
+        "meaning": "a가 '에어'로 길게 발음"
+      }
+    ]
+  },
+  {
+    "index": 24,
+    "start": 51.04,
+    "end": 52.88,
+    "text": "blank page. Now, it's staring at a page",
+    "pronunciation": "블랭크 페이지. 나우, 잇스 스테어링 애러 페이지",
+    "translation": "빈 페이지. 지금은 페이지를 쳐다보고 있어요",
+    "notes": [
+      {
+        "word": "blank",
+        "actual": "블랭크",
+        "meaning": "빈, 공백의"
+      },
+      {
+        "word": "staring at",
+        "actual": "스테어링 앳",
+        "meaning": "~을 쳐다보다 (stare at 연음)"
+      },
+      {
+        "word": "page",
+        "actual": "페이지",
+        "meaning": "페이지, 쪽"
+      }
+    ]
+  },
+  {
+    "index": 25,
+    "start": 52.88,
+    "end": 54.4,
+    "text": "that AI filled out for me and wondering",
+    "pronunciation": "대래이아이 필다웃 포미 앤 원더링",
+    "translation": "AI가 나를 대신해 채워넣은 페이지를 보며 궁금해하는 거예요",
+    "notes": [
+      {
+        "word": "AI",
+        "actual": "에이아이",
+        "meaning": "인공지능"
+      },
+      {
+        "word": "filled out",
+        "actual": "필다웃",
+        "meaning": "채워넣다 (filled out 연음으로 ㄹ다웃)"
+      },
+      {
+        "word": "wondering",
+        "actual": "원더링",
+        "meaning": "궁금해하다"
+      }
+    ]
+  },
+  {
+    "index": 26,
+    "start": 54.4,
+    "end": 56.8,
+    "text": "if I agree with it. I've become a",
+    "pronunciation": "이파이 어그리 위딧. 아이브 비컴 어",
+    "translation": "내가 그것에 동의하는지. 나는 ~이 되었어요",
+    "notes": [
+      {
+        "word": "agree",
+        "actual": "어그리",
+        "meaning": "동의하다"
+      },
+      {
+        "word": "with it",
+        "actual": "위딧",
+        "meaning": "그것에 (with it 연음)"
+      },
+      {
+        "word": "I've become",
+        "actual": "아이브 비컴",
+        "meaning": "나는 ~이 되었다"
+      }
+    ]
+  },
+  {
+    "index": 27,
+    "start": 56.8,
+    "end": 58.4,
+    "text": "professional validator of a robot's",
+    "pronunciation": "프러페셔널 밸러데이러 어버 로봇스",
+    "translation": "로봇의 전문적인 검증자가",
+    "notes": [
+      {
+        "word": "professional",
+        "actual": "프러페셔널",
+        "meaning": "전문적인"
+      },
+      {
+        "word": "validator",
+        "actual": "밸러데이러",
+        "meaning": "검증자 (t→ㄹ 플랩)"
+      },
+      {
+        "word": "robot's",
+        "actual": "로봇스",
+        "meaning": "로봇의"
+      }
+    ]
+  },
+  {
+    "index": 28,
+    "start": 58.4,
+    "end": 60.64,
+    "text": "opinions.",
+    "pronunciation": "어피니언즈.",
+    "translation": "의견들의요.",
+    "notes": [
+      {
+        "word": "opinions",
+        "actual": "어피니언즈",
+        "meaning": "의견들, 견해들"
+      }
+    ]
+  },
+  {
+    "index": 29,
+    "start": 60.64,
+    "end": 62.96,
+    "text": "I've got some data to analyze. Maybe AI",
+    "pronunciation": "아이브 갓 섬 데이러 투 애널라이즈. 메이비 에이아이",
+    "translation": "분석할 데이터가 좀 있어요. 아마 AI가",
+    "notes": [
+      {
+        "word": "I've got",
+        "actual": "아이브 갓",
+        "meaning": "나는 ~을 가지고 있다"
+      },
+      {
+        "word": "data",
+        "actual": "데이러",
+        "meaning": "데이터 (t→ㄹ 플랩)"
+      },
+      {
+        "word": "analyze",
+        "actual": "애널라이즈",
+        "meaning": "분석하다"
+      }
+    ]
+  },
+  {
+    "index": 30,
+    "start": 62.96,
+    "end": 64.8,
+    "text": "can analyze this data for me. Probably",
+    "pronunciation": "캔 애널라이즈 디스 데이러 포미. 프라블리",
+    "translation": "이 데이터를 대신 분석해줄 수 있겠죠. 아마도",
+    "notes": [
+      {
+        "word": "can",
+        "actual": "캔",
+        "meaning": "~할 수 있다"
+      },
+      {
+        "word": "for me",
+        "actual": "포미",
+        "meaning": "나를 위해 (연음)"
+      },
+      {
+        "word": "probably",
+        "actual": "프라블리",
+        "meaning": "아마도"
+      }
+    ]
+  },
+  {
+    "index": 31,
+    "start": 64.8,
+    "end": 66.64,
+    "text": "correct. Okay, I've got to make a deck",
+    "pronunciation": "커렉트. 오케이, 아이브 가러 메이커 덱",
+    "translation": "맞을 거야. 좋아, 발표 자료도 만들어야 해",
+    "notes": [
+      {
+        "word": "correct",
+        "actual": "커렉트",
+        "meaning": "맞는, 정확한"
+      },
+      {
+        "word": "got to",
+        "actual": "가러",
+        "meaning": "~해야 한다 (gotta 축약)"
+      },
+      {
+        "word": "deck",
+        "actual": "덱",
+        "meaning": "발표 자료, 슬라이드"
+      }
+    ]
+  },
+  {
+    "index": 32,
+    "start": 66.64,
+    "end": 69.12,
+    "text": "as well. You know the drill. All right.",
+    "pronunciation": "애즈 웰. 유 노우 더 드릴. 올 롸잇.",
+    "translation": "도요. 뭐 다 알잖아요. 좋아요.",
+    "notes": [
+      {
+        "word": "as well",
+        "actual": "애즈 웰",
+        "meaning": "또한, ~도"
+      },
+      {
+        "word": "you know the drill",
+        "actual": "유 노우 더 드릴",
+        "meaning": "뭐 다 아는 얘기잖아 (관용구)"
+      },
+      {
+        "word": "all right",
+        "actual": "올 롸잇",
+        "meaning": "좋아, 알겠어"
+      }
+    ]
+  },
+  {
+    "index": 33,
+    "start": 69.12,
+    "end": 70.48,
+    "text": "Oh, I was supposed to prototype",
+    "pronunciation": "오, 아이 워즈 서포우즈드 투 프로러타입",
+    "translation": "아, 나는 프로토타입을 만들기로 했었는데",
+    "notes": [
+      {
+        "word": "supposed to",
+        "actual": "서포우즈드 투",
+        "meaning": "~하기로 되어 있었다"
+      },
+      {
+        "word": "prototype",
+        "actual": "프로러타입",
+        "meaning": "시제품을 만들다 (t→ㄹ 플랩)"
+      }
+    ]
+  },
+  {
+    "index": 34,
+    "start": 70.48,
+    "end": 73.12,
+    "text": "something as well. Uh, okay. Let me vibe",
+    "pronunciation": "썸씽 애즈 웰. 어, 오케이. 레미 바이브",
+    "translation": "뭔가도요. 어, 좋아. 바이브",
+    "notes": [
+      {
+        "word": "something",
+        "actual": "썸씽",
+        "meaning": "무언가"
+      },
+      {
+        "word": "let me",
+        "actual": "레미",
+        "meaning": "내가 ~할게 (축약 발음)"
+      },
+      {
+        "word": "vibe",
+        "actual": "바이브",
+        "meaning": "바이브 (분위기/감각적으로)"
+      }
+    ]
+  },
+  {
+    "index": 35,
+    "start": 73.12,
+    "end": 75.12,
+    "text": "code something. All right. All this",
+    "pronunciation": "코우드 썸씽. 올 롸잇. 올 디스",
+    "translation": "코딩 좀 해볼게. 좋아. 이거 전부",
+    "notes": [
+      {
+        "word": "code",
+        "actual": "코우드",
+        "meaning": "코딩하다"
+      },
+      {
+        "word": "all right",
+        "actual": "올 롸잇",
+        "meaning": "좋아, 됐어"
+      },
+      {
+        "word": "all this",
+        "actual": "올 디스",
+        "meaning": "이 모든 것"
+      }
+    ]
+  },
+  {
+    "index": 36,
+    "start": 75.12,
+    "end": 76.96,
+    "text": "looks good. Let's go. This isn't a",
+    "pronunciation": "룩스 굿. 렛츠 고우. 디스 이전러",
+    "translation": "좋아 보여. 가자. 이건",
+    "notes": [
+      {
+        "word": "looks good",
+        "actual": "룩스 굿",
+        "meaning": "좋아 보인다"
+      },
+      {
+        "word": "let's go",
+        "actual": "렛츠 고우",
+        "meaning": "가자, 시작하자"
+      },
+      {
+        "word": "isn't a",
+        "actual": "이전러",
+        "meaning": "~이 아니다 (isn't a 연음)"
+      }
+    ]
+  },
+  {
+    "index": 37,
+    "start": 76.96,
+    "end": 78.24,
+    "text": "vision of the future. This is a",
+    "pronunciation": "비전 어브 더 퓨쳐. 디스 이저",
+    "translation": "미래의 비전이 아닙니다. 이것은",
+    "notes": [
+      {
+        "word": "vision",
+        "actual": "비전",
+        "meaning": "비전, 전망"
+      },
+      {
+        "word": "future",
+        "actual": "퓨쳐",
+        "meaning": "미래"
+      },
+      {
+        "word": "this is a",
+        "actual": "디스 이저",
+        "meaning": "이것은 ~이다 (연음)"
+      }
+    ]
+  },
+  {
+    "index": 38,
+    "start": 78.24,
+    "end": 79.84,
+    "text": "completely plausible, if slightly",
+    "pronunciation": "컴플리를리 플로저블, 이프 슬라이를리",
+    "translation": "완전히 그럴듯한, 약간",
+    "notes": [
+      {
+        "word": "completely",
+        "actual": "컴플리를리",
+        "meaning": "완전히 (t→ㄹ 플랩)"
+      },
+      {
+        "word": "plausible",
+        "actual": "플로저블",
+        "meaning": "그럴듯한, 타당한"
+      },
+      {
+        "word": "slightly",
+        "actual": "슬라이를리",
+        "meaning": "약간, 조금 (t→ㄹ 플랩)"
+      }
+    ]
+  },
+  {
+    "index": 39,
+    "start": 79.84,
+    "end": 81.28,
+    "text": "exaggerated, picture of the world of",
+    "pronunciation": "이그재저레이릿, 픽쳐 어브 더 월드 어브",
+    "translation": "과장된, 세계의 모습이에요",
+    "notes": [
+      {
+        "word": "exaggerated",
+        "actual": "이그재저레이릿",
+        "meaning": "과장된"
+      },
+      {
+        "word": "picture",
+        "actual": "픽쳐",
+        "meaning": "그림, 모습"
+      },
+      {
+        "word": "world of",
+        "actual": "월드 어브",
+        "meaning": "~의 세계"
+      }
+    ]
+  },
+  {
+    "index": 40,
+    "start": 81.28,
+    "end": 83.12,
+    "text": "knowledge work today. Welcome to the age",
+    "pronunciation": "널리지 워크 투데이. 웰컴 투 디 에이지",
+    "translation": "오늘날 지식 노동의. ~의 시대에 오신 것을 환영합니다",
+    "notes": [
+      {
+        "word": "knowledge work",
+        "actual": "널리지 워크",
+        "meaning": "지식 노동"
+      },
+      {
+        "word": "welcome to",
+        "actual": "웰컴 투",
+        "meaning": "~에 오신 것을 환영합니다"
+      },
+      {
+        "word": "the age",
+        "actual": "디 에이지",
+        "meaning": "시대 (the+모음 → 디)"
+      }
+    ]
+  },
+  {
+    "index": 41,
+    "start": 83.12,
+    "end": 85.52,
+    "text": "of outsourced reason where the knowledge",
+    "pronunciation": "어브 아웃소어스트 리즌 웨어 더 널리지",
+    "translation": "외주화된 사고의 시대, 지식",
+    "notes": [
+      {
+        "word": "outsourced",
+        "actual": "아웃소어스트",
+        "meaning": "외주화된, 외부에 맡긴"
+      },
+      {
+        "word": "reason",
+        "actual": "리즌",
+        "meaning": "이성, 사고"
+      },
+      {
+        "word": "knowledge",
+        "actual": "널리지",
+        "meaning": "지식"
+      }
+    ]
+  },
+  {
+    "index": 42,
+    "start": 85.52,
+    "end": 87.36,
+    "text": "worker no longer engages with the",
+    "pronunciation": "워커 노 롱거 인게이지즈 윋 더",
+    "translation": "노동자는 더 이상 ~과 관여하지 않습니다",
+    "notes": [
+      {
+        "word": "worker",
+        "actual": "워커",
+        "meaning": "노동자"
+      },
+      {
+        "word": "no longer",
+        "actual": "노 롱거",
+        "meaning": "더 이상 ~하지 않다"
+      },
+      {
+        "word": "engages with",
+        "actual": "인게이지즈 윋",
+        "meaning": "~에 관여하다, 몰두하다"
+      }
+    ]
+  },
+  {
+    "index": 43,
+    "start": 87.36,
+    "end": 88.88,
+    "text": "materials of their craft. We've become",
+    "pronunciation": "머티리얼즈 어브 데어 크래프트. 위브 비컴",
+    "translation": "그들의 업의 재료와. 우리는 ~이 되었어요",
+    "notes": [
+      {
+        "word": "materials",
+        "actual": "머티리얼즈",
+        "meaning": "재료, 소재"
+      },
+      {
+        "word": "craft",
+        "actual": "크래프트",
+        "meaning": "기술, 공예, 업"
+      },
+      {
+        "word": "we've become",
+        "actual": "위브 비컴",
+        "meaning": "우리는 ~이 되었다"
+      }
+    ]
+  },
+  {
+    "index": 44,
+    "start": 88.88,
+    "end": 90.8,
+    "text": "intellectual tourists. In our own work,",
+    "pronunciation": "인텔렉추얼 투어리스츠. 인 아워 오운 워크,",
+    "translation": "지적 관광객이요. 우리 자신의 일에서,",
+    "notes": [
+      {
+        "word": "intellectual",
+        "actual": "인텔렉추얼",
+        "meaning": "지적인"
+      },
+      {
+        "word": "tourists",
+        "actual": "투어리스츠",
+        "meaning": "관광객들"
+      },
+      {
+        "word": "our own",
+        "actual": "아워 오운",
+        "meaning": "우리 자신의"
+      }
+    ]
+  },
+  {
+    "index": 45,
+    "start": 90.8,
+    "end": 94.64,
+    "text": "we visit ideas. We don't inhabit them.",
+    "pronunciation": "위 비짓 아이디어즈. 위 도운트 인해빗 뎀.",
+    "translation": "우리는 아이디어를 방문할 뿐, 거기서 살지 않아요.",
+    "notes": [
+      {
+        "word": "visit",
+        "actual": "비짓",
+        "meaning": "방문하다"
+      },
+      {
+        "word": "inhabit",
+        "actual": "인해빗",
+        "meaning": "거주하다, 살다"
+      },
+      {
+        "word": "don't",
+        "actual": "도운트",
+        "meaning": "~하지 않는다"
+      }
+    ]
+  },
+  {
+    "index": 46,
+    "start": 94.64,
+    "end": 97.44,
+    "text": "Our relationship to our work is entirely",
+    "pronunciation": "아워 릴레이션십 투 아워 워크 이즈 인타이얼리",
+    "translation": "우리 일과의 관계는 완전히",
+    "notes": [
+      {
+        "word": "relationship",
+        "actual": "릴레이션십",
+        "meaning": "관계"
+      },
+      {
+        "word": "entirely",
+        "actual": "인타이얼리",
+        "meaning": "완전히, 전적으로"
+      },
+      {
+        "word": "our work",
+        "actual": "아워 워크",
+        "meaning": "우리의 일"
+      }
+    ]
+  },
+  {
+    "index": 47,
+    "start": 97.44,
+    "end": 99.92,
+    "text": "intermediated by AI. Some might say",
+    "pronunciation": "인터미디에이릿 바이 에이아이. 섬 마잇 세이",
+    "translation": "AI에 의해 중개되고 있어요. 어떤 사람들은 말할지도 몰라요",
+    "notes": [
+      {
+        "word": "intermediated",
+        "actual": "인터미디에이릿",
+        "meaning": "중개된, 매개된 (t→ㄹ 플랩)"
+      },
+      {
+        "word": "some might say",
+        "actual": "섬 마잇 세이",
+        "meaning": "어떤 사람들은 ~라고 말할지도"
+      },
+      {
+        "word": "AI",
+        "actual": "에이아이",
+        "meaning": "인공지능"
+      }
+    ]
+  },
+  {
+    "index": 48,
+    "start": 99.92,
+    "end": 101.68,
+    "text": "alienated. We've heard that story",
+    "pronunciation": "에일리에네이리드. 위브 허드 댓 스토리",
+    "translation": "소외된. 우리는 그 이야기를 들어봤죠",
+    "notes": [
+      {
+        "word": "alienated",
+        "actual": "에일리에네이리드",
+        "meaning": "t가 모음 사이에서 ㄹ로 플래핑"
+      },
+      {
+        "word": "We've",
+        "actual": "위브",
+        "meaning": "we have의 축약형"
+      },
+      {
+        "word": "heard",
+        "actual": "허드",
+        "meaning": "r 묵음화, 길게 발음"
+      }
+    ]
+  },
+  {
+    "index": 49,
+    "start": 101.68,
+    "end": 103.68,
+    "text": "before. What's wrong with this picture?",
+    "pronunciation": "비포어. 왓스 롱 윋 디스 픽쳐?",
+    "translation": "전에도. 이 그림에서 뭐가 잘못된 걸까요?",
+    "notes": [
+      {
+        "word": "What's wrong",
+        "actual": "왓스 롱",
+        "meaning": "wr의 w만 발음, 연결 발음"
+      },
+      {
+        "word": "picture",
+        "actual": "픽쳐",
+        "meaning": "ture가 '쳐'로 축약"
+      }
+    ]
+  },
+  {
+    "index": 50,
+    "start": 103.68,
+    "end": 105.12,
+    "text": "For one thing, it's only one step",
+    "pronunciation": "포어 원 씽, 잇츠 온리 원 스텝",
+    "translation": "우선 한 가지는, 이건 단지 한 단계",
+    "notes": [
+      {
+        "word": "For one thing",
+        "actual": "포어 원 씽",
+        "meaning": "관용 표현, 빠르게 연결"
+      },
+      {
+        "word": "it's only",
+        "actual": "잇츠 온리",
+        "meaning": "it is 축약, 자연스런 연결"
+      }
+    ]
+  },
+  {
+    "index": 51,
+    "start": 105.12,
+    "end": 107.28,
+    "text": "removed from this, which is important,",
+    "pronunciation": "리무브드 프럼 디스, 위치 이즈 임포어른트,",
+    "translation": "이것과는 한 걸음 떨어진 건데, 이건 중요하지만,",
+    "notes": [
+      {
+        "word": "removed",
+        "actual": "리무브드",
+        "meaning": "re가 약하게 '리'로 발음"
+      },
+      {
+        "word": "important",
+        "actual": "임포어른트",
+        "meaning": "t가 거의 안 들림, r 약화"
+      }
+    ]
+  },
+  {
+    "index": 52,
+    "start": 107.28,
+    "end": 109.12,
+    "text": "but that's a different talk. What I want",
+    "pronunciation": "벗 댓츠 어 디퍼런트 톡. 왓 아이 원트",
+    "translation": "하지만 그건 다른 주제고요. 제가 원하는 건",
+    "notes": [
+      {
+        "word": "that's a",
+        "actual": "댓츠 어",
+        "meaning": "that is 축약, a는 약하게 '어'"
+      },
+      {
+        "word": "different",
+        "actual": "디퍼런트",
+        "meaning": "가운데 e 약화, 빠르게 발음"
+      }
+    ]
+  },
+  {
+    "index": 53,
+    "start": 109.12,
+    "end": 111.36,
+    "text": "to focus on today is that using AI in",
+    "pronunciation": "투 포커스 온 투데이 이즈 댓 유징 에이아이 인",
+    "translation": "오늘 집중하고 싶은 건, AI를 이런 식으로 사용하는 것이",
+    "notes": [
+      {
+        "word": "focus on",
+        "actual": "포커스 온",
+        "meaning": "s와 on이 자연스럽게 연결"
+      },
+      {
+        "word": "today is",
+        "actual": "투데이 이즈",
+        "meaning": "today의 o가 약화되어 '투'"
+      }
+    ]
+  },
+  {
+    "index": 54,
+    "start": 111.36,
+    "end": 113.36,
+    "text": "this way can have profound implications",
+    "pronunciation": "디스 웨이 캔 해브 프러파운드 임플리케이션즈",
+    "translation": "이런 방식은 심대한 영향을 미칠 수 있다는 겁니다",
+    "notes": [
+      {
+        "word": "profound",
+        "actual": "프러파운드",
+        "meaning": "pro가 약하게 '프러'로 발음"
+      },
+      {
+        "word": "implications",
+        "actual": "임플리케이션즈",
+        "meaning": "강세가 'ca'에, 나머지 약화"
+      }
+    ]
+  },
+  {
+    "index": 55,
+    "start": 113.36,
+    "end": 115.68,
+    "text": "on human thought. Consider creativity.",
+    "pronunciation": "온 휴먼 쏫. 컨시더 크리에이티비리.",
+    "translation": "인간의 사고에 대한. 창의성을 생각해 보세요.",
+    "notes": [
+      {
+        "word": "thought",
+        "actual": "쏫",
+        "meaning": "th가 'ㅆ'에 가깝게, ght 묵음"
+      },
+      {
+        "word": "creativity",
+        "actual": "크리에이티비리",
+        "meaning": "ty의 t가 모음 사이 플래핑으로 'ㄹ'"
+      }
+    ]
+  },
+  {
+    "index": 56,
+    "start": 115.68,
+    "end": 117.12,
+    "text": "On an individual level, we might think",
+    "pronunciation": "온 앤 인디비주얼 레블, 위 마잇 띵크",
+    "translation": "개인 차원에서, 우리는 생각할 수 있습니다",
+    "notes": [
+      {
+        "word": "individual",
+        "actual": "인디비주얼",
+        "meaning": "du가 '주'로, 강세는 'vid'에"
+      },
+      {
+        "word": "level",
+        "actual": "레블",
+        "meaning": "두 번째 l 약화"
+      }
+    ]
+  },
+  {
+    "index": 57,
+    "start": 117.12,
+    "end": 119.6,
+    "text": "that AI is a creativity boost, giving us",
+    "pronunciation": "댓 에이아이 이즈 어 크리에이티비리 부스트, 기빙 어스",
+    "translation": "AI가 창의성을 높여주고, 우리에게",
+    "notes": [
+      {
+        "word": "creativity",
+        "actual": "크리에이티비리",
+        "meaning": "ty 플래핑으로 'ㄹ'"
+      },
+      {
+        "word": "giving us",
+        "actual": "기빙 어스",
+        "meaning": "g가 부드럽게 연결"
+      }
+    ]
+  },
+  {
+    "index": 58,
+    "start": 119.6,
+    "end": 122.32,
+    "text": "rapid access to new ideas. But numerous",
+    "pronunciation": "래피드 액세스 투 뉴 아이디어즈. 벗 뉴머러스",
+    "translation": "새로운 아이디어에 빠르게 접근하게 해준다고. 하지만 수많은",
+    "notes": [
+      {
+        "word": "rapid",
+        "actual": "래피드",
+        "meaning": "a가 '애'에 가깝게"
+      },
+      {
+        "word": "numerous",
+        "actual": "뉴머러스",
+        "meaning": "강세가 'nu'에, ous는 약하게 '러스'"
+      }
+    ]
+  },
+  {
+    "index": 59,
+    "start": 122.32,
+    "end": 124.16,
+    "text": "studies have shown that on a collective",
+    "pronunciation": "스터디즈 해브 쇼운 댓 온 어 컬렉티브",
+    "translation": "연구들은 보여줬습니다, 집단적",
+    "notes": [
+      {
+        "word": "studies",
+        "actual": "스터디즈",
+        "meaning": "t가 모음 사이 플래핑 '스터디즈'"
+      },
+      {
+        "word": "collective",
+        "actual": "컬렉티브",
+        "meaning": "강세가 'lec'에, 나머지 약화"
+      }
+    ]
+  },
+  {
+    "index": 60,
+    "start": 124.16,
+    "end": 126.48,
+    "text": "level, knowledge workers using AI",
+    "pronunciation": "레블, 날리지 워커즈 유징 에이아이",
+    "translation": "차원에서, AI를 사용하는 지식 노동자들이",
+    "notes": [
+      {
+        "word": "knowledge",
+        "actual": "날리지",
+        "meaning": "k 묵음, ow가 '아'로, dge가 '지'"
+      },
+      {
+        "word": "workers",
+        "actual": "워커즈",
+        "meaning": "or가 '워'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 61,
+    "start": 126.48,
+    "end": 129.04,
+    "text": "assistants produce a smaller range of",
+    "pronunciation": "어시스턴츠 프로듀스 어 스몰러 레인지 어브",
+    "translation": "어시스턴트는 더 적은 범위의",
+    "notes": [
+      {
+        "word": "assistants",
+        "actual": "어시스턴츠",
+        "meaning": "a가 약화되어 '어'로"
+      },
+      {
+        "word": "smaller",
+        "actual": "스몰러",
+        "meaning": "all이 '올'로, er 약화"
+      }
+    ]
+  },
+  {
+    "index": 62,
+    "start": 129.04,
+    "end": 131.36,
+    "text": "ideas than a group working manually.",
+    "pronunciation": "아이디어즈 댄 어 그룹 워킹 매뉴얼리.",
+    "translation": "아이디어를 만들어낸다는 것을, 수동으로 일하는 그룹보다.",
+    "notes": [
+      {
+        "word": "manually",
+        "actual": "매뉴얼리",
+        "meaning": "nual이 '뉴얼'로 빠르게"
+      },
+      {
+        "word": "than a",
+        "actual": "댄 어",
+        "meaning": "th가 'd'에 가깝게, a 약화"
+      }
+    ]
+  },
+  {
+    "index": 63,
+    "start": 131.36,
+    "end": 134.08,
+    "text": "We've created a hive mind, except the",
+    "pronunciation": "위브 크리에이리드 어 하이브 마인드, 익셉트 더",
+    "translation": "우리는 집단 지성을 만들었는데, 다만",
+    "notes": [
+      {
+        "word": "We've created",
+        "actual": "위브 크리에이리드",
+        "meaning": "ted의 t가 플래핑 'ㄹ'"
+      },
+      {
+        "word": "hive mind",
+        "actual": "하이브 마인드",
+        "meaning": "두 단어가 빠르게 연결"
+      },
+      {
+        "word": "except",
+        "actual": "익셉트",
+        "meaning": "ex가 '익'으로 발음"
+      }
+    ]
+  },
+  {
+    "index": 64,
+    "start": 134.08,
+    "end": 135.6,
+    "text": "hive is really boring and keeps",
+    "pronunciation": "하이브 이즈 리얼리 보어링 앤 킵스",
+    "translation": "그 집단 지성은 정말 지루하고 계속",
+    "notes": [
+      {
+        "word": "really",
+        "actual": "리얼리",
+        "meaning": "ea가 '얼'로, 빠르게 발음"
+      },
+      {
+        "word": "boring",
+        "actual": "보어링",
+        "meaning": "or가 길게 '오어'"
+      }
+    ]
+  },
+  {
+    "index": 65,
+    "start": 135.6,
+    "end": 137.52,
+    "text": "suggesting the same five ideas. Consider",
+    "pronunciation": "서제스팅 더 세임 파이브 아이디어즈. 컨시더",
+    "translation": "같은 다섯 가지 아이디어만 제안합니다. 생각해 보세요",
+    "notes": [
+      {
+        "word": "suggesting",
+        "actual": "서제스팅",
+        "meaning": "gg가 하나의 'ㅈ'로"
+      },
+      {
+        "word": "same five",
+        "actual": "세임 파이브",
+        "meaning": "자연스런 연결 발음"
+      },
+      {
+        "word": "Consider",
+        "actual": "컨시더",
+        "meaning": "강세가 'sid'에"
+      }
+    ]
+  },
+  {
+    "index": 66,
+    "start": 137.52,
+    "end": 139.44,
+    "text": "critical thinking. We surveyed knowledge",
+    "pronunciation": "크리리컬 띵킹. 위 서베이드 날리지",
+    "translation": "비판적 사고를. 우리는 지식 노동자들에게",
+    "notes": [
+      {
+        "word": "critical",
+        "actual": "크리리컬",
+        "meaning": "ti의 t가 플래핑 'ㄹ', cal 약화"
+      },
+      {
+        "word": "surveyed",
+        "actual": "서베이드",
+        "meaning": "강세가 'vey'에"
+      },
+      {
+        "word": "knowledge",
+        "actual": "날리지",
+        "meaning": "k 묵음, 빠르게 발음"
+      }
+    ]
+  },
+  {
+    "index": 67,
+    "start": 139.44,
+    "end": 142.08,
+    "text": "workers about their use of AI. They",
+    "pronunciation": "워커즈 어바웃 데어 유즈 어브 에이아이. 데이",
+    "translation": "AI 사용에 대해 설문했습니다. 그들은",
+    "notes": [
+      {
+        "word": "about their",
+        "actual": "어바웃 데어",
+        "meaning": "a 약화, their의 th가 'd'에 가깝게"
+      },
+      {
+        "word": "They",
+        "actual": "데이",
+        "meaning": "th가 'd'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 68,
+    "start": 142.08,
+    "end": 143.6,
+    "text": "reported that they put less effort into",
+    "pronunciation": "리포어리드 댓 데이 풋 레스 에퍼트 인투",
+    "translation": "보고했습니다, 자신들이 더 적은 노력을 들인다고",
+    "notes": [
+      {
+        "word": "reported",
+        "actual": "리포어리드",
+        "meaning": "ted의 t가 플래핑 'ㄹ'"
+      },
+      {
+        "word": "effort",
+        "actual": "에퍼트",
+        "meaning": "강세가 'ef'에, ort 약화"
+      },
+      {
+        "word": "into",
+        "actual": "인투",
+        "meaning": "빠르게 약화되어 발음"
+      }
+    ]
+  },
+  {
+    "index": 69,
+    "start": 143.6,
+    "end": 146.72,
+    "text": "critical thinking when working with AI",
+    "pronunciation": "크리리컬 띵킹 웬 워킹 윋 에이아이",
+    "translation": "AI와 함께 일할 때 비판적 사고에",
+    "notes": [
+      {
+        "word": "critical",
+        "actual": "크리리컬",
+        "meaning": "ti의 t 플래핑"
+      },
+      {
+        "word": "when working",
+        "actual": "웬 워킹",
+        "meaning": "wh가 'ㅇ'으로, 빠르게 연결"
+      },
+      {
+        "word": "with",
+        "actual": "윋",
+        "meaning": "th가 거의 안 들림"
+      }
+    ]
+  },
+  {
+    "index": 70,
+    "start": 146.72,
+    "end": 147.76,
+    "text": "than when working",
+    "pronunciation": "댄 웬 워킹",
+    "translation": "일할 때보다",
+    "notes": [
+      {
+        "word": "than",
+        "actual": "댄",
+        "meaning": "th가 'd'에 가깝게 발음"
+      },
+      {
+        "word": "when working",
+        "actual": "웬 워킹",
+        "meaning": "빠르게 연결되어 발음"
+      }
+    ]
+  },
+  {
+    "index": 71,
+    "start": 147.76,
+    "end": 150.16,
+    "text": "manually. And this effect was greater",
+    "pronunciation": "매뉴얼리. 앤 디스 이펙트 워즈 그레이러",
+    "translation": "수동으로 할 때보다. 그리고 이 효과는 더 컸습니다",
+    "notes": [
+      {
+        "word": "manually",
+        "actual": "매뉴얼리",
+        "meaning": "nual이 빠르게 '뉴얼'"
+      },
+      {
+        "word": "effect",
+        "actual": "이펙트",
+        "meaning": "e가 '이'로, 강세가 'fect'에"
+      },
+      {
+        "word": "greater",
+        "actual": "그레이러",
+        "meaning": "t가 플래핑 'ㄹ', er 약화"
+      }
+    ]
+  },
+  {
+    "index": 72,
+    "start": 150.16,
+    "end": 152.08,
+    "text": "when they had greater confidence in AI",
+    "pronunciation": "웬 데이 해드 그레이러 컨피던스 인 에이아이",
+    "translation": "그들이 AI에 대해 더 큰 확신을 가졌을 때",
+    "notes": [
+      {
+        "word": "greater",
+        "actual": "그레이러",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ로 발음"
+      },
+      {
+        "word": "confidence",
+        "actual": "컨피던스",
+        "meaning": "강세가 첫 음절에, -dence는 약하게"
+      },
+      {
+        "word": "had",
+        "actual": "해드",
+        "meaning": "기능어라 약하게 발음되기도 함"
+      }
+    ]
+  },
+  {
+    "index": 73,
+    "start": 152.08,
+    "end": 154.16,
+    "text": "and less confidence in themselves.",
+    "pronunciation": "앤 레스 컨피던스 인 뎀셀브즈",
+    "translation": "그리고 자기 자신에 대한 확신은 줄었을 때.",
+    "notes": [
+      {
+        "word": "themselves",
+        "actual": "뎀셀브즈",
+        "meaning": "th는 ㄷ에 가깝게, -selves는 셀브즈"
+      },
+      {
+        "word": "less",
+        "actual": "레스",
+        "meaning": "짧고 강하게 발음"
+      },
+      {
+        "word": "and",
+        "actual": "앤",
+        "meaning": "빠른 발화에서 약화"
+      }
+    ]
+  },
+  {
+    "index": 74,
+    "start": 154.16,
+    "end": 156.72,
+    "text": "Consider memory. When people rely on AI",
+    "pronunciation": "컨시더 메머리. 웬 피플 릴라이 온 에이아이",
+    "translation": "기억력을 생각해 보세요. 사람들이 AI에 의존할 때",
+    "notes": [
+      {
+        "word": "consider",
+        "actual": "컨시더",
+        "meaning": "강세가 두 번째 음절 -sid-에"
+      },
+      {
+        "word": "memory",
+        "actual": "메머리",
+        "meaning": "mem-이 강세, -ory는 약하게 어리"
+      },
+      {
+        "word": "rely",
+        "actual": "릴라이",
+        "meaning": "r 발음 주의, 강세가 -ly에"
+      }
+    ]
+  },
+  {
+    "index": 75,
+    "start": 156.72,
+    "end": 159.04,
+    "text": "to write for them, they remember less of",
+    "pronunciation": "투 롸잍 포 뎀, 데이 리멤버 레스 어브",
+    "translation": "대신 글을 써주면, 그들은 덜 기억합니다",
+    "notes": [
+      {
+        "word": "write",
+        "actual": "롸잍",
+        "meaning": "wr-은 ㄹ와 발음, 끝 t는 불파음"
+      },
+      {
+        "word": "remember",
+        "actual": "리멤버",
+        "meaning": "강세가 두 번째 음절 -mem-에"
+      },
+      {
+        "word": "them",
+        "actual": "뎀",
+        "meaning": "빠른 발화에서 th가 ㄷ처럼"
+      }
+    ]
+  },
+  {
+    "index": 76,
+    "start": 159.04,
+    "end": 160.56,
+    "text": "what they wrote. And when they read AI",
+    "pronunciation": "왓 데이 로우트. 앤 웬 데이 뤼드 에이아이",
+    "translation": "자신이 쓴 내용을. 그리고 그들이 AI가 작성한",
+    "notes": [
+      {
+        "word": "wrote",
+        "actual": "로우트",
+        "meaning": "과거형, wr-은 ㄹ 발음"
+      },
+      {
+        "word": "what",
+        "actual": "왓",
+        "meaning": "wh-는 워에 가깝고 t는 불파음"
+      },
+      {
+        "word": "read",
+        "actual": "뤼드",
+        "meaning": "과거형 read지만 여기선 현재형 /riːd/"
+      }
+    ]
+  },
+  {
+    "index": 77,
+    "start": 160.56,
+    "end": 162.48,
+    "text": "generated summaries, it's hardly",
+    "pronunciation": "제너레이리드 서머리즈, 잇츠 하들리",
+    "translation": "생성한 요약문을 읽을 때, 거의",
+    "notes": [
+      {
+        "word": "generated",
+        "actual": "제너레이리드",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ로"
+      },
+      {
+        "word": "summaries",
+        "actual": "서머리즈",
+        "meaning": "강세가 첫 음절 sum-에"
+      },
+      {
+        "word": "hardly",
+        "actual": "하들리",
+        "meaning": "r은 약하게, -dly는 들리"
+      }
+    ]
+  },
+  {
+    "index": 78,
+    "start": 162.48,
+    "end": 164.08,
+    "text": "surprising that they remember less than",
+    "pronunciation": "서프라이징 댓 데이 리멤버 레스 댄",
+    "translation": "놀랍지 않게도 그들은 덜 기억합니다",
+    "notes": [
+      {
+        "word": "surprising",
+        "actual": "서프라이징",
+        "meaning": "강세가 -pris-에, s는 ㅈ 발음"
+      },
+      {
+        "word": "that",
+        "actual": "댓",
+        "meaning": "빠른 발화에서 약하게"
+      },
+      {
+        "word": "than",
+        "actual": "댄",
+        "meaning": "th가 ㄷ에 가깝게 축약"
+      }
+    ]
+  },
+  {
+    "index": 79,
+    "start": 164.08,
+    "end": 165.92,
+    "text": "if they'd read the document. And",
+    "pronunciation": "이프 데이드 레드 더 다큐먼트. 앤",
+    "translation": "직접 문서를 읽었을 때보다. 그리고",
+    "notes": [
+      {
+        "word": "they'd",
+        "actual": "데이드",
+        "meaning": "they had의 축약형"
+      },
+      {
+        "word": "document",
+        "actual": "다큐먼트",
+        "meaning": "강세가 첫 음절 doc-에"
+      },
+      {
+        "word": "read",
+        "actual": "레드",
+        "meaning": "과거형이라 /rɛd/로 발음"
+      }
+    ]
+  },
+  {
+    "index": 80,
+    "start": 165.92,
+    "end": 167.6,
+    "text": "finally, consider metacognition, which",
+    "pronunciation": "파이널리, 컨시더 메타카그니션, 위치",
+    "translation": "마지막으로, 메타인지를 생각해 보세요, 이것은",
+    "notes": [
+      {
+        "word": "finally",
+        "actual": "파이널리",
+        "meaning": "강세가 첫 음절에"
+      },
+      {
+        "word": "metacognition",
+        "actual": "메타카그니션",
+        "meaning": "meta-와 cognition 합성어, 강세가 cog-에"
+      },
+      {
+        "word": "which",
+        "actual": "위치",
+        "meaning": "wh-는 ㅟ에 가깝게"
+      }
+    ]
+  },
+  {
+    "index": 81,
+    "start": 167.6,
+    "end": 169.2,
+    "text": "is the ability to think about your own",
+    "pronunciation": "이즈 디 어빌러리 투 띵크 어바웃 유어 오운",
+    "translation": "자신의 사고에 대해 생각하는 능력입니다",
+    "notes": [
+      {
+        "word": "ability",
+        "actual": "어빌러리",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ, -bility는 빌러리"
+      },
+      {
+        "word": "think",
+        "actual": "띵크",
+        "meaning": "th는 ㄸ에 가깝게"
+      },
+      {
+        "word": "your own",
+        "actual": "유어 오운",
+        "meaning": "연음되어 유어로운처럼 들릴 수도"
+      }
+    ]
+  },
+  {
+    "index": 82,
+    "start": 169.2,
+    "end": 171.04,
+    "text": "thinking process. Working with AI",
+    "pronunciation": "띵킹 프라세스. 워킹 위드 에이아이",
+    "translation": "사고 과정. AI와 함께 일하는 것은",
+    "notes": [
+      {
+        "word": "thinking",
+        "actual": "띵킹",
+        "meaning": "th는 ㄸ에 가깝게, -ing은 잉이 아닌 킹"
+      },
+      {
+        "word": "process",
+        "actual": "프라세스",
+        "meaning": "강세가 첫 음절에, 미국식 프라-"
+      },
+      {
+        "word": "working",
+        "actual": "워킹",
+        "meaning": "r은 혀를 말아 워-"
+      }
+    ]
+  },
+  {
+    "index": 83,
+    "start": 171.04,
+    "end": 172.72,
+    "text": "requires significant metacognitive",
+    "pronunciation": "리콰이어즈 시그니피컨트 메타카그니티브",
+    "translation": "상당한 메타인지적",
+    "notes": [
+      {
+        "word": "requires",
+        "actual": "리콰이어즈",
+        "meaning": "강세가 -quir-에"
+      },
+      {
+        "word": "significant",
+        "actual": "시그니피컨트",
+        "meaning": "강세가 -nif-에"
+      },
+      {
+        "word": "metacognitive",
+        "actual": "메타카그니티브",
+        "meaning": "형용사형, -tive는 티브"
+      }
+    ]
+  },
+  {
+    "index": 84,
+    "start": 172.72,
+    "end": 174.8,
+    "text": "reasoning about your task goals,",
+    "pronunciation": "리즈닝 어바웃 유어 태스크 골즈,",
+    "translation": "추론을 필요로 합니다, 과업 목표에 대한,",
+    "notes": [
+      {
+        "word": "reasoning",
+        "actual": "리즈닝",
+        "meaning": "rea-는 리, -son-은 즈"
+      },
+      {
+        "word": "task",
+        "actual": "태스크",
+        "meaning": "미국식 æ 발음으로 태-"
+      },
+      {
+        "word": "goals",
+        "actual": "골즈",
+        "meaning": "복수형 -s는 ㅈ"
+      }
+    ]
+  },
+  {
+    "index": 85,
+    "start": 174.8,
+    "end": 176.96,
+    "text": "decomposing the task, the applicability",
+    "pronunciation": "디컴포우징 더 태스크, 디 애플리커빌러리",
+    "translation": "과업을 분해하는 것, 적용 가능성",
+    "notes": [
+      {
+        "word": "decomposing",
+        "actual": "디컴포우징",
+        "meaning": "강세가 -pos-에, de-는 약하게"
+      },
+      {
+        "word": "applicability",
+        "actual": "애플리커빌러리",
+        "meaning": "강세가 -bil-에, t→ㄹ 플랩"
+      },
+      {
+        "word": "task",
+        "actual": "태스크",
+        "meaning": "반복 단어, 짧게 발음"
+      }
+    ]
+  },
+  {
+    "index": 86,
+    "start": 176.96,
+    "end": 179.36,
+    "text": "of genai, your ability to evaluate the",
+    "pronunciation": "어브 젠에이아이, 유어 어빌러리 투 이밸류에잍 더",
+    "translation": "생성형 AI의, 결과물을 평가하는 당신의 능력.",
+    "notes": [
+      {
+        "word": "genai",
+        "actual": "젠에이아이",
+        "meaning": "gen + AI 합성어"
+      },
+      {
+        "word": "ability",
+        "actual": "어빌러리",
+        "meaning": "t→ㄹ 플랩 발음"
+      },
+      {
+        "word": "evaluate",
+        "actual": "이밸류에잍",
+        "meaning": "강세가 -val-에, 끝 t는 불파음"
+      }
+    ]
+  },
+  {
+    "index": 87,
+    "start": 179.36,
+    "end": 181.68,
+    "text": "output. These are things which are built",
+    "pronunciation": "아웃풋. 디즈 아 띵즈 위치 아 빌트",
+    "translation": "출력물. 이것들은 내재되어 있는 것들입니다",
+    "notes": [
+      {
+        "word": "output",
+        "actual": "아웃풋",
+        "meaning": "강세가 첫 음절에"
+      },
+      {
+        "word": "these",
+        "actual": "디즈",
+        "meaning": "th는 ㄷ에 가깝게, 유성음"
+      },
+      {
+        "word": "built",
+        "actual": "빌트",
+        "meaning": "과거분사, ui는 이 발음"
+      }
+    ]
+  },
+  {
+    "index": 88,
+    "start": 181.68,
+    "end": 183.12,
+    "text": "into the process of working directly",
+    "pronunciation": "인투 더 프라세스 어브 워킹 디렉틀리",
+    "translation": "직접 작업하는 과정에",
+    "notes": [
+      {
+        "word": "into",
+        "actual": "인투",
+        "meaning": "빠른 발화에서 인너로 들릴 수도"
+      },
+      {
+        "word": "directly",
+        "actual": "디렉틀리",
+        "meaning": "강세가 -rect-에"
+      },
+      {
+        "word": "process",
+        "actual": "프라세스",
+        "meaning": "미국식 첫 음절 강세"
+      }
+    ]
+  },
+  {
+    "index": 89,
+    "start": 183.12,
+    "end": 184.64,
+    "text": "with the material and which become",
+    "pronunciation": "위드 더 머티리얼 앤 위치 비컴",
+    "translation": "자료를 다루는 과정에 그리고 그것이",
+    "notes": [
+      {
+        "word": "material",
+        "actual": "머티리얼",
+        "meaning": "강세가 -ter-에, t→부드러운 ㄹ"
+      },
+      {
+        "word": "which",
+        "actual": "위치",
+        "meaning": "wh-는 ㅟ에 가깝게"
+      },
+      {
+        "word": "become",
+        "actual": "비컴",
+        "meaning": "강세가 -come에"
+      }
+    ]
+  },
+  {
+    "index": 90,
+    "start": 184.64,
+    "end": 186.16,
+    "text": "problematic when that material",
+    "pronunciation": "프라블러매릭 웬 댓 머티리얼",
+    "translation": "문제가 됩니다 그 자료에 대한",
+    "notes": [
+      {
+        "word": "problematic",
+        "actual": "프라블러매릭",
+        "meaning": "강세가 -mat-에, t→플랩 ㄹ"
+      },
+      {
+        "word": "when",
+        "actual": "웬",
+        "meaning": "wh-는 ㅝ에 가깝게"
+      },
+      {
+        "word": "material",
+        "actual": "머티리얼",
+        "meaning": "강세가 -ter-에"
+      }
+    ]
+  },
+  {
+    "index": 91,
+    "start": 186.16,
+    "end": 187.68,
+    "text": "engagement becomes intermediated.",
+    "pronunciation": "인게이지먼트 비컴즈 인터미디에이리드.",
+    "translation": "참여가 중개될 때.",
+    "notes": [
+      {
+        "word": "engagement",
+        "actual": "인게이지먼트",
+        "meaning": "강세가 -gage-에"
+      },
+      {
+        "word": "intermediated",
+        "actual": "인터미디에이리드",
+        "meaning": "t→ㄹ 플랩, 강세가 -me-에"
+      },
+      {
+        "word": "becomes",
+        "actual": "비컴즈",
+        "meaning": "3인칭 단수 -s"
+      }
+    ]
+  },
+  {
+    "index": 92,
+    "start": 187.68,
+    "end": 189.12,
+    "text": "Basically, we've become middle managers",
+    "pronunciation": "베이시클리, 위브 비컴 미들 매니저즈",
+    "translation": "기본적으로, 우리는 중간 관리자가 되었습니다",
+    "notes": [
+      {
+        "word": "basically",
+        "actual": "베이시클리",
+        "meaning": "강세가 첫 음절에, -cally는 클리"
+      },
+      {
+        "word": "we've",
+        "actual": "위브",
+        "meaning": "we have 축약형"
+      },
+      {
+        "word": "middle managers",
+        "actual": "미들 매니저즈",
+        "meaning": "비유적 표현, 중간관리자"
+      }
+    ]
+  },
+  {
+    "index": 93,
+    "start": 189.12,
+    "end": 190.8,
+    "text": "for our own thoughts. So, what's the",
+    "pronunciation": "포 아우어 오운 쏘츠. 소, 왓츠 더",
+    "translation": "우리 자신의 생각의. 그래서, 결과가 어떨까요?",
+    "notes": [
+      {
+        "word": "thoughts",
+        "actual": "쏘츠",
+        "meaning": "th는 ㅆ에 가깝게, 무성음"
+      },
+      {
+        "word": "so",
+        "actual": "소",
+        "meaning": "전환어, 길게 발음"
+      },
+      {
+        "word": "what's",
+        "actual": "왓츠",
+        "meaning": "what is 축약형"
+      }
+    ]
+  },
+  {
+    "index": 94,
+    "start": 190.8,
+    "end": 192.64,
+    "text": "score? We have fewer ideas. We think",
+    "pronunciation": "스코어? 위 해브 퓨어 아이디어즈. 위 띵크",
+    "translation": "점수는? 우리는 아이디어가 더 적습니다. 우리는 생각합니다",
+    "notes": [
+      {
+        "word": "score",
+        "actual": "스코어",
+        "meaning": "비유적으로 '결과, 점수'"
+      },
+      {
+        "word": "fewer",
+        "actual": "퓨어",
+        "meaning": "few의 비교급, 셀 수 있는 명사에 사용"
+      },
+      {
+        "word": "ideas",
+        "actual": "아이디어즈",
+        "meaning": "복수형 -s"
+      }
+    ]
+  },
+  {
+    "index": 95,
+    "start": 192.64,
+    "end": 194.08,
+    "text": "about them less critically. We remember",
+    "pronunciation": "어바웃 뎀 레스 크리티클리. 위 리멤버",
+    "translation": "그것들에 대해 덜 비판적으로. 우리는 기억합니다",
+    "notes": [
+      {
+        "word": "critically",
+        "actual": "크리티클리",
+        "meaning": "t→플랩 가능, -cally는 클리"
+      },
+      {
+        "word": "them",
+        "actual": "뎀",
+        "meaning": "th→ㄷ 약화, 빠른 발화"
+      },
+      {
+        "word": "remember",
+        "actual": "리멤버",
+        "meaning": "강세가 -mem-에"
+      }
+    ]
+  },
+  {
+    "index": 96,
+    "start": 194.08,
+    "end": 196,
+    "text": "them less well. and we have a harder",
+    "pronunciation": "뎀 레스 웰. 앤 위 해버 하아더",
+    "translation": "그것들을 덜 잘 알게 되죠. 그리고 우리는 더 힘든",
+    "notes": [
+      {
+        "word": "them",
+        "actual": "뎀",
+        "meaning": "th가 약화되어 ㄷ에 가깝게 발음"
+      },
+      {
+        "word": "less well",
+        "actual": "레스 웰",
+        "meaning": "l 연음으로 자연스럽게 연결"
+      },
+      {
+        "word": "harder",
+        "actual": "하아더",
+        "meaning": "r 묵음화, 모음 길게 발음"
+      }
+    ]
+  },
+  {
+    "index": 97,
+    "start": 196,
+    "end": 197.68,
+    "text": "time doing it. Taken together, we can",
+    "pronunciation": "타임 두잉 잇. 테이큰 터게더, 위 캔",
+    "translation": "시간을 보내게 됩니다. 종합하면, 우리는",
+    "notes": [
+      {
+        "word": "Taken",
+        "actual": "테이큰",
+        "meaning": "t 강하게, -ken은 약하게 큰"
+      },
+      {
+        "word": "together",
+        "actual": "터게더",
+        "meaning": "to-가 약화되어 터, th→ㄷ"
+      },
+      {
+        "word": "doing it",
+        "actual": "두잉 잇",
+        "meaning": "연음 가능하나 여기선 분리 발음"
+      }
+    ]
+  },
+  {
+    "index": 98,
+    "start": 197.68,
+    "end": 200.16,
+    "text": "see that AI assisted workflows can have",
+    "pronunciation": "씨 댓 에이아이 어시스티드 워크플로우즈 캔 해브",
+    "translation": "AI 보조 작업 흐름이 가질 수 있다는 것을",
+    "notes": [
+      {
+        "word": "AI",
+        "actual": "에이아이",
+        "meaning": "약어는 한 글자씩 발음"
+      },
+      {
+        "word": "assisted",
+        "actual": "어시스티드",
+        "meaning": "a가 약모음 어, -ed는 드"
+      },
+      {
+        "word": "workflows",
+        "actual": "워크플로우즈",
+        "meaning": "복합어, -s는 즈"
+      }
+    ]
+  },
+  {
+    "index": 99,
+    "start": 200.16,
+    "end": 202.24,
+    "text": "profound effects on human thinking. And",
+    "pronunciation": "프러파운드 이펙츠 온 휴먼 씽킹. 앤",
+    "translation": "인간의 사고에 심대한 영향을 미칠 수 있습니다. 그리고",
+    "notes": [
+      {
+        "word": "profound",
+        "actual": "프러파운드",
+        "meaning": "pro-가 약화되어 프러"
+      },
+      {
+        "word": "effects",
+        "actual": "이펙츠",
+        "meaning": "-cts가 빠르게 츠로 축약"
+      },
+      {
+        "word": "thinking",
+        "actual": "씽킹",
+        "meaning": "th→ㅆ 강한 발음"
+      }
+    ]
+  },
+  {
+    "index": 100,
+    "start": 202.24,
+    "end": 204.48,
+    "text": "this extends even to seemingly trivial,",
+    "pronunciation": "디스 익스텐즈 이븐 투 씨밍리 트리비얼,",
+    "translation": "이것은 사소해 보이는 것에까지 확장됩니다,",
+    "notes": [
+      {
+        "word": "extends",
+        "actual": "익스텐즈",
+        "meaning": "ex-는 익스, -ds→즈"
+      },
+      {
+        "word": "seemingly",
+        "actual": "씨밍리",
+        "meaning": "see-는 씨, -ly는 리"
+      },
+      {
+        "word": "trivial",
+        "actual": "트리비얼",
+        "meaning": "강세가 앞에, -vial은 비얼"
+      }
+    ]
+  },
+  {
+    "index": 101,
+    "start": 204.48,
+    "end": 206.4,
+    "text": "mundane tasks because these everyday",
+    "pronunciation": "먼데인 태스크스 비커즈 디즈 에브리데이",
+    "translation": "평범한 일상의 과제들, 왜냐하면 이러한 일상적인",
+    "notes": [
+      {
+        "word": "mundane",
+        "actual": "먼데인",
+        "meaning": "강세가 뒤 음절 -dane에"
+      },
+      {
+        "word": "because",
+        "actual": "비커즈",
+        "meaning": "빠른 발화에서 비커즈로 축약"
+      },
+      {
+        "word": "everyday",
+        "actual": "에브리데이",
+        "meaning": "복합어, 강세 앞에"
+      }
+    ]
+  },
+  {
+    "index": 102,
+    "start": 206.4,
+    "end": 207.92,
+    "text": "opportunities for exercising our",
+    "pronunciation": "아퍼튜너티즈 퍼 엑서사이징 아워",
+    "translation": "기회들이 우리의 ~을 발휘하는",
+    "notes": [
+      {
+        "word": "opportunities",
+        "actual": "아퍼튜너티즈",
+        "meaning": "t가 모음 사이에서 ㄹ에 가까운 탄설음, -ties→티즈"
+      },
+      {
+        "word": "exercising",
+        "actual": "엑서사이징",
+        "meaning": "ex-는 엑서, -cising→사이징"
+      },
+      {
+        "word": "our",
+        "actual": "아워",
+        "meaning": "약하게 아워 또는 아르"
+      }
+    ]
+  },
+  {
+    "index": 103,
+    "start": 207.92,
+    "end": 209.36,
+    "text": "creativity, our critical thinking, and",
+    "pronunciation": "크리에이티비리, 아워 크리리컬 씽킹, 앤",
+    "translation": "창의력, 비판적 사고, 그리고",
+    "notes": [
+      {
+        "word": "creativity",
+        "actual": "크리에이티비리",
+        "meaning": "t가 모음 사이에서 ㄹ음(flap t), -ty→리"
+      },
+      {
+        "word": "critical",
+        "actual": "크리리컬",
+        "meaning": "ti가 모음 사이 탄설음으로 리, -cal→컬"
+      },
+      {
+        "word": "thinking",
+        "actual": "씽킹",
+        "meaning": "th→ㅆ 강한 발음"
+      }
+    ]
+  },
+  {
+    "index": 104,
+    "start": 209.36,
+    "end": 211.28,
+    "text": "our memory are essential for protecting"
+  },
+  {
+    "index": 105,
+    "start": 211.28,
+    "end": 213.44,
+    "text": "our cognitive musculature and allow us",
+    "pronunciation": "아워 카그니티브 머스큘러쳐 앤 얼라우 어스",
+    "translation": "우리의 인지적 근력을 지키고 우리가",
+    "notes": [
+      {
+        "word": "cognitive",
+        "actual": "카그니티브",
+        "meaning": "강세 앞 음절, -tive→티브"
+      },
+      {
+        "word": "musculature",
+        "actual": "머스큘러쳐",
+        "meaning": "-ture는 쳐로 축약"
+      },
+      {
+        "word": "allow us",
+        "actual": "얼라우 어스",
+        "meaning": "연음 가능, a-는 약모음 어"
+      }
+    ]
+  },
+  {
+    "index": 106,
+    "start": 213.44,
+    "end": 215.2,
+    "text": "to rise to the occasion when an",
+    "pronunciation": "투 라이즈 투 디 어케이전 웬 앤",
+    "translation": "~할 때 그 상황에 대처할 수 있게 해줍니다",
+    "notes": [
+      {
+        "word": "rise",
+        "actual": "라이즈",
+        "meaning": "r 발음 주의, -se→즈"
+      },
+      {
+        "word": "occasion",
+        "actual": "어케이전",
+        "meaning": "o-가 약모음 어, -sion→전"
+      },
+      {
+        "word": "the",
+        "actual": "디",
+        "meaning": "모음 앞 the는 디로 발음"
+      }
+    ]
+  },
+  {
+    "index": 107,
+    "start": 215.2,
+    "end": 216.88,
+    "text": "exceptionally complex task comes our",
+    "pronunciation": "익셉셔널리 캄플렉스 태스크 컴즈 아워",
+    "translation": "극도로 복잡한 과제가 닥쳤을 때",
+    "notes": [
+      {
+        "word": "exceptionally",
+        "actual": "익셉셔널리",
+        "meaning": "ex-→익, -tionally→셔널리"
+      },
+      {
+        "word": "complex",
+        "actual": "캄플렉스",
+        "meaning": "강세 앞, -x→크스"
+      },
+      {
+        "word": "comes",
+        "actual": "컴즈",
+        "meaning": "빠른 발화에서 컴즈"
+      }
+    ]
+  },
+  {
+    "index": 108,
+    "start": 216.88,
+    "end": 220.24,
+    "text": "way. Studies show that when we don't use",
+    "pronunciation": "웨이. 스터디즈 쇼우 댓 웬 위 돈 유즈",
+    "translation": "말이죠. 연구에 따르면 우리가 사용하지 않으면",
+    "notes": [
+      {
+        "word": "Studies",
+        "actual": "스터디즈",
+        "meaning": "t가 모음 뒤에서 약간 ㄷ, -dies→디즈"
+      },
+      {
+        "word": "don't",
+        "actual": "돈",
+        "meaning": "t가 거의 묵음, 돈으로 축약"
+      },
+      {
+        "word": "way",
+        "actual": "웨이",
+        "meaning": "w 발음 둥글게"
+      }
+    ]
+  },
+  {
+    "index": 109,
+    "start": 220.24,
+    "end": 222.72,
+    "text": "our brains, they get worse at brain",
+    "pronunciation": "아워 브레인즈, 데이 겟 워스 앳 브레인",
+    "translation": "우리의 뇌는, 뇌가 하는 일을 더 못하게 됩니다",
+    "notes": [
+      {
+        "word": "brains",
+        "actual": "브레인즈",
+        "meaning": "br- 연속 자음, -ns→ㄴ즈"
+      },
+      {
+        "word": "worse",
+        "actual": "워스",
+        "meaning": "r 묵음화, 워스"
+      },
+      {
+        "word": "get",
+        "actual": "겟",
+        "meaning": "짧고 강하게 겟"
+      }
+    ]
+  },
+  {
+    "index": 110,
+    "start": 222.72,
+    "end": 224.4,
+    "text": "things. Nobel Prize Committee, please",
+    "pronunciation": "띵즈. 노벨 프라이즈 커미리, 플리즈",
+    "translation": "일들을요. 노벨상 위원회 여러분, 부디",
+    "notes": [
+      {
+        "word": "things",
+        "actual": "띵즈",
+        "meaning": "th→ㄸ, -ngs→ㅇ즈"
+      },
+      {
+        "word": "Committee",
+        "actual": "커미리",
+        "meaning": "tt가 모음 사이에서 탄설음 ㄹ, 커미리"
+      },
+      {
+        "word": "Nobel Prize",
+        "actual": "노벨 프라이즈",
+        "meaning": "고유명사, 강세가 뒤에"
+      }
+    ]
+  },
+  {
+    "index": 111,
+    "start": 224.4,
+    "end": 227.76,
+    "text": "hold your applause.",
+    "pronunciation": "홀드 유어 어플라즈.",
+    "translation": "박수를 참아주세요.",
+    "notes": [
+      {
+        "word": "hold",
+        "actual": "홀드",
+        "meaning": "d가 약하게 발음"
+      },
+      {
+        "word": "applause",
+        "actual": "어플라즈",
+        "meaning": "a-가 약모음 어, -ause→아즈"
+      },
+      {
+        "word": "your",
+        "actual": "유어",
+        "meaning": "빠르면 여로 축약 가능"
+      }
+    ]
+  },
+  {
+    "index": 112,
+    "start": 227.76,
+    "end": 230.16,
+    "text": "Is this the cost of progress?",
+    "pronunciation": "이즈 디스 더 코스트 어브 프라그레스?",
+    "translation": "이것이 진보의 대가인 걸까요?",
+    "notes": [
+      {
+        "word": "cost",
+        "actual": "코스트",
+        "meaning": "강하게 코, -st 또렷이"
+      },
+      {
+        "word": "progress",
+        "actual": "프라그레스",
+        "meaning": "명사로서 강세 앞 음절, pro-→프라"
+      },
+      {
+        "word": "this",
+        "actual": "디스",
+        "meaning": "th→ㄷ 약한 발음"
+      }
+    ]
+  },
+  {
+    "index": 113,
+    "start": 230.16,
+    "end": 231.68,
+    "text": "We've solved the problem of having to",
+    "pronunciation": "위브 솔브드 더 프라블럼 어브 해빙 투",
+    "translation": "우리는 ~해야 하는 문제를 해결했습니다",
+    "notes": [
+      {
+        "word": "We've",
+        "actual": "위브",
+        "meaning": "축약형, 위브로 빠르게"
+      },
+      {
+        "word": "solved",
+        "actual": "솔브드",
+        "meaning": "-ved→브드"
+      },
+      {
+        "word": "problem",
+        "actual": "프라블럼",
+        "meaning": "o가 아 발음, -lem→럼"
+      }
+    ]
+  },
+  {
+    "index": 114,
+    "start": 231.68,
+    "end": 234.48,
+    "text": "think. Unfortunately, thinking wasn't",
+    "pronunciation": "씽크. 언포츄너틀리, 씽킹 워전트",
+    "translation": "생각하는 것의요. 불행히도, 생각하는 건",
+    "notes": [
+      {
+        "word": "think",
+        "actual": "씽크",
+        "meaning": "th→ㅆ, 강하게"
+      },
+      {
+        "word": "Unfortunately",
+        "actual": "언포츄너틀리",
+        "meaning": "un-→언, -nately→너틀리 빠르게"
+      },
+      {
+        "word": "wasn't",
+        "actual": "워전트",
+        "meaning": "wa-→워, -sn't→전트 축약"
+      }
+    ]
+  },
+  {
+    "index": 115,
+    "start": 234.48,
+    "end": 237.52,
+    "text": "actually a problem. It's like it's like",
+    "pronunciation": "액츄얼리 어 프라블럼. 잇츠 라잌 잇츠 라잌",
+    "translation": "사실 문제가 아니었거든요. 마치 이건 마치",
+    "notes": [
+      {
+        "word": "actually",
+        "actual": "액츄얼리",
+        "meaning": "-tually→츄얼리 빠르게 축약"
+      },
+      {
+        "word": "it's like",
+        "actual": "잇츠 라잌",
+        "meaning": "반복 구문, 말하기 습관 반영"
+      },
+      {
+        "word": "problem",
+        "actual": "프라블럼",
+        "meaning": "o→아, -lem→럼"
+      }
+    ]
+  },
+  {
+    "index": 116,
+    "start": 237.52,
+    "end": 239.44,
+    "text": "we invented a cure for exercise and then",
+    "pronunciation": "위 인벤러다 큐어 포어 엑서사이즈 앤 덴",
+    "translation": "우리가 운동의 치료법을 발명했고 그리고",
+    "notes": [
+      {
+        "word": "invented a",
+        "actual": "인벤러다",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ로, d+a 연음"
+      },
+      {
+        "word": "cure",
+        "actual": "큐어",
+        "meaning": "장모음 /kjʊr/ 발음"
+      },
+      {
+        "word": "exercise",
+        "actual": "엑서사이즈",
+        "meaning": "강세가 첫 음절에, ci→사이 발음"
+      }
+    ]
+  },
+  {
+    "index": 117,
+    "start": 239.44,
+    "end": 240.96,
+    "text": "wondered why we're out of breath all the",
+    "pronunciation": "원더드 와이 위어 아웃 어브 브레쓰 올 더",
+    "translation": "왜 항상 숨이 차는지 의아해하는 것과 같아요",
+    "notes": [
+      {
+        "word": "wondered",
+        "actual": "원더드",
+        "meaning": "o→어, -ered→어드"
+      },
+      {
+        "word": "we're",
+        "actual": "위어",
+        "meaning": "축약형 위어"
+      },
+      {
+        "word": "breath",
+        "actual": "브레쓰",
+        "meaning": "th→ㅆ, 짧은 e 발음"
+      }
+    ]
+  },
+  {
+    "index": 118,
+    "start": 240.96,
+    "end": 244,
+    "text": "time. You know, doesn't have to be this",
+    "pronunciation": "타임. 유 노우, 더전트 해프 투 비 디스",
+    "translation": "말이에요. 있잖아요, 이렇게 될 필요는 없어요",
+    "notes": [
+      {
+        "word": "You know",
+        "actual": "유 노우",
+        "meaning": "담화 표지, 가볍게 발음"
+      },
+      {
+        "word": "doesn't",
+        "actual": "더전트",
+        "meaning": "doe-→더, -sn't→전트 축약"
+      },
+      {
+        "word": "have to",
+        "actual": "해프 투",
+        "meaning": "have가 해프로, v→f 무성음화"
+      }
+    ]
+  },
+  {
+    "index": 119,
+    "start": 244,
+    "end": 246.16,
+    "text": "way.",
+    "pronunciation": "웨이.",
+    "translation": "그런 식이 될 필요는요.",
+    "notes": [
+      {
+        "word": "way",
+        "actual": "웨이",
+        "meaning": "w 둥글게, 문장 마무리로 톤 하강"
+      }
+    ]
+  },
+  {
+    "index": 120,
+    "start": 246.16,
+    "end": 248.4,
+    "text": "Beyond AI as an assistant, I believe",
+    "pronunciation": "비욘드 에이아이 애즈 언 어시스턴트, 아이 빌리브",
+    "translation": "AI를 단순한 보조 도구로 보는 것을 넘어서, 저는 믿습니다",
+    "notes": [
+      {
+        "word": "Beyond",
+        "actual": "비욘드",
+        "meaning": "~을 넘어서"
+      },
+      {
+        "word": "assistant",
+        "actual": "어시스턴트",
+        "meaning": "보조자, 조수"
+      },
+      {
+        "word": "believe",
+        "actual": "빌리브",
+        "meaning": "믿다"
+      }
+    ]
+  },
+  {
+    "index": 121,
+    "start": 248.4,
+    "end": 250.32,
+    "text": "that AI should be a tool for thought. AI",
+    "pronunciation": "대럴 에이아이 슈드 비 어 툴 포 쏘트. 에이아이",
+    "translation": "AI는 사고를 위한 도구여야 한다고요. AI는",
+    "notes": [
+      {
+        "word": "that AI",
+        "actual": "대럴에이아이",
+        "meaning": "that이 약하게 발음되며 연결"
+      },
+      {
+        "word": "tool",
+        "actual": "툴",
+        "meaning": "도구"
+      },
+      {
+        "word": "thought",
+        "actual": "쏘트",
+        "meaning": "사고, 생각 (th는 혀를 이 사이에)"
+      }
+    ]
+  },
+  {
+    "index": 122,
+    "start": 250.32,
+    "end": 252.32,
+    "text": "should challenge, not obey. And I",
+    "pronunciation": "슈드 챌린지, 낫 오베이. 앤 아이",
+    "translation": "도전해야지, 복종해서는 안 됩니다. 그리고 저는",
+    "notes": [
+      {
+        "word": "challenge",
+        "actual": "챌린지",
+        "meaning": "도전하다, 이의를 제기하다"
+      },
+      {
+        "word": "obey",
+        "actual": "오베이",
+        "meaning": "복종하다, 따르다"
+      },
+      {
+        "word": "And I",
+        "actual": "앤아이",
+        "meaning": "연음으로 빠르게 연결"
+      }
+    ]
+  },
+  {
+    "index": 123,
+    "start": 252.32,
+    "end": 253.6,
+    "text": "believe that right at this moment we are"
+  },
+  {
+    "index": 124,
+    "start": 253.6,
+    "end": 254.96,
+    "text": "at a critical juncture where the world",
+    "pronunciation": "애러 크리리컬 정처 웨얼 더 월드",
+    "translation": "중대한 기로에 서 있다고 믿습니다, 세계가",
+    "notes": [
+      {
+        "word": "critical",
+        "actual": "크리리컬",
+        "meaning": "t가 모음 사이에서 ㄹ로 플랩, 중대한"
+      },
+      {
+        "word": "juncture",
+        "actual": "정처",
+        "meaning": "기로, 접합점"
+      },
+      {
+        "word": "at a",
+        "actual": "애러",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ 발음"
+      }
+    ]
+  },
+  {
+    "index": 125,
+    "start": 254.96,
+    "end": 256.8,
+    "text": "of work is poised to be transformed by",
+    "pronunciation": "어브 워크 이즈 포이즈드 투 비 트랜스폼드 바이",
+    "translation": "업무 세계가 변혁될 준비가 되어 있는 곳에서",
+    "notes": [
+      {
+        "word": "poised",
+        "actual": "포이즈드",
+        "meaning": "준비가 된, ~할 태세인"
+      },
+      {
+        "word": "transformed",
+        "actual": "트랜스폼드",
+        "meaning": "변혁되다"
+      },
+      {
+        "word": "of work",
+        "actual": "어브워크",
+        "meaning": "빠르게 연결되어 발음"
+      }
+    ]
+  },
+  {
+    "index": 126,
+    "start": 256.8,
+    "end": 259.12,
+    "text": "generative AI. And we must act now to",
+    "pronunciation": "제너러티브 에이아이. 앤 위 머스트 액트 나우 투",
+    "translation": "생성형 AI에 의해서요. 그리고 우리는 지금 당장 행동해야 합니다",
+    "notes": [
+      {
+        "word": "generative",
+        "actual": "제너러티브",
+        "meaning": "생성하는, 생성형의"
+      },
+      {
+        "word": "must act",
+        "actual": "머스택트",
+        "meaning": "반드시 행동해야 한다"
+      },
+      {
+        "word": "now",
+        "actual": "나우",
+        "meaning": "지금, 당장"
+      }
+    ]
+  },
+  {
+    "index": 127,
+    "start": 259.12,
+    "end": 260.48,
+    "text": "shape and drive that transformation",
+    "pronunciation": "쉐이프 앤 드라이브 댓 트랜스포메이션",
+    "translation": "그 변혁을 형성하고 이끌어야 합니다",
+    "notes": [
+      {
+        "word": "shape",
+        "actual": "쉐이프",
+        "meaning": "형성하다, 만들어가다"
+      },
+      {
+        "word": "drive",
+        "actual": "드라이브",
+        "meaning": "이끌다, 추진하다"
+      },
+      {
+        "word": "transformation",
+        "actual": "트랜스포메이션",
+        "meaning": "변혁, 변환"
+      }
+    ]
+  },
+  {
+    "index": 128,
+    "start": 260.48,
+    "end": 262.88,
+    "text": "towards humanistic values. Of these two",
+    "pronunciation": "토워즈 휴머니스틱 밸류즈. 어브 디즈 투",
+    "translation": "인본주의적 가치를 향해서요. 이 두 갈래의",
+    "notes": [
+      {
+        "word": "towards",
+        "actual": "토워즈",
+        "meaning": "~을 향해"
+      },
+      {
+        "word": "humanistic",
+        "actual": "휴머니스틱",
+        "meaning": "인본주의적인"
+      },
+      {
+        "word": "values",
+        "actual": "밸류즈",
+        "meaning": "가치들"
+      }
+    ]
+  },
+  {
+    "index": 129,
+    "start": 262.88,
+    "end": 265.2,
+    "text": "diverging roads, we must take the one",
+    "pronunciation": "다이버징 로즈, 위 머스트 테이크 디 원",
+    "translation": "갈라지는 길에서, 우리는 그 하나의 길을 택해야 합니다",
+    "notes": [
+      {
+        "word": "diverging",
+        "actual": "다이버징",
+        "meaning": "갈라지는, 분기하는"
+      },
+      {
+        "word": "roads",
+        "actual": "로즈",
+        "meaning": "길들 (로버트 프로스트 시 인용)"
+      },
+      {
+        "word": "the one",
+        "actual": "디원",
+        "meaning": "그 하나의 (강조)"
+      }
+    ]
+  },
+  {
+    "index": 130,
+    "start": 265.2,
+    "end": 266.88,
+    "text": "less traveled. Beyond getting the job",
+    "pronunciation": "레스 트래블드. 비욘드 게링 더 잡",
+    "translation": "덜 다녀진 길을요. 일을 해치우는 것을 넘어서",
+    "notes": [
+      {
+        "word": "less traveled",
+        "actual": "레스트래블드",
+        "meaning": "덜 다녀진 (프로스트 시 'The Road Not Taken')"
+      },
+      {
+        "word": "getting",
+        "actual": "게링",
+        "meaning": "tt가 모음 사이에서 플랩, ~하는 것"
+      },
+      {
+        "word": "job",
+        "actual": "잡",
+        "meaning": "일, 업무"
+      }
+    ]
+  },
+  {
+    "index": 131,
+    "start": 266.88,
+    "end": 269.6,
+    "text": "done, a tool for thought helps us better",
+    "pronunciation": "던, 어 툴 포 쏘트 헬프스 어스 베럴",
+    "translation": "해치우는 것, 사고를 위한 도구는 우리가 더 잘",
+    "notes": [
+      {
+        "word": "done",
+        "actual": "던",
+        "meaning": "완료된, 해치운"
+      },
+      {
+        "word": "helps us",
+        "actual": "헬프서스",
+        "meaning": "우리를 돕다, 연음"
+      },
+      {
+        "word": "better",
+        "actual": "베럴",
+        "meaning": "tt가 플랩 ㄹ로, 더 잘"
+      }
+    ]
+  },
+  {
+    "index": 132,
+    "start": 269.6,
+    "end": 272.08,
+    "text": "understand the job. Beyond getting it",
+    "pronunciation": "언더스탠드 더 잡. 비욘드 게링 잇",
+    "translation": "그 일을 이해하도록 돕습니다. 그것을 해치우는 것을 넘어서",
+    "notes": [
+      {
+        "word": "understand",
+        "actual": "언더스탠드",
+        "meaning": "이해하다"
+      },
+      {
+        "word": "Beyond getting it",
+        "actual": "비욘드게링잇",
+        "meaning": "빠르게 연결, getting의 tt 플랩"
+      },
+      {
+        "word": "the job",
+        "actual": "더잡",
+        "meaning": "그 일"
+      }
+    ]
+  },
+  {
+    "index": 133,
+    "start": 272.08,
+    "end": 273.84,
+    "text": "done faster, it helps us get it done",
+    "pronunciation": "던 패스터, 잇 헬프스 어스 겟 잇 던",
+    "translation": "더 빨리 해치우는 것, 그것은 우리가 더 잘 해치우도록 돕습니다",
+    "notes": [
+      {
+        "word": "faster",
+        "actual": "패스터",
+        "meaning": "더 빠르게"
+      },
+      {
+        "word": "it helps us",
+        "actual": "잇헬프서스",
+        "meaning": "연음으로 빠르게"
+      },
+      {
+        "word": "get it done",
+        "actual": "게릿던",
+        "meaning": "t가 연음, 해치우다"
+      }
+    ]
+  },
+  {
+    "index": 134,
+    "start": 273.84,
+    "end": 275.68,
+    "text": "better. Beyond getting us to the right",
+    "pronunciation": "베럴. 비욘드 게링 어스 투 더 라잇",
+    "translation": "더 잘 해치우도록요. 우리를 올바른 답으로 이끄는 것을 넘어서",
+    "notes": [
+      {
+        "word": "better",
+        "actual": "베럴",
+        "meaning": "tt 플랩, 더 잘"
+      },
+      {
+        "word": "getting us",
+        "actual": "게링어스",
+        "meaning": "tt 플랩 + 연음"
+      },
+      {
+        "word": "the right",
+        "actual": "더라잇",
+        "meaning": "올바른, 맞는"
+      }
+    ]
+  },
+  {
+    "index": 135,
+    "start": 275.68,
+    "end": 277.52,
+    "text": "answers, a tool for thought helps us ask",
+    "pronunciation": "앤서즈, 어 툴 포 쏘트 헬프스 어스 애스크",
+    "translation": "답을 찾는 것, 사고를 위한 도구는 우리가 물을 수 있게 돕습니다",
+    "notes": [
+      {
+        "word": "answers",
+        "actual": "앤서즈",
+        "meaning": "답, 정답들"
+      },
+      {
+        "word": "a tool for thought",
+        "actual": "어툴포쏘트",
+        "meaning": "사고를 위한 도구 (반복 핵심 구절)"
+      },
+      {
+        "word": "ask",
+        "actual": "애스크",
+        "meaning": "묻다, 질문하다"
+      }
+    ]
+  },
+  {
+    "index": 136,
+    "start": 277.52,
+    "end": 279.52,
+    "text": "the right questions. Beyond automating",
+    "pronunciation": "더 라잇 퀘스천즈. 비욘드 오러메이링",
+    "translation": "올바른 질문을요. 자동화하는 것을 넘어서",
+    "notes": [
+      {
+        "word": "questions",
+        "actual": "퀘스천즈",
+        "meaning": "질문들"
+      },
+      {
+        "word": "automating",
+        "actual": "오러메이링",
+        "meaning": "t가 플랩 ㄹ로, 자동화하는"
+      },
+      {
+        "word": "the right",
+        "actual": "더라잇",
+        "meaning": "올바른"
+      }
+    ]
+  },
+  {
+    "index": 137,
+    "start": 279.52,
+    "end": 282.08,
+    "text": "known processes, it helps us explore the",
+    "pronunciation": "노운 프라세시즈, 잇 헬프스 어스 익스플로얼 디",
+    "translation": "알려진 프로세스를, 그것은 우리가 탐험하도록 돕습니다",
+    "notes": [
+      {
+        "word": "known",
+        "actual": "노운",
+        "meaning": "알려진, k 묵음"
+      },
+      {
+        "word": "processes",
+        "actual": "프라세시즈",
+        "meaning": "과정들, 프로세스들"
+      },
+      {
+        "word": "explore the",
+        "actual": "익스플로얼디",
+        "meaning": "탐험하다, 연음"
+      }
+    ]
+  },
+  {
+    "index": 138,
+    "start": 282.08,
+    "end": 284,
+    "text": "unknown. What does this look like? What",
+    "pronunciation": "언노운. 왓 더즈 디스 룩 라이크? 왓",
+    "translation": "미지의 것을요. 이것은 어떤 모습일까요? 무엇을",
+    "notes": [
+      {
+        "word": "unknown",
+        "actual": "언노운",
+        "meaning": "미지의, 알려지지 않은"
+      },
+      {
+        "word": "What does",
+        "actual": "왓더즈",
+        "meaning": "빠르게 연결, 어떤 ~인가"
+      },
+      {
+        "word": "look like",
+        "actual": "룩라이크",
+        "meaning": "~처럼 보이다"
+      }
+    ]
+  },
+  {
+    "index": 139,
+    "start": 284,
+    "end": 286,
+    "text": "I'm about to show you is a prototype",
+    "pronunciation": "아임 어바우러 쇼 유 이즈 어 프로러타입",
+    "translation": "지금 보여드리려는 것은 프로토타입입니다",
+    "notes": [
+      {
+        "word": "about to",
+        "actual": "어바우러",
+        "meaning": "t가 플랩 ㄹ, ~하려는 참인"
+      },
+      {
+        "word": "prototype",
+        "actual": "프로러타입",
+        "meaning": "t가 플랩 ㄹ, 시제품/원형"
+      },
+      {
+        "word": "I'm about to show you",
+        "actual": "아임어바우러쇼유",
+        "meaning": "지금 막 보여드리려 합니다"
+      }
+    ]
+  },
+  {
+    "index": 140,
+    "start": 286,
+    "end": 288.08,
+    "text": "developed by my colleagues and me at the",
+    "pronunciation": "디벨럽트 바이 마이 칼리그즈 앤 미 앳 더",
+    "translation": "제 동료들과 제가 개발한 것으로",
+    "notes": [
+      {
+        "word": "developed",
+        "actual": "디벨럽트",
+        "meaning": "개발된"
+      },
+      {
+        "word": "colleagues",
+        "actual": "칼리그즈",
+        "meaning": "동료들"
+      },
+      {
+        "word": "and me at the",
+        "actual": "앤미앳더",
+        "meaning": "빠르게 연결 발음"
+      }
+    ]
+  },
+  {
+    "index": 141,
+    "start": 288.08,
+    "end": 289.84,
+    "text": "tools for thought team at Microsoft",
+    "pronunciation": "툴즈 포 쏘트 팀 앳 마이크로소프트",
+    "translation": "마이크로소프트의 '사고를 위한 도구' 팀에서",
+    "notes": [
+      {
+        "word": "tools for thought",
+        "actual": "툴즈포쏘트",
+        "meaning": "사고를 위한 도구들 (팀명)"
+      },
+      {
+        "word": "team",
+        "actual": "팀",
+        "meaning": "팀"
+      },
+      {
+        "word": "Microsoft",
+        "actual": "마이크로소프트",
+        "meaning": "마이크로소프트"
+      }
+    ]
+  },
+  {
+    "index": 142,
+    "start": 289.84,
+    "end": 291.92,
+    "text": "Research in Cambridge. Now, please bear",
+    "pronunciation": "리서치 인 케임브리지. 나우, 플리즈 베얼",
+    "translation": "케임브리지 연구소에서 만든 것입니다. 자, 양해 부탁드립니다",
+    "notes": [
+      {
+        "word": "Research",
+        "actual": "리서치",
+        "meaning": "연구, 연구소"
+      },
+      {
+        "word": "Cambridge",
+        "actual": "케임브리지",
+        "meaning": "케임브리지 (영국 도시)"
+      },
+      {
+        "word": "bear",
+        "actual": "베얼",
+        "meaning": "참다, 감안하다 (bear in mind)"
+      }
+    ]
+  },
+  {
+    "index": 143,
+    "start": 291.92,
+    "end": 293.44,
+    "text": "in mind that this is a live research",
+    "pronunciation": "인 마인드 댓 디스 이즈 어 라이브 리서치",
+    "translation": "이것은 실시간 연구용이라는 점을 기억해 주세요",
+    "notes": [
+      {
+        "word": "bear in mind",
+        "actual": "베얼인마인드",
+        "meaning": "~을 염두에 두다, 기억하다"
+      },
+      {
+        "word": "live",
+        "actual": "라이브",
+        "meaning": "실시간의, 라이브의"
+      },
+      {
+        "word": "research",
+        "actual": "리서치",
+        "meaning": "연구"
+      }
+    ]
+  },
+  {
+    "index": 144,
+    "start": 293.44,
+    "end": 295.84,
+    "text": "prototype. It's not a product and it's",
+    "pronunciation": "프라러타입. 잇스 낫 어 프라덕 애닛스",
+    "translation": "프로토타입이에요. 제품이 아니고요",
+    "notes": [
+      {
+        "word": "prototype",
+        "actual": "프라러타입",
+        "meaning": "t가 모음 사이에서 ㄹ로 플랩"
+      },
+      {
+        "word": "product",
+        "actual": "프라덕",
+        "meaning": "마지막 t 거의 안 들림"
+      },
+      {
+        "word": "and it's",
+        "actual": "애닛스",
+        "meaning": "연음으로 이어짐"
+      }
+    ]
+  },
+  {
+    "index": 145,
+    "start": 295.84,
+    "end": 297.36,
+    "text": "just one of a series of explorations",
+    "pronunciation": "저스트 원 어버 시리즈 어빅스플러레이션즈",
+    "translation": "일련의 탐색들 중 하나일 뿐이에요",
+    "notes": [
+      {
+        "word": "of a",
+        "actual": "어버",
+        "meaning": "f와 a가 연음"
+      },
+      {
+        "word": "explorations",
+        "actual": "익스플러레이션즈",
+        "meaning": "강세가 -ration에 옴"
+      },
+      {
+        "word": "series",
+        "actual": "시리즈",
+        "meaning": "s는 z 발음"
+      }
+    ]
+  },
+  {
+    "index": 146,
+    "start": 297.36,
+    "end": 299.36,
+    "text": "that our team is conducting to study how",
+    "pronunciation": "댓 아워 팀 이즈 컨덕팅 투 스터디 하우",
+    "translation": "저희 팀이 연구를 위해 수행하고 있는",
+    "notes": [
+      {
+        "word": "conducting",
+        "actual": "컨덕팅",
+        "meaning": "강세는 두 번째 음절"
+      },
+      {
+        "word": "study",
+        "actual": "스터디",
+        "meaning": "t가 d에 가깝게 발음"
+      },
+      {
+        "word": "our",
+        "actual": "아워",
+        "meaning": "빠른 발화에서 짧게"
+      }
+    ]
+  },
+  {
+    "index": 147,
+    "start": 299.36,
+    "end": 300.96,
+    "text": "different modes of working with AI can",
+    "pronunciation": "디퍼른트 모우즈 어브 워킹 위드 에이아이 캔",
+    "translation": "AI와 함께 작업하는 다양한 방식이",
+    "notes": [
+      {
+        "word": "different",
+        "actual": "디퍼른트",
+        "meaning": "가운데 e가 약화되어 거의 안 들림"
+      },
+      {
+        "word": "modes",
+        "actual": "모우즈",
+        "meaning": "긴 o 발음"
+      },
+      {
+        "word": "AI",
+        "actual": "에이아이",
+        "meaning": "각 글자를 또박또박"
+      }
+    ]
+  },
+  {
+    "index": 148,
+    "start": 300.96,
+    "end": 303.44,
+    "text": "enhance human thought. So, let's look at",
+    "pronunciation": "인핸스 휴먼 쏘트. 소, 렛스 루캣",
+    "translation": "인간의 사고를 향상시킬 수 있는지. 자, 살펴볼게요",
+    "notes": [
+      {
+        "word": "enhance",
+        "actual": "인핸스",
+        "meaning": "강세는 두 번째 음절"
+      },
+      {
+        "word": "thought",
+        "actual": "쏘트",
+        "meaning": "th는 혀를 이 사이에"
+      },
+      {
+        "word": "let's look at",
+        "actual": "렛스 루캣",
+        "meaning": "look at이 연음"
+      }
+    ]
+  },
+  {
+    "index": 149,
+    "start": 303.44,
+    "end": 306.72,
+    "text": "a fictitious example. Clara and her",
+    "pronunciation": "어 픽티셔스 이그잼플. 클래러 앤 허",
+    "translation": "가상의 예시를요. 클라라와 그녀의",
+    "notes": [
+      {
+        "word": "fictitious",
+        "actual": "픽티셔스",
+        "meaning": "강세는 -ti- 음절"
+      },
+      {
+        "word": "Clara",
+        "actual": "클래러",
+        "meaning": "미국식 a는 ㅐ에 가까움"
+      },
+      {
+        "word": "example",
+        "actual": "이그잼플",
+        "meaning": "x는 gz 발음"
+      }
+    ]
+  },
+  {
+    "index": 150,
+    "start": 306.72,
+    "end": 308.72,
+    "text": "colleagues run a company that sells",
+    "pronunciation": "칼리그즈 런 어 컴퍼니 댓 셀즈",
+    "translation": "동료들은 회사를 운영하는데",
+    "notes": [
+      {
+        "word": "colleagues",
+        "actual": "칼리그즈",
+        "meaning": "강세는 첫 음절"
+      },
+      {
+        "word": "run a",
+        "actual": "러너",
+        "meaning": "연음으로 이어짐"
+      },
+      {
+        "word": "sells",
+        "actual": "셀즈",
+        "meaning": "s가 z로 유성음화"
+      }
+    ]
+  },
+  {
+    "index": 151,
+    "start": 308.72,
+    "end": 311.12,
+    "text": "bottled beverages. They've just had a",
+    "pronunciation": "바를드 베버리지즈. 데이브 저스트 해더",
+    "translation": "병에 든 음료를 판매해요. 그들은 방금",
+    "notes": [
+      {
+        "word": "bottled",
+        "actual": "바를드",
+        "meaning": "tt가 모음 사이에서 ㄹ로 플랩"
+      },
+      {
+        "word": "beverages",
+        "actual": "베버리지즈",
+        "meaning": "강세는 첫 음절"
+      },
+      {
+        "word": "They've just had a",
+        "actual": "데이브 저스트 해더",
+        "meaning": "had a 연음"
+      }
+    ]
+  },
+  {
+    "index": 152,
+    "start": 311.12,
+    "end": 313.76,
+    "text": "meeting to discuss a new industry report",
+    "pronunciation": "미링 투 디스커스 어 뉴 인더스트리 리포트",
+    "translation": "새로운 업계 보고서에 대해 논의하는 회의를 했어요",
+    "notes": [
+      {
+        "word": "meeting",
+        "actual": "미링",
+        "meaning": "t가 모음 사이에서 탈락/비음화"
+      },
+      {
+        "word": "discuss",
+        "actual": "디스커스",
+        "meaning": "강세는 두 번째 음절"
+      },
+      {
+        "word": "industry",
+        "actual": "인더스트리",
+        "meaning": "빠르게 발음 시 세 음절"
+      }
+    ]
+  },
+  {
+    "index": 153,
+    "start": 313.76,
+    "end": 315.52,
+    "text": "that seems to have some pretty important",
+    "pronunciation": "댓 심즈 투 해브 섬 프리리 임포어른트",
+    "translation": "꽤 중요한 내용이 있는 것 같은",
+    "notes": [
+      {
+        "word": "pretty",
+        "actual": "프리리",
+        "meaning": "tt가 모음 사이에서 ㄹ로 플랩"
+      },
+      {
+        "word": "important",
+        "actual": "임포어런트",
+        "meaning": "t 거의 안 들림, 비음화"
+      },
+      {
+        "word": "seems to",
+        "actual": "심즈 투",
+        "meaning": "자연스럽게 이어짐"
+      }
+    ]
+  },
+  {
+    "index": 154,
+    "start": 315.52,
+    "end": 317.52,
+    "text": "findings about consumer preferences for",
+    "pronunciation": "파인딩즈 어바웃 컨슈머 프레퍼런시즈 포어",
+    "translation": "소비자들의 선호도에 대한 발견들이에요",
+    "notes": [
+      {
+        "word": "findings",
+        "actual": "파인딩즈",
+        "meaning": "강세는 첫 음절"
+      },
+      {
+        "word": "consumer",
+        "actual": "컨슈머",
+        "meaning": "강세는 두 번째 음절 -su-"
+      },
+      {
+        "word": "preferences",
+        "actual": "프레퍼런시즈",
+        "meaning": "세 번째 음절 약화"
+      }
+    ]
+  },
+  {
+    "index": 155,
+    "start": 317.52,
+    "end": 319.44,
+    "text": "sustainable packaging. Clara's",
+    "pronunciation": "서스테이너블 패키징. 클래러즈",
+    "translation": "지속 가능한 포장에 대한. 클라라의",
+    "notes": [
+      {
+        "word": "sustainable",
+        "actual": "서스테이너블",
+        "meaning": "강세는 -tain- 음절"
+      },
+      {
+        "word": "packaging",
+        "actual": "패키징",
+        "meaning": "ck는 한 번만"
+      },
+      {
+        "word": "Clara's",
+        "actual": "클래러즈",
+        "meaning": "소유격 s가 z로 유성음화"
+      }
+    ]
+  },
+  {
+    "index": 156,
+    "start": 319.44,
+    "end": 321.28,
+    "text": "colleagues have asked her to write a",
+    "pronunciation": "칼리그즈 해브 애스트 허 투 롸이러",
+    "translation": "동료들이 그녀에게 작성을 부탁했어요",
+    "notes": [
+      {
+        "word": "asked",
+        "actual": "애스트",
+        "meaning": "ed가 t로 발음"
+      },
+      {
+        "word": "write a",
+        "actual": "롸이러",
+        "meaning": "t가 모음 사이에서 ㄹ로 플랩"
+      },
+      {
+        "word": "her",
+        "actual": "허",
+        "meaning": "약한 발화에서 h 약화"
+      }
+    ]
+  },
+  {
+    "index": 157,
+    "start": 321.28,
+    "end": 323.2,
+    "text": "proposal arguing for how the company",
+    "pronunciation": "프러포우절 아규잉 포어 하우 더 컴퍼니",
+    "translation": "회사가 어떻게 대응해야 하는지에 대한 제안서를",
+    "notes": [
+      {
+        "word": "proposal",
+        "actual": "프러포우절",
+        "meaning": "강세는 두 번째 음절 -po-"
+      },
+      {
+        "word": "arguing",
+        "actual": "아규잉",
+        "meaning": "g가 단단하게 발음"
+      },
+      {
+        "word": "company",
+        "actual": "컴퍼니",
+        "meaning": "o가 약화되어 ㅓ에 가까움"
+      }
+    ]
+  },
+  {
+    "index": 158,
+    "start": 323.2,
+    "end": 325.2,
+    "text": "ought to respond. So, she really needs",
+    "pronunciation": "오트 투 리스판드. 소, 쉬 릴리 니즈",
+    "translation": "대응해야 할. 그래서 그녀는 정말로",
+    "notes": [
+      {
+        "word": "ought to",
+        "actual": "오트 투",
+        "meaning": "gh는 묵음, t만 발음"
+      },
+      {
+        "word": "respond",
+        "actual": "리스판드",
+        "meaning": "강세는 두 번째 음절"
+      },
+      {
+        "word": "really",
+        "actual": "릴리",
+        "meaning": "빠른 발화에서 두 음절로 축약"
+      }
+    ]
+  },
+  {
+    "index": 159,
+    "start": 325.2,
+    "end": 327.44,
+    "text": "to get to grips with this proposal. She",
+    "pronunciation": "투 게트 투 그립스 윋 디스 프러포우절. 쉬",
+    "translation": "이 제안서를 확실히 파악해야 해요. 그녀는",
+    "notes": [
+      {
+        "word": "get to",
+        "actual": "게트 투",
+        "meaning": "빠르면 게러로 플랩 가능"
+      },
+      {
+        "word": "grips",
+        "actual": "그립스",
+        "meaning": "gr이 한 덩어리로"
+      },
+      {
+        "word": "with this",
+        "actual": "윋 디스",
+        "meaning": "th 두 번 연속"
+      }
+    ]
+  },
+  {
+    "index": 160,
+    "start": 327.44,
+    "end": 328.96,
+    "text": "really needs to get to grips with this",
+    "pronunciation": "릴리 니즈 투 게트 투 그립스 윋 디스",
+    "translation": "정말로 이것을 확실히 파악해야 해요",
+    "notes": [
+      {
+        "word": "really needs",
+        "actual": "릴리 니즈",
+        "meaning": "강조하여 천천히 반복"
+      },
+      {
+        "word": "get to grips",
+        "actual": "게트 투 그립스",
+        "meaning": "숙어: ~을 파악하다"
+      },
+      {
+        "word": "with this",
+        "actual": "윋 디스",
+        "meaning": "th 연속 발음"
+      }
+    ]
+  },
+  {
+    "index": 161,
+    "start": 328.96,
+    "end": 331.52,
+    "text": "report, understand its findings and its",
+    "pronunciation": "리포트, 언더스탠딧스 파인딩즈 앤딧스",
+    "translation": "보고서의 발견 내용과 그",
+    "notes": [
+      {
+        "word": "understand its",
+        "actual": "언더스탠딧스",
+        "meaning": "d와 its가 연음"
+      },
+      {
+        "word": "findings",
+        "actual": "파인딩즈",
+        "meaning": "nd 발음 명확히"
+      },
+      {
+        "word": "and its",
+        "actual": "앤딧스",
+        "meaning": "d와 its 연음"
+      }
+    ]
+  },
+  {
+    "index": 162,
+    "start": 331.52,
+    "end": 332.96,
+    "text": "data and how it fits into her business",
+    "pronunciation": "데이러 앤 하우 잇 핏신투 허 비즈니스",
+    "translation": "데이터, 그리고 그것이 자기 사업에 어떻게 맞는지",
+    "notes": [
+      {
+        "word": "data",
+        "actual": "데이러",
+        "meaning": "t가 모음 사이에서 ㄹ로 플랩"
+      },
+      {
+        "word": "fits into",
+        "actual": "핏신투",
+        "meaning": "s와 into가 연음"
+      },
+      {
+        "word": "business",
+        "actual": "비즈니스",
+        "meaning": "강세는 첫 음절"
+      }
+    ]
+  },
+  {
+    "index": 163,
+    "start": 332.96,
+    "end": 335.28,
+    "text": "context. She starts by loading some",
+    "pronunciation": "칸텍스트. 쉬 스타츠 바이 로우딩 섬",
+    "translation": "맥락을요. 그녀는 먼저 몇 가지",
+    "notes": [
+      {
+        "word": "context",
+        "actual": "칸텍스트",
+        "meaning": "강세는 첫 음절"
+      },
+      {
+        "word": "starts",
+        "actual": "스타츠",
+        "meaning": "ts가 한 덩어리로"
+      },
+      {
+        "word": "loading",
+        "actual": "로우딩",
+        "meaning": "긴 o 발음"
+      }
+    ]
+  },
+  {
+    "index": 164,
+    "start": 335.28,
+    "end": 337.12,
+    "text": "documents into her workspace. There's",
+    "pronunciation": "다큐먼츠 인투 허 워크스페이스. 데어즈",
+    "translation": "문서들을 작업 공간에 불러와요. 거기엔",
+    "notes": [
+      {
+        "word": "documents",
+        "actual": "다큐먼츠",
+        "meaning": "강세는 첫 음절"
+      },
+      {
+        "word": "workspace",
+        "actual": "워크스페이스",
+        "meaning": "합성어, 두 강세"
+      },
+      {
+        "word": "There's",
+        "actual": "데어즈",
+        "meaning": "th가 유성음 ㄷ에 가까움"
+      }
+    ]
+  },
+  {
+    "index": 165,
+    "start": 337.12,
+    "end": 338.96,
+    "text": "the meeting transcript to remind her",
+    "pronunciation": "더 미링 트랜스크립트 투 리마인드 허",
+    "translation": "회의 녹취록이 있어요, 그녀에게 상기시켜 줄",
+    "notes": [
+      {
+        "word": "meeting",
+        "actual": "미링",
+        "meaning": "t가 비음화되어 거의 안 들림"
+      },
+      {
+        "word": "transcript",
+        "actual": "트랜스크립트",
+        "meaning": "강세는 첫 음절"
+      },
+      {
+        "word": "remind",
+        "actual": "리마인드",
+        "meaning": "강세는 두 번째 음절"
+      }
+    ]
+  },
+  {
+    "index": 166,
+    "start": 338.96,
+    "end": 340.88,
+    "text": "what was discussed. Uh there's a recent",
+    "pronunciation": "왓 워즈 디스커스트. 어 데어즈 어 리슨트",
+    "translation": "무엇이 논의되었는지. 어, 최근의",
+    "notes": [
+      {
+        "word": "discussed",
+        "actual": "디스커스트",
+        "meaning": "ed가 t로 발음"
+      },
+      {
+        "word": "Uh",
+        "actual": "어",
+        "meaning": "필러 표현"
+      },
+      {
+        "word": "recent",
+        "actual": "리슨트",
+        "meaning": "c가 s로 발음"
+      }
+    ]
+  },
+  {
+    "index": 167,
+    "start": 340.88,
+    "end": 342.96,
+    "text": "internal report from her own business.",
+    "pronunciation": "인터널 리포트 프럼 허 오운 비즈니스.",
+    "translation": "자기 회사의 내부 보고서가 있어요.",
+    "notes": [
+      {
+        "word": "internal",
+        "actual": "인터널",
+        "meaning": "강세는 두 번째 음절 -ter-"
+      },
+      {
+        "word": "her own",
+        "actual": "허 오운",
+        "meaning": "own의 긴 o 강조"
+      },
+      {
+        "word": "business",
+        "actual": "비즈니스",
+        "meaning": "busy의 발음과 동일한 biz-"
+      }
+    ]
+  },
+  {
+    "index": 168,
+    "start": 342.96,
+    "end": 344.8,
+    "text": "Uh and of course there's the industry",
+    "pronunciation": "어 앤 오브 코어스 데어즈 디 인더스트리",
+    "translation": "어 그리고 물론 그 산업",
+    "notes": [
+      {
+        "word": "of course",
+        "actual": "오브 코어스",
+        "meaning": "of의 v가 약하게, course는 '코어스'"
+      },
+      {
+        "word": "there's",
+        "actual": "데어즈",
+        "meaning": "there is 축약, th는 '데'"
+      },
+      {
+        "word": "industry",
+        "actual": "인더스트리",
+        "meaning": "t가 약하게 발음됨"
+      }
+    ]
+  },
+  {
+    "index": 169,
+    "start": 344.8,
+    "end": 346.64,
+    "text": "report which she opens. She sees an",
+    "pronunciation": "뤼포어트 위치 쉬 오픈즈. 쉬 씨즈 앤",
+    "translation": "보고서를 열어요. 그녀는 하나의",
+    "notes": [
+      {
+        "word": "report",
+        "actual": "뤼포어트",
+        "meaning": "re-는 '뤼'로 빠르게"
+      },
+      {
+        "word": "which",
+        "actual": "위치",
+        "meaning": "wh는 '위'로 발음"
+      },
+      {
+        "word": "opens",
+        "actual": "오픈즈",
+        "meaning": "s가 유성음화되어 '즈'"
+      }
+    ]
+  },
+  {
+    "index": 170,
+    "start": 346.64,
+    "end": 348.16,
+    "text": "overview of the document along with",
+    "pronunciation": "오버뷰 오브 더 다큐먼트 얼롱 위드",
+    "translation": "문서의 개요를 함께",
+    "notes": [
+      {
+        "word": "overview",
+        "actual": "오버뷰",
+        "meaning": "over+view 합성어"
+      },
+      {
+        "word": "document",
+        "actual": "다큐먼트",
+        "meaning": "do-가 '다'로 약화"
+      },
+      {
+        "word": "along with",
+        "actual": "얼롱 위드",
+        "meaning": "a-가 '얼'로 약화, th는 '드'"
+      }
+    ]
+  },
+  {
+    "index": 171,
+    "start": 348.16,
+    "end": 350.32,
+    "text": "section bysection summaries. Except",
+    "pronunciation": "섹션 바이섹션 써머리즈. 익셉트",
+    "translation": "섹션별 요약들을 봅니다. 다만",
+    "notes": [
+      {
+        "word": "section",
+        "actual": "섹션",
+        "meaning": "ti가 '션'으로"
+      },
+      {
+        "word": "summaries",
+        "actual": "써머리즈",
+        "meaning": "su-가 '써'로, -ies는 '리즈'"
+      },
+      {
+        "word": "except",
+        "actual": "익셉트",
+        "meaning": "ex-가 '익스'가 아닌 '익'으로 빠르게"
+      }
+    ]
+  },
+  {
+    "index": 172,
+    "start": 350.32,
+    "end": 352.16,
+    "text": "these aren't really just summaries. We",
+    "pronunciation": "디즈 아른트 뤼얼리 저스트 써머리즈. 위",
+    "translation": "이것들은 사실 그냥 요약이 아닙니다. 우리는",
+    "notes": [
+      {
+        "word": "aren't",
+        "actual": "아른트",
+        "meaning": "are not 축약"
+      },
+      {
+        "word": "really",
+        "actual": "뤼얼리",
+        "meaning": "r 발음 강조, -lly는 '리'"
+      },
+      {
+        "word": "just",
+        "actual": "저스트",
+        "meaning": "u가 '어'로 약화"
+      }
+    ]
+  },
+  {
+    "index": 173,
+    "start": 352.16,
+    "end": 354.24,
+    "text": "think of them more as lenses. They're",
+    "pronunciation": "띵크 오브 뎀 모어 애즈 렌지즈. 데어",
+    "translation": "이것들을 렌즈라고 생각합니다. 그것들은",
+    "notes": [
+      {
+        "word": "think",
+        "actual": "띵크",
+        "meaning": "th가 '띵'으로"
+      },
+      {
+        "word": "them",
+        "actual": "뎀",
+        "meaning": "th가 '데'로, 빠르게 '뎀'"
+      },
+      {
+        "word": "lenses",
+        "actual": "렌지즈",
+        "meaning": "lens의 복수형, s→'지즈'"
+      }
+    ]
+  },
+  {
+    "index": 174,
+    "start": 354.24,
+    "end": 356.16,
+    "text": "customizable micro representations of",
+    "pronunciation": "커스터마이저블 마이크로 레프리젠테이션즈 오브",
+    "translation": "맞춤형 마이크로 표현들로",
+    "notes": [
+      {
+        "word": "customizable",
+        "actual": "커스터마이저블",
+        "meaning": "t가 모음 사이에서 약화"
+      },
+      {
+        "word": "micro",
+        "actual": "마이크로",
+        "meaning": "mi-가 '마이'로"
+      },
+      {
+        "word": "representations",
+        "actual": "레프리젠테이션즈",
+        "meaning": "긴 단어, -tion은 '션'"
+      }
+    ]
+  },
+  {
+    "index": 175,
+    "start": 356.16,
+    "end": 358.24,
+    "text": "the text that can emphasize what is most",
+    "pronunciation": "더 텍스트 댓 캔 엠퍼사이즈 왓 이즈 모스트",
+    "translation": "텍스트에서 가장 중요한 것을 강조할 수 있는",
+    "notes": [
+      {
+        "word": "emphasize",
+        "actual": "엠퍼사이즈",
+        "meaning": "ph는 'ㅍ', -ize는 '아이즈'"
+      },
+      {
+        "word": "what is",
+        "actual": "왓 이즈",
+        "meaning": "빠른 발화시 '와리즈'로 연음 가능"
+      },
+      {
+        "word": "most",
+        "actual": "모스트",
+        "meaning": "t가 끝에서 약하게"
+      }
+    ]
+  },
+  {
+    "index": 176,
+    "start": 358.24,
+    "end": 360.32,
+    "text": "relevant to the task at hand. So in this",
+    "pronunciation": "렐러번트 투 더 태스크 앳 핸드. 소 인 디스",
+    "translation": "당면한 과제에 관련된 것입니다. 그래서 이",
+    "notes": [
+      {
+        "word": "relevant",
+        "actual": "렐러번트",
+        "meaning": "e가 '렐'로, -vant는 '번트'"
+      },
+      {
+        "word": "task at hand",
+        "actual": "태스크 앳 핸드",
+        "meaning": "연음되어 '태스캣 핸드'로도"
+      },
+      {
+        "word": "so",
+        "actual": "소",
+        "meaning": "접속사로 약하게 발음"
+      }
+    ]
+  },
+  {
+    "index": 177,
+    "start": 360.32,
+    "end": 361.84,
+    "text": "case, Claraara selects the consumer's",
+    "pronunciation": "케이스, 클래라 셀렉츠 더 컨슈머즈",
+    "translation": "경우에, 클라라는 소비자",
+    "notes": [
+      {
+        "word": "Clara",
+        "actual": "클래라",
+        "meaning": "a가 '애'로 발음"
+      },
+      {
+        "word": "selects",
+        "actual": "셀렉츠",
+        "meaning": "-cts가 '츠'로"
+      },
+      {
+        "word": "consumer's",
+        "actual": "컨슈머즈",
+        "meaning": "소유격 's가 '즈'로"
+      }
+    ]
+  },
+  {
+    "index": 178,
+    "start": 361.84,
+    "end": 363.36,
+    "text": "lens.",
+    "pronunciation": "렌즈.",
+    "translation": "렌즈를 선택합니다.",
+    "notes": [
+      {
+        "word": "lens",
+        "actual": "렌즈",
+        "meaning": "s가 유성음화되어 '즈'"
+      }
+    ]
+  },
+  {
+    "index": 179,
+    "start": 363.36,
+    "end": 364.96,
+    "text": "She can select a section for deeper",
+    "pronunciation": "쉬 캔 셀렉트 어 섹션 포어 디퍼",
+    "translation": "그녀는 더 깊은 읽기를 위해 섹션을 선택할 수 있어요",
+    "notes": [
+      {
+        "word": "select",
+        "actual": "셀렉트",
+        "meaning": "se-가 '셀'로"
+      },
+      {
+        "word": "deeper",
+        "actual": "디퍼",
+        "meaning": "ee가 '이'로, -per는 '퍼'"
+      },
+      {
+        "word": "section",
+        "actual": "섹션",
+        "meaning": "-tion이 '션'으로"
+      }
+    ]
+  },
+  {
+    "index": 180,
+    "start": 364.96,
+    "end": 366.88,
+    "text": "reading. In this case, the first one. As",
+    "pronunciation": "뤼딩. 인 디스 케이스, 더 퍼스트 원. 애즈",
+    "translation": "읽기를요. 이 경우에는 첫 번째 것입니다. 그녀가",
+    "notes": [
+      {
+        "word": "reading",
+        "actual": "뤼딩",
+        "meaning": "r 발음 강조, -ing은 '딩'"
+      },
+      {
+        "word": "first",
+        "actual": "퍼스트",
+        "meaning": "ir이 '어'로"
+      },
+      {
+        "word": "as",
+        "actual": "애즈",
+        "meaning": "접속사, 빠르게 '애즈'"
+      }
+    ]
+  },
+  {
+    "index": 181,
+    "start": 366.88,
+    "end": 369.6,
+    "text": "she reads, she makes notes about her",
+    "pronunciation": "쉬 뤼즈, 쉬 메익스 노우츠 어바웃 허",
+    "translation": "읽으면서, 그녀는 자신의 생각에 대해 메모하고",
+    "notes": [
+      {
+        "word": "reads",
+        "actual": "뤼즈",
+        "meaning": "ea가 '이'로, ds는 '즈'"
+      },
+      {
+        "word": "notes",
+        "actual": "노우츠",
+        "meaning": "o가 '오우'로 이중모음"
+      },
+      {
+        "word": "about",
+        "actual": "어바웃",
+        "meaning": "a-가 '어'로 약화"
+      }
+    ]
+  },
+  {
+    "index": 182,
+    "start": 369.6,
+    "end": 371.6,
+    "text": "thoughts and highlights excerpts from",
+    "pronunciation": "떠츠 앤 하이라이츠 익서업츠 프럼",
+    "translation": "문서에서 발췌문을 강조합니다",
+    "notes": [
+      {
+        "word": "thoughts",
+        "actual": "떠츠",
+        "meaning": "th가 '떠'로, -ghts는 '츠'"
+      },
+      {
+        "word": "highlights",
+        "actual": "하이라이츠",
+        "meaning": "gh 묵음, -ts는 '츠'"
+      },
+      {
+        "word": "excerpts",
+        "actual": "익서업츠",
+        "meaning": "ex-가 '익'으로, -pts는 '츠'"
+      }
+    ]
+  },
+  {
+    "index": 183,
+    "start": 371.6,
+    "end": 374,
+    "text": "the document.",
+    "pronunciation": "더 다큐먼트.",
+    "translation": "문서에서요.",
+    "notes": [
+      {
+        "word": "the",
+        "actual": "더",
+        "meaning": "약하게 '더'로"
+      },
+      {
+        "word": "document",
+        "actual": "다큐먼트",
+        "meaning": "do-가 '다'로 약화, -ment는 '먼트'"
+      }
+    ]
+  },
+  {
+    "index": 184,
+    "start": 374,
+    "end": 376.96,
+    "text": "As she reads, she also sees AI generated",
+    "pronunciation": "애즈 쉬 뤼즈, 쉬 올소 씨즈 에이아이 제너레이리드",
+    "translation": "읽으면서, 그녀는 AI가 생성한 것도 봅니다",
+    "notes": [
+      {
+        "word": "also",
+        "actual": "올소",
+        "meaning": "l이 약하게 발음"
+      },
+      {
+        "word": "AI",
+        "actual": "에이아이",
+        "meaning": "각 글자를 따로 발음"
+      },
+      {
+        "word": "generated",
+        "actual": "제너레이리드",
+        "meaning": "t가 모음 사이에서 'ㄹ'로 플래핑"
+      }
+    ]
+  },
+  {
+    "index": 185,
+    "start": 376.96,
+    "end": 379.2,
+    "text": "commentary and critiques. We call these",
+    "pronunciation": "카멘터리 앤 크뤼틱스. 위 콜 디즈",
+    "translation": "논평과 비평들을 봅니다. 우리는 이것들을",
+    "notes": [
+      {
+        "word": "commentary",
+        "actual": "카멘터리",
+        "meaning": "com-이 '카'로 약화, -tary는 '터리'"
+      },
+      {
+        "word": "critiques",
+        "actual": "크뤼틱스",
+        "meaning": "cri-가 '크뤼'로"
+      },
+      {
+        "word": "these",
+        "actual": "디즈",
+        "meaning": "th가 '디'로"
+      }
+    ]
+  },
+  {
+    "index": 186,
+    "start": 379.2,
+    "end": 381.04,
+    "text": "provocations. Here's a provocation that",
+    "pronunciation": "프라버케이션즈. 히어즈 어 프라버케이션 댓",
+    "translation": "프로보케이션이라고 부릅니다. 여기 하나의 프로보케이션이",
+    "notes": [
+      {
+        "word": "provocations",
+        "actual": "프라버케이션즈",
+        "meaning": "pro-가 '프라'로 약화, -tion은 '션'"
+      },
+      {
+        "word": "here's",
+        "actual": "히어즈",
+        "meaning": "here is 축약"
+      },
+      {
+        "word": "that",
+        "actual": "댓",
+        "meaning": "th가 '대'로, 빠르게 '댓'"
+      }
+    ]
+  },
+  {
+    "index": 187,
+    "start": 381.04,
+    "end": 382.88,
+    "text": "raises a potential opportunity which she",
+    "pronunciation": "레이지즈 어 퍼텐셜 아퍼추너리 위치 쉬",
+    "translation": "잠재적 기회를 제기하는데 그녀가",
+    "notes": [
+      {
+        "word": "raises",
+        "actual": "레이지즈",
+        "meaning": "ai가 '에이'로, -ses는 '지즈'"
+      },
+      {
+        "word": "potential",
+        "actual": "퍼텐셜",
+        "meaning": "po-가 '퍼'로 약화, -tial은 '셜'"
+      },
+      {
+        "word": "opportunity",
+        "actual": "아퍼추너리",
+        "meaning": "t가 모음 사이에서 플래핑 '러', -nity는 '너리'"
+      }
+    ]
+  },
+  {
+    "index": 188,
+    "start": 382.88,
+    "end": 384.64,
+    "text": "highlights and annotates. Note how this",
+    "pronunciation": "하이라이츠 앤 애너테이츠. 노우트 하우 디스",
+    "translation": "강조하고 주석을 답니다. 이 과정이 어떻게",
+    "notes": [
+      {
+        "word": "highlights",
+        "actual": "하이라이츠",
+        "meaning": "gh 묵음"
+      },
+      {
+        "word": "annotates",
+        "actual": "애너테이츠",
+        "meaning": "t가 모음 사이에서 플래핑 '러'"
+      },
+      {
+        "word": "note",
+        "actual": "노우트",
+        "meaning": "o가 '오우' 이중모음"
+      }
+    ]
+  },
+  {
+    "index": 189,
+    "start": 384.64,
+    "end": 386.88,
+    "text": "process is a hybrid of completely manual",
+    "pronunciation": "프라세스 이즈 어 하이브리드 오브 컴플릿리 매뉴얼",
+    "translation": "과정은 완전히 수동적인 것과의 혼합인지",
+    "notes": [
+      {
+        "word": "process",
+        "actual": "프라세스",
+        "meaning": "pro-가 '프라'로"
+      },
+      {
+        "word": "hybrid",
+        "actual": "하이브리드",
+        "meaning": "y가 '아이'로"
+      },
+      {
+        "word": "completely",
+        "actual": "컴플릿리",
+        "meaning": "-plete가 '플릿'으로, -ly는 '리'"
+      }
+    ]
+  },
+  {
+    "index": 190,
+    "start": 386.88,
+    "end": 388.88,
+    "text": "reading and completely relying on AI to",
+    "pronunciation": "뤼딩 앤 컴플릿리 뤼라잉 온 에이아이 투",
+    "translation": "읽기와 완전히 AI에 의존하여",
+    "notes": [
+      {
+        "word": "reading",
+        "actual": "뤼딩",
+        "meaning": "r 강조, -ing은 '딩'"
+      },
+      {
+        "word": "relying",
+        "actual": "뤼라잉",
+        "meaning": "re-가 '뤼'로, -lying은 '라잉'"
+      },
+      {
+        "word": "on",
+        "actual": "온",
+        "meaning": "전치사, 짧게 발음"
+      }
+    ]
+  },
+  {
+    "index": 191,
+    "start": 388.88,
+    "end": 391.36,
+    "text": "read for you. Clara still reads, but",
+    "pronunciation": "뤼드 포 유. 클래라 스틸 뤼즈, 벗",
+    "translation": "대신 읽게 하는 것의 혼합입니다. 클라라는 여전히 읽지만,",
+    "notes": [
+      {
+        "word": "read",
+        "actual": "뤼드",
+        "meaning": "과거/현재 문맥상 '뤼드'"
+      },
+      {
+        "word": "for you",
+        "actual": "포 유",
+        "meaning": "빠르게 '포류'로 연음 가능"
+      },
+      {
+        "word": "still",
+        "actual": "스틸",
+        "meaning": "st-가 강하게 '스틸'"
+      }
+    ]
+  },
+  {
+    "index": 192,
+    "start": 391.36,
+    "end": 394.48,
+    "text": "intentionally and strategically.",
+    "pronunciation": "인텐셔널리 앤 스트러티지클리",
+    "translation": "의도적으로 그리고 전략적으로.",
+    "notes": [
+      {
+        "word": "intentionally",
+        "actual": "인텐셔널리",
+        "meaning": "t가 모음 사이에서 가볍게 발음, -tionally는 '셔널리'로 축약"
+      },
+      {
+        "word": "strategically",
+        "actual": "스트러티지클리",
+        "meaning": "stra-는 '스트러'로, -gically는 '지클리'로 발음"
+      },
+      {
+        "word": "and",
+        "actual": "앤",
+        "meaning": "강세 없이 짧게 '앤'으로 발음"
+      }
+    ]
+  },
+  {
+    "index": 193,
+    "start": 394.48,
+    "end": 396,
+    "text": "Now, as Claraara is working, she's",
+    "pronunciation": "나우, 애즈 클래라라 이즈 워킹, 쉬즈",
+    "translation": "자, 클라라라가 작업하는 동안, 그녀는",
+    "notes": [
+      {
+        "word": "Clara(a)ra",
+        "actual": "클래라라",
+        "meaning": "고유명사 Claraara, 강세가 두 번째 음절에"
+      },
+      {
+        "word": "working",
+        "actual": "워킹",
+        "meaning": "ing 축약되어 '워킹'으로 빠르게 발음"
+      },
+      {
+        "word": "she's",
+        "actual": "쉬즈",
+        "meaning": "she is 축약형, 빠르게 '쉬즈'"
+      }
+    ]
+  },
+  {
+    "index": 194,
+    "start": 396,
+    "end": 398.48,
+    "text": "building up an outline of her argument",
+    "pronunciation": "빌딩 어판 아웃라인 어브 허 아규먼트",
+    "translation": "그녀의 주장의 개요를 구성하는",
+    "notes": [
+      {
+        "word": "building up an",
+        "actual": "빌딩 어판",
+        "meaning": "up an이 연음되어 '어판'으로 이어짐"
+      },
+      {
+        "word": "outline",
+        "actual": "아웃라인",
+        "meaning": "t가 강하게 발음되지 않고 '아웃라인'"
+      },
+      {
+        "word": "argument",
+        "actual": "아규먼트",
+        "meaning": "강세가 첫 음절 '아'에 오며 끝 t는 거의 묵음"
+      }
+    ]
+  },
+  {
+    "index": 195,
+    "start": 398.48,
+    "end": 400.8,
+    "text": "manually in this pane on the right. This",
+    "pronunciation": "매뉴얼리 인 디스 페인 온 더 라잇. 디스",
+    "translation": "오른쪽 이 창에서 수동으로. 이",
+    "notes": [
+      {
+        "word": "manually",
+        "actual": "매뉴얼리",
+        "meaning": "manually의 t 없이 자연스럽게 발음"
+      },
+      {
+        "word": "pane",
+        "actual": "페인",
+        "meaning": "pain과 동음, 창/패널을 의미"
+      },
+      {
+        "word": "right",
+        "actual": "라잇",
+        "meaning": "r 발음 후 t는 가볍게 끊김"
+      }
+    ]
+  },
+  {
+    "index": 196,
+    "start": 400.8,
+    "end": 402.88,
+    "text": "outline is lightly structured and allows",
+    "pronunciation": "아웃라인 이즈 라이틀리 스트럭처드 앤 얼라우즈",
+    "translation": "개요는 가볍게 구조화되어 있고 허용합니다",
+    "notes": [
+      {
+        "word": "outline",
+        "actual": "아웃라인",
+        "meaning": "out+line 두 음절, '아웃'의 t는 가볍게"
+      },
+      {
+        "word": "lightly",
+        "actual": "라이틀리",
+        "meaning": "t가 모음 사이에서 가볍게 플랩, -ly는 '리'"
+      },
+      {
+        "word": "structured",
+        "actual": "스트럭처드",
+        "meaning": "str- 자음군은 빠르게, -ed는 'd' 발음"
+      }
+    ]
+  },
+  {
+    "index": 197,
+    "start": 402.88,
+    "end": 404.8,
+    "text": "her to sketch out the flow of her",
+    "pronunciation": "허 러 스케치 아웃 더 플로우 어브 허",
+    "translation": "그녀에게 흐름을 스케치하도록",
+    "notes": [
+      {
+        "word": "sketch out",
+        "actual": "스케차웃",
+        "meaning": "sketch out이 연음되어 '스케차웃'으로 발음"
+      },
+      {
+        "word": "flow of",
+        "actual": "플로우어브",
+        "meaning": "flow of가 연결되어 '플로우어브'로 발음"
+      },
+      {
+        "word": "her",
+        "actual": "허",
+        "meaning": "약화되어 'h'가 거의 탈락, '어'에 가깝게 발음되기도 함"
+      }
+    ]
+  },
+  {
+    "index": 198,
+    "start": 404.8,
+    "end": 407.2,
+    "text": "argument at a high level while still",
+    "pronunciation": "아규먼러 래 하이 레블 와일 스틸",
+    "translation": "높은 수준에서의 논쟁을 하면서도 여전히",
+    "notes": [
+      {
+        "word": "argument",
+        "actual": "아규먼트→아규먼",
+        "meaning": "t가 약화되어 거의 탈락"
+      },
+      {
+        "word": "at a",
+        "actual": "애러",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ로 변하고 연음"
+      },
+      {
+        "word": "level",
+        "actual": "레블",
+        "meaning": "두 번째 음절의 모음이 약화되어 '블'로 축약"
+      }
+    ]
+  },
+  {
+    "index": 199,
+    "start": 407.2,
+    "end": 408.72,
+    "text": "retaining deep connections and being",
+    "pronunciation": "리테이닝 딥 커넥션즈 앤 비잉",
+    "translation": "깊은 유대를 유지하고",
+    "notes": [
+      {
+        "word": "retaining",
+        "actual": "리테이닝",
+        "meaning": "t가 모음 사이에서 가볍게 발음되며, 강세는 '-tei-'에 위치"
+      },
+      {
+        "word": "deep connections",
+        "actual": "딥 커넥션즈",
+        "meaning": "deep의 p과 connections의 c이 연결되어 '딥커넥션즈'처럼 이어짐"
+      },
+      {
+        "word": "being",
+        "actual": "비잉",
+        "meaning": "ng 비음으로 끝나며 '비잉'으로 발음"
+      }
+    ]
+  },
+  {
+    "index": 200,
+    "start": 408.72,
+    "end": 410.96,
+    "text": "grounded in the source documents. As a",
+    "pronunciation": "그라운디딘 더 소어스 다큐먼츠. 애저",
+    "translation": "원본 문서에 기반한. ~로서",
+    "notes": [
+      {
+        "word": "grounded",
+        "actual": "그라운디드",
+        "meaning": "d+in 연음으로 '그라운디딘'"
+      },
+      {
+        "word": "documents",
+        "actual": "다큐먼츠",
+        "meaning": "o가 약모음화되어 '다'로 축약"
+      },
+      {
+        "word": "As a",
+        "actual": "애저",
+        "meaning": "as+a 연음으로 '애저'"
+      }
+    ]
+  },
+  {
+    "index": 201,
+    "start": 410.96,
+    "end": 412.4,
+    "text": "result of which, we can already generate",
+    "pronunciation": "리절럽 위치, 위 캔 올레디 제너레잇",
+    "translation": "그 결과로, 우리는 이미 생성할 수 있습니다",
+    "notes": [
+      {
+        "word": "result of",
+        "actual": "리절럽",
+        "meaning": "result of가 연음되어 t+of→럽으로 연결"
+      },
+      {
+        "word": "already",
+        "actual": "올레디",
+        "meaning": "al-이 '올'로, r이 약화되어 '레디'"
+      },
+      {
+        "word": "generate",
+        "actual": "제너레잇",
+        "meaning": "ge-가 '제'로 발음, 강세는 첫 음절"
+      }
+    ]
+  },
+  {
+    "index": 202,
+    "start": 412.4,
+    "end": 414.96,
+    "text": "a draft of the proposal. And Clara can"
+  },
+  {
+    "index": 203,
+    "start": 414.96,
+    "end": 416.56,
+    "text": "do things here like add a heading to the",
+    "pronunciation": "두 띵즈 히어 라익 애다 헤딩 투 더",
+    "translation": "여기서 제목 추가 같은 것들을 하다",
+    "notes": [
+      {
+        "word": "add a",
+        "actual": "애다",
+        "meaning": "연음되어 '애다'로 발음"
+      },
+      {
+        "word": "heading",
+        "actual": "헤딩",
+        "meaning": "h 발음 후 강세, -ing은 가볍게"
+      },
+      {
+        "word": "to the",
+        "actual": "투 더",
+        "meaning": "약하게 축약되어 '투더'처럼 빠르게 발음"
+      }
+    ]
+  },
+  {
+    "index": 204,
+    "start": 416.56,
+    "end": 419.04,
+    "text": "outline to generate a paragraph. But",
+    "pronunciation": "아웃라인 투 제너레이러 패러그래프. 벗",
+    "translation": "개요를 바탕으로 문단을 생성합니다. 하지만",
+    "notes": [
+      {
+        "word": "outline",
+        "actual": "아웃라인",
+        "meaning": "개요, 윤곽"
+      },
+      {
+        "word": "generate",
+        "actual": "제너레이트→제너레이러",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ로 발음"
+      },
+      {
+        "word": "paragraph",
+        "actual": "패러그래프",
+        "meaning": "문단, 강세가 첫 음절 '패'에 옴"
+      }
+    ]
+  },
+  {
+    "index": 205,
+    "start": 419.04,
+    "end": 420.56,
+    "text": "what I want to draw your attention to",
+    "pronunciation": "워라이 워너 드로 요어 어텐션 투",
+    "translation": "제가 여러분의 주의를 끌고 싶은 것은",
+    "notes": [
+      {
+        "word": "what I",
+        "actual": "워라이",
+        "meaning": "what의 t가 모음 사이에서 플랩 ㄹ로 변하며 I와 연음"
+      },
+      {
+        "word": "want to",
+        "actual": "워너",
+        "meaning": "want to가 빠른 발화에서 wanna(워너)로 축약"
+      },
+      {
+        "word": "attention",
+        "actual": "어텐션",
+        "meaning": "tt가 강세 뒤에서 약간 플랩되며 어텐션으로 발음"
+      }
+    ]
+  },
+  {
+    "index": 206,
+    "start": 420.56,
+    "end": 422.88,
+    "text": "here is that while this text is AI",
+    "pronunciation": "히어 이즈 댓 와일 디스 텍스트 이즈 에이아이",
+    "translation": "여기서 이 텍스트가 AI인 반면에",
+    "notes": [
+      {
+        "word": "here is",
+        "actual": "히어리즈",
+        "meaning": "연음으로 이어짐"
+      },
+      {
+        "word": "that while",
+        "actual": "댓 와일",
+        "meaning": "that의 th는 약한 'ㄷ'에 가까움"
+      },
+      {
+        "word": "AI",
+        "actual": "에이아이",
+        "meaning": "약어는 각 글자를 또박또박 발음"
+      }
+    ]
+  },
+  {
+    "index": 207,
+    "start": 422.88,
+    "end": 424.72,
+    "text": "generated, Clara has a completely",
+    "pronunciation": "제너레이리드, 클래라 해저 컴플릿리",
+    "translation": "생성된, 클라라는 완전히",
+    "notes": [
+      {
+        "word": "generated",
+        "actual": "제너레이리드",
+        "meaning": "t가 모음 사이에서 ㄹ로 플랩, -ed는 약하게 '드'"
+      },
+      {
+        "word": "Clara",
+        "actual": "클래라",
+        "meaning": "미국식으로 '클래라'에 가깝게 발음"
+      },
+      {
+        "word": "completely",
+        "actual": "컴플릿리",
+        "meaning": "t가 뒤의 l과 만나 '릿리'로 빠르게 발음"
+      }
+    ]
+  },
+  {
+    "index": 208,
+    "start": 424.72,
+    "end": 426.32,
+    "text": "different relationship to this text than",
+    "pronunciation": "디퍼런 릴레이션십 투 디스 텍스 댄",
+    "translation": "이 텍스트에 대한 다른 관계를",
+    "notes": [
+      {
+        "word": "different",
+        "actual": "디퍼런",
+        "meaning": "t가 거의 탈락하여 '디퍼런'으로 발음"
+      },
+      {
+        "word": "relationship",
+        "actual": "릴레이션십",
+        "meaning": "강세가 'la'에 오며 빠르게 연결"
+      },
+      {
+        "word": "text than",
+        "actual": "텍스 댄",
+        "meaning": "text의 t와 than이 연결되며 끝 t 탈락"
+      }
+    ]
+  },
+  {
+    "index": 209,
+    "start": 426.32,
+    "end": 428.08,
+    "text": "if she just dropped in some documents",
+    "pronunciation": "이프 쉬 저스트 드랍트 인 섬 다큐먼츠",
+    "translation": "그녀가 그냥 서류 몇 개를 갖다 놨다면",
+    "notes": [
+      {
+        "word": "dropped in",
+        "actual": "드랍틴",
+        "meaning": "dropped의 d와 in이 연음되어 '드랍틴'처럼 들림"
+      },
+      {
+        "word": "documents",
+        "actual": "다큐먼츠",
+        "meaning": "강세가 첫 음절에 오며 t는 거의 안 들림"
+      },
+      {
+        "word": "just",
+        "actual": "저스트",
+        "meaning": "빠른 발화에서 '저스' 정도로 t가 약화됨"
+      }
+    ]
+  },
+  {
+    "index": 210,
+    "start": 428.08,
+    "end": 430.4,
+    "text": "and said, \"Write me a report.\" Because",
+    "pronunciation": "앤 쎄드, 롸잇 미 어 뤼포어트. 비커즈",
+    "translation": "그리고 말했죠, \"보고서를 써.\" 왜냐하면",
+    "notes": [
+      {
+        "word": "Write me",
+        "actual": "롸잇 미",
+        "meaning": "Write의 W는 입술을 둥글게 모아 '롸'에 가깝게 발음"
+      },
+      {
+        "word": "report",
+        "actual": "뤼포어트",
+        "meaning": "re-는 강세가 없어 '뤼'로 약하게, -port의 t는 끝에서 거의 묵음"
+      },
+      {
+        "word": "Because",
+        "actual": "비커즈",
+        "meaning": "문장 끝에서 잘려 빠르게 '비커즈'로 발음, be-는 약하게 처리"
+      }
+    ]
+  },
+  {
+    "index": 211,
+    "start": 430.4,
+    "end": 432.48,
+    "text": "this text is deeply rooted in a",
+    "pronunciation": "디스 텍스트 이즈 디플리 루러딘 어",
+    "translation": "이 텍스트는 깊이 뿌리박혀 있는",
+    "notes": [
+      {
+        "word": "deeply",
+        "actual": "디플리",
+        "meaning": "p 뒤 ly가 빠르게 축약"
+      },
+      {
+        "word": "rooted in a",
+        "actual": "루러딘 어",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ로, in a 연음"
+      },
+      {
+        "word": "text is",
+        "actual": "텍스티즈",
+        "meaning": "t-is 연음으로 '티즈'"
+      }
+    ]
+  },
+  {
+    "index": 212,
+    "start": 432.48,
+    "end": 434.08,
+    "text": "cognitively effortful but",
+    "pronunciation": "카그니티블리 에퍼플 벗",
+    "translation": "인지적으로 힘든데",
+    "notes": [
+      {
+        "word": "cognitively",
+        "actual": "카그니티블리",
+        "meaning": "t가 모음 사이에서 가볍게 발음, -tive-는 '티브'보다 '티블리'에 가까움"
+      },
+      {
+        "word": "effortful",
+        "actual": "에퍼플",
+        "meaning": "effort의 t가 탈락하고 -ful이 '플'로 축약"
+      },
+      {
+        "word": "but",
+        "actual": "벗",
+        "meaning": "문장 끝에서 t가 불파음(unreleased)으로 가볍게 끊김"
+      }
+    ]
+  },
+  {
+    "index": 213,
+    "start": 434.08,
+    "end": 436,
+    "text": "interactionally effortless thought",
+    "pronunciation": "인터랙셔널리 에펄러슬리스 쏫",
+    "translation": "상호작용적으로 힘들이지 않는 생각",
+    "notes": [
+      {
+        "word": "interactionally",
+        "actual": "인터랙셔널리",
+        "meaning": "t가 모음 사이에서 플랩 d/ㄹ음에 가깝고, -tionally은 '셔널리'로 축약"
+      },
+      {
+        "word": "effortless",
+        "actual": "에펄러슬리스",
+        "meaning": "effort의 t가 거의 묵음화되며 '에펄'에 가깝고, -less는 '리스'"
+      },
+      {
+        "word": "thought",
+        "actual": "쏫",
+        "meaning": "th는 혀를 이 사이에 넣는 /θ/ 발음으로 '쏘'에 가까움, 끝 t는 불파음"
+      }
+    ]
+  },
+  {
+    "index": 214,
+    "start": 436,
+    "end": 438.48,
+    "text": "process. It reflects Clara's decisions,",
+    "pronunciation": "프라세스. 잇 리플렉츠 클래러즈 디시전즈,",
+    "translation": "과정이에요. 그것은 클라라의 결정들을 반영하죠,",
+    "notes": [
+      {
+        "word": "process",
+        "actual": "프라세스",
+        "meaning": "미국식에서 pro-를 '프라'로 발음"
+      },
+      {
+        "word": "reflects",
+        "actual": "리플렉츠",
+        "meaning": "re-는 약하게 '리'로, -cts는 '츠'로 끝남"
+      },
+      {
+        "word": "Clara's",
+        "actual": "클래러즈",
+        "meaning": "Clara는 '클래러'로, 소유격 's는 '즈'로 연음"
+      }
+    ]
+  },
+  {
+    "index": 215,
+    "start": 438.48,
+    "end": 440.4,
+    "text": "Clara's judgments, Clara's unique",
+    "pronunciation": "클레어러즈 저지먼츠, 클레어러즈 유니크",
+    "translation": "클라라의 판단력, 클라라의 독특한",
+    "notes": [
+      {
+        "word": "Clara's",
+        "actual": "클레어러즈",
+        "meaning": "Clara를 영어식으로 /ˈklɛrəz/로 발음, 's는 즈로 연음"
+      },
+      {
+        "word": "judgments",
+        "actual": "저지먼츠",
+        "meaning": "dg는 ㅈ으로, ts 끝음은 츠로 처리"
+      },
+      {
+        "word": "unique",
+        "actual": "유니크",
+        "meaning": "/juːˈniːk/ 강세가 두 번째 음절에"
+      }
+    ]
+  },
+  {
+    "index": 216,
+    "start": 440.4,
+    "end": 444.4,
+    "text": "personal professional expertise.",
+    "pronunciation": "퍼스널 프러페셔널 엑스퍼티즈.",
+    "translation": "개인적인 전문적 전문성.",
+    "notes": [
+      {
+        "word": "personal",
+        "actual": "퍼스널",
+        "meaning": "t가 약화되어 '퍼스널'"
+      },
+      {
+        "word": "professional",
+        "actual": "프러페셔널",
+        "meaning": "o가 약모음 /ə/로 '프러'"
+      },
+      {
+        "word": "expertise",
+        "actual": "엑스퍼티즈",
+        "meaning": "강세가 뒤에 와서 '-티즈'"
+      }
+    ]
+  },
+  {
+    "index": 217,
+    "start": 444.4,
+    "end": 446.08,
+    "text": "She sees another provocation, this time",
+    "pronunciation": "쉬 시즈 어나더 프라버케이션, 디스 타임",
+    "translation": "그녀는 또 다른 도발을 보는데, 이번에는",
+    "notes": [
+      {
+        "word": "another",
+        "actual": "어나더",
+        "meaning": "th가 약한 'ㄷ'로 발음"
+      },
+      {
+        "word": "provocation",
+        "actual": "프라버케이션",
+        "meaning": "o가 /ɑ/로 '프라버'"
+      },
+      {
+        "word": "sees",
+        "actual": "시즈",
+        "meaning": "장모음 /iː/ 후 z음"
+      }
+    ]
+  },
+  {
+    "index": 218,
+    "start": 446.08,
+    "end": 447.84,
+    "text": "in the outline. In this case, she",
+    "pronunciation": "인 디 아웃라인. 인 디스 케이스, 쉬",
+    "translation": "개요에서. 이 경우에, 그녀는",
+    "notes": [
+      {
+        "word": "outline",
+        "actual": "아웃라인",
+        "meaning": "t가 살짝 약화"
+      },
+      {
+        "word": "in the",
+        "actual": "인 디",
+        "meaning": "the가 모음 앞에서 '디'"
+      },
+      {
+        "word": "case",
+        "actual": "케이스",
+        "meaning": "s가 무성음 /s/"
+      }
+    ]
+  },
+  {
+    "index": 219,
+    "start": 447.84,
+    "end": 449.12,
+    "text": "decides that while the provocation is",
+    "pronunciation": "디사이즈 댓 와일 더 프라버케이셔니즈",
+    "translation": "도발이 ~이긴 하지만, 이라고 판단하는데",
+    "notes": [
+      {
+        "word": "decides",
+        "actual": "디사이즈",
+        "meaning": "강세가 두 번째 음절 '-사이즈'"
+      },
+      {
+        "word": "while the",
+        "actual": "와일 더",
+        "meaning": "연결되어 빠르게 발음"
+      },
+      {
+        "word": "provocation is",
+        "actual": "프라버케이셔니즈",
+        "meaning": "연음으로 이어짐"
+      }
+    ]
+  },
+  {
+    "index": 220,
+    "start": 449.12,
+    "end": 452.24,
+    "text": "useful, she does not need to address it.",
+    "pronunciation": "유스풀, 쉬 더즈 낫 니드 투 어드레시릿.",
+    "translation": "유용하지만, 그것을 다룰 필요는 없다고.",
+    "notes": [
+      {
+        "word": "useful",
+        "actual": "유스풀",
+        "meaning": "s가 무성음 /s/"
+      },
+      {
+        "word": "address it",
+        "actual": "어드레시릿",
+        "meaning": "연음으로 t가 약한 플랩"
+      },
+      {
+        "word": "does not",
+        "actual": "더즈 낫",
+        "meaning": "빠르면 '더즌' 축약 가능"
+      }
+    ]
+  },
+  {
+    "index": 221,
+    "start": 452.24,
+    "end": 453.92,
+    "text": "Unlike typical AI suggestions,",
+    "pronunciation": "언라이크 티피컬 에이아이 서제스쳔즈,",
+    "translation": "일반적인 AI 제안과 달리,",
+    "notes": [
+      {
+        "word": "unlike",
+        "actual": "언라이크",
+        "meaning": "강세가 '-라이크'에"
+      },
+      {
+        "word": "typical",
+        "actual": "티피컬",
+        "meaning": "모음 사이 t→플랩 가능 '티피컬'"
+      },
+      {
+        "word": "suggestions",
+        "actual": "서제스쳔즈",
+        "meaning": "gg가 /dʒ/로 '제스'"
+      }
+    ]
+  },
+  {
+    "index": 222,
+    "start": 453.92,
+    "end": 455.04,
+    "text": "provocations are not meant to be",
+    "pronunciation": "프라버케이션즈 아 낫 멘트 투 비",
+    "translation": "도발은 ~하기 위한 것이 아닙니다",
+    "notes": [
+      {
+        "word": "provocations",
+        "actual": "프라버케이션즈",
+        "meaning": "복수형 -z음"
+      },
+      {
+        "word": "meant",
+        "actual": "멘트",
+        "meaning": "짧은 /ɛ/ 모음"
+      },
+      {
+        "word": "are not",
+        "actual": "아 낫",
+        "meaning": "are가 약하게 '아'"
+      }
+    ]
+  },
+  {
+    "index": 223,
+    "start": 455.04,
+    "end": 457.2,
+    "text": "applicable all the time. They're instead",
+    "pronunciation": "어플리커블 올 더 타임. 데어 인스테드",
+    "translation": "항상 적용 가능한 것이. 그것들은 대신",
+    "notes": [
+      {
+        "word": "applicable",
+        "actual": "어플리커블",
+        "meaning": "강세가 앞에 '어플리-'"
+      },
+      {
+        "word": "they're",
+        "actual": "데어",
+        "meaning": "they are 축약형"
+      },
+      {
+        "word": "instead",
+        "actual": "인스테드",
+        "meaning": "강세가 '-스테드'에"
+      }
+    ]
+  },
+  {
+    "index": 224,
+    "start": 457.2,
+    "end": 458.64,
+    "text": "meant to stimulate your thinking about",
+    "pronunciation": "멘트 투 스티뮬레이트 유어 띵킹 어바웃",
+    "translation": "~에 대한 당신의 사고를 자극하기 위한 것입니다",
+    "notes": [
+      {
+        "word": "stimulate",
+        "actual": "스티뮬레이트",
+        "meaning": "강세가 '스티-'에"
+      },
+      {
+        "word": "thinking",
+        "actual": "띵킹",
+        "meaning": "th가 /θ/로 '띵'"
+      },
+      {
+        "word": "about",
+        "actual": "어바웃",
+        "meaning": "a가 약모음 /ə/로 '어'"
+      }
+    ]
+  },
+  {
+    "index": 225,
+    "start": 458.64,
+    "end": 460.64,
+    "text": "your work. Because if you understand",
+    "pronunciation": "유어 워크. 비커지퓨 언더스탠드",
+    "translation": "당신의 작업을. 왜냐하면 만약 당신이 이해한다면",
+    "notes": [
+      {
+        "word": "because if you",
+        "actual": "비커지퓨",
+        "meaning": "빠르게 연음되어 축약"
+      },
+      {
+        "word": "understand",
+        "actual": "언더스탠드",
+        "meaning": "강세가 '-스탠드'에"
+      },
+      {
+        "word": "your",
+        "actual": "유어",
+        "meaning": "약하게 '여' 가능"
+      }
+    ]
+  },
+  {
+    "index": 226,
+    "start": 460.64,
+    "end": 462.64,
+    "text": "your work well enough, deeply enough to",
+    "pronunciation": "유어 워크 웰 이너프, 디플리 이너프 투",
+    "translation": "당신의 작업을 충분히 잘, 충분히 깊이",
+    "notes": [
+      {
+        "word": "well enough",
+        "actual": "웰 이너프",
+        "meaning": "enough의 gh는 /f/"
+      },
+      {
+        "word": "deeply",
+        "actual": "디플리",
+        "meaning": "장모음 /iː/로 '디-'"
+      },
+      {
+        "word": "enough to",
+        "actual": "이너프 투",
+        "meaning": "빠르면 '이너프투' 연결"
+      }
+    ]
+  },
+  {
+    "index": 227,
+    "start": 462.64,
+    "end": 464.56,
+    "text": "make the confident to make the confident",
+    "pronunciation": "메이크 더 칸피던트 투 메이크 더 칸피던트",
+    "translation": "확신을 갖게, 확신을 갖게",
+    "notes": [
+      {
+        "word": "make the",
+        "actual": "메이크 더",
+        "meaning": "빠르게 '메이커' 연결 가능"
+      },
+      {
+        "word": "confident",
+        "actual": "칸피던트",
+        "meaning": "강세가 '칸-'에, t 약화"
+      },
+      {
+        "word": "to make",
+        "actual": "투 메이크",
+        "meaning": "to가 약하게 '터'"
+      }
+    ]
+  },
+  {
+    "index": 228,
+    "start": 464.56,
+    "end": 466.4,
+    "text": "decision not to accept a piece of",
+    "pronunciation": "디시전 낫 투 억셉트 어 피스 어브",
+    "translation": "한 조각의 ~을 받아들이지 않겠다는 결정을",
+    "notes": [
+      {
+        "word": "decision",
+        "actual": "디시전",
+        "meaning": "s가 /ʒ/로 '시전'"
+      },
+      {
+        "word": "accept",
+        "actual": "억셉트",
+        "meaning": "강세가 '-셉트'에"
+      },
+      {
+        "word": "piece of",
+        "actual": "피스 어브",
+        "meaning": "of가 약하게 '어브'"
+      }
+    ]
+  },
+  {
+    "index": 229,
+    "start": 466.4,
+    "end": 468.24,
+    "text": "feedback, then the feedback process is",
+    "pronunciation": "피드백, 덴 더 피드백 프라세시즈",
+    "translation": "피드백이라면, 피드백 과정은",
+    "notes": [
+      {
+        "word": "feedback",
+        "actual": "피드백",
+        "meaning": "복합어, 강세가 '피드-'에"
+      },
+      {
+        "word": "then the",
+        "actual": "덴 더",
+        "meaning": "th→'ㄷ'로 약화"
+      },
+      {
+        "word": "process is",
+        "actual": "프라세시즈",
+        "meaning": "연음으로 이어짐"
+      }
+    ]
+  },
+  {
+    "index": 230,
+    "start": 468.24,
+    "end": 470.32,
+    "text": "still working as intended. But we're not",
+    "pronunciation": "스틸 워킹 애즈 인텐디드. 벗 위어 낫",
+    "translation": "여전히 의도대로 작동하는 겁니다. 하지만 우리는 아직",
+    "notes": [
+      {
+        "word": "still",
+        "actual": "스틸",
+        "meaning": "장모음 /ɪ/"
+      },
+      {
+        "word": "intended",
+        "actual": "인텐디드",
+        "meaning": "t→플랩 가능 '인텐디드'"
+      },
+      {
+        "word": "we're not",
+        "actual": "위어 낫",
+        "meaning": "we are 축약"
+      }
+    ]
+  },
+  {
+    "index": 231,
+    "start": 470.32,
+    "end": 472.56,
+    "text": "done yet. Clara has entirely new ways of",
+    "pronunciation": "던 옛. 클레어러 해즈 인타이얼리 뉴 웨이즈 어브",
+    "translation": "끝나지 않았습니다. 클라라는 완전히 새로운 방법들을 갖고 있습니다",
+    "notes": [
+      {
+        "word": "done yet",
+        "actual": "던 옛",
+        "meaning": "빠르게 연결"
+      },
+      {
+        "word": "entirely",
+        "actual": "인타이얼리",
+        "meaning": "t→플랩, 강세가 '-타이얼-'에"
+      },
+      {
+        "word": "Clara",
+        "actual": "클레어러",
+        "meaning": "영어식 발음 /klɛrə/"
+      }
+    ]
+  },
+  {
+    "index": 232,
+    "start": 472.56,
+    "end": 474.08,
+    "text": "interacting with this text because of",
+    "pronunciation": "인터랙팅 윋 디스 텍스트 비커저브",
+    "translation": "이 텍스트와 상호작용하는, ~때문에",
+    "notes": [
+      {
+        "word": "interacting",
+        "actual": "인터랙팅",
+        "meaning": "t→플랩 '인터랙팅'"
+      },
+      {
+        "word": "with this",
+        "actual": "윋 디스",
+        "meaning": "th가 약한 /ð/"
+      },
+      {
+        "word": "because of",
+        "actual": "비커저브",
+        "meaning": "빠르게 축약 연음"
+      }
+    ]
+  },
+  {
+    "index": 233,
+    "start": 474.08,
+    "end": 475.92,
+    "text": "generative AI. A really simple example",
+    "pronunciation": "제너러티브 에이아이. 어 릴리 심플 이그잼플",
+    "translation": "생성형 AI. 정말 간단한 예가",
+    "notes": [
+      {
+        "word": "generative",
+        "actual": "제너러티브",
+        "meaning": "t→플랩 '러티브'"
+      },
+      {
+        "word": "really",
+        "actual": "릴리",
+        "meaning": "빠르게 '릴리'"
+      },
+      {
+        "word": "example",
+        "actual": "이그잼플",
+        "meaning": "x→/gz/ '이그잼플'"
+      }
+    ]
+  },
+  {
+    "index": 234,
+    "start": 475.92,
+    "end": 477.6,
+    "text": "is that she can just resize a paragraph",
+    "pronunciation": "이즈 댓 쉬 캔 저스트 리사이저 패러그래프",
+    "translation": "그녀가 단락의 크기를 조절할 수 있다는 것입니다",
+    "notes": [
+      {
+        "word": "resize",
+        "actual": "리사이즈",
+        "meaning": "re-가 /riː/로 '리-'"
+      },
+      {
+        "word": "a paragraph",
+        "actual": "어 패러그래프",
+        "meaning": "연음, a가 약모음"
+      },
+      {
+        "word": "just",
+        "actual": "저스트",
+        "meaning": "빠르면 '저스' t탈락"
+      }
+    ]
+  },
+  {
+    "index": 235,
+    "start": 477.6,
+    "end": 479.36,
+    "text": "to change its length. She can also",
+    "pronunciation": "투 체인지 잇츠 렝쓰. 쉬 캔 올소",
+    "translation": "길이를 바꿀 수 있습니다. 그녀는 또한",
+    "notes": [
+      {
+        "word": "change",
+        "actual": "체인지",
+        "meaning": "ch→/tʃ/ '체인지'"
+      },
+      {
+        "word": "length",
+        "actual": "렝쓰",
+        "meaning": "ng+th 조합 '렝쓰'"
+      },
+      {
+        "word": "also",
+        "actual": "올소",
+        "meaning": "l이 약하게 '올소'"
+      }
+    ]
+  },
+  {
+    "index": 236,
+    "start": 479.36,
+    "end": 480.96,
+    "text": "rapidly test different versions of this",
+    "pronunciation": "래피들리 테스트 디퍼런트 버전즈 어브 디스",
+    "translation": "이 텍스트의 다양한 버전을 빠르게 테스트할 수",
+    "notes": [
+      {
+        "word": "rapidly",
+        "actual": "래피들리",
+        "meaning": "d→플랩 '래피들리'"
+      },
+      {
+        "word": "different",
+        "actual": "디퍼런트",
+        "meaning": "가운데 음절 약화 '디퍼런트'"
+      },
+      {
+        "word": "versions",
+        "actual": "버전즈",
+        "meaning": "복수형 -z음"
+      }
+    ]
+  },
+  {
+    "index": 237,
+    "start": 480.96,
+    "end": 482.96,
+    "text": "text. For instance, in this paragraph,",
+    "pronunciation": "텍스트. 포어 인스턴스, 인 디스 패러그래프,",
+    "translation": "있습니다. 예를 들어, 이 단락에서,",
+    "notes": [
+      {
+        "word": "for instance",
+        "actual": "포어 인스턴스",
+        "meaning": "r연음으로 '포어린-' 가능"
+      },
+      {
+        "word": "paragraph",
+        "actual": "패러그래프",
+        "meaning": "강세가 '패-'에"
+      },
+      {
+        "word": "this",
+        "actual": "디스",
+        "meaning": "th→약한 /ð/"
+      }
+    ]
+  },
+  {
+    "index": 238,
+    "start": 482.96,
+    "end": 484.8,
+    "text": "she's wondering whether it would be more",
+    "pronunciation": "쉬즈 원더링 웨더 잇 우드 비 모어",
+    "translation": "그녀는 그것이 더 ~하면 좋을지 궁금해하고 있습니다",
+    "notes": [
+      {
+        "word": "she's",
+        "actual": "쉬즈",
+        "meaning": "she is 축약"
+      },
+      {
+        "word": "wondering",
+        "actual": "원더링",
+        "meaning": "o→/ʌ/ '원더링'"
+      },
+      {
+        "word": "whether",
+        "actual": "웨더",
+        "meaning": "th→/ð/ 약한 'ㄷ'"
+      }
+    ]
+  },
+  {
+    "index": 239,
+    "start": 484.8,
+    "end": 485.84,
+    "text": "effective if it took a more",
+    "pronunciation": "이펙티브 이핏 투커 모어",
+    "translation": "더 ~한 방식을 취하면 더 효과적일지",
+    "notes": [
+      {
+        "word": "effective",
+        "actual": "이펙티브",
+        "meaning": "강세가 '-펙-'에"
+      },
+      {
+        "word": "if it took a",
+        "actual": "이핏 투커",
+        "meaning": "빠르게 연음, if it→'이핏'"
+      },
+      {
+        "word": "more",
+        "actual": "모어",
+        "meaning": "r이 미약한 '모어'"
+      }
+    ]
+  },
+  {
+    "index": 240,
+    "start": 485.84,
+    "end": 488,
+    "text": "inspirational or more practical tone.",
+    "pronunciation": "인스퍼레이셔널 오어 모어 프랙티컬 톤.",
+    "translation": "영감을 주는 또는 더 실용적인 톤.",
+    "notes": [
+      {
+        "word": "inspirational",
+        "actual": "인스퍼레이셔널",
+        "meaning": "영감을 주는, -tion이 '셔널'로 발음"
+      },
+      {
+        "word": "practical",
+        "actual": "프랙티컬",
+        "meaning": "실용적인, 't'가 약하게 발음"
+      },
+      {
+        "word": "tone",
+        "actual": "톤",
+        "meaning": "어조, 분위기"
+      }
+    ]
+  },
+  {
+    "index": 241,
+    "start": 488,
+    "end": 489.2,
+    "text": "So, she selects one of these",
+    "pronunciation": "쏘, 쉬 셀렉츠 원 어브 디즈",
+    "translation": "그래서, 그녀는 이것들 중 하나를 선택합니다",
+    "notes": [
+      {
+        "word": "selects",
+        "actual": "셀렉츠",
+        "meaning": "선택하다, -cts가 '츠'로 끝남"
+      },
+      {
+        "word": "one of",
+        "actual": "워너브",
+        "meaning": "~중 하나, 연음으로 이어짐"
+      },
+      {
+        "word": "these",
+        "actual": "디즈",
+        "meaning": "이것들"
+      }
+    ]
+  },
+  {
+    "index": 242,
+    "start": 489.2,
+    "end": 491.44,
+    "text": "customizable dimensions and previews a",
+    "pronunciation": "커스터마이저블 디멘션즈 앤 프리뷰즈 어",
+    "translation": "맞춤 설정 가능한 차원들을 미리 봅니다",
+    "notes": [
+      {
+        "word": "customizable",
+        "actual": "커스터마이저블",
+        "meaning": "맞춤형의, t가 약하게 'ㄹ'처럼"
+      },
+      {
+        "word": "dimensions",
+        "actual": "디멘션즈",
+        "meaning": "차원/항목들"
+      },
+      {
+        "word": "previews",
+        "actual": "프리뷰즈",
+        "meaning": "미리보기하다"
+      }
+    ]
+  },
+  {
+    "index": 243,
+    "start": 491.44,
+    "end": 494.4,
+    "text": "few alternatives and selects one. And at",
+    "pronunciation": "퓨 올터너티브즈 앤 셀렉츠 원. 앤 앳",
+    "translation": "몇 가지 대안을 보고 하나를 선택합니다. 그리고",
+    "notes": [
+      {
+        "word": "few",
+        "actual": "퓨",
+        "meaning": "몇 개의"
+      },
+      {
+        "word": "alternatives",
+        "actual": "올터너티브즈",
+        "meaning": "대안들, t가 플랩 'ㄹ'로"
+      },
+      {
+        "word": "selects",
+        "actual": "셀렉츠",
+        "meaning": "선택하다"
+      }
+    ]
+  },
+  {
+    "index": 244,
+    "start": 494.4,
+    "end": 496.88,
+    "text": "select strategic points, indeed, she",
+    "pronunciation": "셀렉 스트러티직 포인츠, 인디드, 쉬",
+    "translation": "전략적 지점들을 선택하고, 정말로, 그녀는",
+    "notes": [
+      {
+        "word": "strategic",
+        "actual": "스트러티직",
+        "meaning": "전략적인, 't'→플랩"
+      },
+      {
+        "word": "indeed",
+        "actual": "인디드",
+        "meaning": "정말로, 실제로"
+      },
+      {
+        "word": "select",
+        "actual": "셀렉",
+        "meaning": "선택하다, 다음 단어와 끊김"
+      }
+    ]
+  },
+  {
+    "index": 245,
+    "start": 496.88,
+    "end": 499.12,
+    "text": "writes. As she writes, she sees",
+    "pronunciation": "롸잇츠. 애즈 쉬 롸잇츠, 쉬 씨즈",
+    "translation": "글을 씁니다. 글을 쓰면서, 그녀는 봅니다",
+    "notes": [
+      {
+        "word": "writes",
+        "actual": "롸잇츠",
+        "meaning": "쓰다, 'wr'은 'ㄹ'만 발음"
+      },
+      {
+        "word": "sees",
+        "actual": "씨즈",
+        "meaning": "보다, 길게 발음"
+      },
+      {
+        "word": "As she",
+        "actual": "애즈 쉬",
+        "meaning": "~하면서, 연음"
+      }
+    ]
+  },
+  {
+    "index": 246,
+    "start": 499.12,
+    "end": 501.12,
+    "text": "provocations that rather than",
+    "pronunciation": "프라버케이션즈 댓 래더 댄",
+    "translation": "자극적 제안들이 ~하기보다는",
+    "notes": [
+      {
+        "word": "provocations",
+        "actual": "프라버케이션즈",
+        "meaning": "자극/도발, -tions='션즈'"
+      },
+      {
+        "word": "rather",
+        "actual": "래더",
+        "meaning": "오히려, th→'ㄷ'으로 약화"
+      },
+      {
+        "word": "than",
+        "actual": "댄",
+        "meaning": "~보다, th 약화"
+      }
+    ]
+  },
+  {
+    "index": 247,
+    "start": 501.12,
+    "end": 503.6,
+    "text": "autocompleting her ideas, they raise",
+    "pronunciation": "오로컴플리링 허 아이디어즈, 데이 레이즈",
+    "translation": "그녀의 아이디어를 자동완성하는 대신, 그것들은 제기합니다",
+    "notes": [
+      {
+        "word": "autocompleting",
+        "actual": "오로컴플리링",
+        "meaning": "자동완성, t→플랩 'ㄹ'"
+      },
+      {
+        "word": "ideas",
+        "actual": "아이디어즈",
+        "meaning": "아이디어들"
+      },
+      {
+        "word": "raise",
+        "actual": "레이즈",
+        "meaning": "제기하다, 올리다"
+      }
+    ]
+  },
+  {
+    "index": 248,
+    "start": 503.6,
+    "end": 506,
+    "text": "alternatives. They identify fallacies.",
+    "pronunciation": "올터너티브즈. 데이 아이덴터파이 팰러시즈.",
+    "translation": "대안들을 제시합니다. 오류를 찾아냅니다.",
+    "notes": [
+      {
+        "word": "alternatives",
+        "actual": "올터너티브즈",
+        "meaning": "대안들, t→플랩"
+      },
+      {
+        "word": "identify",
+        "actual": "아이덴터파이",
+        "meaning": "확인하다, t→플랩 'ㄹ'"
+      },
+      {
+        "word": "fallacies",
+        "actual": "팰러시즈",
+        "meaning": "오류/논리적 허점"
+      }
+    ]
+  },
+  {
+    "index": 249,
+    "start": 506,
+    "end": 507.68,
+    "text": "They offer counter-arguments to help her",
+    "pronunciation": "데이 오퍼 카운터-아규먼츠 투 헬퍼",
+    "translation": "그것들은 그녀를 돕기 위해 반론을 제시합니다",
+    "notes": [
+      {
+        "word": "counter-arguments",
+        "actual": "카운터-아규먼츠",
+        "meaning": "반론들"
+      },
+      {
+        "word": "offer",
+        "actual": "오퍼",
+        "meaning": "제공하다"
+      },
+      {
+        "word": "help her",
+        "actual": "헬퍼",
+        "meaning": "그녀를 돕다, 연음으로 이어짐"
+      }
+    ]
+  },
+  {
+    "index": 250,
+    "start": 507.68,
+    "end": 510.08,
+    "text": "strengthen and develop her own argument.",
+    "pronunciation": "스트렝든 앤 디벨럽 허 오운 아규먼트.",
+    "translation": "그녀 자신의 주장을 강화하고 발전시킵니다.",
+    "notes": [
+      {
+        "word": "strengthen",
+        "actual": "스트렝든",
+        "meaning": "강화하다, th 약화"
+      },
+      {
+        "word": "develop",
+        "actual": "디벨럽",
+        "meaning": "발전시키다"
+      },
+      {
+        "word": "argument",
+        "actual": "아규먼트",
+        "meaning": "주장, 논거"
+      }
+    ]
+  },
+  {
+    "index": 251,
+    "start": 510.08,
+    "end": 511.12,
+    "text": "There's something you won't find",
+    "pronunciation": "데어즈 썸띵 유 원트 파인드",
+    "translation": "여러분이 찾을 수 없는 것이 있습니다",
+    "notes": [
+      {
+        "word": "There's",
+        "actual": "데어즈",
+        "meaning": "~이 있다, 축약형"
+      },
+      {
+        "word": "won't",
+        "actual": "원트",
+        "meaning": "~하지 않을 것이다"
+      },
+      {
+        "word": "something",
+        "actual": "썸띵",
+        "meaning": "무언가, th 약화"
+      }
+    ]
+  },
+  {
+    "index": 252,
+    "start": 511.12,
+    "end": 512.96,
+    "text": "anywhere in this interface, and that's a",
+    "pronunciation": "애니웨어 인 디스 인터페이스, 앤 대츠 어",
+    "translation": "이 인터페이스 어디에도, 그것은 바로",
+    "notes": [
+      {
+        "word": "anywhere",
+        "actual": "애니웨어",
+        "meaning": "어디에도"
+      },
+      {
+        "word": "interface",
+        "actual": "인터페이스",
+        "meaning": "인터페이스, t→플랩"
+      },
+      {
+        "word": "that's",
+        "actual": "대츠",
+        "meaning": "그것은, th→'ㄷ'"
+      }
+    ]
+  },
+  {
+    "index": 253,
+    "start": 512.96,
+    "end": 515.2,
+    "text": "chat box. Clara's not having to chat",
+    "pronunciation": "챗 박스. 클래라즈 낫 해빙 투 챗",
+    "translation": "채팅 상자입니다. 클라라는 채팅할 필요가 없습니다",
+    "notes": [
+      {
+        "word": "chat box",
+        "actual": "챗 박스",
+        "meaning": "채팅 상자"
+      },
+      {
+        "word": "Clara's",
+        "actual": "클래라즈",
+        "meaning": "클라라는, 소유격/축약"
+      },
+      {
+        "word": "having to",
+        "actual": "해빙 투",
+        "meaning": "~해야 하는"
+      }
+    ]
+  },
+  {
+    "index": 254,
+    "start": 515.2,
+    "end": 517.2,
+    "text": "with anything to do her work. Yet, she",
+    "pronunciation": "위드 애니띵 투 두 허 워크. 옛, 쉬",
+    "translation": "일을 하기 위해 어떤 것과도 대화하지 않습니다. 하지만, 그녀는",
+    "notes": [
+      {
+        "word": "anything",
+        "actual": "애니띵",
+        "meaning": "어떤 것, th 약화"
+      },
+      {
+        "word": "Yet",
+        "actual": "옛",
+        "meaning": "그러나, 하지만"
+      },
+      {
+        "word": "with",
+        "actual": "위드",
+        "meaning": "~와 함께, th 약화"
+      }
+    ]
+  },
+  {
+    "index": 255,
+    "start": 517.2,
+    "end": 519.28,
+    "text": "is silently and appropriately assisted",
+    "pronunciation": "이즈 사일런틀리 앤 어프로프리엇틀리 어시스티드",
+    "translation": "조용히 그리고 적절하게 도움을 받고 있습니다",
+    "notes": [
+      {
+        "word": "silently",
+        "actual": "사일런틀리",
+        "meaning": "조용히"
+      },
+      {
+        "word": "appropriately",
+        "actual": "어프로프리엇틀리",
+        "meaning": "적절하게, t 약화"
+      },
+      {
+        "word": "assisted",
+        "actual": "어시스티드",
+        "meaning": "도움을 받는"
+      }
+    ]
+  },
+  {
+    "index": 256,
+    "start": 519.28,
+    "end": 522.16,
+    "text": "by her computer as a computer and not as",
+    "pronunciation": "바이 허 컴퓨러 애즈 어 컴퓨러 앤 나래즈",
+    "translation": "그녀의 컴퓨터에 의해, 컴퓨터로서, 그리고 ~가 아닌",
+    "notes": [
+      {
+        "word": "computer",
+        "actual": "컴퓨러",
+        "meaning": "컴퓨터, t→플랩 'ㄹ'"
+      },
+      {
+        "word": "not as",
+        "actual": "나래즈",
+        "meaning": "~가 아닌, 연음으로 이어짐"
+      },
+      {
+        "word": "as a",
+        "actual": "애즈 어",
+        "meaning": "~로서"
+      }
+    ]
+  },
+  {
+    "index": 257,
+    "start": 522.16,
+    "end": 525.36,
+    "text": "an ursat human. To put it simply, we",
+    "pronunciation": "언 얼삿 휴먼. 투 푸릿 심플리, 위",
+    "translation": "가짜 인간이 아닌. 간단히 말하면, 우리는",
+    "notes": [
+      {
+        "word": "ersatz",
+        "actual": "얼삿",
+        "meaning": "대용의/가짜의, 독일어 유래"
+      },
+      {
+        "word": "put it simply",
+        "actual": "푸릿 심플리",
+        "meaning": "간단히 말하면, t→플랩"
+      },
+      {
+        "word": "human",
+        "actual": "휴먼",
+        "meaning": "인간"
+      }
+    ]
+  },
+  {
+    "index": 258,
+    "start": 525.36,
+    "end": 527.84,
+    "text": "have gone from this",
+    "pronunciation": "해브 곤 프럼 디스",
+    "translation": "이것에서 벗어났습니다",
+    "notes": [
+      {
+        "word": "have gone",
+        "actual": "해브 곤",
+        "meaning": "~에서 변화했다"
+      },
+      {
+        "word": "from",
+        "actual": "프럼",
+        "meaning": "~에서"
+      },
+      {
+        "word": "this",
+        "actual": "디스",
+        "meaning": "이것"
+      }
+    ]
+  },
+  {
+    "index": 259,
+    "start": 527.84,
+    "end": 530.24,
+    "text": "to this. Throughout this process,",
+    "pronunciation": "투 디스. 쓰루아웃 디스 프라세스,",
+    "translation": "이것으로. 이 과정 전반에 걸쳐,",
+    "notes": [
+      {
+        "word": "Throughout",
+        "actual": "쓰루아웃",
+        "meaning": "~전반에 걸쳐, th→'ㅆ'"
+      },
+      {
+        "word": "process",
+        "actual": "프라세스",
+        "meaning": "과정, 미국식 '프라'"
+      },
+      {
+        "word": "to this",
+        "actual": "투 디스",
+        "meaning": "이것으로"
+      }
+    ]
+  },
+  {
+    "index": 260,
+    "start": 530.24,
+    "end": 532.24,
+    "text": "Claraara has been assisted and yes,",
+    "pronunciation": "클래라 해즈 빈 어시스티드 앤 예스,",
+    "translation": "클라라는 도움을 받았고 네,",
+    "notes": [
+      {
+        "word": "Clara",
+        "actual": "클래라",
+        "meaning": "클라라 (이름)"
+      },
+      {
+        "word": "has been",
+        "actual": "해즈 빈",
+        "meaning": "~되어 왔다"
+      },
+      {
+        "word": "assisted",
+        "actual": "어시스티드",
+        "meaning": "도움을 받은"
+      }
+    ]
+  },
+  {
+    "index": 261,
+    "start": 532.24,
+    "end": 534.72,
+    "text": "probably worked faster because of AI.",
+    "pronunciation": "프라블리 워크트 패스터 비커저브 에이아이.",
+    "translation": "아마도 AI 덕분에 더 빨리 작업했을 겁니다.",
+    "notes": [
+      {
+        "word": "probably",
+        "actual": "프라블리",
+        "meaning": "아마도, 'b' 약화"
+      },
+      {
+        "word": "faster",
+        "actual": "패스터",
+        "meaning": "더 빠르게, t→플랩"
+      },
+      {
+        "word": "because of",
+        "actual": "비커저브",
+        "meaning": "~때문에, 연음"
+      }
+    ]
+  },
+  {
+    "index": 262,
+    "start": 534.72,
+    "end": 536.24,
+    "text": "But she's also maintained direct",
+    "pronunciation": "벗 쉬즈 올쏘 메인테인드 다이렉트",
+    "translation": "하지만 그녀는 또한 직접적인 것을 유지했습니다",
+    "notes": [
+      {
+        "word": "But",
+        "actual": "벗",
+        "meaning": "하지만"
+      },
+      {
+        "word": "maintained",
+        "actual": "메인테인드",
+        "meaning": "유지했다"
+      },
+      {
+        "word": "direct",
+        "actual": "다이렉트",
+        "meaning": "직접적인"
+      }
+    ]
+  },
+  {
+    "index": 263,
+    "start": 536.24,
+    "end": 538.4,
+    "text": "material engagement at strategic points.",
+    "pronunciation": "머티리얼 인게이지먼트 앳 스트러티직 포인츠.",
+    "translation": "전략적 지점에서의 실질적 참여를.",
+    "notes": [
+      {
+        "word": "material",
+        "actual": "머티리얼",
+        "meaning": "실질적인, t→플랩 'ㄹ'"
+      },
+      {
+        "word": "engagement",
+        "actual": "인게이지먼트",
+        "meaning": "참여, 관여"
+      },
+      {
+        "word": "strategic",
+        "actual": "스트러티직",
+        "meaning": "전략적인, t→플랩"
+      }
+    ]
+  },
+  {
+    "index": 264,
+    "start": 538.4,
+    "end": 539.92,
+    "text": "She read the relevant portions of the",
+    "pronunciation": "쉬 뤠드 더 뤨러번트 포어션즈 어브 더",
+    "translation": "그녀는 그 문서의 관련 부분들을",
+    "notes": [
+      {
+        "word": "relevant",
+        "actual": "뤨러번트",
+        "meaning": "관련된, 첫 음절 강세로 뒤가 약화"
+      },
+      {
+        "word": "portions",
+        "actual": "포어션즈",
+        "meaning": "부분들, t가 sh 앞에서 약화"
+      },
+      {
+        "word": "read",
+        "actual": "뤠드",
+        "meaning": "과거형 read, /rɛd/로 발음"
+      }
+    ]
+  },
+  {
+    "index": 265,
+    "start": 539.92,
+    "end": 541.76,
+    "text": "document herself. She constructed her",
+    "pronunciation": "다큐먼트 허셀프 쉬 컨스트뤅티드 허",
+    "translation": "직접 읽었습니다. 그녀는 자신의",
+    "notes": [
+      {
+        "word": "document",
+        "actual": "다큐먼트",
+        "meaning": "문서, 첫 음절 강세"
+      },
+      {
+        "word": "constructed",
+        "actual": "컨스트뤅티드",
+        "meaning": "구성했다, 과거형 -ed는 약한 '티드'"
+      },
+      {
+        "word": "herself",
+        "actual": "허셀프",
+        "meaning": "그녀 스스로, h 약화"
+      }
+    ]
+  },
+  {
+    "index": 266,
+    "start": 541.76,
+    "end": 543.92,
+    "text": "decisions and her argument herself and",
+    "pronunciation": "디시전즈 앤 허 아아규먼트 허셀프 앤드",
+    "translation": "결정과 논리를 스스로 구성했으며",
+    "notes": [
+      {
+        "word": "decisions",
+        "actual": "디시전즈",
+        "meaning": "결정들, s가 /ʒ/로 발음"
+      },
+      {
+        "word": "argument",
+        "actual": "아아규먼트",
+        "meaning": "논거/주장, r 발음 포함"
+      },
+      {
+        "word": "herself",
+        "actual": "허셀프",
+        "meaning": "직접, 강조 용법"
+      }
+    ]
+  },
+  {
+    "index": 267,
+    "start": 543.92,
+    "end": 545.52,
+    "text": "ultimately it can be said she has",
+    "pronunciation": "얼터멀리 잇 캔 비 쎄드 쉬 해즈",
+    "translation": "궁극적으로 그녀가",
+    "notes": [
+      {
+        "word": "ultimately",
+        "actual": "얼터멀리",
+        "meaning": "궁극적으로, t가 모음 사이에서 플랩"
+      },
+      {
+        "word": "said",
+        "actual": "쎄드",
+        "meaning": "말해질 수 있다"
+      },
+      {
+        "word": "it can be",
+        "actual": "잇 캔 비",
+        "meaning": "빠른 발화에서 연결"
+      }
+    ]
+  },
+  {
+    "index": 268,
+    "start": 545.52,
+    "end": 547.76,
+    "text": "written this document herself. Moreover,",
+    "pronunciation": "뤼튼 디스 다큐먼트 허셀프 모어오우버",
+    "translation": "이 문서를 직접 작성했다고 할 수 있습니다. 게다가,",
+    "notes": [
+      {
+        "word": "written",
+        "actual": "뤼튼",
+        "meaning": "작성한, tt가 글로탈스탑 또는 플랩"
+      },
+      {
+        "word": "moreover",
+        "actual": "모어오우버",
+        "meaning": "게다가, 두 번째 음절 강세"
+      },
+      {
+        "word": "document",
+        "actual": "다큐먼트",
+        "meaning": "문서"
+      }
+    ]
+  },
+  {
+    "index": 269,
+    "start": 547.76,
+    "end": 550.24,
+    "text": "she worked better because of AI. AI",
+    "pronunciation": "쉬 워크트 베러 비커즈 어브 에이아이 에이아이",
+    "translation": "그녀는 AI 덕분에 더 잘 작업했습니다. AI",
+    "notes": [
+      {
+        "word": "better",
+        "actual": "베러",
+        "meaning": "더 나은, tt가 플랩 ㄹ로 발음"
+      },
+      {
+        "word": "because of",
+        "actual": "비커즈 어브",
+        "meaning": "~때문에, 빠른 발화에서 연결"
+      },
+      {
+        "word": "AI",
+        "actual": "에이아이",
+        "meaning": "인공지능, 각 글자 발음"
+      }
+    ]
+  },
+  {
+    "index": 270,
+    "start": 550.24,
+    "end": 551.92,
+    "text": "provocations at every stage of the",
+    "pronunciation": "프라바케이션즈 앳 에브뤼 스테이지 어브 더",
+    "translation": "자극이 그 과정의 모든 단계에서",
+    "notes": [
+      {
+        "word": "provocations",
+        "actual": "프라바케이션즈",
+        "meaning": "자극/도발, 둘째 음절 강세"
+      },
+      {
+        "word": "every",
+        "actual": "에브뤼",
+        "meaning": "모든, 두 음절로 축약"
+      },
+      {
+        "word": "stage",
+        "actual": "스테이지",
+        "meaning": "단계"
+      }
+    ]
+  },
+  {
+    "index": 271,
+    "start": 551.92,
+    "end": 553.52,
+    "text": "process kept her metacognitively",
+    "pronunciation": "프라쎄스 켑트 허 메러카그너티블리",
+    "translation": "그녀를 메타인지적으로",
+    "notes": [
+      {
+        "word": "process",
+        "actual": "프라쎄스",
+        "meaning": "과정, 미국식 강세"
+      },
+      {
+        "word": "metacognitively",
+        "actual": "메러카그너티블리",
+        "meaning": "메타인지적으로, t가 플랩"
+      },
+      {
+        "word": "kept",
+        "actual": "켑트",
+        "meaning": "유지시켰다"
+      }
+    ]
+  },
+  {
+    "index": 272,
+    "start": 553.52,
+    "end": 555.92,
+    "text": "engaged, always looking for critiques,",
+    "pronunciation": "인게이지드 올웨이즈 루킹 포어 크러틱스",
+    "translation": "참여시켜, 항상 비판점과",
+    "notes": [
+      {
+        "word": "engaged",
+        "actual": "인게이지드",
+        "meaning": "몰입한, 두 번째 음절 강세"
+      },
+      {
+        "word": "critiques",
+        "actual": "크러틱스",
+        "meaning": "비평들, 두 번째 음절 강세"
+      },
+      {
+        "word": "always",
+        "actual": "올웨이즈",
+        "meaning": "항상"
+      }
+    ]
+  },
+  {
+    "index": 273,
+    "start": 555.92,
+    "end": 558.8,
+    "text": "alternatives, and lateral moves. We have",
+    "pronunciation": "올터너티브즈 앤 래러럴 무브즈 위 해브",
+    "translation": "대안과 횡적 전환을 찾게 했습니다. 우리는",
+    "notes": [
+      {
+        "word": "alternatives",
+        "actual": "올터너티브즈",
+        "meaning": "대안들, t가 플랩"
+      },
+      {
+        "word": "lateral",
+        "actual": "래러럴",
+        "meaning": "횡적인, t가 플랩 ㄹ로 발음"
+      },
+      {
+        "word": "moves",
+        "actual": "무브즈",
+        "meaning": "움직임/전환"
+      }
+    ]
+  },
+  {
+    "index": 274,
+    "start": 558.8,
+    "end": 560.56,
+    "text": "been studying the effects of tools like",
+    "pronunciation": "빈 스터디잉 디 이펙츠 어브 툴즈 라이크",
+    "translation": "이런 도구들의 효과를 연구해왔고",
+    "notes": [
+      {
+        "word": "studying",
+        "actual": "스터디잉",
+        "meaning": "연구하는, 현재분사"
+      },
+      {
+        "word": "effects",
+        "actual": "이펙츠",
+        "meaning": "효과들"
+      },
+      {
+        "word": "tools like",
+        "actual": "툴즈 라이크",
+        "meaning": "~같은 도구들"
+      }
+    ]
+  },
+  {
+    "index": 275,
+    "start": 560.56,
+    "end": 563.76,
+    "text": "this and the results are promising.",
+    "pronunciation": "디스 앤 더 뤼절츠 아 프라미싱",
+    "translation": "그 결과는 유망합니다.",
+    "notes": [
+      {
+        "word": "results",
+        "actual": "뤼절츠",
+        "meaning": "결과들, 두 번째 음절 강세"
+      },
+      {
+        "word": "promising",
+        "actual": "프라미싱",
+        "meaning": "유망한, 첫 음절 강세"
+      },
+      {
+        "word": "are",
+        "actual": "아",
+        "meaning": "약화되어 짧게 발음"
+      }
+    ]
+  },
+  {
+    "index": 276,
+    "start": 563.76,
+    "end": 565.92,
+    "text": "You can demonstraably reintroduce",
+    "pronunciation": "유 캔 데먼스트러블리 뤼인트러듀스",
+    "translation": "당신은 분명하게 비판적 사고를 다시",
+    "notes": [
+      {
+        "word": "demonstrably",
+        "actual": "데먼스트러블리",
+        "meaning": "명백하게, 원문에 오타 있음"
+      },
+      {
+        "word": "reintroduce",
+        "actual": "뤼인트러듀스",
+        "meaning": "재도입하다"
+      },
+      {
+        "word": "you can",
+        "actual": "유 캔",
+        "meaning": "~할 수 있다"
+      }
+    ]
+  },
+  {
+    "index": 277,
+    "start": 565.92,
+    "end": 567.6,
+    "text": "critical thinking into AI assisted",
+    "pronunciation": "크리리컬 씽킹 인투 에이아이 어시스티드",
+    "translation": "AI 보조 작업 흐름에 도입할 수 있습니다.",
+    "notes": [
+      {
+        "word": "critical",
+        "actual": "크리리컬",
+        "meaning": "비판적인, t가 플랩"
+      },
+      {
+        "word": "thinking",
+        "actual": "씽킹",
+        "meaning": "사고, th는 ㅆ에 가까움"
+      },
+      {
+        "word": "assisted",
+        "actual": "어시스티드",
+        "meaning": "보조된"
+      }
+    ]
+  },
+  {
+    "index": 278,
+    "start": 567.6,
+    "end": 569.52,
+    "text": "workflows. You can reverse the loss of",
+    "pronunciation": "워크플로우즈 유 캔 뤼버스 더 로스 어브",
+    "translation": "작업 흐름에서 창의성의 상실을 되돌리고",
+    "notes": [
+      {
+        "word": "workflows",
+        "actual": "워크플로우즈",
+        "meaning": "작업 흐름들"
+      },
+      {
+        "word": "reverse",
+        "actual": "뤼버스",
+        "meaning": "되돌리다, 두 번째 음절 강세"
+      },
+      {
+        "word": "loss",
+        "actual": "로스",
+        "meaning": "상실/손실"
+      }
+    ]
+  },
+  {
+    "index": 279,
+    "start": 569.52,
+    "end": 571.84,
+    "text": "creativity and enhance it instead. You",
+    "pronunciation": "크뤼에이티비리 앤 인핸스 잇 인스테드 유",
+    "translation": "오히려 그것을 향상시킬 수 있습니다. 당신은",
+    "notes": [
+      {
+        "word": "creativity",
+        "actual": "크뤼에이티비리",
+        "meaning": "창의성, t가 플랩"
+      },
+      {
+        "word": "enhance",
+        "actual": "인핸스",
+        "meaning": "향상시키다"
+      },
+      {
+        "word": "instead",
+        "actual": "인스테드",
+        "meaning": "대신에"
+      }
+    ]
+  },
+  {
+    "index": 280,
+    "start": 571.84,
+    "end": 573.92,
+    "text": "can build powerful tools for memory that",
+    "pronunciation": "캔 빌드 파워풀 툴즈 포어 메머뤼 댓",
+    "translation": "기억을 위한 강력한 도구를 만들 수 있고",
+    "notes": [
+      {
+        "word": "powerful",
+        "actual": "파워풀",
+        "meaning": "강력한"
+      },
+      {
+        "word": "memory",
+        "actual": "메머뤼",
+        "meaning": "기억, 첫 음절 강세"
+      },
+      {
+        "word": "build",
+        "actual": "빌드",
+        "meaning": "구축하다"
+      }
+    ]
+  },
+  {
+    "index": 281,
+    "start": 573.92,
+    "end": 575.68,
+    "text": "enable knowledge workers to read and",
+    "pronunciation": "이네이블 날리지 워커즈 투 뤼드 앤",
+    "translation": "지식 노동자들이 빠른 속도로",
+    "notes": [
+      {
+        "word": "enable",
+        "actual": "이네이블",
+        "meaning": "가능하게 하다"
+      },
+      {
+        "word": "knowledge",
+        "actual": "날리지",
+        "meaning": "지식, k 묵음"
+      },
+      {
+        "word": "workers",
+        "actual": "워커즈",
+        "meaning": "노동자들"
+      }
+    ]
+  },
+  {
+    "index": 282,
+    "start": 575.68,
+    "end": 577.44,
+    "text": "write at speed with greater",
+    "pronunciation": "롸잍 앳 스피드 윋 그뤠이러",
+    "translation": "더 큰 의도성을 가지고 읽고 쓸 수 있게 하며",
+    "notes": [
+      {
+        "word": "write",
+        "actual": "롸잍",
+        "meaning": "쓰다"
+      },
+      {
+        "word": "speed",
+        "actual": "스피드",
+        "meaning": "속도"
+      },
+      {
+        "word": "greater",
+        "actual": "그뤠이러",
+        "meaning": "더 큰, t가 플랩"
+      }
+    ]
+  },
+  {
+    "index": 283,
+    "start": 577.44,
+    "end": 579.84,
+    "text": "intentionality and remember it too. It",
+    "pronunciation": "인텐셔낼러리 앤 뤼멤버 잇 투 잇",
+    "translation": "그것을 기억하게도 합니다. 그것은",
+    "notes": [
+      {
+        "word": "intentionality",
+        "actual": "인텐셔낼러리",
+        "meaning": "의도성, t가 플랩"
+      },
+      {
+        "word": "remember",
+        "actual": "뤼멤버",
+        "meaning": "기억하다"
+      },
+      {
+        "word": "too",
+        "actual": "투",
+        "meaning": "또한, ~도"
+      }
+    ]
+  },
+  {
+    "index": 284,
+    "start": 579.84,
+    "end": 581.76,
+    "text": "turns out with the right principles of",
+    "pronunciation": "턴즈 아웃 윋 더 롸잍 프린서플즈 어브",
+    "translation": "올바른 설계 원칙으로",
+    "notes": [
+      {
+        "word": "turns out",
+        "actual": "턴즈 아웃",
+        "meaning": "밝혀지다, 알고 보니"
+      },
+      {
+        "word": "principles",
+        "actual": "프린서플즈",
+        "meaning": "원칙들, 첫 음절 강세"
+      },
+      {
+        "word": "right",
+        "actual": "롸잍",
+        "meaning": "올바른"
+      }
+    ]
+  },
+  {
+    "index": 285,
+    "start": 581.76,
+    "end": 583.52,
+    "text": "design, you can build tools that are the",
+    "pronunciation": "디자인 유 캔 빌드 툴즈 댓 아 더",
+    "translation": "설계하면 두 세계의 장점을 모두 갖춘",
+    "notes": [
+      {
+        "word": "design",
+        "actual": "디자인",
+        "meaning": "설계"
+      },
+      {
+        "word": "tools",
+        "actual": "툴즈",
+        "meaning": "도구들"
+      },
+      {
+        "word": "that are",
+        "actual": "댓 아",
+        "meaning": "빠른 발화에서 연결"
+      }
+    ]
+  },
+  {
+    "index": 286,
+    "start": 583.52,
+    "end": 585.68,
+    "text": "best of both worlds. applying the",
+    "pronunciation": "베스트 어브 보우쓰 월즈 어플라잉 더",
+    "translation": "도구를 만들 수 있습니다. 이",
+    "notes": [
+      {
+        "word": "best of both worlds",
+        "actual": "베스트 어브 보우쓰 월즈",
+        "meaning": "양쪽의 장점, 관용구"
+      },
+      {
+        "word": "applying",
+        "actual": "어플라잉",
+        "meaning": "적용하는"
+      },
+      {
+        "word": "both",
+        "actual": "보우쓰",
+        "meaning": "둘 다, th 발음"
+      }
+    ]
+  },
+  {
+    "index": 287,
+    "start": 585.68,
+    "end": 587.6,
+    "text": "awesome speed and flexibility of this",
+    "pronunciation": "어썸 스피드 앤 플렉서빌러리 어브 디스",
+    "translation": "이것의 놀라운 속도와 유연성을 적용하는",
+    "notes": [
+      {
+        "word": "awesome",
+        "actual": "어썸",
+        "meaning": "놀라운"
+      },
+      {
+        "word": "flexibility",
+        "actual": "플렉서빌러리",
+        "meaning": "유연성, t가 플랩"
+      },
+      {
+        "word": "speed",
+        "actual": "스피드",
+        "meaning": "속도"
+      }
+    ]
+  },
+  {
+    "index": 288,
+    "start": 587.6,
+    "end": 590,
+    "text": "technology to protect and enhance human",
+    "pronunciation": "테크날러지 투 프러텍 앤 인핸스 휴먼",
+    "translation": "인간의 사고를 보호하고 향상시키는 기술",
+    "notes": [
+      {
+        "word": "technology",
+        "actual": "테크날러지",
+        "meaning": "t가 모음 사이에서 ㄹ로 연음"
+      },
+      {
+        "word": "protect",
+        "actual": "프러텍",
+        "meaning": "pro-가 '프러'로 약화"
+      },
+      {
+        "word": "enhance",
+        "actual": "인핸스",
+        "meaning": "en-이 '인'으로 발음"
+      }
+    ]
+  },
+  {
+    "index": 289,
+    "start": 590,
+    "end": 592.08,
+    "text": "thought. These are simple general",
+    "pronunciation": "쏘트. 디즈 아 심플 제너럴",
+    "translation": "사고를요. 이것들은 간단한 일반적인",
+    "notes": [
+      {
+        "word": "thought",
+        "actual": "쏘트",
+        "meaning": "th가 'ㅆ'에 가까운 강한 발음"
+      },
+      {
+        "word": "these",
+        "actual": "디즈",
+        "meaning": "th가 유성음 'ㄷ'에 가까움"
+      },
+      {
+        "word": "general",
+        "actual": "제너럴",
+        "meaning": "ge-가 '제'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 290,
+    "start": 592.08,
+    "end": 594.56,
+    "text": "principles like ensuring that the tool",
+    "pronunciation": "프린서플즈 라잌 인슈어링 댓 더 툴",
+    "translation": "원칙들인데, 도구가 다음을 보장하도록 하는 것입니다",
+    "notes": [
+      {
+        "word": "principles",
+        "actual": "프린서플즈",
+        "meaning": "ci가 '서'로 발음"
+      },
+      {
+        "word": "ensuring",
+        "actual": "인슈어링",
+        "meaning": "en-이 '인'으로 약화"
+      },
+      {
+        "word": "that the",
+        "actual": "댓 더",
+        "meaning": "that의 th는 약하게 '댓'"
+      }
+    ]
+  },
+  {
+    "index": 291,
+    "start": 594.56,
+    "end": 597.76,
+    "text": "preserves material material engagement,",
+    "pronunciation": "프리저브즈 머티리얼 머티리얼 인게이지먼트,",
+    "translation": "실질적인 실질적인 참여를 보존하고,",
+    "notes": [
+      {
+        "word": "preserves",
+        "actual": "프리저브즈",
+        "meaning": "pre-가 '프리'로 발음"
+      },
+      {
+        "word": "material",
+        "actual": "머티리얼",
+        "meaning": "t가 모음 사이에서 가볍게 발음"
+      },
+      {
+        "word": "engagement",
+        "actual": "인게이지먼트",
+        "meaning": "en-이 '인'으로 발음"
+      }
+    ]
+  },
+  {
+    "index": 292,
+    "start": 597.76,
+    "end": 599.44,
+    "text": "offers productive resistance and",
+    "pronunciation": "아퍼즈 프러덕티브 리지스턴스 앤",
+    "translation": "생산적인 저항을 제공하고",
+    "notes": [
+      {
+        "word": "offers",
+        "actual": "아퍼즈",
+        "meaning": "ff가 'ㅍ'로 발음, -ers가 '어즈'"
+      },
+      {
+        "word": "productive",
+        "actual": "프러덕티브",
+        "meaning": "pro-가 '프러'로 약화"
+      },
+      {
+        "word": "resistance",
+        "actual": "리지스턴스",
+        "meaning": "re-가 '리'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 293,
+    "start": 599.44,
+    "end": 601.92,
+    "text": "scaffolds metacognition.",
+    "pronunciation": "스캐폴즈 메러카그니션.",
+    "translation": "메타인지를 지원합니다.",
+    "notes": [
+      {
+        "word": "scaffolds",
+        "actual": "스캐폴즈",
+        "meaning": "sca-가 '스캐'로 발음"
+      },
+      {
+        "word": "metacognition",
+        "actual": "메러카그니션",
+        "meaning": "t가 모음 사이에서 ㄹ로 변환, -tion이 '션'"
+      },
+      {
+        "word": "-cognition",
+        "actual": "카그니션",
+        "meaning": "cog-가 '카그'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 294,
+    "start": 601.92,
+    "end": 603.68,
+    "text": "And while we've been primarily studying",
+    "pronunciation": "앤 와일 위브 빈 프라이메릴리 스터디잉",
+    "translation": "그리고 우리가 주로 연구해 온 것은",
+    "notes": [
+      {
+        "word": "we've",
+        "actual": "위브",
+        "meaning": "축약형 그대로 '위브'"
+      },
+      {
+        "word": "primarily",
+        "actual": "프라이메릴리",
+        "meaning": "pri-가 '프라이'로 발음"
+      },
+      {
+        "word": "studying",
+        "actual": "스터디잉",
+        "meaning": "stu-가 '스터'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 295,
+    "start": 603.68,
+    "end": 605.04,
+    "text": "professional knowledge workers, we",
+    "pronunciation": "프러페셔널 날리지 워커즈, 위",
+    "translation": "전문 지식 노동자들이지만, 우리는",
+    "notes": [
+      {
+        "word": "professional",
+        "actual": "프러페셔널",
+        "meaning": "pro-가 '프러'로 약화, -sional이 '셔널'"
+      },
+      {
+        "word": "knowledge",
+        "actual": "날리지",
+        "meaning": "k가 묵음, now-가 '날'로 발음"
+      },
+      {
+        "word": "workers",
+        "actual": "워커즈",
+        "meaning": "wor-가 '워'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 296,
+    "start": 605.04,
+    "end": 606.64,
+    "text": "believe that these principles can extend",
+    "pronunciation": "빌리브 댓 디즈 프린서플즈 캔 익스텐드",
+    "translation": "이 원칙들이 확장될 수 있다고 믿습니다",
+    "notes": [
+      {
+        "word": "believe",
+        "actual": "빌리브",
+        "meaning": "be-가 '비'로 약화"
+      },
+      {
+        "word": "principles",
+        "actual": "프린서플즈",
+        "meaning": "ci가 '서'로 발음"
+      },
+      {
+        "word": "extend",
+        "actual": "익스텐드",
+        "meaning": "ex-가 '익스'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 297,
+    "start": 606.64,
+    "end": 608.96,
+    "text": "to all aspects of AI use, including when",
+    "pronunciation": "투 올 애스펙츠 어브 에이아이 유스, 인클루딩 웬",
+    "translation": "AI 사용의 모든 측면에, 다음을 포함해서",
+    "notes": [
+      {
+        "word": "aspects",
+        "actual": "애스펙츠",
+        "meaning": "a-가 '애'로 발음"
+      },
+      {
+        "word": "including",
+        "actual": "인클루딩",
+        "meaning": "in-이 '인'으로 발음"
+      },
+      {
+        "word": "AI",
+        "actual": "에이아이",
+        "meaning": "약어 그대로 발음"
+      }
+    ]
+  },
+  {
+    "index": 298,
+    "start": 608.96,
+    "end": 610.56,
+    "text": "we use it in our daily lives, our",
+    "pronunciation": "위 유짓 인 아워 데일리 라이브즈, 아워",
+    "translation": "우리가 일상생활에서 사용할 때, 우리의",
+    "notes": [
+      {
+        "word": "use it",
+        "actual": "유짓",
+        "meaning": "use와 it이 연음되어 '유짓'"
+      },
+      {
+        "word": "daily",
+        "actual": "데일리",
+        "meaning": "dai-가 '데이'로 발음"
+      },
+      {
+        "word": "lives",
+        "actual": "라이브즈",
+        "meaning": "li-가 '라이'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 299,
+    "start": 610.56,
+    "end": 612.96,
+    "text": "hobbies, and even in education. I",
+    "pronunciation": "하비즈, 앤 이븐 인 에쥬케이션. 아이",
+    "translation": "취미, 그리고 심지어 교육에서도요. 저는",
+    "notes": [
+      {
+        "word": "hobbies",
+        "actual": "하비즈",
+        "meaning": "ho-가 '하'로 발음"
+      },
+      {
+        "word": "even",
+        "actual": "이븐",
+        "meaning": "e-가 '이'로 발음"
+      },
+      {
+        "word": "education",
+        "actual": "에쥬케이션",
+        "meaning": "du가 '쥬'로 구개음화"
+      }
+    ]
+  },
+  {
+    "index": 300,
+    "start": 612.96,
+    "end": 615.2,
+    "text": "repeat, efficiency is not the aim of",
+    "pronunciation": "리핏, 이피션시 이즈 낫 디 에임 어브",
+    "translation": "다시 말합니다, 효율성은 사고 도구의",
+    "notes": [
+      {
+        "word": "repeat",
+        "actual": "리핏",
+        "meaning": "re-가 '리'로, -peat가 '핏'"
+      },
+      {
+        "word": "efficiency",
+        "actual": "이피션시",
+        "meaning": "-ciency가 '션시'로 발음"
+      },
+      {
+        "word": "aim",
+        "actual": "에임",
+        "meaning": "ai가 '에이'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 301,
+    "start": 615.2,
+    "end": 618,
+    "text": "tools for thought. Better thinking is,",
+    "pronunciation": "툴즈 포 쏘트. 베러 씽킹 이즈,",
+    "translation": "목표가 아닙니다. 더 나은 사고가 목표입니다,",
+    "notes": [
+      {
+        "word": "thought",
+        "actual": "쏘트",
+        "meaning": "th가 강한 'ㅆ'에 가까움"
+      },
+      {
+        "word": "better",
+        "actual": "베러",
+        "meaning": "tt가 모음 사이에서 ㄹ로 플랩"
+      },
+      {
+        "word": "thinking",
+        "actual": "씽킹",
+        "meaning": "th가 'ㅆ'에 가까운 발음"
+      }
+    ]
+  },
+  {
+    "index": 302,
+    "start": 618,
+    "end": 620.64,
+    "text": "but sometimes you can have both. I used",
+    "pronunciation": "벗 썸타임즈 유 캔 해브 보쓰. 아이 유즈드",
+    "translation": "하지만 때로는 둘 다 가질 수 있습니다. 저는",
+    "notes": [
+      {
+        "word": "sometimes",
+        "actual": "썸타임즈",
+        "meaning": "some-이 '썸'으로 발음"
+      },
+      {
+        "word": "both",
+        "actual": "보쓰",
+        "meaning": "th가 무성음 'ㅆ'에 가까움"
+      },
+      {
+        "word": "used",
+        "actual": "유즈드",
+        "meaning": "과거형 -ed가 'd'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 303,
+    "start": 620.64,
+    "end": 621.84,
+    "text": "to think there was no such thing as a",
+    "pronunciation": "투 씽크 데어 워즈 노 서치 씽 애즈 어",
+    "translation": "그런 것은 없다고 생각했었습니다",
+    "notes": [
+      {
+        "word": "think",
+        "actual": "씽크",
+        "meaning": "th가 'ㅆ'에 가까운 무성음"
+      },
+      {
+        "word": "there",
+        "actual": "데어",
+        "meaning": "th가 유성음 'ㄷ'에 가까움"
+      },
+      {
+        "word": "such",
+        "actual": "서치",
+        "meaning": "su-가 '서'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 304,
+    "start": 621.84,
+    "end": 624.24,
+    "text": "free lunch in human thinking. This is so",
+    "pronunciation": "프리 런치 인 휴먼 씽킹. 디스 이즈 쏘",
+    "translation": "인간 사고에서 공짜 점심 같은 건요. 이건 정말",
+    "notes": [
+      {
+        "word": "free",
+        "actual": "프리",
+        "meaning": "fr-가 '프르'에 가까움"
+      },
+      {
+        "word": "human",
+        "actual": "휴먼",
+        "meaning": "hu-가 '휴'로 발음"
+      },
+      {
+        "word": "this is so",
+        "actual": "디스 이즈 쏘",
+        "meaning": "빠른 발화에서 연결되어 발음"
+      }
+    ]
+  },
+  {
+    "index": 305,
+    "start": 624.24,
+    "end": 626.24,
+    "text": "much better than a free lunch. This is a",
+    "pronunciation": "머치 베러 댄 어 프리 런치. 디스 이즈 어",
+    "translation": "공짜 점심보다 훨씬 낫습니다. 이건",
+    "notes": [
+      {
+        "word": "much",
+        "actual": "머치",
+        "meaning": "mu-가 '머'로 발음"
+      },
+      {
+        "word": "better",
+        "actual": "베러",
+        "meaning": "tt가 모음 사이에서 ㄹ로 플랩"
+      },
+      {
+        "word": "than",
+        "actual": "댄",
+        "meaning": "th가 유성음으로 'ㄷ'에 가까움"
+      }
+    ]
+  },
+  {
+    "index": 306,
+    "start": 626.24,
+    "end": 629.68,
+    "text": "lunch that pays you to eat it.",
+    "pronunciation": "런치 댓 페이즈 유 투 잇잇.",
+    "translation": "당신에게 돈을 주고 먹게 하는 점심입니다.",
+    "notes": [
+      {
+        "word": "lunch",
+        "actual": "런치",
+        "meaning": "lu-가 '러'로 발음"
+      },
+      {
+        "word": "pays",
+        "actual": "페이즈",
+        "meaning": "pay가 '페이'로, -s가 'ㅈ'"
+      },
+      {
+        "word": "eat it",
+        "actual": "잇잇",
+        "meaning": "eat과 it이 연음, t→ㄹ 가능하여 '이릿'도 가능"
+      }
+    ]
+  },
+  {
+    "index": 307,
+    "start": 629.68,
+    "end": 631.28,
+    "text": "I want to close with some thoughts on",
+    "pronunciation": "아이 원투 클로우즈 윋 썸 쏘츠 온",
+    "translation": "저는 몇 가지 생각으로 마무리하고 싶습니다",
+    "notes": [
+      {
+        "word": "want to",
+        "actual": "원투",
+        "meaning": "want to가 빠르게 '원투'로 축약"
+      },
+      {
+        "word": "close",
+        "actual": "클로우즈",
+        "meaning": "동사로 '클로우즈'로 발음"
+      },
+      {
+        "word": "thoughts",
+        "actual": "쏘츠",
+        "meaning": "th가 무성음 'ㅆ', -ghts가 '츠'"
+      }
+    ]
+  },
+  {
+    "index": 308,
+    "start": 631.28,
+    "end": 633.6,
+    "text": "the values that we have in developing AI",
+    "pronunciation": "더 밸류즈 댓 위 해브 인 디벨러핑 에이아이",
+    "translation": "AI를 개발할 때 우리가 가진 가치관에 대해",
+    "notes": [
+      {
+        "word": "values",
+        "actual": "밸류즈",
+        "meaning": "va-가 '밸'로 발음"
+      },
+      {
+        "word": "developing",
+        "actual": "디벨러핑",
+        "meaning": "de-가 '디'로 약화, -lop-이 '러'로"
+      },
+      {
+        "word": "AI",
+        "actual": "에이아이",
+        "meaning": "약어 그대로 발음"
+      }
+    ]
+  },
+  {
+    "index": 309,
+    "start": 633.6,
+    "end": 635.84,
+    "text": "software. What if AI gets to the point",
+    "pronunciation": "소프트웨어. 왓 이프 에이아이 게츠 투 더 포인트",
+    "translation": "소프트웨어요. 만약 AI가 그 지점에 도달해서",
+    "notes": [
+      {
+        "word": "software",
+        "actual": "소프트웨어",
+        "meaning": "soft-가 '소프트'로 발음"
+      },
+      {
+        "word": "what if",
+        "actual": "왓 이프",
+        "meaning": "빠르게 '와리프'로도 연음 가능"
+      },
+      {
+        "word": "gets to",
+        "actual": "게츠 투",
+        "meaning": "gets의 -ts가 '츠'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 310,
+    "start": 635.84,
+    "end": 637.6,
+    "text": "where it can do a better job of thinking",
+    "pronunciation": "웨어 잇 캔 두 어 베러 잡 어브 씽킹",
+    "translation": "인간보다 더 잘 사고할 수 있게 된다면",
+    "notes": [
+      {
+        "word": "where it",
+        "actual": "웨어 잇",
+        "meaning": "where가 '웨어'로 발음"
+      },
+      {
+        "word": "better",
+        "actual": "베러",
+        "meaning": "tt가 모음 사이에서 ㄹ로 플랩"
+      },
+      {
+        "word": "thinking",
+        "actual": "씽킹",
+        "meaning": "th가 'ㅆ'에 가까운 무성음"
+      }
+    ]
+  },
+  {
+    "index": 311,
+    "start": 637.6,
+    "end": 639.6,
+    "text": "than humans? Why should we care so much",
+    "pronunciation": "댄 휴먼즈? 와이 슈드 위 케어 쏘 머치",
+    "translation": "어떨까요? 왜 우리가 그토록 신경 써야 할까요",
+    "notes": [
+      {
+        "word": "than",
+        "actual": "댄",
+        "meaning": "th가 유성음 'ㄷ'에 가까움"
+      },
+      {
+        "word": "should",
+        "actual": "슈드",
+        "meaning": "shou-가 '슈'로 발음"
+      },
+      {
+        "word": "care so much",
+        "actual": "케어 쏘 머치",
+        "meaning": "care가 '케어'로, so가 강조되어 '쏘'"
+      }
+    ]
+  },
+  {
+    "index": 312,
+    "start": 639.6,
+    "end": 641.92,
+    "text": "about protecting and augmenting human",
+    "pronunciation": "어바웃 프러텍팅 앤 오그멘팅 휴먼",
+    "translation": "인간의 사고를 보호하고 강화하는 것에 대해",
+    "notes": [
+      {
+        "word": "protecting",
+        "actual": "프러텍팅",
+        "meaning": "t가 약화되어 '프러텍팅'"
+      },
+      {
+        "word": "augmenting",
+        "actual": "오그멘팅",
+        "meaning": "au→오, 강세가 두번째 음절에"
+      },
+      {
+        "word": "human",
+        "actual": "휴먼",
+        "meaning": "h 발음 유지"
+      }
+    ]
+  },
+  {
+    "index": 313,
+    "start": 641.92,
+    "end": 645.04,
+    "text": "thought? There's two reasons. First,",
+    "pronunciation": "쏘트? 데얼즈 투 뤼즌즈. 퍼스트,",
+    "translation": "사고를요? 두 가지 이유가 있습니다. 첫째,",
+    "notes": [
+      {
+        "word": "thought",
+        "actual": "쏘트",
+        "meaning": "th→ㅆ, ght 묵음"
+      },
+      {
+        "word": "there's",
+        "actual": "데얼즈",
+        "meaning": "there is 축약, th→ㄷ"
+      },
+      {
+        "word": "reasons",
+        "actual": "뤼즌즈",
+        "meaning": "rea→뤼, s 유성음화"
+      }
+    ]
+  },
+  {
+    "index": 314,
+    "start": 645.04,
+    "end": 646.4,
+    "text": "there may always be ways of thinking",
+    "pronunciation": "데어 메이 올웨이즈 비 웨이즈 어브 씽킹",
+    "translation": "항상 사고하는 방식들이 있을 수 있는데",
+    "notes": [
+      {
+        "word": "there",
+        "actual": "데어",
+        "meaning": "th→ㄷ 유성음"
+      },
+      {
+        "word": "always",
+        "actual": "올웨이즈",
+        "meaning": "al→올, ways 연음"
+      },
+      {
+        "word": "thinking",
+        "actual": "씽킹",
+        "meaning": "th→ㅆ 무성음"
+      }
+    ]
+  },
+  {
+    "index": 315,
+    "start": 646.4,
+    "end": 648.32,
+    "text": "that remain unique human strengths of",
+    "pronunciation": "댓 뤼메인 유닠 휴먼 스트렝쓰즈 어브",
+    "translation": "인간만의 고유한 강점으로 남아있는",
+    "notes": [
+      {
+        "word": "remain",
+        "actual": "뤼메인",
+        "meaning": "re→뤼, 강세 두번째 음절"
+      },
+      {
+        "word": "unique",
+        "actual": "유닠",
+        "meaning": "uni→유니, que→ㅋ"
+      },
+      {
+        "word": "strengths",
+        "actual": "스트렝쓰즈",
+        "meaning": "ngths 자음군 축약"
+      }
+    ]
+  },
+  {
+    "index": 316,
+    "start": 648.32,
+    "end": 650.56,
+    "text": "which we may not even be aware. Second,",
+    "pronunciation": "위치 위 메이 낫 이븐 비 어웨어. 세컨드,",
+    "translation": "우리가 인지하지조차 못하는. 둘째,",
+    "notes": [
+      {
+        "word": "which",
+        "actual": "위치",
+        "meaning": "wh→ㅇ+위"
+      },
+      {
+        "word": "aware",
+        "actual": "어웨어",
+        "meaning": "a→어, ware→웨어"
+      },
+      {
+        "word": "even",
+        "actual": "이븐",
+        "meaning": "짧게 발음"
+      }
+    ]
+  },
+  {
+    "index": 317,
+    "start": 650.56,
+    "end": 652.4,
+    "text": "perhaps more importantly, we take the",
+    "pronunciation": "퍼햅스 모어 임포어른리, 위 테이크 더",
+    "translation": "아마도 더 중요한 것은, 우리는",
+    "notes": [
+      {
+        "word": "perhaps",
+        "actual": "퍼햅스",
+        "meaning": "per→퍼, haps→햅스"
+      },
+      {
+        "word": "importantly",
+        "actual": "임포어른리",
+        "meaning": "t 탈락, -ly 약화"
+      },
+      {
+        "word": "more",
+        "actual": "모어",
+        "meaning": "r 약화"
+      }
+    ]
+  },
+  {
+    "index": 318,
+    "start": 652.4,
+    "end": 654.56,
+    "text": "position that the ability to think well",
+    "pronunciation": "퍼지션 댓 디 어빌러리 투 씽크 웰",
+    "translation": "잘 사고하는 능력이",
+    "notes": [
+      {
+        "word": "position",
+        "actual": "퍼지션",
+        "meaning": "po→퍼, tion→션"
+      },
+      {
+        "word": "ability",
+        "actual": "어빌러리",
+        "meaning": "t→ㄹ 플랩, -ity 약화"
+      },
+      {
+        "word": "think",
+        "actual": "씽크",
+        "meaning": "th→ㅆ 무성음"
+      }
+    ]
+  },
+  {
+    "index": 319,
+    "start": 654.56,
+    "end": 656.72,
+    "text": "is essential for human agency and",
+    "pronunciation": "이즈 이센셜 포어 휴먼 에이전시 앤드",
+    "translation": "인간의 주체성과",
+    "notes": [
+      {
+        "word": "essential",
+        "actual": "이센셜",
+        "meaning": "ss→센, tial→셜"
+      },
+      {
+        "word": "agency",
+        "actual": "에이전시",
+        "meaning": "a→에이, cy→시"
+      },
+      {
+        "word": "human",
+        "actual": "휴먼",
+        "meaning": "h 발음 유지"
+      }
+    ]
+  },
+  {
+    "index": 320,
+    "start": 656.72,
+    "end": 659.12,
+    "text": "empowerment and flourishing. This echoes",
+    "pronunciation": "임파워먼트 앤 플러리싱. 디스 에코우즈",
+    "translation": "역량 강화와 번영에 필수적이라는 입장입니다. 이것은 반영합니다",
+    "notes": [
+      {
+        "word": "empowerment",
+        "actual": "임파워먼트",
+        "meaning": "em→임, power→파워"
+      },
+      {
+        "word": "flourishing",
+        "actual": "플러리싱",
+        "meaning": "flou→플러, -shing→싱"
+      },
+      {
+        "word": "echoes",
+        "actual": "에코우즈",
+        "meaning": "echo→에코우, s 유성음화"
+      }
+    ]
+  },
+  {
+    "index": 321,
+    "start": 659.12,
+    "end": 661.04,
+    "text": "an ancient question. People once asked,",
+    "pronunciation": "언 에인션트 퀘스쳔. 피플 원스 앨스크드,",
+    "translation": "오래된 질문을요. 사람들은 한때 물었습니다,",
+    "notes": [
+      {
+        "word": "ancient",
+        "actual": "에인션트",
+        "meaning": "an→에인, cient→션트"
+      },
+      {
+        "word": "question",
+        "actual": "퀘스쳔",
+        "meaning": "ques→퀘스, tion→쳔"
+      },
+      {
+        "word": "asked",
+        "actual": "앨스크드",
+        "meaning": "-ed→드 약화"
+      }
+    ]
+  },
+  {
+    "index": 322,
+    "start": 661.04,
+    "end": 662.88,
+    "text": "you know, if writing, if books, if the",
+    "pronunciation": "유 노우, 이프 롸이링, 이프 북스, 이프 더",
+    "translation": "있잖아요, 만약 글이, 만약 책이, 만약",
+    "notes": [
+      {
+        "word": "you know",
+        "actual": "유 노우",
+        "meaning": "삽입어, 빠르게 발음"
+      },
+      {
+        "word": "writing",
+        "actual": "롸이링",
+        "meaning": "wr→ㄹ, t→ㄹ 플랩"
+      },
+      {
+        "word": "books",
+        "actual": "북스",
+        "meaning": "oo→우, ks 파열음"
+      }
+    ]
+  },
+  {
+    "index": 323,
+    "start": 662.88,
+    "end": 665.2,
+    "text": "internet can remember for us, does it",
+    "pronunciation": "인터넷 캔 뤼멤버 포어 어스, 더짓",
+    "translation": "인터넷이 우리 대신 기억해줄 수 있다면, 그것이",
+    "notes": [
+      {
+        "word": "internet",
+        "actual": "인터넷",
+        "meaning": "t→ㄹ 플랩 가능하나 또렷이"
+      },
+      {
+        "word": "remember",
+        "actual": "뤼멤버",
+        "meaning": "re→뤼, mem→멤"
+      },
+      {
+        "word": "does it",
+        "actual": "더짓",
+        "meaning": "연음되어 한 단어처럼"
+      }
+    ]
+  },
+  {
+    "index": 324,
+    "start": 665.2,
+    "end": 667.36,
+    "text": "matter that we cannot? People once asked",
+    "pronunciation": "매러 댓 위 캐낫? 피플 원스 앨스크드",
+    "translation": "우리가 기억하지 못해도 상관없는 걸까요? 사람들은 한때 물었습니다",
+    "notes": [
+      {
+        "word": "matter",
+        "actual": "매러",
+        "meaning": "tt→ㄹ 플랩, er→어 약화"
+      },
+      {
+        "word": "cannot",
+        "actual": "캐낫",
+        "meaning": "can→캐, not→낫"
+      },
+      {
+        "word": "people",
+        "actual": "피플",
+        "meaning": "peo→피, ple→플"
+      }
+    ]
+  },
+  {
+    "index": 325,
+    "start": 667.36,
+    "end": 669.12,
+    "text": "if maps can navigate for us, does it",
+    "pronunciation": "이프 맵스 캔 내비게잇 포어 어스, 더짓",
+    "translation": "만약 지도가 우리 대신 길을 찾아줄 수 있다면, 그것이",
+    "notes": [
+      {
+        "word": "maps",
+        "actual": "맵스",
+        "meaning": "a→애, ps 파열음"
+      },
+      {
+        "word": "navigate",
+        "actual": "내비게잇",
+        "meaning": "na→내, gate→게잇"
+      },
+      {
+        "word": "does it",
+        "actual": "더짓",
+        "meaning": "연음 축약"
+      }
+    ]
+  },
+  {
+    "index": 326,
+    "start": 669.12,
+    "end": 671.84,
+    "text": "matter that we cannot? Now we ask, if",
+    "pronunciation": "매러 댓 위 캐낫? 나우 위 애스크, 이프",
+    "translation": "우리가 찾지 못해도 상관없는 걸까요? 이제 우리는 묻습니다, 만약",
+    "notes": [
+      {
+        "word": "matter",
+        "actual": "매러",
+        "meaning": "tt→ㄹ 플랩"
+      },
+      {
+        "word": "now",
+        "actual": "나우",
+        "meaning": "강조되어 또렷이"
+      },
+      {
+        "word": "ask",
+        "actual": "애스크",
+        "meaning": "a→애, sk 자음군"
+      }
+    ]
+  },
+  {
+    "index": 327,
+    "start": 671.84,
+    "end": 673.92,
+    "text": "machines can think for us, does it",
+    "pronunciation": "머쉰즈 캔 씽크 포어 어스, 더짓",
+    "translation": "기계가 우리 대신 생각해줄 수 있다면, 그것이",
+    "notes": [
+      {
+        "word": "machines",
+        "actual": "머쉰즈",
+        "meaning": "ma→머, chines→쉰즈"
+      },
+      {
+        "word": "think",
+        "actual": "씽크",
+        "meaning": "th→ㅆ 무성음"
+      },
+      {
+        "word": "does it",
+        "actual": "더짓",
+        "meaning": "연음 축약"
+      }
+    ]
+  },
+  {
+    "index": 328,
+    "start": 673.92,
+    "end": 675.52,
+    "text": "matter that we cannot? If machines can",
+    "pronunciation": "매러 댓 위 캐낫? 이프 머쉰즈 캔",
+    "translation": "우리가 생각하지 못해도 상관없는 걸까요? 만약 기계가",
+    "notes": [
+      {
+        "word": "matter",
+        "actual": "매러",
+        "meaning": "tt→ㄹ 플랩 반복 패턴"
+      },
+      {
+        "word": "cannot",
+        "actual": "캐낫",
+        "meaning": "강조 발음"
+      },
+      {
+        "word": "machines",
+        "actual": "머쉰즈",
+        "meaning": "ma→머, ch→쉬"
+      }
+    ]
+  },
+  {
+    "index": 329,
+    "start": 675.52,
+    "end": 677.76,
+    "text": "speak for us, grieve for us, pray for",
+    "pronunciation": "스픽 포어 어스, 그리브 포어 어스, 프레이 포어",
+    "translation": "우리 대신 말해주고, 슬퍼해주고, 기도해줄 수 있다면",
+    "notes": [
+      {
+        "word": "speak",
+        "actual": "스픽",
+        "meaning": "sp→스프 아닌 스ㅍ"
+      },
+      {
+        "word": "grieve",
+        "actual": "그리브",
+        "meaning": "gr→그ㄹ, ieve→이브"
+      },
+      {
+        "word": "pray",
+        "actual": "프레이",
+        "meaning": "pr→프ㄹ, ay→에이"
+      }
+    ]
+  },
+  {
+    "index": 330,
+    "start": 677.76,
+    "end": 679.84,
+    "text": "us, love for us, does it matter that we",
+    "pronunciation": "어스, 러브 포어 어스, 더짓 매러 댓 위",
+    "translation": "우리 대신 사랑해줄 수 있다면, 그것이 상관없는 걸까요",
+    "notes": [
+      {
+        "word": "love",
+        "actual": "러브",
+        "meaning": "o→어, v→브"
+      },
+      {
+        "word": "does it",
+        "actual": "더짓",
+        "meaning": "연음 축약 반복"
+      },
+      {
+        "word": "matter",
+        "actual": "매러",
+        "meaning": "tt→ㄹ 플랩"
+      }
+    ]
+  },
+  {
+    "index": 331,
+    "start": 679.84,
+    "end": 681.44,
+    "text": "cannot? To me, the answer is pretty",
+    "pronunciation": "캐낫? 투 미, 디 앤서 이즈 프리리",
+    "translation": "우리가 못해도? 저에게, 답은 꽤",
+    "notes": [
+      {
+        "word": "cannot",
+        "actual": "캐낫",
+        "meaning": "감정 실린 강조"
+      },
+      {
+        "word": "answer",
+        "actual": "앤서",
+        "meaning": "an→앤, swer→서"
+      },
+      {
+        "word": "pretty",
+        "actual": "프리리",
+        "meaning": "tt→ㄹ 플랩, e→이"
+      }
+    ]
+  },
+  {
+    "index": 332,
+    "start": 681.44,
+    "end": 683.36,
+    "text": "obvious. When I began studying human AI",
+    "pronunciation": "아비어스. 웬 아이 비갠 스터디잉 휴먼 에이아이",
+    "translation": "명백합니다. 제가 인간-AI",
+    "notes": [
+      {
+        "word": "obvious",
+        "actual": "아비어스",
+        "meaning": "ob→아브, vious→비어스"
+      },
+      {
+        "word": "began",
+        "actual": "비갠",
+        "meaning": "be→비, gan→갠"
+      },
+      {
+        "word": "AI",
+        "actual": "에이아이",
+        "meaning": "약어 각 글자 발음"
+      }
+    ]
+  },
+  {
+    "index": 333,
+    "start": 683.36,
+    "end": 685.2,
+    "text": "interaction 13 years ago, it was",
+    "pronunciation": "인터랙션 써틴 이얼즈 어고우, 잇 워즈",
+    "translation": "상호작용을 연구하기 시작했을 때 13년 전, 그것은",
+    "notes": [
+      {
+        "word": "interaction",
+        "actual": "인터랙션",
+        "meaning": "inter→인터, action→랙션"
+      },
+      {
+        "word": "thirteen",
+        "actual": "써틴",
+        "meaning": "th→ㅆ, teen→틴"
+      },
+      {
+        "word": "years ago",
+        "actual": "이얼즈 어고우",
+        "meaning": "연음 자연스럽게"
+      }
+    ]
+  },
+  {
+    "index": 334,
+    "start": 685.2,
+    "end": 686.8,
+    "text": "inconceivable to me that we would be",
+    "pronunciation": "인컨시버블 투 미 댓 위 우드 비",
+    "translation": "제게는 상상할 수도 없었습니다, 우리가",
+    "notes": [
+      {
+        "word": "inconceivable",
+        "actual": "인컨시버블",
+        "meaning": "in→인, ceiv→시브, able→어블"
+      },
+      {
+        "word": "would",
+        "actual": "우드",
+        "meaning": "l 묵음, wou→우"
+      },
+      {
+        "word": "that",
+        "actual": "댓",
+        "meaning": "th→ㄷ 유성음, 빠르게"
+      }
+    ]
+  },
+  {
+    "index": 335,
+    "start": 686.8,
+    "end": 689.04,
+    "text": "asking these questions in my lifetime.",
+    "pronunciation": "애스킹 디즈 퀘스쳔즈 인 마이 라이프타임.",
+    "translation": "제 생애에 이런 질문들을 하게 될 거라고는.",
+    "notes": [
+      {
+        "word": "asking",
+        "actual": "애스킹",
+        "meaning": "a→애, sk→스크"
+      },
+      {
+        "word": "questions",
+        "actual": "퀘스쳔즈",
+        "meaning": "ques→퀘스, tions→쳔즈"
+      },
+      {
+        "word": "lifetime",
+        "actual": "라이프타임",
+        "meaning": "life→라이프, time→타임"
+      }
+    ]
+  },
+  {
+    "index": 336,
+    "start": 689.04,
+    "end": 691.6,
+    "text": "But we are, and we must. I leave you",
+    "pronunciation": "벗 위 아, 앤 위 머스트. 아이 리브 유",
+    "translation": "하지만 우리는 그렇고, 그래야만 합니다. 여러분에게",
+    "notes": [
+      {
+        "word": "we are",
+        "actual": "위 아",
+        "meaning": "위아르가 아닌 위 아로 끊어 발음"
+      },
+      {
+        "word": "must",
+        "actual": "머스트",
+        "meaning": "강조하며 또렷하게 발음"
+      },
+      {
+        "word": "leave you",
+        "actual": "리브 유",
+        "meaning": "리뷰처럼 연음 가능"
+      }
+    ]
+  },
+  {
+    "index": 337,
+    "start": 691.6,
+    "end": 693.04,
+    "text": "with this thought. What would you rather",
+    "pronunciation": "위드 디스 쏘ㅌ. 왓 우쥬 래더",
+    "translation": "이 생각을 남기겠습니다. 여러분은 무엇을 더",
+    "notes": [
+      {
+        "word": "thought",
+        "actual": "쏘ㅌ",
+        "meaning": "th는 혀를 이 사이에 넣어 쏘ㅌ"
+      },
+      {
+        "word": "would you",
+        "actual": "우쥬",
+        "meaning": "would you가 연음되어 우쥬"
+      },
+      {
+        "word": "rather",
+        "actual": "래더",
+        "meaning": "th가 약화되어 래더"
+      }
+    ]
+  },
+  {
+    "index": 338,
+    "start": 693.04,
+    "end": 695.76,
+    "text": "have? A tool that thinks for you or a",
+    "pronunciation": "해브? 어 툴 댓 씽크스 포류 오러",
+    "translation": "원하시나요? 여러분을 대신 생각해주는 도구, 아니면",
+    "notes": [
+      {
+        "word": "for you",
+        "actual": "포류",
+        "meaning": "for you가 빠르게 연음되어 포류"
+      },
+      {
+        "word": "thinks",
+        "actual": "씽크스",
+        "meaning": "th 발음에 주의, 혀를 이 사이에"
+      },
+      {
+        "word": "or a",
+        "actual": "오러",
+        "meaning": "or a가 연음되어 오러"
+      }
+    ]
+  },
+  {
+    "index": 339,
+    "start": 695.76,
+    "end": 698.24,
+    "text": "tool that makes you think.",
+    "pronunciation": "툴 댓 메익스 유 씽크.",
+    "translation": "여러분이 생각하게 만드는 도구.",
+    "notes": [
+      {
+        "word": "makes you",
+        "actual": "메익스 유",
+        "meaning": "메이크가 아닌 메익스로 s 발음 확실히"
+      },
+      {
+        "word": "think",
+        "actual": "씽크",
+        "meaning": "마지막 단어라 또렷하게 강조 발음"
+      },
+      {
+        "word": "that makes you think",
+        "actual": "댓 메익스 유 씽크",
+        "meaning": "대비를 위해 천천히 또렷하게 발음"
+      }
+    ]
+  },
+  {
+    "index": 340,
+    "start": 698.24,
+    "end": 700.26,
+    "text": ">>"
+  }
+]
