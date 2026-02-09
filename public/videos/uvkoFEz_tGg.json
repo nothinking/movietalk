@@ -1,0 +1,1452 @@
+[
+  {
+    "index": 1,
+    "start": 2.66,
+    "end": 5.31,
+    "text": "hey hey what have you guys been up to oh",
+    "pronunciation": "헤이 헤이 와러브 유 가이즈 빈 업투 오",
+    "translation": "헤이 헤이 너희들 뭐 하고 지냈어",
+    "notes": [
+      {
+        "word": "what have",
+        "actual": "와러브",
+        "meaning": "what have가 빠르게 연음되어 '와러브'로 발음"
+      },
+      {
+        "word": "been up to",
+        "actual": "빈 업투",
+        "meaning": "been up to가 연결되어 '빈 업투'로 축약"
+      },
+      {
+        "word": "guys",
+        "actual": "가이즈",
+        "meaning": "guys의 자연스러운 발음"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "start": 5.31,
+    "end": 7.53,
+    "text": "we went to a self-defense class today",
+    "pronunciation": "위 웬 투 어 셀프 디펜스 클래스 투데이",
+    "translation": "우리 오늘 호신술 수업 갔었어",
+    "notes": [
+      {
+        "word": "went to a",
+        "actual": "웬 투 어",
+        "meaning": "went to a가 빠르게 연결"
+      },
+      {
+        "word": "self-defense",
+        "actual": "셀프 디펜스",
+        "meaning": "호신술"
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "start": 7.53,
+    "end": 9.84,
+    "text": "yeah kicking a guy in the crotch all",
+    "pronunciation": "예 키킹 어 가이 인 더 크라치 올",
+    "translation": "그래, 남자 사타구니를 차는 거 하루 종일",
+    "notes": [
+      {
+        "word": "kicking",
+        "actual": "키킹",
+        "meaning": "차는 것"
+      },
+      {
+        "word": "crotch",
+        "actual": "크라치",
+        "meaning": "사타구니, t 발음이 치로"
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "start": 9.84,
+    "end": 11.9,
+    "text": "morning really takes it out of you",
+    "pronunciation": "모어닝 뤼얼리 테잌싯 아러뷰",
+    "translation": "아침은 정말 기운을 다 빼놓는다니까",
+    "notes": [
+      {
+        "word": "really",
+        "actual": "뤼얼리",
+        "meaning": "r 발음으로 시작, 빠르게 두 음절로"
+      },
+      {
+        "word": "takes it",
+        "actual": "테잌싯",
+        "meaning": "takes와 it이 연음되어 붙음"
+      },
+      {
+        "word": "out of you",
+        "actual": "아러뷰",
+        "meaning": "t가 플랩 ㄹ로, of는 약화되어 어, you와 연결"
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "start": 11.9,
+    "end": 17.25,
+    "text": "takes it out of you no now we can kick",
+    "pronunciation": "테잌싯 아우러브 유 노 나우 위 캔 킥",
+    "translation": "기운을 빼놓지 아니 이제 우리 신나게 놀 수 있어",
+    "notes": [
+      {
+        "word": "takes it",
+        "actual": "테잌싯",
+        "meaning": "takes의 s와 it이 연음되어 '테잌싯'으로 빠르게 발음"
+      },
+      {
+        "word": "out of",
+        "actual": "아우러브",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ로 변하고 of의 f가 약화되어 '아우러브'"
+      },
+      {
+        "word": "kick",
+        "actual": "킥",
+        "meaning": "문맥상 kick back(쉬다/놀다)의 의미로 사용"
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "start": 17.25,
+    "end": 18.63,
+    "text": "anybody's ass yeah",
+    "pronunciation": "애니바디즈 애스 예",
+    "translation": "누구든 이길 수 있어, 그래",
+    "notes": [
+      {
+        "word": "anybody's",
+        "actual": "애니바디즈",
+        "meaning": "누구든지의"
+      },
+      {
+        "word": "ass",
+        "actual": "애스",
+        "meaning": "엉덩이, 여기선 '혼내주다'의 의미"
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "start": 18.63,
+    "end": 21.72,
+    "text": "after one class I don't think so what'd",
+    "pronunciation": "애프터 원 클래스 아이 돈 띵크 소 워드",
+    "translation": "수업 하나 듣고 나서 그렇게 생각 안 해 뭐라고",
+    "notes": [
+      {
+        "word": "don't think",
+        "actual": "돈 띵크",
+        "meaning": "t가 거의 탈락하고 이어서 발음"
+      },
+      {
+        "word": "what'd",
+        "actual": "워드",
+        "meaning": "what did의 축약, t+d가 합쳐져 '워드'처럼 발음"
+      },
+      {
+        "word": "after",
+        "actual": "애프터",
+        "meaning": "t가 약하게 발음되어 '애프러'에 가깝기도 함"
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "start": 21.72,
+    "end": 23.73,
+    "text": "you want to see me self defend myself",
+    "pronunciation": "유 원 투 씨 미 셀프 디펜드 마이셀프",
+    "translation": "내가 직접 호신하는 거 보고 싶어?",
+    "notes": [
+      {
+        "word": "want to",
+        "actual": "원 투",
+        "meaning": "원투로 빠르게"
+      },
+      {
+        "word": "self defend myself",
+        "actual": "셀프 디펜드 마이셀프",
+        "meaning": "스스로를 방어하다"
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "start": 23.73,
+    "end": 24.99,
+    "text": "go over there and pretend you're a",
+    "pronunciation": "고 오버 데어 앤 프리텐 유어 어",
+    "translation": "저기 가서 네가 ~인 척 해봐",
+    "notes": [
+      {
+        "word": "go over there",
+        "actual": "고 오버 데어",
+        "meaning": "저기로 가"
+      },
+      {
+        "word": "pretend you're a",
+        "actual": "프리텐 유어 어",
+        "meaning": "pretend의 d 약화"
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "start": 24.99,
+    "end": 29.7,
+    "text": "sexual predator go on of course you",
+    "pronunciation": "섹슈얼 프레더러 고 온 오브 코어스 유",
+    "translation": "성범죄자 역할 해, 어서. 당연히 너는",
+    "notes": [
+      {
+        "word": "predator",
+        "actual": "프레더러",
+        "meaning": "t→ㄹ 플래핑, 포식자/범죄자"
+      },
+      {
+        "word": "of course",
+        "actual": "오브 코어스",
+        "meaning": "당연히"
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "start": 29.7,
+    "end": 31.56,
+    "text": "could defend yourself from an attack you",
+    "pronunciation": "쿠드 디펜드 유어셀프 프럼 언 어택 유",
+    "translation": "공격을 방어할 수 있겠지, 너는",
+    "notes": [
+      {
+        "word": "could",
+        "actual": "쿠드",
+        "meaning": "~할 수 있다"
+      },
+      {
+        "word": "defend yourself",
+        "actual": "디펜드 유어셀프",
+        "meaning": "스스로를 방어하다"
+      }
+    ]
+  },
+  {
+    "index": 12,
+    "start": 31.56,
+    "end": 35.43,
+    "text": "know is coming that's not enough look I",
+    "pronunciation": "노우 이즈 커밍 대츠 낫 이너프 룩 아이",
+    "translation": "올 걸 아니까, 그건 안 돼. 봐 내가",
+    "notes": [
+      {
+        "word": "that's not enough",
+        "actual": "대츠 낫 이너프",
+        "meaning": "그건 충분하지 않아"
+      },
+      {
+        "word": "know is coming",
+        "actual": "노우 이즈 커밍",
+        "meaning": "올 걸 알고 있다"
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "start": 35.43,
+    "end": 40.29,
+    "text": "studied karate for a long and there's a",
+    "pronunciation": "스터디드 커라리 포어 러 롱 앤 데어즈 어",
+    "translation": "가라데를 오래 배웠고 거기엔",
+    "notes": [
+      {
+        "word": "studied",
+        "actual": "스터디드",
+        "meaning": "공부했다/배웠다"
+      },
+      {
+        "word": "karate",
+        "actual": "커라리",
+        "meaning": "t→ㄹ 플래핑, 가라데"
+      }
+    ]
+  },
+  {
+    "index": 14,
+    "start": 40.29,
+    "end": 42.63,
+    "text": "concept you should really be familiar",
+    "pronunciation": "컨셉 유 슈드 뤼얼리 비 퍼밀리어",
+    "translation": "네가 정말 알아야 할 개념이 있어",
+    "notes": [
+      {
+        "word": "concept",
+        "actual": "컨셉",
+        "meaning": "개념, t 약화"
+      },
+      {
+        "word": "familiar",
+        "actual": "퍼밀리어",
+        "meaning": "익숙한"
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "start": 42.63,
+    "end": 46.37,
+    "text": "with it's what the Japanese call unagi",
+    "pronunciation": "윋 잇츠 왓 더 재패니즈 콜 우나기",
+    "translation": "그건 일본인들이 우나기라고 부르는 거야",
+    "notes": [
+      {
+        "word": "Japanese",
+        "actual": "재패니즈",
+        "meaning": "일본의/일본인"
+      },
+      {
+        "word": "unagi",
+        "actual": "우나기",
+        "meaning": "일본어로 장어, 여기선 경각심의 의미로 사용"
+      }
+    ]
+  },
+  {
+    "index": 16,
+    "start": 48.26,
+    "end": 52.65,
+    "text": "isn't that a kind of sushi no it's a",
+    "pronunciation": "이전 대래 카인더 수시 노 잇서",
+    "translation": "그거 스시 같은 거 아니야? 아니, 그건",
+    "notes": [
+      {
+        "word": "isn't that",
+        "actual": "이전 대",
+        "meaning": "t 탈락 + th→대, 빠른 연결"
+      },
+      {
+        "word": "kind of",
+        "actual": "카인더",
+        "meaning": "kind of → kinda 축약"
+      },
+      {
+        "word": "it's a",
+        "actual": "잇서",
+        "meaning": "t+s 연음, a 약화"
+      }
+    ]
+  },
+  {
+    "index": 17,
+    "start": 52.65,
+    "end": 54.48,
+    "text": "concept yeah it is it is it's freshwater",
+    "pronunciation": "컨셉 예 이릿 이즈 이릿 이즈 잇츠 프레쉬워러",
+    "translation": "개념이야. 맞아 맞아, 그건 민물",
+    "notes": [
+      {
+        "word": "it is it is",
+        "actual": "이릿 이즈 이릿 이즈",
+        "meaning": "it의 t→ㄹ 연음 반복"
+      },
+      {
+        "word": "freshwater",
+        "actual": "프레쉬워러",
+        "meaning": "민물, t→ㄹ 플래핑"
+      }
+    ]
+  },
+  {
+    "index": 18,
+    "start": 54.48,
+    "end": 58.98,
+    "text": "eel but maybe it means that - oh I would",
+    "pronunciation": "일 벗 메이비 잇 민즈 댓 오 아이 우드",
+    "translation": "장어야, 근데 아마 그 뜻은 - 오 나",
+    "notes": [
+      {
+        "word": "eel",
+        "actual": "일",
+        "meaning": "장어"
+      },
+      {
+        "word": "maybe it means",
+        "actual": "메이비 잇 민즈",
+        "meaning": "아마 그것은 ~를 의미해"
+      }
+    ]
+  },
+  {
+    "index": 19,
+    "start": 58.98,
+    "end": 62.36,
+    "text": "kill for a salmon skin roll right now",
+    "pronunciation": "킬 포어 러 새먼 스킨 롤 라잇 나우",
+    "translation": "연어 스킨 롤 엄청 먹고 싶다 지금",
+    "notes": [
+      {
+        "word": "kill for",
+        "actual": "킬 포어",
+        "meaning": "~을 위해서라면 뭐든, 엄청 원하다"
+      },
+      {
+        "word": "salmon",
+        "actual": "새먼",
+        "meaning": "연어, l 묵음"
+      }
+    ]
+  },
+  {
+    "index": 20,
+    "start": 62.6,
+    "end": 65.97,
+    "text": "don't fun get attacked I don't even care",
+    "pronunciation": "돈 펀 겟 어택트 아이 돈 이븐 케어",
+    "translation": "장난치지 마, 공격 받아봐, 난 상관없어",
+    "notes": [
+      {
+        "word": "don't",
+        "actual": "돈",
+        "meaning": "t 탈락"
+      },
+      {
+        "word": "attacked",
+        "actual": "어택트",
+        "meaning": "공격당하다"
+      }
+    ]
+  },
+  {
+    "index": 21,
+    "start": 65.97,
+    "end": 68.58,
+    "text": "come on Ross we're sorry please tell us",
+    "pronunciation": "컴 온 로스 위어 쏘뤼 플리즈 텔 어스",
+    "translation": "로스 제발, 미안해. 제발 알려줘",
+    "notes": [
+      {
+        "word": "come on",
+        "actual": "컴 온",
+        "meaning": "제발, 연음"
+      },
+      {
+        "word": "we're sorry",
+        "actual": "위어 쏘뤼",
+        "meaning": "우리가 미안해"
+      }
+    ]
+  },
+  {
+    "index": 22,
+    "start": 68.58,
+    "end": 70.91,
+    "text": "what it is",
+    "pronunciation": "왓 이릿 이즈",
+    "translation": "그게 뭔지",
+    "notes": [
+      {
+        "word": "what it is",
+        "actual": "왓 이릿 이즈",
+        "meaning": "it의 t→ㄹ 연음"
+      }
+    ]
+  },
+  {
+    "index": 23,
+    "start": 71.84,
+    "end": 77.85,
+    "text": "Nagi is a state of total awareness okay",
+    "pronunciation": "우나기 이즈 어 스테이트 오브 토우럴 어웨어니스 오케이",
+    "translation": "우나기는 완전한 경각심의 상태야, 알겠어?",
+    "notes": [
+      {
+        "word": "unagi",
+        "actual": "우나기",
+        "meaning": "로스가 말하는 '경각심' 개념"
+      },
+      {
+        "word": "total awareness",
+        "actual": "토우럴 어웨어니스",
+        "meaning": "total의 t→ㄹ 플래핑, 완전한 인식"
+      }
+    ]
+  },
+  {
+    "index": 24,
+    "start": 77.85,
+    "end": 80.61,
+    "text": "only by achieving true unagi can you be",
+    "pronunciation": "온리 바이 어치빙 트루 우나기 캔 유 비",
+    "translation": "오직 진정한 우나기를 이뤄야만 너는 ~할 수 있어",
+    "notes": [
+      {
+        "word": "achieving",
+        "actual": "어치빙",
+        "meaning": "달성하다/이루다"
+      },
+      {
+        "word": "true unagi",
+        "actual": "트루 우나기",
+        "meaning": "진정한 우나기(경각심)"
+      }
+    ]
+  },
+  {
+    "index": 25,
+    "start": 80.61,
+    "end": 82.65,
+    "text": "prepared for any danger that may befall",
+    "pronunciation": "프리페얼드 포 에니 데인저 댓 메이 비폴",
+    "translation": "닥칠 수 있는 어떤 위험에도 대비한",
+    "notes": [
+      {
+        "word": "prepared",
+        "actual": "프리페얼드",
+        "meaning": "r 뒤 약한 d"
+      },
+      {
+        "word": "danger",
+        "actual": "데인저",
+        "meaning": "강세 첫 음절"
+      },
+      {
+        "word": "befall",
+        "actual": "비폴",
+        "meaning": "be-는 약하게, fall에 강세"
+      }
+    ]
+  },
+  {
+    "index": 26,
+    "start": 82.65,
+    "end": 86.94,
+    "text": "you you mean in case someone's trying to",
+    "pronunciation": "유 유 민 인 케이스 섬원즈 트라잉 투",
+    "translation": "너 혹시 누군가가 ~하려는 경우를 말하는 거야",
+    "notes": [
+      {
+        "word": "mean",
+        "actual": "민",
+        "meaning": "장모음 이"
+      },
+      {
+        "word": "someone's",
+        "actual": "섬원즈",
+        "meaning": "축약형 someone is"
+      },
+      {
+        "word": "trying to",
+        "actual": "트라잉 투",
+        "meaning": "to는 약하게 '투'"
+      }
+    ]
+  },
+  {
+    "index": 27,
+    "start": 86.94,
+    "end": 88.74,
+    "text": "steal your bamboo sleeping mat or your",
+    "pronunciation": "스틸 요어 뱀부 슬리핑 맷 오어 요어",
+    "translation": "네 대나무 잠자리 매트나 네",
+    "notes": [
+      {
+        "word": "steal",
+        "actual": "스틸",
+        "meaning": "장모음"
+      },
+      {
+        "word": "bamboo",
+        "actual": "뱀부",
+        "meaning": "두 번째 음절에 강세"
+      },
+      {
+        "word": "your",
+        "actual": "요어",
+        "meaning": "빠르게 '요어'"
+      }
+    ]
+  },
+  {
+    "index": 28,
+    "start": 88.74,
+    "end": 95.43,
+    "text": "kettle of fish all I'm saying is it's",
+    "pronunciation": "케를 어브 피쉬 올 아임 세잉 이즈 잇츠",
+    "translation": "생선 주전자를 훔칠까 봐? 내가 말하려는 건",
+    "notes": [
+      {
+        "word": "kettle",
+        "actual": "케를",
+        "meaning": "t가 모음 사이에서 ㄹ로 플랩"
+      },
+      {
+        "word": "fish",
+        "actual": "피쉬",
+        "meaning": "sh 발음"
+      },
+      {
+        "word": "all I'm",
+        "actual": "올 아임",
+        "meaning": "연음"
+      }
+    ]
+  },
+  {
+    "index": 29,
+    "start": 95.43,
+    "end": 97.14,
+    "text": "one thing being prepared for an attack",
+    "pronunciation": "원 띵 비잉 프리페얼드 포 언 어택",
+    "translation": "공격에 대비하는 건 하나의 일이고",
+    "notes": [
+      {
+        "word": "one thing",
+        "actual": "원 띵",
+        "meaning": "th는 '띵'"
+      },
+      {
+        "word": "being",
+        "actual": "비잉",
+        "meaning": "현재분사"
+      },
+      {
+        "word": "attack",
+        "actual": "어택",
+        "meaning": "첫 a는 약하게 '어'"
+      }
+    ]
+  },
+  {
+    "index": 30,
+    "start": 97.14,
+    "end": 99.54,
+    "text": "against like each other whole nother",
+    "pronunciation": "어겐스트 라이크 이치 아더 홀 나더",
+    "translation": "서로에 대한 건 완전히 다른",
+    "notes": [
+      {
+        "word": "against",
+        "actual": "어겐스트",
+        "meaning": "a 약화"
+      },
+      {
+        "word": "each other",
+        "actual": "이치 아더",
+        "meaning": "th→ㄷ, 연음"
+      },
+      {
+        "word": "whole nother",
+        "actual": "홀 나더",
+        "meaning": "구어체 a whole nother 축약"
+      }
+    ]
+  },
+  {
+    "index": 31,
+    "start": 99.54,
+    "end": 101.4,
+    "text": "story being prepared for an attack I",
+    "pronunciation": "스토리 비잉 프리페얼드 포 언 어택 아이",
+    "translation": "이야기야 공격에 대비하는 건 나는",
+    "notes": [
+      {
+        "word": "story",
+        "actual": "스토리",
+        "meaning": "강세 첫 음절"
+      },
+      {
+        "word": "prepared",
+        "actual": "프리페얼드",
+        "meaning": "r 강하게"
+      },
+      {
+        "word": "I",
+        "actual": "아이",
+        "meaning": "문장 끝에서 끊김"
+      }
+    ]
+  },
+  {
+    "index": 32,
+    "start": 101.4,
+    "end": 112.41,
+    "text": "don't know surprise all right you knew",
+    "pronunciation": "도운트 노우 서프라이즈 올롸잇 유 뉴",
+    "translation": "몰라 깜짝이야 좋아 너 알았잖아",
+    "notes": [
+      {
+        "word": "don't know",
+        "actual": "도운트 노우",
+        "meaning": "빠르게 '돈노우'도 가능"
+      },
+      {
+        "word": "surprise",
+        "actual": "서프라이즈",
+        "meaning": "강세 두 번째 음절"
+      },
+      {
+        "word": "alright",
+        "actual": "올롸잇",
+        "meaning": "구어체 발음"
+      }
+    ]
+  },
+  {
+    "index": 33,
+    "start": 112.41,
+    "end": 114.27,
+    "text": "that was coming but that doesn't mean",
+    "pronunciation": "댓 워즈 커밍 벗 댓 더즌트 민",
+    "translation": "그게 올 거란 걸 하지만 그건 ~을 의미하지 않아",
+    "notes": [
+      {
+        "word": "coming",
+        "actual": "커밍",
+        "meaning": "강세 첫 음절"
+      },
+      {
+        "word": "doesn't",
+        "actual": "더즌트",
+        "meaning": "축약형, t 거의 안 들림"
+      },
+      {
+        "word": "mean",
+        "actual": "민",
+        "meaning": "장모음"
+      }
+    ]
+  },
+  {
+    "index": 34,
+    "start": 114.27,
+    "end": 121.17,
+    "text": "you have unagi oh you know what if we",
+    "pronunciation": "유 해브 우나기 오 유 노우 왓 이프 위",
+    "translation": "네가 우나기가 있다는 걸 오 있잖아 우리가",
+    "notes": [
+      {
+        "word": "unagi",
+        "actual": "우나기",
+        "meaning": "일본어 장어, 여기선 경각심 뜻으로 오용"
+      },
+      {
+        "word": "you know what",
+        "actual": "유 노우 왓",
+        "meaning": "빠르게 '유노왓'"
+      },
+      {
+        "word": "have",
+        "actual": "해브",
+        "meaning": "약하게 발음"
+      }
+    ]
+  },
+  {
+    "index": 35,
+    "start": 121.17,
+    "end": 122.82,
+    "text": "made reservations we can have unagi in",
+    "pronunciation": "메이드 레저베이션즈 위 캔 해브 우나기 인",
+    "translation": "예약하면 우나기를 먹을 수 있어",
+    "notes": [
+      {
+        "word": "reservations",
+        "actual": "레저베이션즈",
+        "meaning": "강세 세 번째 음절 '-베이-'"
+      },
+      {
+        "word": "made",
+        "actual": "메이드",
+        "meaning": "과거형"
+      },
+      {
+        "word": "unagi",
+        "actual": "우나기",
+        "meaning": "여기선 실제 장어 요리"
+      }
+    ]
+  },
+  {
+    "index": 36,
+    "start": 122.82,
+    "end": 125.45,
+    "text": "about a half hour",
+    "pronunciation": "어바우러 해프 아워",
+    "translation": "한 30분 후에",
+    "notes": [
+      {
+        "word": "about a",
+        "actual": "어바우러",
+        "meaning": "t→ㄹ 플랩, 연음 '어바우러'"
+      },
+      {
+        "word": "half",
+        "actual": "해프",
+        "meaning": "l 묵음"
+      },
+      {
+        "word": "hour",
+        "actual": "아워",
+        "meaning": "h 묵음에 가까움"
+      }
+    ]
+  },
+  {
+    "index": 37,
+    "start": 134.42,
+    "end": 137.22,
+    "text": "what the hell was that",
+    "pronunciation": "왓 더 헬 워즈 댓",
+    "translation": "그게 도대체 뭐였어",
+    "notes": [
+      {
+        "word": "what the",
+        "actual": "왓 더",
+        "meaning": "빠르게 '워더'"
+      },
+      {
+        "word": "hell",
+        "actual": "헬",
+        "meaning": "강조 발음"
+      },
+      {
+        "word": "was that",
+        "actual": "워즈 댓",
+        "meaning": "연음"
+      }
+    ]
+  },
+  {
+    "index": 38,
+    "start": 137.22,
+    "end": 141.92,
+    "text": "a lesson in the importance of unagi",
+    "pronunciation": "어 레슨 인 디 임포어턴스 어브 우나기",
+    "translation": "우나기의 중요성에 대한 교훈이지",
+    "notes": [
+      {
+        "word": "lesson",
+        "actual": "레슨",
+        "meaning": "강세 첫 음절"
+      },
+      {
+        "word": "importance",
+        "actual": "임포어턴스",
+        "meaning": "t 약하게"
+      },
+      {
+        "word": "unagi",
+        "actual": "우나기",
+        "meaning": "경각심(로스 오용)"
+      }
+    ]
+  },
+  {
+    "index": 39,
+    "start": 143.42,
+    "end": 146.51,
+    "text": "you're a freak",
+    "pronunciation": "유어 어 프릭",
+    "translation": "넌 미친놈이야",
+    "notes": [
+      {
+        "word": "you're",
+        "actual": "유어",
+        "meaning": "축약형 you are"
+      },
+      {
+        "word": "freak",
+        "actual": "프릭",
+        "meaning": "장모음 이, 강조"
+      },
+      {
+        "word": "a",
+        "actual": "어",
+        "meaning": "약모음"
+      }
+    ]
+  },
+  {
+    "index": 40,
+    "start": 146.51,
+    "end": 151.53,
+    "text": "perhaps now I'm curious at what point",
+    "pronunciation": "퍼햅스 나우 아임 큐리어스 앳 왓 포인트",
+    "translation": "아마도 지금 궁금한데 어느 시점에",
+    "notes": [
+      {
+        "word": "perhaps",
+        "actual": "퍼햅스",
+        "meaning": "강세 두 번째 음절"
+      },
+      {
+        "word": "curious",
+        "actual": "큐리어스",
+        "meaning": "강세 첫 음절"
+      },
+      {
+        "word": "at what",
+        "actual": "앳 왓",
+        "meaning": "빠르게 연결"
+      }
+    ]
+  },
+  {
+    "index": 41,
+    "start": 151.53,
+    "end": 153.9,
+    "text": "during those girlish screams would you",
+    "pronunciation": "듀어링 도우즈 걸리쉬 스크림즈 우쥬",
+    "translation": "그 여자애 같은 비명을 지르는 동안 너는",
+    "notes": [
+      {
+        "word": "during",
+        "actual": "듀어링",
+        "meaning": "강세 첫 음절"
+      },
+      {
+        "word": "girlish",
+        "actual": "걸리쉬",
+        "meaning": "girl+ish"
+      },
+      {
+        "word": "would you",
+        "actual": "우쥬",
+        "meaning": "축약 연음 '우쥬'"
+      }
+    ]
+  },
+  {
+    "index": 42,
+    "start": 153.9,
+    "end": 159.78,
+    "text": "have begun to kick my ass alright so we",
+    "pronunciation": "해브 비건 투 킥 마이 애스 올롸잇 소 위",
+    "translation": "내 엉덩이를 걷어차기 시작했겠어 좋아 그래서 우리",
+    "notes": [
+      {
+        "word": "begun",
+        "actual": "비건",
+        "meaning": "강세 두 번째 음절"
+      },
+      {
+        "word": "kick my ass",
+        "actual": "킥 마이 애스",
+        "meaning": "구어체 표현"
+      },
+      {
+        "word": "alright",
+        "actual": "올롸잇",
+        "meaning": "구어체"
+      }
+    ]
+  },
+  {
+    "index": 43,
+    "start": 159.78,
+    "end": 163.95,
+    "text": "weren't prepared I'm sorry I had to take",
+    "pronunciation": "워언트 프리페얼드 아임 쏘리 아이 해투 테이크",
+    "translation": "대비 못 했어 미안해 내가 ~해야 했어",
+    "notes": [
+      {
+        "word": "weren't",
+        "actual": "워언트",
+        "meaning": "축약형 were not"
+      },
+      {
+        "word": "I'm sorry",
+        "actual": "아임 쏘리",
+        "meaning": "빠르게 연결"
+      },
+      {
+        "word": "had to",
+        "actual": "해투",
+        "meaning": "d+t 축약 '해투'"
+      }
+    ]
+  },
+  {
+    "index": 44,
+    "start": 163.95,
+    "end": 166.44,
+    "text": "such drastic measures to make my point",
+    "pronunciation": "서치 드래스틱 메져스 투 메이크 마이 포인트",
+    "translation": "그런 과격한 조치를 취해서 내 요점을 전달하려고",
+    "notes": [
+      {
+        "word": "such",
+        "actual": "서치",
+        "meaning": "ch 발음"
+      },
+      {
+        "word": "drastic",
+        "actual": "드래스틱",
+        "meaning": "강세 첫 음절"
+      },
+      {
+        "word": "measures",
+        "actual": "메져스",
+        "meaning": "s→ž 발음"
+      }
+    ]
+  },
+  {
+    "index": 45,
+    "start": 166.44,
+    "end": 168.21,
+    "text": "but I look I just want you guys to be",
+    "pronunciation": "벗 아이 룩 아이 저스트 원츄 가이즈 투 비",
+    "translation": "하지만 봐 난 그냥 너희들이 ~하길 바라",
+    "notes": [
+      {
+        "word": "but I look",
+        "actual": "벗 아이 룩",
+        "meaning": "빠르게 '버라이 룩'"
+      },
+      {
+        "word": "want you",
+        "actual": "원츄",
+        "meaning": "t+y 구개음화 '원츄'"
+      },
+      {
+        "word": "guys",
+        "actual": "가이즈",
+        "meaning": "복수형"
+      }
+    ]
+  },
+  {
+    "index": 46,
+    "start": 168.21,
+    "end": 170.6,
+    "text": "safe",
+    "pronunciation": "세이프",
+    "translation": "안전하길",
+    "notes": [
+      {
+        "word": "safe",
+        "actual": "세이프",
+        "meaning": "장모음 에이, 부드러운 f"
+      }
+    ]
+  },
+  {
+    "index": 47,
+    "start": 176.81,
+    "end": 180.5,
+    "text": "hahaha unagi",
+    "pronunciation": "하하하 우나기",
+    "translation": "하하하 우나기",
+    "notes": [
+      {
+        "word": "hahaha",
+        "actual": "하하하",
+        "meaning": "조롱하는 웃음"
+      },
+      {
+        "word": "unagi",
+        "actual": "우나기",
+        "meaning": "로스의 우나기를 놀리며"
+      }
+    ]
+  },
+  {
+    "index": 48,
+    "start": 189.03,
+    "end": 198.66,
+    "text": "ah seven skin roll Sajak yeah",
+    "pronunciation": "아 세븐 스킨 롤 사작 예",
+    "translation": "아 세븐 스킨 롤 사작 예",
+    "notes": [
+      {
+        "word": "seven",
+        "actual": "세븐",
+        "meaning": "숫자 7"
+      },
+      {
+        "word": "skin roll",
+        "actual": "스킨 롤",
+        "meaning": "의미 불분명, 음성 인식 오류 가능"
+      },
+      {
+        "word": "Sajak",
+        "actual": "사작",
+        "meaning": "Pat Sajak(TV 호스트) 언급 가능성"
+      }
+    ]
+  },
+  {
+    "index": 49,
+    "start": 198.66,
+    "end": 201.92,
+    "text": "Alex Trebek oh of course Chuck Woolery",
+    "pronunciation": "알렉스 트러벡 오 어브코스 척 울러리",
+    "translation": "알렉스 트레벡, 아 물론 척 울러리도",
+    "notes": [
+      {
+        "word": "Trebek",
+        "actual": "트러벡",
+        "meaning": "Alex Trebek - 유명 퀴즈쇼 진행자, 강세가 두 번째 음절에 있어 '트러벡'"
+      },
+      {
+        "word": "of course",
+        "actual": "어브코스",
+        "meaning": "of가 약화되어 '어브'로 빠르게 연결됨"
+      },
+      {
+        "word": "Woolery",
+        "actual": "울러리",
+        "meaning": "Chuck Woolery - 유명 게임쇼 진행자, oo→'울', ery→'러리'"
+      }
+    ]
+  },
+  {
+    "index": 50,
+    "start": 201.92,
+    "end": 204.66,
+    "text": "definitely Phoebe you will not find a",
+    "pronunciation": "데피닛리 피비 유 윌 낫 파인다",
+    "translation": "분명히 피비 넌 찾지 못할 거야",
+    "notes": [
+      {
+        "word": "definitely",
+        "actual": "데피닛리",
+        "meaning": "t가 빠르게 발음되며 '데피닛리'로 축약"
+      },
+      {
+        "word": "find a",
+        "actual": "파인다",
+        "meaning": "find a가 연음되어 '파인다'로 이어짐"
+      },
+      {
+        "word": "will not",
+        "actual": "윌 낫",
+        "meaning": "won't가 아닌 will not 그대로 발음"
+      }
+    ]
+  },
+  {
+    "index": 51,
+    "start": 204.66,
+    "end": 207.78,
+    "text": "single game show host who's asked",
+    "pronunciation": "싱글 게임 쇼 호스트 후즈 애스트",
+    "translation": "싱글인 게임 쇼 진행자가 질문을 받은",
+    "notes": [
+      {
+        "word": "single",
+        "actual": "싱글",
+        "meaning": "ng 비음 발음, /ˈsɪŋɡl/"
+      },
+      {
+        "word": "host",
+        "actual": "호스트",
+        "meaning": "t 끝음 거의 묵음에 가까움"
+      },
+      {
+        "word": "who's asked",
+        "actual": "후즈 애스트",
+        "meaning": "who's=who is/has 축약, asked의 -ed는 /t/ 발음"
+      }
+    ]
+  },
+  {
+    "index": 52,
+    "start": 207.78,
+    "end": 210.53,
+    "text": "I cannot kick",
+    "pronunciation": "아이 캐낫 킥",
+    "translation": "나는 찰 수 없어",
+    "notes": [
+      {
+        "word": "cannot",
+        "actual": "캐낫",
+        "meaning": "can't보다 강조된 부정, 't' 끝음 약하게"
+      },
+      {
+        "word": "kick",
+        "actual": "킥",
+        "meaning": "'k' 파열음 강하게 발음"
+      }
+    ]
+  },
+  {
+    "index": 53,
+    "start": 217.82,
+    "end": 222.47,
+    "text": "say it say we are Nagi it's not",
+    "pronunciation": "세이 잇 세이 위 아 나기 잇스 낫",
+    "translation": "말해봐, 우리는 나기라고 말해, 아니야",
+    "notes": [
+      {
+        "word": "say it",
+        "actual": "세이 잇",
+        "meaning": "say it - 빠르게 '세이릿'으로 연음 가능"
+      },
+      {
+        "word": "we are",
+        "actual": "위 아",
+        "meaning": "빠른 발화에서 '위아'로 붙여 발음"
+      },
+      {
+        "word": "it's not",
+        "actual": "잇스 낫",
+        "meaning": "it's의 ts 발음 후 not 강조"
+      }
+    ]
+  },
+  {
+    "index": 54,
+    "start": 222.47,
+    "end": 226.73,
+    "text": "something you are something you have say",
+    "pronunciation": "썸띵 유 아 썸띵 유 해브 세이",
+    "translation": "당신이 ~인 것, 당신이 가진 것, 말해봐",
+    "notes": [
+      {
+        "word": "something",
+        "actual": "썸띵",
+        "meaning": "th는 약하게 발음, '썸띵'으로 축약"
+      },
+      {
+        "word": "you are",
+        "actual": "유 아",
+        "meaning": "빠른 발화에서 'you're(유어)'로 연음되기도 함"
+      },
+      {
+        "word": "say",
+        "actual": "세이",
+        "meaning": "명령형으로 '말해봐'의 의미"
+      }
+    ]
+  },
+  {
+    "index": 55,
+    "start": 226.73,
+    "end": 229.22,
+    "text": "it no I'm gonna usually get out of this",
+    "pronunciation": "잇 노 아임 거나 유줄리 겟 아우러 디스",
+    "translation": "아냐 나 보통 여기서 나갈 거야",
+    "notes": [
+      {
+        "word": "gonna",
+        "actual": "거나",
+        "meaning": "going to의 축약형"
+      },
+      {
+        "word": "usually",
+        "actual": "유줄리",
+        "meaning": "보통, -su-가 '줄'로 발음"
+      },
+      {
+        "word": "get out of",
+        "actual": "겟 아우러",
+        "meaning": "연음으로 out of가 '아우러'로 연결"
+      }
+    ]
+  },
+  {
+    "index": 56,
+    "start": 229.22,
+    "end": 231.2,
+    "text": "but there's a chance you can get very",
+    "pronunciation": "벗 데어즈 어 챈스 유 캔 겟 베리",
+    "translation": "하지만 아주 ~할 가능성이 있어",
+    "notes": [
+      {
+        "word": "there's",
+        "actual": "데어즈",
+        "meaning": "there is 축약, th는 혀를 살짝 내밀어 '데'"
+      },
+      {
+        "word": "chance",
+        "actual": "챈스",
+        "meaning": "ch는 강하게 '챈', 뒤의 you와 이어져 '챈스유'"
+      },
+      {
+        "word": "get very",
+        "actual": "겟 베리",
+        "meaning": "빠른 발화에서 t가 약해져 '게 베리'처럼 연결"
+      }
+    ]
+  },
+  {
+    "index": 57,
+    "start": 231.2,
+    "end": 249.86,
+    "text": "very heart nowhere to run I don't like",
+    "pronunciation": "베리 하아트 노웨어 투 런 아이 도운 라익",
+    "translation": "바로 심장인데 도망갈 곳도 없고 난 싫어",
+    "notes": [
+      {
+        "word": "heart",
+        "actual": "하아트",
+        "meaning": "t가 끝에서 거의 안 들림, 모음 길게"
+      },
+      {
+        "word": "nowhere",
+        "actual": "노웨어",
+        "meaning": "no+where 연결, 강세 앞에"
+      },
+      {
+        "word": "don't like",
+        "actual": "도운 라익",
+        "meaning": "t 탈락, like의 k도 약하게"
+      }
+    ]
+  },
+  {
+    "index": 58,
+    "start": 249.86,
+    "end": 252.17,
+    "text": "sitting up here I'm cold",
+    "pronunciation": "시링 업 히어 아임 콜드",
+    "translation": "여기 위에 앉아있는데 나 추워",
+    "notes": [
+      {
+        "word": "sitting",
+        "actual": "시링",
+        "meaning": "tt가 모음 사이에서 플랩 ㄹ로 변하고 g는 탈락"
+      },
+      {
+        "word": "up here",
+        "actual": "업 히어",
+        "meaning": "p와 h가 연결되어 자연스럽게 이어짐"
+      },
+      {
+        "word": "I'm cold",
+        "actual": "아임 콜드",
+        "meaning": "I'm이 빠르게 축약되어 '아임'으로 발음"
+      }
+    ]
+  },
+  {
+    "index": 59,
+    "start": 252.17,
+    "end": 255.31,
+    "text": "no Rachel they got here first",
+    "pronunciation": "노 레이첼 데이 가릿 히얼 퍼스트",
+    "translation": "아니 레이첼, 걔네가 먼저 왔어",
+    "notes": [
+      {
+        "word": "they",
+        "actual": "데이",
+        "meaning": "약화되어 짧게 '데이'"
+      },
+      {
+        "word": "got here",
+        "actual": "가릿 히얼",
+        "meaning": "got의 t가 빠르게 연음되어 '가릿'으로, here는 '히얼'"
+      },
+      {
+        "word": "first",
+        "actual": "퍼스트",
+        "meaning": "r이 약화되어 '퍼스트'"
+      }
+    ]
+  },
+  {
+    "index": 60,
+    "start": 262.21,
+    "end": 266.51,
+    "text": "why is what I'm doing man oh my god",
+    "pronunciation": "와이이즈 와라임 두잉 맨 오마이갓",
+    "translation": "내가 하고 있는 게 왜 이래 세상에",
+    "notes": [
+      {
+        "word": "what I'm",
+        "actual": "와라임",
+        "meaning": "what의 t가 모음 사이에서 플랩 ㄹ로 변하고 I'm과 연음"
+      },
+      {
+        "word": "oh my god",
+        "actual": "오마이갓",
+        "meaning": "감탄사로 빠르게 한 덩어리로 발음"
+      },
+      {
+        "word": "doing",
+        "actual": "두잉",
+        "meaning": "ing 끝이 가볍게 '잉'으로 축약"
+      }
+    ]
+  },
+  {
+    "index": 61,
+    "start": 266.51,
+    "end": 271.76,
+    "text": "why is he jumping on those women we",
+    "pronunciation": "와이 이즈 히 점핑 온 도우즈 위민 위",
+    "translation": "왜 그가 저 여자들한테 뛰어오르는 거야 우리",
+    "notes": [
+      {
+        "word": "jumping on",
+        "actual": "점핑 온",
+        "meaning": "p와 on이 연음되어 '점피논'처럼 들릴 수 있음"
+      },
+      {
+        "word": "those",
+        "actual": "도우즈",
+        "meaning": "th 발음이 '드'가 아닌 혀를 이 사이에 넣는 유성음 /ð/"
+      },
+      {
+        "word": "women",
+        "actual": "위민",
+        "meaning": "wo-를 '우'가 아닌 '위'로 발음, 복수형도 동일 모음"
+      }
+    ]
+  },
+  {
+    "index": 62,
+    "start": 271.76,
+    "end": 275.54,
+    "text": "should help them I don't think they need",
+    "pronunciation": "슈드 헬프 뎀 아이 도운 씽크 데이 니드",
+    "translation": "그들을 도와줘야 해, 난 그들이 필요하다고 생각 안 해",
+    "notes": [
+      {
+        "word": "should",
+        "actual": "슈드",
+        "meaning": "d가 약하게 발음됨"
+      },
+      {
+        "word": "don't think",
+        "actual": "도운 씽크",
+        "meaning": "t 탈락, think의 th는 씽으로"
+      },
+      {
+        "word": "they need",
+        "actual": "데이 니드",
+        "meaning": "they의 th가 ㄷ으로 발음"
+      }
+    ]
+  },
+  {
+    "index": 63,
+    "start": 275.54,
+    "end": 277.93,
+    "text": "any help",
+    "pronunciation": "에니 헬프",
+    "translation": "도움이 좀",
+    "notes": [
+      {
+        "word": "any",
+        "actual": "에니",
+        "meaning": "강세 없이 빠르게 '에니'"
+      },
+      {
+        "word": "help",
+        "actual": "헬프",
+        "meaning": "p는 거의 안 들리게 약하게 발음"
+      }
+    ]
+  }
+]
