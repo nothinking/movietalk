@@ -8,13 +8,16 @@ YouTube 영상을 보면서 **실시간 한글 발음 자막**으로 영어 듣�
 
 - **실시간 한글 발음 자막** — 재생 중 영어 원문 + 한글 발음 + 한국어 해석을 동시 표시
 - **상세 학습 패널** — 일시정지 시 발음 포인트(축약/연음/탈락) 상세 설명
-- **문장 반복 재생** — 반복 듣기 버튼 또는 R 키로 현재 문장 루프 (토글)
-- **발음/해석 편집** — 웹앱에서 직접 수정 가능 (Cmd+E 편집, Cmd+S 저장)
-- **키보드 단축키** — ←→ 문장 이동, Space 재생/일시정지, R 반복, Cmd+E 편집, Cmd+S 저장
+- **학습 모드** — 발음 데이터가 있는 자막을 카드 형태로 순서대로 학습, 영상 없이 음성만으로 집중 학습 가능
+- **문장 반복 재생** — 반복 듣기 버튼 또는 R 키로 현재 문장 루프 (이전/다음 이동 시에도 반복 유지)
+- **자막 합치기/분리** — 학습 모드에서 ⤴ 버튼으로 이전 문장에 합치기, ✂️ 버튼으로 단어 경계 기준 분리
+- **발음/해석 편집** — 영상 모드와 학습 모드 모두에서 직접 수정 가능 (⌘E 편집, ⌘S 저장)
+- **키보드 단축키** — ←→ 문장 이동, Space 재생/일시정지, R 반복, ⌘E 편집, ⌘S 저장
 - **모바일 컨트롤** — 이전/재생/반복/다음 문장 버튼 (터치 조작)
-- **퍼머링크** — URL 해시로 특정 영상의 특정 문장 공유 가능
-- **다중 영상 지원** — 영상 목록에서 선택하여 학습 (현재 2개 영상, 555개 자막)
+- **퍼머링크** — URL 해시로 특정 영상의 특정 문장 공유 가능 (학습 모드 포함: `#v=ID&s=INDEX&m=study`)
+- **다중 영상 지원** — 영상 목록에서 선택하여 학습 (현재 5개 영상, 943개 자막)
 - **새 영상 추가 파이프라인** — YouTube URL로 자막 추출 + 발음 데이터 자동 생성
+- **자막 자동 합치기** — `merge_subtitles.py`로 짧은 자막 단편을 자동으로 앞 문장에 합침
 - 표현 저장, 재생 속도 조절 (0.5x~1.5x), 문장 타임라인 클릭 이동
 
 ## 빠른 시작
@@ -38,6 +41,9 @@ python add_video.py "https://www.youtube.com/watch?v=VIDEO_ID"
 # 자막 추출 + 발음 데이터 자동 생성
 ANTHROPIC_API_KEY=sk-... python add_video.py "https://www.youtube.com/watch?v=VIDEO_ID"
 
+# Claude Code CLI로 발음 생성 (API key 불필요)
+python add_video.py --use-claude-code "https://www.youtube.com/watch?v=VIDEO_ID"
+
 # 이미 추출된 자막에 발음 데이터 추가
 ANTHROPIC_API_KEY=sk-... python add_video.py --generate-pronunciation VIDEO_ID
 
@@ -49,9 +55,25 @@ python add_video.py --skip-pronunciation "https://www.youtube.com/watch?v=VIDEO_
 
 1. YouTube에서 영상 메타데이터(제목, 채널명, 길이) 가져오기
 2. 자막 추출 (`youtube-transcript-api` 우선, `yt-dlp` fallback)
-3. Claude API로 한글 발음 + 번역 + 발음 포인트 생성 (API key 있을 때)
+3. Claude API 또는 Claude Code CLI로 한글 발음 + 번역 + 발음 포인트 생성
 4. `public/videos/{videoId}.json` 저장
 5. `public/videos/index.json` 영상 목록 업데이트
+
+## 자막 관리 도구
+
+```bash
+# 짧은 자막 자동 합치기 (dry run)
+python merge_subtitles.py
+
+# 특정 영상만 대상
+python merge_subtitles.py VIDEO_ID
+
+# 실제 적용
+python merge_subtitles.py --apply
+
+# 개별 자막 발음 재생성 (Claude Code CLI)
+python gen_pronunciation.py VIDEO_ID SUBTITLE_INDEX
+```
 
 ## 기술 스택
 
@@ -68,18 +90,24 @@ python add_video.py --skip-pronunciation "https://www.youtube.com/watch?v=VIDEO_
 ```
 movietalk/
 ├── src/
-│   ├── App.jsx                 # React 앱 (~1,600줄, VideoListScreen + PlayerScreen)
+│   ├── App.jsx                 # React 앱 (~2,300줄, VideoListScreen + PlayerScreen)
 │   └── main.jsx                # React 엔트리포인트
 ├── public/
 │   └── videos/
 │       ├── index.json          # 영상 목록 메타데이터
 │       ├── Th40eifXjf8.json    # 영상 1: 156개 자막+발음
-│       └── 1IaFHFSvqoQ.json    # 영상 2: 399개 자막+발음
+│       ├── 1IaFHFSvqoQ.json    # 영상 2: 368개 자막+발음
+│       ├── hJ7PzBD9a2g.json    # 영상 3: 131개 자막+발음
+│       ├── KbBjbrGRWJY.json    # 영상 4: 199개 자막
+│       └── mQ2e7Gzafuw.json    # 영상 5: 89개 자막+발음 (Friends)
 ├── index.html                  # HTML 엔트리포인트
 ├── package.json                # npm 의존성
-├── vite.config.js              # Vite 설정 (port 3000, 발음편집 API)
+├── vite.config.js              # Vite 설정 (port 3000, 자막 편집/합치기/분리 API)
 ├── add_video.py                # 새 영상 추가 CLI
 ├── extract_subtitles.py        # YouTube 자막 추출 모듈
+├── gen_pronunciation.py        # 개별 자막 발음 재생성 (Claude Code CLI)
+├── merge_subtitles.py          # 짧은 자막 자동 합치기 스크립트
+├── generate_pronunciation.py   # 발음 데이터 일괄 생성 (Claude API)
 ├── detail.md                   # 프로젝트 기획 문서
 └── MovieTalk_프로젝트_현황.md    # 프로젝트 현황 보고서
 ```
@@ -121,10 +149,13 @@ movietalk/
 
 ## 현재 등록된 영상
 
-| # | 영상 | 채널 | 자막 수 | 길이 |
-|---|---|---|---|---|
-| 1 | How to Shadow Efficiently & Practice English Speaking | Accent's Way English with Hadar | 156 | 15:55 |
-| 2 | How I Practice English by Myself | Rodica - The Foreign Sun | 399 | 13:05 |
+| # | 영상 | 채널 | 자막 수 | 발음 | 길이 |
+|---|---|---|---|---|---|
+| 1 | How to Shadow Efficiently & Practice English Speaking | Accent's Way English with Hadar | 156 | ✅ | 15:55 |
+| 2 | How I Practice English by Myself | Rodica - The Foreign Sun | 368 | ✅ | 13:05 |
+| 3 | How to build English Sentences | The English Class | 131 | ✅ | 5:19 |
+| 4 | [패턴영어 221–230 통합편] | DDAN DDAN ENGLISH | 199 | ❌ | 11:42 |
+| 5 | [한글자막] 모니카와 챈들러... (Friends) | 김광식 | 89 | ✅ | 7:33 |
 
 ## Python 의존성 (영상 추가 시 필요)
 
