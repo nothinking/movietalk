@@ -227,6 +227,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   const sentenceRefs = useRef([]);
   const [isEditing, setIsEditing] = useState(false);
   const [editData, setEditData] = useState({ pronunciation: "", translation: "", start: "", end: "" });
+  const [linkAdjacent, setLinkAdjacent] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
   const saveEditRef = useRef(null);
   const startEditingRef = useRef(null);
@@ -670,6 +671,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
             translation: editData.translation,
             start: parseFloat(editData.start),
             end: parseFloat(editData.end),
+            linkAdjacent,
           }),
         }
       );
@@ -1221,8 +1223,25 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                   {/* Timing edit in edit mode */}
                   {isEditing && (
                     <div style={{ background: "#111118", borderRadius: "14px", padding: "20px", marginBottom: "12px" }}>
-                      <div style={{ fontSize: "11px", color: "#f59e0b", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "10px" }}>
-                        ⏱ 타이밍 (초)
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                        <div style={{ fontSize: "11px", color: "#f59e0b", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px" }}>
+                          ⏱ 타이밍 (초)
+                        </div>
+                        <button
+                          onClick={() => setLinkAdjacent(!linkAdjacent)}
+                          style={{
+                            background: linkAdjacent ? "#292524" : "#1a1a2e",
+                            border: linkAdjacent ? "1px solid #f59e0b" : "1px solid #333",
+                            color: linkAdjacent ? "#fbbf24" : "#666",
+                            padding: "3px 8px",
+                            borderRadius: "6px",
+                            cursor: "pointer",
+                            fontSize: "11px",
+                            fontWeight: "600",
+                          }}
+                        >
+                          🔗 앞뒤 연동 {linkAdjacent ? "ON" : "OFF"}
+                        </button>
                       </div>
                       <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
                         <div style={{ flex: 1 }}>

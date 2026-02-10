@@ -167,11 +167,11 @@ function subtitleEditPlugin() {
 
               // start/end 수정 시 인접 자막 시간 연동
               const affected = []
+              const link = updatedFields.linkAdjacent !== false
               if (updatedFields.start !== undefined) {
                 const newStart = parseFloat(updatedFields.start)
                 data[idx].start = newStart
-                // 이전 자막의 end를 맞춤
-                if (idx > 0) {
+                if (link && idx > 0) {
                   data[idx - 1].end = newStart
                   affected.push(data[idx - 1])
                 }
@@ -179,8 +179,7 @@ function subtitleEditPlugin() {
               if (updatedFields.end !== undefined) {
                 const newEnd = parseFloat(updatedFields.end)
                 data[idx].end = newEnd
-                // 다음 자막의 start를 맞춤
-                if (idx < data.length - 1) {
+                if (link && idx < data.length - 1) {
                   data[idx + 1].start = newEnd
                   affected.push(data[idx + 1])
                 }
