@@ -182,6 +182,7 @@ function subtitleEditPlugin() {
 }
 
 export default defineConfig({
+  base: '/movietalk/',
   plugins: [react(), subtitleEditPlugin()],
   server: {
     host: true,
