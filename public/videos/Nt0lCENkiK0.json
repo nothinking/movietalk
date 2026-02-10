@@ -73,7 +73,7 @@
   {
     "text": "is there like a systematic process",
     "start": 10.08,
-    "end": 11.93,
+    "end": 12.13,
     "pronunciation": "이즈데어 라이커 시스터매릭 프라세스",
     "translation": "거기에 당신이 말한 체계적인",
     "index": 5,
@@ -87,7 +87,7 @@
   },
   {
     "text": "you've spoken about first principles thinking",
-    "start": 11.93,
+    "start": 12.13,
     "end": 14.05,
     "pronunciation": "유브 스포큰 어바웃 퍼스트 프린서플즈 씽킹",
     "translation": "과정처럼 제1원칙 사고에 대한",
@@ -120,7 +120,7 @@
     "start": 18.32,
     "end": 20.96,
     "text": "um you like saying like like physics is",
-    "pronunciation": "음 유 라익 세잉 라익 라익 피직스 이즈",
+    "pronunciation": "유라익 세잉라익 라익피직시즈",
     "translation": "음 당신은 물리학이라고 말하는 거죠",
     "notes": [
       {
@@ -133,26 +133,16 @@
   {
     "index": 9,
     "start": 20.96,
-    "end": 22.64,
-    "text": "a law and everything else is a",
-    "pronunciation": "어 로 앤 에브리씽 엘스 이저",
-    "translation": "하나의 법이고 다른 모든 것은",
+    "end": 23.3,
+    "text": "a law and everything else is a recommendation",
+    "pronunciation": "어로 앤에브리씽 엘스이저 레커멘데이션",
+    "translation": "하나의 법이고 다른 모든 것은 추천이요 음",
     "notes": [
       {
         "word": "else is a",
         "actual": "엘스 이저",
         "meaning": "s+is 연음, is a→이저 약화"
-      }
-    ]
-  },
-  {
-    "index": 10,
-    "start": 22.64,
-    "end": 24.48,
-    "text": "recommendation um like I've met a lot of",
-    "pronunciation": "레커멘데이션 음 라이카이브 메러 라럿",
-    "translation": "추천이요 음 제가 많은 사람을 만나봤는데",
-    "notes": [
+      },
       {
         "word": "lot of",
         "actual": "라럿",
@@ -166,12 +156,12 @@
     ]
   },
   {
-    "index": 11,
-    "start": 24.48,
-    "end": 25.84,
-    "text": "people who can break the law but I",
-    "pronunciation": "피펄 후 캔 브레익 더 로 버라이",
-    "translation": "법을 어길 수 있는 사람들, 하지만 나는",
+    "text": "um like I've met a lot of people who can break the law",
+    "start": 23.3,
+    "end": 25.33,
+    "pronunciation": "암 라이카압 멧라럿 피펄후 캔브레잌 더로",
+    "translation": "제가 많은 사람을 만나봤는데 법을 어길 수 있는 사람들, 하지만",
+    "index": 10,
     "notes": [
       {
         "word": "but I",
@@ -181,12 +171,12 @@
     ]
   },
   {
-    "index": 12,
-    "start": 25.84,
-    "end": 27.96,
-    "text": "haven't met anyone who could break",
-    "pronunciation": "해븐 멧 애니원 후 쿠드 브레이크",
-    "translation": "깨뜨릴 수 있는 사람을 만난 적이 없어",
+    "text": "but I haven't met anyone who could break physics",
+    "start": 25.33,
+    "end": 28.73,
+    "pronunciation": "버다라 해븐엣 멧애니원 후쿠드 브레이크 피직스",
+    "translation": "나는 깨뜨릴 수 있는 사람을 만난 적이 없어 물리학이죠,",
+    "index": 11,
     "notes": [
       {
         "word": "haven't met",
@@ -197,17 +187,7 @@
         "word": "met anyone",
         "actual": "메래니원",
         "meaning": "t+모음 연음, t→ㄹ 플랩으로 '메래니원'"
-      }
-    ]
-  },
-  {
-    "index": 13,
-    "start": 27.96,
-    "end": 32.12,
-    "text": "physics so uh so the first for you know",
-    "pronunciation": "피직스 소 어 소 더 퍼스트 포 유 노",
-    "translation": "물리학이죠, 그래서 어 그래서 처음에 그 있잖아요",
-    "notes": [
+      },
       {
         "word": "first for",
         "actual": "퍼스트포",
@@ -216,11 +196,19 @@
     ]
   },
   {
-    "index": 14,
+    "text": "so uh so the first for you know",
+    "start": 28.73,
+    "end": 32.12,
+    "pronunciation": "소 어 소 더 퍼스트 포 유 노",
+    "translation": "그래서 어 그래서 처음에 그 있잖아요",
+    "index": 12
+  },
+  {
+    "index": 13,
     "start": 32.12,
     "end": 34.8,
     "text": "any kind of Technology problem you have",
-    "pronunciation": "애니 카인더 텍날러지 프라블럼 유 해브",
+    "pronunciation": "애니 카인넢 테크날러지 프라블럼 유해브",
     "translation": "어떤 종류의 기술 문제든",
     "notes": [
       {
@@ -236,28 +224,18 @@
     ]
   },
   {
-    "index": 15,
+    "index": 14,
     "start": 34.8,
-    "end": 38.28,
-    "text": "to sort of just make sure you're not",
-    "pronunciation": "투 소러브 저스 메이크 슈어 유어 낫",
-    "translation": "그냥 확실히 하려고, 당신이 ~하지 않도록",
+    "end": 40,
+    "text": "to sort of just make sure you're not violating physics",
+    "pronunciation": "저스 소러브 저스 메잌슈어 유어 낫 바이올레이링 피직스",
+    "translation": "그냥 확실히 하려고, 당신이 ~하지 않도록 물리 법칙을 위반하는",
     "notes": [
       {
         "word": "sort of",
         "actual": "소러브",
         "meaning": "t+모음 플랩으로 t→ㄹ, of는 약화되어 '어브'"
-      }
-    ]
-  },
-  {
-    "index": 16,
-    "start": 38.28,
-    "end": 41.2,
-    "text": "violating physics",
-    "pronunciation": "바이올레이링 피직스",
-    "translation": "물리 법칙을 위반하는",
-    "notes": [
+      },
       {
         "word": "violating",
         "actual": "바이올레이링",
@@ -266,21 +244,12 @@
     ]
   },
   {
-    "index": 17,
-    "start": 41.2,
-    "end": 43.12,
-    "text": "um",
-    "pronunciation": "음",
-    "translation": "음",
-    "notes": []
-  },
-  {
-    "index": 18,
-    "start": 43.12,
-    "end": 46.48,
-    "text": "and you know uh first principles",
-    "pronunciation": "앤유노 어 퍼스트 프린서플즈",
-    "translation": "그리고 있잖아 어 제1원리",
+    "index": 15,
+    "start": 40,
+    "end": 46.38,
+    "text": "um and you know uh first principles",
+    "pronunciation": "음 앤유노 어 퍼스트 프린서플즈",
+    "translation": "음 그리고 있잖아 어 제1원리",
     "notes": [
       {
         "word": "first principles",
@@ -290,8 +259,8 @@
     ]
   },
   {
-    "index": 19,
-    "start": 46.48,
+    "index": 16,
+    "start": 46.38,
     "end": 47.64,
     "text": "analysis I think is something that can",
     "pronunciation": "어낼러시스 아이 씽킄스 썸씽 댓 캔",
@@ -305,7 +274,7 @@
     ]
   },
   {
-    "index": 20,
+    "index": 17,
     "start": 47.64,
     "end": 51.08,
     "text": "be applied to really any Walk of Life uh",
@@ -320,7 +289,7 @@
     ]
   },
   {
-    "index": 21,
+    "index": 18,
     "start": 51.08,
     "end": 52.76,
     "text": "any anything really it's just it's it's",
@@ -335,7 +304,7 @@
     ]
   },
   {
-    "index": 22,
+    "index": 19,
     "start": 52.76,
     "end": 55.48,
     "text": "really just saying um you know let's",
@@ -350,7 +319,7 @@
     ]
   },
   {
-    "index": 23,
+    "index": 20,
     "start": 55.48,
     "end": 58.04,
     "text": "let's spil something down to the most",
@@ -359,7 +328,7 @@
     "notes": []
   },
   {
-    "index": 24,
+    "index": 21,
     "start": 58.04,
     "end": 60.84,
     "text": "fundamental uh principles the things",
@@ -374,7 +343,7 @@
     ]
   },
   {
-    "index": 25,
+    "index": 22,
     "start": 60.84,
     "end": 63.12,
     "text": "that we are most confident are true at a",
@@ -389,7 +358,7 @@
     ]
   },
   {
-    "index": 26,
+    "index": 23,
     "start": 63.12,
     "end": 65.52,
     "text": "foundational level and that sets your",
@@ -404,7 +373,7 @@
     ]
   },
   {
-    "index": 27,
+    "index": 24,
     "start": 65.52,
     "end": 67.36,
     "text": "your sets your axiomatic base and then",
@@ -419,7 +388,7 @@
     ]
   },
   {
-    "index": 28,
+    "index": 25,
     "start": 67.36,
     "end": 69.48,
     "text": "you reason up from there and then you",
@@ -428,7 +397,7 @@
     "notes": []
   },
   {
-    "index": 29,
+    "index": 26,
     "start": 69.48,
     "end": 72.12,
     "text": "cross check your conclusion against the",
@@ -437,7 +406,7 @@
     "notes": []
   },
   {
-    "index": 30,
+    "index": 27,
     "start": 72.12,
     "end": 73.88,
     "text": "the axiomatic",
@@ -452,7 +421,7 @@
     ]
   },
   {
-    "index": 31,
+    "index": 28,
     "start": 73.88,
     "end": 76.92,
     "text": "truths um",
@@ -461,7 +430,7 @@
     "notes": []
   },
   {
-    "index": 32,
+    "index": 29,
     "start": 76.92,
     "end": 79.76,
     "text": "so um you know some basics in physics",
@@ -470,7 +439,7 @@
     "notes": []
   },
   {
-    "index": 33,
+    "index": 30,
     "start": 79.76,
     "end": 80.8,
     "text": "would be like are you violating",
@@ -485,7 +454,7 @@
     ]
   },
   {
-    "index": 34,
+    "index": 31,
     "start": 80.8,
     "end": 82.48,
     "text": "conservation of energy or momentum or",
@@ -494,7 +463,7 @@
     "notes": []
   },
   {
-    "index": 35,
+    "index": 32,
     "start": 82.48,
     "end": 84.96,
     "text": "something like that you know then you",
@@ -503,7 +472,7 @@
     "notes": []
   },
   {
-    "index": 36,
+    "index": 33,
     "start": 84.96,
     "end": 88.68,
     "text": "it's not going to work um",
@@ -518,7 +487,7 @@
     ]
   },
   {
-    "index": 37,
+    "index": 34,
     "start": 88.68,
     "end": 92.16,
     "text": "so uh uh that's you know so that's just",
@@ -527,7 +496,7 @@
     "notes": []
   },
   {
-    "index": 38,
+    "index": 35,
     "start": 92.16,
     "end": 95.24,
     "text": "to establish is is it is it possible and",
@@ -542,7 +511,7 @@
     ]
   },
   {
-    "index": 39,
+    "index": 36,
     "start": 95.24,
     "end": 97,
     "text": "then another good physics tool is",
@@ -551,7 +520,7 @@
     "notes": []
   },
   {
-    "index": 40,
+    "index": 37,
     "start": 97,
     "end": 99.76,
     "text": "thinking about things in the limit U say",
@@ -566,7 +535,7 @@
     ]
   },
   {
-    "index": 41,
+    "index": 38,
     "start": 99.76,
     "end": 102.28,
     "text": "take an example of like um like",
@@ -581,7 +550,7 @@
     ]
   },
   {
-    "index": 42,
+    "index": 39,
     "start": 102.28,
     "end": 104.04,
     "text": "manufacturing which I think is just a",
@@ -596,7 +565,7 @@
     ]
   },
   {
-    "index": 43,
+    "index": 40,
     "start": 104.04,
     "end": 108.48,
     "text": "very underrated problem um and",
@@ -611,7 +580,7 @@
     ]
   },
   {
-    "index": 44,
+    "index": 41,
     "start": 108.48,
     "end": 112.68,
     "text": "and uh like I said it's much harder",
@@ -626,7 +595,7 @@
     ]
   },
   {
-    "index": 45,
+    "index": 42,
     "start": 112.68,
     "end": 116.48,
     "text": "to take a an advanced technology product",
@@ -641,7 +610,7 @@
     ]
   },
   {
-    "index": 46,
+    "index": 43,
     "start": 116.48,
     "end": 117.96,
     "text": "and bring it into volume manufacturing",
@@ -656,7 +625,7 @@
     ]
   },
   {
-    "index": 47,
+    "index": 44,
     "start": 117.96,
     "end": 119.36,
     "text": "than it is to design it in the first",
@@ -671,7 +640,7 @@
     ]
   },
   {
-    "index": 48,
+    "index": 45,
     "start": 119.36,
     "end": 123.96,
     "text": "place my ERS magnitude so um so let's",
@@ -680,7 +649,7 @@
     "notes": []
   },
   {
-    "index": 49,
+    "index": 46,
     "start": 123.96,
     "end": 126.52,
     "text": "say you're trying to figure out is um",
@@ -695,7 +664,7 @@
     ]
   },
   {
-    "index": 50,
+    "index": 47,
     "start": 126.52,
     "end": 130.32,
     "text": "like why is this this uh part or product",
@@ -710,7 +679,7 @@
     ]
   },
   {
-    "index": 51,
+    "index": 48,
     "start": 130.32,
     "end": 133.52,
     "text": "expensive is it um because of something",
@@ -725,7 +694,7 @@
     ]
   },
   {
-    "index": 52,
+    "index": 49,
     "start": 133.52,
     "end": 135.04,
     "text": "fundamentally foolish that we're doing",
@@ -740,7 +709,7 @@
     ]
   },
   {
-    "index": 53,
+    "index": 50,
     "start": 135.04,
     "end": 138.28,
     "text": "or is it because our volume is too low",
@@ -755,7 +724,7 @@
     ]
   },
   {
-    "index": 54,
+    "index": 51,
     "start": 138.28,
     "end": 139.4,
     "text": "and so then you say okay well what if",
@@ -770,7 +739,7 @@
     ]
   },
   {
-    "index": 55,
+    "index": 52,
     "start": 139.4,
     "end": 141.28,
     "text": "our volume was a million units a year is",
@@ -785,7 +754,7 @@
     ]
   },
   {
-    "index": 56,
+    "index": 53,
     "start": 141.28,
     "end": 143.32,
     "text": "it still expensive that's what I mean",
@@ -800,7 +769,7 @@
     ]
   },
   {
-    "index": 57,
+    "index": 54,
     "start": 143.32,
     "end": 145.12,
     "text": "like thinking about things in the limit",
@@ -815,7 +784,7 @@
     ]
   },
   {
-    "index": 58,
+    "index": 55,
     "start": 145.12,
     "end": 146.28,
     "text": "if it's still expensive at a million",
@@ -830,7 +799,7 @@
     ]
   },
   {
-    "index": 59,
+    "index": 56,
     "start": 146.28,
     "end": 147.92,
     "text": "units a year then volume is not the",
@@ -845,7 +814,7 @@
     ]
   },
   {
-    "index": 60,
+    "index": 57,
     "start": 147.92,
     "end": 149.56,
     "text": "reason why your thing is expensive there",
@@ -854,7 +823,7 @@
     "notes": []
   },
   {
-    "index": 61,
+    "index": 58,
     "start": 149.56,
     "end": 151.88,
     "text": "something fundamental about design and",
@@ -869,7 +838,7 @@
     ]
   },
   {
-    "index": 62,
+    "index": 59,
     "start": 151.88,
     "end": 153.92,
     "text": "then you then can focus on the reducing",
@@ -884,7 +853,7 @@
     ]
   },
   {
-    "index": 63,
+    "index": 60,
     "start": 153.92,
     "end": 155.32,
     "text": "complexity or something like that in the",
@@ -899,7 +868,7 @@
     ]
   },
   {
-    "index": 64,
+    "index": 61,
     "start": 155.32,
     "end": 157.04,
     "text": "design change the design to change",
@@ -908,7 +877,7 @@
     "notes": []
   },
   {
-    "index": 65,
+    "index": 62,
     "start": 157.04,
     "end": 159.52,
     "text": "change the part to be something that is",
@@ -923,7 +892,7 @@
     ]
   },
   {
-    "index": 66,
+    "index": 63,
     "start": 159.52,
     "end": 162.48,
     "text": "uh uh not fundamentally",
@@ -932,7 +901,7 @@
     "notes": []
   },
   {
-    "index": 67,
+    "index": 64,
     "start": 162.48,
     "end": 164.72,
     "text": "expensive but but like that's a common",
@@ -947,7 +916,7 @@
     ]
   },
   {
-    "index": 68,
+    "index": 65,
     "start": 164.72,
     "end": 167.08,
     "text": "thing in rock tree because the the unit",
@@ -962,7 +931,7 @@
     ]
   },
   {
-    "index": 69,
+    "index": 66,
     "start": 167.08,
     "end": 169.44,
     "text": "volume is is relatively low and so a",
@@ -977,7 +946,7 @@
     ]
   },
   {
-    "index": 70,
+    "index": 67,
     "start": 169.44,
     "end": 171.4,
     "text": "common excuse would be well it's",
@@ -992,7 +961,7 @@
     ]
   },
   {
-    "index": 71,
+    "index": 68,
     "start": 171.4,
     "end": 173.6,
     "text": "expensive because our unit volume is low",
@@ -1001,13 +970,13 @@
     "notes": []
   },
   {
-    "index": 72,
+    "index": 69,
     "start": 173.6,
     "end": 175.2,
     "text": "um and if we were in like Automotive or"
   },
   {
-    "index": 73,
+    "index": 70,
     "start": 175.2,
     "end": 176.16,
     "text": "something like that or consumer",
@@ -1022,7 +991,7 @@
     ]
   },
   {
-    "index": 74,
+    "index": 71,
     "start": 176.16,
     "end": 177.96,
     "text": "electronics then our cost would be lower",
@@ -1042,7 +1011,7 @@
     ]
   },
   {
-    "index": 75,
+    "index": 72,
     "start": 177.96,
     "end": 179.88,
     "text": "I'm like I'm like okay so let's say we",
@@ -1057,7 +1026,7 @@
     ]
   },
   {
-    "index": 76,
+    "index": 73,
     "start": 179.88,
     "end": 181.36,
     "text": "SC now you're making a million units a",
@@ -1072,7 +1041,7 @@
     ]
   },
   {
-    "index": 77,
+    "index": 74,
     "start": 181.36,
     "end": 183.44,
     "text": "year is it still expensive if the answer",
@@ -1087,13 +1056,13 @@
     ]
   },
   {
-    "index": 78,
+    "index": 75,
     "start": 183.44,
     "end": 187.64,
     "text": "is yes then uh economies of scale are"
   },
   {
-    "index": 79,
+    "index": 76,
     "start": 187.64,
     "end": 190.4,
     "text": "not the issue like another like a good",
@@ -1113,7 +1082,7 @@
     ]
   },
   {
-    "index": 80,
+    "index": 77,
     "start": 190.4,
     "end": 191.76,
     "text": "example I think of thinking about things",
@@ -1133,7 +1102,7 @@
     ]
   },
   {
-    "index": 81,
+    "index": 78,
     "start": 191.76,
     "end": 196.84,
     "text": "uh in the limit is um if you take any",
@@ -1153,7 +1122,7 @@
     ]
   },
   {
-    "index": 82,
+    "index": 79,
     "start": 196.84,
     "end": 200.96,
     "text": "uh you know any any product any machine",
@@ -1168,7 +1137,7 @@
     ]
   },
   {
-    "index": 83,
+    "index": 80,
     "start": 200.96,
     "end": 204.04,
     "text": "or whatever um like take a rocket or",
@@ -1183,7 +1152,7 @@
     ]
   },
   {
-    "index": 84,
+    "index": 81,
     "start": 204.04,
     "end": 206.08,
     "text": "whatever and",
@@ -1192,7 +1161,7 @@
     "notes": []
   },
   {
-    "index": 85,
+    "index": 82,
     "start": 206.08,
     "end": 209.16,
     "text": "say um if you've got if you look at the",
@@ -1212,7 +1181,7 @@
     ]
   },
   {
-    "index": 86,
+    "index": 83,
     "start": 209.16,
     "end": 212.52,
     "text": "RO if raw materials in the rocket um so",
@@ -1227,7 +1196,7 @@
     ]
   },
   {
-    "index": 87,
+    "index": 84,
     "start": 212.52,
     "end": 214.72,
     "text": "you're going to have like uh I know",
@@ -1242,7 +1211,7 @@
     ]
   },
   {
-    "index": 88,
+    "index": 85,
     "start": 214.72,
     "end": 218.08,
     "text": "aluminum steel titanium Inc canel uh",
@@ -1257,7 +1226,7 @@
     ]
   },
   {
-    "index": 89,
+    "index": 86,
     "start": 218.08,
     "end": 222.56,
     "text": "special specialty Alloys um copper and",
@@ -1272,7 +1241,7 @@
     ]
   },
   {
-    "index": 90,
+    "index": 87,
     "start": 222.56,
     "end": 226,
     "text": "and you say what are the how what what",
@@ -1287,7 +1256,7 @@
     ]
   },
   {
-    "index": 91,
+    "index": 88,
     "start": 226,
     "end": 227.36,
     "text": "what's the weight of the constituent",
@@ -1302,7 +1271,7 @@
     ]
   },
   {
-    "index": 92,
+    "index": 89,
     "start": 227.36,
     "end": 229.24,
     "text": "elements of of each of these elements",
@@ -1317,7 +1286,7 @@
     ]
   },
   {
-    "index": 93,
+    "index": 90,
     "start": 229.24,
     "end": 231.6,
     "text": "and what is their raw material value and",
@@ -1332,7 +1301,7 @@
     ]
   },
   {
-    "index": 94,
+    "index": 91,
     "start": 231.6,
     "end": 235.76,
     "text": "that sets the ASM totic limit for",
@@ -1352,7 +1321,7 @@
     ]
   },
   {
-    "index": 95,
+    "index": 92,
     "start": 235.76,
     "end": 238.12,
     "text": "how uh low the cost of the vehicle can",
@@ -1367,7 +1336,7 @@
     ]
   },
   {
-    "index": 96,
+    "index": 93,
     "start": 238.12,
     "end": 241.04,
     "text": "be unless you change the the material",
@@ -1376,7 +1345,7 @@
     "notes": []
   },
   {
-    "index": 97,
+    "index": 94,
     "start": 241.04,
     "end": 243.68,
     "text": "so then the the what's actually causing",
@@ -1391,7 +1360,7 @@
     ]
   },
   {
-    "index": 98,
+    "index": 95,
     "start": 243.68,
     "end": 245.24,
     "text": "things to be expensive is how you put",
@@ -1406,7 +1375,7 @@
     ]
   },
   {
-    "index": 99,
+    "index": 96,
     "start": 245.24,
     "end": 248.32,
     "text": "the atoms into the desired",
@@ -1421,7 +1390,7 @@
     ]
   },
   {
-    "index": 100,
+    "index": 97,
     "start": 248.32,
     "end": 250.6,
     "text": "shape yeah I actually if you don't mind",
@@ -1436,7 +1405,7 @@
     ]
   },
   {
-    "index": 101,
+    "index": 98,
     "start": 250.6,
     "end": 253.72,
     "text": "me taking a tiny tangent had uh I often",
@@ -1451,7 +1420,7 @@
     ]
   },
   {
-    "index": 102,
+    "index": 99,
     "start": 253.72,
     "end": 256,
     "text": "talk to Jim Keller who's somebody that",
@@ -1466,7 +1435,7 @@
     ]
   },
   {
-    "index": 103,
+    "index": 100,
     "start": 256,
     "end": 259.52,
     "text": "worked with you as as a Jim was yeah did",
@@ -1481,7 +1450,7 @@
     ]
   },
   {
-    "index": 104,
+    "index": 101,
     "start": 259.52,
     "end": 263,
     "text": "great work at Tesla so um I suppose he",
@@ -1496,7 +1465,7 @@
     ]
   },
   {
-    "index": 105,
+    "index": 102,
     "start": 263,
     "end": 265.36,
     "text": "carries the flame of the same kind of",
@@ -1511,7 +1480,7 @@
     ]
   },
   {
-    "index": 106,
+    "index": 103,
     "start": 265.36,
     "end": 267.12,
     "text": "thinking that you're you're talking",
@@ -1520,7 +1489,7 @@
     "notes": []
   },
   {
-    "index": 107,
+    "index": 104,
     "start": 267.12,
     "end": 267.96,
     "text": "about",
@@ -1535,7 +1504,7 @@
     ]
   },
   {
-    "index": 108,
+    "index": 105,
     "start": 267.96,
     "end": 271.32,
     "text": "now um and I guess I see that same thing",
@@ -1550,7 +1519,7 @@
     ]
   },
   {
-    "index": 109,
+    "index": 106,
     "start": 271.32,
     "end": 274.52,
     "text": "at Tesla and and uh SpaceX folks who",
@@ -1559,7 +1528,7 @@
     "notes": []
   },
   {
-    "index": 110,
+    "index": 107,
     "start": 274.52,
     "end": 276.4,
     "text": "work there they kind of learn this way",
@@ -1574,7 +1543,7 @@
     ]
   },
   {
-    "index": 111,
+    "index": 108,
     "start": 276.4,
     "end": 278.52,
     "text": "of thinking and it kind of becomes",
@@ -1589,7 +1558,7 @@
     ]
   },
   {
-    "index": 112,
+    "index": 109,
     "start": 278.52,
     "end": 281.36,
     "text": "obvious almost but anyway I had um",
@@ -1598,7 +1567,7 @@
     "notes": []
   },
   {
-    "index": 113,
+    "index": 110,
     "start": 281.36,
     "end": 283,
     "text": "argument not",
@@ -1607,7 +1576,7 @@
     "notes": []
   },
   {
-    "index": 114,
+    "index": 111,
     "start": 283,
     "end": 287.32,
     "text": "argument uh he educated me about how",
@@ -1622,7 +1591,7 @@
     ]
   },
   {
-    "index": 115,
+    "index": 112,
     "start": 287.32,
     "end": 289.28,
     "text": "cheap it might be to manufacture a Tesla",
@@ -1637,7 +1606,7 @@
     ]
   },
   {
-    "index": 116,
+    "index": 113,
     "start": 289.28,
     "end": 291.76,
     "text": "bot we just we had an argument what is",
@@ -1652,7 +1621,7 @@
     ]
   },
   {
-    "index": 117,
+    "index": 114,
     "start": 291.76,
     "end": 294.48,
     "text": "how can you reduce the cost of scale of",
@@ -1667,7 +1636,7 @@
     ]
   },
   {
-    "index": 118,
+    "index": 115,
     "start": 294.48,
     "end": 296.76,
     "text": "producing a robot because so I gotten a",
@@ -1682,7 +1651,7 @@
     ]
   },
   {
-    "index": 119,
+    "index": 116,
     "start": 296.76,
     "end": 299.2,
     "text": "chance to interact quite a bit um",
@@ -1697,13 +1666,13 @@
     ]
   },
   {
-    "index": 120,
+    "index": 117,
     "start": 299.2,
     "end": 301.32,
     "text": "obviously in in the academic circles"
   },
   {
-    "index": 121,
+    "index": 118,
     "start": 301.32,
     "end": 303.6,
     "text": "with humanoid robots and then mobos",
@@ -1712,7 +1681,7 @@
     "notes": []
   },
   {
-    "index": 122,
+    "index": 119,
     "start": 303.6,
     "end": 305.72,
     "text": "Dynamics and stuff like that and they're",
@@ -1727,7 +1696,7 @@
     ]
   },
   {
-    "index": 123,
+    "index": 120,
     "start": 305.72,
     "end": 309.12,
     "text": "very expensive to to build and then uh",
@@ -1736,7 +1705,7 @@
     "notes": []
   },
   {
-    "index": 124,
+    "index": 121,
     "start": 309.12,
     "end": 311,
     "text": "Jim kind of schooled me on saying like",
@@ -1751,7 +1720,7 @@
     ]
   },
   {
-    "index": 125,
+    "index": 122,
     "start": 311,
     "end": 313.08,
     "text": "Okay like this kind of first principle",
@@ -1771,7 +1740,7 @@
     ]
   },
   {
-    "index": 126,
+    "index": 123,
     "start": 313.08,
     "end": 314.68,
     "text": "thinking of how can we get the cost of",
@@ -1786,7 +1755,7 @@
     ]
   },
   {
-    "index": 127,
+    "index": 124,
     "start": 314.68,
     "end": 317.96,
     "text": "manufactur down um I suppose you do that",
@@ -1801,7 +1770,7 @@
     ]
   },
   {
-    "index": 128,
+    "index": 125,
     "start": 317.96,
     "end": 320.08,
     "text": "you have done uh that kind of thinking",
@@ -1816,7 +1785,7 @@
     ]
   },
   {
-    "index": 129,
+    "index": 126,
     "start": 320.08,
     "end": 322.32,
     "text": "for Tesla bot and for all kinds",
@@ -1831,7 +1800,7 @@
     ]
   },
   {
-    "index": 130,
+    "index": 127,
     "start": 322.32,
     "end": 325.36,
     "text": "of all kinds of complex systems that are",
@@ -1846,7 +1815,7 @@
     ]
   },
   {
-    "index": 131,
+    "index": 128,
     "start": 325.36,
     "end": 327.12,
     "text": "traditionally seen as complex and you",
@@ -1861,7 +1830,7 @@
     ]
   },
   {
-    "index": 132,
+    "index": 129,
     "start": 327.12,
     "end": 328.68,
     "text": "say okay how can we simplify everything",
@@ -1870,7 +1839,7 @@
     "notes": []
   },
   {
-    "index": 133,
+    "index": 130,
     "start": 328.68,
     "end": 330.84,
     "text": "down",
@@ -1879,7 +1848,7 @@
     "notes": []
   },
   {
-    "index": 134,
+    "index": 131,
     "start": 330.84,
     "end": 333.24,
     "text": "yeah I I mean I think if you if you are",
@@ -1888,7 +1857,7 @@
     "notes": []
   },
   {
-    "index": 135,
+    "index": 132,
     "start": 333.24,
     "end": 334.64,
     "text": "really good at",
@@ -1903,7 +1872,7 @@
     ]
   },
   {
-    "index": 136,
+    "index": 133,
     "start": 334.64,
     "end": 336.6,
     "text": "manufacturing you can",
@@ -1912,7 +1881,7 @@
     "notes": []
   },
   {
-    "index": 137,
+    "index": 134,
     "start": 336.6,
     "end": 338.88,
     "text": "basically make at high volume you can",
@@ -1927,7 +1896,7 @@
     ]
   },
   {
-    "index": 138,
+    "index": 135,
     "start": 338.88,
     "end": 340.88,
     "text": "basically make anything for a",
@@ -1942,7 +1911,7 @@
     ]
   },
   {
-    "index": 139,
+    "index": 136,
     "start": 340.88,
     "end": 344.04,
     "text": "cost that ASM totically approaches the",
@@ -1957,7 +1926,7 @@
     ]
   },
   {
-    "index": 140,
+    "index": 137,
     "start": 344.04,
     "end": 345.56,
     "text": "raw raw material value of the",
@@ -1972,7 +1941,7 @@
     ]
   },
   {
-    "index": 141,
+    "index": 138,
     "start": 345.56,
     "end": 347.6,
     "text": "constituents plus any intellectual",
@@ -1981,7 +1950,7 @@
     "notes": []
   },
   {
-    "index": 142,
+    "index": 139,
     "start": 347.6,
     "end": 349.88,
     "text": "property that you need to license",
@@ -1996,7 +1965,7 @@
     ]
   },
   {
-    "index": 143,
+    "index": 140,
     "start": 349.88,
     "end": 351.72,
     "text": "anything",
@@ -2005,7 +1974,7 @@
     "notes": []
   },
   {
-    "index": 144,
+    "index": 141,
     "start": 351.72,
     "end": 354.16,
     "text": "right but it's hard it's not like that's",
@@ -2020,7 +1989,7 @@
     ]
   },
   {
-    "index": 145,
+    "index": 142,
     "start": 354.16,
     "end": 356.52,
     "text": "a very hard thing to do but but it is",
@@ -2035,7 +2004,7 @@
     ]
   },
   {
-    "index": 146,
+    "index": 143,
     "start": 356.52,
     "end": 358.88,
     "text": "possible for anything anything in volume",
@@ -2050,7 +2019,7 @@
     ]
   },
   {
-    "index": 147,
+    "index": 144,
     "start": 358.88,
     "end": 362.48,
     "text": "can be made uh like I said for a cost",
@@ -2065,7 +2034,7 @@
     ]
   },
   {
-    "index": 148,
+    "index": 145,
     "start": 362.48,
     "end": 364,
     "text": "that asymptotically approaches as raw",
@@ -2080,7 +2049,7 @@
     ]
   },
   {
-    "index": 149,
+    "index": 146,
     "start": 364,
     "end": 366.32,
     "text": "material uh constituents plus",
@@ -2089,7 +2058,7 @@
     "notes": []
   },
   {
-    "index": 150,
+    "index": 147,
     "start": 366.32,
     "end": 369.24,
     "text": "intellectual property license rights so",
@@ -2104,7 +2073,7 @@
     ]
   },
   {
-    "index": 151,
+    "index": 148,
     "start": 369.24,
     "end": 370.92,
     "text": "what will often happen in trying to",
@@ -2119,7 +2088,7 @@
     ]
   },
   {
-    "index": 152,
+    "index": 149,
     "start": 370.92,
     "end": 372.76,
     "text": "design a product is is people will start",
@@ -2134,7 +2103,7 @@
     ]
   },
   {
-    "index": 153,
+    "index": 150,
     "start": 372.76,
     "end": 375.72,
     "text": "with the tools and and parts and methods",
@@ -2149,7 +2118,7 @@
     ]
   },
   {
-    "index": 154,
+    "index": 151,
     "start": 375.72,
     "end": 378.88,
     "text": "that they are familiar with um and then",
@@ -2164,7 +2133,7 @@
     ]
   },
   {
-    "index": 155,
+    "index": 152,
     "start": 378.88,
     "end": 381.36,
     "text": "and try to create a product using their",
@@ -2173,7 +2142,7 @@
     "notes": []
   },
   {
-    "index": 156,
+    "index": 153,
     "start": 381.36,
     "end": 382.84,
     "text": "existing tools and",
@@ -2188,7 +2157,7 @@
     ]
   },
   {
-    "index": 157,
+    "index": 154,
     "start": 382.84,
     "end": 385.36,
     "text": "methods um the other way to think about",
@@ -2203,7 +2172,7 @@
     ]
   },
   {
-    "index": 158,
+    "index": 155,
     "start": 385.36,
     "end": 388.6,
     "text": "it is uh actually imagine the try to",
@@ -2218,7 +2187,7 @@
     ]
   },
   {
-    "index": 159,
+    "index": 156,
     "start": 388.6,
     "end": 391.36,
     "text": "imagine the platon ideal of the perfect",
@@ -2233,7 +2202,7 @@
     ]
   },
   {
-    "index": 160,
+    "index": 157,
     "start": 391.36,
     "end": 393.52,
     "text": "product or technology whatever it might",
@@ -2248,7 +2217,7 @@
     ]
   },
   {
-    "index": 161,
+    "index": 158,
     "start": 393.52,
     "end": 396.72,
     "text": "be um and so what is this what what is",
@@ -2257,7 +2226,7 @@
     "notes": []
   },
   {
-    "index": 162,
+    "index": 159,
     "start": 396.72,
     "end": 399.12,
     "text": "the perfect arrangement of atoms that",
@@ -2272,7 +2241,7 @@
     ]
   },
   {
-    "index": 163,
+    "index": 160,
     "start": 399.12,
     "end": 401.88,
     "text": "would be the the best possible product",
@@ -2281,7 +2250,7 @@
     "notes": []
   },
   {
-    "index": 164,
+    "index": 161,
     "start": 401.88,
     "end": 403.36,
     "text": "and now let us try to figure out how to",
@@ -2301,7 +2270,7 @@
     ]
   },
   {
-    "index": 165,
+    "index": 162,
     "start": 403.36,
     "end": 406.16,
     "text": "get the atoms in that",
@@ -2316,7 +2285,7 @@
     ]
   },
   {
-    "index": 166,
+    "index": 163,
     "start": 406.24,
     "end": 410.12,
     "text": "shape I mean it's it sounds",
@@ -2325,7 +2294,7 @@
     "notes": []
   },
   {
-    "index": 167,
+    "index": 164,
     "start": 410.12,
     "end": 413.68,
     "text": "um uh it's almost like Rick Morty absurd",
@@ -2340,7 +2309,7 @@
     ]
   },
   {
-    "index": 168,
+    "index": 165,
     "start": 413.68,
     "end": 415.44,
     "text": "until you start to really think about it",
@@ -2360,7 +2329,7 @@
     ]
   },
   {
-    "index": 169,
+    "index": 166,
     "start": 415.44,
     "end": 418.76,
     "text": "and it you really should think about it",
@@ -2380,7 +2349,7 @@
     ]
   },
   {
-    "index": 170,
+    "index": 167,
     "start": 418.76,
     "end": 421.04,
     "text": "in this way cuz everything else is kind",
@@ -2395,7 +2364,7 @@
     ]
   },
   {
-    "index": 171,
+    "index": 168,
     "start": 421.04,
     "end": 424.84,
     "text": "of uh uh if if you think uh you you",
@@ -2404,7 +2373,7 @@
     "notes": []
   },
   {
-    "index": 172,
+    "index": 169,
     "start": 424.84,
     "end": 426.52,
     "text": "might fall victim to the momentum of the",
@@ -2413,7 +2382,7 @@
     "notes": []
   },
   {
-    "index": 173,
+    "index": 170,
     "start": 426.52,
     "end": 428,
     "text": "way things were done in the past unless",
@@ -2422,7 +2391,7 @@
     "notes": []
   },
   {
-    "index": 174,
+    "index": 171,
     "start": 428,
     "end": 429.88,
     "text": "you think in this way well just as a",
@@ -2437,7 +2406,7 @@
     ]
   },
   {
-    "index": 175,
+    "index": 172,
     "start": 429.88,
     "end": 432.44,
     "text": "function of inertia people will uh want",
@@ -2446,7 +2415,7 @@
     "notes": []
   },
   {
-    "index": 176,
+    "index": 173,
     "start": 432.44,
     "end": 434.08,
     "text": "to use the same tools and methods that",
@@ -2455,7 +2424,7 @@
     "notes": []
   },
   {
-    "index": 177,
+    "index": 174,
     "start": 434.08,
     "end": 437.04,
     "text": "they are familiar with um they just",
@@ -2470,7 +2439,7 @@
     ]
   },
   {
-    "index": 178,
+    "index": 175,
     "start": 437.04,
     "end": 439.2,
     "text": "that's what they'll do by default yeah",
@@ -2485,7 +2454,7 @@
     ]
   },
   {
-    "index": 179,
+    "index": 176,
     "start": 439.2,
     "end": 440.92,
     "text": "um and then that that will lead to an",
@@ -2494,7 +2463,7 @@
     "notes": []
   },
   {
-    "index": 180,
+    "index": 177,
     "start": 440.92,
     "end": 442.68,
     "text": "outcome of things that can be made with",
@@ -2503,7 +2472,7 @@
     "notes": []
   },
   {
-    "index": 181,
+    "index": 178,
     "start": 442.68,
     "end": 444.84,
     "text": "those tools and methods but is unlikely",
@@ -2518,7 +2487,7 @@
     ]
   },
   {
-    "index": 182,
+    "index": 179,
     "start": 444.84,
     "end": 447.36,
     "text": "to be the um platonic ideal of the",
@@ -2533,7 +2502,7 @@
     ]
   },
   {
-    "index": 183,
+    "index": 180,
     "start": 447.36,
     "end": 451.8,
     "text": "perfect product um so then so that's why",
@@ -2542,7 +2511,7 @@
     "notes": []
   },
   {
-    "index": 184,
+    "index": 181,
     "start": 451.8,
     "end": 452.96,
     "text": "it's good to think of things in both",
@@ -2557,7 +2526,7 @@
     ]
   },
   {
-    "index": 185,
+    "index": 182,
     "start": 452.96,
     "end": 454.16,
     "text": "directions so like what can we build",
@@ -2566,7 +2535,7 @@
     "notes": []
   },
   {
-    "index": 186,
+    "index": 183,
     "start": 454.16,
     "end": 456.12,
     "text": "with the tools that we have but then but",
@@ -2575,7 +2544,7 @@
     "notes": []
   },
   {
-    "index": 187,
+    "index": 184,
     "start": 456.12,
     "end": 458.32,
     "text": "but also what is the what ises the",
@@ -2595,7 +2564,7 @@
     ]
   },
   {
-    "index": 188,
+    "index": 185,
     "start": 458.32,
     "end": 460.24,
     "text": "perfect the theoretical perfect product",
@@ -2610,7 +2579,7 @@
     ]
   },
   {
-    "index": 189,
+    "index": 186,
     "start": 460.24,
     "end": 462.28,
     "text": "look like and and that that theoretical",
@@ -2619,7 +2588,7 @@
     "notes": []
   },
   {
-    "index": 190,
+    "index": 187,
     "start": 462.28,
     "end": 463.56,
     "text": "perfect product is going to be a moving",
@@ -2634,7 +2603,7 @@
     ]
   },
   {
-    "index": 191,
+    "index": 188,
     "start": 463.56,
     "end": 466.8,
     "text": "Target because as you learn more the",
@@ -2649,7 +2618,7 @@
     ]
   },
   {
-    "index": 192,
+    "index": 189,
     "start": 466.8,
     "end": 469.44,
     "text": "definition of or of that perfect product",
@@ -2664,7 +2633,7 @@
     ]
   },
   {
-    "index": 193,
+    "index": 190,
     "start": 469.44,
     "end": 470.68,
     "text": "will will change because you don't",
@@ -2679,7 +2648,7 @@
     ]
   },
   {
-    "index": 194,
+    "index": 191,
     "start": 470.68,
     "end": 471.92,
     "text": "actually know what the perfect product",
@@ -2694,7 +2663,7 @@
     ]
   },
   {
-    "index": 195,
+    "index": 192,
     "start": 471.92,
     "end": 474.4,
     "text": "is but you can successfully approximate",
@@ -2709,7 +2678,7 @@
     ]
   },
   {
-    "index": 196,
+    "index": 193,
     "start": 474.4,
     "end": 478.08,
     "text": "uh a a a more perfect product um so the",
@@ -2718,7 +2687,7 @@
     "notes": []
   },
   {
-    "index": 197,
+    "index": 194,
     "start": 478.08,
     "end": 480.08,
     "text": "thing about it like that and then saying",
@@ -2733,7 +2702,7 @@
     ]
   },
   {
-    "index": 198,
+    "index": 195,
     "start": 480.08,
     "end": 482.76,
     "text": "okay now what tools methods materials",
@@ -2748,7 +2717,7 @@
     ]
   },
   {
-    "index": 199,
+    "index": 196,
     "start": 482.76,
     "end": 486.2,
     "text": "whatever do we need to create in order",
@@ -2763,7 +2732,7 @@
     ]
   },
   {
-    "index": 200,
+    "index": 197,
     "start": 486.2,
     "end": 488.36,
     "text": "to get the atoms in that",
@@ -2778,7 +2747,7 @@
     ]
   },
   {
-    "index": 201,
+    "index": 198,
     "start": 488.36,
     "end": 491.96,
     "text": "shape but people very rarely think about",
@@ -2793,7 +2762,7 @@
     ]
   },
   {
-    "index": 202,
+    "index": 199,
     "start": 491.96,
     "end": 496.96,
     "text": "it that way but it's a powerful tool",
