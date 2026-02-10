@@ -226,7 +226,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   });
   const sentenceRefs = useRef([]);
   const [isEditing, setIsEditing] = useState(false);
-  const [editData, setEditData] = useState({ pronunciation: "", translation: "" });
+  const [editData, setEditData] = useState({ pronunciation: "", translation: "", start: "", end: "" });
   const [isSaving, setIsSaving] = useState(false);
   const saveEditRef = useRef(null);
   const startEditingRef = useRef(null);
@@ -621,6 +621,8 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
         setEditData({
           pronunciation: sub.pronunciation || "",
           translation: sub.translation || "",
+          start: sub.start.toFixed(2),
+          end: sub.end.toFixed(2),
         });
         setIsEditing(true);
         isEditingRef.current = true;
@@ -629,6 +631,8 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
       setEditData({
         pronunciation: currentSubtitle.pronunciation || "",
         translation: currentSubtitle.translation || "",
+        start: currentSubtitle.start.toFixed(2),
+        end: currentSubtitle.end.toFixed(2),
       });
       setIsEditing(true);
       isEditingRef.current = true;
@@ -639,7 +643,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   const cancelEditing = () => {
     setIsEditing(false);
     isEditingRef.current = false;
-    setEditData({ pronunciation: "", translation: "" });
+    setEditData({ pronunciation: "", translation: "", start: "", end: "" });
   };
 
   const saveEdit = async () => {
@@ -656,13 +660,21 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
           body: JSON.stringify({
             pronunciation: editData.pronunciation,
             translation: editData.translation,
+            start: parseFloat(editData.start),
+            end: parseFloat(editData.end),
           }),
         }
       );
       if (!res.ok) throw new Error("저장 실패");
       const result = await res.json();
       // 로컬 state 업데이트
-      if (onUpdateSubtitle) onUpdateSubtitle(result.subtitle);
+      if (onUpdateSubtitle) {
+        onUpdateSubtitle(result.subtitle);
+        // 인접 자막 시간도 로컬 state에 반영
+        if (result.affected) {
+          result.affected.forEach((s) => onUpdateSubtitle(s));
+        }
+      }
       if (!studyModeRef.current) {
         setCurrentSubtitle(result.subtitle);
       }
@@ -1179,6 +1191,49 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                       </div>
                     )}
                   </div>
+
+                  {/* Timing edit in edit mode */}
+                  {isEditing && (
+                    <div style={{ background: "#111118", borderRadius: "14px", padding: "20px", marginBottom: "12px" }}>
+                      <div style={{ fontSize: "11px", color: "#f59e0b", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "10px" }}>
+                        ⏱ 타이밍 (초)
+                      </div>
+                      <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
+                        <div style={{ flex: 1 }}>
+                          <div style={{ fontSize: "11px", color: "#888", marginBottom: "4px" }}>시작</div>
+                          <input
+                            type="number"
+                            step="0.1"
+                            value={editData.start}
+                            onChange={(e) => setEditData({ ...editData, start: e.target.value })}
+                            style={{
+                              width: "100%", background: "#0d0d15", border: "1px solid #f59e0b", borderRadius: "8px",
+                              padding: "8px 10px", color: "#fbbf24", fontSize: "14px", fontWeight: "600",
+                              outline: "none", boxSizing: "border-box",
+                            }}
+                          />
+                        </div>
+                        <div style={{ color: "#555", fontSize: "18px", paddingTop: "18px" }}>→</div>
+                        <div style={{ flex: 1 }}>
+                          <div style={{ fontSize: "11px", color: "#888", marginBottom: "4px" }}>종료</div>
+                          <input
+                            type="number"
+                            step="0.1"
+                            value={editData.end}
+                            onChange={(e) => setEditData({ ...editData, end: e.target.value })}
+                            style={{
+                              width: "100%", background: "#0d0d15", border: "1px solid #f59e0b", borderRadius: "8px",
+                              padding: "8px 10px", color: "#fbbf24", fontSize: "14px", fontWeight: "600",
+                              outline: "none", boxSizing: "border-box",
+                            }}
+                          />
+                        </div>
+                        <div style={{ color: "#555", fontSize: "12px", paddingTop: "18px", minWidth: "50px" }}>
+                          {(parseFloat(editData.end) - parseFloat(editData.start)).toFixed(1)}초
+                        </div>
+                      </div>
+                    </div>
+                  )}
 
                   {/* Save/Cancel buttons in edit mode */}
                   {isEditing && (
