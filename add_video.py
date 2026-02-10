@@ -205,7 +205,7 @@ def save_video_data(video_id: str, data: list):
     return filepath
 
 
-def generate_pronunciation_claude_code(subtitles: list, video_id: str) -> list:
+def generate_pronunciation_claude_code(subtitles: list, video_id: str, retry: bool = True) -> list:
     """Claude Code CLI로 발음 데이터를 생성합니다 (API 키 불필요)."""
     try:
         subprocess.run(['claude', '--version'], capture_output=True, timeout=5)
@@ -223,7 +223,7 @@ def generate_pronunciation_claude_code(subtitles: list, video_id: str) -> list:
         json.dump(subtitles, f, ensure_ascii=False, indent=2)
 
     # gen_pronunciation 실행
-    success = generate_for_video(video_id, batch_size=24)
+    success = generate_for_video(video_id, batch_size=24, retry=retry)
     if not success:
         return None
 
@@ -232,7 +232,7 @@ def generate_pronunciation_claude_code(subtitles: list, video_id: str) -> list:
         return json.load(f)
 
 
-def add_video(youtube_url: str, skip_pronunciation: bool = False, use_claude_code: bool = False):
+def add_video(youtube_url: str, skip_pronunciation: bool = False, use_claude_code: bool = False, retry: bool = True):
     """새 영상을 추가합니다."""
     video_id = extract_video_id(youtube_url)
     full_url = f"https://www.youtube.com/watch?v={video_id}"
@@ -272,7 +272,7 @@ def add_video(youtube_url: str, skip_pronunciation: bool = False, use_claude_cod
     if not skip_pronunciation:
         print(f"\n🔊 Step 3: 발음 데이터 생성...")
         if use_claude_code:
-            pronunciation_data = generate_pronunciation_claude_code(subtitles, video_id)
+            pronunciation_data = generate_pronunciation_claude_code(subtitles, video_id, retry=retry)
         else:
             pronunciation_data = generate_pronunciation(subtitles)
         if pronunciation_data:
@@ -392,6 +392,8 @@ def main():
                         help='기존 자막에 발음 데이터를 추가합니다')
     parser.add_argument('--use-claude-code', action='store_true',
                         help='Claude Code CLI로 발음 생성 (API 키 불필요)')
+    parser.add_argument('--no-retry', action='store_true',
+                        help='발음 생성 실패 시 재시도 안 함')
 
     args = parser.parse_args()
 
@@ -399,12 +401,12 @@ def main():
         if args.use_claude_code:
             from gen_pronunciation import generate_for_video
             print(f"🎬 Claude Code로 발음 데이터 생성: {args.url}")
-            generate_for_video(args.url)
+            generate_for_video(args.url, retry=not args.no_retry)
         else:
             generate_pronunciation_for_existing(args.url)
     else:
         add_video(args.url, skip_pronunciation=args.skip_pronunciation,
-                  use_claude_code=args.use_claude_code)
+                  use_claude_code=args.use_claude_code, retry=not args.no_retry)
 
 
 if __name__ == '__main__':
