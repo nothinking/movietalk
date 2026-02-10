@@ -221,7 +221,9 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   const [isLooping, setIsLooping] = useState(false);
   const continuousPlayRef = useRef(false);
   const [isContinuousPlay, setIsContinuousPlay] = useState(false);
-  const [videoCollapsed, setVideoCollapsed] = useState(false);
+  const [videoCollapsed, setVideoCollapsed] = useState(() => {
+    try { return localStorage.getItem("videoCollapsed") === "true"; } catch { return false; }
+  });
   const sentenceRefs = useRef([]);
   const [isEditing, setIsEditing] = useState(false);
   const [editData, setEditData] = useState({ pronunciation: "", translation: "" });
@@ -1382,7 +1384,11 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
           <div style={{ display: studyMode ? "none" : "block" }}>
           {/* Video collapse toggle */}
           <div
-            onClick={() => setVideoCollapsed(!videoCollapsed)}
+            onClick={() => {
+              const next = !videoCollapsed;
+              setVideoCollapsed(next);
+              try { localStorage.setItem("videoCollapsed", String(next)); } catch {}
+            }}
             style={{
               display: "flex",
               alignItems: "center",
