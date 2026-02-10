@@ -2302,7 +2302,7 @@ export default function MovieEnglishApp() {
 
   // Load video index + handle permalink on init
   useEffect(() => {
-    fetch("/videos/index.json")
+    fetch(`${import.meta.env.BASE_URL}videos/index.json`)
       .then((r) => {
         if (!r.ok) throw new Error("index.json not found");
         return r.json();
@@ -2328,7 +2328,7 @@ export default function MovieEnglishApp() {
   // Load subtitle data
   const loadVideo = (video) => {
     setLoading(true);
-    fetch(`/videos/${video.id}.json`)
+    fetch(`${import.meta.env.BASE_URL}videos/${video.id}.json`)
       .then((r) => {
         if (!r.ok) throw new Error("data not found");
         return r.json();
