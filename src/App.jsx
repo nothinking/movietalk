@@ -231,6 +231,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   const saveEditRef = useRef(null);
   const startEditingRef = useRef(null);
   const isEditingRef = useRef(false);
+  const originalTimingRef = useRef(null);
   const isSavingRef = useRef(false);
   const [studyMode, setStudyMode] = useState(false);
   const [studyIndex, setStudyIndex] = useState(0);
@@ -618,6 +619,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
     if (studyModeRef.current) {
       const sub = subtitles[studyIndexRef.current];
       if (sub) {
+        originalTimingRef.current = { start: sub.start, end: sub.end };
         setEditData({
           pronunciation: sub.pronunciation || "",
           translation: sub.translation || "",
@@ -628,6 +630,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
         isEditingRef.current = true;
       }
     } else if (currentSubtitle && showPanel) {
+      originalTimingRef.current = { start: currentSubtitle.start, end: currentSubtitle.end };
       setEditData({
         pronunciation: currentSubtitle.pronunciation || "",
         translation: currentSubtitle.translation || "",
@@ -641,6 +644,11 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   startEditingRef.current = startEditing;
 
   const cancelEditing = () => {
+    // 반복 재생 중이면 원래 타이밍으로 복원
+    if (loopTargetRef.current && originalTimingRef.current) {
+      loopTargetRef.current = { ...originalTimingRef.current };
+    }
+    originalTimingRef.current = null;
     setIsEditing(false);
     isEditingRef.current = false;
     setEditData({ pronunciation: "", translation: "", start: "", end: "" });
@@ -678,13 +686,14 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
       if (!studyModeRef.current) {
         setCurrentSubtitle(result.subtitle);
       }
-      // 반복 재생 중이면 새 타이밍으로 즉시 반영
+      // 반복 재생 중이면 새 타이밍으로 확정
       if (loopTargetRef.current) {
         loopTargetRef.current = {
           start: result.subtitle.start,
           end: result.subtitle.end,
         };
       }
+      originalTimingRef.current = null;
       setIsEditing(false);
       isEditingRef.current = false;
     } catch (err) {
@@ -1212,7 +1221,13 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                             type="number"
                             step="0.1"
                             value={editData.start}
-                            onChange={(e) => setEditData({ ...editData, start: e.target.value })}
+                            onChange={(e) => {
+                              const v = e.target.value;
+                              setEditData({ ...editData, start: v });
+                              if (loopTargetRef.current) {
+                                loopTargetRef.current = { ...loopTargetRef.current, start: parseFloat(v) || 0 };
+                              }
+                            }}
                             style={{
                               width: "100%", background: "#0d0d15", border: "1px solid #f59e0b", borderRadius: "8px",
                               padding: "8px 10px", color: "#fbbf24", fontSize: "14px", fontWeight: "600",
@@ -1227,7 +1242,13 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                             type="number"
                             step="0.1"
                             value={editData.end}
-                            onChange={(e) => setEditData({ ...editData, end: e.target.value })}
+                            onChange={(e) => {
+                              const v = e.target.value;
+                              setEditData({ ...editData, end: v });
+                              if (loopTargetRef.current) {
+                                loopTargetRef.current = { ...loopTargetRef.current, end: parseFloat(v) || 0 };
+                              }
+                            }}
                             style={{
                               width: "100%", background: "#0d0d15", border: "1px solid #f59e0b", borderRadius: "8px",
                               padding: "8px 10px", color: "#fbbf24", fontSize: "14px", fontWeight: "600",
