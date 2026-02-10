@@ -678,6 +678,13 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
       if (!studyModeRef.current) {
         setCurrentSubtitle(result.subtitle);
       }
+      // 반복 재생 중이면 새 타이밍으로 즉시 반영
+      if (loopTargetRef.current) {
+        loopTargetRef.current = {
+          start: result.subtitle.start,
+          end: result.subtitle.end,
+        };
+      }
       setIsEditing(false);
       isEditingRef.current = false;
     } catch (err) {
