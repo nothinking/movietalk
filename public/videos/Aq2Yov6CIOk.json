@@ -1,0 +1,1301 @@
+[
+  {
+    "index": 1,
+    "start": 0.48,
+    "end": 4.16,
+    "text": "Most of the difference between people \nthat succeed and people that don't,",
+    "pronunciation": "모스터 더디퍼런스 비트윈 피플댓 석시드앤 피플댓 돈트",
+    "translation": "성공하는 사람들과 성공하지 못하는 사람들의 차이 대부분은,",
+    "notes": [
+      {
+        "word": "Most of the",
+        "actual": "모스턷 더",
+        "meaning": "most of the가 빠르게 이어지며 t+of 연음, of the→어더 축약"
+      },
+      {
+        "word": "succeed",
+        "actual": "석시드",
+        "meaning": "강세가 두 번째 음절 '-ceed'에 오며 /sək-SIːD/ 발음"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "start": 4.16,
+    "end": 6.51,
+    "text": "is that people that don t give up.",
+    "pronunciation": "이즈댓 피플댓 돈기법",
+    "translation": "포기하지 않는 사람들이라는 거예요.",
+    "notes": [
+      {
+        "word": "give up",
+        "actual": "기붑",
+        "meaning": "v+모음 연음, 끝 p 미파열"
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "start": 6.51,
+    "end": 8.65,
+    "text": "They give up sooner than the people that succeed.",
+    "pronunciation": "데이기법 수너 댄더 피플댓 석시드",
+    "translation": "그들은 성공하는 사람들보다 더 일찍 포기합니다.",
+    "notes": [
+      {
+        "word": "give up",
+        "actual": "기럽",
+        "meaning": "v+모음 연음, 'give up'이 빠르게 이어져 '기럽'"
+      },
+      {
+        "word": "sooner than",
+        "actual": "수너댄",
+        "meaning": "r+th 연결에서 th가 약화되어 '댄'으로 축약"
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "start": 8.91,
+    "end": 12,
+    "text": "Sometimes life's gonna hit you in the head with a brick.",
+    "pronunciation": "섬타임즈 라잎스거나 히츄인어 헤드위너 브릭",
+    "translation": "때로는 인생이 벽돌로 머리를 때릴 거예요.",
+    "notes": [
+      {
+        "word": "gonna hit you",
+        "actual": "거나 히류",
+        "meaning": "going to→gonna 축약, hit+you에서 t+y 구개음화로 '류'"
+      },
+      {
+        "word": "with a",
+        "actual": "위다",
+        "meaning": "th 약화+모음 연음으로 '위다'"
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "start": 12,
+    "end": 13.25,
+    "text": "Don t lose faith.",
+    "pronunciation": "도운 루즈 페이쓰",
+    "translation": "믿음을 잃지 마.",
+    "notes": [
+      {
+        "word": "Don't",
+        "actual": "도운",
+        "meaning": "t 탈락 — 문장 중간 Don't에서 끝 t가 거의 안 들림(성문폐쇄)"
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "start": 14.4,
+    "end": 16.1,
+    "text": "This is a tricky business?\n- Tricky.",
+    "pronunciation": "디시저 트리키 비즈니스? 트리키.",
+    "translation": "이건 까다로운 일이지? 까다롭지.",
+    "notes": [
+      {
+        "word": "This is a",
+        "actual": "디시저",
+        "meaning": "this is a 빠른 발화 시 연음으로 '디시저' 축약"
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "start": 20.19,
+    "end": 21.43,
+    "text": "I wish it wasn't so hard.",
+    "pronunciation": "아이 위쉬잇 워전 소 하아드",
+    "translation": "이렇게 어렵지 않았으면 좋겠어.",
+    "notes": [
+      {
+        "word": "wish it",
+        "actual": "위쉬잇",
+        "meaning": "sh+모음 연음으로 이어 발음"
+      },
+      {
+        "word": "wasn't so",
+        "actual": "워전 소",
+        "meaning": "t 탈락, wasn't→워전으로 축약"
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "start": 27.52,
+    "end": 31.57,
+    "text": "When you had that third failure in a row,",
+    "pronunciation": "웬 유해댓 써드 페일려 이너 로우,",
+    "translation": "세 번째 실패를 연달아 겪었을 때,",
+    "notes": [
+      {
+        "word": "failure in a",
+        "actual": "페일려 이너",
+        "meaning": "r+in 연음, in a 약화되어 '이너'로 연결"
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "start": 31.57,
+    "end": 32.88,
+    "text": "did you think,",
+    "pronunciation": "디쥬 씽크,",
+    "translation": "너는 생각했어,",
+    "notes": [
+      {
+        "word": "did you",
+        "actual": "디쥬",
+        "meaning": "d+y 구개음화로 '쥬' 발음"
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "start": 32.88,
+    "end": 34.53,
+    "text": "I need to pack this in?",
+    "pronunciation": "아이니드 팩 디신?",
+    "translation": "이걸 싸 넣어야 해?",
+    "notes": [
+      {
+        "word": "pack this in",
+        "actual": "팩 디신",
+        "meaning": "this의 th 약화 + s+in 연음으로 '디신'"
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "start": 34.53,
+    "end": 36.45,
+    "text": "Never.",
+    "pronunciation": "네버",
+    "translation": "절대 안 돼.",
+    "notes": []
+  },
+  {
+    "index": 12,
+    "start": 36.45,
+    "end": 37.55,
+    "text": "Why not?",
+    "pronunciation": "와이 낫",
+    "translation": "왜 안 돼?",
+    "notes": []
+  },
+  {
+    "index": 13,
+    "start": 37.55,
+    "end": 39.6,
+    "text": "I don t ever give up.",
+    "pronunciation": "아이돈 에버 기법",
+    "translation": "나는 절대 포기하지 않아.",
+    "notes": [
+      {
+        "word": "don't ever",
+        "actual": "도은에버",
+        "meaning": "t 탈락 후 n+모음 연음으로 '은에' 연결"
+      }
+    ]
+  },
+  {
+    "index": 14,
+    "start": 39.6,
+    "end": 42.17,
+    "text": "I mean, I d have to be dead",
+    "pronunciation": "아이민, 아이드 해브투비 데드 ",
+    "translation": "내 말은, 나는 죽어야 할 거야",
+    "notes": [
+      {
+        "word": "I'd have to",
+        "actual": "아이드 해프투",
+        "meaning": "have to의 have→해프, t+t 연결로 빠르게 축약"
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "start": 42.17,
+    "end": 43.73,
+    "text": "or completely incapacitated.",
+    "pronunciation": "오어 컴플릿리 인커패서테이리드",
+    "translation": "또는 완전히 무력화된.",
+    "notes": [
+      {
+        "word": "incapacitated",
+        "actual": "인커패서테이리드",
+        "meaning": "t+모음(ed)에서 t→ㄹ 플랩, 강세 뒤 음절 약화"
+      }
+    ]
+  },
+  {
+    "index": 16,
+    "start": 50.32,
+    "end": 54.24,
+    "text": "There are people who ve been in \nthe rocketry business for decades",
+    "pronunciation": "데얼 피플 후비닌더 라커추리 비즈니스 포 데케이즈",
+    "translation": "로켓 사업에 수십 년간 종사해 온 사람들이 있습니다",
+    "notes": [
+      {
+        "word": "been in",
+        "actual": "비닌",
+        "meaning": "n+모음 연음으로 '비닌'"
+      },
+      {
+        "word": "rocketry",
+        "actual": "라커추리",
+        "meaning": "t 뒤 r이 결합해 '추리'로 파찰음화"
+      }
+    ]
+  },
+  {
+    "index": 17,
+    "start": 54.24,
+    "end": 56.38,
+    "text": "who say about you",
+    "pronunciation": "후 세이 어바웇 유",
+    "translation": "누가 당신에 대해 말하는",
+    "notes": [
+      {
+        "word": "about you",
+        "actual": "어바웇유",
+        "meaning": "t+y 연음으로 '츄'에 가깝게 발음될 수 있음"
+      }
+    ]
+  },
+  {
+    "index": 18,
+    "start": 56.38,
+    "end": 59.04,
+    "text": "that you don t know what you don t know.",
+    "pronunciation": "댓 유도운 노우 왓츄 도운 노우",
+    "translation": "자기가 모르는 걸 모른다는 거예요.",
+    "notes": [
+      {
+        "word": "that you",
+        "actual": "댓츄",
+        "meaning": "t+y 구개음화로 '츄' 발음"
+      },
+      {
+        "word": "what you",
+        "actual": "왓츄",
+        "meaning": "t+y 구개음화로 '츄' 발음"
+      }
+    ]
+  },
+  {
+    "index": 19,
+    "start": 59.04,
+    "end": 60.86,
+    "text": "Well, I suppose that's true to anyone.",
+    "pronunciation": "웰 아이서포즈 대츠트루 에니원",
+    "translation": "글쎄, 누구에게나 그건 사실이겠죠.",
+    "notes": [
+      {
+        "word": "that's true to",
+        "actual": "대츠 트루러",
+        "meaning": "true의 t가 모음 to 앞에서 플랩되어 '루러'로 연음"
+      }
+    ]
+  },
+  {
+    "index": 20,
+    "start": 60.86,
+    "end": 64,
+    "text": "How can anyone know what they don't know?",
+    "pronunciation": "하우캔 에니원 노우 왓데이 도운노우?",
+    "translation": "누가 자기가 모르는 걸 어떻게 알 수 있겠어?",
+    "notes": [
+      {
+        "word": "what they",
+        "actual": "왓데이",
+        "meaning": "t+th 연음으로 t가 약화되며 이어짐"
+      },
+      {
+        "word": "don't know",
+        "actual": "도운(트)노우",
+        "meaning": "t 탈락 — don't의 끝 t가 뒤따르는 k 앞에서 거의 묵음"
+      }
+    ]
+  },
+  {
+    "index": 21,
+    "start": 64,
+    "end": 66.24,
+    "text": "But when critics say, you can't do this,",
+    "pronunciation": "벗 웬 크리틱스 세이, 유 캔트 두 디스,",
+    "translation": "하지만 비평가들이 이건 안 된다고 할 때,",
+    "notes": [
+      {
+        "word": "can't do",
+        "actual": "캔트두→캔두",
+        "meaning": "t 뒤 자음 d가 오면 t 탈락 가능"
+      }
+    ]
+  },
+  {
+    "index": 22,
+    "start": 66.24,
+    "end": 67.88,
+    "text": "your answer to them is?",
+    "pronunciation": "유얼 앤서 투 뎀 이즈?",
+    "translation": "그들에 대한 당신의 대답은?",
+    "notes": [
+      {
+        "word": "answer to",
+        "actual": "앤서루",
+        "meaning": "r+t 연음, 빠른 발화에서 to의 t가 약화"
+      }
+    ]
+  },
+  {
+    "index": 23,
+    "start": 67.88,
+    "end": 68.8,
+    "text": "We've done it.",
+    "pronunciation": "위브 더닛",
+    "translation": "우리가 해냈어.",
+    "notes": [
+      {
+        "word": "done it",
+        "actual": "더닛",
+        "meaning": "n+모음 연음으로 '더닛' 연결"
+      }
+    ]
+  },
+  {
+    "index": 24,
+    "start": 80.48,
+    "end": 84,
+    "text": "Do you believe that your rocket",
+    "pronunciation": "두유 빌리브 댓 유어 라킷",
+    "translation": "당신의 로켓이",
+    "notes": [
+      {
+        "word": "that your",
+        "actual": "댓유어",
+        "meaning": "t+y 구개음화로 '쳐' 가까운 연결, 빠르면 '대츄어'"
+      }
+    ]
+  },
+  {
+    "index": 25,
+    "start": 84,
+    "end": 88.61,
+    "text": "will be the next American rocket to take an astronaut into space?",
+    "pronunciation": "윌 비 더 넥스트 어메리컨 라켓 투테이캐앤 애스트러넛 인투 스페이스?",
+    "translation": "다음으로 우주비행사를 우주로 보낼 미국 로켓이 될 건가요?",
+    "notes": [
+      {
+        "word": "next American",
+        "actual": "넥스터메리컨",
+        "meaning": "t+모음 연음으로 '스터' 연결"
+      },
+      {
+        "word": "take an",
+        "actual": "테이컨",
+        "meaning": "k+모음 연음으로 '테이컨' 발음"
+      }
+    ]
+  },
+  {
+    "index": 26,
+    "start": 88.61,
+    "end": 90.94,
+    "text": "I believe that is the most likely outcome, yes.",
+    "pronunciation": "아빌리브대 리즈 모스트 라이클리 아웃컴, 예스.",
+    "translation": "네, 그게 가장 가능성 높은 결과라고 생각합니다.",
+    "notes": [
+      {
+        "word": "that is",
+        "actual": "대리즈",
+        "meaning": "t+모음 플랩으로 t→ㄹ, 연음되어 '대리즈'"
+      }
+    ]
+  },
+  {
+    "index": 27,
+    "start": 90.94,
+    "end": 95.53,
+    "text": "You know, there are American heroes \nwho don't like this idea?",
+    "pronunciation": "유 노, 데어 아아 어메리컨 히어로우즈 후 도운 라이크 디스 아이디어?",
+    "translation": "있잖아, 이 생각을 좋아하지 않는 미국의 영웅들이 있다는 거 알아?",
+    "notes": [
+      {
+        "word": "don't like",
+        "actual": "도운 라이크",
+        "meaning": "t 탈락 — don't의 끝 t가 거의 안 들림"
+      }
+    ]
+  },
+  {
+    "index": 28,
+    "start": 95.53,
+    "end": 101.04,
+    "text": "Neil Armstrong, Gene Cernan have both \ntestified against commercial space flight",
+    "pronunciation": "닐 암스트롱, 진 서넌 해브 보우쓰 테스티파이드 어겐스트 커머셜 스페이스 플라잇",
+    "translation": "닐 암스트롱, 진 서넌 둘 다 상업 우주 비행에 반대하는 증언을 했습니다",
+    "notes": [
+      {
+        "word": "testified against",
+        "actual": "테스티파이더겐스트",
+        "meaning": "d+모음 연음, d→ㄹ 플랩으로 '더' 연결"
+      }
+    ]
+  },
+  {
+    "index": 29,
+    "start": 101.04,
+    "end": 102.87,
+    "text": "and the way that you re developing it,",
+    "pronunciation": "앤더 웨이 댓츄어 디벨러핑 잇,",
+    "translation": "그리고 당신이 그것을 개발하는 방식이,",
+    "notes": [
+      {
+        "word": "that you're",
+        "actual": "댓츄어",
+        "meaning": "t+y 구개음화로 '츄' 발음"
+      },
+      {
+        "word": "developing",
+        "actual": "디벨러핑",
+        "meaning": "모음 사이 p 약화, -ing의 g 탈락"
+      }
+    ]
+  },
+  {
+    "index": 30,
+    "start": 102.87,
+    "end": 104.87,
+    "text": "and I wonder what you think of that.",
+    "pronunciation": "앤 아이 원더 워유 씽컵 댓",
+    "translation": "그리고 그것에 대해 어떻게 생각하시는지 궁금합니다.",
+    "notes": [
+      {
+        "word": "what you",
+        "actual": "워츄",
+        "meaning": "t+y 구개음화로 '츄' 발음"
+      },
+      {
+        "word": "think of",
+        "actual": "씽컵",
+        "meaning": "k+of 연음, of의 v 약화"
+      }
+    ]
+  },
+  {
+    "index": 31,
+    "start": 105.84,
+    "end": 107.6,
+    "text": "I was very sad to see that",
+    "pronunciation": "아이워즈 베리새드 씨댓",
+    "translation": ""
+  },
+  {
+    "index": 32,
+    "start": 107.6,
+    "end": 110.16,
+    "text": "because those guys are... yeah.",
+    "pronunciation": "비카즈 도즈가이즈아 예",
+    "translation": ""
+  },
+  {
+    "index": 33,
+    "start": 111.83,
+    "end": 113.24,
+    "text": "You know, those guys are heroes of mine,",
+    "pronunciation": "유노 도우즈 가이즈아 히어로우즈어브 마인,",
+    "translation": "있잖아요, 그 사람들은 제가 존경하는 영웅들이에요,",
+    "notes": [
+      {
+        "word": "heroes of",
+        "actual": "히어로우저브",
+        "meaning": "s+of 연음으로 z+어브 연결"
+      }
+    ]
+  },
+  {
+    "index": 34,
+    "start": 113.24,
+    "end": 114.96,
+    "text": "so it's really tough.",
+    "pronunciation": "소 잇스 릴리 터프",
+    "translation": "그래서 정말 힘들어요.",
+    "notes": [
+      {
+        "word": "it's really",
+        "actual": "잇스릴리",
+        "meaning": "s+r 연음으로 이어서 발음"
+      }
+    ]
+  },
+  {
+    "index": 35,
+    "start": 114.96,
+    "end": 117,
+    "text": "You know, I wish they would come and visit,",
+    "pronunciation": "유노 아이위쉬 데이워 컴앤비짓,",
+    "translation": "있잖아, 그 사람들이 와서 방문했으면 좋겠어,",
+    "notes": [
+      {
+        "word": "visit",
+        "actual": "비짓",
+        "meaning": "t가 문미에서 약하게 발음되어 거의 안 들림 (미파열)"
+      }
+    ]
+  },
+  {
+    "index": 36,
+    "start": 117,
+    "end": 119.68,
+    "text": "and see the hard work that we're doing here.",
+    "pronunciation": "앤씨더 하드워크 댓위어두잉 히어",
+    "translation": "그리고 우리가 여기서 하고 있는 노력을 봐주세요.",
+    "notes": [
+      {
+        "word": "that we're",
+        "actual": "댓위어",
+        "meaning": "that의 t가 뒤 w와 빠르게 연결되어 '댓위어'로 축약"
+      }
+    ]
+  },
+  {
+    "index": 37,
+    "start": 119.68,
+    "end": 122.63,
+    "text": "And I think that would change their mind.",
+    "pronunciation": "앤아이 씽크댓우드 체인지 데어 마인드",
+    "translation": "그리고 그게 그들의 생각을 바꿀 거라고 생각해요.",
+    "notes": [
+      {
+        "word": "that would",
+        "actual": "댓워드",
+        "meaning": "that의 t가 뒤의 would와 빠르게 연결되며 t 거의 탈락"
+      }
+    ]
+  },
+  {
+    "index": 38,
+    "start": 122.63,
+    "end": 124.8,
+    "text": "They inspired you to do this, didn't they?",
+    "pronunciation": "데이 인스파이어 쥬더 두디스 디든 데이?",
+    "translation": "그들이 너한테 이걸 하도록 영감을 줬지, 그렇지?",
+    "notes": [
+      {
+        "word": "inspired you",
+        "actual": "인스파이어쥬",
+        "meaning": "d+y 구개음화로 '쥬' 발음"
+      },
+      {
+        "word": "didn't they",
+        "actual": "디든 데이",
+        "meaning": "didn't의 t 탈락, 글로틀 스탑으로 처리"
+      }
+    ]
+  },
+  {
+    "index": 39,
+    "start": 124.8,
+    "end": 127.6,
+    "text": "Yes.",
+    "pronunciation": "예스",
+    "translation": "네.",
+    "notes": []
+  },
+  {
+    "index": 40,
+    "start": 127.6,
+    "end": 130.74,
+    "text": "And to see them casting stones in your direction?",
+    "pronunciation": "앤 투씨뎀 캐스팅 스톤즈 인유어 디렉션?",
+    "translation": "그리고 그들이 당신에게 돌을 던지는 걸 보는 건요?",
+    "notes": [
+      {
+        "word": "And to",
+        "actual": "앤두",
+        "meaning": "t+모음에서 to의 t가 유성음화, 빠르게 '앤두'로 연결"
+      },
+      {
+        "word": "casting stones in",
+        "actual": "캐스팅 스톤진",
+        "meaning": "stones in에서 z+in 연음으로 '스톤진'"
+      }
+    ]
+  },
+  {
+    "index": 41,
+    "start": 134.08,
+    "end": 135.06,
+    "text": "It's difficult.",
+    "pronunciation": "잇스 디피컬트",
+    "translation": "그건 어려워요.",
+    "notes": []
+  },
+  {
+    "index": 42,
+    "start": 136,
+    "end": 138,
+    "text": "Did you expect them to cheer you on?",
+    "pronunciation": "디쥬 익스펙뎀두 치어유 온?",
+    "translation": "그들이 널 응원해 줄 거라고 기대했어?",
+    "notes": [
+      {
+        "word": "Did you",
+        "actual": "디쥬",
+        "meaning": "d+y 구개음화로 '쥬' 발음"
+      }
+    ]
+  },
+  {
+    "index": 43,
+    "start": 140.08,
+    "end": 142.07,
+    "text": "Certainly hoping they would.",
+    "pronunciation": "써를리 호핑 데이 우드",
+    "translation": "분명 그러길 바랐죠.",
+    "notes": [
+      {
+        "word": "certainly",
+        "actual": "써를리",
+        "meaning": "t가 거의 묵음 처리되어 '써를리'로 축약"
+      }
+    ]
+  },
+  {
+    "index": 44,
+    "start": 142.07,
+    "end": 143.83,
+    "text": "What are you trying to prove to them?",
+    "pronunciation": "워러유 트라잉투 프루브 투뎀?",
+    "translation": "그들에게 뭘 증명하려는 거야?",
+    "notes": [
+      {
+        "word": "What are you",
+        "actual": "워러류",
+        "meaning": "t+모음 플랩으로 t→ㄹ, are→어 약화, 연음으로 '워러류'"
+      }
+    ]
+  },
+  {
+    "index": 45,
+    "start": 143.83,
+    "end": 145.02,
+    "text": "What I m trying to do is",
+    "pronunciation": "와라임 트라잉 투두이즈",
+    "translation": "제가 하려는 건",
+    "notes": [
+      {
+        "word": "What I'm",
+        "actual": "와라임",
+        "meaning": "t+모음 연음으로 what I'm이 '와라임'으로 연결"
+      }
+    ]
+  },
+  {
+    "index": 46,
+    "start": 145.02,
+    "end": 149.2,
+    "text": "to make a significant difference in space flight,",
+    "pronunciation": "투 메이커 시그니피컨트 디퍼런스 인 스페이스 플라잇,",
+    "translation": "우주 비행에서 의미 있는 변화를 만들기 위해,",
+    "notes": [
+      {
+        "word": "make a",
+        "actual": "메이커",
+        "meaning": "k+모음 연음으로 '커'로 이어짐"
+      },
+      {
+        "word": "significant",
+        "actual": "시그니피컨트",
+        "meaning": "t 끝음 거의 묵음, 뒤의 difference와 이어질 때 t 탈락"
+      }
+    ]
+  },
+  {
+    "index": 47,
+    "start": 149.2,
+    "end": 154.64,
+    "text": "and help make space flight \naccessible to almost anyone.",
+    "pronunciation": "앤 헬프 메잌 스페이스플라잇 악세서블 투 올모스트 에니원.",
+    "translation": "그리고 우주 비행을 거의 누구나 이용할 수 있게 만드는 거죠.",
+    "notes": [
+      {
+        "word": "accessible",
+        "actual": "악세서블",
+        "meaning": "cc가 /ks/로 발음, '악세' 강세 후 서블 약화"
+      },
+      {
+        "word": "almost anyone",
+        "actual": "올모스테니원",
+        "meaning": "t+모음 연음으로 '스테니' 연결"
+      }
+    ]
+  },
+  {
+    "index": 48,
+    "start": 154.64,
+    "end": 159.28,
+    "text": "And I would hope for as much support \nin that direction as we can receive.",
+    "pronunciation": "앤 아이 워호프 더 포애즈머치 서포어ㄹ 인댓디렉션 애즈 위캔리시브",
+    "translation": "그리고 저는 그 방향으로 가능한 한 많은 지지를 받을 수 있기를 바랍니다.",
+    "notes": [
+      {
+        "word": "support in",
+        "actual": "서포어린",
+        "meaning": "t+모음 연음, t→ㄹ 플랩으로 '린' 연결"
+      },
+      {
+        "word": "as we can",
+        "actual": "애즈 위 큰",
+        "meaning": "can이 비강세일 때 모음 약화→'큰'"
+      }
+    ]
+  },
+  {
+    "index": 49,
+    "start": 171.28,
+    "end": 174.68,
+    "text": "I m probably not the guy that \nmost people would bet on.",
+    "pronunciation": "암프라블리낫 더가이댓 모스트피플 워베론",
+    "translation": "아마 대부분의 사람들이 걸진 않을 사람일 거예요, 저는.",
+    "notes": [
+      {
+        "word": "bet on",
+        "actual": "베럿",
+        "meaning": "t+모음 연음, t→ㄹ 플랩으로 '베런' 가깝게 발음"
+      }
+    ]
+  },
+  {
+    "index": 50,
+    "start": 174.68,
+    "end": 175.79,
+    "text": "Who wins?",
+    "pronunciation": "후 윈즈",
+    "translation": "누가 이겨?",
+    "notes": []
+  },
+  {
+    "index": 51,
+    "start": 175.79,
+    "end": 180.16,
+    "text": "It's like a little kid fighting a bunch of sumo wrestlers.",
+    "pronunciation": "잇스 라이커 리를키드 파이링어 번처어 수모 레슬러즈",
+    "translation": "마치 꼬마 아이가 스모 선수들한테 덤비는 것 같아요.",
+    "notes": [
+      {
+        "word": "little",
+        "actual": "리를",
+        "meaning": "t+l 사이에서 t가 탈락, 글로틀 스탑으로 '리를'"
+      },
+      {
+        "word": "fighting a",
+        "actual": "파이링 어",
+        "meaning": "t+모음 연음으로 t→ㄹ 플랩"
+      }
+    ]
+  },
+  {
+    "index": 52,
+    "start": 180.16,
+    "end": 182.01,
+    "text": "Usually, the sumo wrestlers win.",
+    "pronunciation": "유절리 더 수모 레슬러즈 윈.",
+    "translation": "보통은 스모 선수들이 이겨요.",
+    "notes": [
+      {
+        "word": "Usually",
+        "actual": "유절리",
+        "meaning": "su 부분이 '슈'가 아닌 '절'로, zh음+schwa 축약"
+      }
+    ]
+  },
+  {
+    "index": 53,
+    "start": 182.6,
+    "end": 184.47,
+    "text": "We're a little scrappy company.",
+    "pronunciation": "위어 어 리를, 리를스크래피 컴퍼니",
+    "translation": "우리는 작지만 강한 회사예요.",
+    "notes": [
+      {
+        "word": "little",
+        "actual": "리를",
+        "meaning": "tt→ㄹ 플랩, 모음 사이 t가 ㄹ로 변함"
+      }
+    ]
+  },
+  {
+    "index": 54,
+    "start": 184.47,
+    "end": 185.55,
+    "text": "Every now and again,",
+    "pronunciation": "에브리 나언 어겐",
+    "translation": "가끔씩,",
+    "notes": [
+      {
+        "word": "now and",
+        "actual": "나우언",
+        "meaning": "w+모음 연음, and의 d 탈락"
+      }
+    ]
+  },
+  {
+    "index": 55,
+    "start": 185.55,
+    "end": 187.15,
+    "text": "the little scrappy company wins.",
+    "pronunciation": "더리를 스크래피 컴퍼니 윈즈",
+    "translation": "작고 끈질긴 회사가 이긴다.",
+    "notes": [
+      {
+        "word": "little",
+        "actual": "리를",
+        "meaning": "tt→ㄹ 플랩, 끝 l은 dark L로 '을'"
+      }
+    ]
+  },
+  {
+    "index": 56,
+    "start": 187.15,
+    "end": 189.73,
+    "text": "And I think this will be one of those times.",
+    "pronunciation": "앤 아이, 아이 띵디스 윌비 원너브 도우즈 타임즈",
+    "translation": "그리고 저는 이번이 그런 때 중 하나가 될 거라고 생각합니다.",
+    "notes": [
+      {
+        "word": "one of",
+        "actual": "원너브",
+        "meaning": "n+of 연음, of의 v 약화"
+      }
+    ]
+  },
+  {
+    "index": 57,
+    "start": 192.56,
+    "end": 196.77,
+    "text": "We meet in an hour of change and challenge,",
+    "pronunciation": "위밑 인어나워 어브 체인쥐 앤 챌린쥐,",
+    "translation": "우리는 변화와 도전의 시간에 만났습니다,",
+    "notes": [
+      {
+        "word": "meet in",
+        "actual": "미린",
+        "meaning": "t+모음 연음, t→ㄹ 플랩"
+      },
+      {
+        "word": "an hour",
+        "actual": "어나워",
+        "meaning": "n+모음 연음, hour의 h 묵음"
+      }
+    ]
+  },
+  {
+    "index": 58,
+    "start": 196.77,
+    "end": 199.02,
+    "text": "in a decade of hope and fear,",
+    "pronunciation": "인에이 데케이럽 호웁 앤피어",
+    "translation": "희망과 두려움의 10년 속에서",
+    "notes": [
+      {
+        "word": "decade of",
+        "actual": "디케이러브",
+        "meaning": "d+of 연음, t/d 사이 모음 연결로 '러브'"
+      }
+    ]
+  },
+  {
+    "index": 59,
+    "start": 200.64,
+    "end": 203.45,
+    "text": "in an age of both knowledge and ignorance.",
+    "pronunciation": "이낸 에이지 어보쓰 날리지 앤 이그너런스",
+    "translation": "지식과 무지가 공존하는 시대에",
+    "notes": [
+      {
+        "word": "in an",
+        "actual": "이낸",
+        "meaning": "n+모음 연음으로 '이낸' 연결"
+      }
+    ]
+  },
+  {
+    "index": 60,
+    "start": 204.88,
+    "end": 206.88,
+    "text": "The greater our knowledge increases,",
+    "pronunciation": "더 그레이더 아워날리쥐 인크리시즈",
+    "translation": "우리의 지식이 늘어날수록",
+    "notes": [
+      {
+        "word": "greater our",
+        "actual": "그레이러 아워",
+        "meaning": "t+모음 연음으로 t→ㄹ 플랩"
+      }
+    ]
+  },
+  {
+    "index": 61,
+    "start": 207.35,
+    "end": 209.6,
+    "text": "the greater our ignorance unfolds.",
+    "pronunciation": "더 그뤠이더 아워 이그너런스 언폴즈",
+    "translation": "우리의 무지가 더 크게 드러납니다.",
+    "notes": [
+      {
+        "word": "greater our",
+        "actual": "그뤠이러 아워",
+        "meaning": "t+모음 연음으로 t→ㄹ 플랩, 'greater'의 ter가 '러'로"
+      }
+    ]
+  },
+  {
+    "index": 62,
+    "start": 210.3,
+    "end": 213.44,
+    "text": "The vast stretches of the unknown",
+    "pronunciation": "더 배스트 스트레치즈 어브디 언노운",
+    "translation": "광활한 미지의 영역",
+    "notes": [
+      {
+        "word": "vast stretches",
+        "actual": "배스트스트레치즈",
+        "meaning": "st+str 자음군 연결로 t가 거의 묵음 처리"
+      }
+    ]
+  },
+  {
+    "index": 63,
+    "start": 213.44,
+    "end": 217.31,
+    "text": "still far outstrip our \ncollective comprehension.",
+    "pronunciation": "스틸 파아 아웃스트립 아워 컬렉티브 캄프리헨션",
+    "translation": "여전히 우리의 집단적 이해력을 훨씬 능가합니다.",
+    "notes": [
+      {
+        "word": "far out-",
+        "actual": "파아라웃",
+        "meaning": "r+모음 연음으로 far out이 '파아라웃'처럼 이어짐"
+      },
+      {
+        "word": "collective",
+        "actual": "컬렉티브",
+        "meaning": "t가 모음 사이에서 플랩되어 '렉리브'에 가깝게 발음"
+      }
+    ]
+  },
+  {
+    "index": 64,
+    "start": 218.31,
+    "end": 221.84,
+    "text": "We shall send to the moon, a giant rocket",
+    "pronunciation": "위 쉘 센두 더 문, 어 자이언트 라킷",
+    "translation": "우리는 달에 거대한 로켓을 보낼 것입니다",
+    "notes": [
+      {
+        "word": "send to",
+        "actual": "센투",
+        "meaning": "d+t 연결에서 d 탈락, '센투'로 축약"
+      },
+      {
+        "word": "rocket",
+        "actual": "라킷",
+        "meaning": "모음 사이 ck→k 유지, 미국식에서 ro→'라'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 65,
+    "start": 221.84,
+    "end": 224.57,
+    "text": "more than 300 feet tall,",
+    "pronunciation": "모어 댄 쓰리 헌드럳 핏 톨",
+    "translation": "높이가 300피트가 넘는,",
+    "notes": [
+      {
+        "word": "hundred",
+        "actual": "헌드럳",
+        "meaning": "d 뒤의 red가 약화되어 '럳'으로 축약"
+      }
+    ]
+  },
+  {
+    "index": 66,
+    "start": 224.57,
+    "end": 226.41,
+    "text": "on an untried mission,",
+    "pronunciation": "어너넌 트라이드 미션",
+    "translation": "시도해본 적 없는 임무에서,",
+    "notes": [
+      {
+        "word": "on an",
+        "actual": "아내",
+        "meaning": "n+모음 연음으로 '온 앤'이 '아내'로 연결"
+      }
+    ]
+  },
+  {
+    "index": 67,
+    "start": 226.76,
+    "end": 228.91,
+    "text": "to an unknown celestial body,",
+    "pronunciation": "투어넌 노운 셀레스쳘 바디,",
+    "translation": "미지의 천체를 향해,",
+    "notes": [
+      {
+        "word": "an unknown",
+        "actual": "어넌노운",
+        "meaning": "n+모음 연음으로 '어넌' 연결"
+      },
+      {
+        "word": "celestial",
+        "actual": "셀레스철",
+        "meaning": "ti→ㅊ 구개음화, '셀레스철'로 발음"
+      }
+    ]
+  },
+  {
+    "index": 68,
+    "start": 229.41,
+    "end": 231.74,
+    "text": "and then return it safely to earth,",
+    "pronunciation": "앤 덴 리턴잇 세이플리 두 얼쓰,",
+    "translation": "그리고 그것을 안전하게 지구로 돌려보내는 거죠,",
+    "notes": [
+      {
+        "word": "return it",
+        "actual": "리터닛",
+        "meaning": "n+모음 연음, t→ㄹ 플랩으로 '리러닛'"
+      }
+    ]
+  },
+  {
+    "index": 69,
+    "start": 232.48,
+    "end": 234.67,
+    "text": "But why, some say the moon?",
+    "pronunciation": "벗 와이, 섬 세이 더 문?",
+    "translation": "하지만 왜, 어떤 이들은 달이라고 말하는가?",
+    "notes": [
+      {
+        "word": "But why",
+        "actual": "벗와이",
+        "meaning": "t 뒤 자음 w 앞에서 t가 거의 묵음(글로틀 스탑)으로 '버ʔ와이'"
+      }
+    ]
+  },
+  {
+    "index": 70,
+    "start": 235.4,
+    "end": 237.4,
+    "text": "Why choose this ​as our goal?",
+    "pronunciation": "와이 추즈 디스 애즈 아워 골?",
+    "translation": "왜 이것을 우리의 목표로 선택할까요?",
+    "notes": []
+  },
+  {
+    "index": 71,
+    "start": 240.28,
+    "end": 242.16,
+    "text": "We choose to go to the moon.",
+    "pronunciation": "위 추즈두 고루더 문",
+    "translation": "우리는 달에 가기로 결심합니다.",
+    "notes": [
+      {
+        "word": "choose to",
+        "actual": "추즈투",
+        "meaning": "z+t 연결에서 '즈투'가 빠르게 이어짐"
+      }
+    ]
+  },
+  {
+    "index": 72,
+    "start": 243.84,
+    "end": 246.69,
+    "text": "We choose to go to the moon in this decade",
+    "pronunciation": "위 추즈두 고루더 문 인디스 디케이드",
+    "translation": "우리는 이번 10년 안에 달에 가기로 결심합니다",
+    "notes": [
+      {
+        "word": "choose to",
+        "actual": "추즈투",
+        "meaning": "ze+t 연결에서 '투'가 약화되어 빠르게 붙음"
+      },
+      {
+        "word": "go to the",
+        "actual": "고투더",
+        "meaning": "to the가 약화되어 '투더'로 빠르게 연결"
+      }
+    ]
+  },
+  {
+    "index": 73,
+    "start": 246.69,
+    "end": 248.3,
+    "text": "and do the other things,",
+    "pronunciation": "앤 두디 아더 띵즈,",
+    "translation": "그리고 다른 것들을 하기로 했습니다,",
+    "notes": [
+      {
+        "word": "and do the other",
+        "actual": "앤두디아더",
+        "meaning": "other의 th→ð 유성음, t+모음 연음으로 '아더'"
+      }
+    ]
+  },
+  {
+    "index": 74,
+    "start": 248.3,
+    "end": 250.23,
+    "text": "not because they are easy,",
+    "pronunciation": "낫 비커즈 데아르 이지,",
+    "translation": "그것들이 쉽기 때문이 아니라,",
+    "notes": [
+      {
+        "word": "not because",
+        "actual": "낫비커즈",
+        "meaning": "t+b 연결에서 t가 불파음(unreleased)으로 거의 안 들림"
+      }
+    ]
+  },
+  {
+    "index": 75,
+    "start": 250.23,
+    "end": 252.27,
+    "text": "but because they are hard,",
+    "pronunciation": "벗 비커즈 데이아 하드",
+    "translation": "하지만 그것들이 어렵기 때문에,",
+    "notes": [
+      {
+        "word": "because they",
+        "actual": "비커즈데이",
+        "meaning": "z+th 연음, because의 강세 없는 be→비"
+      }
+    ]
+  },
+  {
+    "index": 76,
+    "start": 252.27,
+    "end": 253.81,
+    "text": "because that goal",
+    "pronunciation": "비커즈 댓 고울",
+    "translation": "왜냐하면 그 목표가",
+    "notes": []
+  },
+  {
+    "index": 77,
+    "start": 253.81,
+    "end": 259.33,
+    "text": "will serve to organize and measure the \nbest of our energies and skills,",
+    "pronunciation": "윌 서브 투 오어거나이즈 앤 메이져 더 베스트 어브아워 에너지즈 앤 스킬즈,",
+    "translation": "우리의 최고의 에너지와 기량을 조직하고 측정하는 데 기여할 것이기 때문이며,",
+    "notes": [
+      {
+        "word": "measure",
+        "actual": "메져",
+        "meaning": "s+ure→'져' 구개음화 발음"
+      }
+    ]
+  },
+  {
+    "index": 78,
+    "start": 259.33,
+    "end": 263.28,
+    "text": "because that challenge is one \nthat we are willing to accept,",
+    "pronunciation": "비커즈 댓 챌린지즈 원댓 위 윌링 두 익셉트,",
+    "translation": "왜냐하면 그 도전은 우리가 기꺼이 받아들이려는 것이니까요,",
+    "notes": [
+      {
+        "word": "that is",
+        "actual": "대릿",
+        "meaning": "that is 축약 → that's, t+모음 플랩으로 '대릿'"
+      },
+      {
+        "word": "willing to accept",
+        "actual": "윌링 투 억셉트",
+        "meaning": "to가 약화되어 '러' 수준으로 축약 가능"
+      }
+    ]
+  },
+  {
+    "index": 79,
+    "start": 263.28,
+    "end": 266.26,
+    "text": "one we are unwilling to postpone,",
+    "pronunciation": "원 위아언 윌링 투 포스폰",
+    "translation": "우리가 미루지 않을,",
+    "notes": [
+      {
+        "word": "unwilling to",
+        "actual": "언윌링투",
+        "meaning": "g+t 연결에서 g 끝이 약해지며 빠르게 이어짐"
+      }
+    ]
+  },
+  {
+    "index": 80,
+    "start": 266.26,
+    "end": 268.42,
+    "text": "And, therefore, as we set sail",
+    "pronunciation": "앤, 데어포어, 애즈 위 셋 세일",
+    "translation": "그리하여, 우리가 항해를 시작하면서",
+    "notes": [
+      {
+        "word": "set sail",
+        "actual": "셋세일",
+        "meaning": "t+s 연결에서 t가 짧게 끊기며 '셋세일'"
+      }
+    ]
+  },
+  {
+    "index": 81,
+    "start": 269.08,
+    "end": 270.7,
+    "text": "we ask God's blessing",
+    "pronunciation": "위 애스크 갓즈 블레싱",
+    "translation": "우리는 신의 축복을 빕니다",
+    "notes": [
+      {
+        "word": "God's",
+        "actual": "갓즈",
+        "meaning": "d+z 연결로 '갓즈' 발음"
+      }
+    ]
+  },
+  {
+    "index": 82,
+    "start": 270.7,
+    "end": 273.6,
+    "text": "on the most hazardous and dangerous",
+    "pronunciation": "온 더 모우스트 해저더스 앤 데인저러스",
+    "translation": "가장 위험하고 위태로운",
+    "notes": [
+      {
+        "word": "hazardous",
+        "actual": "해저더스",
+        "meaning": "d+모음 연음으로 '더스', z→ㅈ 유성 마찰음"
+      }
+    ]
+  },
+  {
+    "index": 83,
+    "start": 273.6,
+    "end": 276.94,
+    "text": "and greatest adventure on which \nman has ever embarked.",
+    "pronunciation": "앤 그레이티스트 어드벤쳐 온 위치맨 해즈에버 임바아크트.",
+    "translation": "인류가 지금껏 착수한 가장 위대한 모험에 대해.",
+    "notes": [
+      {
+        "word": "greatest adventure",
+        "actual": "그레이티스트 어드벤쳐",
+        "meaning": "t+어 연결에서 t가 살짝 유지되며 끊김"
+      }
+    ]
+  }
+]
