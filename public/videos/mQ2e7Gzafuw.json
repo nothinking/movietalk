@@ -22,10 +22,10 @@
   {
     "index": 1,
     "start": 4.08,
-    "end": 6,
-    "text": "hey you're back hey how was your",
-    "pronunciation": "헤이유어백 헤이 하우즈유어",
-    "translation": "안녕 넌 돌아왔네 안녕 어땠어",
+    "end": 6.88,
+    "text": "hey you're back hey how was your conference",
+    "pronunciation": "헤이유어백 헤이 하우즈유어 칸퍼런스",
+    "translation": "안녕 넌 돌아왔네 안녕 어땠어 그",
     "notes": [
       {
         "word": "hey",
@@ -56,17 +56,7 @@
         "word": "your",
         "actual": "유어",
         "meaning": "당신의, 넌"
-      }
-    ]
-  },
-  {
-    "index": 2,
-    "start": 6,
-    "end": 9.28,
-    "text": "conference that was terrible i fought with",
-    "pronunciation": "칸퍼런스 댓 워즈 테러블 아이 팟 윗",
-    "translation": "그 회의는 끔찍했어, 나는 ~와 싸웠어",
-    "notes": [
+      },
       {
         "word": "conference that",
         "actual": "칸퍼런스 댓",
@@ -81,17 +71,7 @@
         "word": "fought with",
         "actual": "팟 윗",
         "meaning": "fought는 '팟'으로, with는 '윗'으로 연음"
-      }
-    ]
-  },
-  {
-    "index": 3,
-    "start": 9.28,
-    "end": 11.44,
-    "text": "my colleagues you know the entire time",
-    "pronunciation": "마이칼리그즈 유노우 디 엔타이어 타임",
-    "translation": "내 동료들과 당신도 알다시피 내내",
-    "notes": [
+      },
       {
         "word": "my",
         "actual": "마이",
@@ -130,8 +110,16 @@
     ]
   },
   {
-    "index": 4,
-    "start": 11.44,
+    "text": "that was terrible i fought with my colleagues you know the entire time",
+    "start": 6.88,
+    "end": 11.24,
+    "pronunciation": "댓워즈 테러블 아이팟 윗 마이칼리그즈 유노우 디 엔타이어 타임",
+    "translation": "회의는 끔찍했어, 나는 ~와 싸웠어 내 동료들과 당신도 알다시피 내내",
+    "index": 2
+  },
+  {
+    "index": 3,
+    "start": 11.24,
     "end": 14.48,
     "text": "are you kidding with this",
     "pronunciation": "아 유 키딩 위디스",
@@ -165,7 +153,7 @@
     ]
   },
   {
-    "index": 5,
+    "index": 4,
     "start": 14.48,
     "end": 16.56,
     "text": "uh so your weekend was a total bust uh",
@@ -215,9 +203,9 @@
     ]
   },
   {
-    "index": 6,
+    "index": 5,
     "start": 16.56,
-    "end": 20.64,
+    "end": 21.68,
     "text": "no i got to see donald trump waiting for an elevator",
     "pronunciation": "노 아이갓투씨 도날드트럼프 웨이링포런엘러베이터",
     "translation": "아니, 나는 엘리베이터를 기다리는 도널드 트럼프를 봤어",
@@ -240,12 +228,12 @@
     ]
   },
   {
-    "index": 7,
+    "index": 6,
     "start": 21.68,
-    "end": 25.04,
-    "text": "hi hey you're back too yeah um jenna can",
-    "pronunciation": "하이 헤이유어백투 예 어 챈들러 캔",
-    "translation": "안녕 헤이 넌 돌아왔어도 네 어 챈들러 할 수 있어",
+    "end": 24.56,
+    "text": "hi hey you're back too yeah um",
+    "pronunciation": "하이 헤이유어백투 예 어",
+    "translation": "안녕 헤이 넌 돌아왔어도 네 어 챈들러 할",
     "notes": [
       {
         "word": "hi",
@@ -295,12 +283,12 @@
     ]
   },
   {
-    "index": 8,
-    "start": 25.04,
+    "text": "jenna can i talk to you outside for just a second",
+    "start": 24.56,
     "end": 26.48,
-    "text": "i talk to you outside for just a second",
-    "pronunciation": "아이톡투유 아웃사이드 포저스터세컨드",
-    "translation": "난 너한테 밖에서 얘기할 수 있어 그냥 잠깐",
+    "pronunciation": "챈들러 캔 아이톡투유 아웃사이드 포저스터세컨드",
+    "translation": "수 있어 난 너한테 밖에서 얘기할 수 있어 그냥 잠깐",
+    "index": 7,
     "notes": [
       {
         "word": "i",
@@ -350,7 +338,7 @@
     ]
   },
   {
-    "index": 9,
+    "index": 8,
     "start": 26.48,
     "end": 29.92,
     "text": "hey how was your chef thing it's awful i",
@@ -405,7 +393,7 @@
     ]
   },
   {
-    "index": 10,
+    "index": 9,
     "start": 29.92,
     "end": 32.64,
     "text": "guess some people just don't appreciate really good food",
@@ -430,7 +418,7 @@
     ]
   },
   {
-    "index": 11,
+    "index": 10,
     "start": 32.64,
     "end": 35.76,
     "text": "well maybe it was the kind of food that tasted good at first but then",
@@ -515,7 +503,7 @@
     ]
   },
   {
-    "index": 12,
+    "index": 11,
     "start": 35.76,
     "end": 40.5,
     "text": "made everybody vomit and have diarrhea",
@@ -545,14 +533,14 @@
     "end": 44.4,
     "pronunciation": "챈들러?모니카!",
     "translation": "소스에 식초",
-    "index": 13
+    "index": 12
   },
   {
-    "index": 14,
+    "index": 13,
     "start": 44.4,
     "end": 48.4,
     "text": "all right hey mr bing",
-    "pronunciation": "헤이 미스터 빙",
+    "pronunciation": "헤이 헤이 미스터 빙",
     "translation": "안녕 빙씨",
     "notes": [
       {
@@ -583,7 +571,7 @@
     ]
   },
   {
-    "index": 15,
+    "index": 14,
     "start": 48.4,
     "end": 52.4,
     "text": "that uh hotel you stayed at called",
@@ -628,12 +616,12 @@
     ]
   },
   {
-    "index": 16,
+    "index": 15,
     "start": 52.4,
-    "end": 60.56,
-    "text": "said someone left an eyelash curler in your room i was mine",
-    "pronunciation": "세드썸원 레프튼 아이래쉬 컬러인유어룸 예스 잇워즈마인",
-    "translation": "누군가 네 방에 속눈썹 고데기를 두고 갔다고 했어, 그게 내 거였어",
+    "end": 57.85,
+    "text": "said someone left an eyelash curler in your room",
+    "pronunciation": "세드썸원 레프튼 아이래쉬 컬러인유어룸",
+    "translation": "누군가 네 방에 속눈썹 고데기를 두고 갔다고 했어, 그게",
     "notes": [
       {
         "word": "left an",
@@ -658,11 +646,19 @@
     ]
   },
   {
+    "text": "i was mine",
+    "start": 57.85,
+    "end": 60.56,
+    "pronunciation": "예스 잇워즈마인",
+    "translation": "내 거였어",
+    "index": 16
+  },
+  {
     "index": 17,
-    "start": 61.28,
+    "start": 60.56,
     "end": 64.72,
     "text": "because i figured you hooked up with some girl and she left it there",
-    "pronunciation": "비커즈아이피겨유 훅덥윋썸걸앤 쉬레프딧 데얼",
+    "pronunciation": "비커즈 아이피겨유 훅덥 윋쩜걸언 쉬레프딧 데얼",
     "translation": "왜냐면 네가 어떤 여자랑 자고 그 여자가 두고 간 줄 알았거든",
     "notes": [
       {
@@ -710,7 +706,7 @@
   {
     "index": 18,
     "start": 64.72,
-    "end": 68,
+    "end": 68.16,
     "text": "yes that would have made more sense",
     "pronunciation": "예스댓우드 메이드모어센스",
     "translation": "네 그게 더 말이 됐을 거야",
@@ -757,7 +753,7 @@
     "start": 68.16,
     "end": 72.08,
     "text": "you know i i don't even feel like i know you anymore man",
-    "pronunciation": "유노 아이 아도운이븐필라이카이 노유 애니모어 맨",
+    "pronunciation": "유노 아이 아도운이븐 필라이카 아노유 애니모어 맨",
     "translation": "있잖아, 나는, 나는 더 이상 너를 아는 것 같지도 않아",
     "notes": [
       {
@@ -940,10 +936,10 @@
   {
     "index": 24,
     "start": 89.2,
-    "end": 95.2,
-    "text": "i heard you saw donald trump at your convention yeah so i'm waiting for an elevator",
-    "pronunciation": "아이허드유쏘 도널드트럼프 유 컨벤션 예 쏘아임웨이링포런 엘러베이터",
-    "translation": "난 들었어 당신이 도널드 트럼프를 봤다고 당신의 컨벤션, 그래 그래서 나는 엘리베이터를 기다리고 있었어",
+    "end": 91.24,
+    "text": "i heard you saw donald trump at your convention",
+    "pronunciation": "아이허드유쏘 도널드트럼프 유 컨벤션",
+    "translation": "난 들었어 당신이 도널드 트럼프를 봤다고 당신의 컨벤션,",
     "notes": [
       {
         "word": "i",
@@ -1008,7 +1004,15 @@
     ]
   },
   {
-    "index": 25,
+    "text": "yeah so i'm waiting for an elevator",
+    "start": 91.24,
+    "end": 95.2,
+    "pronunciation": "예 쏘아임웨이링포런 엘러베이터",
+    "translation": "그래 그래서 나는 엘리베이터를 기다리고 있었어",
+    "index": 25
+  },
+  {
+    "index": 26,
     "start": 96.72,
     "end": 100.89,
     "text": "hey rach can i borrow your eyelash curler i think i lost mine",
@@ -1078,10 +1082,10 @@
     "end": 128.08,
     "pronunciation": "예스 예스",
     "translation": "그래 오 예스 예스",
-    "index": 26
+    "index": 27
   },
   {
-    "index": 27,
+    "index": 28,
     "start": 128.08,
     "end": 131.92,
     "text": "you and and you",
@@ -1111,9 +1115,9 @@
     ]
   },
   {
-    "index": 28,
+    "index": 29,
     "start": 131.92,
-    "end": 134,
+    "end": 134.1,
     "text": "yes but you cannot tell anyone no one knows",
     "pronunciation": "예스 벗유 캐낫텔애니원 노원노우즈",
     "translation": "그래, 하지만 아무에게도 말하면 안 돼, 아무도 어떻게 하는지",
@@ -1143,10 +1147,10 @@
   {
     "text": "how when it happened in london in london",
     "start": 134.4,
-    "end": 142,
+    "end": 139.1,
     "pronunciation": "하우 웬 잇 해쁜인 런던 인 런던",
     "translation": "몰라 그것이 언제 일어났는지, 런던에서, 런던에서",
-    "index": 29,
+    "index": 30,
     "notes": [
       {
         "word": "when it",
@@ -1166,7 +1170,7 @@
     ]
   },
   {
-    "index": 30,
+    "index": 31,
     "start": 142,
     "end": 143.76,
     "text": "the reason we didn't tell anyone was",
@@ -1211,7 +1215,7 @@
     ]
   },
   {
-    "index": 31,
+    "index": 32,
     "start": 143.76,
     "end": 145.84,
     "text": "because we didn't want to make a big deal out of it",
@@ -1266,9 +1270,9 @@
     ]
   },
   {
-    "index": 32,
+    "index": 33,
     "start": 145.84,
-    "end": 151.36,
+    "end": 151.44,
     "text": "but it is a big deal i have to tell someone",
     "pronunciation": "벗잇이즈어빅딜 아이햅투텔 썸원",
     "translation": "하지만 이건 큰 일이야, 누군가한테 말해야 해",
@@ -1291,12 +1295,12 @@
     ]
   },
   {
-    "index": 33,
+    "index": 34,
     "start": 151.44,
-    "end": 155.6,
-    "text": "you can't please please we just don't want to deal with telling everyone okay",
-    "pronunciation": "유캔트 플리즈플리즈 위저스트 돈원투딜윗 텔링에브리원 오케이",
-    "translation": "넌 안 돼 제발 제발 우리는 그냥 안 돼 모두한테 말하는 거 피하고 싶어 알겠지",
+    "end": 153.33,
+    "text": "you can't please please",
+    "pronunciation": "유캔트 플리즈플리즈",
+    "translation": "넌 안 돼 제발 제발",
     "notes": [
       {
         "word": "can't",
@@ -1311,7 +1315,15 @@
     ]
   },
   {
-    "index": 34,
+    "text": "we just don't want to deal with telling everyone okay",
+    "start": 153.33,
+    "end": 155.6,
+    "pronunciation": "위저스트 돈원투딜윗 텔링에브리원 오케이",
+    "translation": "우리는 그냥 안 돼 모두한테 말하는 거 피하고 싶어 알겠지",
+    "index": 35
+  },
+  {
+    "index": 36,
     "start": 155.6,
     "end": 164.4,
     "text": "please just promise you won't tell all right",
@@ -1331,7 +1343,7 @@
     ]
   },
   {
-    "index": 35,
+    "index": 37,
     "start": 164.88,
     "end": 171.44,
     "text": "man this is unbelievable i mean it's great but",
@@ -1356,7 +1368,7 @@
     ]
   },
   {
-    "index": 36,
+    "index": 38,
     "start": 171.44,
     "end": 177.68,
     "text": "i know it's great oh i don't want to see that",
@@ -1381,7 +1393,7 @@
     ]
   },
   {
-    "index": 37,
+    "index": 39,
     "start": 179.84,
     "end": 184.24,
     "text": "we're so stupid do you know what's going on in there",
@@ -1411,9 +1423,9 @@
     ]
   },
   {
-    "index": 38,
+    "index": 40,
     "start": 184.24,
-    "end": 187.6,
+    "end": 191.44,
     "text": "they're trying to take joey",
     "pronunciation": "데어트라이너 테잌조이",
     "translation": "그들이 조이를 데려가려고 해",
@@ -1426,12 +1438,12 @@
     ]
   },
   {
-    "index": 39,
+    "index": 41,
     "start": 191.44,
-    "end": 196.24,
-    "text": "i can't wait to be with you i'll sneak over as soon as ross picks up ben",
-    "pronunciation": "아이캔 웨잇투비윗유 아일스닉오우버애 즈순애즈 로스픽섭벤",
-    "translation": "너와 있고 싶어 난 몰래 가 로스가 벤을 픽업하자마자 가",
+    "end": 193.27,
+    "text": "i can't wait to be with you",
+    "pronunciation": "아이캔 웨잇투 비윗유",
+    "translation": "너와 있고 싶어 난",
     "notes": [
       {
         "word": "sneak",
@@ -1446,12 +1458,20 @@
     ]
   },
   {
-    "index": 40,
+    "text": "i'll sneak over as soon as ross picks up ben",
+    "start": 193.27,
+    "end": 196.24,
+    "pronunciation": "아일 스닠오우버즈 순애즈 로스 픽섭벤",
+    "translation": "몰래 가 로스가 벤을 픽업하자마자 가",
+    "index": 42
+  },
+  {
+    "index": 43,
     "start": 196.24,
-    "end": 200.08,
-    "text": "i'll just tell rachel i'm going to be doing laundry for a couple hours laundry huh",
-    "pronunciation": "아일저스텔 레이첼 아임고너비두잉 론드리 포어커플아워즈 론드리 허",
-    "translation": "난 그냥 레이첼한테 말할 거야 몇 시간 동안 빨래하기, 빨래라고?",
+    "end": 199.06,
+    "text": "i'll just tell rachel i'm going to be doing laundry for a couple hours",
+    "pronunciation": "아일저스텔 레이첼 아임고너비두잉 론드리 포어커플아워즈",
+    "translation": "난 그냥 레이첼한테 말할 거야 몇 시간 동안 빨래하기,",
     "notes": [
       {
         "word": "tell",
@@ -1481,12 +1501,12 @@
     ]
   },
   {
-    "index": 41,
-    "start": 200.08,
+    "text": "laundry huh is that my new nickname",
+    "start": 199.06,
     "end": 203.04,
-    "text": "is that my new nickname",
-    "pronunciation": "이즈댓마이 뉴닉네임",
-    "translation": "그게 내 새 별명이야",
+    "pronunciation": "론드리 허 이즈댓마이 뉴닉네임",
+    "translation": "빨래라고? 그게 내 새 별명이야",
+    "index": 44,
     "notes": [
       {
         "word": "nickname",
@@ -1496,7 +1516,7 @@
     ]
   },
   {
-    "index": 42,
+    "index": 45,
     "start": 204.4,
     "end": 215.64,
     "text": "ah you know what your nickname is mr big",
@@ -1521,7 +1541,7 @@
     ]
   },
   {
-    "index": 43,
+    "index": 46,
     "start": 216.88,
     "end": 220.96,
     "text": "i can't believe he thinks i'm a cowboy",
@@ -1536,7 +1556,7 @@
     ]
   },
   {
-    "index": 44,
+    "index": 47,
     "start": 221.12,
     "end": 227.84,
     "text": "i would make a good cowboy",
@@ -1551,12 +1571,12 @@
     ]
   },
   {
-    "index": 45,
+    "index": 48,
     "start": 228.96,
-    "end": 232.64,
-    "text": "okay now that everything's wrapped up here i think i'm i'm gonna go do my laundry",
-    "pronunciation": "오케이 나우댓 에브리싱즈 랩트업 히어아이씽크아임 아임고두마이 론드리",
-    "translation": "좋아 이제 모든 게 끝났으니까 자 나는 내 빨래하러 갈 것 같아",
+    "end": 231.44,
+    "text": "okay now that everything's wrapped up here i think i'm",
+    "pronunciation": "오케이 나우댓 에브리싱즈 랩트업 히어아이씽크아임",
+    "translation": "좋아 이제 모든 게 끝났으니까 자 나는 내",
     "notes": [
       {
         "word": "wrapped up",
@@ -1586,11 +1606,19 @@
     ]
   },
   {
-    "index": 46,
+    "text": "i'm gonna go do my laundry",
+    "start": 231.44,
+    "end": 232.64,
+    "pronunciation": "아임고두 마이 론드리",
+    "translation": "빨래하러 갈 것 같아",
+    "index": 49
+  },
+  {
+    "index": 50,
     "start": 232.64,
     "end": 241.76,
     "text": "miami too you know if this shirt is dirty yep",
-    "pronunciation": "아이미투 유노이프디스 셔츠이즈더티 옙",
+    "pronunciation": "아이미투 유노잎디스 셔츠이즈더티 옙",
     "translation": "마이애미도, 있잖아 이 셔츠가 더러우면, 응",
     "notes": [
       {
@@ -1621,28 +1649,18 @@
     ]
   },
   {
-    "index": 47,
+    "index": 51,
     "start": 241.76,
-    "end": 244.4,
-    "text": "okay i'm gonna go too i'm gonna go to",
-    "pronunciation": "오케이 아임거나고우투 거나거투비",
-    "translation": "좋아 난 갈 거야 난",
+    "end": 245.1,
+    "text": "okay i'm gonna go too i'm gonna go to the airport",
+    "pronunciation": "오케이 아임거나고우투 거나거투비 디 에어포트",
+    "translation": "좋아 난 갈 거야 난 공항으로 내가",
     "notes": [
       {
         "word": "gonna",
         "actual": "궁나",
         "meaning": "~할 거야"
-      }
-    ]
-  },
-  {
-    "index": 48,
-    "start": 244.4,
-    "end": 246.24,
-    "text": "the airport i figure if i hang around",
-    "pronunciation": "디 에어포트 아이피겨 이프아이 행 어라운드",
-    "translation": "공항으로 내가 생각하길 내가 주변에 있으면",
-    "notes": [
+      },
       {
         "word": "airport",
         "actual": "에어포트",
@@ -1651,12 +1669,12 @@
     ]
   },
   {
-    "index": 49,
-    "start": 246.24,
-    "end": 247.6,
-    "text": "there long enough someone's bound to",
-    "pronunciation": "데어 롱이넢 섬원즈 바운드 투",
-    "translation": "충분히 오래 있으면 누군가는 틀림없이",
+    "text": "i figure if i hang around there long enough",
+    "start": 245.1,
+    "end": 246.9,
+    "pronunciation": "아이피겨 이프아이 행 어라운드 데어 롱이넢",
+    "translation": "생각하길 내가 주변에 있으면 충분히 오래",
+    "index": 52,
     "notes": [
       {
         "word": "bound",
@@ -1666,12 +1684,12 @@
     ]
   },
   {
-    "index": 50,
-    "start": 247.6,
+    "text": "someone's bound to leave one of those planes unattended",
+    "start": 247,
     "end": 251.12,
-    "text": "leave one of those planes unattended",
-    "pronunciation": "리브 원어도우즈 플레인즈 어넷텐디드",
-    "translation": "저 비행기들 중 하나를 무인으로 둘 거야",
+    "pronunciation": "섬원즈 바운즈두립 원어도우즈 플레인즈 어넷 텐디드",
+    "translation": "있으면 누군가는 틀림없이 저 비행기들 중 하나를 무인으로 둘 거야",
+    "index": 53,
     "notes": [
       {
         "word": "planes",
@@ -1681,8 +1699,8 @@
     ]
   },
   {
-    "index": 51,
-    "start": 251.36,
+    "index": 54,
+    "start": 251.12,
     "end": 255.84,
     "text": "good luck honey bye",
     "pronunciation": "굿 럭 허니 바이",
@@ -1696,9 +1714,9 @@
     ]
   },
   {
-    "index": 52,
+    "index": 55,
     "start": 257.36,
-    "end": 264.64,
+    "end": 260.84,
     "text": "hey uh joey remember that big thing i was gonna tell you about",
     "pronunciation": "헤이 어 조이 리멤버댓빅싱 아이워즈고나 텔유 어바웃",
     "translation": "이봐 조이 저 큰 일 기억해 내가 너한테 얘기하려던",
@@ -1716,7 +1734,7 @@
     ]
   },
   {
-    "index": 53,
+    "index": 56,
     "start": 264.64,
     "end": 267.91,
     "text": "i'm not gonna tell you but if you found out on your own that",
@@ -1744,9 +1762,9 @@
     "text": "would be okay and then we could talk about it right",
     "start": 267.91,
     "end": 270.9,
-    "pronunciation": "댓우드비 오케이 앤드덴위쿠드 톡어바웃잇 라잇",
+    "pronunciation": "댓우드비 오케이 앤덴위쿠 톡어바웃잇 라잇",
     "translation": "그럼 괜찮고 그러면 우리는 얘기할 수 있지 그런데",
-    "index": 54,
+    "index": 57,
     "notes": [
       {
         "word": "talk",
@@ -1759,9 +1777,9 @@
     "text": "well then it wouldn't be a secret",
     "start": 270.9,
     "end": 272.96,
-    "pronunciation": "웰 덴 잇운비 어 씨크릿",
+    "pronunciation": "웰덴 이운비어 씨크릿",
     "translation": "그럼 그건 비밀이 아니지",
-    "index": 55,
+    "index": 58,
     "notes": [
       {
         "word": "secret",
@@ -1771,11 +1789,11 @@
     ]
   },
   {
-    "index": 56,
+    "index": 59,
     "start": 272.96,
     "end": 279.12,
     "text": "so yeah that would be okay yeah yeah yeah why",
-    "pronunciation": "소 예 댓우드 비 오케이 예예 예 와이",
+    "pronunciation": "소예 댓우 비오케이 예예 예 와이",
     "translation": "그래서 응 그거 괜찮을 거야, 응 응 응 왜",
     "notes": [
       {
@@ -1801,7 +1819,7 @@
     ]
   },
   {
-    "index": 57,
+    "index": 60,
     "start": 279.12,
     "end": 282.64,
     "text": "hey joe would you mind going over into chandler's bedroom and getting that book",
@@ -1821,7 +1839,7 @@
     ]
   },
   {
-    "index": 58,
+    "index": 61,
     "start": 282.64,
     "end": 288.24,
     "text": "back that he uh barred from me",
@@ -1836,7 +1854,7 @@
     ]
   },
   {
-    "index": 59,
+    "index": 62,
     "start": 288.24,
     "end": 292.08,
     "text": "now you want me to go over there now",
@@ -1851,7 +1869,7 @@
     ]
   },
   {
-    "index": 60,
+    "index": 63,
     "start": 293.12,
     "end": 296.72,
     "text": "do you know something do you know something",
@@ -1871,7 +1889,7 @@
     ]
   },
   {
-    "index": 61,
+    "index": 64,
     "start": 296.72,
     "end": 300,
     "text": "i might know something i might know something too",
@@ -1896,12 +1914,12 @@
     ]
   },
   {
-    "index": 62,
+    "index": 65,
     "start": 300,
-    "end": 302.48,
-    "text": "what's the thing you know oh no i can't tell you and she tell me what you know i",
-    "pronunciation": "왓츠더띵 유노우 오우노우 아이캔트텔유 언틸텔미왓 유노우",
-    "translation": "넌 뭘 아니 안 돼 난 못 말해 말할 수 없어 그리고 그녀 말해줘 넌 뭘 아니",
+    "end": 300.78,
+    "text": "what's the thing you know",
+    "pronunciation": "왓츠더띵 유노우",
+    "translation": "넌 뭘 아니 안 돼",
     "notes": [
       {
         "word": "what's the thing you know",
@@ -1916,12 +1934,20 @@
     ]
   },
   {
-    "index": 63,
+    "text": "oh no i can't tell you and she tell me what you know i",
+    "start": 300.78,
+    "end": 302.18,
+    "pronunciation": "오우노우 아이캔트텔유 언틸텔미왓 유노우",
+    "translation": "난 못 말해 말할 수 없어 그리고 그녀 말해줘 넌 뭘 아니",
+    "index": 66
+  },
+  {
+    "index": 67,
     "start": 302.48,
-    "end": 303.52,
-    "text": "can't tell you what i know well then i",
-    "pronunciation": "아캔트텔유왓 아이노우 웰덴아이",
-    "translation": "못 말해 내가 알 거 글쎄 그럼 나",
+    "end": 303.21,
+    "text": "can't tell you what i know",
+    "pronunciation": "아캔트텔유왓 아이노우",
+    "translation": "못 말해 내가 알 거 글쎄",
     "notes": [
       {
         "word": "can't tell you",
@@ -1931,27 +1957,35 @@
     ]
   },
   {
-    "index": 64,
-    "start": 303.52,
+    "text": "well then i can't tell you what i know",
+    "start": 303.21,
+    "end": 304.3,
+    "pronunciation": "웰덴아이 아캔트텔유 왓아이노우",
+    "translation": "그럼 나 못 말해 내가 알 거",
+    "index": 68,
+    "notes": [
+      {
+        "word": "can't tell you",
+        "actual": "캔트 텔 유",
+        "meaning": "말할 수 없어"
+      }
+    ]
+  },
+  {
+    "text": "okay fine",
+    "start": 309.7,
     "end": 311.84,
-    "text": "can't tell you what i know okay fine",
-    "pronunciation": "아캔트텔유 왓아이노우 오우케이 파인",
-    "translation": "못 말해 내가 알 거 알았어 좋아",
-    "notes": [
-      {
-        "word": "can't tell you",
-        "actual": "캔트 텔 유",
-        "meaning": "말할 수 없어"
-      }
-    ]
+    "pronunciation": "파인",
+    "translation": "알았어 좋아",
+    "index": 69
   },
   {
-    "index": 65,
+    "index": 70,
     "start": 314,
-    "end": 317.52,
-    "text": "you don't know all right how about i go",
-    "pronunciation": "유돈트노우 올라잇 하우어바웃 아이고우",
-    "translation": "넌 모르지 좋아 어때 내가 가",
+    "end": 315.3,
+    "text": "you don't know",
+    "pronunciation": "유돈트노우",
+    "translation": "넌 모르지",
     "notes": [
       {
         "word": "you don't know",
@@ -1961,12 +1995,12 @@
     ]
   },
   {
-    "index": 66,
-    "start": 317.52,
-    "end": 319.92,
-    "text": "over there and i will walk into chandler's bedroom and i will see the",
-    "pronunciation": "오우버데어앤 아이윌 워크인투 챈들러즈베드룸앤 아이윌씨더",
-    "translation": "저기 그리고 나 들어가 챈들러 침실이고 나 볼 거야",
+    "text": "all right how about i go over there",
+    "start": 316.2,
+    "end": 317.87,
+    "pronunciation": "올라잇 하우어바웃 아이고우 오우버데어",
+    "translation": "좋아 어때 내가 가 저기",
+    "index": 71,
     "notes": [
       {
         "word": "over there",
@@ -1981,12 +2015,20 @@
     ]
   },
   {
-    "index": 67,
-    "start": 319.92,
+    "text": "and i will walk into chandler's bedroom and",
+    "start": 317.87,
+    "end": 319.42,
+    "pronunciation": "앤아이윌 워크인투 챈들러즈베드룸앤",
+    "translation": "그리고 나 들어가 챈들러 침실이고 나",
+    "index": 72
+  },
+  {
+    "text": "i will see the thing that i think that i know is",
+    "start": 319.42,
     "end": 320.88,
-    "text": "thing that i think that i know is",
-    "pronunciation": "띵댓아이 띵크댓아이 노우이즈",
-    "translation": "내가 생각하는 그 것 내가 아는 그건",
+    "pronunciation": "아이윌씨더 띵댓아이 띵크댓아이 노우이즈",
+    "translation": "볼 거야 내가 생각하는 그 것 내가 아는 그건",
+    "index": 73,
     "notes": [
       {
         "word": "thing that i think",
@@ -1996,7 +2038,7 @@
     ]
   },
   {
-    "index": 68,
+    "index": 74,
     "start": 320.88,
     "end": 324.08,
     "text": "actually the thing that i think that i know",
@@ -2021,7 +2063,7 @@
     ]
   },
   {
-    "index": 69,
+    "index": 75,
     "start": 324.08,
     "end": 327.12,
     "text": "you know and you know yeah i know",
@@ -2036,7 +2078,7 @@
     ]
   },
   {
-    "index": 70,
+    "index": 76,
     "start": 327.12,
     "end": 330.32,
     "text": "she'll learn monica oh this is unbelievable",
@@ -2061,7 +2103,7 @@
     ]
   },
   {
-    "index": 71,
+    "index": 77,
     "start": 330.32,
     "end": 332.64,
     "text": "how long have you known too long oh my",
@@ -2076,7 +2118,7 @@
     ]
   },
   {
-    "index": 72,
+    "index": 78,
     "start": 332.64,
     "end": 336.48,
     "text": "god rach i've been dying to talk to someone about this for so long",
@@ -2096,9 +2138,9 @@
     ]
   },
   {
-    "index": 73,
+    "index": 79,
     "start": 336.48,
-    "end": 342.32,
+    "end": 340.52,
     "text": "listen you can't say anything to anybody they're so weird about that listen",
     "pronunciation": "리슨 유캔트 세이에니씽느 에니바디데어 소우위어드 어바웃댓 리슨",
     "translation": "들어 넌 아무도한테 말할 수 없어 그들 그것에 대해 정말 이상해 들어",
@@ -2116,7 +2158,7 @@
     ]
   },
   {
-    "index": 74,
+    "index": 80,
     "start": 342.88,
     "end": 348.48,
     "text": "hey it's raining and i like to fly in the rain so",
@@ -2141,7 +2183,7 @@
     ]
   },
   {
-    "index": 75,
+    "index": 81,
     "start": 349.76,
     "end": 353.44,
     "text": "oh i am gonna go for a walk in the rain",
@@ -2156,7 +2198,7 @@
     ]
   },
   {
-    "index": 76,
+    "index": 82,
     "start": 353.44,
     "end": 358.62,
     "text": "oh yeah me too",
@@ -2171,7 +2213,7 @@
     ]
   },
   {
-    "index": 77,
+    "index": 83,
     "start": 359.44,
     "end": 367.6,
     "text": "it's weird i bet they're doing it",
@@ -2186,7 +2228,7 @@
     ]
   },
   {
-    "index": 78,
+    "index": 84,
     "start": 367.6,
     "end": 370.72,
     "text": "my god i love this apartment",
@@ -2201,12 +2243,12 @@
     ]
   },
   {
-    "index": 79,
+    "index": 85,
     "start": 370.72,
-    "end": 374.4,
-    "text": "isn't it perfect i can't believe i never realized how how",
-    "pronunciation": "이즌릿퍼펙 아이캔빌리브 아이네버 리얼라이즈드 하우 하우",
-    "translation": "완벽하지 않아? 난 어떻게 그걸 깨닫지 못했는지 믿을 수 없어",
+    "end": 373.74,
+    "text": "isn't it perfect i can't believe i never realized",
+    "pronunciation": "이즌릿퍼펙 아이캔빌리브 아이네버 리얼라이즈드",
+    "translation": "완벽하지 않아? 난 어떻게 그걸 깨닫지 못했는지 믿을 수",
     "notes": [
       {
         "word": "isn't it",
@@ -2231,12 +2273,12 @@
     ]
   },
   {
-    "index": 80,
-    "start": 374.4,
+    "text": "how how great it is well that is because your",
+    "start": 373.94,
     "end": 376.64,
-    "text": "great it is well that is because your",
-    "pronunciation": "그레이트잇이즈 웰 댓이즈 비코즈유어",
-    "translation": "멋진 그거야 글쎄 그게 이유는 너의",
+    "pronunciation": "하우하우 그레이트잇이즈 웰 댓이즈 비코즈유어",
+    "translation": "없어 멋진 그거야 글쎄 그게 이유는 너의",
+    "index": 86,
     "notes": [
       {
         "word": "great it is",
@@ -2246,12 +2288,12 @@
     ]
   },
   {
-    "index": 81,
+    "index": 87,
     "start": 376.64,
-    "end": 381.2,
-    "text": "eye immediately goes to the big naked man it's amazing",
-    "pronunciation": "아이 이미디얼리 고우즈투더 빅네이킷맨 잇츠 어메이징",
-    "translation": "시선이 즉시 그 벌거벗은 큰 남자에게 가 놀라워",
+    "end": 380.17,
+    "text": "eye immediately goes to the big naked man",
+    "pronunciation": "아이 이미디얼리 고우즈투더 빅네이킷맨 잇츠",
+    "translation": "시선이 즉시 그 벌거벗은 큰 남자에게",
     "notes": [
       {
         "word": "eye immediately",
@@ -2271,11 +2313,19 @@
     ]
   },
   {
-    "index": 82,
+    "text": "it's amazing",
+    "start": 380.17,
+    "end": 381.2,
+    "pronunciation": "어메이징",
+    "translation": "가 놀라워",
+    "index": 88
+  },
+  {
+    "index": 89,
     "start": 381.2,
     "end": 386.48,
     "text": "you better hurry up and fill out an application or i'm gonna beat you to it oh",
-    "pronunciation": "유베터허리업 앤필라언 애플리케이션 오어 아임거너 빗유투잇 오",
+    "pronunciation": "유베러 허리업 앤필라언 애플리케이션 오어 암거너 빗유 투잇 오",
     "translation": "넌 빨리 해야 해 그리고 작성하고 지원서 아니면 내가 먼저 할 거야 오",
     "notes": [
       {
@@ -2301,11 +2351,11 @@
     ]
   },
   {
-    "index": 83,
+    "index": 90,
     "start": 389.36,
     "end": 391.04,
     "text": "well i never thought i'd say this but",
-    "pronunciation": "웰 아이네버 쏫아이드 세이디스 벗",
+    "pronunciation": "웰 아이네버 쏫아읻 세이디스 벗",
     "translation": "글쎄 나 절대 생각 못했어 난 말할",
     "notes": [
       {
@@ -2316,11 +2366,11 @@
     ]
   },
   {
-    "index": 84,
+    "index": 91,
     "start": 391.04,
     "end": 395.84,
     "text": "i'm gonna go use ugly naked guy's bathroom",
-    "pronunciation": "아임거너 고우유즈 어글리네이킷 가이즈배쓰룸",
+    "pronunciation": "암거너 고우유즈 어글리 네이킷가이즈 배쓰룸",
     "translation": "난 못생긴 벌거벗은 남자의 화장실을 쓸 거야",
     "notes": [
       {
@@ -2341,11 +2391,11 @@
     ]
   },
   {
-    "index": 85,
+    "index": 92,
     "start": 397.52,
     "end": 400.72,
     "text": "oh look there's there's monica and chandler hey",
-    "pronunciation": "오 룩 데어즈 데어즈 모니카 앤 챈들러 헤이",
+    "pronunciation": "오룩 데어즈 데어즈 모니카 앤 챈들러 헤이",
     "translation": "오 봐 저기 모니카와 챈들러가 있어 헤이",
     "notes": [
       {
@@ -2366,7 +2416,7 @@
     ]
   },
   {
-    "index": 86,
+    "index": 93,
     "start": 400.72,
     "end": 425.18,
     "text": "hey you guys hey oh",
@@ -2391,28 +2441,18 @@
     ]
   },
   {
-    "index": 87,
+    "index": 94,
     "start": 430.08,
-    "end": 432,
-    "text": "yes i know and joey knows but ross",
-    "pronunciation": "예스 아이 노우 앤드 조이 노우즈 벗 로스",
-    "translation": "응 나 알아 그리고 조이 알아 하지만 로스",
+    "end": 431.76,
+    "text": "yes i know and joey knows but",
+    "pronunciation": "예스 아이 노우 앤 조이 노우즈벗",
+    "translation": "응 나 알아 그리고 조이 알아",
     "notes": [
       {
         "word": "I know and Joey knows",
         "actual": "아이 노우 앤드 조이 노우즈",
         "meaning": "나 알고 조이도 알아"
-      }
-    ]
-  },
-  {
-    "index": 88,
-    "start": 432,
-    "end": 437.12,
-    "text": "doesn't know so you have to stop screaming hey what's",
-    "pronunciation": "더즌노우 소유 해프투스탑 스크리밍 헤이 왓츠 고인온",
-    "translation": "모르니까 소리 지르는 걸 멈춰야 해 헤이 뭐야",
-    "notes": [
+      },
       {
         "word": "doesn't know",
         "actual": "더즌 노우",
@@ -2431,12 +2471,20 @@
     ]
   },
   {
-    "index": 89,
-    "start": 443.68,
-    "end": 451.84,
-    "text": "actually it looks really good",
-    "pronunciation": "액추얼리 잇 룩스 릴리 굿",
-    "translation": "사실 그거 정말 좋아 보여",
+    "text": "ross doesn't know so you have to stop screaming",
+    "start": 431.66,
+    "end": 433.96,
+    "pronunciation": "로스 더즌노우 소유 해프투스탑 스크리밍",
+    "translation": "하지만 로스 모르니까 소리 지르는 걸 멈춰야 해",
+    "index": 95
+  },
+  {
+    "text": "hey what's actually it looks really good",
+    "start": 442.96,
+    "end": 444.94,
+    "pronunciation": " 액추얼리 잇 룩스 릴리 굿",
+    "translation": "헤이 뭐야 사실 그거 정말 좋아 보여",
+    "index": 96,
     "notes": [
       {
         "word": "it looks really good",
