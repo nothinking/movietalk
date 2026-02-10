@@ -725,6 +725,11 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
       studyIndexRef.current = newIdx;
       setStudyIndex(newIdx);
       setHash(video.id, result.subtitles[newIdx].index, false, "study");
+      // 반복 재생 중이면 합쳐진 자막 타이밍으로 업데이트
+      if (loopTargetRef.current) {
+        const newSub = result.subtitles[newIdx];
+        loopTargetRef.current = { start: newSub.start, end: newSub.end };
+      }
     } catch (err) {
       alert("합치기 실패: " + err.message);
     } finally {
@@ -760,6 +765,11 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
       const result = await res.json();
       if (onMergeSubtitles) onMergeSubtitles(result.subtitles);
       setHash(video.id, result.subtitles[studyIndexRef.current].index, false, "study");
+      // 반복 재생 중이면 분리된 자막 타이밍으로 업데이트
+      if (loopTargetRef.current) {
+        const newSub = result.subtitles[studyIndexRef.current];
+        loopTargetRef.current = { start: newSub.start, end: newSub.end };
+      }
     } catch (err) {
       alert("분리 실패: " + err.message);
     } finally {
