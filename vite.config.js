@@ -202,7 +202,7 @@ function subtitleEditPlugin() {
 }
 
 export default defineConfig({
-  base: '/movietalk/',
+  base: process.env.VITE_BASE_PATH || '/',
   plugins: [react(), subtitleEditPlugin()],
   server: {
     host: true,
