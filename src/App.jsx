@@ -6,6 +6,12 @@ import {
   getUserSubtitles,
   saveUserSubtitles,
   resetUserSubtitles,
+  getSavedExpressions,
+  addSavedExpression,
+  removeSavedExpression,
+  getFavoriteVideos,
+  addFavoriteVideo,
+  removeFavoriteVideo,
 } from "./lib/supabase";
 
 const PlayIcon = () => (
@@ -33,7 +39,7 @@ const SkipForwardIcon = () => (
 );
 
 // ── Video List Screen ──
-function VideoListScreen({ videos, onSelect }) {
+function VideoListScreen({ videos, onSelect, favoriteIds, onToggleFavorite, user }) {
   const formatDuration = (sec) => {
     if (!sec) return "";
     const m = Math.floor(sec / 60);
@@ -66,7 +72,13 @@ function VideoListScreen({ videos, onSelect }) {
       </div>
 
       <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-        {videos.map((video) => (
+        {[...videos].sort((a, b) => {
+          const aFav = favoriteIds.includes(a.id) ? 0 : 1;
+          const bFav = favoriteIds.includes(b.id) ? 0 : 1;
+          return aFav - bFav;
+        }).map((video) => {
+          const isFav = favoriteIds.includes(video.id);
+          return (
           <div
             key={video.id}
             onClick={() => onSelect(video)}
@@ -75,15 +87,15 @@ function VideoListScreen({ videos, onSelect }) {
               borderRadius: "14px",
               padding: "20px",
               cursor: "pointer",
-              border: "1px solid #1a1a2e",
+              border: isFav ? "1px solid #fbbf24" : "1px solid #1a1a2e",
               transition: "all 0.2s",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "#6366f1";
+              e.currentTarget.style.borderColor = isFav ? "#fcd34d" : "#6366f1";
               e.currentTarget.style.background = "#15151f";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "#1a1a2e";
+              e.currentTarget.style.borderColor = isFav ? "#fbbf24" : "#1a1a2e";
               e.currentTarget.style.background = "#111118";
             }}
           >
@@ -94,7 +106,7 @@ function VideoListScreen({ videos, onSelect }) {
                 alignItems: "center",
               }}
             >
-              {/* Thumbnail placeholder */}
+              {/* Thumbnail */}
               <div
                 style={{
                   width: "120px",
@@ -125,19 +137,49 @@ function VideoListScreen({ videos, onSelect }) {
               <div style={{ flex: 1, minWidth: 0 }}>
                 <div
                   style={{
-                    fontSize: "15px",
-                    fontWeight: "600",
-                    color: "#e8e8ed",
-                    marginBottom: "6px",
-                    lineHeight: "1.4",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    display: "-webkit-box",
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: "vertical",
+                    display: "flex",
+                    alignItems: "flex-start",
+                    gap: "8px",
                   }}
                 >
-                  {video.title}
+                  <div
+                    style={{
+                      flex: 1,
+                      fontSize: "15px",
+                      fontWeight: "600",
+                      color: "#e8e8ed",
+                      marginBottom: "6px",
+                      lineHeight: "1.4",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                      display: "-webkit-box",
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: "vertical",
+                    }}
+                  >
+                    {video.title}
+                  </div>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (user && supabase) {
+                        onToggleFavorite(video.id);
+                      }
+                    }}
+                    style={{
+                      background: "none",
+                      border: "none",
+                      cursor: user ? "pointer" : "default",
+                      fontSize: "20px",
+                      padding: "2px",
+                      flexShrink: 0,
+                      lineHeight: 1,
+                      color: isFav ? "#fbbf24" : "#555",
+                      transition: "color 0.2s",
+                    }}
+                  >
+                    {isFav ? "★" : "☆"}
+                  </button>
                 </div>
                 <div style={{ fontSize: "12px", color: "#888", marginBottom: "6px" }}>
                   {video.channel}
@@ -177,7 +219,8 @@ function VideoListScreen({ videos, onSelect }) {
               </div>
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
 
       {/* Add video hint */}
@@ -212,7 +255,7 @@ function VideoListScreen({ videos, onSelect }) {
 }
 
 // ── Player Screen ──
-function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubtitles, initialSubIndex, initialMode, user, saveToSupabase, onResetToBase }) {
+function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubtitles, initialSubIndex, initialMode, user, saveToSupabase, onResetToBase, showSaved, savedExpressions, setSavedExpressions }) {
   const playerRef = useRef(null);
   const playerInstanceRef = useRef(null);
   const [playerReady, setPlayerReady] = useState(false);
@@ -221,8 +264,6 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   const [showPanel, setShowPanel] = useState(false);
   const [currentSubtitle, setCurrentSubtitle] = useState(null);
   const [expandedNote, setExpandedNote] = useState(null);
-  const [savedExpressions, setSavedExpressions] = useState([]);
-  const [showSaved, setShowSaved] = useState(false);
   const [speed, setSpeed] = useState(1);
   const pollIntervalRef = useRef(null);
   const loopTargetRef = useRef(null);
@@ -558,16 +599,21 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
     return `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}`;
   };
 
-  const saveExpression = (note) => {
-    if (!savedExpressions.find((e) => e.word === note.word)) {
-      setSavedExpressions((prev) => [
-        ...prev,
-        {
-          ...note,
-          sentence: currentSubtitle?.text || activeSubtitle?.text,
-        },
-      ]);
+  const saveExpression = async (note) => {
+    const sentence = currentSubtitle?.text || activeSubtitle?.text;
+    if (savedExpressions.find((e) => e.word === note.word && e.video_id === video.id)) return;
+    const expr = { ...note, sentence, video_id: video.id };
+    // DB 저장 (로그인 시)
+    if (user && supabase) {
+      const { data, error } = await addSavedExpression(video.id, expr);
+      if (!error && data) {
+        setSavedExpressions((prev) => [data, ...prev]);
+        return;
+      }
+      if (error) console.error("표현 저장 실패:", error.message);
     }
+    // 비로그인 또는 DB 실패 시 로컬 state만
+    setSavedExpressions((prev) => [expr, ...prev]);
   };
 
   // 문장 이동/반복 함수 (키보드 + 모바일 버튼 공용)
@@ -1038,11 +1084,15 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                       </span>
                     </div>
                     <button
-                      onClick={() =>
+                      onClick={async () => {
+                        if (expr.id && user && supabase) {
+                          const { error } = await removeSavedExpression(expr.id);
+                          if (error) console.error("표현 삭제 실패:", error.message);
+                        }
                         setSavedExpressions((prev) =>
                           prev.filter((_, idx) => idx !== i)
-                        )
-                      }
+                        );
+                      }}
                       style={{
                         background: "none",
                         border: "none",
@@ -1464,12 +1514,12 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                           <button
                             onClick={(e) => { e.stopPropagation(); saveExpression(note); }}
                             style={{
-                              background: savedExpressions.find((e) => e.word === note.word) ? "#22c55e" : "#2a2a3e",
+                              background: savedExpressions.find((e) => e.word === note.word && e.video_id === video.id) ? "#22c55e" : "#2a2a3e",
                               border: "none", color: "white", padding: "4px 10px",
                               borderRadius: "6px", cursor: "pointer", fontSize: "12px",
                             }}
                           >
-                            {savedExpressions.find((e) => e.word === note.word) ? "✓" : "+"}
+                            {savedExpressions.find((e) => e.word === note.word && e.video_id === video.id) ? "✓" : "+"}
                           </button>
                         </div>
                         {expandedNote === i && (
@@ -2248,7 +2298,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                             }}
                             style={{
                               background: savedExpressions.find(
-                                (e) => e.word === note.word
+                                (e) => e.word === note.word && e.video_id === video.id
                               )
                                 ? "#22c55e"
                                 : "#2a2a3e",
@@ -2261,7 +2311,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                             }}
                           >
                             {savedExpressions.find(
-                              (e) => e.word === note.word
+                              (e) => e.word === note.word && e.video_id === video.id
                             )
                               ? "✓"
                               : "+"}
@@ -2497,6 +2547,8 @@ export default function MovieEnglishApp() {
   const [initialMode, setInitialMode] = useState(null);
   const [loading, setLoading] = useState(true);
   const [showSaved, setShowSaved] = useState(false);
+  const [savedExpressions, setSavedExpressions] = useState([]);
+  const [favoriteIds, setFavoriteIds] = useState([]);
   const [ytApiReady, setYtApiReady] = useState(false);
 
   // Auth 상태
@@ -2521,6 +2573,40 @@ export default function MovieEnglishApp() {
     });
     return () => subscription.unsubscribe();
   }, []);
+
+  // 로그인 시 저장한 표현 + 즐겨찾기 DB에서 로드
+  useEffect(() => {
+    if (!user || !supabase) {
+      if (!user) {
+        setSavedExpressions([]);
+        setFavoriteIds([]);
+      }
+      return;
+    }
+    getSavedExpressions().then((data) => setSavedExpressions(data));
+    getFavoriteVideos().then((ids) => setFavoriteIds(ids));
+  }, [user]);
+
+  // 즐겨찾기 토글
+  const handleToggleFavorite = useCallback(async (videoId) => {
+    if (!user || !supabase) return;
+    const isFav = favoriteIds.includes(videoId);
+    if (isFav) {
+      setFavoriteIds((prev) => prev.filter((id) => id !== videoId));
+      const { error } = await removeFavoriteVideo(videoId);
+      if (error) {
+        console.error("즐겨찾기 해제 실패:", error.message);
+        setFavoriteIds((prev) => [...prev, videoId]);
+      }
+    } else {
+      setFavoriteIds((prev) => [...prev, videoId]);
+      const { error } = await addFavoriteVideo(videoId);
+      if (error) {
+        console.error("즐겨찾기 추가 실패:", error.message);
+        setFavoriteIds((prev) => prev.filter((id) => id !== videoId));
+      }
+    }
+  }, [user, favoriteIds]);
 
   // 뒤로가기(popstate) 시 영상 목록으로 복귀
   useEffect(() => {
@@ -2907,7 +2993,7 @@ export default function MovieEnglishApp() {
 
       {/* Video list or Player */}
       {!loading && !selectedVideo && (
-        <VideoListScreen videos={videos} onSelect={handleSelectVideo} />
+        <VideoListScreen videos={videos} onSelect={handleSelectVideo} favoriteIds={favoriteIds} onToggleFavorite={handleToggleFavorite} user={user} />
       )}
 
       {!loading && selectedVideo && ytApiReady && (
@@ -2922,6 +3008,9 @@ export default function MovieEnglishApp() {
           user={user}
           saveToSupabase={saveToSupabase}
           onResetToBase={handleResetToBase}
+          showSaved={showSaved}
+          savedExpressions={savedExpressions}
+          setSavedExpressions={setSavedExpressions}
         />
       )}
     </div>

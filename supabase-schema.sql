@@ -38,6 +38,43 @@ CREATE POLICY "Users can update own subtitles" ON user_subtitles
 CREATE POLICY "Users can delete own subtitles" ON user_subtitles
   FOR DELETE USING (auth.uid() = user_id);
 
+-- 3. 저장한 표현 (사용자별 발음 표현 저장)
+CREATE TABLE saved_expressions (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE NOT NULL,
+  video_id TEXT NOT NULL,
+  word TEXT NOT NULL,
+  actual TEXT,
+  meaning TEXT,
+  sentence TEXT,
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  UNIQUE(user_id, video_id, word)
+);
+
+ALTER TABLE saved_expressions ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Users can view own expressions" ON saved_expressions
+  FOR SELECT USING (auth.uid() = user_id);
+CREATE POLICY "Users can insert own expressions" ON saved_expressions
+  FOR INSERT WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "Users can delete own expressions" ON saved_expressions
+  FOR DELETE USING (auth.uid() = user_id);
+
+-- 4. 즐겨찾기 영상 (별표)
+CREATE TABLE favorite_videos (
+  user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE NOT NULL,
+  video_id TEXT NOT NULL,
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  PRIMARY KEY(user_id, video_id)
+);
+
+ALTER TABLE favorite_videos ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Users can view own favorites" ON favorite_videos
+  FOR SELECT USING (auth.uid() = user_id);
+CREATE POLICY "Users can insert own favorites" ON favorite_videos
+  FOR INSERT WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "Users can delete own favorites" ON favorite_videos
+  FOR DELETE USING (auth.uid() = user_id);
+
 -- 신규 사용자 가입 시 프로필 자동 생성
 CREATE OR REPLACE FUNCTION handle_new_user()
 RETURNS trigger AS $$
