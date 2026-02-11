@@ -1,4 +1,12 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
+import {
+  supabase,
+  signInWithGoogle,
+  signOut,
+  getUserSubtitles,
+  saveUserSubtitles,
+  resetUserSubtitles,
+} from "./lib/supabase";
 
 const PlayIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -204,7 +212,7 @@ function VideoListScreen({ videos, onSelect }) {
 }
 
 // ── Player Screen ──
-function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubtitles, initialSubIndex, initialMode }) {
+function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubtitles, initialSubIndex, initialMode, user, saveToSupabase, onResetToBase }) {
   const playerRef = useRef(null);
   const playerInstanceRef = useRef(null);
   const [playerReady, setPlayerReady] = useState(false);
@@ -616,7 +624,11 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
     }
   };
 
+  // Supabase가 설정되어 있으면 로그인 필요
+  const canEdit = !supabase || !!user;
+
   const startEditing = () => {
+    if (!canEdit) return;
     if (studyModeRef.current) {
       const sub = subtitles[studyIndexRef.current];
       if (sub) {
@@ -656,44 +668,75 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   };
 
   const saveEdit = async () => {
-    const targetSub = studyModeRef.current ? subtitles[studyIndexRef.current] : currentSubtitle;
+    const targetIdx = studyModeRef.current ? studyIndexRef.current : subtitles.findIndex(s => s.index === currentSubtitle?.index);
+    const targetSub = subtitles[targetIdx];
     if (!targetSub) return;
     setIsSaving(true);
     isSavingRef.current = true;
     try {
-      const res = await fetch(
-        `/api/subtitle/${video.id}/${targetSub.index}`,
-        {
-          method: "PUT",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            pronunciation: editData.pronunciation,
-            translation: editData.translation,
-            start: parseFloat(editData.start),
-            end: parseFloat(editData.end),
-            linkAdjacent,
-          }),
+      if (user && supabase) {
+        // === Supabase 모드: 클라이언트에서 직접 수정 후 DB 저장 ===
+        const newSubs = [...subtitles];
+        const sub = { ...newSubs[targetIdx] };
+        sub.pronunciation = editData.pronunciation;
+        sub.translation = editData.translation;
+        sub.start = parseFloat(editData.start);
+        sub.end = parseFloat(editData.end);
+
+        // 인접 자막 시간 연동
+        const affected = [];
+        if (linkAdjacent) {
+          if (targetIdx > 0) {
+            newSubs[targetIdx - 1] = { ...newSubs[targetIdx - 1], end: sub.start };
+            affected.push(newSubs[targetIdx - 1]);
+          }
+          if (targetIdx < newSubs.length - 1) {
+            newSubs[targetIdx + 1] = { ...newSubs[targetIdx + 1], start: sub.end };
+            affected.push(newSubs[targetIdx + 1]);
+          }
         }
-      );
-      if (!res.ok) throw new Error("저장 실패");
-      const result = await res.json();
-      // 로컬 state 업데이트
-      if (onUpdateSubtitle) {
-        onUpdateSubtitle(result.subtitle);
-        // 인접 자막 시간도 로컬 state에 반영
-        if (result.affected) {
-          result.affected.forEach((s) => onUpdateSubtitle(s));
+        newSubs[targetIdx] = sub;
+
+        // Supabase 저장
+        await saveToSupabase(newSubs);
+
+        // 로컬 state 업데이트
+        if (onUpdateSubtitle) {
+          onUpdateSubtitle(sub);
+          affected.forEach((s) => onUpdateSubtitle(s));
         }
-      }
-      if (!studyModeRef.current) {
-        setCurrentSubtitle(result.subtitle);
-      }
-      // 반복 재생 중이면 새 타이밍으로 확정
-      if (loopTargetRef.current) {
-        loopTargetRef.current = {
-          start: result.subtitle.start,
-          end: result.subtitle.end,
-        };
+        if (!studyModeRef.current) setCurrentSubtitle(sub);
+        if (loopTargetRef.current) {
+          loopTargetRef.current = { start: sub.start, end: sub.end };
+        }
+      } else {
+        // === 레거시 모드: Vite dev 서버 API ===
+        const res = await fetch(
+          `/api/subtitle/${video.id}/${targetSub.index}`,
+          {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              pronunciation: editData.pronunciation,
+              translation: editData.translation,
+              start: parseFloat(editData.start),
+              end: parseFloat(editData.end),
+              linkAdjacent,
+            }),
+          }
+        );
+        if (!res.ok) throw new Error("저장 실패");
+        const result = await res.json();
+        if (onUpdateSubtitle) {
+          onUpdateSubtitle(result.subtitle);
+          if (result.affected) {
+            result.affected.forEach((s) => onUpdateSubtitle(s));
+          }
+        }
+        if (!studyModeRef.current) setCurrentSubtitle(result.subtitle);
+        if (loopTargetRef.current) {
+          loopTargetRef.current = { start: result.subtitle.start, end: result.subtitle.end };
+        }
       }
       originalTimingRef.current = null;
       setIsEditing(false);
@@ -718,18 +761,46 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
 
     setIsMerging(true);
     try {
-      const res = await fetch(`/api/subtitle/merge/${video.id}/${curr.index}`, { method: "POST" });
-      if (!res.ok) throw new Error("합치기 실패");
-      const result = await res.json();
-      if (onMergeSubtitles) onMergeSubtitles(result.subtitles);
-      // 합쳐진 후 이전 자막(합쳐진 결과)으로 이동
+      let newSubtitles;
+
+      if (user && supabase) {
+        // === Supabase 모드: 클라이언트에서 합치기 ===
+        newSubtitles = [...subtitles];
+        const currIdx = studyIndexRef.current;
+        const prev = { ...newSubtitles[currIdx - 1] };
+        const cur = newSubtitles[currIdx];
+
+        prev.text = prev.text.trimEnd() + " " + cur.text.trimStart();
+        prev.end = cur.end;
+        if (prev.pronunciation && cur.pronunciation) {
+          prev.pronunciation = prev.pronunciation.trimEnd() + " " + cur.pronunciation.trimStart();
+        } else { delete prev.pronunciation; }
+        if (prev.translation && cur.translation) {
+          prev.translation = prev.translation.trimEnd() + " " + cur.translation.trimStart();
+        } else { delete prev.translation; }
+        if (prev.notes && cur.notes) { prev.notes = [...prev.notes, ...cur.notes]; }
+        else if (cur.notes) { prev.notes = cur.notes; }
+
+        newSubtitles[currIdx - 1] = prev;
+        newSubtitles.splice(currIdx, 1);
+        newSubtitles.forEach((s, i) => { s.index = i; });
+
+        await saveToSupabase(newSubtitles);
+      } else {
+        // === 레거시 모드 ===
+        const res = await fetch(`/api/subtitle/merge/${video.id}/${curr.index}`, { method: "POST" });
+        if (!res.ok) throw new Error("합치기 실패");
+        const result = await res.json();
+        newSubtitles = result.subtitles;
+      }
+
+      if (onMergeSubtitles) onMergeSubtitles(newSubtitles);
       const newIdx = Math.max(0, studyIndexRef.current - 1);
       studyIndexRef.current = newIdx;
       setStudyIndex(newIdx);
-      setHash(video.id, result.subtitles[newIdx].index, false, "study");
-      // 반복 재생 중이면 합쳐진 자막 타이밍으로 업데이트
+      setHash(video.id, newSubtitles[newIdx].index, false, "study");
       if (loopTargetRef.current) {
-        const newSub = result.subtitles[newIdx];
+        const newSub = newSubtitles[newIdx];
         loopTargetRef.current = { start: newSub.start, end: newSub.end };
       }
     } catch (err) {
@@ -758,18 +829,57 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
 
     setIsSplitting(true);
     try {
-      const res = await fetch(`/api/subtitle/split/${video.id}/${sub.index}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ splitAfterWord: splitPoint }),
-      });
-      if (!res.ok) throw new Error("분리 실패");
-      const result = await res.json();
-      if (onMergeSubtitles) onMergeSubtitles(result.subtitles);
-      setHash(video.id, result.subtitles[studyIndexRef.current].index, false, "study");
-      // 반복 재생 중이면 분리된 자막 타이밍으로 업데이트
+      let newSubtitles;
+
+      if (user && supabase) {
+        // === Supabase 모드: 클라이언트에서 분리 ===
+        newSubtitles = [...subtitles];
+        const idx = studyIndexRef.current;
+        const words = sub.text.split(/\s+/);
+        const textA = words.slice(0, splitPoint).join(" ");
+        const textB = words.slice(splitPoint).join(" ");
+        const ratio = textA.length / (textA.length + textB.length);
+        const duration = sub.end - sub.start;
+        const midTime = Math.round((sub.start + duration * ratio) * 100) / 100;
+
+        const splitField = (text) => {
+          if (!text) return [undefined, undefined];
+          const fw = text.split(/\s+/);
+          const r = Math.max(1, Math.min(fw.length - 1, Math.round(fw.length * ratio)));
+          return [fw.slice(0, r).join(" "), fw.slice(r).join(" ")];
+        };
+        const [pronA, pronB] = splitField(sub.pronunciation);
+        const [transA, transB] = splitField(sub.translation);
+
+        const subA = { ...sub, text: textA, end: midTime };
+        const subB = { text: textB, start: midTime, end: sub.end };
+        if (pronA) subA.pronunciation = pronA; else delete subA.pronunciation;
+        if (pronB) subB.pronunciation = pronB;
+        if (transA) subA.translation = transA; else delete subA.translation;
+        if (transB) subB.translation = transB;
+        delete subB.notes;
+        if (!sub.notes || sub.notes.length === 0) delete subA.notes;
+
+        newSubtitles.splice(idx, 1, subA, subB);
+        newSubtitles.forEach((s, i) => { s.index = i; });
+
+        await saveToSupabase(newSubtitles);
+      } else {
+        // === 레거시 모드 ===
+        const res = await fetch(`/api/subtitle/split/${video.id}/${sub.index}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ splitAfterWord: splitPoint }),
+        });
+        if (!res.ok) throw new Error("분리 실패");
+        const result = await res.json();
+        newSubtitles = result.subtitles;
+      }
+
+      if (onMergeSubtitles) onMergeSubtitles(newSubtitles);
+      setHash(video.id, newSubtitles[studyIndexRef.current].index, false, "study");
       if (loopTargetRef.current) {
-        const newSub = result.subtitles[studyIndexRef.current];
+        const newSub = newSubtitles[studyIndexRef.current];
         loopTargetRef.current = { start: newSub.start, end: newSub.end };
       }
     } catch (err) {
@@ -1150,7 +1260,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                       <div style={{ fontSize: "11px", color: "#fbbf24", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px" }}>
                         🔊 실제 발음
                       </div>
-                      {!isEditing && !splitMode && (
+                      {!isEditing && !splitMode && canEdit && (
                         <span style={{ display: "flex", gap: "4px", alignItems: "center" }}>
                           {studyIndex > 0 && (
                             <button
@@ -1901,7 +2011,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                   >
                     🔊 실제 발음
                   </div>
-                  {!isEditing && (
+                  {!isEditing && canEdit && (
                     <button
                       onClick={startEditing}
                       style={{
@@ -2382,11 +2492,35 @@ export default function MovieEnglishApp() {
   const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [subtitles, setSubtitles] = useState([]);
+  const [baseSubtitles, setBaseSubtitles] = useState([]); // 원본 자막 (정적 JSON)
   const [initialSubIndex, setInitialSubIndex] = useState(null);
   const [initialMode, setInitialMode] = useState(null);
   const [loading, setLoading] = useState(true);
   const [showSaved, setShowSaved] = useState(false);
   const [ytApiReady, setYtApiReady] = useState(false);
+
+  // Auth 상태
+  const [user, setUser] = useState(null);
+  const [authLoading, setAuthLoading] = useState(!!supabase);
+  const [showLoginModal, setShowLoginModal] = useState(false);
+
+  // Supabase Auth 세션 감지
+  useEffect(() => {
+    if (!supabase) {
+      setAuthLoading(false);
+      return;
+    }
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setUser(session?.user ?? null);
+      setAuthLoading(false);
+    });
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null);
+    });
+    return () => subscription.unsubscribe();
+  }, []);
 
   // 뒤로가기(popstate) 시 영상 목록으로 복귀
   useEffect(() => {
@@ -2395,6 +2529,7 @@ export default function MovieEnglishApp() {
       if (!videoId) {
         setSelectedVideo(null);
         setSubtitles([]);
+        setBaseSubtitles([]);
         setShowSaved(false);
       }
     };
@@ -2443,23 +2578,35 @@ export default function MovieEnglishApp() {
       .finally(() => setLoading(false));
   }, []);
 
-  // Load subtitle data
-  const loadVideo = (video) => {
+  // Load subtitle data (정적 JSON + Supabase 사용자 데이터 확인)
+  const loadVideo = async (video) => {
     setLoading(true);
-    fetch(`${import.meta.env.BASE_URL}videos/${video.id}.json`)
-      .then((r) => {
-        if (!r.ok) throw new Error("data not found");
-        return r.json();
-      })
-      .then((data) => {
-        setSubtitles(data);
-        setSelectedVideo(video);
-      })
-      .catch((err) => {
-        console.error("자막 로드 실패:", err);
-        alert("자막 데이터를 로드할 수 없습니다.");
-      })
-      .finally(() => setLoading(false));
+    try {
+      // 1. 기본 자막 로드 (정적 JSON)
+      const res = await fetch(
+        `${import.meta.env.BASE_URL}videos/${video.id}.json`
+      );
+      if (!res.ok) throw new Error("data not found");
+      const baseData = await res.json();
+      setBaseSubtitles(baseData);
+
+      // 2. 로그인 상태면 사용자 편집 데이터 확인
+      let finalData = baseData;
+      if (user) {
+        const userData = await getUserSubtitles(video.id);
+        if (userData) {
+          finalData = userData;
+        }
+      }
+
+      setSubtitles(finalData);
+      setSelectedVideo(video);
+    } catch (err) {
+      console.error("자막 로드 실패:", err);
+      alert("자막 데이터를 로드할 수 없습니다.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleSelectVideo = (video) => {
@@ -2472,6 +2619,7 @@ export default function MovieEnglishApp() {
   const handleBack = () => {
     setSelectedVideo(null);
     setSubtitles([]);
+    setBaseSubtitles([]);
     setShowSaved(false);
     setHash(null);
   };
@@ -2485,6 +2633,27 @@ export default function MovieEnglishApp() {
   const handleMergeSubtitles = (newSubtitles) => {
     setSubtitles(newSubtitles);
   };
+
+  // Supabase에 사용자 자막 저장 (로그인 상태일 때)
+  const saveToSupabase = useCallback(
+    async (newSubtitles) => {
+      if (!user || !selectedVideo) return;
+      const { error } = await saveUserSubtitles(
+        selectedVideo.id,
+        newSubtitles
+      );
+      if (error) console.error("Supabase 저장 실패:", error.message);
+    },
+    [user, selectedVideo]
+  );
+
+  // 기본 자막으로 되돌리기
+  const handleResetToBase = useCallback(async () => {
+    if (!selectedVideo || !user) return;
+    if (!confirm("편집 내용을 모두 삭제하고 원본 자막으로 되돌릴까요?")) return;
+    await resetUserSubtitles(selectedVideo.id);
+    setSubtitles(baseSubtitles);
+  }, [selectedVideo, user, baseSubtitles]);
 
   return (
     <div
@@ -2533,24 +2702,194 @@ export default function MovieEnglishApp() {
             MovieTalk
           </span>
         </div>
-        {selectedVideo && (
-          <button
-            onClick={() => setShowSaved(!showSaved)}
-            style={{
-              background: showSaved ? "#6366f1" : "#1a1a2e",
-              border: "none",
-              color: "#e8e8ed",
-              padding: "8px 16px",
-              borderRadius: "20px",
-              cursor: "pointer",
-              fontSize: "13px",
-              fontWeight: "600",
-            }}
-          >
-            📚 저장한 표현
-          </button>
-        )}
+        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          {selectedVideo && (
+            <button
+              onClick={() => setShowSaved(!showSaved)}
+              style={{
+                background: showSaved ? "#6366f1" : "#1a1a2e",
+                border: "none",
+                color: "#e8e8ed",
+                padding: "8px 16px",
+                borderRadius: "20px",
+                cursor: "pointer",
+                fontSize: "13px",
+                fontWeight: "600",
+              }}
+            >
+              📚 저장한 표현
+            </button>
+          )}
+          {/* Auth 버튼 */}
+          {supabase && !authLoading && (
+            <>
+              {user ? (
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                  }}
+                >
+                  {user.user_metadata?.avatar_url && (
+                    <img
+                      src={user.user_metadata.avatar_url}
+                      alt=""
+                      style={{
+                        width: "28px",
+                        height: "28px",
+                        borderRadius: "50%",
+                      }}
+                    />
+                  )}
+                  <span style={{ fontSize: "13px", color: "#999" }}>
+                    {user.user_metadata?.full_name ||
+                      user.user_metadata?.name ||
+                      user.email?.split("@")[0]}
+                  </span>
+                  <button
+                    onClick={signOut}
+                    style={{
+                      background: "#1a1a2e",
+                      border: "none",
+                      color: "#a5b4fc",
+                      padding: "6px 12px",
+                      borderRadius: "16px",
+                      cursor: "pointer",
+                      fontSize: "12px",
+                    }}
+                  >
+                    로그아웃
+                  </button>
+                </div>
+              ) : (
+                <button
+                  onClick={() => setShowLoginModal(true)}
+                  style={{
+                    background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
+                    border: "none",
+                    color: "#fff",
+                    padding: "8px 16px",
+                    borderRadius: "20px",
+                    cursor: "pointer",
+                    fontSize: "13px",
+                    fontWeight: "600",
+                  }}
+                >
+                  로그인
+                </button>
+              )}
+            </>
+          )}
+        </div>
       </div>
+
+      {/* 로그인 모달 */}
+      {showLoginModal && (
+        <div
+          style={{
+            position: "fixed",
+            inset: 0,
+            background: "rgba(0,0,0,0.6)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 9999,
+          }}
+          onClick={() => setShowLoginModal(false)}
+        >
+          <div
+            style={{
+              background: "#1a1a2e",
+              borderRadius: "16px",
+              padding: "32px",
+              minWidth: "300px",
+              textAlign: "center",
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3
+              style={{
+                marginBottom: "24px",
+                fontSize: "18px",
+                fontWeight: "700",
+              }}
+            >
+              로그인
+            </h3>
+            <p
+              style={{
+                marginBottom: "20px",
+                fontSize: "13px",
+                color: "#999",
+              }}
+            >
+              로그인하면 자막 편집 내용이 저장됩니다
+            </p>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "12px",
+              }}
+            >
+              <button
+                onClick={() => {
+                  setShowLoginModal(false);
+                  signInWithGoogle();
+                }}
+                style={{
+                  background: "#fff",
+                  color: "#333",
+                  border: "none",
+                  padding: "12px 20px",
+                  borderRadius: "10px",
+                  cursor: "pointer",
+                  fontSize: "14px",
+                  fontWeight: "600",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "8px",
+                }}
+              >
+                <svg width="18" height="18" viewBox="0 0 48 48">
+                  <path
+                    fill="#FFC107"
+                    d="M43.6 20.1H42V20H24v8h11.3C33.9 33.5 29.4 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3 0 5.8 1.1 7.9 3l5.7-5.7C34 6 29.2 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.9z"
+                  />
+                  <path
+                    fill="#FF3D00"
+                    d="M6.3 14.7l6.6 4.8C14.5 15.4 18.8 12 24 12c3 0 5.8 1.1 7.9 3l5.7-5.7C34 6 29.2 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"
+                  />
+                  <path
+                    fill="#4CAF50"
+                    d="M24 44c5 0 9.6-1.8 13.1-4.9l-6-5.2C29.2 35.8 26.7 36 24 36c-5.4 0-9.8-3.5-11.4-8.3l-6.5 5C9.5 39.6 16.2 44 24 44z"
+                  />
+                  <path
+                    fill="#1976D2"
+                    d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6 5.2C36.5 39.4 44 34 44 24c0-1.3-.1-2.7-.4-3.9z"
+                  />
+                </svg>
+                Google로 로그인
+              </button>
+            </div>
+            <button
+              onClick={() => setShowLoginModal(false)}
+              style={{
+                marginTop: "16px",
+                background: "none",
+                border: "none",
+                color: "#666",
+                cursor: "pointer",
+                fontSize: "13px",
+              }}
+            >
+              닫기
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Loading */}
       {loading && (
@@ -2580,6 +2919,9 @@ export default function MovieEnglishApp() {
           onMergeSubtitles={handleMergeSubtitles}
           initialSubIndex={initialSubIndex}
           initialMode={initialMode}
+          user={user}
+          saveToSupabase={saveToSupabase}
+          onResetToBase={handleResetToBase}
         />
       )}
     </div>

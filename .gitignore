@@ -3,4 +3,5 @@ dist/
 dist*/
 *.log
 .env
+.env.local
 .idea/
