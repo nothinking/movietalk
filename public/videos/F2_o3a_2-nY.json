@@ -1,0 +1,1080 @@
+[
+  {
+    "index": 0,
+    "start": 0.16,
+    "end": 2.33,
+    "text": "My name is Mariluz and I'm from Spain.",
+    "pronunciation": "마이 네임 이즈 마릴루즈 앤 아임 프럼 스페인. ",
+    "translation": "제 이름은 마릴루즈이고",
+    "notes": [
+      {
+        "word": "lived and",
+        "actual": "리브든",
+        "meaning": "d+and 연음으로 'd an' 축약"
+      }
+    ]
+  },
+  {
+    "text": "And I've lived and worked in environments where I was not speaking my native language, Spanish.",
+    "start": 2.33,
+    "end": 7.99,
+    "pronunciation": "앤 아이브 리브든 워크트 이닌바이런먼츠 웨어 아이 워즈 낫 스피킹 마이 네이리브 랭귀지, 스패니쉬.",
+    "translation": "스페인 출신입니다. 그리고 저는 제가 모국어인 스페인어를 쓰지 않는 환경에서 살고",
+    "index": 1,
+    "notes": [
+      {
+        "word": "native",
+        "actual": "네이리브",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ로 발음"
+      }
+    ]
+  },
+  {
+    "text": "So trust me, I've been there when you feel awkward,",
+    "start": 7.99,
+    "end": 11.36,
+    "pronunciation": "소 트러스트 미, 아이브 빈 데어 웬 유 필 어퀴어드,",
+    "translation": "일했거든요. 그러니 저를 믿으세요, 어색하게 느껴질 때,",
+    "index": 2
+  },
+  {
+    "index": 3,
+    "start": 11.36,
+    "end": 14.9,
+    "text": "when you don't know what to say, or you feel like you don't sound funny.",
+    "pronunciation": "웬 유 도운트 노우 와럿 투 세이, 오어 유 필 라이크 유 도운트 사운드 퍼니. ",
+    "translation": "뭐라고 해야 할지 모를 때, 또는 재미없게 들린다고",
+    "notes": [
+      {
+        "word": "what to",
+        "actual": "와럿 투",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ로 '와럿'"
+      }
+    ]
+  },
+  {
+    "text": "When people are speaking in a foreign language,",
+    "start": 14.9,
+    "end": 17.39,
+    "pronunciation": "웬 피플 아 스피킹 이너 포린 랭귀지, ",
+    "translation": "느낄 때. 사람들이 외국어로 말할 때,",
+    "index": 4,
+    "notes": [
+      {
+        "word": "want to",
+        "actual": "원투",
+        "meaning": "want to가 빠르게 wanna에 가깝게 축약"
+      },
+      {
+        "word": "native",
+        "actual": "네이리브",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ"
+      }
+    ]
+  },
+  {
+    "text": "the mistake they tend to make is that they want to sound native.",
+    "start": 17.39,
+    "end": 21.24,
+    "pronunciation": "더 미스테익 데이 텐투 메이크 이즈 댓 데이 원투 사운드 네이리브.",
+    "translation": "흔히 하는 실수는 원어민처럼 들리고 싶어 한다는 거예요. 그리고",
+    "index": 5
+  },
+  {
+    "text": "And that's not really the point.",
+    "start": 21.24,
+    "end": 23.2,
+    "pronunciation": "앤 댓츠 낫 릴리 더 포인트.",
+    "translation": "그건 사실 핵심이 아니에요.",
+    "index": 6,
+    "notes": [
+      {
+        "word": "type of",
+        "actual": "타이퍼브",
+        "meaning": "p+of 연음으로 '퍼브'처럼 이어짐"
+      },
+      {
+        "word": "like I",
+        "actual": "라이 카이",
+        "meaning": "like의 k와 I가 이어져 '카이'"
+      }
+    ]
+  },
+  {
+    "text": "Most likely, you will always have some type of accent like I do.",
+    "start": 23.2,
+    "end": 27.4,
+    "pronunciation": "모스트 라이클리, 유 윌 올웨이즈 해브 섬 타이퍼배 악센트 라이 카이 두.",
+    "translation": "아마도 여러분은 저처럼 항상 어느 정도 억양이 있을 거예요.",
+    "index": 7
+  },
+  {
+    "text": "But the key is to sound clear and grounded, not native.",
+    "start": 27.4,
+    "end": 30.83,
+    "pronunciation": "벗 더 키 이즈 투 사운드 클리어 앤 그라운디드, 낫 네이리브.",
+    "translation": "하지만 핵심은 명확하고 안정감 있게 들리는 거예요,",
+    "index": 8,
+    "notes": [
+      {
+        "word": "going to",
+        "actual": "거나",
+        "meaning": "going to→gonna 축약"
+      },
+      {
+        "word": "talk about",
+        "actual": "토커바웃",
+        "meaning": "k+about 연음으로 이어짐"
+      }
+    ]
+  },
+  {
+    "text": "In this video, I'm going to talk about some tips to sound more confident speaking in a foreign language.",
+    "start": 30.83,
+    "end": 37.05,
+    "pronunciation": "인 디스 비디오, 아임 거나 토커바웃 섬 팁스 투 사운드 모어 칸피던트 스피킹 이너 포린 랭귀지.",
+    "translation": "원어민처럼이 아니라. 이 영상에서 외국어로 말할 때 더 자신감 있게 들리는 팁들을 이야기할게요.",
+    "index": 9,
+    "notes": [
+      {
+        "word": "simplicity equals",
+        "actual": "심플리시리 이퀄즈",
+        "meaning": "ty가 빠르게 '리'로 축약"
+      }
+    ]
+  },
+  {
+    "text": "Tip number one, simplicity equals fluency.",
+    "start": 37.05,
+    "end": 41.76,
+    "pronunciation": "팁 넘버 원, 심플리시리 이퀄즈 플루언시.",
+    "translation": "팁 1번, 단순함이 곧 유창함입니다.",
+    "index": 10
+  },
+  {
+    "index": 11,
+    "start": 41.76,
+    "end": 47.6,
+    "text": "When you're speaking your own language, long and \ncomplicated sentences might sound very natural.",
+    "pronunciation": "웬 유어 스피킹 유어 오운 랭귀지, 롱 앤 캄플리케이리드 센턴시즈 마잇 사운드 베리 내추럴.",
+    "translation": "자기 모국어로 말할 때는 길고 복잡한 문장이 아주 자연스럽게 들릴 수 있어요.",
+    "notes": [
+      {
+        "word": "complicated",
+        "actual": "캄플리케이리드",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ로 '케이리드'"
+      }
+    ]
+  },
+  {
+    "index": 12,
+    "start": 47.6,
+    "end": 52.64,
+    "text": "But when you're speaking in a foreign language \nand you're trying to process complex ideas,",
+    "pronunciation": "벗 웬 유어 스피킹 이너 포린 랭귀지 앤 유어 트라잉 투 프라세스 캄플렉스 아이디어즈,",
+    "translation": "하지만 외국어로 말하면서 복잡한 생각을 처리하려고 할 때는,",
+    "notes": []
+  },
+  {
+    "index": 13,
+    "start": 52.64,
+    "end": 56.91,
+    "text": "it can be hard and sound unnatural to use long and complex sentences.",
+    "pronunciation": "잇 캔 비 하드 앤 사운드 언내추럴 투 유즈 롱 앤 캄플렉스 센턴시즈. ",
+    "translation": "길고 복잡한 문장을 쓰는 게 어렵고 부자연스러울 수 있어요.",
+    "notes": [
+      {
+        "word": "if you're",
+        "actual": "이퓨어",
+        "meaning": "if+you're 빠르게 축약되어 이어짐"
+      }
+    ]
+  },
+  {
+    "text": "So if you're speaking English, for example, and it's not your native language,",
+    "start": 56.91,
+    "end": 60.71,
+    "pronunciation": "소 이퓨어 스피킹 잉글리쉬, 포어 이그잼플, 앤 잇츠 낫 유어 네이리브 랭귀지,",
+    "translation": "그래서 영어를 말할 때, 예를 들어 그게 모국어가 아니라면,",
+    "index": 14,
+    "notes": [
+      {
+        "word": "not your",
+        "actual": "낫 유어",
+        "meaning": "t+y가 빠르면 '나쳐'로 구개음화 가능"
+      }
+    ]
+  },
+  {
+    "text": "the goal is not for you to throw everything at once to whoever you're speaking to.",
+    "start": 60.71,
+    "end": 66.31,
+    "pronunciation": "더 골 이즈 낫 포 유 투 쓰로우 에브리씽 앳 원스 투 후에버 유어 스피킹 투.",
+    "translation": "목표는 모든 걸 한꺼번에 상대방에게 쏟아붓는 게 아니에요.",
+    "index": 15
+  },
+  {
+    "text": "The goal is to sound clear and be understood.",
+    "start": 66.31,
+    "end": 69.68,
+    "pronunciation": "더 골 이즈 투 사운드 클리어 앤 비 언더스투드.",
+    "translation": "목표는 명확하게 들리고 이해받는 거예요.",
+    "index": 16
+  },
+  {
+    "index": 17,
+    "start": 69.68,
+    "end": 74.39,
+    "text": "So say one idea at a time and take as many pauses as you need in between.",
+    "pronunciation": "소 세이 원 아이디어 애러 타임 앤 테이커즈 메니 포지저즈 유 니드 인 비트윈.",
+    "translation": "그러니 한 번에 하나의 생각만 말하고 중간중간 필요한 만큼 쉬세요.",
+    "notes": [
+      {
+        "word": "at a",
+        "actual": "애러",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ, at a→'애러'"
+      },
+      {
+        "word": "pauses as",
+        "actual": "포지저즈",
+        "meaning": "s+as 연음으로 이어짐"
+      }
+    ]
+  },
+  {
+    "text": "Tip number two, use downward gaze reset.",
+    "start": 74.39,
+    "end": 78.37,
+    "pronunciation": "팁 넘버 투, 유즈 다운워드 게이즈 리셋.",
+    "translation": "팁 2번, 시선 내림 리셋을",
+    "index": 18
+  },
+  {
+    "text": "So what is this? When you're keeping eye contact with the person",
+    "start": 78.37,
+    "end": 81.92,
+    "pronunciation": "소 왓 이즈 디스? 웬 유어 키핑 아이 칸택트 윋 더 퍼슨",
+    "translation": "활용하세요. 이게 뭐냐면요? 상대방과 눈을 마주치고 있을 때",
+    "index": 19
+  },
+  {
+    "index": 20,
+    "start": 81.92,
+    "end": 87.84,
+    "text": "you're talking to and you have to process a \nlot of ideas at once in a foreign language,",
+    "pronunciation": "유어 토킹 투 앤 유 해프 투 프라세스 어 라러브 아이디어즈 앳 원스 이너 포린 랭귀지,",
+    "translation": "외국어로 한꺼번에 많은 생각을 처리해야 할 때,",
+    "notes": [
+      {
+        "word": "lot of",
+        "actual": "라러브",
+        "meaning": "t가 모음 사이에서 플랩 ㄹ, lot of→'라러브'"
+      }
+    ]
+  },
+  {
+    "index": 21,
+    "start": 87.84,
+    "end": 90.39,
+    "text": "your brain can feel fatigued and overwhelmed.",
+    "pronunciation": "유어 브레인 캔 필 퍼티그드 앤 오버웰므드.",
+    "translation": "뇌가 피로하고 압도당할 수 있어요."
+  },
+  {
+    "text": "If you use downward gazes, you can help your brain.",
+    "start": 90.39,
+    "end": 93.28,
+    "pronunciation": "이퓨 유즈 다운워드 게이지즈, 유 캔 헬프 유어 브레인.",
+    "translation": "시선을 아래로 내리면 뇌에 도움이 돼요.",
+    "index": 22
+  },
+  {
+    "index": 23,
+    "start": 93.28,
+    "end": 95.27,
+    "text": "So why don't you try this tool?",
+    "pronunciation": "소 와이 도운 츄 트라이 디스 툴?",
+    "translation": "그러니 이 방법을 한번",
+    "notes": [
+      {
+        "word": "don't you",
+        "actual": "도운 츄",
+        "meaning": "t+you 구개음화로 '츄' 발음"
+      },
+      {
+        "word": "look at",
+        "actual": "루캣",
+        "meaning": "k+at 연음, t가 약하게 발음"
+      }
+    ]
+  },
+  {
+    "text": "Look at the person you're talking to.",
+    "start": 95.27,
+    "end": 98.05,
+    "pronunciation": "루캣 더 퍼슨 유어 토킹 투.",
+    "translation": "써보는 건 어때요? 대화 상대를",
+    "index": 24
+  },
+  {
+    "text": "Do a little downward gaze, inhale, and then continue speaking.",
+    "start": 98.05,
+    "end": 102.2,
+    "pronunciation": "두 어 리를 다운워드 게이즈, 인헤일, 앤 덴 컨티뉴 스피킹. ",
+    "translation": "보세요. 살짝 시선을 내리고, 숨을 들이쉬고, 다시 말을 이어가세요.",
+    "index": 25,
+    "notes": [
+      {
+        "word": "let me",
+        "actual": "렛 미",
+        "meaning": "빠르면 '레미'로 축약 가능"
+      },
+      {
+        "word": "show you an",
+        "actual": "쇼우 유 앤",
+        "meaning": "you+an 연음 가능"
+      }
+    ]
+  },
+  {
+    "text": "Let me show you an example.",
+    "start": 102.2,
+    "end": 103.71,
+    "pronunciation": "렛 미 쇼우 유 앤 이그잼플.",
+    "translation": "예를 들어 볼게요.",
+    "index": 26
+  },
+  {
+    "text": "My PhD thesis is about using prostate MRI to detect cancer.",
+    "start": 103.71,
+    "end": 108.99,
+    "pronunciation": "마이 피에이치디 씨시스 이즈 어바웃 유징 프라스테잇 엠알아이 투 디텍트 캔서.",
+    "translation": "제 박사 논문은 전립선 MRI로 암을 발견하는 것에",
+    "index": 27
+  },
+  {
+    "text": "Proate MRI is not perfect.",
+    "start": 108.99,
+    "end": 111.91,
+    "pronunciation": "프라스테잇 엠알아이 이즈 낫 퍼펙트.",
+    "translation": "대한 거예요. 전립선 MRI는",
+    "index": 28
+  },
+  {
+    "text": "So, our research is about trying to make the tools better so that we can detect more cancers.",
+    "start": 111.91,
+    "end": 117.24,
+    "pronunciation": "소, 아워 리서치 이즈 어바웃 트라잉 투 메이크 더 툴즈 베러 소 댓 위 캔 디텍트 모어 캔서즈.",
+    "translation": "완벽하지 않아요. 그래서 저희 연구는 더 많은 암을 찾을 수 있도록 도구를 개선하는 거예요. 시선",
+    "index": 29,
+    "notes": [
+      {
+        "word": "better",
+        "actual": "베러",
+        "meaning": "tt가 모음 사이에서 플랩 ㄹ로 '베러'"
+      }
+    ]
+  },
+  {
+    "text": "A downward gaze can be very useful to relax your mind, relax your body, and stop any panicking from occurring.",
+    "start": 117.24,
+    "end": 126.01,
+    "pronunciation": "어 다운워드 게이즈 캔 비 베리 유스풀 투 릴랙스 유어 마인드, 릴랙스 유어 바디, 앤 스탑 애니 패니킹 프럼 어커링.",
+    "translation": "내리기는 아주 유용할 수 있어요, 마음을 안정시키고, 몸을 이완하고, 패닉이 일어나는 걸 막는 데요.",
+    "index": 30
+  },
+  {
+    "text": "Tip number three,",
+    "start": 126.01,
+    "end": 127.58,
+    "pronunciation": "팁 넘버 쓰리,",
+    "translation": "팁 3번,",
+    "index": 31
+  },
+  {
+    "index": 32,
+    "start": 127.58,
+    "end": 132.64,
+    "text": "focus on the meaning and the core idea but \nnot the specific words you're going to use.",
+    "pronunciation": "포커슨 더 미닝 앤 더 코어 아이디어 벗 낫 더 스퍼시픽 워즈 유어 거나 유즈.",
+    "translation": "의미와 핵심 아이디어에 집중하세요, 사용할 구체적인 단어가 아니라.",
+    "notes": [
+      {
+        "word": "focus on",
+        "actual": "포커슨",
+        "meaning": "s+on 연음으로 이어짐"
+      },
+      {
+        "word": "going to",
+        "actual": "거나",
+        "meaning": "going to→gonna 축약"
+      }
+    ]
+  },
+  {
+    "index": 33,
+    "start": 132.64,
+    "end": 139.5,
+    "text": "A very common problem when you're speaking \nin a foreign language is that you're trying to translate the sentences in your brain.",
+    "pronunciation": "어 베리 카먼 프라블럼 웬 유어 스피킹 이너 포린 랭귀지 이즈 댓 유어 트라잉 투 트랜슬레잇 더 센턴시즈 인 유어 브레인.",
+    "translation": "외국어로 말할 때 아주 흔한 문제는 머릿속에서 문장을 번역하려 한다는 거예요. 예를 들어,",
+    "notes": [
+      {
+        "word": "think I",
+        "actual": "씽카이",
+        "meaning": "k+I 연음으로 '카이'로 이어짐"
+      }
+    ]
+  },
+  {
+    "text": "So for instance, I will think I want to say in English",
+    "start": 139.5,
+    "end": 146.48,
+    "pronunciation": "소 포어 인스턴스, 아이 윌 씽카이 원 투 세이 인 잉글리쉬",
+    "translation": "저는 영어로 이걸 말하고 싶다고 생각할 거예요.",
+    "index": 34
+  },
+  {
+    "index": 35,
+    "start": 146.48,
+    "end": 151.82,
+    "text": "and then you start word by word like oh boy I'm going to arrive.",
+    "pronunciation": "앤 덴 유 스타릍 워드 바이 워드 라익 오 보이 아임 고너 어라이브.",
+    "translation": "그리고 단어 하나하나 '오 이런, 나는 도착할 거야'라고 시작하죠. 그건",
+    "notes": [
+      {
+        "word": "going to",
+        "actual": "고너",
+        "meaning": "going to→gonna 축약"
+      },
+      {
+        "word": "complicated",
+        "actual": "캄플러케이리드",
+        "meaning": "t가 모음 사이에서 플랩 t→ㄹ"
+      }
+    ]
+  },
+  {
+    "text": "That can be very complicated",
+    "start": 151.82,
+    "end": 154.16,
+    "pronunciation": "댓 캔 비 베리 캄플러케이리드",
+    "translation": "매우 복잡해질 수 있어요",
+    "index": 36
+  },
+  {
+    "index": 37,
+    "start": 154.16,
+    "end": 158.56,
+    "text": "because if there's a word you don't know how to say, then you feel stuck.",
+    "pronunciation": "비커즈 이프 데어즈 어 워드 유 돈 노우 하우 러 세이, 덴 유 필 스턱.",
+    "translation": "왜냐하면 어떻게 말해야 할지 모르는 단어가 있으면, 막힌다고 느끼거든요.",
+    "notes": [
+      {
+        "word": "how to",
+        "actual": "하우 러",
+        "meaning": "to의 t가 약화되어 '러'로 축약"
+      }
+    ]
+  },
+  {
+    "text": "So for instance, if the idea you want to say is \nthat you don't agree with someone,",
+    "start": 158.56,
+    "end": 163.84,
+    "pronunciation": "소 포린스턴스, 이프 디 아이디어 유 원 러 세이 이즈 댓 유 돈 어그리 윋 썸원,",
+    "translation": "예를 들어, 만약 당신이 말하고 싶은 생각이 누군가에게 동의하지 않는다는 거라면,",
+    "index": 38,
+    "notes": [
+      {
+        "word": "want to",
+        "actual": "원 러",
+        "meaning": "want to→wanna 축약, t 탈락"
+      }
+    ]
+  },
+  {
+    "index": 39,
+    "start": 163.84,
+    "end": 168.48,
+    "text": "you don't have to say I disagree with you with those exact words,",
+    "pronunciation": "유 돈 해프 투 세이 아이 디스어그리 윋 유 윋 도우즈 이그잭 워즈,",
+    "translation": "꼭 그 정확한 단어로 '난 당신과 의견이 달라요'라고 말할 필요",
+    "notes": [
+      {
+        "word": "whatever",
+        "actual": "워레버",
+        "meaning": "t가 모음 사이에서 플랩 t→ㄹ"
+      }
+    ]
+  },
+  {
+    "text": "you can think whatever comes easier in your mind and faster for fluency.",
+    "start": 168.48,
+    "end": 173.74,
+    "pronunciation": "유 캔 띵크 워레버 컴즈 이지어 인 유어 마인드 앤 패스터 포 플루언시.",
+    "translation": "없어요, 무엇이든 떠오르는 걸 생각나기 쉽고 유창하게 말할 수 있는 걸 쓰면 돼요.",
+    "index": 40
+  },
+  {
+    "text": "So you can say, \"I don't see it the same way.\"",
+    "start": 173.74,
+    "end": 177.84,
+    "pronunciation": "소 유 캔 세이, 아이 돈 씨 잇 더 세임 웨이.",
+    "translation": "그래서 '난 같은 식으로 보지 않아요'라고 할 수 있죠.",
+    "index": 41
+  },
+  {
+    "index": 42,
+    "start": 177.84,
+    "end": 185.35,
+    "text": "or that idea doesn't sound that good to me or I don't have the same point of view.",
+    "pronunciation": "오어 댓 아이디어 더즌 사운드 댓 굳 투 미 오어 아이 돈 해브 더 세임 포인러 뷰.",
+    "translation": "또는 '그 생각은 별로인데요' 혹은 '저는 같은 관점이",
+    "notes": [
+      {
+        "word": "point of",
+        "actual": "포인러",
+        "meaning": "t가 모음 사이에서 플랩 t→ㄹ, of의 v 약화"
+      }
+    ]
+  },
+  {
+    "text": "As you can see, there are many ways to express an idea.",
+    "start": 185.35,
+    "end": 189.11,
+    "pronunciation": "애즈 유 캔 씨, 데어 아 메니 웨이즈 투 익스프레스 언 아이디어.",
+    "translation": "아니에요'라고요. 보시다시피, 아이디어를 표현하는 방법은 많아요. 그러니",
+    "index": 43,
+    "notes": [
+      {
+        "word": "adapt as",
+        "actual": "어댑 태즈",
+        "meaning": "t+모음 연음으로 '태즈'로 이어짐"
+      }
+    ]
+  },
+  {
+    "text": "So, have that mental flexibility to adapt as you go and",
+    "start": 189.11,
+    "end": 192.96,
+    "pronunciation": "소, 해브 댓 멘틀 플렉서빌러디 투 어댑 태즈 유 고우 앤",
+    "translation": "상황에 맞게 유연하게 적응하는 정신적 유연성을 가지세요",
+    "index": 44
+  },
+  {
+    "index": 45,
+    "start": 192.96,
+    "end": 196.9,
+    "text": "just use whatever words you know how to say in the foreign language.",
+    "pronunciation": "저스트 유즈 워레버 워즈 유 노우 하우 러 세이 인 더 포린 랭귀지.",
+    "translation": "외국어로 말할 줄 아는 단어를 그냥 쓰세요.",
+    "notes": [
+      {
+        "word": "whatever",
+        "actual": "워레버",
+        "meaning": "t가 모음 사이에서 플랩 t→ㄹ"
+      }
+    ]
+  },
+  {
+    "text": "Research shows that people speaking in a foreign language work better when \nthey're thinking of concepts and not specific words.",
+    "start": 196.9,
+    "end": 203.58,
+    "pronunciation": "리서치 쇼즈 댓 피플 스피킹 이너 포린 랭귀지 워크 베러 웬 데어 띵킹 어브 칸셉츠 앤 낫 스퍼시픽 워즈.",
+    "translation": "연구에 따르면 사람들이 외국어로 말할 때 특정 단어가 아닌 개념으로 생각하면 더 잘한다고 해요 단어요.",
+    "index": 46,
+    "notes": [
+      {
+        "word": "better",
+        "actual": "베러",
+        "meaning": "tt가 모음 사이에서 플랩 t→ㄹ"
+      },
+      {
+        "word": "what I",
+        "actual": "워라이",
+        "meaning": "t+모음 연음, t→ㄹ 플랩으로 '워라이'"
+      },
+      {
+        "word": "totally",
+        "actual": "토럴리",
+        "meaning": "t가 모음 사이에서 플랩 t→ㄹ"
+      }
+    ]
+  },
+  {
+    "text": "Basically, what I mean is that literal translation can totally kill your confidence and your fluency",
+    "start": 203.58,
+    "end": 209.76,
+    "pronunciation": "베이시클리, 워라이 민 이즈 댓 리터럴 트랜슬레이션 캔 토럴리 킬 유어 칸피던스 앤 유어 플루언시",
+    "translation": "기본적으로, 제 말은 직역이 자신감을 완전히 죽일 수 있다는 거예요 그리고 유창성도요.",
+    "index": 47
+  },
+  {
+    "text": "because you're focusing on what you don't know how to say or specific words.",
+    "start": 209.76,
+    "end": 214.38,
+    "pronunciation": "비커즈 유어 포커싱 온 왓 유 돈 노우 하우 러 세이 오어 스퍼시픽 워즈.",
+    "translation": "왜냐면 어떻게 말할지 모르는 것이나 특정 단어에 집중하게 되니까요.",
+    "index": 48
+  },
+  {
+    "text": "So, it's better to go with the flow and just use the tools that you have.",
+    "start": 214.38,
+    "end": 218.26,
+    "pronunciation": "소, 잇츠 베러 투 고 윋 더 플로우 앤 저스트 유즈 더 툴즈 댓 유 해브.",
+    "translation": "그래서, 흐름에 맡기고 가진 도구를 사용하는 게 나아요.",
+    "index": 49,
+    "notes": [
+      {
+        "word": "better to",
+        "actual": "베러 투",
+        "meaning": "tt가 모음 사이에서 플랩 t→ㄹ"
+      }
+    ]
+  },
+  {
+    "text": "Tip number four,",
+    "start": 218.26,
+    "end": 219.68,
+    "pronunciation": "팁 넘버 포,",
+    "translation": "팁 4번,",
+    "index": 50
+  },
+  {
+    "index": 51,
+    "start": 219.68,
+    "end": 225.97,
+    "text": "own your accent. Your accent is not a flow. Your accent is not a weakness.",
+    "pronunciation": "온 유어 액센트. 유어 액센트 이즈 나러 플로. 유어 액센트 이즈 나러 위크니스.",
+    "translation": "당신의 억양을 자기 것으로 받아들이세요. 억양은 결점이 아니에요. 약점이",
+    "notes": [
+      {
+        "word": "not a",
+        "actual": "나러",
+        "meaning": "t+모음 연음, t→ㄹ 플랩으로 '나러'"
+      }
+    ]
+  },
+  {
+    "text": "Your accent is almost like an art.",
+    "start": 225.97,
+    "end": 228.73,
+    "pronunciation": "유어 액센트 이즈 올모스트 라이큰 아트.",
+    "translation": "아니에요. 거의 예술",
+    "index": 52,
+    "notes": [
+      {
+        "word": "like an",
+        "actual": "라이큰",
+        "meaning": "k+모음 연음"
+      },
+      {
+        "word": "part of",
+        "actual": "파럿",
+        "meaning": "t+모음 연음, t→ㄹ 플랩"
+      }
+    ]
+  },
+  {
+    "text": "It gives you a unique touch. It's part of who you are.",
+    "start": 228.73,
+    "end": 232.75,
+    "pronunciation": "잇 기브즈 유 어 유닉 터치. 잇츠 파럿 후 유 아.",
+    "translation": "같은 거예요. 독특한 매력을 줘요. 당신이 누군지를",
+    "index": 53
+  },
+  {
+    "text": "So instead of being scared or embarrassed because you have an accent, try to embrace it.",
+    "start": 232.75,
+    "end": 239.27,
+    "pronunciation": "소 인스테더 비잉 스케어드 오어 임배러스드 비커즈 유 해브 언 액센트, 트라이 투 임브레이싯.",
+    "translation": "보여주죠. 그러니 두려워하거나 억양 때문에 창피해하지 말고 받아들여 보세요. 제가",
+    "index": 54,
+    "notes": [
+      {
+        "word": "embrace it",
+        "actual": "임브레이싯",
+        "meaning": "s+it 연음으로 이어짐"
+      }
+    ]
+  },
+  {
+    "text": "When I go to America, people are so used to listening to a specific type of English",
+    "start": 239.27,
+    "end": 244.07,
+    "pronunciation": "웬 아이 고 투 어메리카, 피플 아 소 유즈드 투 리스닝 투 어 스퍼시픽 타이퍼 잉글리쉬",
+    "translation": "미국에 가면, 사람들이 특정 유형의 영어에 너무 익숙해져서,",
+    "index": 55,
+    "notes": [
+      {
+        "word": "type of English",
+        "actual": "타이퍼 잉글리쉬",
+        "meaning": "p+of 연음, of 약화"
+      }
+    ]
+  },
+  {
+    "text": "that they almost tell me that they find my accent cute.",
+    "start": 244.07,
+    "end": 247.05,
+    "pronunciation": "댓 데이 올모스트 텔 미 댓 데이 파인드 마이 액센트 큣.",
+    "translation": "거의 제 억양이 귀엽다고 말해요 귀엽다고요.",
+    "index": 56,
+    "notes": [
+      {
+        "word": "want to",
+        "actual": "원 투",
+        "meaning": "want의 t 약화, wanna로도 축약 가능"
+      }
+    ]
+  },
+  {
+    "text": "And in my mind, I'm like, \"What do you mean cute?",
+    "start": 247.05,
+    "end": 250.33,
+    "pronunciation": "앤 인 마이 마인드, 아임 라이크, 워 두 유 민 큣?",
+    "translation": "그리고 속으로는, '귀엽다니 무슨 말이야? 나 외국인처럼",
+    "index": 57
+  },
+  {
+    "text": "I sound foreign. That's not good. I want to sound American.\"",
+    "start": 250.33,
+    "end": 254.23,
+    "pronunciation": "아이 사운드 포린. 댓츠 낫 굳. 아이 원 투 사운드 어메리칸.",
+    "translation": "들리잖아. 그건 안 좋은 거지. 나는 미국인처럼 들리고",
+    "index": 58
+  },
+  {
+    "text": "And they're like, \"No, no, no. Please keep your accent. It makes you unique.\"",
+    "start": 254.23,
+    "end": 259.03,
+    "pronunciation": "앤 데어 라이크, 노, 노, 노. 플리즈 킵 유어 액센트. 잇 메이크스 유 유닉.",
+    "translation": "싶어'라고 생각해요. 그러면 그들은 '아니, 아니, 억양 유지해요. 독특해 보여요'라고 하죠.",
+    "index": 59
+  },
+  {
+    "text": "So basically the idea is that people are not going to trust you less because you have an accent.",
+    "start": 259.03,
+    "end": 264.79,
+    "pronunciation": "소 베이시클리 디 아이디어 이즈 댓 피플 아 낫 고너 트러스트 유 레스 비커즈 유 해브 언 액센트.",
+    "translation": "그래서 기본적으로 사람들이 억양 때문에 당신을 덜 신뢰하지 않는다는 거예요.",
+    "index": 60,
+    "notes": [
+      {
+        "word": "going to",
+        "actual": "고너",
+        "meaning": "going to→gonna 축약"
+      }
+    ]
+  },
+  {
+    "text": "Instead they will trust you less if you sound insecure.",
+    "start": 264.79,
+    "end": 269.12,
+    "pronunciation": "인스테드 데이 윌 트러스트 유 레스 이프 유 사운드 인시큐어.",
+    "translation": "오히려 불안하게 들리면 덜 신뢰할 거예요.",
+    "index": 61
+  },
+  {
+    "text": "So embrace your accent and feel confident.",
+    "start": 269.12,
+    "end": 272.77,
+    "pronunciation": "소 임브레이스 유어 액센트 앤 필 칸피던트.",
+    "translation": "그러니 억양을 받아들이고 자신감을 가지세요.",
+    "index": 62
+  },
+  {
+    "text": "Focus on clear pronunciation, clear inunciation and \nkeeping a good pace and forget about your accent.",
+    "start": 272.77,
+    "end": 281.24,
+    "pronunciation": "포커스 온 클리어 프로넌시에이션, 클리어 이넌시에이션 앤 키핑 어 굳 페이스 앤 포겟 어바웃 유어 액센트.",
+    "translation": "집중하세요 명확한 발음, 명확한 전달, 좋은 속도 유지에 집중하고 억양은 잊어버리세요.",
+    "index": 63,
+    "notes": [
+      {
+        "word": "forget about",
+        "actual": "포게러바웃",
+        "meaning": "t+모음 연음, t→ㄹ 플랩"
+      }
+    ]
+  },
+  {
+    "index": 64,
+    "start": 281.24,
+    "end": 290.36,
+    "text": "Tip number five is I think the most important \none and it is don't aim for perfection. Aim for clarity.",
+    "pronunciation": "팁 넘버 파이브 이즈 아이 띵크 더 모스트 임포턴트 원 앤 이릿 이즈 돈 에임 포 퍼펙션. 에임 포 클래러디.",
+    "translation": "팁 5번은 제가 가장 중요하다고 생각하는 건데요, 완벽을 추구하지 마세요. 추구하세요 명확성을요.",
+    "notes": [
+      {
+        "word": "it is",
+        "actual": "이릿 이즈",
+        "meaning": "t+모음 연음으로 이어짐"
+      },
+      {
+        "word": "clarity",
+        "actual": "클래러디",
+        "meaning": "t가 모음 사이에서 플랩 t→ㄹ"
+      }
+    ]
+  },
+  {
+    "text": "Communication is about telling your ideas to the person in front of you. It's about telling a story.",
+    "start": 290.36,
+    "end": 296.89,
+    "pronunciation": "커뮤니케이션 이즈 어바웃 텔링 유어 아이디어즈 투 더 퍼슨 인 프런트 어브 유. 잇츠 어바웃 텔링 어 스토리.",
+    "translation": "소통은 앞에 있는 사람에게 아이디어를 전달하는 거예요. 말하는 거예요 이야기를",
+    "index": 65
+  },
+  {
+    "text": "It's about making things clear. If you're aiming to be perfect and have the perfect pace,",
+    "start": 296.89,
+    "end": 303.28,
+    "pronunciation": "잇츠 어바웃 메이킹 띵즈 클리어. 이프 유어 에이밍 투 비 퍼펙트 앤 해브 더 퍼펙트 페이스,",
+    "translation": "전하는 거예요. 명확하게 하는 거예요. 완벽해지려고 하고 완벽한 속도를 가지려고 하면,",
+    "index": 66
+  },
+  {
+    "index": 67,
+    "start": 303.28,
+    "end": 308.96,
+    "text": "the perfect pronunciation, the perfect building \nof the sentences, you're going to feel paralyzed",
+    "pronunciation": "더 퍼펙 프러넌시에이션, 더 퍼펙 빌딩 어브 더 센턴시즈, 유어 고잉 투 필 패럴라이즈드",
+    "translation": "완벽한 발음, 완벽한 문장 구성, 그러면 마비된 느낌이 들 거예요",
+    "notes": [
+      {
+        "word": "perfect pronunciation",
+        "actual": "퍼펙 프러넌시에이션",
+        "meaning": "perfect의 끝 t 탈락, pronunciation의 강세가 뒤에 와서 pro가 '프러'로 약화"
+      }
+    ]
+  },
+  {
+    "index": 68,
+    "start": 308.96,
+    "end": 315.64,
+    "text": "and you're going to feel stuck because that's \nnot what is going to happen. Instead, try to make things clear.",
+    "pronunciation": "앤 유어 고잉 투 필 스턱 비커즈 댓츠 낫 와리즈 고잉 투 해픈. 인스테드, 트라이 투 메이크 씽즈 클리어.",
+    "translation": "그리고 막힌 느낌이 들 거예요. 왜냐하면 그런 일은 일어나지 않을 테니까요. 대신에 명확하게 말하세요.",
+    "notes": [
+      {
+        "word": "what is",
+        "actual": "와리즈",
+        "meaning": "what의 t+모음 연음으로 t→ㄹ 플랩"
+      },
+      {
+        "word": "build your",
+        "actual": "빌 쥬어",
+        "meaning": "d+y 구개음화로 '쥬' 발음"
+      }
+    ]
+  },
+  {
+    "text": "Use simple words, use pauses, use short sentences, build your confidence up,",
+    "start": 315.64,
+    "end": 322.64,
+    "pronunciation": "유즈 심플 워즈, 유즈 파지즈, 유즈 숏 센턴시즈, 빌 쥬어 칸피던스 업,",
+    "translation": "간단한 단어를 쓰고, 쉬어 가고, 짧은 문장을 쓰고, 자신감을 키우세요,",
+    "index": 69
+  },
+  {
+    "index": 70,
+    "start": 322.64,
+    "end": 327.84,
+    "text": "and then you will see how you become more \nand more fluent. Because the truth is,",
+    "pronunciation": "앤 덴 유 윌 씨 하우 유 비컴 모어 앤 모어 플루언트. 비커즈 더 트루씨즈,",
+    "translation": "그러면 점점 더 유창해지는 걸 느낄 거예요. 왜냐하면 사실은,",
+    "notes": [
+      {
+        "word": "truth is",
+        "actual": "트루씨즈",
+        "meaning": "th+is 연음으로 '씨즈'처럼 이어짐"
+      }
+    ]
+  },
+  {
+    "index": 71,
+    "start": 327.84,
+    "end": 334.06,
+    "text": "I've been living in the US for many years and my \naccent is not perfect and it probably will never be.",
+    "pronunciation": "아이브 빈 리빙 인 디 유에스 포 메니 이어즈 앤 마이 액센리즈 낫 퍼펙 애닛 프라블리 윌 네버 비.",
+    "translation": "저는 미국에서 여러 해 동안 살아왔고 제 억양은 완벽하지 않으며 아마 절대 완벽해지지",
+    "notes": [
+      {
+        "word": "accent is",
+        "actual": "액센리즈",
+        "meaning": "accent의 t+모음 연음으로 t→ㄹ 플랩"
+      },
+      {
+        "word": "and it",
+        "actual": "애닛",
+        "meaning": "and의 d 탈락 후 n+it 연음"
+      },
+      {
+        "word": "that you",
+        "actual": "대츄",
+        "meaning": "t+y 구개음화로 '츄' 발음"
+      }
+    ]
+  },
+  {
+    "text": "So, just embrace your progress and embrace your growth with the tools that you have.",
+    "start": 334.06,
+    "end": 340.18,
+    "pronunciation": "쏘, 저스트 임브레이스 유어 프라그레스 앤 임브레이스 유어 그로우쓰 윋 더 툴즈 대츄 해브.",
+    "translation": "않을 거예요. 그러니 그냥 당신의 발전을 받아들이고 가진 도구로 성장을 받아들이세요.",
+    "index": 72
+  },
+  {
+    "text": "So, here are my final thoughts.",
+    "start": 340.18,
+    "end": 341.98,
+    "pronunciation": "쏘, 히어 아 마이 파이널 쏘츠.",
+    "translation": "그러니, 마지막으로 제 생각을",
+    "index": 73,
+    "notes": [
+      {
+        "word": "make you",
+        "actual": "메이큐",
+        "meaning": "k+y 연음으로 '큐' 발음"
+      }
+    ]
+  },
+  {
+    "text": "Speaking in a foreign language is not going to make you sound weird or make you more boring.",
+    "start": 341.98,
+    "end": 346.97,
+    "pronunciation": "스피킹 이나 포린 랭귀지 이즈 낫 고잉 투 메이큐 사운드 위어드 오어 메이큐 모어 보링.",
+    "translation": "말씀드릴게요. 외국어로 말하는 게 여러분을 이상하게 보이게 하거나 더 지루하게 만들지",
+    "index": 74,
+    "notes": [
+      {
+        "word": "focus on",
+        "actual": "포커선",
+        "meaning": "s+on 연음으로 이어짐"
+      },
+      {
+        "word": "that you",
+        "actual": "대츄",
+        "meaning": "t+y 구개음화로 '츄' 발음"
+      }
+    ]
+  },
+  {
+    "text": "What you have to focus on is use the tools that you have and be resourceful.",
+    "start": 346.97,
+    "end": 352.66,
+    "pronunciation": "왓 유 해브 투 포커선 이즈 유즈 더 툴즈 대츄 해브 앤 비 리소스풀.",
+    "translation": "않을 거예요. 여러분이 집중해야 할 것은 가진 도구를 쓰고 자원을 잘 활용하는 거예요.",
+    "index": 75
+  },
+  {
+    "index": 76,
+    "start": 352.66,
+    "end": 354.84,
+    "text": "It is harder and it is a challenge,",
+    "pronunciation": "이리즈 하더 앤디리자 챌린지",
+    "translation": "더 어렵고 도전이긴 하지만,",
+    "notes": [
+      {
+        "word": "it is",
+        "actual": "이리즈",
+        "meaning": "t+모음 연음으로 t→ㄹ 플랩"
+      },
+      {
+        "word": "but it's",
+        "actual": "버릿츠",
+        "meaning": "t+it 연음으로 t→ㄹ 플랩"
+      }
+    ]
+  },
+  {
+    "text": "but it's something that can be trained",
+    "start": 354.84,
+    "end": 356.99,
+    "pronunciation": "버릿츠 썸씽 댓 캔 비 트레인드",
+    "translation": "훈련할 수 있는 것이고 여러분은",
+    "index": 77
+  },
+  {
+    "text": "and you will feel more and more confident using these tips as you go along.",
+    "start": 356.99,
+    "end": 361.62,
+    "pronunciation": "앤 유 윌 필 모어 앤 모어 칸피던트 유징 디즈 팁스 애쥬 고 얼롱.",
+    "translation": "느낄 거예요 이 팁들을 쓰면서 점점 더 자신감이 생길 거예요. 이",
+    "index": 78,
+    "notes": [
+      {
+        "word": "as you",
+        "actual": "애쥬",
+        "meaning": "s+y 구개음화로 '쥬' 발음"
+      },
+      {
+        "word": "any of",
+        "actual": "테니 어브",
+        "meaning": "any의 연음, of는 약하게 '어브'"
+      }
+    ]
+  },
+  {
+    "text": "If you liked any of these tips or you have any thoughts on this topic, please let me know in the comments.",
+    "start": 361.62,
+    "end": 367.11,
+    "pronunciation": "이퓨 라이크 테니 어브 디즈 팁스 오어 유 해브 에니 쏘츠 온 디스 타픽, 플리즈 렛 미 노우 인 더 카멘츠.",
+    "translation": "팁들 중 마음에 드는 게 있거나 이 주제에 대해 의견이 있으시면 댓글로",
+    "index": 79,
+    "notes": [
+      {
+        "word": "what uh",
+        "actual": "와러",
+        "meaning": "what의 t 약화, 필러 uh와 연결"
+      }
+    ]
+  },
+  {
+    "text": "I would love to see what uh foreign language you're trying to talk uh in",
+    "start": 367.11,
+    "end": 372.13,
+    "pronunciation": "아이 우드 러브 투 씨 와러 포린 랭귀지 유어 트라잉 투 톡 어 인",
+    "translation": "알려주세요. 저는 어떤 외국어로 말하려고 하는지, 그리고 그",
+    "index": 80
+  },
+  {
+    "text": "and how you have struggled with speaking that language and overcome your struggles.",
+    "start": 372.13,
+    "end": 377.66,
+    "pronunciation": "앤 하우 유 해브 스트러글드 윋 스피킹 댓 랭귀지 앤 오버컴 유어 스트러글즈.",
+    "translation": "언어로 말하는 데 어떻게 어려움을 겪었는지 그리고 어떻게 극복했는지 보고",
+    "index": 81,
+    "notes": [
+      {
+        "word": "if you",
+        "actual": "이퓨",
+        "meaning": "f+y 연음으로 '퓨'로 이어짐"
+      }
+    ]
+  },
+  {
+    "text": "And if you like expert life, communication, foreign languages,",
+    "start": 377.66,
+    "end": 382.4,
+    "pronunciation": "앤 이퓨 라익 엑스퍼트 라이프, 커뮤니케이션, 포린 랭귀지즈,",
+    "translation": "싶어요. 그리고 전문적인 삶, 소통, 외국어에 관심이 있으시면,",
+    "index": 82
+  },
+  {
+    "index": 83,
+    "start": 382.4,
+    "end": 389.2,
+    "text": "please like this video and subscribe to see more \ncontent that's coming up. See you next time.",
+    "pronunciation": "플리즈 라이크 디스 비디오 앤 섭스크라이브 투 씨 모어 칸텐 댓츠 커밍 업. 씨유 넥스트 타임.",
+    "translation": "이 영상에 좋아요를 누르고 구독해서 앞으로 올라올 콘텐츠를 확인해 주세요. 다음에 봐요.",
+    "notes": [
+      {
+        "word": "see you",
+        "actual": "씨유",
+        "meaning": "see+you 빠르게 연음"
+      }
+    ]
+  }
+]

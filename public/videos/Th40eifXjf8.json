@@ -1,6 +1,6 @@
 [
   {
-    "index": 1,
+    "index": 0,
     "start": 0.08,
     "end": 5.04,
     "text": "Shadowing can be one of the most powerful ways to improve your speaking, your pronunciation,",
@@ -30,12 +30,12 @@
     ]
   },
   {
-    "index": 2,
+    "index": 1,
     "start": 5.04,
-    "end": 12,
-    "text": "your accent, but only if you do it right. In this video, I'll walk you through exactly how to shadow",
-    "pronunciation": "유어 액센트, 벗 온리 이프 유 두 잇 라잇. 인 디스 비디오, 아일 워크 유 쓰루 이그젝틀리 하우 투 쉐도우",
-    "translation": "당신의 억양, 하지만 올바르게 할 때만 가능합니다. 이 비디오에서 나는 정확히 어떻게 섀도잉을 하는지 당신을 안내할 것입니다",
+    "end": 8.32,
+    "text": "your accent, but only if you do it right.",
+    "pronunciation": "유어 액센트, 벗 온리 이프 유 두 잇 라잇. ",
+    "translation": "당신의 억양, 하지만 올바르게 할 때만 가능합니다.",
     "notes": [
       {
         "word": "but only",
@@ -60,12 +60,20 @@
     ]
   },
   {
+    "text": "In this video, I'll walk you through exactly how to shadow",
+    "start": 8.32,
+    "end": 12,
+    "pronunciation": "인 디스 비디오, 아일 워크 유 쓰루 이그젝틀리 하우 투 쉐도우",
+    "translation": "이 비디오에서 나는 정확히 어떻게 섀도잉을 하는지 당신을 안내할 것입니다",
+    "index": 2
+  },
+  {
     "index": 3,
     "start": 12,
-    "end": 16.64,
-    "text": "depending on where you are in your language learning journey. Whether you're just starting",
-    "pronunciation": "디펜딩 온 웨어 유 아르 인 유어 랭귀지 러닝 저니. 웨더 유어 저스 스타팅",
-    "translation": "당신의 언어 학습 여정에서 어디에 있는지에 따라 다릅니다. 당신이 방금 시작하고 있는지 여부",
+    "end": 15.18,
+    "text": "depending on where you are in your language learning journey.",
+    "pronunciation": "디펜딩 온 웨어 유 아르 인 유어 랭귀지 러닝 저니.",
+    "translation": "당신의 언어 학습 여정에서 어디에 있는지에 따라 다릅니다. 당신이",
     "notes": [
       {
         "word": "depending on",
@@ -90,12 +98,12 @@
     ]
   },
   {
+    "text": "Whether you're just starting to focus on pronunciation",
+    "start": 15.18,
+    "end": 18.23,
+    "pronunciation": "웨더 유어 저스 스타팅 투 포우커스 온 프로넌시에이션",
+    "translation": "방금 시작하고 있는지 여부 영어의 모든 소리를",
     "index": 4,
-    "start": 16.64,
-    "end": 22.32,
-    "text": "to focus on pronunciation and learning all the sounds of English, or whether you're already deep",
-    "pronunciation": "투 포우커스 온 프로넌시에이션 엔 러닝 올 더 사운즈 어브 잉글리시, 오어 웨더 유어 올레디 딥",
-    "translation": "영어의 모든 소리를 발음하고 배우는 데 초점을 맞추거나, 당신이 이미 깊이 있는지 여부",
     "notes": [
       {
         "word": "to focus",
@@ -120,12 +128,20 @@
     ]
   },
   {
-    "index": 5,
-    "start": 22.32,
-    "end": 27.92,
-    "text": "into accent training and working on sounding more natural and fluent. Welcome back to my channel,",
-    "pronunciation": "인투 액센트 트레이닝 엔 워킹 온 사운딩 모어 내처럴 엔 플루언트. 웰컴 백 투 마이 채널",
-    "translation": "악센트 훈련과 더 자연스럽고 유창하게 발음하기에 집중합니다. 내 채널에 다시 오신 것을 환영합니다",
+    "text": "and learning all the sounds of English,",
+    "start": 18.23,
+    "end": 20.4,
+    "pronunciation": "엔 러닝 올 더 사운즈 어브 잉글리시,",
+    "translation": "발음하고 배우는 데 초점을 맞추거나, 당신이",
+    "index": 5
+  },
+  {
+    "text": "or whether you're already deep into accent training",
+    "start": 20.4,
+    "end": 23.49,
+    "pronunciation": "오어 웨더 유어 올레디 딥 인투 액센트 트레이닝",
+    "translation": "이미 깊이 있는지 여부 악센트 훈련과 더",
+    "index": 6,
     "notes": [
       {
         "word": "into accent",
@@ -150,12 +166,20 @@
     ]
   },
   {
-    "index": 6,
-    "start": 27.92,
-    "end": 32.72,
-    "text": "or if you're new here, hi, I'm Veronica. On this channel, I share everything I've learned",
-    "pronunciation": "오어 이프 유어 뉴 히어, 하이, 아임 버로니커. 온 디스 채널, 아이 셰어 에브리씽 아이브 러닝드",
-    "translation": "또는 여기 처음이신 경우 안녕하세요, 저는 베로니카입니다. 이 채널에서 배운 모든 것을 공유합니다",
+    "text": "and working on sounding more natural and fluent.",
+    "start": 23.49,
+    "end": 26.33,
+    "pronunciation": "엔 워킹 온 사운딩 모어 내처럴 엔 플루언트.",
+    "translation": "자연스럽고 유창하게 발음하기에 집중합니다. 내 채널에",
+    "index": 7
+  },
+  {
+    "text": "Welcome back to my channel, or if you're new here,",
+    "start": 26.33,
+    "end": 29.02,
+    "pronunciation": "웰컴 백 투 마이 채널 오어 이프 유어 뉴히어, ",
+    "translation": "다시 오신 것을 환영합니다 또는 여기 처음이신",
+    "index": 8,
     "notes": [
       {
         "word": "if you're new",
@@ -180,12 +204,28 @@
     ]
   },
   {
-    "index": 7,
+    "text": "hi, I'm Veronica. On this channel,",
+    "start": 29.02,
+    "end": 30.96,
+    "pronunciation": "하이, 아임 버로니커. 온 디스 채널,",
+    "translation": "경우 안녕하세요, 저는 베로니카입니다. 이",
+    "index": 9
+  },
+  {
+    "text": "I share everything I've learned",
+    "start": 30.96,
+    "end": 32.72,
+    "pronunciation": "아이 셰어 에브리씽 아이브 런드",
+    "translation": "채널에서 배운 모든 것을 공유합니다",
+    "index": 10
+  },
+  {
+    "index": 11,
     "start": 32.72,
-    "end": 37.68,
-    "text": "or am still learning about language learning to help you achieve your fluency goals and",
-    "pronunciation": "오어 엠 스틸 러닝 어바우트 랭귀지 러닝 투 헬프 유 어칫브 유어 플루언시 고울즈 엔",
-    "translation": "또는 여전히 배우고 있는 언어 학습에 대해 당신이 유창함 목표를 달성하는 것을 도울 수 있도록",
+    "end": 35.73,
+    "text": "or am still learning about language learning to help you",
+    "pronunciation": "오어 엠 스틸 러닝 어바우트 랭귀지 러닝 투 헬프 유",
+    "translation": "또는 여전히 배우고 있는 언어 학습에 대해 당신이 유창함 목표를",
     "notes": [
       {
         "word": "am still",
@@ -210,12 +250,12 @@
     ]
   },
   {
-    "index": 8,
-    "start": 37.68,
-    "end": 41.6,
-    "text": "speak with more confidence. If you want to support my work, make sure to check out my",
-    "pronunciation": "스픽 위드 모어 컨피던스. 이프 유 완트 투 써포트 마이 워크, 메이크 셔 투 첵 아웃 마이",
-    "translation": "더 자신감 있게 말하세요. 내 일을 지원하고 싶다면 내 것을 확인해 보세요",
+    "text": "achieve your fluency goals and speak with more confidence.",
+    "start": 35.73,
+    "end": 38.94,
+    "pronunciation": "어칫뷰어 플루언시 고울즈 엔 스픽 위드 모어 컨피던스.",
+    "translation": "달성하는 것을 도울 수 있도록 더 자신감 있게 말하세요.",
+    "index": 12,
     "notes": [
       {
         "word": "speak with",
@@ -240,12 +280,12 @@
     ]
   },
   {
-    "index": 9,
-    "start": 41.6,
-    "end": 45.92,
-    "text": "notion templates. I have a notion template specifically designed for language learners.",
-    "pronunciation": "노션 템플릿츠. 아이 해브 어 노션 템플릿 스페시픽 디자인드 포어 랭귀지 러너즈",
-    "translation": "노션 템플릿입니다. 나는 언어 학습자를 위해 특별히 설계된 노션 템플릿을 가지고 있습니다",
+    "text": "If you want to support my work, make sure to check out my notion templates.",
+    "start": 38.94,
+    "end": 42.45,
+    "pronunciation": "이프유 완트 투 써포트 마이 워크, 메이크 셔 투 첵 아웃 마이 노션 템플릿츠.",
+    "translation": "내 일을 지원하고 싶다면 내 것을 확인해 보세요 노션 템플릿입니다.",
+    "index": 13,
     "notes": [
       {
         "word": "I have a",
@@ -270,12 +310,20 @@
     ]
   },
   {
-    "index": 10,
-    "start": 45.92,
-    "end": 50.08,
-    "text": "It's called your language learning corner. There you can organize all of your language",
-    "pronunciation": "잇츠 콜드 유어 랭귀지 러닝 코너. 데어 유 캔 오거나이즈 올 어브 유어 랭귀지",
-    "translation": "그것을 당신의 언어 학습 코너라고 부릅니다. 거기서 당신은 모든 언어를 정리할 수 있습니다",
+    "text": "I have a notion template specifically designed for language learners.",
+    "start": 42.45,
+    "end": 45.82,
+    "pronunciation": "아이 해브 어 노션 템플릿 스페시픽 디자인드 포어 랭귀지 러너즈",
+    "translation": "나는 언어 학습자를 위해 특별히 설계된 노션 템플릿을 가지고 있습니다",
+    "index": 14
+  },
+  {
+    "index": 15,
+    "start": 45.82,
+    "end": 47.92,
+    "text": "It's called your language learning corner.",
+    "pronunciation": "잇츠 콜드 유어 랭귀지 러닝 코너.",
+    "translation": "그것을 당신의 언어 학습 코너라고 부릅니다.",
     "notes": [
       {
         "word": "It's called",
@@ -300,12 +348,12 @@
     ]
   },
   {
-    "index": 11,
-    "start": 50.08,
-    "end": 56.72,
-    "text": "learning for multiple languages if necessary and just keep track of absolutely everything. Also,",
-    "pronunciation": "러닝 포 멀티플 랭궤징 이프 넥세서리 언 주스 킵 트랙 어브 얍설루틀리 에브리씽. 올소우",
-    "translation": "여러 언어를 배우고 필요하면 모든 것을 추적하고 계속 유지해야 합니다. 또한",
+    "text": "There you can organize all of your language learning for multiple languages",
+    "start": 47.92,
+    "end": 51.95,
+    "pronunciation": "데어 유캔 오거나이즈 올어브 유어 랭귀지 러닝 포 멀티플 랭궤징",
+    "translation": "거기서 당신은 모든 언어를 정리할 수 있습니다 여러 언어를 배우고 필요하면",
+    "index": 16,
     "notes": [
       {
         "word": "for multiple",
@@ -325,12 +373,20 @@
     ]
   },
   {
-    "index": 12,
-    "start": 56.72,
-    "end": 61.76,
-    "text": "if you want to get personal updates from me, make sure to sign up for my free weekly newsletter,",
-    "pronunciation": "이프 유 완타 게 퍼설널 업데이츠 프럼 미, 메이크 슈어 투 사인 업 포 마이 프리 윅클리 뉴즈레터",
-    "translation": "나로부터 개인적인 업데이트를 받고 싶다면 내 무료 주간 뉴스레터에 가입해야 합니다.",
+    "text": "if necessary and just keep track of absolutely everything.",
+    "start": 51.95,
+    "end": 56.24,
+    "pronunciation": "이프 넥세서리 언 주스 킵 트랙 어브 얍설루틀리 에브리씽.",
+    "translation": "모든 것을 추적하고 계속 유지해야 합니다.",
+    "index": 17
+  },
+  {
+    "text": "Also, if you want to get personal updates from me,",
+    "start": 56.24,
+    "end": 58.45,
+    "pronunciation": "올소우 이프 유 완타 게 퍼설널 업데이츠 프럼 미,",
+    "translation": "또한 나로부터 개인적인 업데이트를 받고 싶다면",
+    "index": 18,
     "notes": [
       {
         "word": "want to get",
@@ -350,12 +406,20 @@
     ]
   },
   {
-    "index": 13,
-    "start": 61.76,
-    "end": 68.48,
-    "text": "Veronica's Weekly Vibes. I don't spam. I only share my own updates, my own personal stories. So,",
-    "pronunciation": "버로니커즈 윅클리 바입즈. 아이 돈스팸. 아이 온리 셰어 마이 온 업데이츠, 마이 온 퍼설널 스토리즈. 소우",
-    "translation": "베로니카의 주간 소식. 나는 스팸을 보내지 않습니다. 나만의 업데이트와 개인적인 이야기만 공유합니다. 그래서",
+    "text": "make sure to sign up for my free weekly newsletter,",
+    "start": 58.45,
+    "end": 61.66,
+    "pronunciation": "메이크 슈어 투 사인 업 포 마이 프리 윅클리 뉴즈레터",
+    "translation": "내 무료 주간 뉴스레터에 가입해야 합니다.",
+    "index": 19
+  },
+  {
+    "index": 20,
+    "start": 61.66,
+    "end": 64.39,
+    "text": "Veronica's Weekly Vibes. I don't spam.",
+    "pronunciation": "버로니커즈 윅클리 바입즈. 아이 돈스팸.",
+    "translation": "베로니카의 주간 소식. 나는 스팸을",
     "notes": [
       {
         "word": "don't spam",
@@ -375,12 +439,20 @@
     ]
   },
   {
-    "index": 14,
-    "start": 68.48,
-    "end": 74,
-    "text": "if you want to join my growing community of over 40,000 people there, make sure to sign",
-    "pronunciation": "이프 유 완타 조인 마이 그로잉 커뮤니티 어브 오버 포티 싸우전 피플 데어, 메이크 슈어 투 사인",
-    "translation": "만약 4만 명 이상의 내 커뮤니티에 참여하고 싶다면 가입해야 합니다.",
+    "text": "I only share my own updates, my own personal stories.",
+    "start": 64.39,
+    "end": 68.06,
+    "pronunciation": "아이 온리 셰어 마이 온 업데이츠, 마이 온 퍼설널 스토리즈.",
+    "translation": "보내지 않습니다. 나만의 업데이트와 개인적인 이야기만 공유합니다.",
+    "index": 21
+  },
+  {
+    "text": "So, if you want to join my growing community of over 40,000 people there,",
+    "start": 68.06,
+    "end": 73.01,
+    "pronunciation": "소우 이프 유 완타 조인 마이 그로잉 커뮤니티 어브 오버 포티 싸우전 피플 데어,",
+    "translation": "그래서 만약 4만 명 이상의 내 커뮤니티에 참여하고 싶다면",
+    "index": 22,
     "notes": [
       {
         "word": "want to join",
@@ -400,12 +472,12 @@
     ]
   },
   {
-    "index": 15,
-    "start": 74,
-    "end": 79.2,
-    "text": "up by using the link in the description. Okay, so let's begin our conversation and talk about",
-    "pronunciation": "업 바이 유징 더 링크 인 더 디스크립션. 오케이, 소우 렛츠 비긴 아워 칸버세이션 언 톡 어바웃",
-    "translation": "설명 링크를 사용하여 가입하세요. 좋아요, 그래서 우리의 대화를 시작하고 이야기해봅시다.",
+    "text": "make sure to sign up by using the link in the description.",
+    "start": 73.01,
+    "end": 75.76,
+    "pronunciation": "메이크슈어 투 사인 업 바이 유징 더 링크 인너 디스크립션. ",
+    "translation": "가입해야 합니다. 설명 링크를 사용하여 가입하세요.",
+    "index": 23,
     "notes": [
       {
         "word": "using the",
@@ -425,12 +497,12 @@
     ]
   },
   {
-    "index": 16,
-    "start": 79.2,
-    "end": 86.16,
-    "text": "why shadowing works. Shadowing did work for me personally in an amazing way. Like one of the",
-    "pronunciation": "와이 셰도잉 웍스. 셰도잉 디드 웍 포 미 퍼설널리 인 엔 어메이징 웨이. 라이크 원 어브 더",
-    "translation": "섀도잉이 왜 작동하는가. 섀도잉은 개인적으로 놀라운 방식으로 저에게 효과가 있었습니다. 그것 중 하나처럼",
+    "text": "Okay, so let's begin our conversation and talk about why shadowing works.",
+    "start": 75.76,
+    "end": 81.33,
+    "pronunciation": "오케이, 소우 렛츠 비긴 아워 칸버세이션 언 톡 어바웃 와이 셰도잉 웍스.",
+    "translation": "좋아요, 그래서 우리의 대화를 시작하고 이야기해봅시다. 섀도잉이 왜 작동하는가.",
+    "index": 24,
     "notes": [
       {
         "word": "shadowing works",
@@ -450,12 +522,20 @@
     ]
   },
   {
-    "index": 17,
-    "start": 86.16,
-    "end": 92.4,
-    "text": "reasons why I have the accent, the pronunciation I do right now is exactly because of shadowing",
-    "pronunciation": "리즌즈 와이 아이 해브 디 액센트, 더 프러넌시에이션 아이 두 라잇 나우 이즈 이그잭틀리 비코즈 어브 셰도잉",
-    "translation": "내가 가진 악센트와 발음이 정확히 섀도잉 때문인 이유들",
+    "text": "Shadowing did work for me personally in an amazing way.",
+    "start": 81.33,
+    "end": 85.13,
+    "pronunciation": "셰도잉 디드 웍포미 펄슨리 인엔 어메이징 웨이. ",
+    "translation": "섀도잉은 개인적으로 놀라운 방식으로 저에게 효과가 있었습니다. 그것",
+    "index": 25
+  },
+  {
+    "text": "Like one of the reasons why I have the accent,",
+    "start": 85.13,
+    "end": 88.15,
+    "pronunciation": "라이크 원어브 더 리즌즈 와이 아이 해브 디액센트, ",
+    "translation": "중 하나처럼 내가 가진 악센트와",
+    "index": 26,
     "notes": [
       {
         "word": "right now",
@@ -475,12 +555,20 @@
     ]
   },
   {
-    "index": 18,
-    "start": 92.4,
-    "end": 98.56,
-    "text": "is because I decided to intentionally practice and work on my pronunciation. So shadowing is when you",
-    "pronunciation": "이즈 비코즈 아이 디사이디드 투 인텐셔널리 프랙티스 언 웍 온 마이 프러넌시에이션. 소우 셰도잉 이즈 웬 유",
-    "translation": "발음을 의도적으로 연습하고 작업하기로 결정했기 때문입니다. 섀도잉은 당신이",
+    "text": "the pronunciation I do right now is exactly because of shadowing",
+    "start": 88.15,
+    "end": 92.1,
+    "pronunciation": "더 프러넌시에이션 아이 두 라잇 나우 이즈 이그잭틀리 비코즈 어브 셰도잉",
+    "translation": "발음이 정확히 섀도잉 때문인 이유들",
+    "index": 27
+  },
+  {
+    "index": 28,
+    "start": 92.1,
+    "end": 96.91,
+    "text": "is because I decided to intentionally practice and work on my pronunciation.",
+    "pronunciation": "이즈 비코즈 아이 디사이디드 투 인텐셔널리 프랙티스 언 웍 온 마이 프러넌시에이션. ",
+    "translation": "발음을 의도적으로 연습하고 작업하기로 결정했기 때문입니다.",
     "notes": [
       {
         "word": "intentionally practice",
@@ -500,12 +588,12 @@
     ]
   },
   {
-    "index": 19,
-    "start": 98.56,
-    "end": 105.44,
-    "text": "repeat after a native speaker in real time. So you kind of act like an echo. That's why it's called",
-    "pronunciation": "리핏 애프터 어 네이티브 스피커 인 릴 타임. 소우 유 카인더 액트 라이크 엔 에코우. 댓츠 와이 이츠 콜드",
-    "translation": "원어민 말을 따라 반복하고 실시간으로 합니다. 당신이 에코처럼 행동합니다. 그래서 그것은 불린다고 합니다.",
+    "text": "So shadowing is when you repeat after a native speaker in real time.",
+    "start": 96.91,
+    "end": 101.78,
+    "pronunciation": "소우 셰도잉 이즈 웬 유 리핏 애프터 어 네이티브 스피커 인 릴 타임.",
+    "translation": "섀도잉은 당신이 원어민 말을 따라 반복하고 실시간으로 합니다.",
+    "index": 29,
     "notes": [
       {
         "word": "kind of act",
@@ -525,12 +613,12 @@
     ]
   },
   {
-    "index": 20,
-    "start": 105.44,
-    "end": 111.44,
-    "text": "shadowing. Like you're being their shadow. As the speaker talks, you speak along a few seconds",
-    "pronunciation": "셰도잉. 라이크 유어 비잉 데어 셰도우. 애즈 더 스피커 톡스, 유 스픽 얼롱 어 퓨 세컨즈",
-    "translation": "섀도잉입니다. 마치 그들의 그림자인 것처럼. 말하는 사람이 말할 때 당신도 몇 초 뒤에 따라 말합니다.",
+    "text": "So you kind of act like an echo.",
+    "start": 101.78,
+    "end": 104,
+    "pronunciation": "소우 유 카인더 액트 라이크 엔에코우. ",
+    "translation": "당신이 에코처럼 행동합니다. 그래서",
+    "index": 30,
     "notes": [
       {
         "word": "you're being",
@@ -550,12 +638,28 @@
     ]
   },
   {
-    "index": 21,
-    "start": 111.44,
-    "end": 116.56,
-    "text": "later. You try to copy absolutely everything. \nThe speaker's speech, their pronunciation,",
-    "pronunciation": "레이더. 유 트라이 쿠 카피 업솔루틀리 에브리싱. 더 스피커즈 스피치, 데어 프러넌시에이션,",
-    "translation": "나중에. 당신은 절대적으로 모든 것을 복사하려고 노력합니다. 연사의 음성, 그들의 발음,",
+    "text": "That's why it's called shadowing.",
+    "start": 104,
+    "end": 105.99,
+    "pronunciation": "댓츠 와이 이츠 콜드 셰도잉. ",
+    "translation": "그것은 불린다고 합니다. 섀도잉입니다. 마치",
+    "index": 31
+  },
+  {
+    "text": "Like you're being their shadow.",
+    "start": 105.99,
+    "end": 107.99,
+    "pronunciation": "라이크유어 비잉 데어 셰도우.",
+    "translation": "그들의 그림자인 것처럼. 말하는 사람이",
+    "index": 32
+  },
+  {
+    "text": "As the speaker talks, you speak along a few seconds later.",
+    "start": 107.99,
+    "end": 111.79,
+    "pronunciation": "애즈더 스피커 톡스, 유 스픽 얼롱 어 퓨 세컨즈 레이더.",
+    "translation": "말할 때 당신도 몇 초 뒤에 따라 말합니다. 나중에.",
+    "index": 33,
     "notes": [
       {
         "word": "to copy",
@@ -575,12 +679,20 @@
     ]
   },
   {
-    "index": 22,
-    "start": 116.56,
-    "end": 122.4,
-    "text": "their intonation, and their rhythm. This method \nwas actually originally used to train simultaneous",
-    "pronunciation": "데어 인또네이션, 앤 데어 리덤. 디스 메썬 워즈 액추얼리 어리진얼리 유즈드 투 트레인 심얼테이니어슬리",
-    "translation": "그들의 음성 강조, 그리고 그들의 리듬. 이 방법은 실제로 원래 동시",
+    "text": "You try to copy absolutely everything.",
+    "start": 111.79,
+    "end": 114.06,
+    "pronunciation": "유 트라이 쿠 카피 업솔루틀리 에브리싱. ",
+    "translation": "당신은 절대적으로 모든 것을 복사하려고",
+    "index": 34
+  },
+  {
+    "text": "The speaker's speech, their pronunciation, their intonation, and their rhythm.",
+    "start": 114.06,
+    "end": 118.47,
+    "pronunciation": "더 스피커즈 스피치, 데어 프러넌시에이션, 데어 인또네이션, 앤 데어 리덤.",
+    "translation": "노력합니다. 연사의 음성, 그들의 발음, 그들의 음성 강조, 그리고",
+    "index": 35,
     "notes": [
       {
         "word": "This method was",
@@ -600,12 +712,12 @@
     ]
   },
   {
-    "index": 23,
-    "start": 122.4,
-    "end": 127.76,
-    "text": "interpreters. And because it was so effective, \nother people, other language learners started",
-    "pronunciation": "인터프리더즈. 앤 비카즈 이 워즈 소 이펙티브, 아더 피펄, 아더 랭귀지 러너즈 스타르디드",
-    "translation": "통역사들. 그리고 그것이 매우 효과적이었기 때문에, 다른 사람들, 다른 언어 학습자들이 시작했습니다",
+    "text": "This method was actually originally used to train simultaneous interpreters.",
+    "start": 118.47,
+    "end": 122.97,
+    "pronunciation": "디스 메썬 워즈 액추얼리 어리진얼리 유즈드 투 트레인 사이멀테이니어슬리 인터프러즈.",
+    "translation": "그들의 리듬. 이 방법은 실제로 원래 동시 통역사들. 그리고",
+    "index": 36,
     "notes": [
       {
         "word": "because it was",
@@ -625,12 +737,12 @@
     ]
   },
   {
-    "index": 24,
-    "start": 127.76,
-    "end": 132.88,
-    "text": "using it. And personally, I have found four \nreasons why shadowing has been so powerful",
-    "pronunciation": "유징 이. 앤 퍼슨얼리, 아이 해브 파운 포어 리즌즈 화이 셰도잉 해즈 빈 소우 파우워펄",
-    "translation": "사용합니다. 그리고 개인적으로, 나는 섀도잉이 매우 강력했던 이유 4가지를 발견했습니다",
+    "text": "And because it was so effective, other people, other language learners started using it.",
+    "start": 122.97,
+    "end": 128.3,
+    "pronunciation": " 앤비카즈 이 워즈 소 이펙티브, 아더 피펄, 아더 랭귀지 러너즈 스타르디드 유징 이.",
+    "translation": "그것이 매우 효과적이었기 때문에, 다른 사람들, 다른 언어 학습자들이 시작했습니다 사용합니다.",
+    "index": 37,
     "notes": [
       {
         "word": "using it",
@@ -650,12 +762,12 @@
     ]
   },
   {
-    "index": 25,
-    "start": 132.88,
-    "end": 140.08,
-    "text": "for me. The first reason is not really about your \npronunciation, about your accent. It's about your",
-    "pronunciation": "포어 미. 더 퍼스트 리즌 이즈 나 릴리 어바우 요어 프러넌시에이션, 어바우 요어 악센. 이즈 어바우 요어",
-    "translation": "나를 위해. 첫 번째 이유는 실제로 당신의 발음, 당신의 억양에 관한 것이 아닙니다. 당신의",
+    "text": "And personally, I have found four reasons why shadowing has been so powerful for me.",
+    "start": 128.3,
+    "end": 133.39,
+    "pronunciation": "앤 퍼슨얼리, 아이 해브 파운 포어 리즌즈 화이 셰도잉 해즈 빈 소우 파우워펄 포어미. ",
+    "translation": "그리고 개인적으로, 나는 섀도잉이 매우 강력했던 이유 4가지를 발견했습니다 나를",
+    "index": 38,
     "notes": [
       {
         "word": "The first reason is",
@@ -675,12 +787,12 @@
     ]
   },
   {
-    "index": 26,
-    "start": 140.08,
-    "end": 144.56,
-    "text": "attention. Because a lot of us language learners, \nwe don't have a lot of time. Sometimes we feel",
-    "pronunciation": "어텐션. 비카즈 어 락 어브 어스 랭귀지 러너즈, 위 도운 해브 어 락 어브 타임. 섬타임즈 위 필",
-    "translation": "주의력. 왜냐하면 우리 언어 학습자의 많은 부분이, 우리는 많은 시간이 없습니다. 때때로 우리는 느낍니다",
+    "text": "The first reason is not really about your pronunciation, about your accent. It's about your attention.",
+    "start": 133.39,
+    "end": 140.55,
+    "pronunciation": "더 퍼스트 리즌 이즈 나 릴리 어바우 요어 프러넌시에이션, 어바우 요어 악센. 이즈 어바우 요어 어텐션.",
+    "translation": "위해. 첫 번째 이유는 실제로 당신의 발음, 당신의 억양에 관한 것이 아닙니다. 당신의 주의력.",
+    "index": 39,
     "notes": [
       {
         "word": "lot of us",
@@ -700,12 +812,20 @@
     ]
   },
   {
-    "index": 27,
-    "start": 144.56,
-    "end": 150.64,
-    "text": "lazy and so we turn something on in the background \nand think that we are learning. I'm kind of",
-    "pronunciation": "레이지 앤 소우 위 턴 섬씽 안 인 더 백그라운 앤 씽크 댓 위 아어 러닝. 아임 카인도브",
-    "translation": "게으르고 그래서 우리는 무언가를 켭니다 배경에서 그리고 우리가 배우고 있다고 생각합니다. 나는 일종의",
+    "text": "Because a lot of us language learners, we don't have a lot of time.",
+    "start": 140.55,
+    "end": 143.65,
+    "pronunciation": "비카즈어 락 어브 어스 랭귀지 러너즈, 위 도운 해브 어 락 어브 타임.",
+    "translation": "왜냐하면 우리 언어 학습자의 많은 부분이, 우리는 많은 시간이 없습니다.",
+    "index": 40
+  },
+  {
+    "text": "Sometimes we feel lazy and so we turn something on in the background and think that we are learning.",
+    "start": 143.65,
+    "end": 149.92,
+    "pronunciation": "섬타임즈 위 필 레이지 앤 소우 위 턴 섬씽 안 인 더 백그라운 앤 씽크 댓 위 아어 러닝.",
+    "translation": "때때로 우리는 느낍니다 게으르고 그래서 우리는 무언가를 켭니다 배경에서 그리고 우리가 배우고 있다고 생각합니다.",
+    "index": 41,
     "notes": [
       {
         "word": "lazy and so",
@@ -725,12 +845,12 @@
     ]
   },
   {
-    "index": 28,
-    "start": 150.64,
-    "end": 156.96,
-    "text": "listening to this podcast, so let's count it. \nYou know, today I have practiced this language.",
-    "pronunciation": "리슨닝 투 디스 팟캐스트, 소우 렛스 카운 이. 유 노우, 터데이 아이 해브 프랙티스 디스 랭귀지.",
-    "translation": "이 팟캐스트를 듣고 있습니다, 그래서 세어봅시다. 당신 알다시피, 오늘 나는 이 언어를 연습했습니다.",
+    "text": "I'm kind of listening to this podcast, so let's count it.",
+    "start": 149.92,
+    "end": 154.03,
+    "pronunciation": "아임 카인도브 리슨닝 투 디스 팟캐스트, 소우 렛스 카운 이.",
+    "translation": "나는 일종의 이 팟캐스트를 듣고 있습니다, 그래서 세어봅시다.",
+    "index": 42,
     "notes": [
       {
         "word": "listening to",
@@ -750,12 +870,20 @@
     ]
   },
   {
-    "index": 29,
-    "start": 156.96,
-    "end": 162.96,
-    "text": "And shadowing works in a completely different way \nbecause it forces you to actively pay attention to",
-    "pronunciation": "앤 셰도잉 워크스 인 어 컴플리틀리 디펀트 웨이 비카즈 이 포어시즈 유 투 액티블리 페이 어텐션 투",
-    "translation": "그리고 섀도잉은 완전히 다른 방식으로 작동합니다 왜냐하면 그것은 당신이 적극적으로 주의를 기울이도록 강제합니다",
+    "text": "You know, today I have practiced this language.",
+    "start": 154.03,
+    "end": 156.66,
+    "pronunciation": "유 노우, 터데이 아이 해브 프랙티스 디스 랭귀지.",
+    "translation": "당신 알다시피, 오늘 나는 이 언어를 연습했습니다.",
+    "index": 43
+  },
+  {
+    "index": 44,
+    "start": 156.66,
+    "end": 159.22,
+    "text": "And shadowing works in a completely different way",
+    "pronunciation": "앤 셰도잉 워크스 인 어 컴플리틀리 디펀트 웨이",
+    "translation": "그리고 섀도잉은 완전히 다른 방식으로 작동합니다 왜냐하면",
     "notes": [
       {
         "word": "shadowing works in",
@@ -771,17 +899,7 @@
         "word": "it forces you to",
         "actual": "이 포어시즈 유 투",
         "meaning": "it → 이, forces → 포어시즈, you → 유, to → 투"
-      }
-    ]
-  },
-  {
-    "index": 30,
-    "start": 162.96,
-    "end": 168.56,
-    "text": "the language because you're listening and speaking \nat the same time. So obviously you have to pay",
-    "pronunciation": "더 랭귀지 비카즈 유어 리슨닝 앤 스피킹 앳 더 세임 타임. 소우 아비어슬리 유 해브 투 페이",
-    "translation": "언어를 왜냐하면 당신은 듣고 말하고 있기 때문에 같은 시간에. 그래서 명백하게 당신은 주의를 기울여야 합니다",
-    "notes": [
+      },
       {
         "word": "the language because",
         "actual": "더 랭귀지 비카즈",
@@ -800,12 +918,28 @@
     ]
   },
   {
-    "index": 31,
-    "start": 168.56,
-    "end": 173.84,
-    "text": "attention to what you're listening to and to what \nyou're saying. And I always say that attention",
-    "pronunciation": "어텐션 투 왓 유어 리스닝 투 앤 투 왓 유어 세잉. 앤 아이 올웨이즈 세이 댓 어텐션",
-    "translation": "무엇을 듣고 있는지, 그리고 무엇을 말하고 있는지에 주의를 기울여야 합니다. 그리고 저는 항상 주의가",
+    "text": "because it forces you to actively pay attention to the language",
+    "start": 159.22,
+    "end": 163.66,
+    "pronunciation": "비카즈 이 포어시즈 유 투 액티블리 페이 어텐션 투 더 랭귀지",
+    "translation": "그것은 당신이 적극적으로 주의를 기울이도록 강제합니다 언어를 왜냐하면",
+    "index": 45
+  },
+  {
+    "text": "because you're listening and speaking at the same time.",
+    "start": 163.66,
+    "end": 166.91,
+    "pronunciation": "비카즈 유어 리슨닝 앤 스피킹 앳 더 세임 타임.",
+    "translation": "당신은 듣고 말하고 있기 때문에 같은 시간에. 그래서 명백하게",
+    "index": 46
+  },
+  {
+    "text": "So obviously you have to pay attention to",
+    "start": 166.91,
+    "end": 169.33,
+    "pronunciation": "소우 아비어슬리 유 해브 투 페이 어텐션 투",
+    "translation": "당신은 주의를 기울여야 합니다 무엇을 듣고",
+    "index": 47,
     "notes": [
       {
         "word": "to",
@@ -830,12 +964,20 @@
     ]
   },
   {
-    "index": 32,
-    "start": 173.84,
-    "end": 181.68,
-    "text": "is absolutely everything. Whatever you focus on \ngrows. You become what you give your attention to.",
-    "pronunciation": "이즈 앱솔루틀리 에브리씽. 워레버 유 포커스 온 그로우즈. 유 비컴 왓 유 기브 유어 어텐션 투.",
-    "translation": "절대적으로 모든 것입니다. 무엇이든 집중하는 것. 당신이 집중하는 것이 당신이 되는 것입니다.",
+    "text": "what you're listening to and to what you're saying.",
+    "start": 169.33,
+    "end": 172.1,
+    "pronunciation": "왓 유어 리스닝 투 앤 투 왓 유어 세잉.",
+    "translation": "있는지, 그리고 무엇을 말하고 있는지에 주의를 기울여야",
+    "index": 48
+  },
+  {
+    "text": "And I always say that attention is absolutely everything.",
+    "start": 172.1,
+    "end": 175.86,
+    "pronunciation": "앤 아이 올웨이즈 세이 댓 어텐션 이즈 앱솔루틀리 에브리씽. 워레버",
+    "translation": "합니다. 그리고 저는 항상 주의가 절대적으로 모든 것입니다.",
+    "index": 49,
     "notes": [
       {
         "word": "absolutely",
@@ -860,7 +1002,23 @@
     ]
   },
   {
-    "index": 33,
+    "text": "Whatever you focus on grows.",
+    "start": 175.86,
+    "end": 178.16,
+    "pronunciation": "유 포커스 온 그로우즈. ",
+    "translation": "무엇이든 집중하는 것. 당신이",
+    "index": 50
+  },
+  {
+    "text": "You become what you give your attention to.",
+    "start": 178.16,
+    "end": 181.68,
+    "pronunciation": "유비컴 왓 유 기브 유어 어텐션 투.",
+    "translation": "집중하는 것이 당신이 되는 것입니다.",
+    "index": 51
+  },
+  {
+    "index": 52,
     "start": 181.68,
     "end": 186.72,
     "text": "The second reason why shadowing is so powerful is \nobviously because you improve your pronunciation.",
@@ -890,12 +1048,12 @@
     ]
   },
   {
-    "index": 34,
+    "index": 53,
     "start": 186.72,
-    "end": 193.04,
-    "text": "You improve your accent. Shadowing helps you learn \nhow to pronounce more accurate speech sounds,",
-    "pronunciation": "유 임프루브 유어 액센트. 셰도잉 헬프즈 유 런 하우 투 프러나운스 모어 어큐럿 스피치 사운즈",
-    "translation": "당신의 억양을 개선합니다. 섀도잉은 더 정확한 음성 소리를 발음하는 방법을 배우도록 도와줍니다.",
+    "end": 187.92,
+    "text": "You improve your accent.",
+    "pronunciation": "유 임프루브 유어 액센트.",
+    "translation": "당신의 억양을 개선합니다.",
     "notes": [
       {
         "word": "improve",
@@ -920,12 +1078,20 @@
     ]
   },
   {
-    "index": 35,
+    "text": "Shadowing helps you learn how to pronounce more accurate speech sounds,",
+    "start": 187.92,
+    "end": 193.04,
+    "pronunciation": "셰도잉 헬프즈 유 런 하우 투 프러나운스 모어 어큐럿 스피치 사운즈",
+    "translation": "섀도잉은 더 정확한 음성 소리를 발음하는 방법을 배우도록 도와줍니다.",
+    "index": 54
+  },
+  {
+    "index": 55,
     "start": 193.04,
-    "end": 198.32,
-    "text": "phone names, and natural intonation patterns. \nYou're constantly training your mouth and also",
-    "pronunciation": "폰 네임즈 앤 내추럴 인토네이션 패턴즈. 유어 컨스턴틀리 트레이닝 유어 마우스 앤 올소",
-    "translation": "음성 이름과 자연스러운 억양 패턴. 당신은 계속해서 당신의 입을 훈련하고 또한",
+    "end": 195.65,
+    "text": "phone names, and natural intonation patterns.",
+    "pronunciation": "폰 네임즈 앤 내추럴 인토네이션 패턴즈.",
+    "translation": "음성 이름과 자연스러운 억양 패턴.",
     "notes": [
       {
         "word": "phone",
@@ -950,12 +1116,12 @@
     ]
   },
   {
-    "index": 36,
-    "start": 198.32,
-    "end": 203.44,
-    "text": "your brain because your brain has to create \nnew neural pathways because if your native",
-    "pronunciation": "유어 브레인 비카즈 유어 브레인 해즈 투 크리에잇 누 누럴 패쓰웨이즈 비카즈 이프 유어 네이티브",
-    "translation": "당신의 뇌입니다. 당신의 뇌가 새로운 신경 경로를 만들어야 하기 때문에 당신의 모국어가",
+    "text": "You're constantly training your mouth and also your brain",
+    "start": 195.65,
+    "end": 198.92,
+    "pronunciation": "유어 컨스턴틀리 트레이닝 유어 마우스 앤 올소 유어 브레인",
+    "translation": "당신은 계속해서 당신의 입을 훈련하고 또한 당신의",
+    "index": 56,
     "notes": [
       {
         "word": "because",
@@ -980,12 +1146,20 @@
     ]
   },
   {
-    "index": 37,
-    "start": 203.44,
-    "end": 210.08,
-    "text": "language doesn't have the sound the for example \nobviously your mouth will have to work like the",
-    "pronunciation": "랭귀지 더즌 해브 더 사운드 더 포어 이그잼플 옵비어슬리 유어 마우스 윌 해브 투 웍 라이크 더",
-    "translation": "그 음을 가지지 않으면 분명히 당신의 입은 그처럼 작동해야 할 것입니다.",
+    "text": "because your brain has to create new neural pathways",
+    "start": 198.92,
+    "end": 202.1,
+    "pronunciation": "비카즈 유어 브레인 해즈 투 크리에잇 누 누럴 패쓰웨이즈",
+    "translation": "뇌입니다. 당신의 뇌가 새로운 신경 경로를 만들어야 하기",
+    "index": 57
+  },
+  {
+    "text": "because if your native language doesn't have the sound",
+    "start": 202.1,
+    "end": 205.13,
+    "pronunciation": "비카즈 이프 유어 네이티브 랭귀지 더즌 해브 더 사운드 ",
+    "translation": "때문에 당신의 모국어가 그 음을 가지지 않으면",
+    "index": 58,
     "notes": [
       {
         "word": "doesn't",
@@ -1010,12 +1184,20 @@
     ]
   },
   {
-    "index": 38,
-    "start": 210.08,
-    "end": 215.6,
-    "text": "muscle memory and all of that on learning how to \neven make this sound and also your brain will have",
-    "pronunciation": "머슬 메모리 앤 올 어브 댓 온 런닝 하우 투 이븐 메이크 디스 사운드 앤 올소 유어 브레인 윌 해브",
-    "translation": "근육 기억과 모든 것은 배우는 방식과 이 소리를 만드는 방법에 관한 것입니다. 당신의 뇌도",
+    "text": "the for example obviously your mouth will have to work",
+    "start": 205.13,
+    "end": 209.44,
+    "pronunciation": "포어 이그잼플 옵비어슬리 유어 마우스 윌 해브 투 웍 라이크",
+    "translation": "분명히 당신의 입은 그처럼 작동해야 할",
+    "index": 59
+  },
+  {
+    "text": "like the muscle memory and all of that on learning",
+    "start": 209.44,
+    "end": 212.32,
+    "pronunciation": "더 머슬 메모리 앤 올 어브 댓 온 런닝 하우",
+    "translation": "것입니다. 근육 기억과 모든 것은 배우는 방식과",
+    "index": 60,
     "notes": [
       {
         "word": "muscle",
@@ -1040,12 +1222,20 @@
     ]
   },
   {
-    "index": 39,
-    "start": 215.6,
-    "end": 221.68,
-    "text": "to learn how to recognize this sound. Reason \nnumber three why shadowing is so powerful is",
-    "pronunciation": "투 런 하우 투 레코그나이즈 디스 사운드. 리즌 넘버 쓰리 와이 셰도잉 이즈 소우 파워플 이즈",
-    "translation": "배우고 이 소리를 인식하는 방법을 배워야 합니다. 섀도잉이 매우 강력한 이유는 세 번째입니다.",
+    "text": "how to even make this sound",
+    "start": 212.32,
+    "end": 213.9,
+    "pronunciation": "투 이븐 메이크 디스 사운드",
+    "translation": "이 소리를 만드는 방법에",
+    "index": 61
+  },
+  {
+    "text": "and also your brain will have to learn how to recognize this sound.",
+    "start": 213.9,
+    "end": 218.76,
+    "pronunciation": "앤 올소 유어 브레인 윌 해브 투 런 하우 투 레코그나이즈 디스 사운드.",
+    "translation": "관한 것입니다. 당신의 뇌도 배우고 이 소리를 인식하는 방법을",
+    "index": 62,
     "notes": [
       {
         "word": "to learn",
@@ -1070,7 +1260,15 @@
     ]
   },
   {
-    "index": 40,
+    "text": "Reason number three why shadowing is so powerful is",
+    "start": 218.76,
+    "end": 221.68,
+    "pronunciation": "리즌 넘버 쓰리 와이 셰도잉 이즈 소우 파워플 이즈",
+    "translation": "배워야 합니다. 섀도잉이 매우 강력한 이유는 세 번째입니다.",
+    "index": 63
+  },
+  {
+    "index": 64,
     "start": 221.68,
     "end": 228.16,
     "text": "all because of speaking. Shadowing provides a safe \nbridge to speaking. If right now you don't really",
@@ -1100,7 +1298,7 @@
     ]
   },
   {
-    "index": 41,
+    "index": 65,
     "start": 228.16,
     "end": 234,
     "text": "feel confident when you speak, if you feel very \nshy, if you stumble upon your words very often,",
@@ -1130,7 +1328,7 @@
     ]
   },
   {
-    "index": 42,
+    "index": 66,
     "start": 234,
     "end": 240.24,
     "text": "shadowing might really help you here. Because \nwhen you shadow, you have to practice speaking",
@@ -1160,7 +1358,7 @@
     ]
   },
   {
-    "index": 43,
+    "index": 67,
     "start": 240.24,
     "end": 246.48,
     "text": "complete sentences. But there's no pressure \nto actually think of words, think of grammar",
@@ -1190,7 +1388,7 @@
     ]
   },
   {
-    "index": 44,
+    "index": 68,
     "start": 246.48,
     "end": 251.92,
     "text": "by yourself. And finally, because you know I \nlove working with my brain, helping my memory,",
@@ -1220,7 +1418,7 @@
     ]
   },
   {
-    "index": 45,
+    "index": 69,
     "start": 251.92,
     "end": 257.84,
     "text": "I think shadowing is an amazing cognitive workout \nbecause you're constantly dividing your attention",
@@ -1250,7 +1448,7 @@
     ]
   },
   {
-    "index": 46,
+    "index": 70,
     "start": 257.84,
     "end": 264.08,
     "text": "between listening and speaking and that really \nengages your brain's working memory. Okay,",
@@ -1280,7 +1478,7 @@
     ]
   },
   {
-    "index": 47,
+    "index": 71,
     "start": 264.08,
     "end": 269.52,
     "text": "so now that we understand that shadowing is \nreally good for you, let's talk about how to",
@@ -1310,7 +1508,7 @@
     ]
   },
   {
-    "index": 48,
+    "index": 72,
     "start": 269.52,
     "end": 275.68,
     "text": "shadow. I like to talk about shadowing for all \nthe different levels. And I personally separate",
@@ -1340,7 +1538,7 @@
     ]
   },
   {
-    "index": 49,
+    "index": 73,
     "start": 275.68,
     "end": 281.84,
     "text": "these levels into two categories. So the first \ncategory is just pronunciation foundations. You",
@@ -1370,7 +1568,7 @@
     ]
   },
   {
-    "index": 50,
+    "index": 74,
     "start": 281.84,
     "end": 287.92,
     "text": "have never really worked on your pronunciation \non your accent. And that was my category because",
@@ -1400,7 +1598,7 @@
     ]
   },
   {
-    "index": 51,
+    "index": 75,
     "start": 287.92,
     "end": 293.84,
     "text": "I could already speak English really well, but \nI had never worked on my pronunciation. Like I",
@@ -1430,7 +1628,7 @@
     ]
   },
   {
-    "index": 52,
+    "index": 76,
     "start": 293.84,
     "end": 301.44,
     "text": "kind of knew, you know, the rules of some sounds \nand some pronunciation rules, but that was it.",
@@ -1460,7 +1658,7 @@
     ]
   },
   {
-    "index": 53,
+    "index": 77,
     "start": 301.44,
     "end": 308.16,
     "text": "like I had never intentionally worked on my \naccent. And the second category is fluency and",
@@ -1490,7 +1688,7 @@
     ]
   },
   {
-    "index": 54,
+    "index": 78,
     "start": 308.16,
     "end": 313.52,
     "text": "connected speech. Maybe you have already worked on \nyour pronunciation like you know how to pronounce",
@@ -1520,7 +1718,7 @@
     ]
   },
   {
-    "index": 55,
+    "index": 79,
     "start": 313.52,
     "end": 320.4,
     "text": "the most basic sounds and now you really want to \ngo deeper. So let's talk about the first level",
@@ -1550,7 +1748,7 @@
     ]
   },
   {
-    "index": 56,
+    "index": 80,
     "start": 320.4,
     "end": 327.2,
     "text": "first your pronunciation foundations. So, you \nare a beginner, but not a beginner in English,",
@@ -1580,7 +1778,7 @@
     ]
   },
   {
-    "index": 57,
+    "index": 81,
     "start": 327.2,
     "end": 341.84,
     "text": "but a beginner when it comes to your accent \nand your pronunciation. 12 seconds later. Hola.",
@@ -1610,7 +1808,7 @@
     ]
   },
   {
-    "index": 58,
+    "index": 82,
     "start": 341.84,
     "end": 349.12,
     "text": "Okay. Later. So, if you're here, level one, \nyour main focus is actually not going to be",
@@ -1640,7 +1838,7 @@
     ]
   },
   {
-    "index": 59,
+    "index": 83,
     "start": 349.12,
     "end": 355.68,
     "text": "shadowing full sentences. I see it all the time. \nlike a person who has never even worked on their",
@@ -1670,7 +1868,7 @@
     ]
   },
   {
-    "index": 60,
+    "index": 84,
     "start": 355.68,
     "end": 361.44,
     "text": "pronunciation. They don't know how to pronounce \nlike specific sounds and they have a lot of",
@@ -1700,7 +1898,7 @@
     ]
   },
   {
-    "index": 61,
+    "index": 85,
     "start": 361.44,
     "end": 368.8,
     "text": "questions, a lot of you know unknowns, they \nimmediately jump into shadowing full YouTube",
@@ -1730,7 +1928,7 @@
     ]
   },
   {
-    "index": 62,
+    "index": 86,
     "start": 368.8,
     "end": 374.96,
     "text": "videos or movies and if you like it, if this \nsystem works for you, that is great. But for me",
@@ -1760,7 +1958,7 @@
     ]
   },
   {
-    "index": 63,
+    "index": 87,
     "start": 374.96,
     "end": 380.4,
     "text": "personally, it didn't work because at the very \nbeginning of my accent pronunciation journey,",
@@ -1790,7 +1988,7 @@
     ]
   },
   {
-    "index": 64,
+    "index": 88,
     "start": 380.4,
     "end": 387.04,
     "text": "I felt very confused. Like I just felt like I had \nto be doing everything. And when I learned that I",
@@ -1820,7 +2018,7 @@
     ]
   },
   {
-    "index": 65,
+    "index": 89,
     "start": 387.04,
     "end": 392.32,
     "text": "didn't, it actually helped me make progress \nfaster. So your main focus here is going to",
@@ -1850,7 +2048,7 @@
     ]
   },
   {
-    "index": 66,
+    "index": 90,
     "start": 392.32,
     "end": 399.12,
     "text": "be building a solid base of sound recognition. \nSo how do you build the solid base? Right now",
@@ -1880,7 +2078,7 @@
     ]
   },
   {
-    "index": 67,
+    "index": 91,
     "start": 399.12,
     "end": 404.88,
     "text": "I'm going to share all of the key actions that \nyou're going to take. So the first thing is you",
@@ -1910,7 +2108,7 @@
     ]
   },
   {
-    "index": 68,
+    "index": 92,
     "start": 404.88,
     "end": 412.32,
     "text": "have to start with sounds not sentences. Go \nback to the alphabet. Go back to phone names.",
@@ -1940,7 +2138,7 @@
     ]
   },
   {
-    "index": 69,
+    "index": 93,
     "start": 412.32,
     "end": 418.32,
     "text": "The book recommendation that I have for you \nguys here is mastering the American accent. I",
@@ -1970,7 +2168,7 @@
     ]
   },
   {
-    "index": 70,
+    "index": 94,
     "start": 418.32,
     "end": 424.72,
     "text": "have personally used this book literally cover to \ncover like I did all of the exercises absolutely",
@@ -2000,7 +2198,7 @@
     ]
   },
   {
-    "index": 71,
+    "index": 95,
     "start": 424.72,
     "end": 430.88,
     "text": "everything. The most important thing here is you \nhave to use the audio. like don't just, you know,",
@@ -2025,7 +2223,7 @@
     ]
   },
   {
-    "index": 72,
+    "index": 96,
     "start": 430.88,
     "end": 437.44,
     "text": "read all the rules and be like, \"Okay, I got it.\" \nIf you're not using audio, how are you going to",
@@ -2050,7 +2248,7 @@
     ]
   },
   {
-    "index": 73,
+    "index": 97,
     "start": 437.44,
     "end": 444.08,
     "text": "learn what sounds you need to learn and how to \nmake them? And that took some time because, as I",
@@ -2080,7 +2278,7 @@
     ]
   },
   {
-    "index": 74,
+    "index": 98,
     "start": 444.08,
     "end": 449.6,
     "text": "said before, if you don't have this sound in your \nnative language, that is absolutely okay that you",
@@ -2105,7 +2303,7 @@
     ]
   },
   {
-    "index": 75,
+    "index": 99,
     "start": 449.6,
     "end": 454.64,
     "text": "can pronounce it well. Like, don't be too harsh on \nyourself. It is going to take some time and that",
@@ -2135,7 +2333,7 @@
     ]
   },
   {
-    "index": 76,
+    "index": 100,
     "start": 454.64,
     "end": 461.28,
     "text": "is absolutely okay. If you don't want to get this \nbook, that is okay. You can just look up specific",
@@ -2160,7 +2358,7 @@
     ]
   },
   {
-    "index": 77,
+    "index": 101,
     "start": 461.28,
     "end": 467.44,
     "text": "sounds on YouTube. For example, the American R, \njust like Google, how to pronounce the American R,",
@@ -2190,7 +2388,7 @@
     ]
   },
   {
-    "index": 78,
+    "index": 102,
     "start": 467.44,
     "end": 472.4,
     "text": "how to make the th sound in American English. I'm \njust talking about American English because that",
@@ -2215,7 +2413,7 @@
     ]
   },
   {
-    "index": 79,
+    "index": 103,
     "start": 472.4,
     "end": 478.08,
     "text": "is something that I'm working on. The two YouTube \nchannels that I personally used and I really like",
@@ -2245,7 +2443,7 @@
     ]
   },
   {
-    "index": 80,
+    "index": 104,
     "start": 478.08,
     "end": 484.48,
     "text": "are Accurate English. So, that is actually the \nYouTube channel of the author of this book. Also,",
@@ -2275,7 +2473,7 @@
     ]
   },
   {
-    "index": 81,
+    "index": 105,
     "start": 484.48,
     "end": 490.16,
     "text": "I always talk about Rachel's English. I \nabsolutely love her YouTube channel. Okay, so",
@@ -2300,7 +2498,7 @@
     ]
   },
   {
-    "index": 82,
+    "index": 106,
     "start": 490.16,
     "end": 497.68,
     "text": "the second thing you're going to move on to here \nto progress to here is shadowing minimal pairs.",
@@ -2325,7 +2523,7 @@
     ]
   },
   {
-    "index": 83,
+    "index": 107,
     "start": 497.68,
     "end": 504.4,
     "text": "And what minimal pairs are, it's something that \nI struggled with so freaking much. For example,",
@@ -2350,7 +2548,7 @@
     ]
   },
   {
-    "index": 84,
+    "index": 108,
     "start": 504.4,
     "end": 513.44,
     "text": "leave or live, bet or bat, thing or think. to \nmake sure that I did not pronounce these pairs",
@@ -2375,7 +2573,7 @@
     ]
   },
   {
-    "index": 85,
+    "index": 109,
     "start": 513.44,
     "end": 521.28,
     "text": "of words the same. It took some work for me as \na native Russian speaker. I was not used to some",
@@ -2400,7 +2598,7 @@
     ]
   },
   {
-    "index": 86,
+    "index": 110,
     "start": 521.28,
     "end": 528.72,
     "text": "of these sounds like bet and bat. I would just \nsay bet. Like literally, I would pronounce these",
@@ -2425,7 +2623,7 @@
     ]
   },
   {
-    "index": 87,
+    "index": 111,
     "start": 528.72,
     "end": 533.6,
     "text": "two words the same. So, the next thing, step \nnumber three that I did that my English teacher",
@@ -2450,7 +2648,7 @@
     ]
   },
   {
-    "index": 88,
+    "index": 112,
     "start": 533.6,
     "end": 540.72,
     "text": "at the time really recommended was practicing \ntongue twisters. So you can just go to YouTube",
@@ -2475,7 +2673,7 @@
     ]
   },
   {
-    "index": 89,
+    "index": 113,
     "start": 540.72,
     "end": 546.8,
     "text": "and just type in best tongue twisters for clear \npronunciation. Okay. And finally here your step",
@@ -2500,7 +2698,7 @@
     ]
   },
   {
-    "index": 90,
+    "index": 114,
     "start": 546.8,
     "end": 554.16,
     "text": "number four is going to be shadowing basic phrases \nwith audio plus transcript. So you're moving on to",
@@ -2525,7 +2723,7 @@
     ]
   },
   {
-    "index": 91,
+    "index": 115,
     "start": 554.16,
     "end": 562,
     "text": "actual you know basic phrases maybe sentences but \nvery very simple very easy sentences. Let's say",
@@ -2550,7 +2748,7 @@
     ]
   },
   {
-    "index": 92,
+    "index": 116,
     "start": 562,
     "end": 566.96,
     "text": "you have a real book on your hands like Atomic \nHabits for example. You already know that you",
@@ -2575,7 +2773,7 @@
     ]
   },
   {
-    "index": 93,
+    "index": 117,
     "start": 566.96,
     "end": 572.16,
     "text": "can practice shadowing. you know, you just open \nthe book and you have to search for like the",
@@ -2600,7 +2798,7 @@
     ]
   },
   {
-    "index": 94,
+    "index": 118,
     "start": 572.16,
     "end": 578.32,
     "text": "audio to this book and you're just opening it up \nand then practicing shadowing this way. But here",
@@ -2625,7 +2823,7 @@
     ]
   },
   {
-    "index": 95,
+    "index": 119,
     "start": 578.32,
     "end": 585.2,
     "text": "is something super super cool. You can actually \nimport your book into link, which is an app that I",
@@ -2650,7 +2848,7 @@
     ]
   },
   {
-    "index": 96,
+    "index": 120,
     "start": 585.2,
     "end": 592.16,
     "text": "have recommended before many times. Once the book \nis in link, you can tap on any word to hear how",
@@ -2675,7 +2873,7 @@
     ]
   },
   {
-    "index": 97,
+    "index": 121,
     "start": 592.16,
     "end": 599.44,
     "text": "it's pronounced as you read along. Sophomore. Even \nbetter, you can generate audio for the entire book",
@@ -2700,7 +2898,7 @@
     ]
   },
   {
-    "index": 98,
+    "index": 122,
     "start": 599.44,
     "end": 605.04,
     "text": "with just one click. It's basically like creating \nyour own audio book. From there, you can just go",
@@ -2725,7 +2923,7 @@
     ]
   },
   {
-    "index": 99,
+    "index": 123,
     "start": 605.04,
     "end": 611.2,
     "text": "through it sentence by sentence. Listen to the \npronunciation and shadow along. On the final day",
@@ -2750,7 +2948,7 @@
     ]
   },
   {
-    "index": 100,
+    "index": 124,
     "start": 611.2,
     "end": 616.56,
     "text": "of my sophomore year of high school, on the final \nday of my sophomore year of high school, I was hit",
@@ -2775,7 +2973,7 @@
     ]
   },
   {
-    "index": 101,
+    "index": 125,
     "start": 616.56,
     "end": 621.6,
     "text": "in the face with a baseball bat. I was hit in the \nface with a baseball bat. Compared to reading a",
@@ -2805,7 +3003,7 @@
     ]
   },
   {
-    "index": 102,
+    "index": 126,
     "start": 621.6,
     "end": 628.08,
     "text": "physical book and then searching for audio, this \nmethod with link is so much smoother. And the",
@@ -2835,7 +3033,7 @@
     ]
   },
   {
-    "index": 103,
+    "index": 127,
     "start": 628.08,
     "end": 635.36,
     "text": "best part, you can use Link on your phone. So you \ncan listen to the same content anytime, anywhere.",
@@ -2865,7 +3063,7 @@
     ]
   },
   {
-    "index": 104,
+    "index": 128,
     "start": 635.36,
     "end": 640.16,
     "text": "Link was actually created by Steve Kaufman, \nwho's a well-known polyglot and someone I've",
@@ -2895,7 +3093,7 @@
     ]
   },
   {
-    "index": 105,
+    "index": 129,
     "start": 640.16,
     "end": 645.6,
     "text": "had the pleasure of interviewing for my YouTube \nchannel. Actually, Steve always talks about the",
@@ -2925,7 +3123,7 @@
     ]
   },
   {
-    "index": 106,
+    "index": 130,
     "start": 645.6,
     "end": 651.68,
     "text": "power of comprehensible input. And this method \nhas changed my language learning, too. Okay,",
@@ -2955,7 +3153,7 @@
     ]
   },
   {
-    "index": 107,
+    "index": 131,
     "start": 651.68,
     "end": 657.2,
     "text": "so now let's move on and talk about level number \ntwo, fluency and connected speech. And you're",
@@ -2985,7 +3183,7 @@
     ]
   },
   {
-    "index": 108,
+    "index": 132,
     "start": 657.2,
     "end": 663.04,
     "text": "probably going to be at this level. If you are \nalready continuing your pronunciation journey, if",
@@ -3015,7 +3213,7 @@
     ]
   },
   {
-    "index": 109,
+    "index": 133,
     "start": 663.04,
     "end": 669.36,
     "text": "you have already done all of this work connected \nto specific sounds, the alphabet, phone names,",
@@ -3045,7 +3243,7 @@
     ]
   },
   {
-    "index": 110,
+    "index": 134,
     "start": 669.36,
     "end": 675.92,
     "text": "and minimal pairs, and then some phrases, and then \nyou already practiced a lot of tongue twisters and",
@@ -3075,7 +3273,7 @@
     ]
   },
   {
-    "index": 111,
+    "index": 135,
     "start": 675.92,
     "end": 683.28,
     "text": "short and simple sentences. So now you really need \nsomething to hone in your pronunciation skills.",
@@ -3105,7 +3303,7 @@
     ]
   },
   {
-    "index": 112,
+    "index": 136,
     "start": 683.28,
     "end": 689.92,
     "text": "like you're really looking to improve your accent \neven more to sound even more native like if that",
@@ -3135,7 +3333,7 @@
     ]
   },
   {
-    "index": 113,
+    "index": 137,
     "start": 689.92,
     "end": 695.6,
     "text": "is your goal. It obviously doesn't have to be your \ngoal but if it is here is what you can do. So your",
@@ -3165,7 +3363,7 @@
     ]
   },
   {
-    "index": 114,
+    "index": 138,
     "start": 695.6,
     "end": 700.64,
     "text": "main focus here is going to be just shadowing \nas much as possible. And you're going to be",
@@ -3195,7 +3393,7 @@
     ]
   },
   {
-    "index": 115,
+    "index": 139,
     "start": 700.64,
     "end": 707.52,
     "text": "focusing on intonation on reduced sounds and also \nnative like rhythm because I remember for me when",
@@ -3225,7 +3423,7 @@
     ]
   },
   {
-    "index": 116,
+    "index": 140,
     "start": 707.52,
     "end": 712.88,
     "text": "I actually learned like all the different sounds \nand all the different rules and I didn't know how",
@@ -3255,7 +3453,7 @@
     ]
   },
   {
-    "index": 117,
+    "index": 141,
     "start": 712.88,
     "end": 718.96,
     "text": "to link words together and that is how native \nspeakers talk all the time. They're constantly",
@@ -3285,7 +3483,7 @@
     ]
   },
   {
-    "index": 118,
+    "index": 142,
     "start": 718.96,
     "end": 724.8,
     "text": "linking words together. So that is why these are \ngoing to be your key actions here. So the first",
@@ -3315,7 +3513,7 @@
     ]
   },
   {
-    "index": 119,
+    "index": 143,
     "start": 724.8,
     "end": 731.76,
     "text": "one is connected speech. You're going to learn \nhow English speakers link words. For example,",
@@ -3345,7 +3543,7 @@
     ]
   },
   {
-    "index": 120,
+    "index": 144,
     "start": 731.76,
     "end": 740.96,
     "text": "going to, wanna, and stuff like that. Reduce \nsounds instead of did you. Did you? Did you do",
@@ -3375,7 +3573,7 @@
     ]
   },
   {
-    "index": 121,
+    "index": 145,
     "start": 740.96,
     "end": 748,
     "text": "something stress rhythmically content words get \nemphasized? And obviously for that, if you're",
@@ -3400,7 +3598,7 @@
     ]
   },
   {
-    "index": 122,
+    "index": 146,
     "start": 748,
     "end": 752.72,
     "text": "going to be using the book Mastering the American \naccent, you're going to be using the later",
@@ -3430,7 +3628,7 @@
     ]
   },
   {
-    "index": 123,
+    "index": 147,
     "start": 752.72,
     "end": 759.6,
     "text": "chapters of this book because this book does talk \nabout, you know, linking words together, connected",
@@ -3460,7 +3658,7 @@
     ]
   },
   {
-    "index": 124,
+    "index": 148,
     "start": 759.6,
     "end": 764.96,
     "text": "speech. It is really, really amazing because it \ncovers pretty much everything. If this book is",
@@ -3490,7 +3688,7 @@
     ]
   },
   {
-    "index": 125,
+    "index": 149,
     "start": 764.96,
     "end": 772.96,
     "text": "not for you, you can use Rachel's English YouTube \nchannel because there she also has like breakdowns",
@@ -3520,7 +3718,7 @@
     ]
   },
   {
-    "index": 126,
+    "index": 150,
     "start": 772.96,
     "end": 780.8,
     "text": "and she actually goes through a specific clip in \na TV show like Friends and she shows you how the",
@@ -3550,7 +3748,7 @@
     ]
   },
   {
-    "index": 127,
+    "index": 151,
     "start": 780.8,
     "end": 787.04,
     "text": "native speakers there are linking words together. \nSo, it's more advanced type of practice. It's not",
@@ -3580,7 +3778,7 @@
     ]
   },
   {
-    "index": 128,
+    "index": 152,
     "start": 787.04,
     "end": 792.64,
     "text": "just individual sounds, right? Like, oh, here's \nhow to make the American R sound. No, it's an",
@@ -3610,7 +3808,7 @@
     ]
   },
   {
-    "index": 129,
+    "index": 153,
     "start": 792.64,
     "end": 800.56,
     "text": "episode where she breaks down how people actually \nspeak. Your key action number three is going to be",
@@ -3640,7 +3838,7 @@
     ]
   },
   {
-    "index": 130,
+    "index": 154,
     "start": 800.56,
     "end": 808,
     "text": "shadowing with real content. But again, try to \nstart short and simple like choose vlogs where",
@@ -3670,7 +3868,7 @@
     ]
   },
   {
-    "index": 131,
+    "index": 155,
     "start": 808,
     "end": 813.52,
     "text": "people speak more naturally and obviously use \nsubtitles. Choose something that you love. Like",
@@ -3700,7 +3898,7 @@
     ]
   },
   {
-    "index": 132,
+    "index": 156,
     "start": 813.52,
     "end": 819.84,
     "text": "you don't have to go and shadow a very complicated \nmovie because all of the dialogue there is",
@@ -3730,7 +3928,7 @@
     ]
   },
   {
-    "index": 133,
+    "index": 157,
     "start": 819.84,
     "end": 824.8,
     "text": "scripted, right? So, there's a very high chance \npeople don't actually talk like that in real life.",
@@ -3760,7 +3958,7 @@
     ]
   },
   {
-    "index": 134,
+    "index": 158,
     "start": 824.8,
     "end": 830.8,
     "text": "Obviously, their accent and their pronunciation \nis still on point, but the words they're using",
@@ -3790,7 +3988,7 @@
     ]
   },
   {
-    "index": 135,
+    "index": 159,
     "start": 830.8,
     "end": 838.24,
     "text": "and the way they're maybe stressing some words is \nvery specific for this specific movie, for this",
@@ -3820,7 +4018,7 @@
     ]
   },
   {
-    "index": 136,
+    "index": 160,
     "start": 838.24,
     "end": 844.16,
     "text": "specific scene. And your action point number four \nis going to be using link for more intermediate",
@@ -3850,7 +4048,7 @@
     ]
   },
   {
-    "index": 137,
+    "index": 161,
     "start": 844.16,
     "end": 850.8,
     "text": "and advanced practice. Because once you feel ready \nto shadow more advanced content, link becomes even",
@@ -3880,7 +4078,7 @@
     ]
   },
   {
-    "index": 138,
+    "index": 162,
     "start": 850.8,
     "end": 856.8,
     "text": "more powerful. It's not just books that you \ncan import. You can import music, podcasts,",
@@ -3910,7 +4108,7 @@
     ]
   },
   {
-    "index": 139,
+    "index": 163,
     "start": 856.8,
     "end": 862.8,
     "text": "and even TV shows. So, let's say you want to \nshadow a scene and learn English from friends.",
@@ -3940,7 +4138,7 @@
     ]
   },
   {
-    "index": 140,
+    "index": 164,
     "start": 862.8,
     "end": 869.92,
     "text": "Link gives you the full transcript, breaks it \ndown sentence by sentence, and lets you save new",
@@ -3970,7 +4168,7 @@
     ]
   },
   {
-    "index": 141,
+    "index": 165,
     "start": 869.92,
     "end": 875.92,
     "text": "words into flashcards. I've had a really good time \ntonight. You know, I rarely connect with someone",
@@ -4000,7 +4198,7 @@
     ]
   },
   {
-    "index": 142,
+    "index": 166,
     "start": 875.92,
     "end": 880.32,
     "text": "this much on the first date. I've had a really \ngood time tonight. You know, I rarely connect",
@@ -4025,7 +4223,7 @@
     ]
   },
   {
-    "index": 143,
+    "index": 167,
     "start": 880.32,
     "end": 884.96,
     "text": "with someone this much on the first date. Whether \nyou're just starting with pronunciation or you're",
@@ -4055,7 +4253,7 @@
     ]
   },
   {
-    "index": 144,
+    "index": 168,
     "start": 884.96,
     "end": 890.8,
     "text": "ready to shadow full conversations and native like \nspeech, Link gives you the tools to create your",
@@ -4085,7 +4283,7 @@
     ]
   },
   {
-    "index": 145,
+    "index": 169,
     "start": 890.8,
     "end": 897.92,
     "text": "own audio books and turn TV shows into lessons so \nthat you can learn from content you love. If you",
@@ -4115,7 +4313,7 @@
     ]
   },
   {
-    "index": 146,
+    "index": 170,
     "start": 897.92,
     "end": 901.92,
     "text": "want to give it a try, make sure to use my link \nin the description. And I want to say a huge thank",
@@ -4145,7 +4343,7 @@
     ]
   },
   {
-    "index": 147,
+    "index": 171,
     "start": 901.92,
     "end": 907.04,
     "text": "you to Link for sponsoring this video. Okay guys, \nso I think it's going to be it for today's video.",
@@ -4175,7 +4373,7 @@
     ]
   },
   {
-    "index": 148,
+    "index": 172,
     "start": 907.04,
     "end": 911.6,
     "text": "If you liked it, please don't forget to give it \na thumbs up and subscribe to my YouTube channel.",
@@ -4205,7 +4403,7 @@
     ]
   },
   {
-    "index": 149,
+    "index": 173,
     "start": 911.6,
     "end": 916.32,
     "text": "Don't forget to check out my notion templates, \nmy language learning corner to organize all of",
@@ -4235,7 +4433,7 @@
     ]
   },
   {
-    "index": 150,
+    "index": 174,
     "start": 916.32,
     "end": 921.76,
     "text": "your language learning, and also my free weekly \nnewsletter, Veronica's Weekly Vibes. All the",
@@ -4265,7 +4463,7 @@
     ]
   },
   {
-    "index": 151,
+    "index": 175,
     "start": 921.76,
     "end": 926.16,
     "text": "links to absolutely everything are going to be \nin the description below. One thing that you",
@@ -4295,7 +4493,7 @@
     ]
   },
   {
-    "index": 152,
+    "index": 176,
     "start": 926.16,
     "end": 931.52,
     "text": "always ask me about is how to stay consistent in \nyour language learning. Like I don't have enough",
@@ -4325,7 +4523,7 @@
     ]
   },
   {
-    "index": 153,
+    "index": 177,
     "start": 931.52,
     "end": 937.84,
     "text": "time. I can't be consistent. What should I do? \nLike I really want to have this consistency in",
@@ -4355,7 +4553,7 @@
     ]
   },
   {
-    "index": 154,
+    "index": 178,
     "start": 937.84,
     "end": 943.84,
     "text": "my life. But for some reason I can't. For some \nreason I always say I don't have enough time.",
@@ -4385,7 +4583,7 @@
     ]
   },
   {
-    "index": 155,
+    "index": 179,
     "start": 943.84,
     "end": 949.6,
     "text": "That is why I'm not improving. And so I have \na YouTube video that talks about this specific",
@@ -4415,7 +4613,7 @@
     ]
   },
   {
-    "index": 156,
+    "index": 180,
     "start": 949.6,
     "end": 955.2,
     "text": "problem. how to stay consistent in your language \nlearning even if you don't have a lot of time.",

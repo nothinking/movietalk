@@ -2,10 +2,10 @@
   {
     "index": 0,
     "start": 0,
-    "end": 1.83,
-    "text": "Hello everybody, welcome back to another",
-    "pronunciation": "헬로 에블바리, 웰컴 백 터 어나더",
-    "translation": "안녕하세요 모든 분들, 다른 영상으로 돌아온 것을 환영합니다",
+    "end": 2.98,
+    "text": "Hello everybody, welcome back to another video where I show you",
+    "pronunciation": "헬로 에블바리, 웰컴 백 터 어나더 비디오 웨얼아이 쇼 유",
+    "translation": "안녕하세요 모든 분들, 다른 영상으로 돌아온 것을 환영합니다 제가 어떻게 영어를 연습하는지",
     "notes": [
       {
         "word": "to",
@@ -21,17 +21,7 @@
         "word": "other",
         "actual": "어더",
         "meaning": "중간의 'th'는 '더'로, 앞 'o'는 약화되어 '어'"
-      }
-    ]
-  },
-  {
-    "index": 1,
-    "start": 1.83,
-    "end": 3.7,
-    "text": "video where I show you how to practice",
-    "pronunciation": "비디오 웨얼아이 쇼 유 하우 투 프랙티스",
-    "translation": "제가 어떻게 영어를 연습하는지 보여드리는 영상이에요",
-    "notes": [
+      },
       {
         "word": "to",
         "actual": "터/더",
@@ -46,17 +36,7 @@
         "word": "practice",
         "actual": "프랙티스",
         "meaning": "'pr'은 '프'로 시작, 중간 'ct'가 '크'로 인식"
-      }
-    ]
-  },
-  {
-    "index": 2,
-    "start": 3.7,
-    "end": 5.47,
-    "text": "English by yourself at home.",
-    "pronunciation": "잉글리시 비와이 유어셀 앳 홈.",
-    "translation": "집에서 혼자 영어를 연습하는 방법이요.",
-    "notes": [
+      },
       {
         "word": "you",
         "actual": "유",
@@ -70,12 +50,20 @@
     ]
   },
   {
-    "index": 3,
-    "start": 5.47,
-    "end": 7.93,
-    "text": "Today we're going for a walk. But first I",
-    "pronunciation": "투데이 위어 고잉 포 어 워크. 벗 퍼스트 ",
-    "translation": "오늘 우리는 산책을 갈 거예요. 하지만 먼저 저는",
+    "text": "how to practice English by yourself at home.",
+    "start": 2.98,
+    "end": 5.27,
+    "pronunciation": "하우 투 프랙티스 잉글리시 비와이 유어셀 앳 홈.",
+    "translation": "보여드리는 영상이에요 집에서 혼자 영어를 연습하는 방법이요.",
+    "index": 1
+  },
+  {
+    "index": 2,
+    "start": 5.27,
+    "end": 6.9,
+    "text": "Today we're going for a walk.",
+    "pronunciation": "투데이 위어 고잉 포 어 워크. ",
+    "translation": "오늘 우리는 산책을 갈 거예요. 하지만",
     "notes": [
       {
         "word": "going",
@@ -90,12 +78,12 @@
     ]
   },
   {
-    "index": 4,
-    "start": 7.93,
+    "text": "But first I want to show you this view that I have",
+    "start": 6.9,
     "end": 10.27,
-    "text": "want to show you this view that I have",
-    "pronunciation": "워나 쇼 유 디스 뷰  대라이 해브",
-    "translation": "제 창문에서 보이는 이 경치를 보여드리고 싶어요",
+    "pronunciation": "벗 퍼스트 워나 쇼 유 디스 뷰  대라이 해브",
+    "translation": "먼저 저는 제 창문에서 보이는 이 경치를 보여드리고 싶어요",
+    "index": 3,
     "notes": [
       {
         "word": "want",
@@ -115,7 +103,7 @@
     ]
   },
   {
-    "index": 5,
+    "index": 4,
     "start": 10.27,
     "end": 12.33,
     "text": "from my window right now.",
@@ -130,12 +118,12 @@
     ]
   },
   {
-    "index": 6,
+    "index": 5,
     "start": 12.33,
-    "end": 15.77,
-    "text": "Do you see the ocean? How beautiful is",
-    "pronunciation": "두 유 시 더 오션? 하우 뷰티풀 이즈",
-    "translation": "바다가 보이세요? 얼마나 아름다운지",
+    "end": 16.56,
+    "text": "Do you see the ocean? How beautiful is the water?",
+    "pronunciation": "두 유 시 더 오션? 하우 뷰티풀 이즈 더 워터?",
+    "translation": "바다가 보이세요? 얼마나 아름다운지 물이 그런가요?",
     "notes": [
       {
         "word": "you",
@@ -156,17 +144,7 @@
         "word": "beautiful",
         "actual": "뷰티풀",
         "meaning": "자연스러운 속도에서 '뷰-티-풀' 3음절로"
-      }
-    ]
-  },
-  {
-    "index": 7,
-    "start": 15.77,
-    "end": 18.63,
-    "text": "the water? What a gorgeous sunny day.",
-    "pronunciation": "더 워터? 왓 어 고저스 서니 데이.",
-    "translation": "물이 그런가요? 정말 멋진 맑은 날씨네요.",
-    "notes": [
+      },
       {
         "word": "the",
         "actual": "더",
@@ -180,12 +158,20 @@
     ]
   },
   {
-    "index": 8,
+    "text": "What a gorgeous sunny day.",
+    "start": 16.56,
+    "end": 18.97,
+    "pronunciation": "왓 어 고저스 서니 데이.",
+    "translation": "정말 멋진 맑은 날씨네요.",
+    "index": 6
+  },
+  {
+    "index": 7,
     "start": 18.97,
-    "end": 21.33,
-    "text": "So we are currently in Madeira, we are pet",
-    "pronunciation": "쓰오 위 아 커런틀리 인 마데이라, 위 아 펫",
-    "translation": "그래서 우리는 지금 마데이라에 있고, 우리는 애완동물",
+    "end": 20.55,
+    "text": "So we are currently in Madeira,",
+    "pronunciation": "쓰오 위 아 커런틀리 인 마데이라, ",
+    "translation": "그래서 우리는 지금 마데이라에 있고,",
     "notes": [
       {
         "word": "connected speech",
@@ -195,12 +181,12 @@
     ]
   },
   {
-    "index": 9,
-    "start": 21.33,
-    "end": 23.8,
-    "text": "sitting as you can see and we're about to",
-    "pronunciation": "시팅 애즈 유 캔 시 언 위어 어바웃 터",
-    "translation": "돌보고 있는데 보시다시피 우리는 이제 막",
+    "text": "we are pet sitting as you can see",
+    "start": 20.55,
+    "end": 22.65,
+    "pronunciation": "위아 펫 시팅 애즈 유 캔 시",
+    "translation": "우리는 애완동물 돌보고 있는데 보시다시피",
+    "index": 8,
     "notes": [
       {
         "word": "to",
@@ -220,12 +206,12 @@
     ]
   },
   {
-    "index": 10,
-    "start": 23.8,
+    "text": "and we're about to go on our first walk.",
+    "start": 22.65,
     "end": 25.33,
-    "text": "go on our first walk.",
-    "pronunciation": "고 온 아우어 퍼스트 워크.",
-    "translation": "첫 산책을 가려고 해요.",
+    "pronunciation": "언 위어 어바웃 터 고 온 아우어 퍼스트 워크.",
+    "translation": "우리는 이제 막 첫 산책을 가려고 해요.",
+    "index": 9,
     "notes": [
       {
         "word": "connected speech",
@@ -235,12 +221,12 @@
     ]
   },
   {
-    "index": 11,
+    "index": 10,
     "start": 25.53,
-    "end": 28.47,
-    "text": "We're supposed to go down to the pier to",
-    "pronunciation": "위어 서포즈드 터 고 다운 터 더 피어 터",
-    "translation": "우리는 부두로 내려가야 하는데",
+    "end": 29.83,
+    "text": "We're supposed to go down to the pier to the little harbor area.",
+    "pronunciation": "위어 서포즈드 터 고 다운 터 더 피어 터 더 리틀 하버 에리어.",
+    "translation": "우리는 부두로 내려가야 하는데 작은 항구 지역으로요.",
     "notes": [
       {
         "word": "to",
@@ -251,21 +237,56 @@
         "word": "the",
         "actual": "더",
         "meaning": "음성에서 모음 앞이면 '디', 자음 앞이면 '더'"
-      }
-    ]
-  },
-  {
-    "index": 12,
-    "start": 28.47,
-    "end": 29.83,
-    "text": "the little harbor area.",
-    "pronunciation": "더 리틀 하버 에리어.",
-    "translation": "작은 항구 지역으로요.",
-    "notes": [
+      },
       {
         "word": "the",
         "actual": "더",
         "meaning": "음성에서 모음 앞이면 '디', 자음 앞이면 '더'"
+      },
+      {
+        "word": "connected speech",
+        "actual": "연결 발음",
+        "meaning": "단어들이 자연스럽게 연결되는 방식 주목"
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "start": 30,
+    "end": 33.3,
+    "text": "It's a very popular spot because this is a fisherman village",
+    "pronunciation": "이즈 어 베리 팝풀러 스팟 비카즈 디스 이즈 어 피셔맨 빌리지 ",
+    "translation": "여기는 정말 인기 있는 장소인데 왜냐하면 여기는 어촌이고",
+    "notes": [
+      {
+        "word": "connected speech",
+        "actual": "연결 발음",
+        "meaning": "단어들이 자연스럽게 연결되는 방식 주목"
+      },
+      {
+        "word": "the",
+        "actual": "더",
+        "meaning": "음성에서 모음 앞이면 '디', 자음 앞이면 '더'"
+      },
+      {
+        "word": "connected speech",
+        "actual": "연결 발음",
+        "meaning": "단어들이 자연스럽게 연결되는 방식 주목"
+      }
+    ]
+  },
+  {
+    "text": "and they have lots of boats and cute seafood restaurants around that area.",
+    "start": 33.3,
+    "end": 38.63,
+    "pronunciation": "앤데이 해브 라츠 어브 보츠 언 큐트 씨푸드 레스토랑즈 어라운드 댓 에어리어.",
+    "translation": "그들은 많은 배와 귀여운 해산물이 그 주변에 있는 레스토랑들이 많아요.",
+    "index": 12,
+    "notes": [
+      {
+        "word": "connected speech",
+        "actual": "연결 발음",
+        "meaning": "단어들이 자연스럽게 연결되는 방식 주목"
       },
       {
         "word": "connected speech",
@@ -276,71 +297,6 @@
   },
   {
     "index": 13,
-    "start": 30,
-    "end": 32.27,
-    "text": "It's a very popular spot because this is",
-    "pronunciation": "이즈 어 베리 팝풀러 스팟 비카즈 디스 이즈",
-    "translation": "여기는 정말 인기 있는 장소인데 왜냐하면 여기는",
-    "notes": [
-      {
-        "word": "connected speech",
-        "actual": "연결 발음",
-        "meaning": "단어들이 자연스럽게 연결되는 방식 주목"
-      }
-    ]
-  },
-  {
-    "index": 14,
-    "start": 32.27,
-    "end": 35.07,
-    "text": "a fisherman village and they have lots of",
-    "pronunciation": "어 피셔맨 빌리지 언 데이 해브 라츠 어브",
-    "translation": "어촌이고 그들은 많은",
-    "notes": [
-      {
-        "word": "the",
-        "actual": "더",
-        "meaning": "음성에서 모음 앞이면 '디', 자음 앞이면 '더'"
-      },
-      {
-        "word": "connected speech",
-        "actual": "연결 발음",
-        "meaning": "단어들이 자연스럽게 연결되는 방식 주목"
-      }
-    ]
-  },
-  {
-    "index": 15,
-    "start": 35.07,
-    "end": 37.03,
-    "text": "boats and cute seafood",
-    "pronunciation": "보츠 언 큐트 씨푸드",
-    "translation": "배와 귀여운 해산물이",
-    "notes": [
-      {
-        "word": "connected speech",
-        "actual": "연결 발음",
-        "meaning": "단어들이 자연스럽게 연결되는 방식 주목"
-      }
-    ]
-  },
-  {
-    "index": 16,
-    "start": 37.03,
-    "end": 38.63,
-    "text": "restaurants around that area.",
-    "pronunciation": "레스토랑즈 어라운드 댓 에어리어.",
-    "translation": "그 주변에 있는 레스토랑들이 많아요.",
-    "notes": [
-      {
-        "word": "connected speech",
-        "actual": "연결 발음",
-        "meaning": "단어들이 자연스럽게 연결되는 방식 주목"
-      }
-    ]
-  },
-  {
-    "index": 17,
     "start": 38.93,
     "end": 40.63,
     "text": "So let's go see it together.",
@@ -365,12 +321,12 @@
     ]
   },
   {
-    "index": 18,
+    "index": 14,
     "start": 40.63,
-    "end": 42.07,
-    "text": "Okay, the idea is for you",
-    "pronunciation": "오케이, 더 아이디어 이즈 포 유",
-    "translation": "좋아요, 의도는 당신이",
+    "end": 43.93,
+    "text": "Okay, the idea is for you to watch me how I do it.",
+    "pronunciation": "오케이, 더 아이디어 이즈 포 유 터 와치 미 하우 이 두 이트.",
+    "translation": "좋아요, 의도는 당신이 제가 어떻게 하는지 보는 것이에요.",
     "notes": [
       {
         "word": "you",
@@ -381,17 +337,7 @@
         "word": "the",
         "actual": "더",
         "meaning": "음성에서 모음 앞이면 '디', 자음 앞이면 '더'"
-      }
-    ]
-  },
-  {
-    "index": 19,
-    "start": 42.07,
-    "end": 43.93,
-    "text": "to watch me how I do it.",
-    "pronunciation": "터 와치 미 하우 이 두 이트.",
-    "translation": "제가 어떻게 하는지 보는 것이에요.",
-    "notes": [
+      },
       {
         "word": "to",
         "actual": "터/더",
@@ -405,12 +351,12 @@
     ]
   },
   {
-    "index": 20,
+    "index": 15,
     "start": 43.93,
-    "end": 45.27,
-    "text": "So then the next time you go",
-    "pronunciation": "쓰오 덴 더 넥스트 타임 유 고",
-    "translation": "그럼 다음에 당신이 갈 때",
+    "end": 47.23,
+    "text": "So then the next time you go for a walk, you do it yourself.",
+    "pronunciation": "쓰오 덴 더 넥스트 타임 유 고 포 어 워크, 유 두 이트 유어셀.",
+    "translation": "그럼 다음에 당신이 갈 때 산책을 가면, 당신이 직접 해요.",
     "notes": [
       {
         "word": "you",
@@ -421,17 +367,7 @@
         "word": "the",
         "actual": "더",
         "meaning": "음성에서 모음 앞이면 '디', 자음 앞이면 '더'"
-      }
-    ]
-  },
-  {
-    "index": 21,
-    "start": 45.27,
-    "end": 47.23,
-    "text": "for a walk, you do it yourself.",
-    "pronunciation": "포 어 워크, 유 두 이트 유어셀.",
-    "translation": "산책을 가면, 당신이 직접 해요.",
-    "notes": [
+      },
       {
         "word": "you",
         "actual": "유",
@@ -445,12 +381,12 @@
     ]
   },
   {
-    "index": 22,
+    "index": 16,
     "start": 47.23,
-    "end": 49.57,
-    "text": "So you want to just comment on everything",
-    "pronunciation": "쓰오 유 워나 저스트 코멘트 온 에브리씽",
-    "translation": "그래서 당신은 보이는 모든 것에 대해 말하고 싶어요",
+    "end": 50.12,
+    "text": "So you want to just comment on everything you see",
+    "pronunciation": "쓰오 유 워나 저스트 코멘트 온 에브리씽 유 시",
+    "translation": "그래서 당신은 보이는 모든 것에 대해 말하고 싶어요 그것을",
     "notes": [
       {
         "word": "want",
@@ -471,17 +407,7 @@
         "word": "just",
         "actual": "저스트",
         "meaning": "'j' 음이 '저'로 발음되고 'st'는 빠르게"
-      }
-    ]
-  },
-  {
-    "index": 23,
-    "start": 49.57,
-    "end": 51.47,
-    "text": "you see and try to figure",
-    "pronunciation": "유 시 앤 트라이 터 피거",
-    "translation": "그것을 이해하려고 노력해요",
-    "notes": [
+      },
       {
         "word": "to",
         "actual": "터/더",
@@ -500,12 +426,12 @@
     ]
   },
   {
-    "index": 24,
-    "start": 51.47,
+    "text": "and try to figure out, do you know these words?",
+    "start": 50.12,
     "end": 53.1,
-    "text": "out, do you know these words?",
-    "pronunciation": "아웃, 두 유 노우 디즈 워즈?",
-    "translation": "모르니까요, 이런 단어들을 알아요?",
+    "pronunciation": "앤 트라이 터 피거 아웃, 두 유 노우 디즈 워즈?",
+    "translation": "이해하려고 노력해요 모르니까요, 이런 단어들을 알아요?",
+    "index": 17,
     "notes": [
       {
         "word": "you",
@@ -520,7 +446,7 @@
     ]
   },
   {
-    "index": 25,
+    "index": 18,
     "start": 53.17,
     "end": 55.1,
     "text": "Do you not? Because a lot of the times",
@@ -540,7 +466,7 @@
     ]
   },
   {
-    "index": 26,
+    "index": 19,
     "start": 55.1,
     "end": 57.7,
     "text": "you know these words when you hear them,",
@@ -560,12 +486,12 @@
     ]
   },
   {
-    "index": 27,
+    "index": 20,
     "start": 57.7,
-    "end": 59.53,
-    "text": "but you're not able to use",
-    "pronunciation": "벗 유어 나트 에이블 터 유즈",
-    "translation": "하지만 당신은 사용할 수 없어요",
+    "end": 60.83,
+    "text": "but you're not able to use them whenever you need them.",
+    "pronunciation": "벗 유어 나트 에이블 터 유즈 뎀 웬에버 유 니뎀.",
+    "translation": "하지만 당신은 사용할 수 없어요 당신이 필요할 때마다 그것들을요.",
     "notes": [
       {
         "word": "to",
@@ -576,17 +502,7 @@
         "word": "you",
         "actual": "유",
         "meaning": "문장 중간에서 약화되어 '유'로 발음"
-      }
-    ]
-  },
-  {
-    "index": 28,
-    "start": 59.53,
-    "end": 60.83,
-    "text": "them whenever you need them.",
-    "pronunciation": "뎀 웬에버 유 니뎀.",
-    "translation": "당신이 필요할 때마다 그것들을요.",
-    "notes": [
+      },
       {
         "word": "you",
         "actual": "유",
@@ -600,9 +516,9 @@
     ]
   },
   {
-    "index": 29,
+    "index": 21,
     "start": 60.83,
-    "end": 61.53,
+    "end": 61.77,
     "text": "Hey, are you ready?",
     "pronunciation": "헤이, 아 유 레디?",
     "translation": "안녕, 준비됐어?",
@@ -620,12 +536,12 @@
     ]
   },
   {
-    "index": 30,
+    "index": 22,
     "start": 61.77,
-    "end": 63.83,
-    "text": "Okay, so I'm going to put my sunglasses",
-    "pronunciation": "오케이, 쓰오 아임 거나 풋 마이 선글라즈",
-    "translation": "좋아요, 그래서 저는 선글라스를",
+    "end": 64.4,
+    "text": "Okay, so I'm going to put my sunglasses on",
+    "pronunciation": "오케이, 쓰오 아임 거나 풋 마이 선글라즈 온",
+    "translation": "좋아요, 그래서 저는 선글라스를 쓸",
     "notes": [
       {
         "word": "going",
@@ -641,17 +557,7 @@
         "word": "put",
         "actual": "풋",
         "meaning": "'p' 음은 명확하고 'u'는 짧게 '풋'"
-      }
-    ]
-  },
-  {
-    "index": 31,
-    "start": 63.83,
-    "end": 67.07,
-    "text": "on because it's really sunny outside and",
-    "pronunciation": "온 비카즈 이즈 릴리 서니 아웃사이드 언",
-    "translation": "쓸 거예요 왜냐하면 정말 맑은 밖이고",
-    "notes": [
+      },
       {
         "word": "really",
         "actual": "릴리",
@@ -665,7 +571,15 @@
     ]
   },
   {
-    "index": 32,
+    "text": "because it's really sunny outside and",
+    "start": 64.4,
+    "end": 67.07,
+    "pronunciation": "비카즈 이즈 릴리 서니 아웃사이드 언",
+    "translation": "거예요 왜냐하면 정말 맑은 밖이고",
+    "index": 23
+  },
+  {
+    "index": 24,
     "start": 67.07,
     "end": 70.23,
     "text": "I'm also going to put on my cap.",
@@ -690,12 +604,12 @@
     ]
   },
   {
-    "index": 33,
+    "index": 25,
     "start": 70.57,
-    "end": 71.3,
-    "text": "I don't want to get a",
-    "pronunciation": "아도운 워나 겟 어",
-    "translation": "저는 얻고 싶지 않아요",
+    "end": 72.93,
+    "text": "I don't want to get a sunstroke or a heat stroke.",
+    "pronunciation": "아도운 워나 겟 어 선스트로크 오알 어 히트 스트로크.",
+    "translation": "저는 얻고 싶지 않아요 일광욕이나 열사병을.",
     "notes": [
       {
         "word": "want",
@@ -706,17 +620,7 @@
         "word": "to",
         "actual": "터/더",
         "meaning": "'to'는 앞 단어에 연결되면 약화됨"
-      }
-    ]
-  },
-  {
-    "index": 34,
-    "start": 71.3,
-    "end": 72.93,
-    "text": "sunstroke or a heat stroke.",
-    "pronunciation": "선스트로크 오알 어 히트 스트로크.",
-    "translation": "일광욕이나 열사병을.",
-    "notes": [
+      },
       {
         "word": "connected speech",
         "actual": "연결 발음",
@@ -725,28 +629,18 @@
     ]
   },
   {
-    "index": 35,
+    "index": 26,
     "start": 72.93,
-    "end": 75.87,
-    "text": "And I also applied some SPF on my arms",
-    "pronunciation": "언 이 올소 어플라이드 썸 에스피에프 온 마이 아름",
-    "translation": "그리고 저는 또한 팔에 자외선 차단제를 발랐어요",
+    "end": 77.43,
+    "text": "And I also applied some SPF on my arms and my neck just in case.",
+    "pronunciation": "언 이 올소 어플라이드 썸 에스피에프 온 마이 아름 언 마이 넥 저스트 인 케이스.",
+    "translation": "그리고 저는 또한 팔에 자외선 차단제를 발랐어요 그리고 혹시 모르니까 목에도요.",
     "notes": [
       {
         "word": "connected speech",
         "actual": "연결 발음",
         "meaning": "단어들이 자연스럽게 연결되는 방식 주목"
-      }
-    ]
-  },
-  {
-    "index": 36,
-    "start": 75.87,
-    "end": 77.43,
-    "text": "and my neck just in case.",
-    "pronunciation": "언 마이 넥 저스트 인 케이스.",
-    "translation": "그리고 혹시 모르니까 목에도요.",
-    "notes": [
+      },
       {
         "word": "just",
         "actual": "저스트",
@@ -760,12 +654,12 @@
     ]
   },
   {
-    "index": 37,
+    "index": 27,
     "start": 77.8,
-    "end": 79.43,
-    "text": "So when you're putting your clothes on,",
-    "pronunciation": "쓰오 웬 유어 퓨팅 와이오우알 클로즈 온,",
-    "translation": "그래서 당신이 옷을 입을 때",
+    "end": 80.93,
+    "text": "So when you're putting your clothes on, say what you're doing.",
+    "pronunciation": "쓰오 웬 유어 퓨팅 와이오우알 클로즈 온, 세이 왓 유어 두잉.",
+    "translation": "그래서 당신이 옷을 입을 때 당신이 뭘 하는지 말해요.",
     "notes": [
       {
         "word": "you",
@@ -781,17 +675,7 @@
         "word": "put",
         "actual": "풋",
         "meaning": "'p' 음은 명확하고 'u'는 짧게 '풋'"
-      }
-    ]
-  },
-  {
-    "index": 38,
-    "start": 79.73,
-    "end": 80.73,
-    "text": "say what you're doing.",
-    "pronunciation": "세이 왓 유어 두잉.",
-    "translation": "당신이 뭘 하는지 말해요.",
-    "notes": [
+      },
       {
         "word": "you",
         "actual": "유",
@@ -805,12 +689,12 @@
     ]
   },
   {
-    "index": 39,
+    "index": 28,
     "start": 80.93,
-    "end": 82.83,
-    "text": "When you're putting everything you need",
-    "pronunciation": "웬 유어 퓨팅 에브리씽 유 니드",
-    "translation": "당신이 필요한 모든 것을 넣을 때",
+    "end": 84.08,
+    "text": "When you're putting everything you need in your bag,",
+    "pronunciation": "웬 유어 퓨팅 에브리씽 유 니드 인 유어 백,",
+    "translation": "당신이 필요한 모든 것을 넣을 때 가방에,",
     "notes": [
       {
         "word": "you",
@@ -821,17 +705,7 @@
         "word": "put",
         "actual": "풋",
         "meaning": "'p' 음은 명확하고 'u'는 짧게 '풋'"
-      }
-    ]
-  },
-  {
-    "index": 40,
-    "start": 82.83,
-    "end": 84.57,
-    "text": "in your bag, say what",
-    "pronunciation": "인 와이오우알 백, 세이 왓",
-    "translation": "가방에, 뭘",
-    "notes": [
+      },
       {
         "word": "you",
         "actual": "유",
@@ -845,12 +719,12 @@
     ]
   },
   {
-    "index": 41,
-    "start": 84.57,
+    "text": "say what you're putting in your bag.",
+    "start": 84.08,
     "end": 85.73,
-    "text": "you're putting in your bag.",
-    "pronunciation": "유어 퓨팅 인 와이오우알 백.",
-    "translation": "넣는지 말해요.",
+    "pronunciation": "세이 왓유어 퓨팅 인 유어 백.",
+    "translation": "뭘 넣는지 말해요.",
+    "index": 29,
     "notes": [
       {
         "word": "you",
@@ -865,9 +739,9 @@
     ]
   },
   {
-    "index": 42,
+    "index": 30,
     "start": 85.73,
-    "end": 87.3,
+    "end": 87.53,
     "text": "Just comment on everything.",
     "pronunciation": "저스트 코멘트 온 에브리씽.",
     "translation": "그냥 모든 것에 대해 말해요.",
@@ -885,12 +759,12 @@
     ]
   },
   {
-    "index": 43,
+    "index": 31,
     "start": 87.53,
-    "end": 88.97,
-    "text": "You're going to see you thought you knew",
-    "pronunciation": "유어 거나 시 유 썻 유 키니에더블유",
-    "translation": "당신은 당신이 알았다고 생각한 것을 볼 거예요",
+    "end": 90.43,
+    "text": "You're going to see you thought you knew a lot more words than you do.",
+    "pronunciation": "유어거나 시 유썻유 뉴어랏 모어워즈 던유두.",
+    "translation": "너는 네가 생각했던 것보다 아는 단어가 훨씬 적다는 걸 알게 될 거야",
     "notes": [
       {
         "word": "going",
@@ -911,17 +785,7 @@
         "word": "see",
         "actual": "씨",
         "meaning": "'s' 음이 강하고 'ee'는 길게 '씨'"
-      }
-    ]
-  },
-  {
-    "index": 44,
-    "start": 88.97,
-    "end": 90.43,
-    "text": "a lot more words than you do.",
-    "pronunciation": "어 라트 모어 워즈 던 유 두.",
-    "translation": "당신이 알고 있는 것보다 훨씬 더 많은 단어들을요.",
-    "notes": [
+      },
       {
         "word": "you",
         "actual": "유",
@@ -935,7 +799,7 @@
     ]
   },
   {
-    "index": 45,
+    "index": 32,
     "start": 90.43,
     "end": 92.13,
     "text": "These little guys are so excited.",
@@ -955,12 +819,12 @@
     ]
   },
   {
-    "index": 46,
+    "index": 33,
     "start": 92.13,
-    "end": 93.47,
-    "text": "They think they're going",
-    "pronunciation": "데이 씽크 더어 고잉",
-    "translation": "그들은 그들이",
+    "end": 94.83,
+    "text": "They think they're going with us, but they're not.",
+    "pronunciation": "데이 씽크 더어 고잉 위드 어스, 벗 더어 나트.",
+    "translation": "그들은 그들이 우리와 함께 갈 거라고 생각하는데 아니에요.",
     "notes": [
       {
         "word": "going",
@@ -971,17 +835,7 @@
         "word": "the",
         "actual": "더",
         "meaning": "음성에서 모음 앞이면 '디', 자음 앞이면 '더'"
-      }
-    ]
-  },
-  {
-    "index": 47,
-    "start": 93.47,
-    "end": 94.83,
-    "text": "with us, but they're not.",
-    "pronunciation": "위드 어스, 벗 더어 나트.",
-    "translation": "우리와 함께 갈 거라고 생각하는데 아니에요.",
-    "notes": [
+      },
       {
         "word": "the",
         "actual": "더",
@@ -995,28 +849,18 @@
     ]
   },
   {
-    "index": 48,
+    "index": 34,
     "start": 95.07,
-    "end": 96.3,
-    "text": "Sorry guys, we're",
-    "pronunciation": "쏘리 가이즈, 위어",
-    "translation": "미안해 친구들, 우리는",
+    "end": 97.33,
+    "text": "Sorry guys, we're going to come back soon.",
+    "pronunciation": "쏘리 가이즈, 위어 거나 컴 백 순.",
+    "translation": "미안해 친구들, 우리는 곧 다시 올 거예요.",
     "notes": [
       {
         "word": "connected speech",
         "actual": "연결 발음",
         "meaning": "단어들이 자연스럽게 연결되는 방식 주목"
-      }
-    ]
-  },
-  {
-    "index": 49,
-    "start": 96.3,
-    "end": 97.33,
-    "text": "going to come back soon.",
-    "pronunciation": "거나 컴 백 순.",
-    "translation": "곧 다시 올 거예요.",
-    "notes": [
+      },
       {
         "word": "going",
         "actual": "고잉",
@@ -1030,12 +874,12 @@
     ]
   },
   {
-    "index": 50,
+    "index": 35,
     "start": 97.53,
-    "end": 98.47,
-    "text": "Not this time. We",
-    "pronunciation": "낫디스 타임 위",
-    "translation": "이번엔 아니야. 우리는",
+    "end": 99.57,
+    "text": "Not this time. We went for a walk already.",
+    "pronunciation": "낫디스 타임 위 웬포러 워크 올레디",
+    "translation": "이번엔 아니야. 우리는 이미 산책을 했어",
     "notes": [
       {
         "word": "Not this",
@@ -1051,17 +895,7 @@
         "word": "We",
         "actual": "위",
         "meaning": "모음으로 시작하므로 자연스러운 연결"
-      }
-    ]
-  },
-  {
-    "index": 51,
-    "start": 98.47,
-    "end": 99.57,
-    "text": "went for a walk already.",
-    "pronunciation": "웬포러 워크 올레디",
-    "translation": "이미 산책을 했어",
-    "notes": [
+      },
       {
         "word": "went for",
         "actual": "웬포러",
@@ -1080,12 +914,12 @@
     ]
   },
   {
-    "index": 52,
+    "index": 36,
     "start": 99.83,
-    "end": 100.87,
-    "text": "You guys are good.",
-    "pronunciation": "유 가이즈아 굿",
-    "translation": "너희들 좋아",
+    "end": 102.03,
+    "text": "You guys are good. We played with you.",
+    "pronunciation": "유 가이즈아 굿 위 플레이드 윗유",
+    "translation": "너희들 좋아 우리가 너랑 놀았어",
     "notes": [
       {
         "word": "You guys",
@@ -1101,17 +935,7 @@
         "word": "good",
         "actual": "굿",
         "meaning": "명확한 종료 음소"
-      }
-    ]
-  },
-  {
-    "index": 53,
-    "start": 100.87,
-    "end": 102.03,
-    "text": "We played with you.",
-    "pronunciation": "위 플레이드 윗유",
-    "translation": "우리가 너랑 놀았어",
-    "notes": [
+      },
       {
         "word": "We",
         "actual": "위",
@@ -1130,7 +954,7 @@
     ]
   },
   {
-    "index": 54,
+    "index": 37,
     "start": 102.03,
     "end": 103.73,
     "text": "You have food, you have water.",
@@ -1155,12 +979,12 @@
     ]
   },
   {
-    "index": 55,
+    "index": 38,
     "start": 103.73,
-    "end": 106.33,
-    "text": "We're now locking the door and we're",
-    "pronunciation": "위얼 나우 락킹 더 도어 앤 위얼",
-    "translation": "우린 지금 문을 잠그고 있어",
+    "end": 107.7,
+    "text": "We're now locking the door and we're going to take the elevator.",
+    "pronunciation": "위얼 나우 락킹 더 도어 앤 위얼 거나 테이크 디 엘러베이더",
+    "translation": "우린 지금 문을 잠그고 있어 엘리베이터를 타러 가",
     "notes": [
       {
         "word": "We're",
@@ -1176,17 +1000,7 @@
         "word": "and we're",
         "actual": "앤 위얼",
         "meaning": "and는 비강세, we're는 자연스러운 연결"
-      }
-    ]
-  },
-  {
-    "index": 56,
-    "start": 106.33,
-    "end": 107.7,
-    "text": "going to take the elevator.",
-    "pronunciation": "거나 테이크 디 엘러베이더",
-    "translation": "엘리베이터를 타러 가",
-    "notes": [
+      },
       {
         "word": "going to",
         "actual": "거나",
@@ -1205,7 +1019,7 @@
     ]
   },
   {
-    "index": 57,
+    "index": 39,
     "start": 107.73,
     "end": 109.17,
     "text": "So a lot of the times when you're going",
@@ -1230,7 +1044,7 @@
     ]
   },
   {
-    "index": 58,
+    "index": 40,
     "start": 109.17,
     "end": 112.63,
     "text": "to do this exercise, you're going to find yourself not knowing",
@@ -1260,7 +1074,7 @@
     ]
   },
   {
-    "index": 59,
+    "index": 41,
     "start": 112.63,
     "end": 114.27,
     "text": "some words and that's okay.",
@@ -1285,7 +1099,7 @@
     ]
   },
   {
-    "index": 60,
+    "index": 42,
     "start": 114.27,
     "end": 116.13,
     "text": "Just try to explain what that word is and",
@@ -1310,7 +1124,7 @@
     ]
   },
   {
-    "index": 61,
+    "index": 43,
     "start": 116.13,
     "end": 118.33,
     "text": "what it does and just like move on.",
@@ -1335,7 +1149,7 @@
     ]
   },
   {
-    "index": 62,
+    "index": 44,
     "start": 118.33,
     "end": 120.97,
     "text": "Look at this view.",
@@ -1360,7 +1174,7 @@
     ]
   },
   {
-    "index": 63,
+    "index": 45,
     "start": 120.97,
     "end": 122.13,
     "text": "These are all banana",
@@ -1385,7 +1199,7 @@
     ]
   },
   {
-    "index": 64,
+    "index": 46,
     "start": 122.13,
     "end": 123.87,
     "text": "trees if I'm not mistaken.",
@@ -1410,7 +1224,7 @@
     ]
   },
   {
-    "index": 65,
+    "index": 47,
     "start": 124.27,
     "end": 127.13,
     "text": "Madeira is absolutely gorgeous.",
@@ -1435,7 +1249,7 @@
     ]
   },
   {
-    "index": 66,
+    "index": 48,
     "start": 127.33,
     "end": 129.1,
     "text": "So right now we're walking and we're",
@@ -1460,7 +1274,7 @@
     ]
   },
   {
-    "index": 67,
+    "index": 49,
     "start": 129.1,
     "end": 132.27,
     "text": "going to go down a very steep road, which",
@@ -1485,7 +1299,7 @@
     ]
   },
   {
-    "index": 68,
+    "index": 50,
     "start": 132.27,
     "end": 134.07,
     "text": "means very abrupt like this.",
@@ -1510,7 +1324,7 @@
     ]
   },
   {
-    "index": 69,
+    "index": 51,
     "start": 134.07,
     "end": 134.77,
     "text": "Look at this.",
@@ -1530,7 +1344,7 @@
     ]
   },
   {
-    "index": 70,
+    "index": 52,
     "start": 134.77,
     "end": 135.87,
     "text": "See how steep that is?",
@@ -1555,7 +1369,7 @@
     ]
   },
   {
-    "index": 71,
+    "index": 53,
     "start": 135.9,
     "end": 138.07,
     "text": "So we're going to take these stairs one",
@@ -1580,7 +1394,7 @@
     ]
   },
   {
-    "index": 72,
+    "index": 54,
     "start": 138.07,
     "end": 141.03,
     "text": "by one and hopefully we don't fall.",
@@ -1605,7 +1419,7 @@
     ]
   },
   {
-    "index": 73,
+    "index": 55,
     "start": 141.03,
     "end": 143.43,
     "text": "There are a lot of lizards, very, very",
@@ -1630,7 +1444,7 @@
     ]
   },
   {
-    "index": 74,
+    "index": 56,
     "start": 143.43,
     "end": 145.03,
     "text": "tiny lizards or geckos.",
@@ -1655,7 +1469,7 @@
     ]
   },
   {
-    "index": 75,
+    "index": 57,
     "start": 145.03,
     "end": 146.5,
     "text": "I don't think they're geckos. They're lizards.",
@@ -1685,7 +1499,7 @@
     ]
   },
   {
-    "index": 76,
+    "index": 58,
     "start": 147.07,
     "end": 147.67,
     "text": "So I have to be",
@@ -1710,7 +1524,7 @@
     ]
   },
   {
-    "index": 77,
+    "index": 59,
     "start": 147.67,
     "end": 151.5,
     "text": "careful not to walk on them. Hold on. Look. Okay.",
@@ -1740,7 +1554,7 @@
     ]
   },
   {
-    "index": 78,
+    "index": 60,
     "start": 151.5,
     "end": 152.43,
     "text": "Do you see it?",
@@ -1765,7 +1579,7 @@
     ]
   },
   {
-    "index": 79,
+    "index": 61,
     "start": 153.67,
     "end": 154.5,
     "text": "So cute.",
@@ -1785,7 +1599,7 @@
     ]
   },
   {
-    "index": 80,
+    "index": 62,
     "start": 154.97,
     "end": 157.57,
     "text": "These stairs are made of cobblestone,",
@@ -1810,7 +1624,7 @@
     ]
   },
   {
-    "index": 81,
+    "index": 63,
     "start": 157.57,
     "end": 160.2,
     "text": "which is popular here in Portugal.",
@@ -1835,7 +1649,7 @@
     ]
   },
   {
-    "index": 82,
+    "index": 64,
     "start": 161.17,
     "end": 164.73,
     "text": "And it's good because you don't slip on",
@@ -1860,7 +1674,7 @@
     ]
   },
   {
-    "index": 83,
+    "index": 65,
     "start": 164.73,
     "end": 165.6,
     "text": "these stairs when it's",
@@ -1880,7 +1694,7 @@
     ]
   },
   {
-    "index": 84,
+    "index": 66,
     "start": 165.6,
     "end": 167.8,
     "text": "wet because these rocks are",
@@ -1905,7 +1719,7 @@
     ]
   },
   {
-    "index": 85,
+    "index": 67,
     "start": 167.8,
     "end": 170.47,
     "text": "very uneven and kind of sharp.",
@@ -1930,7 +1744,7 @@
     ]
   },
   {
-    "index": 86,
+    "index": 68,
     "start": 170.93,
     "end": 174.7,
     "text": "So it helps with the grip of your shoes.",
@@ -1955,7 +1769,7 @@
     ]
   },
   {
-    "index": 87,
+    "index": 69,
     "start": 175.23,
     "end": 177.9,
     "text": "Wait, in the last video you said the cobblestone is",
@@ -1980,7 +1794,7 @@
     ]
   },
   {
-    "index": 88,
+    "index": 70,
     "start": 177.9,
     "end": 179.57,
     "text": "bad because it's uneven.",
@@ -2000,7 +1814,7 @@
     ]
   },
   {
-    "index": 89,
+    "index": 71,
     "start": 180.83,
     "end": 181.97,
     "text": "Now you're saying it's good.",
@@ -2025,7 +1839,7 @@
     ]
   },
   {
-    "index": 90,
+    "index": 72,
     "start": 181.97,
     "end": 183.27,
     "text": "Well this one is good.",
@@ -2050,7 +1864,7 @@
     ]
   },
   {
-    "index": 91,
+    "index": 73,
     "start": 183.5,
     "end": 184.47,
     "text": "That one was not.",
@@ -2070,7 +1884,7 @@
     ]
   },
   {
-    "index": 92,
+    "index": 74,
     "start": 184.73,
     "end": 186.43,
     "text": "What do you think about this pathway?",
@@ -2095,7 +1909,7 @@
     ]
   },
   {
-    "index": 93,
+    "index": 75,
     "start": 188.1,
     "end": 188.3,
     "text": "Yeah.",
@@ -2110,7 +1924,7 @@
     ]
   },
   {
-    "index": 94,
+    "index": 76,
     "start": 188.4,
     "end": 189.07,
     "text": "Why do you like it?",
@@ -2130,7 +1944,7 @@
     ]
   },
   {
-    "index": 95,
+    "index": 77,
     "start": 189.1,
     "end": 191.83,
     "text": "I like it because there's stairs and I",
@@ -2160,7 +1974,7 @@
     ]
   },
   {
-    "index": 96,
+    "index": 78,
     "start": 191.83,
     "end": 193.17,
     "text": "don't have to go like",
@@ -2185,7 +1999,7 @@
     ]
   },
   {
-    "index": 97,
+    "index": 79,
     "start": 193.17,
     "end": 194.73,
     "text": "this because it puts a lot",
@@ -2215,7 +2029,7 @@
     ]
   },
   {
-    "index": 98,
+    "index": 80,
     "start": 194.73,
     "end": 196.03,
     "text": "of pressure on knees and stuff.",
@@ -2245,7 +2059,7 @@
     ]
   },
   {
-    "index": 99,
+    "index": 81,
     "start": 196.27,
     "end": 197.53,
     "text": "And you can like slip and",
@@ -2270,7 +2084,7 @@
     ]
   },
   {
-    "index": 100,
+    "index": 82,
     "start": 197.53,
     "end": 199.03,
     "text": "fall so it's very dangerous.",
@@ -2300,7 +2114,7 @@
     ]
   },
   {
-    "index": 101,
+    "index": 83,
     "start": 199.43,
     "end": 203.03,
     "text": "So these steps are probably made by the",
@@ -2330,7 +2144,7 @@
     ]
   },
   {
-    "index": 102,
+    "index": 84,
     "start": 203.03,
     "end": 204.77,
     "text": "locals so then you don't slip.",
@@ -2360,7 +2174,7 @@
     ]
   },
   {
-    "index": 103,
+    "index": 85,
     "start": 204.77,
     "end": 206.87,
     "text": "But see how steep this is.",
@@ -2390,7 +2204,7 @@
     ]
   },
   {
-    "index": 104,
+    "index": 86,
     "start": 206.87,
     "end": 209.67,
     "text": "I don't know if you can see like in",
@@ -2420,7 +2234,7 @@
     ]
   },
   {
-    "index": 105,
+    "index": 87,
     "start": 209.67,
     "end": 211.43,
     "text": "comparison to the actual",
@@ -2450,7 +2264,7 @@
     ]
   },
   {
-    "index": 106,
+    "index": 88,
     "start": 211.43,
     "end": 214.07,
     "text": "straight line here, how steep this road is.",
@@ -2480,7 +2294,7 @@
     ]
   },
   {
-    "index": 107,
+    "index": 89,
     "start": 214.63,
     "end": 219.53,
     "text": "I think it's, I don't know, it's like 45 degrees or something. 45?!",
@@ -2515,7 +2329,7 @@
     ]
   },
   {
-    "index": 108,
+    "index": 90,
     "start": 220.77,
     "end": 222.17,
     "text": "What is it? 15.",
@@ -2540,7 +2354,7 @@
     ]
   },
   {
-    "index": 109,
+    "index": 91,
     "start": 222.17,
     "end": 223.13,
     "text": "I don't even know. 15?",
@@ -2565,7 +2379,7 @@
     ]
   },
   {
-    "index": 110,
+    "index": 92,
     "start": 223.57,
     "end": 226.2,
     "text": "No, maybe it's like 25 degrees. See?",
@@ -2595,7 +2409,7 @@
     ]
   },
   {
-    "index": 111,
+    "index": 93,
     "start": 226.6,
     "end": 229.33,
     "text": "Look, it's so steep.",
@@ -2625,7 +2439,7 @@
     ]
   },
   {
-    "index": 112,
+    "index": 94,
     "start": 229.57,
     "end": 230.73,
     "text": "Okay there's also a",
@@ -2650,7 +2464,7 @@
     ]
   },
   {
-    "index": 113,
+    "index": 95,
     "start": 230.73,
     "end": 232.13,
     "text": "really beautiful river here.",
@@ -2680,7 +2494,7 @@
     ]
   },
   {
-    "index": 114,
+    "index": 96,
     "start": 232.13,
     "end": 232.73,
     "text": "Let me show you.",
@@ -2705,7 +2519,7 @@
     ]
   },
   {
-    "index": 115,
+    "index": 97,
     "start": 233.03,
     "end": 236,
     "text": "Look, it's so beautiful and then there",
@@ -2735,7 +2549,7 @@
     ]
   },
   {
-    "index": 116,
+    "index": 98,
     "start": 236,
     "end": 238.7,
     "text": "are some bananas over there",
@@ -2765,7 +2579,7 @@
     ]
   },
   {
-    "index": 117,
+    "index": 99,
     "start": 238.7,
     "end": 240.53,
     "text": "and that is a banana flower.",
@@ -2795,7 +2609,7 @@
     ]
   },
   {
-    "index": 118,
+    "index": 100,
     "start": 240.77,
     "end": 244.3,
     "text": "Okay so Madeira landscape is very hilly.",
@@ -2825,7 +2639,7 @@
     ]
   },
   {
-    "index": 119,
+    "index": 101,
     "start": 244.53,
     "end": 245.77,
     "text": "There's a lot of hills.",
@@ -2850,7 +2664,7 @@
     ]
   },
   {
-    "index": 120,
+    "index": 102,
     "start": 246.33,
     "end": 248.13,
     "text": "There's a lot of steep roads.",
@@ -2875,7 +2689,7 @@
     ]
   },
   {
-    "index": 121,
+    "index": 103,
     "start": 248.57,
     "end": 251.87,
     "text": "There's a lot of narrow streets and the",
@@ -2905,7 +2719,7 @@
     ]
   },
   {
-    "index": 122,
+    "index": 104,
     "start": 251.87,
     "end": 254.53,
     "text": "streets have maximum two",
@@ -2935,7 +2749,7 @@
     ]
   },
   {
-    "index": 123,
+    "index": 105,
     "start": 254.53,
     "end": 257.23,
     "text": "lanes I believe, unless it's a highway that",
@@ -2965,7 +2779,7 @@
     ]
   },
   {
-    "index": 124,
+    "index": 106,
     "start": 257.23,
     "end": 261.47,
     "text": "connects some cities or towns.",
@@ -2995,7 +2809,7 @@
     ]
   },
   {
-    "index": 125,
+    "index": 107,
     "start": 262.27,
     "end": 263.93,
     "text": "But we are going down the",
@@ -3025,7 +2839,7 @@
     ]
   },
   {
-    "index": 126,
+    "index": 108,
     "start": 263.93,
     "end": 266.27,
     "text": "hill right now towards the water.",
@@ -3055,7 +2869,7 @@
     ]
   },
   {
-    "index": 127,
+    "index": 109,
     "start": 266.53,
     "end": 270.37,
     "text": "Oh my god, something smells so good like burned caramel or",
@@ -3090,7 +2904,7 @@
     ]
   },
   {
-    "index": 128,
+    "index": 110,
     "start": 270.37,
     "end": 271.53,
     "text": "burnt sugar or something.",
@@ -3115,7 +2929,7 @@
     ]
   },
   {
-    "index": 129,
+    "index": 111,
     "start": 271.87,
     "end": 272.77,
     "text": "Is there a restaurant here?",
@@ -3145,7 +2959,7 @@
     ]
   },
   {
-    "index": 130,
+    "index": 112,
     "start": 273,
     "end": 274.07,
     "text": "Look at these houses.",
@@ -3175,7 +2989,7 @@
     ]
   },
   {
-    "index": 131,
+    "index": 113,
     "start": 274.07,
     "end": 275.03,
     "text": "They're literally at",
@@ -3200,7 +3014,7 @@
     ]
   },
   {
-    "index": 132,
+    "index": 114,
     "start": 275.03,
     "end": 276.67,
     "text": "the edge of that cliff.",
@@ -3230,7 +3044,7 @@
     ]
   },
   {
-    "index": 133,
+    "index": 115,
     "start": 276.7,
     "end": 279.67,
     "text": "The sidewalks in Madeira are very small",
@@ -3260,7 +3074,7 @@
     ]
   },
   {
-    "index": 134,
+    "index": 116,
     "start": 279.67,
     "end": 281.43,
     "text": "and they're only on one",
@@ -3290,7 +3104,7 @@
     ]
   },
   {
-    "index": 135,
+    "index": 117,
     "start": 281.43,
     "end": 283.47,
     "text": "side of the street because",
@@ -3320,7 +3134,7 @@
     ]
   },
   {
-    "index": 136,
+    "index": 118,
     "start": 283.47,
     "end": 286.03,
     "text": "there's not enough space for two",
@@ -3350,7 +3164,7 @@
     ]
   },
   {
-    "index": 137,
+    "index": 119,
     "start": 286.03,
     "end": 288.03,
     "text": "sidewalks on each side of the street.",
@@ -3375,7 +3189,7 @@
     ]
   },
   {
-    "index": 138,
+    "index": 120,
     "start": 288.27,
     "end": 290.37,
     "text": "Some streets don't even have sidewalks",
@@ -3395,7 +3209,7 @@
     ]
   },
   {
-    "index": 139,
+    "index": 121,
     "start": 290.37,
     "end": 292.23,
     "text": "and do you see how all",
@@ -3415,7 +3229,7 @@
     ]
   },
   {
-    "index": 140,
+    "index": 122,
     "start": 292.23,
     "end": 293.27,
     "text": "of them just kind of like",
@@ -3440,7 +3254,7 @@
     ]
   },
   {
-    "index": 141,
+    "index": 123,
     "start": 293.73,
     "end": 296,
     "text": "go in like serpentines like this?",
@@ -3460,7 +3274,7 @@
     ]
   },
   {
-    "index": 142,
+    "index": 124,
     "start": 296,
     "end": 300,
     "text": "So you can't really tell if there's a vehicle coming from",
@@ -3495,7 +3309,7 @@
     ]
   },
   {
-    "index": 143,
+    "index": 125,
     "start": 300,
     "end": 301.17,
     "text": "around the corner or not.",
@@ -3515,7 +3329,7 @@
     ]
   },
   {
-    "index": 144,
+    "index": 126,
     "start": 301.17,
     "end": 302.33,
     "text": "So you have to be very careful.",
@@ -3535,7 +3349,7 @@
     ]
   },
   {
-    "index": 145,
+    "index": 127,
     "start": 302.33,
     "end": 302.57,
     "text": "Look at this.",
@@ -3555,7 +3369,7 @@
     ]
   },
   {
-    "index": 146,
+    "index": 128,
     "start": 303.23,
     "end": 305.83,
     "text": "So next time you go for a walk in your",
@@ -3580,7 +3394,7 @@
     ]
   },
   {
-    "index": 147,
+    "index": 129,
     "start": 305.83,
     "end": 308.1,
     "text": "mind, try to comment on",
@@ -3600,7 +3414,7 @@
     ]
   },
   {
-    "index": 148,
+    "index": 130,
     "start": 308.1,
     "end": 309.67,
     "text": "everything that you see,",
@@ -3620,7 +3434,7 @@
     ]
   },
   {
-    "index": 149,
+    "index": 131,
     "start": 310,
     "end": 312.2,
     "text": "that you feel, that you want.",
@@ -3640,7 +3454,7 @@
     ]
   },
   {
-    "index": 150,
+    "index": 132,
     "start": 312.5,
     "end": 313.57,
     "text": "Look at this layering.",
@@ -3660,7 +3474,7 @@
     ]
   },
   {
-    "index": 151,
+    "index": 133,
     "start": 313.83,
     "end": 314.87,
     "text": "Seems a little scary.",
@@ -3680,7 +3494,7 @@
     ]
   },
   {
-    "index": 152,
+    "index": 134,
     "start": 315.17,
     "end": 317.03,
     "text": "I don't know if these things might fall",
@@ -3700,7 +3514,7 @@
     ]
   },
   {
-    "index": 153,
+    "index": 135,
     "start": 317.03,
     "end": 319.17,
     "text": "or not, but look at those",
@@ -3720,7 +3534,7 @@
     ]
   },
   {
-    "index": 154,
+    "index": 136,
     "start": 319.17,
     "end": 321.33,
     "text": "cacti and those flowers.",
@@ -3740,7 +3554,7 @@
     ]
   },
   {
-    "index": 155,
+    "index": 137,
     "start": 322.1,
     "end": 322.77,
     "text": "So pretty.",
@@ -3755,7 +3569,7 @@
     ]
   },
   {
-    "index": 156,
+    "index": 138,
     "start": 323.87,
     "end": 326.43,
     "text": "Everything is just so green and beautiful.",
@@ -3785,7 +3599,7 @@
     ]
   },
   {
-    "index": 157,
+    "index": 139,
     "start": 326.43,
     "end": 327.3,
     "text": "I don't know what that is.",
@@ -3805,7 +3619,7 @@
     ]
   },
   {
-    "index": 158,
+    "index": 140,
     "start": 327.63,
     "end": 334.53,
     "text": "Some sort of urban island art, but looks",
@@ -3830,7 +3644,7 @@
     ]
   },
   {
-    "index": 159,
+    "index": 141,
     "start": 334.53,
     "end": 336.23,
     "text": "kind of creepy to be honest.",
@@ -3850,7 +3664,7 @@
     ]
   },
   {
-    "index": 160,
+    "index": 142,
     "start": 336.57,
     "end": 339.73,
     "text": "So again, see how curvy this road is.",
@@ -3870,7 +3684,7 @@
     ]
   },
   {
-    "index": 161,
+    "index": 143,
     "start": 339.73,
     "end": 341.77,
     "text": "So we have to go all the way down there.",
@@ -3890,7 +3704,7 @@
     ]
   },
   {
-    "index": 162,
+    "index": 144,
     "start": 342.27,
     "end": 344.27,
     "text": "Okay, so there's a crosswalk here.",
@@ -3910,7 +3724,7 @@
     ]
   },
   {
-    "index": 163,
+    "index": 145,
     "start": 344.27,
     "end": 345.87,
     "text": "You can go that way, but then if you go",
@@ -3930,7 +3744,7 @@
     ]
   },
   {
-    "index": 164,
+    "index": 146,
     "start": 345.87,
     "end": 349.17,
     "text": "back, there isn't a sidewalk over here.",
@@ -3950,7 +3764,7 @@
     ]
   },
   {
-    "index": 165,
+    "index": 147,
     "start": 349.93,
     "end": 352.63,
     "text": "And there's a beautiful garden over there",
@@ -3975,7 +3789,7 @@
     ]
   },
   {
-    "index": 166,
+    "index": 148,
     "start": 352.63,
     "end": 353.47,
     "text": "and I think that might be a school.",
@@ -3995,7 +3809,7 @@
     ]
   },
   {
-    "index": 167,
+    "index": 149,
     "start": 354.03,
     "end": 358.03,
     "text": "So we are getting closer to",
@@ -4015,7 +3829,7 @@
     ]
   },
   {
-    "index": 168,
+    "index": 150,
     "start": 358.03,
     "end": 360.93,
     "text": "the center of this small village.",
@@ -4035,7 +3849,7 @@
     ]
   },
   {
-    "index": 169,
+    "index": 151,
     "start": 361.33,
     "end": 363.17,
     "text": "So here you start seeing lots of street",
@@ -4055,7 +3869,7 @@
     ]
   },
   {
-    "index": 170,
+    "index": 152,
     "start": 363.17,
     "end": 365.6,
     "text": "signs and the roads are",
@@ -4075,7 +3889,7 @@
     ]
   },
   {
-    "index": 171,
+    "index": 153,
     "start": 365.6,
     "end": 366.73,
     "text": "a little bit bigger here.",
@@ -4095,7 +3909,7 @@
     ]
   },
   {
-    "index": 172,
+    "index": 154,
     "start": 367.77,
     "end": 371.27,
     "text": "And you can see like some small restaurants.",
@@ -4130,7 +3944,7 @@
     ]
   },
   {
-    "index": 173,
+    "index": 155,
     "start": 371.83,
     "end": 373.43,
     "text": "Look at that cliff.",
@@ -4150,7 +3964,7 @@
     ]
   },
   {
-    "index": 174,
+    "index": 156,
     "start": 373.83,
     "end": 376.13,
     "text": "Do you see how that house is literally",
@@ -4175,7 +3989,7 @@
     ]
   },
   {
-    "index": 175,
+    "index": 157,
     "start": 376.13,
     "end": 377.53,
     "text": "built on that rock",
@@ -4195,7 +4009,7 @@
     ]
   },
   {
-    "index": 176,
+    "index": 158,
     "start": 377.53,
     "end": 379.77,
     "text": "and it's just so abrupt.",
@@ -4215,7 +4029,7 @@
     ]
   },
   {
-    "index": 177,
+    "index": 159,
     "start": 380.13,
     "end": 381.3,
     "text": "There is a tunnel going through this rock.",
@@ -4240,7 +4054,7 @@
     ]
   },
   {
-    "index": 178,
+    "index": 160,
     "start": 381.63,
     "end": 384.57,
     "text": "Through this mountain.",
@@ -4260,7 +4074,7 @@
     ]
   },
   {
-    "index": 179,
+    "index": 161,
     "start": 385.6,
     "end": 389.73,
     "text": "And can you imagine that Madeira is literally like this.",
@@ -4295,7 +4109,7 @@
     ]
   },
   {
-    "index": 180,
+    "index": 162,
     "start": 389.73,
     "end": 392.6,
     "text": "Like the whole island is like this.",
@@ -4315,7 +4129,7 @@
     ]
   },
   {
-    "index": 181,
+    "index": 163,
     "start": 392.6,
     "end": 394.87,
     "text": "This is a beautiful roundabout here and",
@@ -4340,7 +4154,7 @@
     ]
   },
   {
-    "index": 182,
+    "index": 164,
     "start": 394.87,
     "end": 396.33,
     "text": "they have a monument.",
@@ -4360,7 +4174,7 @@
     ]
   },
   {
-    "index": 183,
+    "index": 165,
     "start": 396.63,
     "end": 398.13,
     "text": "I don't know exactly what that is.",
@@ -4390,7 +4204,7 @@
     ]
   },
   {
-    "index": 184,
+    "index": 166,
     "start": 398.13,
     "end": 399.3,
     "text": "I would have to go around",
@@ -4420,7 +4234,7 @@
     ]
   },
   {
-    "index": 185,
+    "index": 167,
     "start": 399.3,
     "end": 401.03,
     "text": "it and read what's on it.",
@@ -4445,7 +4259,7 @@
     ]
   },
   {
-    "index": 186,
+    "index": 168,
     "start": 401.03,
     "end": 401.77,
     "text": "And then we're going",
@@ -4470,7 +4284,7 @@
     ]
   },
   {
-    "index": 187,
+    "index": 169,
     "start": 401.77,
     "end": 403.3,
     "text": "to go down the street.",
@@ -4500,7 +4314,7 @@
     ]
   },
   {
-    "index": 188,
+    "index": 170,
     "start": 403.3,
     "end": 404.13,
     "text": "As you can see, there",
@@ -4525,7 +4339,7 @@
     ]
   },
   {
-    "index": 189,
+    "index": 171,
     "start": 404.13,
     "end": 406.9,
     "text": "aren't any sidewalk crosswalks.",
@@ -4550,7 +4364,7 @@
     ]
   },
   {
-    "index": 190,
+    "index": 172,
     "start": 406.9,
     "end": 413.13,
     "text": "So I'm just going to jaywalk. So when you cross the street, not on a",
@@ -4580,7 +4394,7 @@
     ]
   },
   {
-    "index": 191,
+    "index": 173,
     "start": 413.13,
     "end": 415.47,
     "text": "crosswalk, it's called jaywalking and you",
@@ -4605,7 +4419,7 @@
     ]
   },
   {
-    "index": 192,
+    "index": 174,
     "start": 415.47,
     "end": 416.37,
     "text": "should not be doing that.",
@@ -4630,7 +4444,7 @@
     ]
   },
   {
-    "index": 193,
+    "index": 175,
     "start": 416.73,
     "end": 418.53,
     "text": "So another thing that comes up every time",
@@ -4660,7 +4474,7 @@
     ]
   },
   {
-    "index": 194,
+    "index": 176,
     "start": 418.53,
     "end": 420.17,
     "text": "I post a video with",
@@ -4685,7 +4499,7 @@
     ]
   },
   {
-    "index": 195,
+    "index": 177,
     "start": 420.17,
     "end": 421.93,
     "text": "activities like this is",
@@ -4710,7 +4524,7 @@
     ]
   },
   {
-    "index": 196,
+    "index": 178,
     "start": 422.2,
     "end": 424.57,
     "text": "people asking me, well what if I'm making",
@@ -4740,7 +4554,7 @@
     ]
   },
   {
-    "index": 197,
+    "index": 179,
     "start": 424.57,
     "end": 426.5,
     "text": "mistakes when I'm talking and there's",
@@ -4765,7 +4579,7 @@
     ]
   },
   {
-    "index": 198,
+    "index": 180,
     "start": 426.5,
     "end": 428.17,
     "text": "nobody there to correct me.",
@@ -4790,7 +4604,7 @@
     ]
   },
   {
-    "index": 199,
+    "index": 181,
     "start": 428.87,
     "end": 431.67,
     "text": "And I always tell everybody this exercise",
@@ -4815,7 +4629,7 @@
     ]
   },
   {
-    "index": 200,
+    "index": 182,
     "start": 431.67,
     "end": 433.97,
     "text": "in particular is not about mistakes.",
@@ -4840,7 +4654,7 @@
     ]
   },
   {
-    "index": 201,
+    "index": 183,
     "start": 434.23,
     "end": 436.87,
     "text": "It's about vocabulary, refreshing your",
@@ -4865,7 +4679,7 @@
     ]
   },
   {
-    "index": 202,
+    "index": 184,
     "start": 436.87,
     "end": 438.9,
     "text": "vocabulary and practicing it.",
@@ -4885,7 +4699,7 @@
     ]
   },
   {
-    "index": 203,
+    "index": 185,
     "start": 439.13,
     "end": 442.1,
     "text": "Dan and I speak English to each other because otherwise we",
@@ -4920,7 +4734,7 @@
     ]
   },
   {
-    "index": 204,
+    "index": 186,
     "start": 442.1,
     "end": 444.63,
     "text": "would forget the language.",
@@ -4940,7 +4754,7 @@
     ]
   },
   {
-    "index": 205,
+    "index": 187,
     "start": 444.87,
     "end": 449.17,
     "text": "I also practice by posting videos and",
@@ -4965,7 +4779,7 @@
     ]
   },
   {
-    "index": 206,
+    "index": 188,
     "start": 449.17,
     "end": 450.53,
     "text": "going live and whatnot.",
@@ -4985,7 +4799,7 @@
     ]
   },
   {
-    "index": 207,
+    "index": 189,
     "start": 450.83,
     "end": 454.67,
     "text": "So it's a way for me to maintain my",
@@ -5010,7 +4824,7 @@
     ]
   },
   {
-    "index": 208,
+    "index": 190,
     "start": 454.67,
     "end": 456.37,
     "text": "language as well because if I stop",
@@ -5035,7 +4849,7 @@
     ]
   },
   {
-    "index": 209,
+    "index": 191,
     "start": 456.37,
     "end": 458.67,
     "text": "speaking English then it'll go away.",
@@ -5060,7 +4874,7 @@
     ]
   },
   {
-    "index": 210,
+    "index": 192,
     "start": 458.7,
     "end": 460.23,
     "text": "I've already started",
@@ -5085,7 +4899,7 @@
     ]
   },
   {
-    "index": 211,
+    "index": 193,
     "start": 460.23,
     "end": 464.03,
     "text": "noticing my English kind of",
@@ -5110,7 +4924,7 @@
     ]
   },
   {
-    "index": 212,
+    "index": 194,
     "start": 464.67,
     "end": 465.8,
     "text": "Oh god, what's that word?",
@@ -5135,7 +4949,7 @@
     ]
   },
   {
-    "index": 213,
+    "index": 195,
     "start": 466.4,
     "end": 466.83,
     "text": "Deteriorate?",
@@ -5150,7 +4964,7 @@
     ]
   },
   {
-    "index": 214,
+    "index": 196,
     "start": 466.87,
     "end": 468.57,
     "text": "Yes, deteriorate, becoming",
@@ -5170,7 +4984,7 @@
     ]
   },
   {
-    "index": 215,
+    "index": 197,
     "start": 468.57,
     "end": 471.2,
     "text": "worse since I left Canada.",
@@ -5195,7 +5009,7 @@
     ]
   },
   {
-    "index": 216,
+    "index": 198,
     "start": 471.2,
     "end": 472.47,
     "text": "This dog is for some reason.",
@@ -5220,7 +5034,7 @@
     ]
   },
   {
-    "index": 217,
+    "index": 199,
     "start": 472.83,
     "end": 475.23,
     "text": "Hey! Hey! We don't",
@@ -5240,7 +5054,7 @@
     ]
   },
   {
-    "index": 218,
+    "index": 200,
     "start": 475.23,
     "end": 476.67,
     "text": "have any food, I'm sorry.",
@@ -5265,7 +5079,7 @@
     ]
   },
   {
-    "index": 219,
+    "index": 201,
     "start": 478.83,
     "end": 480.7,
     "text": "Okay, so this is a stray dog.",
@@ -5290,7 +5104,7 @@
     ]
   },
   {
-    "index": 220,
+    "index": 202,
     "start": 481.27,
     "end": 483.83,
     "text": "Clearly he isn't with anybody.",
@@ -5315,7 +5129,7 @@
     ]
   },
   {
-    "index": 221,
+    "index": 203,
     "start": 484.1,
     "end": 485.4,
     "text": "He's just so happy.",
@@ -5335,7 +5149,7 @@
     ]
   },
   {
-    "index": 222,
+    "index": 204,
     "start": 485.4,
     "end": 486.97,
     "text": "He looks well fed.",
@@ -5355,7 +5169,7 @@
     ]
   },
   {
-    "index": 223,
+    "index": 205,
     "start": 487,
     "end": 489.43,
     "text": "He just decided to show us the way.",
@@ -5380,7 +5194,7 @@
     ]
   },
   {
-    "index": 224,
+    "index": 206,
     "start": 489.7,
     "end": 491.53,
     "text": "He's not following us, he's",
@@ -5405,7 +5219,7 @@
     ]
   },
   {
-    "index": 225,
+    "index": 207,
     "start": 491.53,
     "end": 493.43,
     "text": "leading us, he's guiding us.",
@@ -5430,7 +5244,7 @@
     ]
   },
   {
-    "index": 226,
+    "index": 208,
     "start": 493.73,
     "end": 495.5,
     "text": "Okay doggy, where should we go next?",
@@ -5455,7 +5269,7 @@
     ]
   },
   {
-    "index": 227,
+    "index": 209,
     "start": 496.07,
     "end": 497.4,
     "text": "He's a local guide.",
@@ -5475,7 +5289,7 @@
     ]
   },
   {
-    "index": 228,
+    "index": 210,
     "start": 497.97,
     "end": 499.63,
     "text": "We found him on TripAdvisor.",
@@ -5500,7 +5314,7 @@
     ]
   },
   {
-    "index": 229,
+    "index": 211,
     "start": 499.63,
     "end": 500.1,
     "text": "Where is he?",
@@ -5520,7 +5334,7 @@
     ]
   },
   {
-    "index": 230,
+    "index": 212,
     "start": 500.93,
     "end": 502.3,
     "text": "Hi, sweetie!",
@@ -5535,7 +5349,7 @@
     ]
   },
   {
-    "index": 231,
+    "index": 213,
     "start": 502.3,
     "end": 503.67,
     "text": "Someone is playing, is",
@@ -5560,7 +5374,7 @@
     ]
   },
   {
-    "index": 232,
+    "index": 214,
     "start": 503.67,
     "end": 505.23,
     "text": "that pickleball or padel?",
@@ -5590,7 +5404,7 @@
     ]
   },
   {
-    "index": 233,
+    "index": 215,
     "start": 505.63,
     "end": 506.53,
     "text": "I don't know what that is",
@@ -5620,7 +5434,7 @@
     ]
   },
   {
-    "index": 234,
+    "index": 216,
     "start": 506.53,
     "end": 509.33,
     "text": "but they are playing it.",
@@ -5650,7 +5464,7 @@
     ]
   },
   {
-    "index": 235,
+    "index": 217,
     "start": 509.33,
     "end": 511.77,
     "text": "Literally waited for us and now he",
@@ -5680,7 +5494,7 @@
     ]
   },
   {
-    "index": 236,
+    "index": 218,
     "start": 511.77,
     "end": 513.73,
     "text": "started running in front of us again.",
@@ -5710,7 +5524,7 @@
     ]
   },
   {
-    "index": 237,
+    "index": 219,
     "start": 514.53,
     "end": 515.53,
     "text": "Where is he going?",
@@ -5740,7 +5554,7 @@
     ]
   },
   {
-    "index": 238,
+    "index": 220,
     "start": 515.57,
     "end": 517.17,
     "text": "Are we supposed to follow him?",
@@ -5770,7 +5584,7 @@
     ]
   },
   {
-    "index": 239,
+    "index": 221,
     "start": 517.97,
     "end": 519.43,
     "text": "Another thing that you can do if you're",
@@ -5800,7 +5614,7 @@
     ]
   },
   {
-    "index": 240,
+    "index": 222,
     "start": 519.43,
     "end": 521.73,
     "text": "not ready to speak in full sentences yet",
@@ -5830,7 +5644,7 @@
     ]
   },
   {
-    "index": 241,
+    "index": 223,
     "start": 521.73,
     "end": 523.67,
     "text": "is just to name every",
@@ -5855,7 +5669,7 @@
     ]
   },
   {
-    "index": 242,
+    "index": 224,
     "start": 523.67,
     "end": 525,
     "text": "object that you see.",
@@ -5885,7 +5699,7 @@
     ]
   },
   {
-    "index": 243,
+    "index": 225,
     "start": 525.2,
     "end": 529.17,
     "text": "For example, crosswalk, fence, sidewalk,",
@@ -5915,7 +5729,7 @@
     ]
   },
   {
-    "index": 244,
+    "index": 226,
     "start": 529.8,
     "end": 532.23,
     "text": "street sign, traffic lights.",
@@ -5945,7 +5759,7 @@
     ]
   },
   {
-    "index": 245,
+    "index": 227,
     "start": 532.23,
     "end": 534.13,
     "text": "Okay, so we are crossing the street now",
@@ -5975,7 +5789,7 @@
     ]
   },
   {
-    "index": 246,
+    "index": 228,
     "start": 534.13,
     "end": 538.67,
     "text": "on the crosswalk and look at this view.",
@@ -6005,7 +5819,7 @@
     ]
   },
   {
-    "index": 247,
+    "index": 229,
     "start": 539.03,
     "end": 541.27,
     "text": "It's a little bit windy so there is a",
@@ -6035,7 +5849,7 @@
     ]
   },
   {
-    "index": 248,
+    "index": 230,
     "start": 541.27,
     "end": 544.67,
     "text": "print museum here in Madeira",
@@ -6065,7 +5879,7 @@
     ]
   },
   {
-    "index": 249,
+    "index": 231,
     "start": 544.77,
     "end": 546.37,
     "text": "and look at this printer",
@@ -6095,7 +5909,7 @@
     ]
   },
   {
-    "index": 250,
+    "index": 232,
     "start": 546.37,
     "end": 547.53,
     "text": "that they have outside.",
@@ -6125,7 +5939,7 @@
     ]
   },
   {
-    "index": 251,
+    "index": 233,
     "start": 547.77,
     "end": 549.53,
     "text": "Look at all those pieces.",
@@ -6155,7 +5969,7 @@
     ]
   },
   {
-    "index": 252,
+    "index": 234,
     "start": 549.83,
     "end": 552.37,
     "text": "If you're an engineer and you're learning",
@@ -6185,7 +5999,7 @@
     ]
   },
   {
-    "index": 253,
+    "index": 235,
     "start": 552.37,
     "end": 555.5,
     "text": "English, try to name all of the pieces.",
@@ -6215,7 +6029,7 @@
     ]
   },
   {
-    "index": 254,
+    "index": 236,
     "start": 555.9,
     "end": 556.83,
     "text": "What do we know?",
@@ -6245,7 +6059,7 @@
     ]
   },
   {
-    "index": 255,
+    "index": 237,
     "start": 557.6,
     "end": 561.53,
     "text": "We know keyboard, tube, lever, what else? Knob.",
@@ -6280,7 +6094,7 @@
     ]
   },
   {
-    "index": 256,
+    "index": 238,
     "start": 561.67,
     "end": 562.2,
     "text": "Where's the knob?",
@@ -6305,7 +6119,7 @@
     ]
   },
   {
-    "index": 257,
+    "index": 239,
     "start": 562.43,
     "end": 564.2,
     "text": "Oh that's a knob, a",
@@ -6330,7 +6144,7 @@
     ]
   },
   {
-    "index": 258,
+    "index": 240,
     "start": 564.2,
     "end": 566.6,
     "text": "plaque, a chain, yeah.",
@@ -6355,7 +6169,7 @@
     ]
   },
   {
-    "index": 259,
+    "index": 241,
     "start": 566.9,
     "end": 568.33,
     "text": "What is it? A hook? A hook.",
@@ -6380,7 +6194,7 @@
     ]
   },
   {
-    "index": 260,
+    "index": 242,
     "start": 568.63,
     "end": 569.9,
     "text": "That is a hook.",
@@ -6410,7 +6224,7 @@
     ]
   },
   {
-    "index": 261,
+    "index": 243,
     "start": 570.23,
     "end": 571.57,
     "text": "That is a spring.",
@@ -6430,7 +6244,7 @@
     ]
   },
   {
-    "index": 262,
+    "index": 244,
     "start": 572,
     "end": 573.27,
     "text": "Okay, so there is a",
@@ -6460,7 +6274,7 @@
     ]
   },
   {
-    "index": 263,
+    "index": 245,
     "start": 573.27,
     "end": 574.87,
     "text": "beach club over there.",
@@ -6490,7 +6304,7 @@
     ]
   },
   {
-    "index": 264,
+    "index": 246,
     "start": 575.07,
     "end": 577.43,
     "text": "The beaches here are not sandy.",
@@ -6520,7 +6334,7 @@
     ]
   },
   {
-    "index": 265,
+    "index": 247,
     "start": 577.77,
     "end": 582.77,
     "text": "Oh my god, look at that.",
@@ -6550,7 +6364,7 @@
     ]
   },
   {
-    "index": 266,
+    "index": 248,
     "start": 583.13,
     "end": 584.23,
     "text": "Do you see those houses",
@@ -6580,7 +6394,7 @@
     ]
   },
   {
-    "index": 267,
+    "index": 249,
     "start": 584.23,
     "end": 585.47,
     "text": "over there on the hill?",
@@ -6610,7 +6424,7 @@
     ]
   },
   {
-    "index": 268,
+    "index": 250,
     "start": 585.8,
     "end": 586.63,
     "text": "On the cliff.",
@@ -6635,7 +6449,7 @@
     ]
   },
   {
-    "index": 269,
+    "index": 251,
     "start": 586.63,
     "end": 587.63,
     "text": "So we arrived.",
@@ -6660,7 +6474,7 @@
     ]
   },
   {
-    "index": 270,
+    "index": 252,
     "start": 588.03,
     "end": 590.2,
     "text": "This is the little harbor area.",
@@ -6690,7 +6504,7 @@
     ]
   },
   {
-    "index": 271,
+    "index": 253,
     "start": 590.53,
     "end": 592.53,
     "text": "Look at those colorful boats there.",
@@ -6720,7 +6534,7 @@
     ]
   },
   {
-    "index": 272,
+    "index": 254,
     "start": 592.53,
     "end": 595.8,
     "text": "So we're gonna go and find maybe a place",
@@ -6750,7 +6564,7 @@
     ]
   },
   {
-    "index": 273,
+    "index": 255,
     "start": 595.8,
     "end": 597.5,
     "text": "to eat in that area.",
@@ -6780,7 +6594,7 @@
     ]
   },
   {
-    "index": 274,
+    "index": 256,
     "start": 597.5,
     "end": 600.37,
     "text": "This place is a volcanic island.",
@@ -6805,7 +6619,7 @@
     ]
   },
   {
-    "index": 275,
+    "index": 257,
     "start": 600.77,
     "end": 601.37,
     "text": "Look at this.",
@@ -6830,7 +6644,7 @@
     ]
   },
   {
-    "index": 276,
+    "index": 258,
     "start": 602.97,
     "end": 604.57,
     "text": "So gorgeous.",
@@ -6850,7 +6664,7 @@
     ]
   },
   {
-    "index": 277,
+    "index": 259,
     "start": 604.57,
     "end": 605.4,
     "text": "I don't know what the",
@@ -6880,7 +6694,7 @@
     ]
   },
   {
-    "index": 278,
+    "index": 260,
     "start": 605.4,
     "end": 608.33,
     "text": "colorful floating things are called.",
@@ -6910,7 +6724,7 @@
     ]
   },
   {
-    "index": 279,
+    "index": 261,
     "start": 608.33,
     "end": 610.43,
     "text": "If you're talking to somebody from here",
@@ -6940,7 +6754,7 @@
     ]
   },
   {
-    "index": 280,
+    "index": 262,
     "start": 610.43,
     "end": 612.9,
     "text": "that is used to this environment,",
@@ -6965,7 +6779,7 @@
     ]
   },
   {
-    "index": 281,
+    "index": 263,
     "start": 612.9,
     "end": 614.07,
     "text": "they will probably know",
@@ -6990,7 +6804,7 @@
     ]
   },
   {
-    "index": 282,
+    "index": 264,
     "start": 614.07,
     "end": 615.4,
     "text": "what these things are called.",
@@ -7015,7 +6829,7 @@
     ]
   },
   {
-    "index": 283,
+    "index": 265,
     "start": 615.73,
     "end": 617.73,
     "text": "But because they're not part of my",
@@ -7040,7 +6854,7 @@
     ]
   },
   {
-    "index": 284,
+    "index": 266,
     "start": 617.73,
     "end": 619.43,
     "text": "vocabulary, I don't use them.",
@@ -7065,7 +6879,7 @@
     ]
   },
   {
-    "index": 285,
+    "index": 267,
     "start": 619.43,
     "end": 620.57,
     "text": "I don't need that word.",
@@ -7090,7 +6904,7 @@
     ]
   },
   {
-    "index": 286,
+    "index": 268,
     "start": 621.03,
     "end": 624.77,
     "text": "I just said, what are those little colorful floating things?",
@@ -7130,7 +6944,7 @@
     ]
   },
   {
-    "index": 287,
+    "index": 269,
     "start": 625,
     "end": 626.93,
     "text": "And then if I am talking to someone from",
@@ -7155,7 +6969,7 @@
     ]
   },
   {
-    "index": 288,
+    "index": 270,
     "start": 626.93,
     "end": 628.2,
     "text": "here, they will tell me.",
@@ -7180,7 +6994,7 @@
     ]
   },
   {
-    "index": 289,
+    "index": 271,
     "start": 628.6,
     "end": 630.3,
     "text": "So you use the other person that you're",
@@ -7205,7 +7019,7 @@
     ]
   },
   {
-    "index": 290,
+    "index": 272,
     "start": 630.3,
     "end": 632.23,
     "text": "talking to as your dictionary.",
@@ -7230,7 +7044,7 @@
     ]
   },
   {
-    "index": 291,
+    "index": 273,
     "start": 632.5,
     "end": 635,
     "text": "You just describe the things to them and",
@@ -7255,7 +7069,7 @@
     ]
   },
   {
-    "index": 292,
+    "index": 274,
     "start": 635,
     "end": 636.23,
     "text": "then they just give you the word.",
@@ -7280,7 +7094,7 @@
     ]
   },
   {
-    "index": 293,
+    "index": 275,
     "start": 636.23,
     "end": 638.83,
     "text": "And that's perfectly fine because native",
@@ -7305,7 +7119,7 @@
     ]
   },
   {
-    "index": 294,
+    "index": 276,
     "start": 638.83,
     "end": 640.5,
     "text": "speakers do the same thing.",
@@ -7330,7 +7144,7 @@
     ]
   },
   {
-    "index": 295,
+    "index": 277,
     "start": 640.8,
     "end": 642.9,
     "text": "And even you in your native language,",
@@ -7355,7 +7169,7 @@
     ]
   },
   {
-    "index": 296,
+    "index": 278,
     "start": 642.9,
     "end": 644.2,
     "text": "sometimes you forget the word.",
@@ -7380,7 +7194,7 @@
     ]
   },
   {
-    "index": 297,
+    "index": 279,
     "start": 644.4,
     "end": 646.07,
     "text": "Sometimes you don't know some words.",
@@ -7405,7 +7219,7 @@
     ]
   },
   {
-    "index": 298,
+    "index": 280,
     "start": 646.43,
     "end": 648.1,
     "text": "But if you know that the person who",
@@ -7430,7 +7244,7 @@
     ]
   },
   {
-    "index": 299,
+    "index": 281,
     "start": 648.1,
     "end": 649.5,
     "text": "you're talking to knows it,",
@@ -7455,7 +7269,7 @@
     ]
   },
   {
-    "index": 300,
+    "index": 282,
     "start": 649.5,
     "end": 650.97,
     "text": "you're just going to describe it to them",
@@ -7480,7 +7294,7 @@
     ]
   },
   {
-    "index": 301,
+    "index": 283,
     "start": 650.97,
     "end": 651.73,
     "text": "and then they're going",
@@ -7505,7 +7319,7 @@
     ]
   },
   {
-    "index": 302,
+    "index": 284,
     "start": 651.73,
     "end": 652.6,
     "text": "to give you the term.",
@@ -7530,7 +7344,7 @@
     ]
   },
   {
-    "index": 303,
+    "index": 285,
     "start": 652.83,
     "end": 654.83,
     "text": "So this is a pretty popular",
@@ -7555,7 +7369,7 @@
     ]
   },
   {
-    "index": 304,
+    "index": 286,
     "start": 654.83,
     "end": 656.2,
     "text": "thing in Portugal, I think.",
@@ -7580,7 +7394,7 @@
     ]
   },
   {
-    "index": 305,
+    "index": 287,
     "start": 656.2,
     "end": 657.23,
     "text": "I've seen it before where",
@@ -7605,7 +7419,7 @@
     ]
   },
   {
-    "index": 306,
+    "index": 288,
     "start": 657.23,
     "end": 659,
     "text": "they do this street art.",
@@ -7630,7 +7444,7 @@
     ]
   },
   {
-    "index": 307,
+    "index": 289,
     "start": 659.2,
     "end": 662.57,
     "text": "But it's with metal and plastic and I",
@@ -7655,7 +7469,7 @@
     ]
   },
   {
-    "index": 308,
+    "index": 290,
     "start": 662.57,
     "end": 664.03,
     "text": "don't know if it's recycled stuff.",
@@ -7680,7 +7494,7 @@
     ]
   },
   {
-    "index": 309,
+    "index": 291,
     "start": 664.63,
     "end": 665.87,
     "text": "But look at this pretty seal.",
@@ -7705,7 +7519,7 @@
     ]
   },
   {
-    "index": 310,
+    "index": 292,
     "start": 666.1,
     "end": 667,
     "text": "It's so cute.",
@@ -7730,7 +7544,7 @@
     ]
   },
   {
-    "index": 311,
+    "index": 293,
     "start": 667,
     "end": 668.8,
     "text": "That person is opening the garage doors",
@@ -7755,7 +7569,7 @@
     ]
   },
   {
-    "index": 312,
+    "index": 294,
     "start": 668.8,
     "end": 670.7,
     "text": "so the car can get out.",
@@ -7780,7 +7594,7 @@
     ]
   },
   {
-    "index": 313,
+    "index": 295,
     "start": 670.93,
     "end": 673.1,
     "text": "And we're just going to go around the sea",
@@ -7805,7 +7619,7 @@
     ]
   },
   {
-    "index": 314,
+    "index": 296,
     "start": 673.1,
     "end": 676.37,
     "text": "wall and get to that little harbor area.",
@@ -7830,7 +7644,7 @@
     ]
   },
   {
-    "index": 315,
+    "index": 297,
     "start": 676.6,
     "end": 677.4,
     "text": "Look at the waves",
@@ -7855,7 +7669,7 @@
     ]
   },
   {
-    "index": 316,
+    "index": 298,
     "start": 677.4,
     "end": 679.2,
     "text": "splashing into the rocks.",
@@ -7880,7 +7694,7 @@
     ]
   },
   {
-    "index": 317,
+    "index": 299,
     "start": 679.6,
     "end": 680.23,
     "text": "I think this is a",
@@ -7905,7 +7719,7 @@
     ]
   },
   {
-    "index": 318,
+    "index": 300,
     "start": 680.23,
     "end": 682.23,
     "text": "hotel, Pestana Churchill Bay.",
@@ -7930,7 +7744,7 @@
     ]
   },
   {
-    "index": 319,
+    "index": 301,
     "start": 682.23,
     "end": 684.1,
     "text": "Because it says reception over there.",
@@ -7955,7 +7769,7 @@
     ]
   },
   {
-    "index": 320,
+    "index": 302,
     "start": 684.1,
     "end": 684.43,
     "text": "Oh my God!",
@@ -7980,7 +7794,7 @@
     ]
   },
   {
-    "index": 321,
+    "index": 303,
     "start": 684.97,
     "end": 686.57,
     "text": "Look, there's Churchill over there.",
@@ -8005,7 +7819,7 @@
     ]
   },
   {
-    "index": 322,
+    "index": 304,
     "start": 686.57,
     "end": 687.1,
     "text": "Look at him.",
@@ -8030,7 +7844,7 @@
     ]
   },
   {
-    "index": 323,
+    "index": 305,
     "start": 687.1,
     "end": 687.9,
     "text": "He's so serious.",
@@ -8055,7 +7869,7 @@
     ]
   },
   {
-    "index": 324,
+    "index": 306,
     "start": 688.2,
     "end": 689.47,
     "text": "Sounds like little claps.",
@@ -8080,7 +7894,7 @@
     ]
   },
   {
-    "index": 325,
+    "index": 307,
     "start": 692.8,
     "end": 695.3,
     "text": "Also, I don't quite understand how this",
@@ -8105,7 +7919,7 @@
     ]
   },
   {
-    "index": 326,
+    "index": 308,
     "start": 695.3,
     "end": 698.67,
     "text": "is 16 degrees and it's so warm.",
@@ -8130,7 +7944,7 @@
     ]
   },
   {
-    "index": 327,
+    "index": 309,
     "start": 698.67,
     "end": 699.53,
     "text": "Like I feel completely",
@@ -8155,7 +7969,7 @@
     ]
   },
   {
-    "index": 328,
+    "index": 310,
     "start": 699.53,
     "end": 701.63,
     "text": "fine with a short sleeve.",
@@ -8180,7 +7994,7 @@
     ]
   },
   {
-    "index": 329,
+    "index": 311,
     "start": 702.83,
     "end": 705.6,
     "text": "When 16 degrees anywhere else that I've",
@@ -8210,7 +8024,7 @@
     ]
   },
   {
-    "index": 330,
+    "index": 312,
     "start": 705.6,
     "end": 707.93,
     "text": "been was really cold.",
@@ -8235,7 +8049,7 @@
     ]
   },
   {
-    "index": 331,
+    "index": 313,
     "start": 707.93,
     "end": 709.8,
     "text": "And I'm by the ocean and it",
@@ -8260,7 +8074,7 @@
     ]
   },
   {
-    "index": 332,
+    "index": 314,
     "start": 709.8,
     "end": 711.9,
     "text": "should be breezy and colder.",
@@ -8285,7 +8099,7 @@
     ]
   },
   {
-    "index": 333,
+    "index": 315,
     "start": 712.1,
     "end": 713.3,
     "text": "I don't get it.",
@@ -8305,7 +8119,7 @@
     ]
   },
   {
-    "index": 334,
+    "index": 316,
     "start": 713.3,
     "end": 717.1,
     "text": "Madeira is known to be the island of the",
@@ -8330,7 +8144,7 @@
     ]
   },
   {
-    "index": 335,
+    "index": 317,
     "start": 717.1,
     "end": 720.13,
     "text": "eternal spring because the temperatures don't fluctuate",
@@ -8370,7 +8184,7 @@
     ]
   },
   {
-    "index": 336,
+    "index": 318,
     "start": 720.13,
     "end": 721.93,
     "text": "a lot and it's always",
@@ -8395,7 +8209,7 @@
     ]
   },
   {
-    "index": 337,
+    "index": 319,
     "start": 721.93,
     "end": 723.5,
     "text": "pretty much just like this.",
@@ -8420,7 +8234,7 @@
     ]
   },
   {
-    "index": 338,
+    "index": 320,
     "start": 723.5,
     "end": 725.13,
     "text": "Maybe in winter it gets a little bit",
@@ -8450,7 +8264,7 @@
     ]
   },
   {
-    "index": 339,
+    "index": 321,
     "start": 725.13,
     "end": 728.1,
     "text": "colder and then it's also said that this",
@@ -8475,7 +8289,7 @@
     ]
   },
   {
-    "index": 340,
+    "index": 322,
     "start": 728.1,
     "end": 730.5,
     "text": "island is the Hawaii of Europe.",
@@ -8505,7 +8319,7 @@
     ]
   },
   {
-    "index": 341,
+    "index": 323,
     "start": 730.5,
     "end": 732.3,
     "text": "So I'm really excited to explore more.",
@@ -8530,7 +8344,7 @@
     ]
   },
   {
-    "index": 342,
+    "index": 324,
     "start": 732.3,
     "end": 734.1,
     "text": "Okay, so we're back from our walk and",
@@ -8555,7 +8369,7 @@
     ]
   },
   {
-    "index": 343,
+    "index": 325,
     "start": 734.1,
     "end": 734.9,
     "text": "this is how you",
@@ -8575,7 +8389,7 @@
     ]
   },
   {
-    "index": 344,
+    "index": 326,
     "start": 734.9,
     "end": 736.2,
     "text": "practice English by yourself.",
@@ -8600,7 +8414,7 @@
     ]
   },
   {
-    "index": 345,
+    "index": 327,
     "start": 736.2,
     "end": 737.53,
     "text": "Now we're going to grill",
@@ -8625,7 +8439,7 @@
     ]
   },
   {
-    "index": 346,
+    "index": 328,
     "start": 737.53,
     "end": 739.03,
     "text": "some chicken and some veggies.",
@@ -8650,7 +8464,7 @@
     ]
   },
   {
-    "index": 347,
+    "index": 329,
     "start": 739.07,
     "end": 741.7,
     "text": "And if you want to, when you do that,",
@@ -8680,7 +8494,7 @@
     ]
   },
   {
-    "index": 348,
+    "index": 330,
     "start": 742.03,
     "end": 743.13,
     "text": "narrate what you're doing.",
@@ -8705,7 +8519,7 @@
     ]
   },
   {
-    "index": 349,
+    "index": 331,
     "start": 743.43,
     "end": 744.63,
     "text": "You're cutting the chicken, you're",
@@ -8735,7 +8549,7 @@
     ]
   },
   {
-    "index": 350,
+    "index": 332,
     "start": 744.63,
     "end": 747.1,
     "text": "slicing it, you're putting it on the grill, you're searing",
@@ -8770,7 +8584,7 @@
     ]
   },
   {
-    "index": 351,
+    "index": 333,
     "start": 747.1,
     "end": 748.03,
     "text": "it, whatever you're doing.",
@@ -8795,7 +8609,7 @@
     ]
   },
   {
-    "index": 352,
+    "index": 334,
     "start": 748.73,
     "end": 750.6,
     "text": "Chopping the vegetables, slicing the",
@@ -8820,7 +8634,7 @@
     ]
   },
   {
-    "index": 353,
+    "index": 335,
     "start": 750.6,
     "end": 752.47,
     "text": "onions, tossing the salad.",
@@ -8845,7 +8659,7 @@
     ]
   },
   {
-    "index": 354,
+    "index": 336,
     "start": 753.07,
     "end": 757.23,
     "text": "So many things that you think you know, you understand when",
@@ -8885,7 +8699,7 @@
     ]
   },
   {
-    "index": 355,
+    "index": 337,
     "start": 757.23,
     "end": 758.53,
     "text": "someone else says that,",
@@ -8910,7 +8724,7 @@
     ]
   },
   {
-    "index": 356,
+    "index": 338,
     "start": 758.63,
     "end": 760.43,
     "text": "but you can't use it the same way.",
@@ -8940,7 +8754,7 @@
     ]
   },
   {
-    "index": 357,
+    "index": 339,
     "start": 760.43,
     "end": 765.9,
     "text": "I will post more of these vlog style videos hello, quiet please.",
@@ -8980,7 +8794,7 @@
     ]
   },
   {
-    "index": 358,
+    "index": 340,
     "start": 766.2,
     "end": 767.63,
     "text": "I'm going to be posting more videos like",
@@ -9005,7 +8819,7 @@
     ]
   },
   {
-    "index": 359,
+    "index": 341,
     "start": 767.63,
     "end": 768.77,
     "text": "this where I show you",
@@ -9025,7 +8839,7 @@
     ]
   },
   {
-    "index": 360,
+    "index": 342,
     "start": 768.77,
     "end": 769.8,
     "text": "how you can practice your",
@@ -9050,7 +8864,7 @@
     ]
   },
   {
-    "index": 361,
+    "index": 343,
     "start": 769.8,
     "end": 771.2,
     "text": "passive vocabulary and turn",
@@ -9075,7 +8889,7 @@
     ]
   },
   {
-    "index": 362,
+    "index": 344,
     "start": 771.2,
     "end": 772.8,
     "text": "it into your active vocabulary.",
@@ -9100,7 +8914,7 @@
     ]
   },
   {
-    "index": 363,
+    "index": 345,
     "start": 773.07,
     "end": 775.57,
     "text": "So make sure you subscribe and make sure you hit that",
@@ -9140,7 +8954,7 @@
     ]
   },
   {
-    "index": 364,
+    "index": 346,
     "start": 775.57,
     "end": 777.2,
     "text": "notification bell so you know when",
@@ -9165,7 +8979,7 @@
     ]
   },
   {
-    "index": 365,
+    "index": 347,
     "start": 777.2,
     "end": 778.2,
     "text": "I post a new video.",
@@ -9185,7 +8999,7 @@
     ]
   },
   {
-    "index": 366,
+    "index": 348,
     "start": 778.2,
     "end": 781.97,
     "text": "You can check the link in the description for more resources and recommendations from",
@@ -9225,7 +9039,7 @@
     ]
   },
   {
-    "index": 367,
+    "index": 349,
     "start": 782.03,
     "end": 784.6,
     "text": "me and I will see you next time. Bye!",
