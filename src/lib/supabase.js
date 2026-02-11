@@ -151,7 +151,8 @@ export async function getFavoriteVideos() {
   const { data, error } = await supabase
     .from("favorite_videos")
     .select("video_id")
-    .eq("user_id", user.id);
+    .eq("user_id", user.id)
+    .order("created_at", { ascending: false });
 
   if (error || !data) return [];
   return data.map((d) => d.video_id);

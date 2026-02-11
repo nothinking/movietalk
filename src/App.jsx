@@ -73,9 +73,11 @@ function VideoListScreen({ videos, onSelect, favoriteIds, onToggleFavorite, user
 
       <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
         {[...videos].sort((a, b) => {
-          const aFav = favoriteIds.includes(a.id) ? 0 : 1;
-          const bFav = favoriteIds.includes(b.id) ? 0 : 1;
-          return aFav - bFav;
+          const aIdx = favoriteIds.indexOf(a.id);
+          const bIdx = favoriteIds.indexOf(b.id);
+          if ((aIdx !== -1) !== (bIdx !== -1)) return aIdx !== -1 ? -1 : 1;
+          if (aIdx !== -1 && bIdx !== -1) return aIdx - bIdx;
+          return 0;
         }).map((video) => {
           const isFav = favoriteIds.includes(video.id);
           return (
@@ -223,33 +225,6 @@ function VideoListScreen({ videos, onSelect, favoriteIds, onToggleFavorite, user
         })}
       </div>
 
-      {/* Add video hint */}
-      <div
-        style={{
-          marginTop: "32px",
-          padding: "20px",
-          background: "#0d0d14",
-          borderRadius: "12px",
-          border: "1px dashed #333",
-          textAlign: "center",
-        }}
-      >
-        <p style={{ fontSize: "13px", color: "#555", lineHeight: "1.8" }}>
-          새 영상을 추가하려면 터미널에서:
-          <br />
-          <code
-            style={{
-              background: "#1a1a2e",
-              padding: "4px 10px",
-              borderRadius: "6px",
-              fontSize: "12px",
-              color: "#a5b4fc",
-            }}
-          >
-            python add_video.py "YouTube URL"
-          </code>
-        </p>
-      </div>
     </div>
   );
 }
@@ -2599,7 +2574,7 @@ export default function MovieEnglishApp() {
         setFavoriteIds((prev) => [...prev, videoId]);
       }
     } else {
-      setFavoriteIds((prev) => [...prev, videoId]);
+      setFavoriteIds((prev) => [videoId, ...prev]);
       const { error } = await addFavoriteVideo(videoId);
       if (error) {
         console.error("즐겨찾기 추가 실패:", error.message);
