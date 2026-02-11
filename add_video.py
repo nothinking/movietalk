@@ -87,13 +87,13 @@ def get_video_metadata(video_id: str) -> dict:
     }
 
 
-def extract_subtitles(youtube_url: str, video_id: str) -> list:
+def extract_subtitles(youtube_url: str, video_id: str, fix_sentences: bool = True) -> list:
     """기존 extract_subtitles.py를 활용하여 자막을 추출합니다."""
     sys.path.insert(0, str(PROJECT_DIR))
     from extract_subtitles import SubtitleExtractor
 
     extractor = SubtitleExtractor()
-    subtitles = extractor.extract(youtube_url)
+    subtitles = extractor.extract(youtube_url, fix_sentences=fix_sentences)
 
     if not subtitles:
         raise RuntimeError("자막 추출에 실패했습니다.")
@@ -232,7 +232,8 @@ def generate_pronunciation_claude_code(subtitles: list, video_id: str, retry: bo
         return json.load(f)
 
 
-def add_video(youtube_url: str, skip_pronunciation: bool = False, use_claude_code: bool = False, retry: bool = True):
+def add_video(youtube_url: str, skip_pronunciation: bool = False, use_claude_code: bool = False,
+              retry: bool = True, fix_sentences: bool = True):
     """새 영상을 추가합니다."""
     video_id = extract_video_id(youtube_url)
     full_url = f"https://www.youtube.com/watch?v={video_id}"
@@ -262,7 +263,7 @@ def add_video(youtube_url: str, skip_pronunciation: bool = False, use_claude_cod
 
     # 2. 자막 추출
     print(f"\n📝 Step 2: 자막 추출...")
-    subtitles = extract_subtitles(full_url, video_id)
+    subtitles = extract_subtitles(full_url, video_id, fix_sentences=fix_sentences)
     print(f"   ✓ {len(subtitles)}개 자막 추출 완료")
 
     # 3. 발음 데이터 생성
@@ -394,6 +395,8 @@ def main():
                         help='Claude Code CLI로 발음 생성 (API 키 불필요)')
     parser.add_argument('--no-retry', action='store_true',
                         help='발음 생성 실패 시 재시도 안 함')
+    parser.add_argument('--no-sentence-fix', action='store_true',
+                        help='문장 단위 자막 보정을 건너뜁니다')
 
     args = parser.parse_args()
 
@@ -406,7 +409,8 @@ def main():
             generate_pronunciation_for_existing(args.url)
     else:
         add_video(args.url, skip_pronunciation=args.skip_pronunciation,
-                  use_claude_code=args.use_claude_code, retry=not args.no_retry)
+                  use_claude_code=args.use_claude_code, retry=not args.no_retry,
+                  fix_sentences=not args.no_sentence_fix)
 
 
 if __name__ == '__main__':

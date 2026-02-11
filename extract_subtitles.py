@@ -399,6 +399,196 @@ class SubtitleExtractor:
                 index += 1
         return subtitles
 
+    def _fix_sentence_boundaries(self, subtitles: List[Dict]) -> List[Dict]:
+        """자막을 문장 단위로 재분할합니다.
+
+        YouTube 자막은 시간 기반으로 잘려 문장 중간에서 끊기는 경우가 많습니다.
+        이 함수는 문장 부호(. ! ?)를 기준으로 자막을 재분할하여
+        문장 경계와 자막 경계가 일치하도록 보정합니다.
+
+        - 구두점 비율 30% 미만이면 보정을 건너뜁니다 (자동 생성 자막 등).
+        - 1~2단어 조각은 인접 자막에 합칩니다.
+        - 20단어 초과 문장은 쉼표/접속사에서 분리합니다.
+        """
+        if not subtitles or len(subtitles) < 2:
+            return subtitles
+
+        # 구두점이 있는 자막 비율 확인 — 너무 낮으면 보정 불가
+        punctuated = sum(
+            1 for s in subtitles
+            if re.search(r'[.!?]["\'\u201d\u2019)]*$', s['text'].strip())
+        )
+        ratio = punctuated / len(subtitles)
+        if ratio < 0.3:
+            logger.info(f"  문장 부호 비율 {ratio:.0%} — 문장 보정 건너뜀")
+            return subtitles
+
+        # 1. 워드 레벨 타임라인 구축 (non-breaking space 정규화)
+        word_times = []  # (word, start, end)
+        for sub in subtitles:
+            text = sub['text'].replace('\xa0', ' ')
+            words = text.split()
+            if not words:
+                continue
+            dur = sub['end'] - sub['start']
+            per_word = dur / len(words)
+            for i, w in enumerate(words):
+                ws = sub['start'] + i * per_word
+                we = sub['start'] + (i + 1) * per_word
+                word_times.append((w, ws, we))
+
+        if not word_times:
+            return subtitles
+
+        # 2. 문장 경계 탐지
+        ABBREVS = {
+            'Mr.', 'Mrs.', 'Ms.', 'Dr.', 'St.', 'Jr.', 'Sr.', 'Prof.',
+            'vs.', 'etc.', 'i.e.', 'e.g.', 'U.S.', 'U.K.', 'a.m.', 'p.m.',
+            'Mt.', 'Ft.', 'Lt.', 'Gen.', 'Gov.', 'Sgt.', 'Inc.', 'Ltd.',
+            'Corp.', 'Co.', 'Dept.', 'Univ.', 'Ave.', 'Blvd.', 'No.',
+        }
+
+        boundaries = []  # 문장이 끝나는 워드 인덱스
+        for i, (word, _, _) in enumerate(word_times):
+            # 문장 종결 부호 확인 (.!?), 닫는 따옴표/괄호 포함
+            stripped = word.rstrip('"\'\u201d\u2019)')
+            if not re.search(r'[.!?]$', stripped):
+                continue
+
+            # 약어 제외
+            if stripped in ABBREVS or word in ABBREVS:
+                continue
+
+            # 이니셜 (A. B. 등) 제외
+            if re.match(r'^[A-Z]\.$', stripped):
+                continue
+
+            # 소수점 제외 (3.5, $10.99 등)
+            if re.match(r'^[\$€£¥]?\d+\.\d*$', stripped):
+                continue
+
+            # 줄임표(...) — 다음 단어가 대문자면 문장 끝으로 처리
+            if stripped.endswith('...'):
+                if i + 1 < len(word_times):
+                    nxt = word_times[i + 1][0].lstrip('"\u201c\u2018(')
+                    if nxt and nxt[0].isupper():
+                        boundaries.append(i)
+                continue
+
+            # !나 ?는 거의 항상 문장 끝
+            if stripped[-1] in '!?':
+                boundaries.append(i)
+                continue
+
+            # . 의 경우: 다음 단어가 대문자면 문장 끝
+            if i + 1 < len(word_times):
+                nxt = word_times[i + 1][0].lstrip('"\u201c\u2018(')
+                if nxt and nxt[0].isupper():
+                    boundaries.append(i)
+            else:
+                # 마지막 단어
+                boundaries.append(i)
+
+        if not boundaries:
+            return subtitles
+
+        # 마지막 단어가 경계에 없으면 추가
+        if boundaries[-1] != len(word_times) - 1:
+            boundaries.append(len(word_times) - 1)
+
+        # 3. 문장 생성
+        sentences = []
+        start_idx = 0
+        for end_idx in boundaries:
+            if end_idx < start_idx:
+                continue
+            words = [word_times[j][0] for j in range(start_idx, end_idx + 1)]
+            sentences.append({
+                'text': ' '.join(words),
+                'start': word_times[start_idx][1],
+                'end': word_times[end_idx][2],
+            })
+            start_idx = end_idx + 1
+
+        if not sentences:
+            return subtitles
+
+        # 4. 너무 짧은 문장(1~2단어)은 인접 문장에 합치기
+        merged = []
+        for sent in sentences:
+            wc = len(sent['text'].split())
+            if wc <= 2 and merged:
+                prev = merged[-1]
+                prev['text'] = prev['text'] + ' ' + sent['text']
+                prev['end'] = sent['end']
+            else:
+                merged.append(dict(sent))
+
+        # 첫 항목이 여전히 1~2단어면 다음에 합치기
+        if len(merged) >= 2 and len(merged[0]['text'].split()) <= 2:
+            merged[1]['text'] = merged[0]['text'] + ' ' + merged[1]['text']
+            merged[1]['start'] = merged[0]['start']
+            merged.pop(0)
+
+        sentences = merged
+
+        # 5. 너무 긴 문장(20단어 초과)은 절 단위로 분리
+        MAX_WORDS = 20
+        final = []
+        for sent in sentences:
+            words = sent['text'].split()
+            if len(words) <= MAX_WORDS:
+                final.append(sent)
+                continue
+
+            # 쉼표, 접속사 위치 탐색
+            split_candidates = []
+            for j, w in enumerate(words):
+                if j < 3 or j > len(words) - 3:
+                    continue
+                if w.endswith(','):
+                    split_candidates.append(j + 1)
+                elif w.lower() in ('and', 'but', 'or', 'so', 'because', 'when',
+                                   'while', 'if', 'though', 'although', 'since',
+                                   'where', 'which', 'before', 'after'):
+                    split_candidates.append(j)
+
+            if not split_candidates:
+                final.append(sent)
+                continue
+
+            # 중간 지점에 가장 가까운 분할점 선택
+            mid = len(words) // 2
+            best_pos = min(split_candidates, key=lambda p: abs(p - mid))
+
+            # 시간 분배 (워드 비율)
+            total_dur = sent['end'] - sent['start']
+            split_ratio = best_pos / len(words)
+            mid_time = sent['start'] + total_dur * split_ratio
+
+            final.append({
+                'text': ' '.join(words[:best_pos]),
+                'start': sent['start'],
+                'end': round(mid_time, 2),
+            })
+            final.append({
+                'text': ' '.join(words[best_pos:]),
+                'start': round(mid_time, 2),
+                'end': sent['end'],
+            })
+
+        # 6. 인덱스 재부여 및 시간 반올림
+        result = []
+        for i, s in enumerate(final):
+            result.append({
+                'index': i,
+                'start': round(s['start'], 2),
+                'end': round(s['end'], 2),
+                'text': s['text'],
+            })
+
+        return result
+
     def _merge_duplicate_subtitles(self, subtitles: List[Dict]) -> List[Dict]:
         """연속으로 같은 텍스트인 자막을 병합합니다."""
         if not subtitles:
@@ -418,12 +608,16 @@ class SubtitleExtractor:
             sub['index'] = i
         return merged
 
-    def extract(self, youtube_url: str) -> List[Dict]:
+    def extract(self, youtube_url: str, fix_sentences: bool = True) -> List[Dict]:
         """
         유튜브 영상에서 자막을 추출합니다.
         3가지 방법을 순서대로 시도:
         1. youtube-transcript-api (가장 안정적)
         2. yt-dlp CLI (subprocess)
+
+        Args:
+            youtube_url: 유튜브 영상 URL
+            fix_sentences: True면 문장 단위로 자막 경계를 보정합니다
         """
         if not self._validate_youtube_url(youtube_url):
             logger.error("유효하지 않은 유튜브 URL입니다.")
@@ -459,6 +653,13 @@ class SubtitleExtractor:
         if original != len(self.subtitles_data):
             logger.info(f"중복 병합: {original} → {len(self.subtitles_data)}개")
 
+        # 문장 단위 보정
+        if fix_sentences:
+            before = len(self.subtitles_data)
+            self.subtitles_data = self._fix_sentence_boundaries(self.subtitles_data)
+            if before != len(self.subtitles_data):
+                logger.info(f"문장 보정: {before} → {len(self.subtitles_data)}개")
+
         logger.info(f"최종 자막: {len(self.subtitles_data)}개")
         return self.subtitles_data
 
@@ -491,6 +692,8 @@ def main():
     parser.add_argument('--cookies-from-browser', default=None)
     parser.add_argument('--cookies', default=None)
     parser.add_argument('-v', '--verbose', action='store_true')
+    parser.add_argument('--no-sentence-fix', action='store_true',
+                        help='문장 단위 자막 보정을 건너뜁니다')
 
     args = parser.parse_args()
     if args.verbose:
@@ -500,7 +703,7 @@ def main():
         cookies_from_browser=args.cookies_from_browser,
         cookies_file=args.cookies
     )
-    subtitles = extractor.extract(args.url)
+    subtitles = extractor.extract(args.url, fix_sentences=not args.no_sentence_fix)
 
     if not subtitles:
         sys.exit(1)
