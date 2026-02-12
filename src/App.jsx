@@ -343,22 +343,6 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
           }
           return;
         }
-        if (e.key === "r" || e.key === "R") {
-          e.preventDefault();
-          const sub = subtitles[studyIndexRef.current];
-          if (!playerInstanceRef.current || !sub) return;
-          if (loopTargetRef.current) {
-            loopTargetRef.current = null;
-            setIsLooping(false);
-            playerInstanceRef.current.pauseVideo();
-          } else {
-            loopTargetRef.current = { start: sub.start, end: sub.end };
-            setIsLooping(true);
-            playerInstanceRef.current.seekTo(sub.start);
-            playerInstanceRef.current.playVideo();
-          }
-          return;
-        }
         if (e.key === " " || e.code === "Space") {
           e.preventDefault();
           const sub = subtitles[studyIndexRef.current];
@@ -399,13 +383,6 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
         } else {
           playerInstanceRef.current.playVideo();
         }
-        return;
-      }
-
-      // R: 현재 문장 반복 재생
-      if (e.key === "r" || e.key === "R") {
-        e.preventDefault();
-        repeatCurrentSentence();
         return;
       }
 
@@ -2524,6 +2501,7 @@ export default function MovieEnglishApp() {
   const [showSaved, setShowSaved] = useState(false);
   const [savedExpressions, setSavedExpressions] = useState([]);
   const [favoriteIds, setFavoriteIds] = useState([]);
+  const [showShortcuts, setShowShortcuts] = useState(false);
   const [ytApiReady, setYtApiReady] = useState(false);
 
   // Auth 상태
@@ -2765,21 +2743,42 @@ export default function MovieEnglishApp() {
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
           {selectedVideo && (
-            <button
-              onClick={() => setShowSaved(!showSaved)}
-              style={{
-                background: showSaved ? "#6366f1" : "#1a1a2e",
-                border: "none",
-                color: "#e8e8ed",
-                padding: "8px 16px",
-                borderRadius: "20px",
-                cursor: "pointer",
-                fontSize: "13px",
-                fontWeight: "600",
-              }}
-            >
-              📚 저장한 표현
-            </button>
+            <>
+              <button
+                onClick={() => setShowShortcuts(true)}
+                style={{
+                  background: "#1a1a2e",
+                  border: "none",
+                  color: "#888",
+                  width: "32px",
+                  height: "32px",
+                  borderRadius: "50%",
+                  cursor: "pointer",
+                  fontSize: "14px",
+                  fontWeight: "700",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                ?
+              </button>
+              <button
+                onClick={() => setShowSaved(!showSaved)}
+                style={{
+                  background: showSaved ? "#6366f1" : "#1a1a2e",
+                  border: "none",
+                  color: "#e8e8ed",
+                  padding: "8px 16px",
+                  borderRadius: "20px",
+                  cursor: "pointer",
+                  fontSize: "13px",
+                  fontWeight: "600",
+                }}
+              >
+                📚 저장한 표현
+              </button>
+            </>
           )}
           {/* Auth 버튼 */}
           {supabase && !authLoading && (
@@ -2987,6 +2986,74 @@ export default function MovieEnglishApp() {
           savedExpressions={savedExpressions}
           setSavedExpressions={setSavedExpressions}
         />
+      )}
+
+      {/* 단축키 안내 모달 */}
+      {showShortcuts && (
+        <div
+          onClick={() => setShowShortcuts(false)}
+          style={{
+            position: "fixed",
+            top: 0, left: 0, right: 0, bottom: 0,
+            background: "rgba(0,0,0,0.7)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 9999,
+          }}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              background: "#16161e",
+              borderRadius: "16px",
+              padding: "28px 32px",
+              maxWidth: "400px",
+              width: "90%",
+              border: "1px solid #2a2a3e",
+            }}
+          >
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
+              <h3 style={{ fontSize: "17px", fontWeight: "700", margin: 0 }}>단축키 안내</h3>
+              <button onClick={() => setShowShortcuts(false)} style={{ background: "none", border: "none", color: "#666", fontSize: "20px", cursor: "pointer" }}>×</button>
+            </div>
+            <div style={{ fontSize: "14px", color: "#bbb", lineHeight: "2.2" }}>
+              <div style={{ color: "#a5b4fc", fontWeight: "600", marginBottom: "4px" }}>영상 모드</div>
+              {[
+                ["Space", "재생 / 일시정지"],
+                ["←", "이전 문장으로 이동"],
+                ["→", "다음 문장으로 이동"],
+              ].map(([key, desc]) => (
+                <div key={key} style={{ display: "flex", justifyContent: "space-between" }}>
+                  <kbd style={{ background: "#2a2a3e", padding: "1px 8px", borderRadius: "4px", fontSize: "12px", color: "#e8e8ed", fontFamily: "monospace" }}>{key}</kbd>
+                  <span style={{ color: "#888" }}>{desc}</span>
+                </div>
+              ))}
+              <div style={{ color: "#a5b4fc", fontWeight: "600", marginTop: "12px", marginBottom: "4px" }}>학습 모드</div>
+              {[
+                ["←  →", "이전 / 다음 문장"],
+                ["Space", "현재 문장 재생"],
+                ["Esc", "학습 모드 종료"],
+              ].map(([key, desc]) => (
+                <div key={key} style={{ display: "flex", justifyContent: "space-between" }}>
+                  <kbd style={{ background: "#2a2a3e", padding: "1px 8px", borderRadius: "4px", fontSize: "12px", color: "#e8e8ed", fontFamily: "monospace" }}>{key}</kbd>
+                  <span style={{ color: "#888" }}>{desc}</span>
+                </div>
+              ))}
+              <div style={{ color: "#a5b4fc", fontWeight: "600", marginTop: "12px", marginBottom: "4px" }}>편집</div>
+              {[
+                ["Ctrl/⌘ + E", "편집 모드 진입"],
+                ["Ctrl/⌘ + S", "편집 저장"],
+                ["Enter", "편집 저장 (입력 필드)"],
+              ].map(([key, desc]) => (
+                <div key={key} style={{ display: "flex", justifyContent: "space-between" }}>
+                  <kbd style={{ background: "#2a2a3e", padding: "1px 8px", borderRadius: "4px", fontSize: "12px", color: "#e8e8ed", fontFamily: "monospace" }}>{key}</kbd>
+                  <span style={{ color: "#888" }}>{desc}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );
