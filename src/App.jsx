@@ -14,6 +14,190 @@ import {
   removeFavoriteVideo,
 } from "./lib/supabase";
 
+// ── Design Tokens ──
+const T = {
+  bg: "#0a0a0f",
+  surface: "rgba(15,15,26,0.5)",
+  surfaceSolid: "#0f0f1a",
+  surfaceHover: "rgba(22,22,37,0.7)",
+  border: "rgba(196,181,253,0.08)",
+  borderHover: "rgba(99,102,241,0.3)",
+  accent: "#6366f1",
+  accentDark: "#4f46e5",
+  accentLight: "#c4b5fd",
+  gold: "#fbbf24",
+  green: "#34d399",
+  red: "#ef4444",
+  text: "#e8e8ed",
+  textSec: "#a0a0b8",
+  textMuted: "#6b7280",
+  shadow1: "0 2px 8px rgba(0,0,0,0.25)",
+  shadow2: "0 4px 16px rgba(0,0,0,0.3)",
+  shadow3: "0 8px 32px rgba(0,0,0,0.4)",
+  glow: "0 0 20px rgba(99,102,241,0.15)",
+  glowGold: "0 0 20px rgba(251,191,36,0.1)",
+  blur: "blur(12px)",
+  radius: { sm: "8px", md: "12px", lg: "16px", pill: "24px" },
+  ease: "cubic-bezier(0.4, 0, 0.2, 1)",
+  // ── Cockpit tokens ──
+  cockpit: {
+    bezel: "linear-gradient(135deg, #1a1a22, #0f0f1a)",
+    panel: "linear-gradient(180deg, #1c1c28, #141420)",
+    panelFlat: "#1a1a26",
+    glow: "0 0 30px rgba(99,102,241,0.25)",
+    glowStrong: "0 0 40px rgba(99,102,241,0.4)",
+    hudBg: "rgba(10,10,15,0.88)",
+    hudBorder: "rgba(99,102,241,0.3)",
+    // metallic borders — more opaque, gray-toned
+    metalBorder: "1px solid rgba(80,80,100,0.4)",
+    metalBorderHeavy: "2px solid rgba(90,90,110,0.5)",
+    metalHighlight: "1px solid rgba(120,120,150,0.15)",
+    labelColor: "#6b8aff",
+    greenText: "#34d399",
+    amberText: "#fbbf24",
+    redText: "#ef4444",
+    insetShadow: "inset 0 0 30px rgba(0,0,0,0.6)",
+    // physical instrument surface — opaque, dark gray
+    instrument: "linear-gradient(180deg, #252535, #1e1e2c)",
+    instrumentFlat: "#222232",
+    // 3D physical button
+    btnUp: "linear-gradient(180deg, #3a3a50, #2a2a3e, #222236)",
+    btnDown: "linear-gradient(180deg, #1e1e30, #2a2a3e, #323248)",
+    btnBorder: "1px solid rgba(100,100,130,0.35)",
+    btnShadow: "0 2px 4px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05)",
+    btnShadowPressed: "inset 0 2px 4px rgba(0,0,0,0.5)",
+    // screw/rivet color
+    screwColor: "rgba(100,100,120,0.5)",
+    // panel seam
+    seam: "1px solid rgba(60,60,80,0.4)",
+  },
+};
+
+const GlobalStyles = () => (
+  <style>{`
+    ::selection { background: rgba(99,102,241,0.3); color: #fff; }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes glowPulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(99,102,241,0.4); }
+      50% { box-shadow: 0 0 0 6px rgba(99,102,241,0); }
+    }
+    button:focus-visible {
+      outline: 2px solid rgba(99,102,241,0.4);
+      outline-offset: 2px;
+    }
+    input:focus-visible {
+      outline: none;
+    }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(99,102,241,0.2); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(99,102,241,0.4); }
+    @keyframes hudPulse {
+      0%, 100% { box-shadow: 0 0 15px rgba(99,102,241,0.15), inset 0 0 20px rgba(99,102,241,0.03); }
+      50% { box-shadow: 0 0 25px rgba(99,102,241,0.3), inset 0 0 20px rgba(99,102,241,0.06); }
+    }
+    @keyframes engineGlow {
+      0%, 100% { box-shadow: 0 0 20px rgba(99,102,241,0.3), 0 0 60px rgba(99,102,241,0.1); }
+      50% { box-shadow: 0 0 35px rgba(99,102,241,0.5), 0 0 80px rgba(99,102,241,0.15); }
+    }
+    @keyframes indicatorBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .hud-overlay { position: relative; }
+    .hud-overlay::before, .hud-overlay::after {
+      content: ''; position: absolute; width: 12px; height: 12px;
+      border-color: rgba(99,102,241,0.4); border-style: solid;
+    }
+    .hud-overlay::before { top: 0; left: 0; border-width: 2px 0 0 2px; }
+    .hud-overlay::after { bottom: 0; right: 0; border-width: 0 2px 2px 0; }
+
+    /* Physical cockpit panel frame */
+    .cockpit-panel {
+      position: relative;
+      background: linear-gradient(180deg, #1e1e2c, #161622);
+      border-top: 2px solid rgba(90,90,110,0.5);
+      border-bottom: 2px solid rgba(50,50,70,0.4);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.03), 0 4px 12px rgba(0,0,0,0.4);
+    }
+    /* Screw decoration corners */
+    .cockpit-panel::before, .cockpit-panel::after {
+      content: '⊕'; position: absolute; font-size: 8px;
+      color: rgba(100,100,120,0.5); z-index: 2;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    }
+    .cockpit-panel::before { top: 6px; left: 10px; }
+    .cockpit-panel::after { top: 6px; right: 10px; }
+    /* Panel seam dividers (vertical) */
+    .panel-seam {
+      width: 1px;
+      background: linear-gradient(180deg, transparent, rgba(80,80,100,0.3), rgba(80,80,100,0.4), rgba(80,80,100,0.3), transparent);
+      align-self: stretch;
+    }
+    /* Physical 3D button base */
+    .phys-btn {
+      background: linear-gradient(180deg, #3a3a50, #2a2a3e, #222236) !important;
+      border: 1px solid rgba(100,100,130,0.35) !important;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.06);
+      transition: all 0.15s ease;
+      position: relative;
+    }
+    .phys-btn:active:not(:disabled) {
+      background: linear-gradient(180deg, #1e1e30, #2a2a3e, #323248) !important;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+      transform: translateY(1px);
+    }
+    .phys-btn:hover:not(:disabled) {
+      border-color: rgba(130,130,160,0.5) !important;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+    /* Indicator LED */
+    .led {
+      display: inline-block;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      box-shadow: 0 0 4px currentColor;
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+    .led-green { color: #34d399; background: #34d399; }
+    .led-amber { color: #fbbf24; background: #fbbf24; }
+    .led-red { color: #ef4444; background: #ef4444; }
+    .led-blue { color: #6366f1; background: #6366f1; }
+    .led-off { color: #333; background: #333; box-shadow: none; }
+    .led-blink { animation: indicatorBlink 1s ease-in-out infinite; }
+    /* Engraved label plate */
+    .label-plate {
+      display: inline-block;
+      padding: 2px 8px;
+      background: linear-gradient(180deg, #1a1a28, #161622);
+      border: 1px solid rgba(70,70,90,0.4);
+      border-radius: 3px;
+      font-size: 9px;
+      font-family: monospace;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.4);
+    }
+    /* Gauge bezel */
+    .gauge-bezel {
+      background: linear-gradient(180deg, #252535, #1a1a28);
+      border: 2px solid rgba(80,80,100,0.45);
+      border-radius: 8px;
+      padding: 8px 16px;
+      box-shadow: inset 0 2px 6px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.03);
+    }
+  `}</style>
+);
+
 const PlayIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
     <path d="M8 5v14l11-7z" />
@@ -48,57 +232,69 @@ function VideoListScreen({ videos, onSelect, favoriteIds, onToggleFavorite, user
   };
 
   return (
-    <div style={{ padding: "20px", maxWidth: "640px", margin: "0 auto" }}>
+    <div style={{ padding: "20px", maxWidth: "640px", margin: "0 auto", animation: "fadeIn 0.4s ease" }}>
       <div
         style={{
           textAlign: "center",
-          marginBottom: "32px",
-          paddingTop: "20px",
+          marginBottom: "40px",
+          paddingTop: "24px",
         }}
       >
-        <div style={{ fontSize: "48px", marginBottom: "12px" }}>🎬</div>
+        <div style={{ fontSize: "48px", marginBottom: "12px", filter: "drop-shadow(0 2px 8px rgba(99,102,241,0.3))" }}>🎬</div>
         <h2
           style={{
-            fontSize: "22px",
+            fontSize: "24px",
             fontWeight: "700",
             marginBottom: "8px",
+            background: "linear-gradient(135deg, #e8e8ed, #c4b5fd)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            letterSpacing: "-0.02em",
           }}
         >
           학습할 영상을 선택하세요
         </h2>
-        <p style={{ color: "#666", fontSize: "14px" }}>
+        <p style={{ color: T.textMuted, fontSize: "14px", letterSpacing: "0.02em" }}>
           {videos.length}개의 영상이 준비되어 있습니다
         </p>
       </div>
 
-      <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
         {[...videos].sort((a, b) => {
           const aIdx = favoriteIds.indexOf(a.id);
           const bIdx = favoriteIds.indexOf(b.id);
           if ((aIdx !== -1) !== (bIdx !== -1)) return aIdx !== -1 ? -1 : 1;
           if (aIdx !== -1 && bIdx !== -1) return aIdx - bIdx;
           return 0;
-        }).map((video) => {
+        }).map((video, vi) => {
           const isFav = favoriteIds.includes(video.id);
           return (
           <div
             key={video.id}
             onClick={() => onSelect(video)}
             style={{
-              background: "#111118",
-              borderRadius: "14px",
+              background: T.surface,
+              backdropFilter: T.blur,
+              WebkitBackdropFilter: T.blur,
+              borderRadius: T.radius.lg,
               padding: "20px",
               cursor: "pointer",
-              border: isFav ? "1px solid #fbbf24" : "1px solid #1a1a2e",
-              transition: "all 0.2s",
+              border: isFav ? `1px solid rgba(251,191,36,0.25)` : `1px solid ${T.border}`,
+              transition: `all 0.3s ${T.ease}`,
+              boxShadow: isFav ? T.glowGold : T.shadow1,
+              animation: `slideUp 0.4s ${T.ease} ${vi * 0.05}s both`,
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = isFav ? "#fcd34d" : "#6366f1";
-              e.currentTarget.style.background = "#15151f";
+              e.currentTarget.style.borderColor = isFav ? "rgba(251,191,36,0.4)" : T.borderHover;
+              e.currentTarget.style.background = T.surfaceHover;
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow = isFav ? `${T.glowGold}, ${T.shadow2}` : `${T.glow}, ${T.shadow2}`;
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = isFav ? "#fbbf24" : "#1a1a2e";
-              e.currentTarget.style.background = "#111118";
+              e.currentTarget.style.borderColor = isFav ? "rgba(251,191,36,0.25)" : T.border;
+              e.currentTarget.style.background = T.surface;
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = isFav ? T.glowGold : T.shadow1;
             }}
           >
             <div
@@ -113,10 +309,12 @@ function VideoListScreen({ videos, onSelect, favoriteIds, onToggleFavorite, user
                 style={{
                   width: "120px",
                   height: "68px",
-                  borderRadius: "8px",
+                  borderRadius: T.radius.md,
                   background: `url(https://img.youtube.com/vi/${video.id}/mqdefault.jpg) center/cover`,
                   flexShrink: 0,
                   position: "relative",
+                  boxShadow: T.shadow1,
+                  border: `1px solid ${T.border}`,
                 }}
               >
                 {video.duration > 0 && (
@@ -125,11 +323,14 @@ function VideoListScreen({ videos, onSelect, favoriteIds, onToggleFavorite, user
                       position: "absolute",
                       bottom: "4px",
                       right: "4px",
-                      background: "rgba(0,0,0,0.8)",
-                      padding: "1px 5px",
-                      borderRadius: "3px",
+                      background: "rgba(0,0,0,0.85)",
+                      backdropFilter: "blur(4px)",
+                      padding: "2px 6px",
+                      borderRadius: "4px",
                       fontSize: "11px",
                       fontWeight: "600",
+                      letterSpacing: "0.02em",
+                      border: "1px solid rgba(255,255,255,0.08)",
                     }}
                   >
                     {formatDuration(video.duration)}
@@ -147,11 +348,12 @@ function VideoListScreen({ videos, onSelect, favoriteIds, onToggleFavorite, user
                   <div
                     style={{
                       flex: 1,
-                      fontSize: "15px",
+                      fontSize: "16px",
                       fontWeight: "600",
-                      color: "#e8e8ed",
+                      color: T.text,
                       marginBottom: "6px",
                       lineHeight: "1.4",
+                      letterSpacing: "-0.01em",
                       overflow: "hidden",
                       textOverflow: "ellipsis",
                       display: "-webkit-box",
@@ -173,17 +375,20 @@ function VideoListScreen({ videos, onSelect, favoriteIds, onToggleFavorite, user
                       border: "none",
                       cursor: user ? "pointer" : "default",
                       fontSize: "20px",
-                      padding: "2px",
+                      padding: "4px",
                       flexShrink: 0,
                       lineHeight: 1,
-                      color: isFav ? "#fbbf24" : "#555",
-                      transition: "color 0.2s",
+                      color: isFav ? T.gold : T.textMuted,
+                      transition: `all 0.3s ${T.ease}`,
+                      filter: isFav ? "drop-shadow(0 0 4px rgba(251,191,36,0.3))" : "none",
                     }}
+                    onMouseEnter={(e) => { if (user) e.currentTarget.style.transform = "scale(1.2)"; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.transform = "scale(1)"; }}
                   >
                     {isFav ? "★" : "☆"}
                   </button>
                 </div>
-                <div style={{ fontSize: "12px", color: "#888", marginBottom: "6px" }}>
+                <div style={{ fontSize: "12px", color: T.textSec, marginBottom: "8px", letterSpacing: "0.01em" }}>
                   {video.channel}
                 </div>
                 <div
@@ -196,10 +401,13 @@ function VideoListScreen({ videos, onSelect, favoriteIds, onToggleFavorite, user
                   <span
                     style={{
                       fontSize: "11px",
-                      color: "#a5b4fc",
-                      background: "#1a1a3e",
-                      padding: "2px 8px",
-                      borderRadius: "4px",
+                      color: T.accentLight,
+                      background: "rgba(99,102,241,0.1)",
+                      padding: "3px 10px",
+                      borderRadius: T.radius.sm,
+                      border: "1px solid rgba(99,102,241,0.15)",
+                      letterSpacing: "0.02em",
+                      fontWeight: "500",
                     }}
                   >
                     자막 {video.subtitleCount}개
@@ -208,10 +416,13 @@ function VideoListScreen({ videos, onSelect, favoriteIds, onToggleFavorite, user
                     <span
                       style={{
                         fontSize: "11px",
-                        color: "#34d399",
-                        background: "#0a2e1e",
-                        padding: "2px 8px",
-                        borderRadius: "4px",
+                        color: T.green,
+                        background: "rgba(52,211,153,0.08)",
+                        padding: "3px 10px",
+                        borderRadius: T.radius.sm,
+                        border: "1px solid rgba(52,211,153,0.12)",
+                        letterSpacing: "0.02em",
+                        fontWeight: "500",
                       }}
                     >
                       🔊 발음 데이터
@@ -260,6 +471,8 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   const isSavingRef = useRef(false);
   const [studyMode, setStudyMode] = useState(false);
   const [studyIndex, setStudyIndex] = useState(0);
+  // HUD display toggles — which subtitle lines to show on the windshield overlay
+  const [hudDisplay, setHudDisplay] = useState({ original: false, pronunciation: true, translation: false });
   const studyModeRef = useRef(false);
   const studyIndexRef = useRef(0);
 
@@ -397,28 +610,42 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   }, [subtitles]);
 
   // Create YouTube player
+  // 고유 DOM id를 위해 counter 사용 (같은 video.id 재진입 시 충돌 방지)
+  const playerIdRef = useRef(0);
   useEffect(() => {
     const container = playerRef.current;
     if (!container || !window.YT || !window.YT.Player) return;
 
-    container.innerHTML = `<div id="yt-player-${video.id}"></div>`;
+    // 기존 플레이어가 있으면 먼저 정리
+    if (playerInstanceRef.current) {
+      try { playerInstanceRef.current.destroy(); } catch (e) {}
+      playerInstanceRef.current = null;
+    }
 
-    playerInstanceRef.current = new window.YT.Player(
-      `yt-player-${video.id}`,
+    setPlayerReady(false);
+    setIsPlaying(false);
+
+    const playerId = `yt-player-${video.id}-${++playerIdRef.current}`;
+    container.innerHTML = `<div id="${playerId}"></div>`;
+
+    const instance = new window.YT.Player(
+      playerId,
       {
         height: "390",
         width: "100%",
         videoId: video.id,
         events: {
           onReady: () => {
+            playerInstanceRef.current = instance;
             setPlayerReady(true);
-            if (speed !== 1)
-              playerInstanceRef.current.setPlaybackRate(speed);
+            if (speed !== 1) {
+              try { instance.setPlaybackRate(speed); } catch (e) {}
+            }
             // 퍼머링크로 진입 시 해당 자막 위치로 이동
             if (initialSubIndex != null) {
               const target = subtitles.find((s) => s.index === initialSubIndex);
               if (target) {
-                playerInstanceRef.current.seekTo(target.start);
+                instance.seekTo(target.start);
                 setCurrentTime(target.start);
               }
             }
@@ -437,31 +664,48 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
               continuousPlayRef.current = false;
               setIsContinuousPlay(false);
               stopPolling();
-              const ct = playerInstanceRef.current.getCurrentTime();
-              setCurrentTime(ct);
-              const sub = subtitles.find(
-                (s) => ct >= s.start && ct < s.end
-              );
-              if (sub) {
-                setCurrentSubtitle(sub);
-                setShowPanel(true);
-                setExpandedNote(null);
-              }
+              try {
+                const ct = instance.getCurrentTime();
+                setCurrentTime(ct);
+                const sub = subtitles.find(
+                  (s) => ct >= s.start && ct < s.end
+                );
+                if (sub) {
+                  setCurrentSubtitle(sub);
+                  setShowPanel(true);
+                  setExpandedNote(null);
+                }
+              } catch (e) {}
             } else if (event.data === YT.PlayerState.ENDED) {
               setIsPlaying(false);
               stopPolling();
             }
           },
-          onError: (e) => console.error("YT Error:", e.data),
+          onError: (e) => {
+            console.error("YT Error:", e.data);
+            setPlayerReady(true);
+          },
         },
-        playerVars: { controls: 1, modestbranding: 1 },
+        playerVars: { controls: 1, modestbranding: 1, playsinline: 1, rel: 0 },
       }
     );
 
+    // onReady 전에도 ref 설정 (togglePlay 등에서 접근 가능하도록)
+    playerInstanceRef.current = instance;
+
+    // Fallback: onReady가 8초 안에 호출되지 않으면 강제로 playerReady 설정
+    const readyTimeout = setTimeout(() => {
+      setPlayerReady((prev) => {
+        if (!prev) console.warn("YT player onReady timeout — forcing playerReady");
+        return true;
+      });
+    }, 8000);
+
     return () => {
+      clearTimeout(readyTimeout);
       stopPolling();
-      if (playerInstanceRef.current) {
-        playerInstanceRef.current.destroy();
+      if (playerInstanceRef.current === instance) {
+        try { instance.destroy(); } catch (e) {}
         playerInstanceRef.current = null;
       }
     };
@@ -518,10 +762,20 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   }
 
   const togglePlay = () => {
-    if (!playerInstanceRef.current) return;
-    isPlaying
-      ? playerInstanceRef.current.pauseVideo()
-      : playerInstanceRef.current.playVideo();
+    const p = playerInstanceRef.current;
+    if (!p) {
+      console.warn("togglePlay: playerInstance is null");
+      return;
+    }
+    try {
+      if (isPlaying) {
+        p.pauseVideo();
+      } else {
+        p.playVideo();
+      }
+    } catch (err) {
+      console.error("togglePlay error:", err);
+    }
   };
   const skipBack = () => {
     if (!playerInstanceRef.current) return;
@@ -891,39 +1145,46 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
 
   return (
     <>
-      {/* Sub-header: back button + title */}
+      {/* Cockpit Header */}
       <div
+        className="cockpit-panel"
         style={{
-          padding: "10px 20px",
-          borderBottom: "1px solid #1a1a2e",
+          padding: "10px 16px",
           display: "flex",
           alignItems: "center",
-          gap: "12px",
+          gap: "10px",
         }}
       >
         <button
           onClick={onBack}
+          className="phys-btn"
           style={{
-            background: "#1a1a2e",
-            border: "none",
-            color: "#a5b4fc",
-            padding: "6px 12px",
-            borderRadius: "6px",
+            color: "#f87171",
+            padding: "5px 12px",
+            borderRadius: "5px",
             cursor: "pointer",
-            fontSize: "13px",
-            fontWeight: "600",
+            fontSize: "10px",
+            fontWeight: "700",
+            fontFamily: "monospace",
+            letterSpacing: "0.08em",
+            textTransform: "uppercase",
           }}
         >
-          ← 목록
+          <span className="led led-red" /> ABORT
         </button>
+        <span className="label-plate" style={{ color: T.cockpit.labelColor, flexShrink: 0 }}>
+          CALLSIGN
+        </span>
         <span
           style={{
-            fontSize: "13px",
-            color: "#888",
+            fontSize: "12px",
+            color: T.cockpit.greenText,
+            fontFamily: "'JetBrains Mono', 'SF Mono', monospace",
             flex: 1,
             overflow: "hidden",
             textOverflow: "ellipsis",
             whiteSpace: "nowrap",
+            letterSpacing: "0.02em",
           }}
         >
           {video.title}
@@ -954,19 +1215,24 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                 if (playerInstanceRef.current) playerInstanceRef.current.pauseVideo();
               }
             }}
+            className="phys-btn"
             style={{
-              background: studyMode ? "#6366f1" : "#1a1a2e",
-              border: "none",
-              color: studyMode ? "#fff" : "#a5b4fc",
-              padding: "6px 12px",
-              borderRadius: "6px",
+              background: studyMode ? "linear-gradient(180deg, #4a3700, #3a2d00) !important" : undefined,
+              borderColor: studyMode ? "rgba(251,191,36,0.35) !important" : undefined,
+              color: studyMode ? T.cockpit.amberText : T.cockpit.labelColor,
+              padding: "5px 12px",
+              borderRadius: "5px",
               cursor: "pointer",
-              fontSize: "13px",
-              fontWeight: "600",
+              fontSize: "10px",
+              fontWeight: "700",
+              fontFamily: "monospace",
               flexShrink: 0,
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
             }}
           >
-            {studyMode ? "▶ 영상" : "📖 학습"}
+            <span className={`led ${studyMode ? "led-amber" : "led-blue"}`} style={{ marginRight: "4px" }} />
+            {studyMode ? "FLIGHT" : "SIM"}
           </button>
         )}
       </div>
@@ -975,17 +1241,20 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
         <div
           style={{ padding: "20px", maxWidth: "640px", margin: "0 auto" }}
         >
-          <h3 style={{ marginBottom: "16px", fontSize: "16px" }}>
+          <h3 style={{ marginBottom: "16px", fontSize: "16px", background: "linear-gradient(135deg, #e8e8ed, #c4b5fd)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             저장한 표현들
           </h3>
           {savedExpressions.length === 0 ? (
             <div
               style={{
                 textAlign: "center",
-                color: "#666",
+                color: T.textMuted,
                 padding: "40px",
-                background: "#111118",
-                borderRadius: "12px",
+                background: T.surface,
+                backdropFilter: T.blur,
+                WebkitBackdropFilter: T.blur,
+                borderRadius: T.radius.md,
+                border: `1px solid ${T.border}`,
               }}
             >
               <p style={{ fontSize: "32px", marginBottom: "12px" }}>📭</p>
@@ -1003,10 +1272,16 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                 <div
                   key={i}
                   style={{
-                    background: "#111118",
-                    borderRadius: "12px",
+                    background: T.surface,
+                    backdropFilter: T.blur,
+                    WebkitBackdropFilter: T.blur,
+                    borderRadius: T.radius.md,
                     padding: "16px",
-                    borderLeft: "3px solid #6366f1",
+                    borderLeft: `3px solid ${T.accent}`,
+                    border: `1px solid ${T.border}`,
+                    borderLeftColor: T.accent,
+                    borderLeftWidth: "3px",
+                    transition: `all 0.2s ${T.ease}`,
                   }}
                 >
                   <div
@@ -1018,7 +1293,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     <div>
                       <span
                         style={{
-                          color: "#a5b4fc",
+                          color: T.accentLight,
                           fontWeight: "700",
                           fontSize: "16px",
                         }}
@@ -1027,7 +1302,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                       </span>
                       <span
                         style={{
-                          color: "#fbbf24",
+                          color: T.gold,
                           marginLeft: "10px",
                           fontSize: "15px",
                         }}
@@ -1048,17 +1323,20 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                       style={{
                         background: "none",
                         border: "none",
-                        color: "#555",
+                        color: T.textMuted,
                         cursor: "pointer",
                         fontSize: "18px",
+                        transition: `color 0.2s ${T.ease}`,
                       }}
+                      onMouseEnter={(e) => { e.currentTarget.style.color = T.red; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.color = T.textMuted; }}
                     >
                       ×
                     </button>
                   </div>
                   <div
                     style={{
-                      color: "#888",
+                      color: T.textSec,
                       fontSize: "13px",
                       marginTop: "6px",
                     }}
@@ -1067,7 +1345,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                   </div>
                   <div
                     style={{
-                      color: "#555",
+                      color: T.textMuted,
                       fontSize: "12px",
                       marginTop: "8px",
                       fontStyle: "italic",
@@ -1084,13 +1362,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
         <div style={{ maxWidth: "640px", margin: "0 auto" }}>
           {/* Study Mode */}
           {studyMode && subtitles[studyIndex] && (
-            <div style={{ padding: "20px", animation: "slideUp 0.3s ease-out" }}>
-              <style>{`
-                @keyframes slideUp {
-                  from { opacity: 0; transform: translateY(16px); }
-                  to { opacity: 1; transform: translateY(0); }
-                }
-              `}</style>
+            <div style={{ padding: "20px", animation: `slideUp 0.3s ${T.ease}` }}>
               {/* Navigation */}
               <div
                 style={{
@@ -1118,14 +1390,16 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                   }}
                   disabled={studyIndex === 0}
                   style={{
-                    background: "#1a1a2e",
-                    border: "1px solid #2a2a3e",
-                    color: studyIndex === 0 ? "#444" : "#a5b4fc",
+                    background: T.surface,
+                    border: `1px solid ${T.border}`,
+                    color: studyIndex === 0 ? T.textMuted : T.accentLight,
                     cursor: studyIndex === 0 ? "not-allowed" : "pointer",
                     padding: "10px 20px",
-                    borderRadius: "10px",
+                    borderRadius: T.radius.sm,
                     fontSize: "14px",
                     fontWeight: "600",
+                    opacity: studyIndex === 0 ? 0.5 : 1,
+                    transition: `all 0.2s ${T.ease}`,
                   }}
                 >
                   ← 이전
@@ -1134,9 +1408,10 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                   <span
                     style={{
                       fontSize: "14px",
-                      color: "#888",
+                      color: T.textSec,
                       fontWeight: "600",
                       fontFamily: "monospace",
+                      fontVariantNumeric: "tabular-nums",
                     }}
                   >
                     {studyIndex + 1} / {subtitles.length}
@@ -1149,9 +1424,12 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                       setTimeout(() => { e.currentTarget.textContent = "🔗"; }, 1000);
                     }}
                     style={{
-                      background: "transparent", border: "none", color: "#555",
+                      background: "transparent", border: "none", color: T.textMuted,
                       cursor: "pointer", fontSize: "13px", padding: "2px 4px",
+                      transition: `color 0.2s ${T.ease}`,
                     }}
+                    onMouseEnter={(e) => { e.currentTarget.style.color = T.accent; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.color = T.textMuted; }}
                     title="학습 퍼머링크 복사"
                   >
                     🔗
@@ -1175,14 +1453,16 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                   }}
                   disabled={studyIndex === subtitles.length - 1}
                   style={{
-                    background: "#1a1a2e",
-                    border: "1px solid #2a2a3e",
-                    color: studyIndex === subtitles.length - 1 ? "#444" : "#a5b4fc",
+                    background: T.surface,
+                    border: `1px solid ${T.border}`,
+                    color: studyIndex === subtitles.length - 1 ? T.textMuted : T.accentLight,
                     cursor: studyIndex === subtitles.length - 1 ? "not-allowed" : "pointer",
                     padding: "10px 20px",
-                    borderRadius: "10px",
+                    borderRadius: T.radius.sm,
                     fontSize: "14px",
                     fontWeight: "600",
+                    opacity: studyIndex === subtitles.length - 1 ? 0.5 : 1,
+                    transition: `all 0.2s ${T.ease}`,
                   }}
                 >
                   다음 →
@@ -1190,8 +1470,8 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
               </div>
 
               {/* Original */}
-              <div style={{ background: splitMode ? "#111125" : "#111118", borderRadius: "14px", padding: "20px", marginBottom: "12px", border: splitMode ? "1px solid #6366f1" : "1px solid transparent", transition: "all 0.2s" }}>
-                <div style={{ fontSize: "11px", color: "#6366f1", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "10px" }}>
+              <div style={{ background: splitMode ? "rgba(17,17,37,0.6)" : T.surface, backdropFilter: T.blur, WebkitBackdropFilter: T.blur, borderRadius: T.radius.lg, padding: "20px", marginBottom: "12px", border: splitMode ? `1px solid ${T.borderHover}` : `1px solid ${T.border}`, transition: `all 0.3s ${T.ease}`, boxShadow: splitMode ? T.glow : T.shadow1 }}>
+                <div style={{ fontSize: "11px", color: T.accent, fontWeight: "700", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "10px", opacity: 0.9 }}>
                   {splitMode ? "✂️ 분리할 위치를 선택하세요" : "Original"}
                 </div>
                 {splitMode ? (
@@ -1257,9 +1537,9 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
               {/* Pronunciation + Translation */}
               {hasPronunciation && (
                 <>
-                  <div style={{ background: "linear-gradient(135deg, #1a1520, #1a1a2e)", borderRadius: "14px", padding: "20px", marginBottom: "12px", border: "1px solid #2a2040" }}>
+                  <div style={{ background: "linear-gradient(135deg, rgba(26,21,32,0.6), rgba(26,26,46,0.6))", backdropFilter: T.blur, WebkitBackdropFilter: T.blur, borderRadius: T.radius.lg, padding: "20px", marginBottom: "12px", border: "1px solid rgba(251,191,36,0.12)", boxShadow: T.glowGold }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
-                      <div style={{ fontSize: "11px", color: "#fbbf24", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px" }}>
+                      <div style={{ fontSize: "11px", color: T.gold, fontWeight: "700", textTransform: "uppercase", letterSpacing: "1.5px" }}>
                         🔊 실제 발음
                       </div>
                       {!isEditing && !splitMode && canEdit && (
@@ -1310,8 +1590,8 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     )}
                   </div>
 
-                  <div style={{ background: "#111118", borderRadius: "14px", padding: "20px", marginBottom: isEditing ? "12px" : "16px" }}>
-                    <div style={{ fontSize: "11px", color: "#34d399", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "10px" }}>
+                  <div style={{ background: T.surface, backdropFilter: T.blur, WebkitBackdropFilter: T.blur, borderRadius: T.radius.lg, padding: "20px", marginBottom: isEditing ? "12px" : "16px", border: `1px solid ${T.border}`, boxShadow: T.shadow1 }}>
+                    <div style={{ fontSize: "11px", color: T.green, fontWeight: "700", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "10px", opacity: 0.9 }}>
                       🇰🇷 해석
                     </div>
                     {isEditing ? (
@@ -1334,7 +1614,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
 
                   {/* Timing edit in edit mode */}
                   {isEditing && (
-                    <div style={{ background: "#111118", borderRadius: "14px", padding: "20px", marginBottom: "12px" }}>
+                    <div style={{ background: T.surface, backdropFilter: T.blur, WebkitBackdropFilter: T.blur, borderRadius: T.radius.lg, padding: "20px", marginBottom: "12px", border: `1px solid ${T.border}`, boxShadow: T.shadow1 }}>
                       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
                         <div style={{ fontSize: "11px", color: "#f59e0b", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px" }}>
                           ⏱ 타이밍 (초)
@@ -1411,9 +1691,10 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                         onClick={saveEdit}
                         disabled={isSaving}
                         style={{
-                          flex: 1, background: "#6366f1", border: "none", color: "white",
-                          padding: "12px", borderRadius: "10px", cursor: isSaving ? "not-allowed" : "pointer",
+                          flex: 1, background: `linear-gradient(135deg, ${T.accent}, #8b5cf6)`, border: "none", color: "white",
+                          padding: "12px", borderRadius: T.radius.md, cursor: isSaving ? "not-allowed" : "pointer",
                           fontSize: "14px", fontWeight: "700", opacity: isSaving ? 0.6 : 1,
+                          boxShadow: "0 2px 12px rgba(99,102,241,0.3)", transition: `all 0.3s ${T.ease}`,
                         }}
                       >
                         {isSaving ? "저장 중..." : "💾 저장 (⌘S)"}
@@ -1421,9 +1702,9 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                       <button
                         onClick={cancelEditing}
                         style={{
-                          flex: 1, background: "#1a1a2e", border: "1px solid #2a2a3e", color: "#888",
-                          padding: "12px", borderRadius: "10px", cursor: "pointer",
-                          fontSize: "14px", fontWeight: "600",
+                          flex: 1, background: T.surface, border: `1px solid ${T.border}`, color: T.textSec,
+                          padding: "12px", borderRadius: T.radius.md, cursor: "pointer",
+                          fontSize: "14px", fontWeight: "600", transition: `all 0.2s ${T.ease}`,
                         }}
                       >
                         취소 (Esc)
@@ -1436,7 +1717,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
               {/* Notes */}
               {subtitles[studyIndex].notes && subtitles[studyIndex].notes.length > 0 && (
                 <div style={{ marginBottom: "12px" }}>
-                  <div style={{ fontSize: "11px", color: "#888", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px", marginBottom: "10px", padding: "0 4px" }}>
+                  <div style={{ fontSize: "11px", color: T.textSec, fontWeight: "700", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "10px", padding: "0 4px" }}>
                     💡 발음 포인트
                   </div>
                   <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
@@ -1444,38 +1725,43 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                       <div
                         key={i}
                         style={{
-                          background: "#111118",
-                          borderRadius: "12px",
+                          background: T.surface,
+                          backdropFilter: T.blur,
+                          WebkitBackdropFilter: T.blur,
+                          borderRadius: T.radius.md,
                           padding: "14px 16px",
                           cursor: "pointer",
-                          border: expandedNote === i ? "1px solid #6366f1" : "1px solid transparent",
-                          transition: "all 0.2s",
+                          border: expandedNote === i ? `1px solid ${T.borderHover}` : `1px solid ${T.border}`,
+                          transition: `all 0.3s ${T.ease}`,
+                          boxShadow: expandedNote === i ? T.glow : "none",
                         }}
                         onClick={() => setExpandedNote(expandedNote === i ? null : i)}
                       >
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                           <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                            <span style={{ color: "#a5b4fc", fontWeight: "700", fontSize: "15px", fontFamily: "monospace" }}>
+                            <span style={{ color: T.accentLight, fontWeight: "700", fontSize: "15px", fontFamily: "monospace" }}>
                               {note.word}
                             </span>
-                            <span style={{ color: "#444" }}>→</span>
-                            <span style={{ color: "#fbbf24", fontWeight: "700", fontSize: "15px" }}>
+                            <span style={{ color: T.textMuted }}>→</span>
+                            <span style={{ color: T.gold, fontWeight: "700", fontSize: "15px" }}>
                               {note.actual}
                             </span>
                           </div>
                           <button
                             onClick={(e) => { e.stopPropagation(); saveExpression(note); }}
                             style={{
-                              background: savedExpressions.find((e) => e.word === note.word && e.video_id === video.id) ? "#22c55e" : "#2a2a3e",
-                              border: "none", color: "white", padding: "4px 10px",
-                              borderRadius: "6px", cursor: "pointer", fontSize: "12px",
+                              background: savedExpressions.find((e) => e.word === note.word && e.video_id === video.id) ? "linear-gradient(135deg, #22c55e, #16a34a)" : T.surface,
+                              border: savedExpressions.find((e) => e.word === note.word && e.video_id === video.id) ? "none" : `1px solid ${T.border}`,
+                              color: "white", padding: "4px 12px",
+                              borderRadius: T.radius.sm, cursor: "pointer", fontSize: "12px",
+                              transition: `all 0.2s ${T.ease}`,
                             }}
                           >
                             {savedExpressions.find((e) => e.word === note.word && e.video_id === video.id) ? "✓" : "+"}
                           </button>
                         </div>
                         {expandedNote === i && (
-                          <div style={{ marginTop: "10px", paddingTop: "10px", borderTop: "1px solid #222", color: "#999", fontSize: "13px", lineHeight: "1.6" }}>
+                          <div style={{ marginTop: "10px", paddingTop: "10px", borderTop: `1px solid ${T.border}`, color: T.textSec, fontSize: "13px", lineHeight: "1.6", animation: `fadeIn 0.2s ${T.ease}` }}>
                             {note.meaning}
                           </div>
                         )}
@@ -1486,13 +1772,12 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
               )}
 
               {/* Listen & Loop buttons */}
-              <div style={{ display: "flex", gap: "8px", marginTop: "8px" }}>
+              <div style={{ display: "flex", gap: "10px", marginTop: "8px" }}>
                 <button
                   onClick={() => {
                     const sub = subtitles[studyIndex];
                     if (playerInstanceRef.current && sub) {
                       if (loopTargetRef.current) {
-                        // 반복 중이면 seekTo만 (loopTarget이 반복 처리)
                         playerInstanceRef.current.seekTo(sub.start);
                         playerInstanceRef.current.playVideo();
                       } else {
@@ -1515,15 +1800,17 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                   disabled={!playerReady}
                   style={{
                     flex: 1,
-                    background: "#6366f1",
+                    background: `linear-gradient(135deg, ${T.accent}, #8b5cf6)`,
                     border: "none",
                     color: "white",
                     padding: "14px",
-                    borderRadius: "12px",
+                    borderRadius: T.radius.md,
                     cursor: playerReady ? "pointer" : "not-allowed",
                     fontSize: "14px",
                     fontWeight: "700",
-                    opacity: playerReady ? 1 : 0.5,
+                    opacity: playerReady ? 1 : 0.4,
+                    boxShadow: "0 2px 16px rgba(99,102,241,0.35)",
+                    transition: `all 0.3s ${T.ease}`,
                   }}
                 >
                   🔊 이 문장 듣기
@@ -1533,12 +1820,10 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     const sub = subtitles[studyIndex];
                     if (!playerInstanceRef.current || !sub) return;
                     if (continuousPlayRef.current) {
-                      // 연속 재생 해제
                       continuousPlayRef.current = false;
                       setIsContinuousPlay(false);
                       playerInstanceRef.current.pauseVideo();
                     } else {
-                      // 연속 재생 시작 (반복 모드 해제)
                       loopTargetRef.current = null;
                       setIsLooping(false);
                       continuousPlayRef.current = true;
@@ -1549,16 +1834,17 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                   }}
                   disabled={!playerReady}
                   style={{
-                    background: isContinuousPlay ? "#059669" : "#1a1a2e",
-                    border: isContinuousPlay ? "1px solid #10b981" : "1px solid #2a2a3e",
-                    color: isContinuousPlay ? "#d1fae5" : "#a5b4fc",
+                    background: isContinuousPlay ? "linear-gradient(135deg, #059669, #10b981)" : T.surface,
+                    border: isContinuousPlay ? "none" : `1px solid ${T.border}`,
+                    color: isContinuousPlay ? "#d1fae5" : T.accentLight,
                     padding: "14px 18px",
-                    borderRadius: "12px",
+                    borderRadius: T.radius.md,
                     cursor: playerReady ? "pointer" : "not-allowed",
                     fontSize: "14px",
                     fontWeight: "700",
-                    opacity: playerReady ? 1 : 0.5,
-                    transition: "all 0.2s",
+                    opacity: playerReady ? 1 : 0.4,
+                    transition: `all 0.3s ${T.ease}`,
+                    boxShadow: isContinuousPlay ? "0 2px 12px rgba(16,185,129,0.3)" : "none",
                   }}
                   title="연속 재생"
                 >
@@ -1569,12 +1855,10 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     const sub = subtitles[studyIndex];
                     if (!playerInstanceRef.current || !sub) return;
                     if (loopTargetRef.current) {
-                      // 반복 해제
                       loopTargetRef.current = null;
                       setIsLooping(false);
                       playerInstanceRef.current.pauseVideo();
                     } else {
-                      // 반복 시작 (연속 재생 해제)
                       continuousPlayRef.current = false;
                       setIsContinuousPlay(false);
                       loopTargetRef.current = { start: sub.start, end: sub.end };
@@ -1585,16 +1869,17 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                   }}
                   disabled={!playerReady}
                   style={{
-                    background: isLooping ? "#4f46e5" : "#1a1a2e",
-                    border: isLooping ? "1px solid #6366f1" : "1px solid #2a2a3e",
-                    color: isLooping ? "#e0e7ff" : "#a5b4fc",
+                    background: isLooping ? `linear-gradient(135deg, ${T.accentDark}, ${T.accent})` : T.surface,
+                    border: isLooping ? "none" : `1px solid ${T.border}`,
+                    color: isLooping ? "#e0e7ff" : T.accentLight,
                     padding: "14px 18px",
-                    borderRadius: "12px",
+                    borderRadius: T.radius.md,
                     cursor: playerReady ? "pointer" : "not-allowed",
                     fontSize: "14px",
                     fontWeight: "700",
-                    opacity: playerReady ? 1 : 0.5,
-                    transition: "all 0.2s",
+                    opacity: playerReady ? 1 : 0.4,
+                    transition: `all 0.3s ${T.ease}`,
+                    boxShadow: isLooping ? "0 2px 12px rgba(99,102,241,0.3)" : "none",
                   }}
                   title="반복 재생 (R)"
                 >
@@ -1606,372 +1891,460 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
           )}
 
           <div style={{ display: studyMode ? "none" : "block" }}>
-          {/* Video collapse toggle */}
-          <div
-            onClick={() => {
-              const next = !videoCollapsed;
-              setVideoCollapsed(next);
-              try { localStorage.setItem("videoCollapsed", String(next)); } catch {}
-            }}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              padding: "6px",
-              background: "#0d0d14",
-              borderBottom: "1px solid #1a1a2e",
-              cursor: "pointer",
-              userSelect: "none",
-              gap: "6px",
-              fontSize: "12px",
-              color: "#666",
-            }}
-          >
-            <span style={{ transform: videoCollapsed ? "rotate(-90deg)" : "rotate(0deg)", transition: "transform 0.2s", display: "inline-block" }}>▼</span>
-            {videoCollapsed ? "영상 펼치기" : "영상 접기"}
-          </div>
 
-          {/* YouTube Player */}
-          <div
-            ref={playerRef}
-            style={{
-              width: "100%",
-              background: "#000",
-              display: videoCollapsed ? "none" : "block",
-            }}
-          >
-            <div id={`yt-player-${video.id}`}></div>
-          </div>
-
-          {/* Real-time subtitle bar */}
-          <div
-            style={{
-              background: isLooping ? "#1a1528" : "#111118",
-              borderBottom: isLooping ? "1px solid #6366f1" : "1px solid #1a1a2e",
-              padding: "12px 20px",
-              height: "100px",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              overflow: "hidden",
-            }}
-          >
-            {isLooping && (
-              <div
-                style={{
-                  fontSize: "11px",
-                  color: "#a5b4fc",
-                  marginBottom: "6px",
-                  fontWeight: "600",
-                }}
-              >
-                🔄 반복 재생 중 — 일시정지하면 해제됩니다
-              </div>
-            )}
-            {activeSubtitle ? (
-              <div>
-                <div
-                  style={{
-                    fontSize: "14px",
-                    color: "#ccc",
-                    marginBottom: hasPronunciation ? "6px" : "0",
-                    lineHeight: "1.4",
-                  }}
-                >
-                  {activeSubtitle.text}
-                </div>
-                {hasPronunciation && (
-                  <>
-                    <div
-                      style={{
-                        fontSize: "18px",
-                        fontWeight: "700",
-                        color: "#fbbf24",
-                        lineHeight: "1.4",
-                      }}
-                    >
-                      🔊 {activeSubtitle.pronunciation}
-                    </div>
-                    <div
-                      style={{
-                        fontSize: "13px",
-                        color: "#a5f3c4",
-                        marginTop: "4px",
-                        lineHeight: "1.4",
-                      }}
-                    >
-                      {activeSubtitle.translation}
-                    </div>
-                  </>
-                )}
-              </div>
-            ) : (
-              <div
-                style={{
-                  fontSize: "12px",
-                  color: "#444",
-                  textAlign: "center",
-                }}
-              >
-                자막 대기 중...
-              </div>
-            )}
-          </div>
-
-          {/* Progress bar */}
-          {playerReady && (
+          {/* ═══ WINDSHIELD (Video + HUD) ═══ */}
+          <div style={{
+            position: "relative",
+            background: "linear-gradient(180deg, #1a1a28, #12121e)",
+            padding: "10px 10px 0 10px",
+            boxShadow: "inset 0 0 40px rgba(0,0,0,0.7), inset 0 2px 0 rgba(255,255,255,0.02)",
+            borderBottom: "2px solid rgba(80,80,100,0.4)",
+            borderTop: "1px solid rgba(60,60,80,0.3)",
+          }}>
+            {/* YouTube Player */}
             <div
+              ref={playerRef}
               style={{
-                position: "relative",
-                height: "4px",
-                background: "#1a1a2e",
-                cursor: "pointer",
-              }}
-              onClick={(e) => {
-                const rect = e.currentTarget.getBoundingClientRect();
-                seekTo(
-                  ((e.clientX - rect.left) / rect.width) * getDuration()
-                );
+                width: "100%",
+                background: "#000",
+                borderRadius: "3px",
+                overflow: "hidden",
+                boxShadow: "inset 0 0 30px rgba(0,0,0,0.4), 0 0 1px rgba(255,255,255,0.05)",
+                border: "2px solid rgba(70,70,90,0.5)",
               }}
             >
-              <div
-                style={{
-                  height: "100%",
-                  width: `${getDuration() > 0 ? (currentTime / getDuration()) * 100 : 0}%`,
-                  background: "linear-gradient(90deg, #6366f1, #8b5cf6)",
-                  borderRadius: "2px",
-                  transition: isPlaying ? "none" : "width 0.2s",
-                }}
-              />
-              {subtitles.map((sub, i) => {
-                const d = getDuration() || 100;
-                return (
+              <div id={`yt-player-${video.id}`}></div>
+            </div>
+
+            {/* HUD Overlay — floating over windshield bottom */}
+            <div
+              className="hud-overlay"
+              style={{
+                position: "absolute",
+                bottom: "24px",
+                left: "50%",
+                transform: "translateX(-50%)",
+                zIndex: 10,
+                background: T.cockpit.hudBg,
+                backdropFilter: "blur(14px)",
+                WebkitBackdropFilter: "blur(14px)",
+                borderRadius: "8px",
+                padding: "12px 18px",
+                minWidth: "300px",
+                maxWidth: "500px",
+                width: "85%",
+                border: `1px solid ${T.cockpit.hudBorder}`,
+                animation: "hudPulse 3s ease-in-out infinite",
+                transition: `all 0.3s ${T.ease}`,
+                pointerEvents: "none",
+              }}
+            >
+              {isLooping && (
+                <div style={{ fontSize: "10px", color: T.cockpit.amberText, marginBottom: "6px", fontWeight: "700", letterSpacing: "0.1em", textTransform: "uppercase" }}>
+                  🔄 LOOP ACTIVE
+                </div>
+              )}
+              {activeSubtitle ? (
+                <div>
+                  {hudDisplay.original && (
+                    <>
+                      <div style={{ fontSize: "10px", color: T.cockpit.labelColor, fontWeight: "700", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "4px", opacity: 0.8 }}>ORIGINAL</div>
+                      <div style={{ fontSize: "14px", color: "#e0e0e8", marginBottom: "8px", lineHeight: "1.4" }}>
+                        {activeSubtitle.text}
+                      </div>
+                    </>
+                  )}
+                  {hasPronunciation && hudDisplay.pronunciation && (
+                    <>
+                      <div style={{ fontSize: "10px", color: T.cockpit.amberText, fontWeight: "700", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "3px", opacity: 0.8 }}>🔊 PRONUNCIATION</div>
+                      <div style={{ fontSize: "17px", fontWeight: "700", color: T.cockpit.amberText, lineHeight: "1.3", marginBottom: hudDisplay.translation ? "6px" : "0" }}>
+                        {activeSubtitle.pronunciation}
+                      </div>
+                    </>
+                  )}
+                  {hasPronunciation && hudDisplay.translation && (
+                    <>
+                      <div style={{ fontSize: "10px", color: T.cockpit.greenText, fontWeight: "700", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "3px", opacity: 0.8 }}>🇰🇷 TRANSLATION</div>
+                      <div style={{ fontSize: "13px", color: "#a5f3c4", lineHeight: "1.4" }}>
+                        {activeSubtitle.translation}
+                      </div>
+                    </>
+                  )}
+                  {!hudDisplay.original && !hudDisplay.pronunciation && !hudDisplay.translation && (
+                    <div style={{ fontSize: "11px", color: T.textMuted, textAlign: "center", fontFamily: "monospace", letterSpacing: "0.1em" }}>
+                      HUD OFF
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <div style={{ fontSize: "11px", color: T.textMuted, textAlign: "center", fontFamily: "monospace", letterSpacing: "0.1em" }}>
+                  AWAITING SIGNAL...
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Flight Gauge (Progress bar) — physical gauge bezel */}
+          {playerReady && (
+            <div className="gauge-bezel" style={{ margin: "0", borderRadius: "0" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                <span className="label-plate" style={{ color: T.cockpit.greenText, flexShrink: 0 }}>ALT</span>
+                <div
+                  style={{
+                    position: "relative",
+                    height: "8px",
+                    flex: 1,
+                    background: "#0e0e1a",
+                    borderRadius: "4px",
+                    cursor: "pointer",
+                    boxShadow: "inset 0 2px 4px rgba(0,0,0,0.6), inset 0 -1px 0 rgba(255,255,255,0.03)",
+                    border: "1px solid rgba(60,60,80,0.4)",
+                  }}
+                  onClick={(e) => {
+                    const rect = e.currentTarget.getBoundingClientRect();
+                    seekTo(
+                      ((e.clientX - rect.left) / rect.width) * getDuration()
+                    );
+                  }}
+                >
                   <div
-                    key={i}
                     style={{
-                      position: "absolute",
-                      top: "-1px",
-                      left: `${(sub.start / d) * 100}%`,
-                      width: `${((sub.end - sub.start) / d) * 100}%`,
-                      height: "6px",
-                      background: "rgba(99,102,241,0.2)",
-                      borderRadius: "1px",
+                      height: "100%",
+                      width: `${getDuration() > 0 ? (currentTime / getDuration()) * 100 : 0}%`,
+                      background: "linear-gradient(90deg, #34d399, #6366f1, #fbbf24)",
+                      borderRadius: "3px",
+                      transition: isPlaying ? "none" : "width 0.2s",
+                      boxShadow: "0 0 8px rgba(99,102,241,0.4), 0 0 2px rgba(99,102,241,0.6)",
                     }}
                   />
-                );
-              })}
+                  {subtitles.map((sub, i) => {
+                    const d = getDuration() || 100;
+                    return (
+                      <div
+                        key={i}
+                        style={{
+                          position: "absolute",
+                          top: "-2px",
+                          left: `${(sub.start / d) * 100}%`,
+                          width: "1px",
+                          height: "12px",
+                          background: "rgba(99,102,241,0.3)",
+                        }}
+                      />
+                    );
+                  })}
+                </div>
+                <span style={{ fontSize: "11px", color: T.cockpit.greenText, fontFamily: "monospace", fontVariantNumeric: "tabular-nums", minWidth: "76px", textAlign: "right" }}>
+                  {formatTime(currentTime)}<span style={{ color: T.textMuted }}>/</span>{formatTime(getDuration())}
+                </span>
+              </div>
             </div>
           )}
 
-          {/* Controls */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              padding: "10px 16px",
-              gap: "12px",
-              background: "#0d0d14",
-              borderBottom: "1px solid #1a1a2e",
-            }}
-          >
-            <button
-              onClick={skipBack}
-              disabled={!playerReady}
+          {/* ═══ COCKPIT INSTRUMENT PANEL ═══ */}
+          <div className="cockpit-panel" style={{ padding: "20px 16px 16px" }}>
+            <div
               style={{
-                background: "none",
-                border: "none",
-                color: "#888",
-                cursor: playerReady ? "pointer" : "not-allowed",
-                padding: "4px",
-                opacity: playerReady ? 1 : 0.5,
+                display: "grid",
+                gridTemplateColumns: "1fr auto 1.2fr auto 1fr",
+                gap: "0",
+                alignItems: "stretch",
               }}
             >
-              <SkipBackIcon />
-            </button>
-            <button
-              onClick={togglePlay}
-              disabled={!playerReady}
-              style={{
-                background: "#6366f1",
-                border: "none",
-                color: "white",
-                cursor: playerReady ? "pointer" : "not-allowed",
-                borderRadius: "50%",
-                width: "40px",
-                height: "40px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                opacity: playerReady ? 1 : 0.5,
-              }}
-            >
-              {isPlaying ? <PauseIcon /> : <PlayIcon />}
-            </button>
-            <button
-              onClick={skipForward}
-              disabled={!playerReady}
-              style={{
-                background: "none",
-                border: "none",
-                color: "#888",
-                cursor: playerReady ? "pointer" : "not-allowed",
-                padding: "4px",
-                opacity: playerReady ? 1 : 0.5,
-              }}
-            >
-              <SkipForwardIcon />
-            </button>
-            <span
-              style={{ fontSize: "12px", color: "#666", minWidth: "70px" }}
-            >
-              {formatTime(currentTime)} / {formatTime(getDuration())}
-            </span>
-            <div style={{ flex: 1 }} />
-            <select
-              value={speed}
-              onChange={(e) => updateSpeed(Number(e.target.value))}
-              disabled={!playerReady}
-              style={{
-                background: "#1a1a2e",
-                border: "1px solid #333",
-                color: "#888",
-                padding: "4px 8px",
-                borderRadius: "6px",
-                fontSize: "12px",
-                cursor: playerReady ? "pointer" : "not-allowed",
-                opacity: playerReady ? 1 : 0.5,
-              }}
-            >
-              <option value={0.5}>0.5x</option>
-              <option value={0.75}>0.75x</option>
-              <option value={1}>1x</option>
-              <option value={1.25}>1.25x</option>
-              <option value={1.5}>1.5x</option>
-            </select>
-          </div>
+              {/* Column 1: THROTTLE (Speed) */}
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", padding: "0 12px" }}>
+                <span className="label-plate" style={{ color: T.cockpit.amberText }}>THROTTLE</span>
+                <select
+                  value={speed}
+                  onChange={(e) => updateSpeed(Number(e.target.value))}
+                  disabled={!playerReady}
+                  className="phys-btn"
+                  style={{
+                    color: T.cockpit.amberText,
+                    padding: "10px 8px",
+                    borderRadius: "6px",
+                    fontSize: "18px",
+                    fontWeight: "700",
+                    fontFamily: "monospace",
+                    cursor: playerReady ? "pointer" : "not-allowed",
+                    opacity: playerReady ? 1 : 0.4,
+                    width: "100%",
+                    textAlign: "center",
+                    textShadow: "0 0 8px rgba(251,191,36,0.3)",
+                  }}
+                >
+                  <option value={0.5}>0.5x</option>
+                  <option value={0.75}>0.75x</option>
+                  <option value={1}>1.0x</option>
+                  <option value={1.25}>1.25x</option>
+                  <option value={1.5}>1.5x</option>
+                </select>
+                <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+                  <span className={`led ${speed !== 1 ? "led-amber" : "led-green"}`} />
+                  <span style={{ fontSize: "10px", color: speed !== 1 ? T.cockpit.amberText : T.cockpit.greenText, fontFamily: "monospace" }}>
+                    SPD {speed.toFixed(2)}
+                  </span>
+                </div>
+              </div>
 
-          {/* Mobile sentence controls */}
-          <div
-            style={{
+              {/* Seam 1 */}
+              <div className="panel-seam" />
+
+              {/* Column 2: ENGINE (Play/Pause) */}
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px", padding: "0 16px" }}>
+                <span className="label-plate" style={{ color: T.cockpit.labelColor }}>
+                  <span className={`led ${isPlaying ? "led-green led-blink" : "led-off"}`} />
+                  ENGINE
+                </span>
+                {/* Physical START/STOP button */}
+                <div style={{
+                  position: "relative",
+                  width: "72px",
+                  height: "72px",
+                  borderRadius: "50%",
+                  background: "linear-gradient(145deg, #2a2a3e, #1a1a2c)",
+                  border: "3px solid rgba(80,80,100,0.5)",
+                  boxShadow: isPlaying
+                    ? "0 0 25px rgba(99,102,241,0.4), 0 0 60px rgba(99,102,241,0.15), inset 0 0 15px rgba(0,0,0,0.3)"
+                    : "0 4px 8px rgba(0,0,0,0.5), inset 0 0 15px rgba(0,0,0,0.3)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  animation: isPlaying ? "engineGlow 2s ease-in-out infinite" : "none",
+                }}>
+                  {/* Outer ring indicator */}
+                  <div style={{
+                    position: "absolute",
+                    inset: "-6px",
+                    borderRadius: "50%",
+                    border: isPlaying ? "2px solid rgba(99,102,241,0.4)" : "2px solid rgba(60,60,80,0.3)",
+                    transition: "all 0.3s",
+                    pointerEvents: "none",
+                  }} />
+                  <button
+                    onClick={togglePlay}
+                    disabled={!playerReady}
+                    style={{
+                      background: isPlaying
+                        ? "linear-gradient(145deg, #4f46e5, #6366f1)"
+                        : "linear-gradient(145deg, #3a3a50, #2a2a3e)",
+                      border: "none",
+                      color: isPlaying ? "white" : "#8888aa",
+                      cursor: playerReady ? "pointer" : "not-allowed",
+                      borderRadius: "50%",
+                      width: "54px",
+                      height: "54px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      opacity: playerReady ? 1 : 0.4,
+                      transition: `all 0.3s ${T.ease}`,
+                      boxShadow: "inset 0 2px 4px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.05)",
+                    }}
+                    onMouseEnter={(e) => { if (playerReady) e.currentTarget.style.transform = "scale(1.06)"; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.transform = "scale(1)"; }}
+                    title="재생/일시정지 (Space)"
+                  >
+                    {isPlaying ? <PauseIcon /> : <PlayIcon />}
+                  </button>
+                </div>
+                <span style={{ fontSize: "9px", color: T.textMuted, fontFamily: "monospace", letterSpacing: "0.1em" }}>
+                  {isPlaying ? "▶ RUNNING" : "■ STOPPED"}
+                </span>
+              </div>
+
+              {/* Seam 2 */}
+              <div className="panel-seam" />
+
+              {/* Column 3: NAVIGATION (Prev/Next + Loop) */}
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", padding: "0 12px" }}>
+                <span className="label-plate" style={{ color: T.cockpit.labelColor }}>NAV</span>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5px", width: "100%" }}>
+                  <button
+                    onClick={goToPrevSentence}
+                    disabled={!playerReady}
+                    className="phys-btn"
+                    style={{
+                      color: T.accentLight,
+                      cursor: playerReady ? "pointer" : "not-allowed",
+                      padding: "8px 4px",
+                      borderRadius: "5px",
+                      fontSize: "10px",
+                      fontWeight: "700",
+                      fontFamily: "monospace",
+                      opacity: playerReady ? 1 : 0.4,
+                    }}
+                    title="이전 문장 (←)"
+                  >
+                    ◀ PREV
+                  </button>
+                  <button
+                    onClick={goToNextSentence}
+                    disabled={!playerReady}
+                    className="phys-btn"
+                    style={{
+                      color: T.accentLight,
+                      cursor: playerReady ? "pointer" : "not-allowed",
+                      padding: "8px 4px",
+                      borderRadius: "5px",
+                      fontSize: "10px",
+                      fontWeight: "700",
+                      fontFamily: "monospace",
+                      opacity: playerReady ? 1 : 0.4,
+                    }}
+                    title="다음 문장 (→)"
+                  >
+                    NEXT ▶
+                  </button>
+                  <button
+                    onClick={skipBack}
+                    disabled={!playerReady}
+                    className="phys-btn"
+                    style={{
+                      color: T.textSec,
+                      cursor: playerReady ? "pointer" : "not-allowed",
+                      padding: "6px 4px",
+                      borderRadius: "5px",
+                      fontSize: "9px",
+                      fontFamily: "monospace",
+                      opacity: playerReady ? 1 : 0.4,
+                    }}
+                    title="5초 뒤로"
+                  >
+                    -5s
+                  </button>
+                  <button
+                    onClick={skipForward}
+                    disabled={!playerReady}
+                    className="phys-btn"
+                    style={{
+                      color: T.textSec,
+                      cursor: playerReady ? "pointer" : "not-allowed",
+                      padding: "6px 4px",
+                      borderRadius: "5px",
+                      fontSize: "9px",
+                      fontFamily: "monospace",
+                      opacity: playerReady ? 1 : 0.4,
+                    }}
+                    title="5초 앞으로"
+                  >
+                    +5s
+                  </button>
+                </div>
+                <button
+                  onClick={() => {
+                    if (isLooping) {
+                      loopTargetRef.current = null;
+                      setIsLooping(false);
+                    } else {
+                      repeatCurrentSentence();
+                    }
+                  }}
+                  disabled={!playerReady}
+                  className="phys-btn"
+                  style={{
+                    width: "100%",
+                    background: isLooping ? "linear-gradient(180deg, #4f46e5, #3730a3) !important" : undefined,
+                    borderColor: isLooping ? "rgba(99,102,241,0.5) !important" : undefined,
+                    color: isLooping ? "#e0e7ff" : T.cockpit.amberText,
+                    cursor: playerReady ? "pointer" : "not-allowed",
+                    padding: "7px 12px",
+                    borderRadius: "5px",
+                    fontSize: "10px",
+                    fontWeight: "700",
+                    fontFamily: "monospace",
+                    letterSpacing: "0.1em",
+                    opacity: playerReady ? 1 : 0.4,
+                    boxShadow: isLooping ? `${T.cockpit.glowStrong}, inset 0 1px 0 rgba(255,255,255,0.1)` : undefined,
+                  }}
+                  title="반복 재생 (R)"
+                >
+                  <span className={`led ${isLooping ? "led-amber led-blink" : "led-off"}`} style={{ marginRight: "5px" }} />
+                  {isLooping ? "LOOP ON" : "LOOP"}
+                </button>
+              </div>
+            </div>
+            {/* ── HUD DISPLAY toggles ── */}
+            <div style={{
+              marginTop: "12px",
+              paddingTop: "10px",
+              borderTop: T.cockpit.seam,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              padding: "8px 16px",
-              gap: "8px",
-              background: "#0d0d14",
-              borderBottom: "1px solid #1a1a2e",
-            }}
-          >
-            <button
-              onClick={goToPrevSentence}
-              disabled={!playerReady}
-              style={{
-                background: "#1a1a2e",
-                border: "1px solid #2a2a3e",
-                color: "#a5b4fc",
-                cursor: playerReady ? "pointer" : "not-allowed",
-                padding: "8px 16px",
-                borderRadius: "8px",
-                fontSize: "13px",
-                fontWeight: "600",
-                opacity: playerReady ? 1 : 0.5,
-              }}
-              title="이전 문장 (←)"
-            >
-              ⏮ 이전
-            </button>
-            <button
-              onClick={togglePlay}
-              disabled={!playerReady}
-              style={{
-                background: "#6366f1",
-                border: "none",
-                color: "white",
-                cursor: playerReady ? "pointer" : "not-allowed",
-                padding: "8px 20px",
-                borderRadius: "8px",
-                fontSize: "13px",
-                fontWeight: "700",
-                opacity: playerReady ? 1 : 0.5,
-              }}
-              title="재생/일시정지 (Space)"
-            >
-              {isPlaying ? "⏸ 일시정지" : "▶ 재생"}
-            </button>
-            <button
-              onClick={() => {
-                if (isLooping) {
-                  loopTargetRef.current = null;
-                  setIsLooping(false);
-                } else {
-                  repeatCurrentSentence();
-                }
-              }}
-              disabled={!playerReady}
-              style={{
-                background: isLooping ? "#4f46e5" : "#1a1a2e",
-                border: isLooping ? "1px solid #6366f1" : "1px solid #2a2a3e",
-                color: isLooping ? "#e0e7ff" : "#a5b4fc",
-                cursor: playerReady ? "pointer" : "not-allowed",
-                padding: "8px 16px",
-                borderRadius: "8px",
-                fontSize: "13px",
-                fontWeight: "600",
-                opacity: playerReady ? 1 : 0.5,
-              }}
-              title="반복 재생 (R)"
-            >
-              🔄 반복
-            </button>
-            <button
-              onClick={goToNextSentence}
-              disabled={!playerReady}
-              style={{
-                background: "#1a1a2e",
-                border: "1px solid #2a2a3e",
-                color: "#a5b4fc",
-                cursor: playerReady ? "pointer" : "not-allowed",
-                padding: "8px 16px",
-                borderRadius: "8px",
-                fontSize: "13px",
-                fontWeight: "600",
-                opacity: playerReady ? 1 : 0.5,
-              }}
-              title="다음 문장 (→)"
-            >
-              다음 ⏭
-            </button>
+              gap: "6px",
+            }}>
+              <span className="label-plate" style={{ color: T.cockpit.labelColor, marginRight: "6px" }}>DISPLAY</span>
+              {[
+                { key: "original", label: "ORI", color: T.cockpit.labelColor, led: "led-blue" },
+                { key: "pronunciation", label: "PRON", color: T.cockpit.amberText, led: "led-amber" },
+                { key: "translation", label: "TRNS", color: T.cockpit.greenText, led: "led-green" },
+              ].map((item) => (
+                <button
+                  key={item.key}
+                  className="phys-btn"
+                  onClick={() => setHudDisplay((prev) => ({ ...prev, [item.key]: !prev[item.key] }))}
+                  style={{
+                    padding: "5px 10px",
+                    borderRadius: "4px",
+                    fontSize: "9px",
+                    fontWeight: "700",
+                    fontFamily: "monospace",
+                    letterSpacing: "0.08em",
+                    color: hudDisplay[item.key] ? item.color : T.textMuted,
+                    cursor: "pointer",
+                    background: hudDisplay[item.key]
+                      ? "linear-gradient(180deg, #2e2e44, #222236) !important"
+                      : undefined,
+                    borderColor: hudDisplay[item.key]
+                      ? `${item.color}44 !important`
+                      : undefined,
+                    boxShadow: hudDisplay[item.key]
+                      ? `inset 0 2px 4px rgba(0,0,0,0.4), 0 0 8px ${item.color}22`
+                      : undefined,
+                  }}
+                >
+                  <span className={`led ${hudDisplay[item.key] ? item.led : "led-off"}`} style={{ marginRight: "4px" }} />
+                  {item.label}
+                </button>
+              ))}
+            </div>
+
+            {/* Bottom screws decoration */}
+            <div style={{ display: "flex", justifyContent: "space-between", marginTop: "8px", padding: "0 2px" }}>
+              <span style={{ fontSize: "8px", color: T.cockpit.screwColor, textShadow: "0 1px 1px rgba(0,0,0,0.5)" }}>⊕</span>
+              <span style={{ fontSize: "8px", color: T.textMuted, fontFamily: "monospace", letterSpacing: "0.15em" }}>FLIGHT CONTROL UNIT</span>
+              <span style={{ fontSize: "8px", color: T.cockpit.screwColor, textShadow: "0 1px 1px rgba(0,0,0,0.5)" }}>⊕</span>
+            </div>
           </div>
 
-          {/* Learning Panel on pause */}
+          {/* ═══ DATA BANK (Learning Panel) ═══ */}
           {showPanel && currentSubtitle && hasPronunciation && (
-            <div style={{ padding: "20px", animation: "slideUp 0.3s ease-out" }}>
-              <style>{`
-                @keyframes slideUp {
-                  from { opacity: 0; transform: translateY(16px); }
-                  to { opacity: 1; transform: translateY(0); }
-                }
-              `}</style>
+            <div className="cockpit-panel" style={{ padding: "20px 20px 16px", animation: `slideUp 0.3s ${T.ease}` }}>
 
               <div
                 style={{
-                  background: "#111118",
-                  borderRadius: "14px",
-                  padding: "20px",
-                  marginBottom: "12px",
+                  background: T.cockpit.instrument,
+                  borderRadius: "6px",
+                  padding: "16px 18px",
+                  marginBottom: "10px",
+                  border: T.cockpit.metalBorder,
+                  borderLeft: "3px solid rgba(99,102,241,0.5)",
+                  boxShadow: "inset 0 1px 4px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.02)",
                 }}
               >
                 <div
                   style={{
-                    fontSize: "11px",
-                    color: "#6366f1",
+                    fontSize: "9px",
+                    color: T.cockpit.labelColor,
                     fontWeight: "700",
                     textTransform: "uppercase",
-                    letterSpacing: "1px",
+                    letterSpacing: "0.15em",
                     marginBottom: "10px",
+                    fontFamily: "monospace",
                   }}
                 >
-                  Original
+                  ━━ ORIGINAL ━━
                 </div>
                 <div
                   style={{
@@ -1987,11 +2360,13 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
 
               <div
                 style={{
-                  background: "linear-gradient(135deg, #1a1520, #1a1a2e)",
-                  borderRadius: "14px",
-                  padding: "20px",
-                  marginBottom: "12px",
-                  border: "1px solid #2a2040",
+                  background: T.cockpit.instrument,
+                  borderRadius: "6px",
+                  padding: "16px 18px",
+                  marginBottom: "10px",
+                  border: T.cockpit.metalBorder,
+                  borderLeft: "3px solid rgba(251,191,36,0.5)",
+                  boxShadow: "inset 0 1px 4px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.02)",
                 }}
               >
                 <div
@@ -2004,27 +2379,31 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                 >
                   <div
                     style={{
-                      fontSize: "11px",
-                      color: "#fbbf24",
+                      fontSize: "9px",
+                      color: T.cockpit.amberText,
                       fontWeight: "700",
                       textTransform: "uppercase",
-                      letterSpacing: "1px",
+                      letterSpacing: "0.15em",
+                      fontFamily: "monospace",
                     }}
                   >
-                    🔊 실제 발음
+                    ━━ 🔊 PRONUNCIATION ━━
                   </div>
                   {!isEditing && canEdit && (
                     <button
                       onClick={startEditing}
                       style={{
-                        background: "transparent",
-                        border: "1px solid #444",
-                        color: "#888",
-                        padding: "3px 10px",
-                        borderRadius: "6px",
+                        background: T.surface,
+                        border: `1px solid ${T.border}`,
+                        color: T.textSec,
+                        padding: "4px 12px",
+                        borderRadius: T.radius.sm,
                         cursor: "pointer",
                         fontSize: "12px",
+                        transition: `all 0.2s ${T.ease}`,
                       }}
+                      onMouseEnter={(e) => { e.currentTarget.style.borderColor = T.borderHover; e.currentTarget.style.color = T.text; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.borderColor = T.border; e.currentTarget.style.color = T.textSec; }}
                     >
                       ✏️ 수정
                     </button>
@@ -2070,23 +2449,27 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
 
               <div
                 style={{
-                  background: "#111118",
-                  borderRadius: "14px",
-                  padding: "20px",
-                  marginBottom: "16px",
+                  background: T.cockpit.instrument,
+                  borderRadius: "6px",
+                  padding: "16px 18px",
+                  marginBottom: "14px",
+                  border: T.cockpit.metalBorder,
+                  borderLeft: "3px solid rgba(52,211,153,0.5)",
+                  boxShadow: "inset 0 1px 4px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.02)",
                 }}
               >
                 <div
                   style={{
-                    fontSize: "11px",
-                    color: "#34d399",
+                    fontSize: "9px",
+                    color: T.cockpit.greenText,
                     fontWeight: "700",
                     textTransform: "uppercase",
-                    letterSpacing: "1px",
+                    letterSpacing: "0.15em",
                     marginBottom: "10px",
+                    fontFamily: "monospace",
                   }}
                 >
-                  🇰🇷 해석
+                  ━━ 🇰🇷 TRANSLATION ━━
                 </div>
                 {isEditing ? (
                   <input
@@ -2134,15 +2517,17 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     disabled={isSaving}
                     style={{
                       flex: 1,
-                      background: "#22c55e",
+                      background: `linear-gradient(135deg, #22c55e, #16a34a)`,
                       border: "none",
                       color: "white",
                       padding: "12px",
-                      borderRadius: "10px",
+                      borderRadius: T.radius.md,
                       cursor: isSaving ? "wait" : "pointer",
                       fontSize: "14px",
                       fontWeight: "700",
                       opacity: isSaving ? 0.6 : 1,
+                      boxShadow: "0 2px 12px rgba(34,197,94,0.3)",
+                      transition: `all 0.3s ${T.ease}`,
                     }}
                   >
                     {isSaving ? "저장 중..." : "✓ 저장"}
@@ -2152,15 +2537,18 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     disabled={isSaving}
                     style={{
                       flex: 1,
-                      background: "#1a1a2e",
-                      border: "1px solid #333",
-                      color: "#999",
+                      background: T.surface,
+                      border: `1px solid ${T.border}`,
+                      color: T.textSec,
                       padding: "12px",
-                      borderRadius: "10px",
+                      borderRadius: T.radius.md,
                       cursor: "pointer",
                       fontSize: "14px",
                       fontWeight: "700",
+                      transition: `all 0.2s ${T.ease}`,
                     }}
+                    onMouseEnter={(e) => { e.currentTarget.style.borderColor = T.borderHover; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.borderColor = T.border; }}
                   >
                     ✕ 취소
                   </button>
@@ -2172,16 +2560,17 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                 <div style={{ marginBottom: "12px" }}>
                   <div
                     style={{
-                      fontSize: "11px",
-                      color: "#888",
+                      fontSize: "9px",
+                      color: T.cockpit.labelColor,
                       fontWeight: "700",
                       textTransform: "uppercase",
-                      letterSpacing: "1px",
+                      letterSpacing: "0.15em",
                       marginBottom: "10px",
                       padding: "0 4px",
+                      fontFamily: "monospace",
                     }}
                   >
-                    💡 발음 포인트
+                    ━━ 💡 FLIGHT NOTES ━━
                   </div>
                   <div
                     style={{
@@ -2194,19 +2583,24 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                       <div
                         key={i}
                         style={{
-                          background: "#111118",
-                          borderRadius: "12px",
-                          padding: "14px 16px",
+                          background: T.cockpit.instrument,
+                          borderRadius: "5px",
+                          padding: "12px 14px",
                           cursor: "pointer",
-                          border:
-                            expandedNote === i
-                              ? "1px solid #6366f1"
-                              : "1px solid transparent",
-                          transition: "all 0.2s",
+                          border: T.cockpit.metalBorder,
+                          borderLeft: expandedNote === i
+                            ? "3px solid rgba(99,102,241,0.5)"
+                            : "3px solid rgba(60,60,80,0.3)",
+                          transition: `all 0.3s ${T.ease}`,
+                          boxShadow: expandedNote === i
+                            ? "inset 0 1px 4px rgba(0,0,0,0.3), 0 0 12px rgba(99,102,241,0.1)"
+                            : "inset 0 1px 4px rgba(0,0,0,0.3)",
                         }}
                         onClick={() =>
                           setExpandedNote(expandedNote === i ? null : i)
                         }
+                        onMouseEnter={(e) => { if (expandedNote !== i) e.currentTarget.style.borderColor = "rgba(196,181,253,0.15)"; }}
+                        onMouseLeave={(e) => { if (expandedNote !== i) e.currentTarget.style.borderColor = T.border; }}
                       >
                         <div
                           style={{
@@ -2252,14 +2646,24 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                               background: savedExpressions.find(
                                 (e) => e.word === note.word && e.video_id === video.id
                               )
-                                ? "#22c55e"
-                                : "#2a2a3e",
-                              border: "none",
+                                ? "linear-gradient(135deg, #22c55e, #16a34a)"
+                                : T.surface,
+                              border: savedExpressions.find(
+                                (e) => e.word === note.word && e.video_id === video.id
+                              )
+                                ? "none"
+                                : `1px solid ${T.border}`,
                               color: "white",
-                              padding: "4px 10px",
-                              borderRadius: "6px",
+                              padding: "4px 12px",
+                              borderRadius: T.radius.sm,
                               cursor: "pointer",
                               fontSize: "12px",
+                              transition: `all 0.2s ${T.ease}`,
+                              boxShadow: savedExpressions.find(
+                                (e) => e.word === note.word && e.video_id === video.id
+                              )
+                                ? "0 2px 8px rgba(34,197,94,0.3)"
+                                : "none",
                             }}
                           >
                             {savedExpressions.find(
@@ -2274,10 +2678,11 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                             style={{
                               marginTop: "10px",
                               paddingTop: "10px",
-                              borderTop: "1px solid #222",
-                              color: "#999",
+                              borderTop: `1px solid ${T.border}`,
+                              color: T.textSec,
                               fontSize: "13px",
                               lineHeight: "1.6",
+                              animation: `fadeIn 0.2s ${T.ease}`,
                             }}
                           >
                             {note.meaning}
@@ -2289,7 +2694,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                 </div>
               )}
 
-              <div style={{ display: "flex", gap: "8px", marginTop: "16px" }}>
+              <div style={{ display: "flex", gap: "8px", marginTop: "14px" }}>
                 <button
                   onClick={() => {
                     if (playerInstanceRef.current && currentSubtitle) {
@@ -2303,19 +2708,23 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                       playerInstanceRef.current.playVideo();
                     }
                   }}
+                  className="phys-btn"
                   style={{
                     flex: 1,
-                    background: "#6366f1",
-                    border: "none",
+                    background: "linear-gradient(180deg, #4f46e5, #3730a3) !important",
+                    borderColor: "rgba(99,102,241,0.4) !important",
                     color: "white",
-                    padding: "14px",
-                    borderRadius: "12px",
+                    padding: "12px",
+                    borderRadius: "5px",
                     cursor: "pointer",
-                    fontSize: "14px",
+                    fontSize: "11px",
                     fontWeight: "700",
+                    fontFamily: "monospace",
+                    letterSpacing: "0.1em",
                   }}
                 >
-                  🔄 반복 듣기
+                  <span className="led led-blue" style={{ marginRight: "5px" }} />
+                  REPEAT
                 </button>
                 <button
                   onClick={() => {
@@ -2325,19 +2734,21 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     if (playerInstanceRef.current)
                       playerInstanceRef.current.playVideo();
                   }}
+                  className="phys-btn"
                   style={{
                     flex: 1,
-                    background: "#1a1a2e",
-                    border: "1px solid #333",
-                    color: "#e8e8ed",
-                    padding: "14px",
-                    borderRadius: "12px",
+                    color: T.cockpit.greenText,
+                    padding: "12px",
+                    borderRadius: "5px",
                     cursor: "pointer",
-                    fontSize: "14px",
+                    fontSize: "11px",
                     fontWeight: "700",
+                    fontFamily: "monospace",
+                    letterSpacing: "0.1em",
                   }}
                 >
-                  ▶ 계속 재생
+                  <span className="led led-green" style={{ marginRight: "5px" }} />
+                  RESUME
                 </button>
               </div>
             </div>
@@ -2345,27 +2756,24 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
 
           </div>
 
-          {/* Sentence Timeline */}
-          <div
-            style={{ padding: "16px 20px", borderTop: "1px solid #1a1a2e" }}
-          >
-            <div
-              style={{
-                fontSize: "11px",
-                color: "#555",
-                fontWeight: "700",
-                textTransform: "uppercase",
-                letterSpacing: "1px",
-                marginBottom: "10px",
-              }}
-            >
-              문장 목록
+          {/* ═══ FLIGHT LOG (Sentence Timeline) ═══ */}
+          <div className="cockpit-panel" style={{ padding: "16px 20px 12px" }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "10px" }}>
+              <span className="label-plate" style={{ color: T.cockpit.labelColor }}>
+                <span className="led led-green" />
+                FLIGHT LOG
+              </span>
+              <span style={{ fontSize: "9px", color: T.textMuted, fontFamily: "monospace" }}>
+                {subtitles.length} ENTRIES
+              </span>
             </div>
             <div
               style={{
                 display: "flex",
                 flexDirection: "column",
-                gap: "4px",
+                gap: "2px",
+                maxHeight: "300px",
+                overflowY: "auto",
               }}
             >
               {subtitles.map((sub, i) => {
@@ -2394,37 +2802,44 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                       }
                     }}
                     style={{
-                      padding: "10px 14px",
-                      borderRadius: "10px",
+                      padding: "8px 12px",
+                      borderRadius: "4px",
                       cursor: "pointer",
-                      background: isActive ? "#1a1a3e" : "transparent",
-                      border: isActive
-                        ? "1px solid #6366f1"
-                        : "1px solid transparent",
-                      transition: "all 0.2s",
+                      background: isActive ? "rgba(99,102,241,0.1)" : "transparent",
+                      borderLeft: isActive
+                        ? "3px solid rgba(99,102,241,0.6)"
+                        : "3px solid transparent",
+                      transition: `all 0.2s ${T.ease}`,
                       display: "flex",
                       alignItems: "center",
                       gap: "12px",
+                      boxShadow: isActive ? "0 0 15px rgba(99,102,241,0.1)" : "none",
                     }}
+                    onMouseEnter={(e) => { if (!isActive) { e.currentTarget.style.background = "rgba(99,102,241,0.05)"; e.currentTarget.style.borderLeftColor = "rgba(99,102,241,0.2)"; } }}
+                    onMouseLeave={(e) => { if (!isActive) { e.currentTarget.style.background = "transparent"; e.currentTarget.style.borderLeftColor = "transparent"; } }}
                   >
                     <span
                       style={{
-                        fontSize: "11px",
-                        color: "#555",
+                        fontSize: "10px",
+                        color: isActive ? T.cockpit.amberText : T.textMuted,
                         minWidth: "36px",
                         fontFamily: "monospace",
+                        fontVariantNumeric: "tabular-nums",
+                        fontWeight: isActive ? "700" : "400",
                       }}
                     >
                       {formatTime(sub.start)}
                     </span>
                     <span
                       style={{
-                        fontSize: "13px",
-                        color: isActive ? "#a5b4fc" : "#777",
+                        fontSize: "12px",
+                        color: isActive ? T.accentLight : T.textSec,
                         flex: 1,
                         overflow: "hidden",
                         textOverflow: "ellipsis",
                         whiteSpace: "nowrap",
+                        transition: `color 0.2s ${T.ease}`,
+                        fontFamily: isActive ? "inherit" : "inherit",
                       }}
                     >
                       {sub.text}
@@ -2441,13 +2856,17 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                       style={{
                         background: "transparent",
                         border: "none",
-                        color: "#444",
+                        color: T.textMuted,
                         cursor: "pointer",
-                        fontSize: "12px",
+                        fontSize: "11px",
                         padding: "2px 6px",
                         borderRadius: "4px",
                         flexShrink: 0,
+                        transition: `color 0.2s ${T.ease}`,
+                        fontFamily: "monospace",
                       }}
+                      onMouseEnter={(e) => { e.currentTarget.style.color = T.cockpit.labelColor; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.color = T.textMuted; }}
                       title="퍼머링크 복사"
                     >
                       🔗
@@ -2698,20 +3117,28 @@ export default function MovieEnglishApp() {
     <div
       style={{
         minHeight: "100vh",
-        background: "#0a0a0f",
-        color: "#e8e8ed",
+        background: T.bg,
+        color: T.text,
         fontFamily:
-          '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+          '"Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
       }}
     >
+      <GlobalStyles />
       {/* Header */}
       <div
         style={{
-          padding: "16px 20px",
-          borderBottom: "1px solid #1a1a2e",
+          padding: "14px 20px",
+          borderBottom: `1px solid ${T.border}`,
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          background: "rgba(10,10,15,0.8)",
+          backdropFilter: "blur(16px)",
+          WebkitBackdropFilter: "blur(16px)",
+          boxShadow: T.shadow1,
+          position: "sticky",
+          top: 0,
+          zIndex: 100,
         }}
       >
         <div
@@ -2720,24 +3147,35 @@ export default function MovieEnglishApp() {
             alignItems: "center",
             gap: "10px",
             cursor: selectedVideo ? "pointer" : "default",
+            transition: `opacity 0.2s ${T.ease}`,
           }}
           onClick={selectedVideo ? handleBack : undefined}
+          onMouseEnter={(e) => { if (selectedVideo) e.currentTarget.style.opacity = "0.8"; }}
+          onMouseLeave={(e) => { e.currentTarget.style.opacity = "1"; }}
         >
           <div
             style={{
-              width: "32px",
-              height: "32px",
-              borderRadius: "8px",
+              width: "34px",
+              height: "34px",
+              borderRadius: T.radius.sm,
               background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               fontSize: "16px",
+              boxShadow: "0 2px 8px rgba(99,102,241,0.3)",
             }}
           >
             🎬
           </div>
-          <span style={{ fontWeight: "700", fontSize: "18px" }}>
+          <span style={{
+            fontWeight: "700",
+            fontSize: "18px",
+            background: "linear-gradient(135deg, #e8e8ed, #c4b5fd)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            letterSpacing: "-0.02em",
+          }}>
             MovieTalk
           </span>
         </div>
@@ -2747,9 +3185,9 @@ export default function MovieEnglishApp() {
               <button
                 onClick={() => setShowShortcuts(true)}
                 style={{
-                  background: "#1a1a2e",
-                  border: "none",
-                  color: "#888",
+                  background: T.surface,
+                  border: `1px solid ${T.border}`,
+                  color: T.textSec,
                   width: "32px",
                   height: "32px",
                   borderRadius: "50%",
@@ -2759,22 +3197,32 @@ export default function MovieEnglishApp() {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
+                  transition: `all 0.2s ${T.ease}`,
+                  backdropFilter: "blur(8px)",
                 }}
+                onMouseEnter={(e) => { e.currentTarget.style.borderColor = T.borderHover; e.currentTarget.style.color = T.text; }}
+                onMouseLeave={(e) => { e.currentTarget.style.borderColor = T.border; e.currentTarget.style.color = T.textSec; }}
               >
                 ?
               </button>
               <button
                 onClick={() => setShowSaved(!showSaved)}
                 style={{
-                  background: showSaved ? "#6366f1" : "#1a1a2e",
-                  border: "none",
-                  color: "#e8e8ed",
+                  background: showSaved ? `linear-gradient(135deg, ${T.accent}, #8b5cf6)` : T.surface,
+                  border: showSaved ? "none" : `1px solid ${T.border}`,
+                  color: T.text,
                   padding: "8px 16px",
-                  borderRadius: "20px",
+                  borderRadius: T.radius.pill,
                   cursor: "pointer",
                   fontSize: "13px",
                   fontWeight: "600",
+                  transition: `all 0.3s ${T.ease}`,
+                  boxShadow: showSaved ? "0 2px 12px rgba(99,102,241,0.3)" : "none",
+                  backdropFilter: showSaved ? "none" : "blur(8px)",
+                  letterSpacing: "0.01em",
                 }}
+                onMouseEnter={(e) => { if (!showSaved) { e.currentTarget.style.borderColor = T.borderHover; e.currentTarget.style.background = T.surfaceHover; } }}
+                onMouseLeave={(e) => { if (!showSaved) { e.currentTarget.style.borderColor = T.border; e.currentTarget.style.background = T.surface; } }}
               >
                 📚 저장한 표현
               </button>
@@ -2799,10 +3247,12 @@ export default function MovieEnglishApp() {
                         width: "28px",
                         height: "28px",
                         borderRadius: "50%",
+                        border: `2px solid ${T.border}`,
+                        boxShadow: T.shadow1,
                       }}
                     />
                   )}
-                  <span style={{ fontSize: "13px", color: "#999" }}>
+                  <span style={{ fontSize: "13px", color: T.textSec, letterSpacing: "0.01em" }}>
                     {user.user_metadata?.full_name ||
                       user.user_metadata?.name ||
                       user.email?.split("@")[0]}
@@ -2810,14 +3260,18 @@ export default function MovieEnglishApp() {
                   <button
                     onClick={signOut}
                     style={{
-                      background: "#1a1a2e",
-                      border: "none",
-                      color: "#a5b4fc",
+                      background: T.surface,
+                      border: `1px solid ${T.border}`,
+                      color: T.accentLight,
                       padding: "6px 12px",
-                      borderRadius: "16px",
+                      borderRadius: T.radius.pill,
                       cursor: "pointer",
                       fontSize: "12px",
+                      transition: `all 0.2s ${T.ease}`,
+                      backdropFilter: "blur(8px)",
                     }}
+                    onMouseEnter={(e) => { e.currentTarget.style.borderColor = T.borderHover; e.currentTarget.style.background = T.surfaceHover; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.borderColor = T.border; e.currentTarget.style.background = T.surface; }}
                   >
                     로그아웃
                   </button>
@@ -2826,15 +3280,20 @@ export default function MovieEnglishApp() {
                 <button
                   onClick={() => setShowLoginModal(true)}
                   style={{
-                    background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
+                    background: `linear-gradient(135deg, ${T.accent}, #8b5cf6)`,
                     border: "none",
                     color: "#fff",
-                    padding: "8px 16px",
-                    borderRadius: "20px",
+                    padding: "8px 18px",
+                    borderRadius: T.radius.pill,
                     cursor: "pointer",
                     fontSize: "13px",
                     fontWeight: "600",
+                    boxShadow: "0 2px 12px rgba(99,102,241,0.3)",
+                    transition: `all 0.3s ${T.ease}`,
+                    letterSpacing: "0.01em",
                   }}
+                  onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 4px 20px rgba(99,102,241,0.5)"; e.currentTarget.style.transform = "translateY(-1px)"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "0 2px 12px rgba(99,102,241,0.3)"; e.currentTarget.style.transform = "translateY(0)"; }}
                 >
                   로그인
                 </button>
@@ -2850,38 +3309,48 @@ export default function MovieEnglishApp() {
           style={{
             position: "fixed",
             inset: 0,
-            background: "rgba(0,0,0,0.6)",
+            background: "rgba(0,0,0,0.7)",
+            backdropFilter: "blur(8px)",
+            WebkitBackdropFilter: "blur(8px)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             zIndex: 9999,
+            animation: `fadeIn 0.2s ${T.ease}`,
           }}
           onClick={() => setShowLoginModal(false)}
         >
           <div
             style={{
-              background: "#1a1a2e",
-              borderRadius: "16px",
-              padding: "32px",
-              minWidth: "300px",
+              background: T.surfaceSolid,
+              borderRadius: T.radius.lg,
+              padding: "36px",
+              minWidth: "320px",
               textAlign: "center",
+              border: `1px solid ${T.border}`,
+              boxShadow: T.shadow3,
+              animation: `slideUp 0.3s ${T.ease}`,
             }}
             onClick={(e) => e.stopPropagation()}
           >
             <h3
               style={{
                 marginBottom: "24px",
-                fontSize: "18px",
+                fontSize: "20px",
                 fontWeight: "700",
+                background: "linear-gradient(135deg, #e8e8ed, #c4b5fd)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
               }}
             >
               로그인
             </h3>
             <p
               style={{
-                marginBottom: "20px",
+                marginBottom: "24px",
                 fontSize: "13px",
-                color: "#999",
+                color: T.textSec,
+                lineHeight: "1.5",
               }}
             >
               로그인하면 자막 편집 내용이 저장됩니다
@@ -2902,8 +3371,8 @@ export default function MovieEnglishApp() {
                   background: "#fff",
                   color: "#333",
                   border: "none",
-                  padding: "12px 20px",
-                  borderRadius: "10px",
+                  padding: "13px 20px",
+                  borderRadius: T.radius.md,
                   cursor: "pointer",
                   fontSize: "14px",
                   fontWeight: "600",
@@ -2911,7 +3380,11 @@ export default function MovieEnglishApp() {
                   alignItems: "center",
                   justifyContent: "center",
                   gap: "8px",
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+                  transition: `all 0.3s ${T.ease}`,
                 }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-1px)"; e.currentTarget.style.boxShadow = "0 4px 16px rgba(0,0,0,0.2)"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 2px 8px rgba(0,0,0,0.15)"; }}
               >
                 <svg width="18" height="18" viewBox="0 0 48 48">
                   <path
@@ -2937,13 +3410,16 @@ export default function MovieEnglishApp() {
             <button
               onClick={() => setShowLoginModal(false)}
               style={{
-                marginTop: "16px",
+                marginTop: "20px",
                 background: "none",
                 border: "none",
-                color: "#666",
+                color: T.textMuted,
                 cursor: "pointer",
                 fontSize: "13px",
+                transition: `color 0.2s ${T.ease}`,
               }}
+              onMouseEnter={(e) => { e.currentTarget.style.color = T.text; }}
+              onMouseLeave={(e) => { e.currentTarget.style.color = T.textMuted; }}
             >
               닫기
             </button>
@@ -2957,10 +3433,11 @@ export default function MovieEnglishApp() {
           style={{
             textAlign: "center",
             padding: "60px 20px",
-            color: "#666",
+            color: T.textMuted,
+            animation: `fadeIn 0.3s ${T.ease}`,
           }}
         >
-          <div style={{ fontSize: "24px", marginBottom: "12px" }}>⏳</div>
+          <div style={{ fontSize: "24px", marginBottom: "12px", animation: "glowPulse 1.5s infinite" }}>⏳</div>
           로딩 중...
         </div>
       )}
@@ -2996,59 +3473,64 @@ export default function MovieEnglishApp() {
             position: "fixed",
             top: 0, left: 0, right: 0, bottom: 0,
             background: "rgba(0,0,0,0.7)",
+            backdropFilter: "blur(8px)",
+            WebkitBackdropFilter: "blur(8px)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             zIndex: 9999,
+            animation: `fadeIn 0.2s ${T.ease}`,
           }}
         >
           <div
             onClick={(e) => e.stopPropagation()}
             style={{
-              background: "#16161e",
-              borderRadius: "16px",
+              background: T.surfaceSolid,
+              borderRadius: T.radius.lg,
               padding: "28px 32px",
               maxWidth: "400px",
               width: "90%",
-              border: "1px solid #2a2a3e",
+              border: `1px solid ${T.border}`,
+              boxShadow: T.shadow3,
+              animation: `slideUp 0.3s ${T.ease}`,
             }}
           >
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
-              <h3 style={{ fontSize: "17px", fontWeight: "700", margin: 0 }}>단축키 안내</h3>
-              <button onClick={() => setShowShortcuts(false)} style={{ background: "none", border: "none", color: "#666", fontSize: "20px", cursor: "pointer" }}>×</button>
+              <h3 style={{ fontSize: "17px", fontWeight: "700", margin: 0, background: "linear-gradient(135deg, #e8e8ed, #c4b5fd)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>단축키 안내</h3>
+              <button onClick={() => setShowShortcuts(false)} style={{ background: "none", border: "none", color: T.textMuted, fontSize: "20px", cursor: "pointer", transition: `color 0.2s ${T.ease}` }} onMouseEnter={(e) => { e.currentTarget.style.color = T.text; }} onMouseLeave={(e) => { e.currentTarget.style.color = T.textMuted; }}>×</button>
             </div>
-            <div style={{ fontSize: "14px", color: "#bbb", lineHeight: "2.2" }}>
-              <div style={{ color: "#a5b4fc", fontWeight: "600", marginBottom: "4px" }}>영상 모드</div>
+            <div style={{ fontSize: "14px", color: T.textSec, lineHeight: "2.2" }}>
+              <div style={{ color: T.accentLight, fontWeight: "600", marginBottom: "4px", letterSpacing: "0.03em", fontSize: "12px", textTransform: "uppercase" }}>영상 모드</div>
               {[
                 ["Space", "재생 / 일시정지"],
                 ["←", "이전 문장으로 이동"],
                 ["→", "다음 문장으로 이동"],
               ].map(([key, desc]) => (
                 <div key={key} style={{ display: "flex", justifyContent: "space-between" }}>
-                  <kbd style={{ background: "#2a2a3e", padding: "1px 8px", borderRadius: "4px", fontSize: "12px", color: "#e8e8ed", fontFamily: "monospace" }}>{key}</kbd>
-                  <span style={{ color: "#888" }}>{desc}</span>
+                  <kbd style={{ background: T.surface, border: `1px solid ${T.border}`, padding: "2px 10px", borderRadius: T.radius.sm, fontSize: "12px", color: T.text, fontFamily: "monospace" }}>{key}</kbd>
+                  <span style={{ color: T.textSec }}>{desc}</span>
                 </div>
               ))}
-              <div style={{ color: "#a5b4fc", fontWeight: "600", marginTop: "12px", marginBottom: "4px" }}>학습 모드</div>
+              <div style={{ color: T.accentLight, fontWeight: "600", marginTop: "14px", marginBottom: "4px", letterSpacing: "0.03em", fontSize: "12px", textTransform: "uppercase" }}>학습 모드</div>
               {[
                 ["←  →", "이전 / 다음 문장"],
                 ["Space", "현재 문장 재생"],
                 ["Esc", "학습 모드 종료"],
               ].map(([key, desc]) => (
                 <div key={key} style={{ display: "flex", justifyContent: "space-between" }}>
-                  <kbd style={{ background: "#2a2a3e", padding: "1px 8px", borderRadius: "4px", fontSize: "12px", color: "#e8e8ed", fontFamily: "monospace" }}>{key}</kbd>
-                  <span style={{ color: "#888" }}>{desc}</span>
+                  <kbd style={{ background: T.surface, border: `1px solid ${T.border}`, padding: "2px 10px", borderRadius: T.radius.sm, fontSize: "12px", color: T.text, fontFamily: "monospace" }}>{key}</kbd>
+                  <span style={{ color: T.textSec }}>{desc}</span>
                 </div>
               ))}
-              <div style={{ color: "#a5b4fc", fontWeight: "600", marginTop: "12px", marginBottom: "4px" }}>편집</div>
+              <div style={{ color: T.accentLight, fontWeight: "600", marginTop: "14px", marginBottom: "4px", letterSpacing: "0.03em", fontSize: "12px", textTransform: "uppercase" }}>편집</div>
               {[
                 ["Ctrl/⌘ + E", "편집 모드 진입"],
                 ["Ctrl/⌘ + S", "편집 저장"],
                 ["Enter", "편집 저장 (입력 필드)"],
               ].map(([key, desc]) => (
                 <div key={key} style={{ display: "flex", justifyContent: "space-between" }}>
-                  <kbd style={{ background: "#2a2a3e", padding: "1px 8px", borderRadius: "4px", fontSize: "12px", color: "#e8e8ed", fontFamily: "monospace" }}>{key}</kbd>
-                  <span style={{ color: "#888" }}>{desc}</span>
+                  <kbd style={{ background: T.surface, border: `1px solid ${T.border}`, padding: "2px 10px", borderRadius: T.radius.sm, fontSize: "12px", color: T.text, fontFamily: "monospace" }}>{key}</kbd>
+                  <span style={{ color: T.textSec }}>{desc}</span>
                 </div>
               ))}
             </div>
