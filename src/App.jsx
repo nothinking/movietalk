@@ -2051,7 +2051,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                 display: "grid",
                 gridTemplateColumns: "1fr auto 1.2fr auto 1fr",
                 gap: "0",
-                alignItems: "stretch",
+                alignItems: "start",
               }}
             >
               {/* Column 1: THROTTLE — Gauge + Stick */}
@@ -2297,7 +2297,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
               <div className="panel-seam" />
 
               {/* Column 3: NAVIGATION (Prev/Next + Loop) */}
-              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", padding: "0 12px" }}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", padding: "0 12px", justifyContent: "center" }}>
                 <span className="label-plate" style={{ color: T.cockpit.labelColor }}>NAV</span>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5px", width: "100%" }}>
                   <button
@@ -2307,7 +2307,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     style={{
                       color: T.accentLight,
                       cursor: playerReady ? "pointer" : "not-allowed",
-                      padding: "8px 4px",
+                      padding: "14px 4px",
                       borderRadius: "5px",
                       fontSize: "10px",
                       fontWeight: "700",
@@ -2325,7 +2325,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     style={{
                       color: T.accentLight,
                       cursor: playerReady ? "pointer" : "not-allowed",
-                      padding: "8px 4px",
+                      padding: "14px 4px",
                       borderRadius: "5px",
                       fontSize: "10px",
                       fontWeight: "700",
@@ -2335,40 +2335,6 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     title="다음 문장 (→)"
                   >
                     NEXT ▶
-                  </button>
-                  <button
-                    onClick={skipBack}
-                    disabled={!playerReady}
-                    className="phys-btn"
-                    style={{
-                      color: T.textSec,
-                      cursor: playerReady ? "pointer" : "not-allowed",
-                      padding: "6px 4px",
-                      borderRadius: "5px",
-                      fontSize: "9px",
-                      fontFamily: "monospace",
-                      opacity: playerReady ? 1 : 0.4,
-                    }}
-                    title="5초 뒤로"
-                  >
-                    -5s
-                  </button>
-                  <button
-                    onClick={skipForward}
-                    disabled={!playerReady}
-                    className="phys-btn"
-                    style={{
-                      color: T.textSec,
-                      cursor: playerReady ? "pointer" : "not-allowed",
-                      padding: "6px 4px",
-                      borderRadius: "5px",
-                      fontSize: "9px",
-                      fontFamily: "monospace",
-                      opacity: playerReady ? 1 : 0.4,
-                    }}
-                    title="5초 앞으로"
-                  >
-                    +5s
                   </button>
                 </div>
                 <button
@@ -2388,7 +2354,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     borderColor: isLooping ? "rgba(99,102,241,0.5) !important" : undefined,
                     color: isLooping ? "#e0e7ff" : T.cockpit.amberText,
                     cursor: playerReady ? "pointer" : "not-allowed",
-                    padding: "7px 12px",
+                    padding: "12px 12px",
                     borderRadius: "5px",
                     fontSize: "10px",
                     fontWeight: "700",
@@ -2414,7 +2380,6 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
               justifyContent: "center",
               gap: "6px",
             }}>
-              <span className="label-plate" style={{ color: T.cockpit.labelColor, marginRight: "6px" }}>DISPLAY</span>
               {[
                 { key: "original", label: "ORI", color: T.cockpit.labelColor, led: "led-blue" },
                 { key: "pronunciation", label: "PRON", color: T.cockpit.amberText, led: "led-amber" },
