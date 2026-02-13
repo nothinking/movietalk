@@ -565,7 +565,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   const studyModeInitRef = useRef(false);
   useEffect(() => {
     if (studyModeInitRef.current) return;
-    if (initialMode === "study" && hasPronunciation && subtitles.length > 0) {
+    if ((initialMode === "edit" || initialMode === "study") && hasPronunciation && subtitles.length > 0) {
       studyModeInitRef.current = true;
       const idx = initialSubIndex != null
         ? Math.max(0, subtitles.findIndex((s) => s.index === initialSubIndex))
@@ -574,6 +574,11 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
       studyIndexRef.current = idx;
       setStudyMode(true);
       setStudyIndex(idx);
+      setHash(video.id, subtitles[idx].index, false, "edit");
+      // 편집 모드 진입 시 영상 일시정지
+      if (playerInstanceRef.current) {
+        try { playerInstanceRef.current.pauseVideo(); } catch (e) {}
+      }
     }
   }, [initialMode, hasPronunciation, subtitles.length]);
 
@@ -615,7 +620,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
           const newIdx = Math.max(0, studyIndexRef.current - 1);
           studyIndexRef.current = newIdx;
           setStudyIndex(newIdx);
-          setHash(video.id, subtitles[newIdx].index, false, "study");
+          setHash(video.id, subtitles[newIdx].index, false, "edit");
           if (loopTargetRef.current && playerInstanceRef.current) {
             const newSub = subtitles[newIdx];
             loopTargetRef.current = { start: newSub.start, end: newSub.end };
@@ -629,7 +634,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
           const newIdx = Math.min(subtitles.length - 1, studyIndexRef.current + 1);
           studyIndexRef.current = newIdx;
           setStudyIndex(newIdx);
-          setHash(video.id, subtitles[newIdx].index, false, "study");
+          setHash(video.id, subtitles[newIdx].index, false, "edit");
           if (loopTargetRef.current && playerInstanceRef.current) {
             const newSub = subtitles[newIdx];
             loopTargetRef.current = { start: newSub.start, end: newSub.end };
@@ -723,13 +728,17 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
             if (speed !== 1) {
               try { instance.setPlaybackRate(speed); } catch (e) {}
             }
-            // 퍼머링크로 진입 시 해당 자막 위치로 이동
+            // 퍼머링크로 진입 시 해당 자막 위치로 이동 (재생하지 않음)
             if (initialSubIndex != null) {
               const target = subtitles.find((s) => s.index === initialSubIndex);
               if (target) {
                 instance.seekTo(target.start);
                 setCurrentTime(target.start);
               }
+            }
+            // edit 모드 진입 시 자동 재생 방지
+            if (initialMode === "edit" || initialMode === "study") {
+              setTimeout(() => { try { instance.pauseVideo(); } catch(e) {} }, 300);
             }
           },
           onStateChange: (event) => {
@@ -768,7 +777,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
             setPlayerReady(true);
           },
         },
-        playerVars: { controls: 1, modestbranding: 1, playsinline: 1, rel: 0 },
+        playerVars: { controls: 1, modestbranding: 1, playsinline: 1, rel: 0, autoplay: 0 },
       }
     );
 
@@ -815,7 +824,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
               setStudyIndex(newIdx);
               const newSub = subtitles[newIdx];
               playerInstanceRef.current.seekTo(newSub.start);
-              setHash(video.id, newSub.index, false, "study");
+              setHash(video.id, newSub.index, false, "edit");
             } else {
               // 마지막 문장 → 연속 재생 종료
               continuousPlayRef.current = false;
@@ -1132,7 +1141,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
       const newIdx = Math.max(0, studyIndexRef.current - 1);
       studyIndexRef.current = newIdx;
       setStudyIndex(newIdx);
-      setHash(video.id, newSubtitles[newIdx].index, false, "study");
+      setHash(video.id, newSubtitles[newIdx].index, false, "edit");
       if (loopTargetRef.current) {
         const newSub = newSubtitles[newIdx];
         loopTargetRef.current = { start: newSub.start, end: newSub.end };
@@ -1219,7 +1228,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
       }
 
       if (onMergeSubtitles) onMergeSubtitles(newSubtitles);
-      setHash(video.id, newSubtitles[studyIndexRef.current].index, false, "study");
+      setHash(video.id, newSubtitles[studyIndexRef.current].index, false, "edit");
       if (loopTargetRef.current) {
         const newSub = newSubtitles[studyIndexRef.current];
         loopTargetRef.current = { start: newSub.start, end: newSub.end };
@@ -1320,7 +1329,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                 setStudyMode(true);
                 setStudyIndex(newIdx);
                 setExpandedNote(null);
-                setHash(video.id, subtitles[newIdx].index, false, "study");
+                setHash(video.id, subtitles[newIdx].index, false, "edit");
                 if (playerInstanceRef.current) playerInstanceRef.current.pauseVideo();
               }
             }}
@@ -1781,7 +1790,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                             studyIndexRef.current = newIdx; setStudyIndex(newIdx);
                             setExpandedNote(null);
                             if (isEditing) cancelEditing(); if (splitMode) cancelSplit();
-                            setHash(video.id, subtitles[newIdx].index, false, "study");
+                            setHash(video.id, subtitles[newIdx].index, false, "edit");
                             if (loopTargetRef.current && playerInstanceRef.current) {
                               const s = subtitles[newIdx];
                               loopTargetRef.current = { start: s.start, end: s.end };
@@ -1803,7 +1812,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                             studyIndexRef.current = newIdx; setStudyIndex(newIdx);
                             setExpandedNote(null);
                             if (isEditing) cancelEditing(); if (splitMode) cancelSplit();
-                            setHash(video.id, subtitles[newIdx].index, false, "study");
+                            setHash(video.id, subtitles[newIdx].index, false, "edit");
                             if (loopTargetRef.current && playerInstanceRef.current) {
                               const s = subtitles[newIdx];
                               loopTargetRef.current = { start: s.start, end: s.end };
@@ -2067,7 +2076,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                     {/* Permalink */}
                     <button
                       onClick={(e) => {
-                        const url = `${window.location.origin}${window.location.pathname}#v=${video.id}&s=${subtitles[studyIndex].index}&m=study`;
+                        const url = `${window.location.origin}${window.location.pathname}#v=${video.id}&s=${subtitles[studyIndex].index}&m=edit`;
                         navigator.clipboard.writeText(url);
                         e.currentTarget.textContent = "✓ COPIED";
                         setTimeout(() => { e.currentTarget.textContent = "🔗 LINK"; }, 1000);
@@ -3163,7 +3172,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                           studyIndexRef.current = newIdx;
                           setStudyIndex(newIdx);
                           setExpandedNote(null);
-                          setHash(video.id, sub.index, false, "study");
+                          setHash(video.id, sub.index, false, "edit");
                         }
                       } else if (playerInstanceRef.current) {
                         loopTargetRef.current = null;
@@ -3221,7 +3230,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                       onClick={(e) => {
                         e.stopPropagation();
                         let url = `${window.location.origin}${window.location.pathname}#v=${video.id}&s=${sub.index}`;
-                        if (studyMode) url += `&m=study`;
+                        if (studyMode) url += `&m=edit`;
                         navigator.clipboard.writeText(url);
                         e.currentTarget.textContent = "✓";
                         setTimeout(() => { e.currentTarget.textContent = "🔗"; }, 1000);
