@@ -476,6 +476,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   const [studyIndex, setStudyIndex] = useState(0);
   // HUD display toggles — which subtitle lines to show on the windshield overlay
   const [hudDisplay, setHudDisplay] = useState({ original: false, pronunciation: true, translation: false });
+  const [throttleExpanded, setThrottleExpanded] = useState(false);
   const studyModeRef = useRef(false);
   const studyIndexRef = useRef(0);
 
@@ -2058,84 +2059,108 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", padding: "0 12px" }}>
                 <span className="label-plate" style={{ color: T.cockpit.amberText }}>THROTTLE</span>
                 {/* Lever track */}
-                <div
-                  style={{
-                    position: "relative",
-                    width: "44px",
-                    height: "100px",
-                    background: "linear-gradient(180deg, #0e0e1a, #1a1a2c, #0e0e1a)",
-                    borderRadius: "8px",
-                    border: T.cockpit.metalBorder,
-                    boxShadow: "inset 0 2px 8px rgba(0,0,0,0.6), 0 1px 0 rgba(255,255,255,0.03)",
-                    opacity: playerReady ? 1 : 0.4,
-                    touchAction: "none",
-                  }}
-                >
-                  {/* Speed notch marks */}
-                  {[0.5, 0.75, 1, 1.25, 1.5].map((s, i) => {
-                    const y = 8 + ((4 - i) / 4) * (100 - 16);
-                    return (
-                      <div key={s} style={{ position: "absolute", left: 0, right: 0, top: `${y}px`, display: "flex", alignItems: "center", pointerEvents: "none" }}>
-                        <div style={{ width: "6px", height: "1px", background: s === 1 ? T.cockpit.greenText : "rgba(100,100,130,0.4)", marginLeft: "2px" }} />
-                        <div style={{ flex: 1 }} />
-                        <div style={{ width: "6px", height: "1px", background: s === 1 ? T.cockpit.greenText : "rgba(100,100,130,0.4)", marginRight: "2px" }} />
-                      </div>
-                    );
-                  })}
-                  {/* Center rail groove */}
-                  <div style={{
-                    position: "absolute",
-                    left: "50%",
-                    top: "8px",
-                    bottom: "8px",
-                    width: "4px",
-                    marginLeft: "-2px",
-                    background: "linear-gradient(180deg, rgba(0,0,0,0.4), rgba(30,30,50,0.3))",
-                    borderRadius: "2px",
-                    boxShadow: "inset 0 1px 3px rgba(0,0,0,0.5)",
-                    pointerEvents: "none",
-                  }} />
-                  {/* Lever handle — drag target */}
-                  {(() => {
-                    const steps = [0.5, 0.75, 1, 1.25, 1.5];
-                    const idx = steps.indexOf(speed) !== -1 ? steps.indexOf(speed) : 2;
-                    const y = 8 + ((4 - idx) / 4) * (100 - 16);
-                    return (
-                      <div
-                        style={{
-                          position: "absolute",
-                          left: "50%",
-                          top: `${y}px`,
-                          transform: "translate(-50%, -50%)",
-                          width: "36px",
-                          height: "20px",
-                          background: T.cockpit.btnUp,
-                          border: T.cockpit.btnBorder,
-                          borderRadius: "4px",
-                          boxShadow: `${T.cockpit.btnShadow}, 0 0 8px rgba(251,191,36,${speed !== 1 ? "0.15" : "0"})`,
-                          cursor: playerReady ? "grab" : "not-allowed",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          zIndex: 1,
-                        }}
-                        onPointerDown={(e) => {
-                          if (!playerReady) return;
-                          e.preventDefault();
-                          e.stopPropagation();
-                          const handle = e.currentTarget;
-                          handle.setPointerCapture(e.pointerId);
-                          handle.style.cursor = "grabbing";
-                          handle.style.background = T.cockpit.btnDown;
-                          const track = handle.parentElement.getBoundingClientRect();
+                {(() => {
+                  const tw = throttleExpanded ? 72 : 44;
+                  const th = throttleExpanded ? 180 : 100;
+                  const pad = 12;
+                  const steps = [0.5, 0.75, 1, 1.25, 1.5];
+                  const idx = steps.indexOf(speed) !== -1 ? steps.indexOf(speed) : 2;
+                  const handleY = pad + ((4 - idx) / 4) * (th - pad * 2);
+                  return (
+                  <div
+                    style={{
+                      position: "relative",
+                      width: `${tw}px`,
+                      height: `${th}px`,
+                      background: "linear-gradient(180deg, #0e0e1a, #1a1a2c, #0e0e1a)",
+                      borderRadius: "8px",
+                      border: throttleExpanded ? "1px solid rgba(251,191,36,0.25)" : T.cockpit.metalBorder,
+                      boxShadow: throttleExpanded
+                        ? "inset 0 2px 8px rgba(0,0,0,0.6), 0 0 20px rgba(251,191,36,0.1)"
+                        : "inset 0 2px 8px rgba(0,0,0,0.6), 0 1px 0 rgba(255,255,255,0.03)",
+                      opacity: playerReady ? 1 : 0.4,
+                      touchAction: "none",
+                      transition: "width 0.25s ease, height 0.25s ease, box-shadow 0.25s ease, border 0.25s ease",
+                    }}
+                  >
+                    {/* Speed notch marks + labels */}
+                    {steps.map((s, i) => {
+                      const ny = pad + ((4 - i) / 4) * (th - pad * 2);
+                      return (
+                        <div key={s} style={{ position: "absolute", left: 0, right: 0, top: `${ny}px`, display: "flex", alignItems: "center", pointerEvents: "none", transition: "top 0.25s ease" }}>
+                          <div style={{ width: throttleExpanded ? "10px" : "6px", height: "1px", background: s === 1 ? T.cockpit.greenText : "rgba(100,100,130,0.4)", marginLeft: "2px", transition: "width 0.25s ease" }} />
+                          {throttleExpanded && (
+                            <span style={{
+                              fontSize: "10px",
+                              fontFamily: "monospace",
+                              color: s === speed ? T.cockpit.amberText : "rgba(100,100,130,0.5)",
+                              fontWeight: s === speed ? "700" : "400",
+                              marginLeft: "2px",
+                              minWidth: "28px",
+                              transition: "color 0.15s ease",
+                            }}>{s}x</span>
+                          )}
+                          <div style={{ flex: 1 }} />
+                          <div style={{ width: throttleExpanded ? "10px" : "6px", height: "1px", background: s === 1 ? T.cockpit.greenText : "rgba(100,100,130,0.4)", marginRight: "2px", transition: "width 0.25s ease" }} />
+                        </div>
+                      );
+                    })}
+                    {/* Center rail groove */}
+                    <div style={{
+                      position: "absolute",
+                      left: "50%",
+                      top: `${pad}px`,
+                      bottom: `${pad}px`,
+                      width: "4px",
+                      marginLeft: "-2px",
+                      background: "linear-gradient(180deg, rgba(0,0,0,0.4), rgba(30,30,50,0.3))",
+                      borderRadius: "2px",
+                      boxShadow: "inset 0 1px 3px rgba(0,0,0,0.5)",
+                      pointerEvents: "none",
+                    }} />
+                    {/* Lever handle — drag target */}
+                    <div
+                      style={{
+                        position: "absolute",
+                        left: "50%",
+                        top: `${handleY}px`,
+                        transform: "translate(-50%, -50%)",
+                        width: throttleExpanded ? "48px" : "36px",
+                        height: throttleExpanded ? "28px" : "20px",
+                        background: T.cockpit.btnUp,
+                        border: T.cockpit.btnBorder,
+                        borderRadius: "4px",
+                        boxShadow: `${T.cockpit.btnShadow}, 0 0 8px rgba(251,191,36,${speed !== 1 ? "0.15" : "0"})`,
+                        cursor: playerReady ? "grab" : "not-allowed",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        zIndex: 1,
+                        transition: "top 0.15s ease, width 0.25s ease, height 0.25s ease",
+                      }}
+                      onPointerDown={(e) => {
+                        if (!playerReady) return;
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setThrottleExpanded(true);
+                        const handle = e.currentTarget;
+                        handle.setPointerCapture(e.pointerId);
+                        handle.style.cursor = "grabbing";
+                        handle.style.background = T.cockpit.btnDown;
+                        // Use rAF to get the expanded track rect after state update
+                        requestAnimationFrame(() => {
+                          const trackEl = handle.parentElement;
                           const onMove = (ev) => {
-                            const ratio = 1 - Math.max(0, Math.min(1, (ev.clientY - track.top - 8) / (track.height - 16)));
+                            const rect = trackEl.getBoundingClientRect();
+                            const ePad = 12;
+                            const ratio = 1 - Math.max(0, Math.min(1, (ev.clientY - rect.top - ePad) / (rect.height - ePad * 2)));
                             const si = Math.round(ratio * (steps.length - 1));
                             updateSpeed(steps[si]);
                           };
                           const onUp = () => {
                             handle.style.cursor = "grab";
                             handle.style.background = T.cockpit.btnUp;
+                            setThrottleExpanded(false);
                             handle.removeEventListener("pointermove", onMove);
                             handle.removeEventListener("pointerup", onUp);
                             handle.removeEventListener("pointercancel", onUp);
@@ -2143,18 +2168,19 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                           handle.addEventListener("pointermove", onMove);
                           handle.addEventListener("pointerup", onUp);
                           handle.addEventListener("pointercancel", onUp);
-                        }}
-                      >
-                        {/* Grip lines */}
-                        <div style={{ display: "flex", flexDirection: "column", gap: "2px", pointerEvents: "none" }}>
-                          {[0,1,2].map(i => (
-                            <div key={i} style={{ width: "14px", height: "1px", background: "rgba(180,180,200,0.25)", borderRadius: "1px" }} />
-                          ))}
-                        </div>
+                        });
+                      }}
+                    >
+                      {/* Grip lines */}
+                      <div style={{ display: "flex", flexDirection: "column", gap: throttleExpanded ? "3px" : "2px", pointerEvents: "none", transition: "gap 0.25s ease" }}>
+                        {[0,1,2].map(i => (
+                          <div key={i} style={{ width: throttleExpanded ? "22px" : "14px", height: "1px", background: "rgba(180,180,200,0.25)", borderRadius: "1px", transition: "width 0.25s ease" }} />
+                        ))}
                       </div>
-                    );
-                  })()}
-                </div>
+                    </div>
+                  </div>
+                  );
+                })()}
                 {/* Speed readout */}
                 <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
                   <span className={`led ${speed !== 1 ? "led-amber" : "led-green"}`} />
