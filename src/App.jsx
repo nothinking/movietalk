@@ -187,6 +187,85 @@ const GlobalStyles = () => (
       text-transform: uppercase;
       box-shadow: inset 0 1px 2px rgba(0,0,0,0.4);
     }
+    /* ── FIDS (Flight Information Display System) ── */
+    .fids-board {
+      position: relative;
+      background: #020204;
+      border: 2px solid rgba(40,40,55,0.8);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.8), inset 0 0 40px rgba(0,0,0,0.5);
+    }
+    .fids-board::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent, transparent 2px,
+        rgba(0,0,0,0.15) 2px, rgba(0,0,0,0.15) 4px
+      );
+      pointer-events: none;
+      z-index: 2;
+    }
+    .fids-board::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.4) 100%);
+      pointer-events: none;
+      z-index: 3;
+    }
+    @keyframes fidsScanBeam {
+      0% { top: -4px; }
+      100% { top: 100%; }
+    }
+    .fids-scan {
+      position: absolute;
+      left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(180deg, transparent, rgba(99,102,241,0.08), transparent);
+      z-index: 4;
+      animation: fidsScanBeam 4s linear infinite;
+      pointer-events: none;
+    }
+    .fids-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      background: linear-gradient(90deg, rgba(20,20,35,0.9), rgba(15,15,25,0.7));
+      border-bottom: 1px solid rgba(60,60,80,0.4);
+      position: relative;
+      z-index: 1;
+    }
+    .fids-tag {
+      display: inline-block;
+      padding: 1px 6px;
+      background: rgba(0,0,0,0.5);
+      border: 1px solid rgba(70,70,90,0.5);
+      border-radius: 2px;
+      font-size: 9px;
+      font-family: 'Courier New', monospace;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .fids-content {
+      position: relative;
+      z-index: 1;
+      padding: 14px 16px;
+      font-family: 'Courier New', monospace;
+    }
+    .fids-status {
+      font-size: 9px;
+      font-family: 'Courier New', monospace;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 4px 12px 6px;
+      position: relative;
+      z-index: 1;
+    }
     /* Gauge bezel */
     .gauge-bezel {
       background: linear-gradient(180deg, #252535, #1a1a28);
@@ -1066,19 +1145,20 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   };
 
   const [splitMode, setSplitMode] = useState(false);
-  const [splitPoint, setSplitPoint] = useState(null);
+  const [splitPoints, setSplitPoints] = useState({ text: null, pronunciation: null, translation: null });
   const [isSplitting, setIsSplitting] = useState(false);
+  const splitAllSelected = splitPoints.text != null && splitPoints.pronunciation != null && splitPoints.translation != null;
 
   const startSplit = () => {
     setSplitMode(true);
-    setSplitPoint(null);
+    setSplitPoints({ text: null, pronunciation: null, translation: null });
   };
   const cancelSplit = () => {
     setSplitMode(false);
-    setSplitPoint(null);
+    setSplitPoints({ text: null, pronunciation: null, translation: null });
   };
   const confirmSplit = async () => {
-    if (splitPoint == null) return;
+    if (!splitAllSelected) return;
     const sub = subtitles[studyIndexRef.current];
     if (!sub) return;
 
@@ -1087,24 +1167,32 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
       let newSubtitles;
 
       if (user && supabase) {
-        // === Supabase 모드: 클라이언트에서 분리 ===
         newSubtitles = [...subtitles];
         const idx = studyIndexRef.current;
+
+        // Split text by word index
         const words = sub.text.split(/\s+/);
-        const textA = words.slice(0, splitPoint).join(" ");
-        const textB = words.slice(splitPoint).join(" ");
+        const textA = words.slice(0, splitPoints.text).join(" ");
+        const textB = words.slice(splitPoints.text).join(" ");
         const ratio = textA.length / (textA.length + textB.length);
         const duration = sub.end - sub.start;
         const midTime = Math.round((sub.start + duration * ratio) * 100) / 100;
 
-        const splitField = (text) => {
-          if (!text) return [undefined, undefined];
-          const fw = text.split(/\s+/);
-          const r = Math.max(1, Math.min(fw.length - 1, Math.round(fw.length * ratio)));
-          return [fw.slice(0, r).join(" "), fw.slice(r).join(" ")];
-        };
-        const [pronA, pronB] = splitField(sub.pronunciation);
-        const [transA, transB] = splitField(sub.translation);
+        // Split pronunciation by its own word index
+        let pronA, pronB;
+        if (sub.pronunciation) {
+          const pw = sub.pronunciation.split(/\s+/);
+          pronA = pw.slice(0, splitPoints.pronunciation).join(" ");
+          pronB = pw.slice(splitPoints.pronunciation).join(" ");
+        }
+
+        // Split translation by its own word index
+        let transA, transB;
+        if (sub.translation) {
+          const tw = sub.translation.split(/\s+/);
+          transA = tw.slice(0, splitPoints.translation).join(" ");
+          transB = tw.slice(splitPoints.translation).join(" ");
+        }
 
         const subA = { ...sub, text: textA, end: midTime };
         const subB = { text: textB, start: midTime, end: sub.end };
@@ -1120,11 +1208,10 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
 
         await saveToSupabase(newSubtitles);
       } else {
-        // === 레거시 모드 ===
         const res = await fetch(`/api/subtitle/split/${video.id}/${sub.index}`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ splitAfterWord: splitPoint }),
+          body: JSON.stringify({ splitAfterWord: splitPoints.text }),
         });
         if (!res.ok) throw new Error("분리 실패");
         const result = await res.json();
@@ -1142,7 +1229,26 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
     } finally {
       setIsSplitting(false);
       setSplitMode(false);
-      setSplitPoint(null);
+      setSplitPoints({ text: null, pronunciation: null, translation: null });
+    }
+  };
+
+  // 발음포인트 삭제
+  const deleteNote = async (noteIndex) => {
+    if (!confirm("이 발음 포인트를 삭제하시겠습니까?")) return;
+    try {
+      if (user && supabase) {
+        const newSubtitles = [...subtitles];
+        const sub = { ...newSubtitles[studyIndexRef.current] };
+        sub.notes = sub.notes.filter((_, i) => i !== noteIndex);
+        if (sub.notes.length === 0) delete sub.notes;
+        newSubtitles[studyIndexRef.current] = sub;
+        await saveToSupabase(newSubtitles);
+        if (onMergeSubtitles) onMergeSubtitles(newSubtitles);
+      }
+      setExpandedNote(null);
+    } catch (err) {
+      alert("삭제 실패: " + err.message);
     }
   };
 
@@ -1235,7 +1341,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
             }}
           >
             <span className={`led ${studyMode ? "led-amber" : "led-blue"}`} style={{ marginRight: "4px" }} />
-            {studyMode ? "FLIGHT" : "SIM"}
+            {studyMode ? "FLIGHT" : "EDIT"}
           </button>
         )}
       </div>
@@ -1366,355 +1472,615 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
           {/* Study Mode */}
           {studyMode && subtitles[studyIndex] && (
             <div style={{ padding: "20px", animation: `slideUp 0.3s ${T.ease}` }}>
-              {/* Navigation */}
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  marginBottom: "20px",
-                }}
-              >
-                <button
-                  onClick={() => {
-                    const newIdx = Math.max(0, studyIndex - 1);
-                    studyIndexRef.current = newIdx;
-                    setStudyIndex(newIdx);
-                    setExpandedNote(null);
-                    if (isEditing) cancelEditing();
-                    if (splitMode) cancelSplit();
-                    setHash(video.id, subtitles[newIdx].index, false, "study");
-                    if (loopTargetRef.current && playerInstanceRef.current) {
-                      const newSub = subtitles[newIdx];
-                      loopTargetRef.current = { start: newSub.start, end: newSub.end };
-                      playerInstanceRef.current.seekTo(newSub.start);
-                      playerInstanceRef.current.playVideo();
-                    }
-                  }}
-                  disabled={studyIndex === 0}
-                  style={{
-                    background: T.surface,
-                    border: `1px solid ${T.border}`,
-                    color: studyIndex === 0 ? T.textMuted : T.accentLight,
-                    cursor: studyIndex === 0 ? "not-allowed" : "pointer",
-                    padding: "10px 20px",
-                    borderRadius: T.radius.sm,
-                    fontSize: "14px",
-                    fontWeight: "600",
-                    opacity: studyIndex === 0 ? 0.5 : 1,
-                    transition: `all 0.2s ${T.ease}`,
-                  }}
-                >
-                  ← 이전
-                </button>
-                <span style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <span
-                    style={{
-                      fontSize: "14px",
-                      color: T.textSec,
-                      fontWeight: "600",
-                      fontFamily: "monospace",
-                      fontVariantNumeric: "tabular-nums",
-                    }}
-                  >
-                    {studyIndex + 1} / {subtitles.length}
+              {/* Navigation removed — moved to control panel */}
+
+              {/* ═══ UNIFIED FIDS DISPLAY BOARD ═══ */}
+              <div className="fids-board" style={{ marginBottom: "0" }}>
+                <div className="fids-scan" />
+
+                {/* ── ORIGINAL ── */}
+                <div className="fids-header">
+                  <span className="fids-tag" style={{ color: splitMode ? T.cockpit.redText : "#8b9cf7", borderColor: splitMode ? "rgba(239,68,68,0.3)" : "rgba(99,102,241,0.3)" }}>
+                    {splitMode ? "✂ CUT" : "TXT"}
                   </span>
-                  <button
-                    onClick={(e) => {
-                      const url = `${window.location.origin}${window.location.pathname}#v=${video.id}&s=${subtitles[studyIndex].index}&m=study`;
-                      navigator.clipboard.writeText(url);
-                      e.currentTarget.textContent = "✓";
-                      setTimeout(() => { e.currentTarget.textContent = "🔗"; }, 1000);
-                    }}
-                    style={{
-                      background: "transparent", border: "none", color: T.textMuted,
-                      cursor: "pointer", fontSize: "13px", padding: "2px 4px",
-                      transition: `color 0.2s ${T.ease}`,
-                    }}
-                    onMouseEnter={(e) => { e.currentTarget.style.color = T.accent; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.color = T.textMuted; }}
-                    title="학습 퍼머링크 복사"
-                  >
-                    🔗
-                  </button>
-                </span>
-                <button
-                  onClick={() => {
-                    const newIdx = Math.min(subtitles.length - 1, studyIndex + 1);
-                    studyIndexRef.current = newIdx;
-                    setStudyIndex(newIdx);
-                    setExpandedNote(null);
-                    if (isEditing) cancelEditing();
-                    if (splitMode) cancelSplit();
-                    setHash(video.id, subtitles[newIdx].index, false, "study");
-                    if (loopTargetRef.current && playerInstanceRef.current) {
-                      const newSub = subtitles[newIdx];
-                      loopTargetRef.current = { start: newSub.start, end: newSub.end };
-                      playerInstanceRef.current.seekTo(newSub.start);
-                      playerInstanceRef.current.playVideo();
-                    }
-                  }}
-                  disabled={studyIndex === subtitles.length - 1}
-                  style={{
-                    background: T.surface,
-                    border: `1px solid ${T.border}`,
-                    color: studyIndex === subtitles.length - 1 ? T.textMuted : T.accentLight,
-                    cursor: studyIndex === subtitles.length - 1 ? "not-allowed" : "pointer",
-                    padding: "10px 20px",
-                    borderRadius: T.radius.sm,
-                    fontSize: "14px",
-                    fontWeight: "600",
-                    opacity: studyIndex === subtitles.length - 1 ? 0.5 : 1,
-                    transition: `all 0.2s ${T.ease}`,
-                  }}
-                >
-                  다음 →
-                </button>
-              </div>
-
-              {/* Original */}
-              <div style={{ background: splitMode ? "rgba(17,17,37,0.6)" : T.surface, backdropFilter: T.blur, WebkitBackdropFilter: T.blur, borderRadius: T.radius.lg, padding: "20px", marginBottom: "12px", border: splitMode ? `1px solid ${T.borderHover}` : `1px solid ${T.border}`, transition: `all 0.3s ${T.ease}`, boxShadow: splitMode ? T.glow : T.shadow1 }}>
-                <div style={{ fontSize: "11px", color: T.accent, fontWeight: "700", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "10px", opacity: 0.9 }}>
-                  {splitMode ? "✂️ 분리할 위치를 선택하세요" : "Original"}
+                  <span style={{ fontSize: "9px", fontFamily: "'Courier New', monospace", color: splitMode ? T.cockpit.redText : "rgba(139,156,247,0.6)", letterSpacing: "0.1em", fontWeight: "600" }}>
+                    {splitMode ? "SELECT SPLIT POINT" : "ORIGINAL"}
+                  </span>
+                  {splitMode && splitPoints.text != null && <span className="led led-green" style={{ marginLeft: "auto" }} />}
                 </div>
-                {splitMode ? (
-                  <div style={{ fontSize: "18px", fontWeight: "600", lineHeight: "2", color: "#fff", display: "flex", flexWrap: "wrap", gap: "0px", alignItems: "center" }}>
-                    {subtitles[studyIndex].text.split(/\s+/).map((word, wi, arr) => (
-                      <span key={wi} style={{ display: "inline-flex", alignItems: "center" }}>
-                        <span style={{
-                          padding: "2px 4px", borderRadius: "4px",
-                          background: splitPoint != null && wi < splitPoint ? "#1a1a4e" : "transparent",
-                          color: splitPoint != null && wi < splitPoint ? "#a5b4fc" : "#fff",
-                        }}>{word}</span>
-                        {wi < arr.length - 1 && (
-                          <button
-                            onClick={() => setSplitPoint(wi + 1)}
-                            style={{
-                              background: splitPoint === wi + 1 ? "#ef4444" : "#2a2a3e",
-                              border: "none",
-                              color: splitPoint === wi + 1 ? "#fff" : "#666",
-                              cursor: "pointer",
-                              padding: "0 3px",
-                              margin: "0 2px",
-                              borderRadius: "3px",
-                              fontSize: "16px",
-                              lineHeight: "1.4",
-                              minWidth: "16px",
-                              fontWeight: "900",
-                            }}
-                            title={`"${arr.slice(0, wi + 1).join(' ')}" | "${arr.slice(wi + 1).join(' ')}"`}
-                          >|</button>
-                        )}
-                      </span>
-                    ))}
-                  </div>
-                ) : (
-                  <div style={{ fontSize: "18px", fontWeight: "600", lineHeight: "1.5", color: "#fff" }}>
-                    {subtitles[studyIndex].text}
-                  </div>
-                )}
-                {splitMode && (
-                  <div style={{ display: "flex", gap: "8px", marginTop: "14px" }}>
-                    <button
-                      onClick={confirmSplit}
-                      disabled={splitPoint == null || isSplitting}
-                      style={{
-                        flex: 1, background: splitPoint != null ? "#ef4444" : "#333", border: "none", color: "#fff",
-                        padding: "10px", borderRadius: "8px", cursor: splitPoint != null && !isSplitting ? "pointer" : "not-allowed",
-                        fontSize: "13px", fontWeight: "700", opacity: splitPoint != null ? 1 : 0.4,
-                      }}
-                    >
-                      {isSplitting ? "분리 중..." : "✂️ 여기서 분리"}
-                    </button>
-                    <button
-                      onClick={cancelSplit}
-                      style={{
-                        flex: 1, background: "#1a1a2e", border: "1px solid #2a2a3e", color: "#888",
-                        padding: "10px", borderRadius: "8px", cursor: "pointer", fontSize: "13px", fontWeight: "600",
-                      }}
-                    >취소</button>
-                  </div>
-                )}
-              </div>
-
-              {/* Pronunciation + Translation */}
-              {hasPronunciation && (
-                <>
-                  <div style={{ background: "linear-gradient(135deg, rgba(26,21,32,0.6), rgba(26,26,46,0.6))", backdropFilter: T.blur, WebkitBackdropFilter: T.blur, borderRadius: T.radius.lg, padding: "20px", marginBottom: "12px", border: "1px solid rgba(251,191,36,0.12)", boxShadow: T.glowGold }}>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
-                      <div style={{ fontSize: "11px", color: T.gold, fontWeight: "700", textTransform: "uppercase", letterSpacing: "1.5px" }}>
-                        🔊 실제 발음
-                      </div>
-                      {!isEditing && !splitMode && canEdit && (
-                        <span style={{ display: "flex", gap: "4px", alignItems: "center" }}>
-                          {studyIndex > 0 && (
+                <div className="fids-content">
+                  {splitMode ? (
+                    <div style={{ fontSize: "18px", fontWeight: "700", lineHeight: "2.2", color: "#a5b4fc", display: "flex", flexWrap: "wrap", gap: "0px", alignItems: "center", textShadow: "0 0 12px rgba(99,102,241,0.5), 0 0 30px rgba(99,102,241,0.15)" }}>
+                      {subtitles[studyIndex].text.split(/\s+/).map((word, wi, arr) => (
+                        <span key={wi} style={{ display: "inline-flex", alignItems: "center" }}>
+                          <span style={{
+                            padding: "2px 5px", borderRadius: "2px",
+                            background: splitPoints.text != null && wi < splitPoints.text ? "rgba(99,102,241,0.2)" : "transparent",
+                            color: splitPoints.text != null && wi < splitPoints.text ? "#c4b5fd" : "#a5b4fc",
+                            transition: "all 0.15s ease",
+                          }}>{word}</span>
+                          {wi < arr.length - 1 && (
                             <button
-                              onClick={mergeWithPrev}
-                              disabled={isMerging}
-                              style={{ background: "none", border: "none", color: "#555", cursor: isMerging ? "not-allowed" : "pointer", fontSize: "13px", padding: "2px 6px", opacity: isMerging ? 0.5 : 1 }}
-                              title="이전 문장에 합치기"
-                            >
-                              {isMerging ? "..." : "⤴"}
-                            </button>
+                              onClick={() => setSplitPoints(p => ({ ...p, text: wi + 1 }))}
+                              style={{
+                                background: splitPoints.text === wi + 1 ? "#ef4444" : "rgba(30,30,45,0.8)",
+                                border: splitPoints.text === wi + 1 ? "1px solid #ef4444" : "1px solid rgba(60,60,80,0.4)",
+                                color: splitPoints.text === wi + 1 ? "#fff" : "rgba(100,100,130,0.5)",
+                                cursor: "pointer", padding: "0 3px", margin: "0 2px",
+                                borderRadius: "2px", fontSize: "16px", lineHeight: "1.4",
+                                minWidth: "16px", fontWeight: "900",
+                                boxShadow: splitPoints.text === wi + 1 ? "0 0 8px rgba(239,68,68,0.4)" : "none",
+                              }}
+                              title={`"${arr.slice(0, wi + 1).join(' ')}" | "${arr.slice(wi + 1).join(' ')}"`}
+                            >|</button>
                           )}
-                          {subtitles[studyIndex].text.split(/\s+/).length >= 2 && (
-                            <button
-                              onClick={startSplit}
-                              style={{ background: "none", border: "none", color: "#555", cursor: "pointer", fontSize: "13px", padding: "2px 6px" }}
-                              title="문장 분리"
-                            >
-                              ✂️
-                            </button>
-                          )}
-                          <button
-                            onClick={startEditing}
-                            style={{ background: "none", border: "none", color: "#666", cursor: "pointer", fontSize: "14px", padding: "2px 6px" }}
-                          >
-                            ✏️
-                          </button>
                         </span>
+                      ))}
+                    </div>
+                  ) : (
+                    <div style={{ fontSize: "18px", fontWeight: "700", lineHeight: "1.6", color: "#a5b4fc", letterSpacing: "0.02em", textShadow: "0 0 12px rgba(99,102,241,0.5), 0 0 30px rgba(99,102,241,0.15)" }}>
+                      {subtitles[studyIndex].text}
+                    </div>
+                  )}
+                </div>
+                {splitMode && (
+                  <div className="fids-status" style={{ color: splitPoints.text != null ? "#34d399" : "rgba(100,100,130,0.5)", borderTop: "1px solid rgba(40,40,55,0.5)" }}>
+                    {splitPoints.text != null ? "● CONFIRMED" : "○ AWAITING INPUT"}
+                  </div>
+                )}
+
+                {/* ── PRONUNCIATION ── */}
+                {hasPronunciation && (
+                  <>
+                    <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, rgba(80,80,100,0.3), transparent)" }} />
+                    <div className="fids-header">
+                      <span className="fids-tag" style={{ color: splitMode ? T.cockpit.redText : "#fbbf24", borderColor: splitMode ? "rgba(239,68,68,0.3)" : "rgba(251,191,36,0.3)" }}>
+                        {splitMode ? "✂ CUT" : "🔊"}
+                      </span>
+                      <span style={{ fontSize: "9px", fontFamily: "'Courier New', monospace", color: splitMode ? T.cockpit.redText : "rgba(251,191,36,0.6)", letterSpacing: "0.1em", fontWeight: "600" }}>
+                        {splitMode ? "SELECT SPLIT POINT" : "PRONUNCIATION"}
+                      </span>
+                      {splitMode && splitPoints.pronunciation != null && <span className="led led-green" style={{ marginLeft: "auto" }} />}
+                    </div>
+                    <div className="fids-content">
+                      {isEditing ? (
+                        <input
+                          type="text"
+                          value={editData.pronunciation}
+                          onChange={(e) => setEditData({ ...editData, pronunciation: e.target.value })}
+                          style={{
+                            width: "100%", background: "transparent", border: "none",
+                            padding: "0", color: "#fbbf24", fontSize: "20px", fontWeight: "700",
+                            fontFamily: "'Courier New', monospace",
+                            outline: "none", boxSizing: "border-box", textShadow: "0 0 12px rgba(251,191,36,0.5), 0 0 30px rgba(251,191,36,0.15)",
+                          }}
+                        />
+                      ) : splitMode && subtitles[studyIndex].pronunciation ? (
+                        <div style={{ fontSize: "20px", fontWeight: "700", lineHeight: "2.2", color: "#fbbf24", display: "flex", flexWrap: "wrap", gap: "0px", alignItems: "center", textShadow: "0 0 12px rgba(251,191,36,0.5), 0 0 30px rgba(251,191,36,0.15)" }}>
+                          {subtitles[studyIndex].pronunciation.split(/\s+/).map((word, wi, arr) => (
+                            <span key={wi} style={{ display: "inline-flex", alignItems: "center" }}>
+                              <span style={{
+                                padding: "2px 5px", borderRadius: "2px",
+                                background: splitPoints.pronunciation != null && wi < splitPoints.pronunciation ? "rgba(251,191,36,0.15)" : "transparent",
+                                transition: "all 0.15s ease",
+                              }}>{word}</span>
+                              {wi < arr.length - 1 && (
+                                <button
+                                  onClick={() => setSplitPoints(p => ({ ...p, pronunciation: wi + 1 }))}
+                                  style={{
+                                    background: splitPoints.pronunciation === wi + 1 ? "#ef4444" : "rgba(30,30,45,0.8)",
+                                    border: splitPoints.pronunciation === wi + 1 ? "1px solid #ef4444" : "1px solid rgba(60,60,80,0.4)",
+                                    color: splitPoints.pronunciation === wi + 1 ? "#fff" : "rgba(100,100,130,0.5)",
+                                    cursor: "pointer", padding: "0 3px", margin: "0 2px",
+                                    borderRadius: "2px", fontSize: "16px", lineHeight: "1.4",
+                                    minWidth: "16px", fontWeight: "900",
+                                    boxShadow: splitPoints.pronunciation === wi + 1 ? "0 0 8px rgba(239,68,68,0.4)" : "none",
+                                  }}
+                                  title={`"${arr.slice(0, wi + 1).join(' ')}" | "${arr.slice(wi + 1).join(' ')}"`}
+                                >|</button>
+                              )}
+                            </span>
+                          ))}
+                        </div>
+                      ) : (
+                        <div style={{ fontSize: "20px", fontWeight: "700", lineHeight: "1.6", color: "#fbbf24", textShadow: "0 0 12px rgba(251,191,36,0.5), 0 0 30px rgba(251,191,36,0.15)" }}>
+                          {subtitles[studyIndex].pronunciation}
+                        </div>
                       )}
                     </div>
-                    {isEditing ? (
-                      <input
-                        type="text"
-                        value={editData.pronunciation}
-                        onChange={(e) => setEditData({ ...editData, pronunciation: e.target.value })}
-                        style={{
-                          width: "100%", background: "#0d0d15", border: "1px solid #fbbf24", borderRadius: "8px",
-                          padding: "10px 12px", color: "#fbbf24", fontSize: "20px", fontWeight: "700",
-                          outline: "none", boxSizing: "border-box",
-                        }}
-                      />
-                    ) : (
-                      <div style={{ fontSize: "20px", fontWeight: "700", lineHeight: "1.5", color: "#fbbf24" }}>
-                        {subtitles[studyIndex].pronunciation}
+                    {splitMode && (
+                      <div className="fids-status" style={{ color: splitPoints.pronunciation != null ? "#34d399" : "rgba(100,100,130,0.5)", borderTop: "1px solid rgba(40,40,55,0.5)" }}>
+                        {splitPoints.pronunciation != null ? "● CONFIRMED" : "○ AWAITING INPUT"}
                       </div>
                     )}
-                  </div>
 
-                  <div style={{ background: T.surface, backdropFilter: T.blur, WebkitBackdropFilter: T.blur, borderRadius: T.radius.lg, padding: "20px", marginBottom: isEditing ? "12px" : "16px", border: `1px solid ${T.border}`, boxShadow: T.shadow1 }}>
-                    <div style={{ fontSize: "11px", color: T.green, fontWeight: "700", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "10px", opacity: 0.9 }}>
-                      🇰🇷 해석
+                    {/* ── TRANSLATION ── */}
+                    <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, rgba(80,80,100,0.3), transparent)" }} />
+                    <div className="fids-header">
+                      <span className="fids-tag" style={{ color: splitMode ? T.cockpit.redText : "#34d399", borderColor: splitMode ? "rgba(239,68,68,0.3)" : "rgba(52,211,153,0.3)" }}>
+                        {splitMode ? "✂ CUT" : "🇰🇷"}
+                      </span>
+                      <span style={{ fontSize: "9px", fontFamily: "'Courier New', monospace", color: splitMode ? T.cockpit.redText : "rgba(52,211,153,0.6)", letterSpacing: "0.1em", fontWeight: "600" }}>
+                        {splitMode ? "SELECT SPLIT POINT" : "TRANSLATION"}
+                      </span>
+                      {splitMode && splitPoints.translation != null && <span className="led led-green" style={{ marginLeft: "auto" }} />}
                     </div>
-                    {isEditing ? (
-                      <input
-                        type="text"
-                        value={editData.translation}
-                        onChange={(e) => setEditData({ ...editData, translation: e.target.value })}
-                        style={{
-                          width: "100%", background: "#0d0d15", border: "1px solid #34d399", borderRadius: "8px",
-                          padding: "10px 12px", color: "#a5f3c4", fontSize: "17px", fontWeight: "500",
-                          outline: "none", boxSizing: "border-box",
-                        }}
-                      />
-                    ) : (
-                      <div style={{ fontSize: "17px", fontWeight: "500", lineHeight: "1.5", color: "#a5f3c4" }}>
-                        {subtitles[studyIndex].translation}
+                    <div className="fids-content">
+                      {isEditing ? (
+                        <input
+                          type="text"
+                          value={editData.translation}
+                          onChange={(e) => setEditData({ ...editData, translation: e.target.value })}
+                          style={{
+                            width: "100%", background: "transparent", border: "none",
+                            padding: "0", color: "#a5f3c4", fontSize: "17px", fontWeight: "600",
+                            fontFamily: "'Courier New', monospace",
+                            outline: "none", boxSizing: "border-box", textShadow: "0 0 12px rgba(52,211,153,0.5), 0 0 30px rgba(52,211,153,0.15)",
+                          }}
+                        />
+                      ) : splitMode && subtitles[studyIndex].translation ? (
+                        <div style={{ fontSize: "17px", fontWeight: "600", lineHeight: "2.2", color: "#a5f3c4", display: "flex", flexWrap: "wrap", gap: "0px", alignItems: "center", textShadow: "0 0 12px rgba(52,211,153,0.5), 0 0 30px rgba(52,211,153,0.15)" }}>
+                          {subtitles[studyIndex].translation.split(/\s+/).map((word, wi, arr) => (
+                            <span key={wi} style={{ display: "inline-flex", alignItems: "center" }}>
+                              <span style={{
+                                padding: "2px 5px", borderRadius: "2px",
+                                background: splitPoints.translation != null && wi < splitPoints.translation ? "rgba(52,211,153,0.15)" : "transparent",
+                                transition: "all 0.15s ease",
+                              }}>{word}</span>
+                              {wi < arr.length - 1 && (
+                                <button
+                                  onClick={() => setSplitPoints(p => ({ ...p, translation: wi + 1 }))}
+                                  style={{
+                                    background: splitPoints.translation === wi + 1 ? "#ef4444" : "rgba(30,30,45,0.8)",
+                                    border: splitPoints.translation === wi + 1 ? "1px solid #ef4444" : "1px solid rgba(60,60,80,0.4)",
+                                    color: splitPoints.translation === wi + 1 ? "#fff" : "rgba(100,100,130,0.5)",
+                                    cursor: "pointer", padding: "0 3px", margin: "0 2px",
+                                    borderRadius: "2px", fontSize: "16px", lineHeight: "1.4",
+                                    minWidth: "16px", fontWeight: "900",
+                                    boxShadow: splitPoints.translation === wi + 1 ? "0 0 8px rgba(239,68,68,0.4)" : "none",
+                                  }}
+                                  title={`"${arr.slice(0, wi + 1).join(' ')}" | "${arr.slice(wi + 1).join(' ')}"`}
+                                >|</button>
+                              )}
+                            </span>
+                          ))}
+                        </div>
+                      ) : (
+                        <div style={{ fontSize: "17px", fontWeight: "600", lineHeight: "1.6", color: "#a5f3c4", textShadow: "0 0 12px rgba(52,211,153,0.5), 0 0 30px rgba(52,211,153,0.15)" }}>
+                          {subtitles[studyIndex].translation}
+                        </div>
+                      )}
+                    </div>
+                    {splitMode && (
+                      <div className="fids-status" style={{ color: splitPoints.translation != null ? "#34d399" : "rgba(100,100,130,0.5)", borderTop: "1px solid rgba(40,40,55,0.5)" }}>
+                        {splitPoints.translation != null ? "● CONFIRMED" : "○ AWAITING INPUT"}
                       </div>
                     )}
-                  </div>
 
-                  {/* Timing edit in edit mode */}
-                  {isEditing && (
-                    <div style={{ background: T.surface, backdropFilter: T.blur, WebkitBackdropFilter: T.blur, borderRadius: T.radius.lg, padding: "20px", marginBottom: "12px", border: `1px solid ${T.border}`, boxShadow: T.shadow1 }}>
-                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
-                        <div style={{ fontSize: "11px", color: "#f59e0b", fontWeight: "700", textTransform: "uppercase", letterSpacing: "1px" }}>
-                          ⏱ 타이밍 (초)
-                        </div>
+                    {/* ── TIMING ── */}
+                    <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, rgba(80,80,100,0.3), transparent)" }} />
+                    <div className="fids-header" style={{ justifyContent: "space-between" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                        <span className="fids-tag" style={{ color: T.cockpit.amberText, borderColor: "rgba(251,191,36,0.3)" }}>⏱</span>
+                        <span style={{ fontSize: "9px", fontFamily: "'Courier New', monospace", color: "rgba(251,191,36,0.6)", letterSpacing: "0.1em", fontWeight: "600" }}>TIMING</span>
+                      </div>
+                      {isEditing && (
                         <button
                           onClick={() => setLinkAdjacent(!linkAdjacent)}
                           style={{
-                            background: linkAdjacent ? "#292524" : "#1a1a2e",
-                            border: linkAdjacent ? "1px solid #f59e0b" : "1px solid #333",
-                            color: linkAdjacent ? "#fbbf24" : "#666",
-                            padding: "3px 8px",
-                            borderRadius: "6px",
+                            background: linkAdjacent ? "rgba(251,191,36,0.1)" : "transparent",
+                            border: linkAdjacent ? "1px solid rgba(251,191,36,0.4)" : "1px solid rgba(60,60,80,0.4)",
+                            color: linkAdjacent ? "#fbbf24" : "rgba(100,100,130,0.5)",
+                            padding: "2px 8px",
+                            borderRadius: "2px",
                             cursor: "pointer",
-                            fontSize: "11px",
-                            fontWeight: "600",
+                            fontSize: "9px",
+                            fontFamily: "'Courier New', monospace",
+                            fontWeight: "700",
+                            letterSpacing: "0.05em",
                           }}
                         >
-                          🔗 앞뒤 연동 {linkAdjacent ? "ON" : "OFF"}
+                          LINK {linkAdjacent ? "ON" : "OFF"}
+                        </button>
+                      )}
+                    </div>
+                    <div className="fids-content" style={{ display: "flex", gap: "12px", alignItems: "center" }}>
+                      {isEditing ? (
+                        <>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontSize: "9px", color: "rgba(251,191,36,0.5)", marginBottom: "4px", fontFamily: "'Courier New', monospace", letterSpacing: "0.1em" }}>START</div>
+                            <input
+                              type="number"
+                              step="0.1"
+                              value={editData.start}
+                              onChange={(e) => {
+                                const v = e.target.value;
+                                setEditData({ ...editData, start: v });
+                                if (loopTargetRef.current) {
+                                  loopTargetRef.current = { ...loopTargetRef.current, start: parseFloat(v) || 0 };
+                                }
+                              }}
+                              style={{
+                                width: "100%", background: "rgba(0,0,0,0.4)", border: "1px solid rgba(251,191,36,0.3)", borderRadius: "2px",
+                                padding: "8px 10px", color: "#fbbf24", fontSize: "14px", fontWeight: "700",
+                                fontFamily: "'Courier New', monospace",
+                                outline: "none", boxSizing: "border-box",
+                                textShadow: "0 0 8px rgba(251,191,36,0.4)",
+                              }}
+                            />
+                          </div>
+                          <div style={{ color: "rgba(251,191,36,0.3)", fontSize: "18px", paddingTop: "18px", fontFamily: "'Courier New', monospace" }}>▸</div>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontSize: "9px", color: "rgba(251,191,36,0.5)", marginBottom: "4px", fontFamily: "'Courier New', monospace", letterSpacing: "0.1em" }}>END</div>
+                            <input
+                              type="number"
+                              step="0.1"
+                              value={editData.end}
+                              onChange={(e) => {
+                                const v = e.target.value;
+                                setEditData({ ...editData, end: v });
+                                if (loopTargetRef.current) {
+                                  loopTargetRef.current = { ...loopTargetRef.current, end: parseFloat(v) || 0 };
+                                }
+                              }}
+                              style={{
+                                width: "100%", background: "rgba(0,0,0,0.4)", border: "1px solid rgba(251,191,36,0.3)", borderRadius: "2px",
+                                padding: "8px 10px", color: "#fbbf24", fontSize: "14px", fontWeight: "700",
+                                fontFamily: "'Courier New', monospace",
+                                outline: "none", boxSizing: "border-box",
+                                textShadow: "0 0 8px rgba(251,191,36,0.4)",
+                              }}
+                            />
+                          </div>
+                          <div style={{ color: "rgba(251,191,36,0.4)", fontSize: "12px", paddingTop: "18px", minWidth: "60px", fontFamily: "'Courier New', monospace", fontWeight: "700", textShadow: "0 0 6px rgba(251,191,36,0.3)" }}>
+                            {(parseFloat(editData.end) - parseFloat(editData.start)).toFixed(1)}s
+                          </div>
+                        </>
+                      ) : (
+                        <>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontSize: "9px", color: "rgba(251,191,36,0.5)", marginBottom: "4px", fontFamily: "'Courier New', monospace", letterSpacing: "0.1em" }}>START</div>
+                            <div style={{ color: "#fbbf24", fontSize: "14px", fontWeight: "700", fontFamily: "'Courier New', monospace", textShadow: "0 0 8px rgba(251,191,36,0.4)" }}>
+                              {subtitles[studyIndex].start.toFixed(1)}
+                            </div>
+                          </div>
+                          <div style={{ color: "rgba(251,191,36,0.3)", fontSize: "18px", fontFamily: "'Courier New', monospace" }}>▸</div>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontSize: "9px", color: "rgba(251,191,36,0.5)", marginBottom: "4px", fontFamily: "'Courier New', monospace", letterSpacing: "0.1em" }}>END</div>
+                            <div style={{ color: "#fbbf24", fontSize: "14px", fontWeight: "700", fontFamily: "'Courier New', monospace", textShadow: "0 0 8px rgba(251,191,36,0.4)" }}>
+                              {subtitles[studyIndex].end.toFixed(1)}
+                            </div>
+                          </div>
+                          <div style={{ color: "rgba(251,191,36,0.4)", fontSize: "12px", minWidth: "60px", fontFamily: "'Courier New', monospace", fontWeight: "700", textShadow: "0 0 6px rgba(251,191,36,0.3)" }}>
+                            {(subtitles[studyIndex].end - subtitles[studyIndex].start).toFixed(1)}s
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  </>
+                )}
+              </div>
+
+              {/* ═══ COCKPIT CONTROL PANEL ═══ */}
+              {hasPronunciation && canEdit && (
+                <div className="cockpit-panel" style={{ padding: "18px 16px 14px", marginBottom: "16px" }}>
+                  {/* Row 1: NAV + COMMAND + PLAYBACK + ACTION */}
+                  <div style={{
+                    display: "flex",
+                    alignItems: "stretch",
+                    justifyContent: "space-around",
+                    gap: "0",
+                  }}>
+                    {/* NAV — Prev/Next large + counter below */}
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", padding: "0 8px", flex: "0 0 auto" }}>
+                      <span className="label-plate" style={{ color: T.cockpit.labelColor }}>NAV</span>
+                      <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
+                        <button
+                          onClick={() => {
+                            const newIdx = Math.max(0, studyIndex - 1);
+                            studyIndexRef.current = newIdx; setStudyIndex(newIdx);
+                            setExpandedNote(null);
+                            if (isEditing) cancelEditing(); if (splitMode) cancelSplit();
+                            setHash(video.id, subtitles[newIdx].index, false, "study");
+                            if (loopTargetRef.current && playerInstanceRef.current) {
+                              const s = subtitles[newIdx];
+                              loopTargetRef.current = { start: s.start, end: s.end };
+                              playerInstanceRef.current.seekTo(s.start); playerInstanceRef.current.playVideo();
+                            }
+                          }}
+                          disabled={studyIndex === 0}
+                          className="phys-btn"
+                          style={{
+                            padding: "10px 16px", borderRadius: "6px",
+                            cursor: studyIndex === 0 ? "not-allowed" : "pointer",
+                            fontSize: "16px", fontWeight: "700", opacity: studyIndex === 0 ? 0.4 : 1,
+                            lineHeight: "1",
+                          }}
+                        >◀</button>
+                        <button
+                          onClick={() => {
+                            const newIdx = Math.min(subtitles.length - 1, studyIndex + 1);
+                            studyIndexRef.current = newIdx; setStudyIndex(newIdx);
+                            setExpandedNote(null);
+                            if (isEditing) cancelEditing(); if (splitMode) cancelSplit();
+                            setHash(video.id, subtitles[newIdx].index, false, "study");
+                            if (loopTargetRef.current && playerInstanceRef.current) {
+                              const s = subtitles[newIdx];
+                              loopTargetRef.current = { start: s.start, end: s.end };
+                              playerInstanceRef.current.seekTo(s.start); playerInstanceRef.current.playVideo();
+                            }
+                          }}
+                          disabled={studyIndex === subtitles.length - 1}
+                          className="phys-btn"
+                          style={{
+                            padding: "10px 16px", borderRadius: "6px",
+                            cursor: studyIndex === subtitles.length - 1 ? "not-allowed" : "pointer",
+                            fontSize: "16px", fontWeight: "700",
+                            opacity: studyIndex === subtitles.length - 1 ? 0.4 : 1,
+                            lineHeight: "1",
+                          }}
+                        >▶</button>
+                      </div>
+                      <span style={{
+                        fontSize: "10px", color: T.cockpit.greenText, fontFamily: "monospace",
+                        fontWeight: "700", fontVariantNumeric: "tabular-nums",
+                        textShadow: "0 0 6px rgba(52,211,153,0.4)",
+                      }}>
+                        {studyIndex + 1} / {subtitles.length}
+                      </span>
+                    </div>
+
+                    <div className="panel-seam" />
+
+                    {/* COMMAND — Edit/Split (equal width) */}
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", padding: "0 6px", flex: "1 1 0" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+                        <span className="label-plate" style={{ color: T.cockpit.amberText }}>COMMAND</span>
+                        <span className={`led ${isEditing ? "led-amber" : splitMode ? "led-red led-blink" : "led-off"}`} />
+                      </div>
+                      <div style={{ display: "flex", gap: "6px", justifyContent: "center" }}>
+                        <button
+                          onClick={isEditing ? cancelEditing : startEditing}
+                          disabled={splitMode}
+                          className="phys-btn"
+                          style={{
+                            padding: "10px 16px", borderRadius: "6px", cursor: splitMode ? "not-allowed" : "pointer",
+                            fontSize: "16px", fontWeight: "700", fontFamily: "monospace",
+                            opacity: splitMode ? 0.4 : 1, letterSpacing: "0.05em",
+                            textAlign: "center", lineHeight: "1",
+                          }}
+                        >EDIT</button>
+                        <button
+                          onClick={splitMode ? cancelSplit : startSplit}
+                          disabled={isEditing || subtitles[studyIndex].text.split(/\s+/).length < 2}
+                          className="phys-btn"
+                          style={{
+                            padding: "10px 16px", borderRadius: "6px",
+                            cursor: (isEditing || subtitles[studyIndex].text.split(/\s+/).length < 2) ? "not-allowed" : "pointer",
+                            fontSize: "16px", fontWeight: "700", fontFamily: "monospace",
+                            opacity: (isEditing || subtitles[studyIndex].text.split(/\s+/).length < 2) ? 0.4 : 1,
+                            letterSpacing: "0.05em",
+                            textAlign: "center", lineHeight: "1",
+                          }}
+                        >SPLIT</button>
+                      </div>
+                    </div>
+
+                    <div className="panel-seam" />
+
+                    {/* PLAYBACK — indicator style (recessed dark wells) */}
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", padding: "0 6px", flex: "1 1 0" }}>
+                      <span className="label-plate" style={{ color: T.cockpit.labelColor }}>PLAYBACK</span>
+                      <div style={{ display: "flex", gap: "4px", justifyContent: "center" }}>
+                        <div
+                          onClick={() => {
+                            const sub = subtitles[studyIndex];
+                            if (!playerReady || !playerInstanceRef.current || !sub) return;
+                            playerInstanceRef.current.seekTo(sub.start);
+                            playerInstanceRef.current.playVideo();
+                            if (!loopTargetRef.current) {
+                              const checkEnd = setInterval(() => {
+                                if (playerInstanceRef.current) {
+                                  const ct = playerInstanceRef.current.getCurrentTime();
+                                  if (ct >= sub.end) { playerInstanceRef.current.pauseVideo(); clearInterval(checkEnd); }
+                                } else clearInterval(checkEnd);
+                              }, 100);
+                            }
+                          }}
+                          style={{
+                            width: "32px", height: "32px", borderRadius: "50%",
+                            background: "radial-gradient(circle, #12121e 60%, #0a0a14)",
+                            border: T.cockpit.metalBorder,
+                            boxShadow: "inset 0 2px 4px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.03)",
+                            display: "flex", alignItems: "center", justifyContent: "center",
+                            cursor: playerReady ? "pointer" : "not-allowed",
+                            fontSize: "13px", opacity: playerReady ? 1 : 0.4,
+                            transition: "all 0.15s ease",
+                          }}
+                          title="이 문장 듣기"
+                        >🔊</div>
+                        <div
+                          onClick={() => {
+                            const sub = subtitles[studyIndex];
+                            if (!playerReady || !playerInstanceRef.current || !sub) return;
+                            if (continuousPlayRef.current) {
+                              continuousPlayRef.current = false; setIsContinuousPlay(false);
+                              playerInstanceRef.current.pauseVideo();
+                            } else {
+                              loopTargetRef.current = null; setIsLooping(false);
+                              continuousPlayRef.current = true; setIsContinuousPlay(true);
+                              playerInstanceRef.current.seekTo(sub.start); playerInstanceRef.current.playVideo();
+                            }
+                          }}
+                          style={{
+                            width: "32px", height: "32px", borderRadius: "50%",
+                            background: isContinuousPlay
+                              ? "radial-gradient(circle, rgba(16,185,129,0.25) 40%, #12121e)"
+                              : "radial-gradient(circle, #12121e 60%, #0a0a14)",
+                            border: isContinuousPlay ? "1px solid rgba(52,211,153,0.4)" : T.cockpit.metalBorder,
+                            boxShadow: isContinuousPlay
+                              ? "inset 0 0 8px rgba(52,211,153,0.3), 0 0 6px rgba(52,211,153,0.2)"
+                              : "inset 0 2px 4px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.03)",
+                            display: "flex", alignItems: "center", justifyContent: "center",
+                            cursor: playerReady ? "pointer" : "not-allowed",
+                            fontSize: "10px", fontWeight: "700", fontFamily: "monospace",
+                            color: isContinuousPlay ? T.cockpit.greenText : T.textMuted,
+                            opacity: playerReady ? 1 : 0.4,
+                            transition: "all 0.2s ease",
+                          }}
+                          title="연속 재생"
+                        >▶▶</div>
+                        <div
+                          onClick={() => {
+                            const sub = subtitles[studyIndex];
+                            if (!playerReady || !playerInstanceRef.current || !sub) return;
+                            if (loopTargetRef.current) {
+                              loopTargetRef.current = null; setIsLooping(false);
+                              playerInstanceRef.current.pauseVideo();
+                            } else {
+                              continuousPlayRef.current = false; setIsContinuousPlay(false);
+                              loopTargetRef.current = { start: sub.start, end: sub.end };
+                              setIsLooping(true);
+                              playerInstanceRef.current.seekTo(sub.start); playerInstanceRef.current.playVideo();
+                            }
+                          }}
+                          style={{
+                            width: "32px", height: "32px", borderRadius: "50%",
+                            background: isLooping
+                              ? "radial-gradient(circle, rgba(99,102,241,0.25) 40%, #12121e)"
+                              : "radial-gradient(circle, #12121e 60%, #0a0a14)",
+                            border: isLooping ? "1px solid rgba(99,102,241,0.4)" : T.cockpit.metalBorder,
+                            boxShadow: isLooping
+                              ? "inset 0 0 8px rgba(99,102,241,0.3), 0 0 6px rgba(99,102,241,0.2)"
+                              : "inset 0 2px 4px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.03)",
+                            display: "flex", alignItems: "center", justifyContent: "center",
+                            cursor: playerReady ? "pointer" : "not-allowed",
+                            fontSize: "13px",
+                            opacity: playerReady ? 1 : 0.4,
+                            transition: "all 0.2s ease",
+                          }}
+                          title="반복 재생 (R)"
+                        >🔄</div>
+                      </div>
+                    </div>
+
+                    <div className="panel-seam" />
+
+                    {/* ACTION */}
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", padding: "0 6px", flex: "1 1 0" }}>
+                      <span className="label-plate" style={{ color: isEditing ? T.cockpit.greenText : splitMode ? T.cockpit.redText : T.cockpit.labelColor }}>
+                        {isEditing ? "SAVE" : splitMode ? "CUT" : "ACTION"}
+                      </span>
+                      <div style={{ display: "flex", gap: "6px", justifyContent: "center" }}>
+                        {isEditing ? (
+                          <>
+                            <button onClick={saveEdit} disabled={isSaving} className="phys-btn"
+                              style={{
+                                padding: "7px 14px", borderRadius: "6px",
+                                cursor: isSaving ? "not-allowed" : "pointer",
+                                fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
+                                opacity: isSaving ? 0.6 : 1, letterSpacing: "0.05em",
+                              }}
+                            >
+                              <span className={`led ${isSaving ? "led-amber led-blink" : "led-green"}`} /> {isSaving ? "..." : "💾"}
+                            </button>
+                            <button onClick={cancelEditing} className="phys-btn"
+                              style={{
+                                padding: "7px 10px", borderRadius: "6px", cursor: "pointer",
+                                fontSize: "11px", fontWeight: "700", fontFamily: "monospace", letterSpacing: "0.05em",
+                              }}
+                            >ESC</button>
+                          </>
+                        ) : splitMode ? (
+                          <>
+                            <button onClick={confirmSplit} disabled={!splitAllSelected || isSplitting} className="phys-btn"
+                              style={{
+                                padding: "7px 14px", borderRadius: "6px",
+                                cursor: splitAllSelected && !isSplitting ? "pointer" : "not-allowed",
+                                fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
+                                opacity: splitAllSelected ? 1 : 0.4, letterSpacing: "0.05em",
+                              }}
+                            >
+                              <span className={`led ${splitAllSelected ? "led-red" : "led-off"}`} /> ✂️
+                            </button>
+                            <button onClick={cancelSplit} className="phys-btn"
+                              style={{
+                                padding: "7px 10px", borderRadius: "6px", cursor: "pointer",
+                                fontSize: "11px", fontWeight: "700", fontFamily: "monospace", letterSpacing: "0.05em",
+                              }}
+                            >ESC</button>
+                          </>
+                        ) : (
+                          <div style={{ fontSize: "10px", color: T.textMuted, fontFamily: "monospace", padding: "8px 0", textAlign: "center", letterSpacing: "0.1em" }}>
+                            STANDBY
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Row 2: MERGE — emphasized standalone + Split status */}
+                  <div style={{
+                    marginTop: "10px", paddingTop: "10px",
+                    borderTop: T.cockpit.seam,
+                    display: "flex", alignItems: "center", justifyContent: "space-between",
+                  }}>
+                    {/* MERGE button — emphasized with warning style */}
+                    {studyIndex > 0 ? (
+                      <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                        <span className="label-plate" style={{ color: T.cockpit.redText }}>MERGE</span>
+                        <button
+                          onClick={mergeWithPrev}
+                          disabled={isMerging || isEditing || splitMode}
+                          className="phys-btn"
+                          style={{
+                            padding: "8px 18px", borderRadius: "6px",
+                            cursor: (isMerging || isEditing || splitMode) ? "not-allowed" : "pointer",
+                            fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
+                            opacity: (isMerging || isEditing || splitMode) ? 0.4 : 1,
+                            letterSpacing: "0.05em",
+                            border: "1px solid rgba(239,68,68,0.3)",
+                            boxShadow: "0 0 8px rgba(239,68,68,0.1), 0 2px 4px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.06)",
+                          }}
+                        >
+                          <span className={`led ${isMerging ? "led-red led-blink" : "led-off"}`} /> {isMerging ? "MERGING..." : "⤴ MERGE WITH PREV"}
                         </button>
                       </div>
-                      <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
-                        <div style={{ flex: 1 }}>
-                          <div style={{ fontSize: "11px", color: "#888", marginBottom: "4px" }}>시작</div>
-                          <input
-                            type="number"
-                            step="0.1"
-                            value={editData.start}
-                            onChange={(e) => {
-                              const v = e.target.value;
-                              setEditData({ ...editData, start: v });
-                              if (loopTargetRef.current) {
-                                loopTargetRef.current = { ...loopTargetRef.current, start: parseFloat(v) || 0 };
-                              }
-                            }}
-                            style={{
-                              width: "100%", background: "#0d0d15", border: "1px solid #f59e0b", borderRadius: "8px",
-                              padding: "8px 10px", color: "#fbbf24", fontSize: "14px", fontWeight: "600",
-                              outline: "none", boxSizing: "border-box",
-                            }}
-                          />
-                        </div>
-                        <div style={{ color: "#555", fontSize: "18px", paddingTop: "18px" }}>→</div>
-                        <div style={{ flex: 1 }}>
-                          <div style={{ fontSize: "11px", color: "#888", marginBottom: "4px" }}>종료</div>
-                          <input
-                            type="number"
-                            step="0.1"
-                            value={editData.end}
-                            onChange={(e) => {
-                              const v = e.target.value;
-                              setEditData({ ...editData, end: v });
-                              if (loopTargetRef.current) {
-                                loopTargetRef.current = { ...loopTargetRef.current, end: parseFloat(v) || 0 };
-                              }
-                            }}
-                            style={{
-                              width: "100%", background: "#0d0d15", border: "1px solid #f59e0b", borderRadius: "8px",
-                              padding: "8px 10px", color: "#fbbf24", fontSize: "14px", fontWeight: "600",
-                              outline: "none", boxSizing: "border-box",
-                            }}
-                          />
-                        </div>
-                        <div style={{ color: "#555", fontSize: "12px", paddingTop: "18px", minWidth: "50px" }}>
-                          {(parseFloat(editData.end) - parseFloat(editData.start)).toFixed(1)}초
-                        </div>
+                    ) : (
+                      <div style={{ fontSize: "10px", color: T.textMuted, fontFamily: "monospace", letterSpacing: "0.1em" }}>
+                        MERGE N/A (FIRST)
                       </div>
-                    </div>
-                  )}
+                    )}
 
-                  {/* Save/Cancel buttons in edit mode */}
-                  {isEditing && (
-                    <div style={{ display: "flex", gap: "8px", marginBottom: "16px" }}>
-                      <button
-                        onClick={saveEdit}
-                        disabled={isSaving}
-                        style={{
-                          flex: 1, background: `linear-gradient(135deg, ${T.accent}, #8b5cf6)`, border: "none", color: "white",
-                          padding: "12px", borderRadius: T.radius.md, cursor: isSaving ? "not-allowed" : "pointer",
-                          fontSize: "14px", fontWeight: "700", opacity: isSaving ? 0.6 : 1,
-                          boxShadow: "0 2px 12px rgba(99,102,241,0.3)", transition: `all 0.3s ${T.ease}`,
-                        }}
-                      >
-                        {isSaving ? "저장 중..." : "💾 저장 (⌘S)"}
-                      </button>
-                      <button
-                        onClick={cancelEditing}
-                        style={{
-                          flex: 1, background: T.surface, border: `1px solid ${T.border}`, color: T.textSec,
-                          padding: "12px", borderRadius: T.radius.md, cursor: "pointer",
-                          fontSize: "14px", fontWeight: "600", transition: `all 0.2s ${T.ease}`,
-                        }}
-                      >
-                        취소 (Esc)
-                      </button>
-                    </div>
-                  )}
-                </>
+                    {/* Split status indicators */}
+                    {splitMode && (
+                      <div style={{
+                        display: "flex", gap: "12px",
+                        fontSize: "10px", fontFamily: "monospace", letterSpacing: "0.1em",
+                      }}>
+                        <span><span className={`led ${splitPoints.text != null ? "led-green" : "led-off"}`} /> TXT</span>
+                        <span><span className={`led ${splitPoints.pronunciation != null ? "led-green" : "led-off"}`} /> PRN</span>
+                        <span><span className={`led ${splitPoints.translation != null ? "led-green" : "led-off"}`} /> TRN</span>
+                      </div>
+                    )}
+
+                    {/* Permalink */}
+                    <button
+                      onClick={(e) => {
+                        const url = `${window.location.origin}${window.location.pathname}#v=${video.id}&s=${subtitles[studyIndex].index}&m=study`;
+                        navigator.clipboard.writeText(url);
+                        e.currentTarget.textContent = "✓ COPIED";
+                        setTimeout(() => { e.currentTarget.textContent = "🔗 LINK"; }, 1000);
+                      }}
+                      className="phys-btn"
+                      style={{
+                        padding: "6px 10px", borderRadius: "6px", cursor: "pointer",
+                        fontSize: "10px", fontWeight: "700", fontFamily: "monospace", letterSpacing: "0.05em",
+                      }}
+                      title="편집 퍼머링크 복사"
+                    >🔗 LINK</button>
+                  </div>
+                </div>
               )}
 
               {/* Notes */}
@@ -1750,18 +2116,34 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                               {note.actual}
                             </span>
                           </div>
-                          <button
-                            onClick={(e) => { e.stopPropagation(); saveExpression(note); }}
-                            style={{
-                              background: savedExpressions.find((e) => e.word === note.word && e.video_id === video.id) ? "linear-gradient(135deg, #22c55e, #16a34a)" : T.surface,
-                              border: savedExpressions.find((e) => e.word === note.word && e.video_id === video.id) ? "none" : `1px solid ${T.border}`,
-                              color: "white", padding: "4px 12px",
-                              borderRadius: T.radius.sm, cursor: "pointer", fontSize: "12px",
-                              transition: `all 0.2s ${T.ease}`,
-                            }}
-                          >
-                            {savedExpressions.find((e) => e.word === note.word && e.video_id === video.id) ? "✓" : "+"}
-                          </button>
+                          <span style={{ display: "flex", gap: "6px", alignItems: "center" }}>
+                            <button
+                              onClick={(e) => { e.stopPropagation(); saveExpression(note); }}
+                              style={{
+                                background: savedExpressions.find((e) => e.word === note.word && e.video_id === video.id) ? "linear-gradient(135deg, #22c55e, #16a34a)" : T.surface,
+                                border: savedExpressions.find((e) => e.word === note.word && e.video_id === video.id) ? "none" : `1px solid ${T.border}`,
+                                color: "white", padding: "4px 12px",
+                                borderRadius: T.radius.sm, cursor: "pointer", fontSize: "12px",
+                                transition: `all 0.2s ${T.ease}`,
+                              }}
+                            >
+                              {savedExpressions.find((e) => e.word === note.word && e.video_id === video.id) ? "✓" : "+"}
+                            </button>
+                            {canEdit && (
+                              <button
+                                onClick={(e) => { e.stopPropagation(); deleteNote(i); }}
+                                style={{
+                                  background: "none", border: `1px solid rgba(239,68,68,0.2)`,
+                                  color: T.cockpit.redText, padding: "4px 8px",
+                                  borderRadius: T.radius.sm, cursor: "pointer", fontSize: "11px",
+                                  transition: `all 0.2s ${T.ease}`, opacity: 0.6,
+                                }}
+                                onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; e.currentTarget.style.background = "rgba(239,68,68,0.1)"; }}
+                                onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.6"; e.currentTarget.style.background = "none"; }}
+                                title="발음포인트 삭제"
+                              >✕</button>
+                            )}
+                          </span>
                         </div>
                         {expandedNote === i && (
                           <div style={{ marginTop: "10px", paddingTop: "10px", borderTop: `1px solid ${T.border}`, color: T.textSec, fontSize: "13px", lineHeight: "1.6", animation: `fadeIn 0.2s ${T.ease}` }}>
@@ -1774,121 +2156,7 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                 </div>
               )}
 
-              {/* Listen & Loop buttons */}
-              <div style={{ display: "flex", gap: "10px", marginTop: "8px" }}>
-                <button
-                  onClick={() => {
-                    const sub = subtitles[studyIndex];
-                    if (playerInstanceRef.current && sub) {
-                      if (loopTargetRef.current) {
-                        playerInstanceRef.current.seekTo(sub.start);
-                        playerInstanceRef.current.playVideo();
-                      } else {
-                        playerInstanceRef.current.seekTo(sub.start);
-                        playerInstanceRef.current.playVideo();
-                        const checkEnd = setInterval(() => {
-                          if (playerInstanceRef.current) {
-                            const ct = playerInstanceRef.current.getCurrentTime();
-                            if (ct >= sub.end) {
-                              playerInstanceRef.current.pauseVideo();
-                              clearInterval(checkEnd);
-                            }
-                          } else {
-                            clearInterval(checkEnd);
-                          }
-                        }, 100);
-                      }
-                    }
-                  }}
-                  disabled={!playerReady}
-                  style={{
-                    flex: 1,
-                    background: `linear-gradient(135deg, ${T.accent}, #8b5cf6)`,
-                    border: "none",
-                    color: "white",
-                    padding: "14px",
-                    borderRadius: T.radius.md,
-                    cursor: playerReady ? "pointer" : "not-allowed",
-                    fontSize: "14px",
-                    fontWeight: "700",
-                    opacity: playerReady ? 1 : 0.4,
-                    boxShadow: "0 2px 16px rgba(99,102,241,0.35)",
-                    transition: `all 0.3s ${T.ease}`,
-                  }}
-                >
-                  🔊 이 문장 듣기
-                </button>
-                <button
-                  onClick={() => {
-                    const sub = subtitles[studyIndex];
-                    if (!playerInstanceRef.current || !sub) return;
-                    if (continuousPlayRef.current) {
-                      continuousPlayRef.current = false;
-                      setIsContinuousPlay(false);
-                      playerInstanceRef.current.pauseVideo();
-                    } else {
-                      loopTargetRef.current = null;
-                      setIsLooping(false);
-                      continuousPlayRef.current = true;
-                      setIsContinuousPlay(true);
-                      playerInstanceRef.current.seekTo(sub.start);
-                      playerInstanceRef.current.playVideo();
-                    }
-                  }}
-                  disabled={!playerReady}
-                  style={{
-                    background: isContinuousPlay ? "linear-gradient(135deg, #059669, #10b981)" : T.surface,
-                    border: isContinuousPlay ? "none" : `1px solid ${T.border}`,
-                    color: isContinuousPlay ? "#d1fae5" : T.accentLight,
-                    padding: "14px 18px",
-                    borderRadius: T.radius.md,
-                    cursor: playerReady ? "pointer" : "not-allowed",
-                    fontSize: "14px",
-                    fontWeight: "700",
-                    opacity: playerReady ? 1 : 0.4,
-                    transition: `all 0.3s ${T.ease}`,
-                    boxShadow: isContinuousPlay ? "0 2px 12px rgba(16,185,129,0.3)" : "none",
-                  }}
-                  title="연속 재생"
-                >
-                  ▶▶ {isContinuousPlay ? "재생 중" : "연속"}
-                </button>
-                <button
-                  onClick={() => {
-                    const sub = subtitles[studyIndex];
-                    if (!playerInstanceRef.current || !sub) return;
-                    if (loopTargetRef.current) {
-                      loopTargetRef.current = null;
-                      setIsLooping(false);
-                      playerInstanceRef.current.pauseVideo();
-                    } else {
-                      continuousPlayRef.current = false;
-                      setIsContinuousPlay(false);
-                      loopTargetRef.current = { start: sub.start, end: sub.end };
-                      setIsLooping(true);
-                      playerInstanceRef.current.seekTo(sub.start);
-                      playerInstanceRef.current.playVideo();
-                    }
-                  }}
-                  disabled={!playerReady}
-                  style={{
-                    background: isLooping ? `linear-gradient(135deg, ${T.accentDark}, ${T.accent})` : T.surface,
-                    border: isLooping ? "none" : `1px solid ${T.border}`,
-                    color: isLooping ? "#e0e7ff" : T.accentLight,
-                    padding: "14px 18px",
-                    borderRadius: T.radius.md,
-                    cursor: playerReady ? "pointer" : "not-allowed",
-                    fontSize: "14px",
-                    fontWeight: "700",
-                    opacity: playerReady ? 1 : 0.4,
-                    transition: `all 0.3s ${T.ease}`,
-                    boxShadow: isLooping ? "0 2px 12px rgba(99,102,241,0.3)" : "none",
-                  }}
-                  title="반복 재생 (R)"
-                >
-                  🔄 {isLooping ? "반복 중" : "반복"}
-                </button>
-              </div>
+              {/* Playback controls moved to cockpit control panel */}
 
             </div>
           )}
