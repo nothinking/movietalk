@@ -1772,322 +1772,261 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
 
               {/* ═══ COCKPIT CONTROL PANEL ═══ */}
               {hasPronunciation && canEdit && (
-                <div className="cockpit-panel" style={{ padding: "18px 16px 14px", marginBottom: "16px" }}>
-                  {/* Row 1: NAV + COMMAND + PLAYBACK + ACTION */}
+                <div className="cockpit-panel" style={{ padding: "16px 16px 14px", marginBottom: "16px" }}>
+
+                  {/* NAV — full-width bar with counter */}
                   <div style={{
-                    display: "flex",
-                    alignItems: "stretch",
-                    justifyContent: "space-around",
-                    gap: "0",
+                    display: "flex", alignItems: "center", justifyContent: "center", gap: "10px",
+                    marginBottom: "10px",
                   }}>
-                    {/* NAV — Prev/Next large + counter below */}
-                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", padding: "0 8px", flex: "0 0 auto" }}>
-                      <span className="label-plate" style={{ color: T.cockpit.labelColor }}>NAV</span>
-                      <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
-                        <button
-                          onClick={() => {
-                            const newIdx = Math.max(0, studyIndex - 1);
-                            studyIndexRef.current = newIdx; setStudyIndex(newIdx);
-                            setExpandedNote(null);
-                            if (isEditing) cancelEditing(); if (splitMode) cancelSplit();
-                            setHash(video.id, subtitles[newIdx].index, false, "edit");
-                            if (loopTargetRef.current && playerInstanceRef.current) {
-                              const s = subtitles[newIdx];
-                              loopTargetRef.current = { start: s.start, end: s.end };
-                              playerInstanceRef.current.seekTo(s.start); playerInstanceRef.current.playVideo();
-                            }
-                          }}
-                          disabled={studyIndex === 0}
-                          className="phys-btn"
-                          style={{
-                            padding: "10px 16px", borderRadius: "6px",
-                            cursor: studyIndex === 0 ? "not-allowed" : "pointer",
-                            fontSize: "16px", fontWeight: "700", opacity: studyIndex === 0 ? 0.4 : 1,
-                            lineHeight: "1",
-                          }}
-                        >◀</button>
-                        <button
-                          onClick={() => {
-                            const newIdx = Math.min(subtitles.length - 1, studyIndex + 1);
-                            studyIndexRef.current = newIdx; setStudyIndex(newIdx);
-                            setExpandedNote(null);
-                            if (isEditing) cancelEditing(); if (splitMode) cancelSplit();
-                            setHash(video.id, subtitles[newIdx].index, false, "edit");
-                            if (loopTargetRef.current && playerInstanceRef.current) {
-                              const s = subtitles[newIdx];
-                              loopTargetRef.current = { start: s.start, end: s.end };
-                              playerInstanceRef.current.seekTo(s.start); playerInstanceRef.current.playVideo();
-                            }
-                          }}
-                          disabled={studyIndex === subtitles.length - 1}
-                          className="phys-btn"
-                          style={{
-                            padding: "10px 16px", borderRadius: "6px",
-                            cursor: studyIndex === subtitles.length - 1 ? "not-allowed" : "pointer",
-                            fontSize: "16px", fontWeight: "700",
-                            opacity: studyIndex === subtitles.length - 1 ? 0.4 : 1,
-                            lineHeight: "1",
-                          }}
-                        >▶</button>
-                      </div>
-                      <span style={{
-                        fontSize: "10px", color: T.cockpit.greenText, fontFamily: "monospace",
-                        fontWeight: "700", fontVariantNumeric: "tabular-nums",
-                        textShadow: "0 0 6px rgba(52,211,153,0.4)",
-                      }}>
-                        {studyIndex + 1} / {subtitles.length}
-                      </span>
-                    </div>
-
-                    <div className="panel-seam" />
-
-                    {/* COMMAND — Edit/Split (equal width) */}
-                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", padding: "0 6px", flex: "1 1 0" }}>
-                      <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-                        <span className="label-plate" style={{ color: T.cockpit.amberText }}>COMMAND</span>
-                        <span className={`led ${isEditing ? "led-amber" : splitMode ? "led-red led-blink" : "led-off"}`} />
-                      </div>
-                      <div style={{ display: "flex", gap: "6px", justifyContent: "center" }}>
-                        <button
-                          onClick={isEditing ? cancelEditing : startEditing}
-                          disabled={splitMode}
-                          className="phys-btn"
-                          style={{
-                            padding: "10px 16px", borderRadius: "6px", cursor: splitMode ? "not-allowed" : "pointer",
-                            fontSize: "16px", fontWeight: "700", fontFamily: "monospace",
-                            opacity: splitMode ? 0.4 : 1, letterSpacing: "0.05em",
-                            textAlign: "center", lineHeight: "1",
-                          }}
-                        >EDIT</button>
-                        <button
-                          onClick={splitMode ? cancelSplit : startSplit}
-                          disabled={isEditing || subtitles[studyIndex].text.split(/\s+/).length < 2}
-                          className="phys-btn"
-                          style={{
-                            padding: "10px 16px", borderRadius: "6px",
-                            cursor: (isEditing || subtitles[studyIndex].text.split(/\s+/).length < 2) ? "not-allowed" : "pointer",
-                            fontSize: "16px", fontWeight: "700", fontFamily: "monospace",
-                            opacity: (isEditing || subtitles[studyIndex].text.split(/\s+/).length < 2) ? 0.4 : 1,
-                            letterSpacing: "0.05em",
-                            textAlign: "center", lineHeight: "1",
-                          }}
-                        >SPLIT</button>
-                      </div>
-                    </div>
-
-                    <div className="panel-seam" />
-
-                    {/* PLAYBACK — indicator style (recessed dark wells) */}
-                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", padding: "0 6px", flex: "1 1 0" }}>
-                      <span className="label-plate" style={{ color: T.cockpit.labelColor }}>PLAYBACK</span>
-                      <div style={{ display: "flex", gap: "4px", justifyContent: "center" }}>
-                        <div
-                          onClick={() => {
-                            const sub = subtitles[studyIndex];
-                            if (!playerReady || !playerInstanceRef.current || !sub) return;
-                            playerInstanceRef.current.seekTo(sub.start);
-                            playerInstanceRef.current.playVideo();
-                            if (!loopTargetRef.current) {
-                              const checkEnd = setInterval(() => {
-                                if (playerInstanceRef.current) {
-                                  const ct = playerInstanceRef.current.getCurrentTime();
-                                  if (ct >= sub.end) { playerInstanceRef.current.pauseVideo(); clearInterval(checkEnd); }
-                                } else clearInterval(checkEnd);
-                              }, 100);
-                            }
-                          }}
-                          style={{
-                            width: "32px", height: "32px", borderRadius: "50%",
-                            background: "radial-gradient(circle, #12121e 60%, #0a0a14)",
-                            border: T.cockpit.metalBorder,
-                            boxShadow: "inset 0 2px 4px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.03)",
-                            display: "flex", alignItems: "center", justifyContent: "center",
-                            cursor: playerReady ? "pointer" : "not-allowed",
-                            fontSize: "13px", opacity: playerReady ? 1 : 0.4,
-                            transition: "all 0.15s ease",
-                          }}
-                          title="이 문장 듣기"
-                        >🔊</div>
-                        <div
-                          onClick={() => {
-                            const sub = subtitles[studyIndex];
-                            if (!playerReady || !playerInstanceRef.current || !sub) return;
-                            if (continuousPlayRef.current) {
-                              continuousPlayRef.current = false; setIsContinuousPlay(false);
-                              playerInstanceRef.current.pauseVideo();
-                            } else {
-                              loopTargetRef.current = null; setIsLooping(false);
-                              continuousPlayRef.current = true; setIsContinuousPlay(true);
-                              playerInstanceRef.current.seekTo(sub.start); playerInstanceRef.current.playVideo();
-                            }
-                          }}
-                          style={{
-                            width: "32px", height: "32px", borderRadius: "50%",
-                            background: isContinuousPlay
-                              ? "radial-gradient(circle, rgba(16,185,129,0.25) 40%, #12121e)"
-                              : "radial-gradient(circle, #12121e 60%, #0a0a14)",
-                            border: isContinuousPlay ? "1px solid rgba(52,211,153,0.4)" : T.cockpit.metalBorder,
-                            boxShadow: isContinuousPlay
-                              ? "inset 0 0 8px rgba(52,211,153,0.3), 0 0 6px rgba(52,211,153,0.2)"
-                              : "inset 0 2px 4px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.03)",
-                            display: "flex", alignItems: "center", justifyContent: "center",
-                            cursor: playerReady ? "pointer" : "not-allowed",
-                            fontSize: "10px", fontWeight: "700", fontFamily: "monospace",
-                            color: isContinuousPlay ? T.cockpit.greenText : T.textMuted,
-                            opacity: playerReady ? 1 : 0.4,
-                            transition: "all 0.2s ease",
-                          }}
-                          title="연속 재생"
-                        >▶▶</div>
-                        <div
-                          onClick={() => {
-                            const sub = subtitles[studyIndex];
-                            if (!playerReady || !playerInstanceRef.current || !sub) return;
-                            if (loopTargetRef.current) {
-                              loopTargetRef.current = null; setIsLooping(false);
-                              playerInstanceRef.current.pauseVideo();
-                            } else {
-                              continuousPlayRef.current = false; setIsContinuousPlay(false);
-                              loopTargetRef.current = { start: sub.start, end: sub.end };
-                              setIsLooping(true);
-                              playerInstanceRef.current.seekTo(sub.start); playerInstanceRef.current.playVideo();
-                            }
-                          }}
-                          style={{
-                            width: "32px", height: "32px", borderRadius: "50%",
-                            background: isLooping
-                              ? "radial-gradient(circle, rgba(99,102,241,0.25) 40%, #12121e)"
-                              : "radial-gradient(circle, #12121e 60%, #0a0a14)",
-                            border: isLooping ? "1px solid rgba(99,102,241,0.4)" : T.cockpit.metalBorder,
-                            boxShadow: isLooping
-                              ? "inset 0 0 8px rgba(99,102,241,0.3), 0 0 6px rgba(99,102,241,0.2)"
-                              : "inset 0 2px 4px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.03)",
-                            display: "flex", alignItems: "center", justifyContent: "center",
-                            cursor: playerReady ? "pointer" : "not-allowed",
-                            fontSize: "13px",
-                            opacity: playerReady ? 1 : 0.4,
-                            transition: "all 0.2s ease",
-                          }}
-                          title="반복 재생 (R)"
-                        >🔄</div>
-                      </div>
-                    </div>
-
-                    <div className="panel-seam" />
-
-                    {/* ACTION */}
-                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "6px", padding: "0 6px", flex: "1 1 0" }}>
-                      <span className="label-plate" style={{ color: isEditing ? T.cockpit.greenText : splitMode ? T.cockpit.redText : T.cockpit.labelColor }}>
-                        {isEditing ? "SAVE" : splitMode ? "CUT" : "ACTION"}
-                      </span>
-                      <div style={{ display: "flex", gap: "6px", justifyContent: "center" }}>
-                        {isEditing ? (
-                          <>
-                            <button onClick={saveEdit} disabled={isSaving} className="phys-btn"
-                              style={{
-                                padding: "7px 14px", borderRadius: "6px",
-                                cursor: isSaving ? "not-allowed" : "pointer",
-                                fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
-                                opacity: isSaving ? 0.6 : 1, letterSpacing: "0.05em",
-                              }}
-                            >
-                              <span className={`led ${isSaving ? "led-amber led-blink" : "led-green"}`} /> {isSaving ? "..." : "💾"}
-                            </button>
-                            <button onClick={cancelEditing} className="phys-btn"
-                              style={{
-                                padding: "7px 10px", borderRadius: "6px", cursor: "pointer",
-                                fontSize: "11px", fontWeight: "700", fontFamily: "monospace", letterSpacing: "0.05em",
-                              }}
-                            >ESC</button>
-                          </>
-                        ) : splitMode ? (
-                          <>
-                            <button onClick={confirmSplit} disabled={!splitAllSelected || isSplitting} className="phys-btn"
-                              style={{
-                                padding: "7px 14px", borderRadius: "6px",
-                                cursor: splitAllSelected && !isSplitting ? "pointer" : "not-allowed",
-                                fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
-                                opacity: splitAllSelected ? 1 : 0.4, letterSpacing: "0.05em",
-                              }}
-                            >
-                              <span className={`led ${splitAllSelected ? "led-red" : "led-off"}`} /> ✂️
-                            </button>
-                            <button onClick={cancelSplit} className="phys-btn"
-                              style={{
-                                padding: "7px 10px", borderRadius: "6px", cursor: "pointer",
-                                fontSize: "11px", fontWeight: "700", fontFamily: "monospace", letterSpacing: "0.05em",
-                              }}
-                            >ESC</button>
-                          </>
-                        ) : (
-                          <div style={{ fontSize: "10px", color: T.textMuted, fontFamily: "monospace", padding: "8px 0", textAlign: "center", letterSpacing: "0.1em" }}>
-                            STANDBY
-                          </div>
-                        )}
-                      </div>
-                    </div>
+                    <button
+                      onClick={() => {
+                        const newIdx = Math.max(0, studyIndex - 1);
+                        studyIndexRef.current = newIdx; setStudyIndex(newIdx);
+                        setExpandedNote(null);
+                        if (isEditing) cancelEditing(); if (splitMode) cancelSplit();
+                        setHash(video.id, subtitles[newIdx].index, false, "edit");
+                        if (loopTargetRef.current && playerInstanceRef.current) {
+                          const s = subtitles[newIdx];
+                          loopTargetRef.current = { start: s.start, end: s.end };
+                          playerInstanceRef.current.seekTo(s.start); playerInstanceRef.current.playVideo();
+                        }
+                      }}
+                      disabled={studyIndex === 0}
+                      className="phys-btn"
+                      style={{
+                        padding: "10px 18px", borderRadius: "5px",
+                        cursor: studyIndex === 0 ? "not-allowed" : "pointer",
+                        fontSize: "14px", fontWeight: "700", opacity: studyIndex === 0 ? 0.4 : 1,
+                        lineHeight: "1",
+                      }}
+                    >◀</button>
+                    <span style={{
+                      fontSize: "11px", color: T.cockpit.greenText, fontFamily: "monospace",
+                      fontWeight: "700", fontVariantNumeric: "tabular-nums",
+                      textShadow: "0 0 6px rgba(52,211,153,0.4)", minWidth: "48px", textAlign: "center",
+                    }}>
+                      {studyIndex + 1} / {subtitles.length}
+                    </span>
+                    <button
+                      onClick={() => {
+                        const newIdx = Math.min(subtitles.length - 1, studyIndex + 1);
+                        studyIndexRef.current = newIdx; setStudyIndex(newIdx);
+                        setExpandedNote(null);
+                        if (isEditing) cancelEditing(); if (splitMode) cancelSplit();
+                        setHash(video.id, subtitles[newIdx].index, false, "edit");
+                        if (loopTargetRef.current && playerInstanceRef.current) {
+                          const s = subtitles[newIdx];
+                          loopTargetRef.current = { start: s.start, end: s.end };
+                          playerInstanceRef.current.seekTo(s.start); playerInstanceRef.current.playVideo();
+                        }
+                      }}
+                      disabled={studyIndex === subtitles.length - 1}
+                      className="phys-btn"
+                      style={{
+                        padding: "10px 18px", borderRadius: "5px",
+                        cursor: studyIndex === subtitles.length - 1 ? "not-allowed" : "pointer",
+                        fontSize: "14px", fontWeight: "700",
+                        opacity: studyIndex === subtitles.length - 1 ? 0.4 : 1,
+                        lineHeight: "1",
+                      }}
+                    >▶</button>
                   </div>
 
-                  {/* Row 2: MERGE — emphasized standalone + Split status */}
-                  <div style={{
-                    marginTop: "10px", paddingTop: "10px",
-                    borderTop: T.cockpit.seam,
-                    display: "flex", alignItems: "center", justifyContent: "space-between",
-                  }}>
-                    {/* MERGE button — emphasized with warning style */}
-                    {studyIndex > 0 ? (
-                      <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                        <span className="label-plate" style={{ color: T.cockpit.redText }}>MERGE</span>
-                        <button
-                          onClick={mergeWithPrev}
-                          disabled={isMerging || isEditing || splitMode}
-                          className="phys-btn"
-                          style={{
-                            padding: "8px 18px", borderRadius: "6px",
-                            cursor: (isMerging || isEditing || splitMode) ? "not-allowed" : "pointer",
-                            fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
-                            opacity: (isMerging || isEditing || splitMode) ? 0.4 : 1,
-                            letterSpacing: "0.05em",
-                            border: "1px solid rgba(239,68,68,0.3)",
-                            boxShadow: "0 0 8px rgba(239,68,68,0.1), 0 2px 4px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.06)",
-                          }}
-                        >
-                          <span className={`led ${isMerging ? "led-red led-blink" : "led-off"}`} /> {isMerging ? "MERGING..." : "⤴ MERGE WITH PREV"}
-                        </button>
-                      </div>
-                    ) : (
-                      <div style={{ fontSize: "10px", color: T.textMuted, fontFamily: "monospace", letterSpacing: "0.1em" }}>
-                        MERGE N/A (FIRST)
-                      </div>
-                    )}
-
-                    {/* Split status indicators */}
-                    {splitMode && (
-                      <div style={{
-                        display: "flex", gap: "12px",
-                        fontSize: "10px", fontFamily: "monospace", letterSpacing: "0.1em",
-                      }}>
-                        <span><span className={`led ${splitPoints.text != null ? "led-green" : "led-off"}`} /> TXT</span>
-                        <span><span className={`led ${splitPoints.pronunciation != null ? "led-green" : "led-off"}`} /> PRN</span>
-                        <span><span className={`led ${splitPoints.translation != null ? "led-green" : "led-off"}`} /> TRN</span>
-                      </div>
-                    )}
-
-                    {/* Permalink */}
+                  {/* PLAYBACK — full-width row like video page REPEAT/RESUME */}
+                  <div style={{ display: "flex", gap: "6px", marginBottom: "10px" }}>
                     <button
-                      onClick={(e) => {
-                        const url = `${window.location.origin}${window.location.pathname}#v=${video.id}&s=${subtitles[studyIndex].index}&m=edit`;
-                        navigator.clipboard.writeText(url);
-                        e.currentTarget.textContent = "✓ COPIED";
-                        setTimeout(() => { e.currentTarget.textContent = "🔗 LINK"; }, 1000);
+                      onClick={() => {
+                        const sub = subtitles[studyIndex];
+                        if (!playerReady || !playerInstanceRef.current || !sub) return;
+                        playerInstanceRef.current.seekTo(sub.start);
+                        playerInstanceRef.current.playVideo();
+                        if (!loopTargetRef.current) {
+                          const checkEnd = setInterval(() => {
+                            if (playerInstanceRef.current) {
+                              const ct = playerInstanceRef.current.getCurrentTime();
+                              if (ct >= sub.end) { playerInstanceRef.current.pauseVideo(); clearInterval(checkEnd); }
+                            } else clearInterval(checkEnd);
+                          }, 100);
+                        }
                       }}
                       className="phys-btn"
                       style={{
-                        padding: "6px 10px", borderRadius: "6px", cursor: "pointer",
-                        fontSize: "10px", fontWeight: "700", fontFamily: "monospace", letterSpacing: "0.05em",
+                        flex: 1, padding: "10px", borderRadius: "5px",
+                        cursor: playerReady ? "pointer" : "not-allowed",
+                        fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
+                        letterSpacing: "0.1em", opacity: playerReady ? 1 : 0.4,
+                        color: T.text,
                       }}
-                      title="편집 퍼머링크 복사"
-                    >🔗 LINK</button>
+                    >
+                      <span className="led led-blue" style={{ marginRight: "5px" }} />
+                      LISTEN
+                    </button>
+                    <button
+                      onClick={() => {
+                        const sub = subtitles[studyIndex];
+                        if (!playerReady || !playerInstanceRef.current || !sub) return;
+                        if (loopTargetRef.current) {
+                          loopTargetRef.current = null; setIsLooping(false);
+                          playerInstanceRef.current.pauseVideo();
+                        } else {
+                          continuousPlayRef.current = false; setIsContinuousPlay(false);
+                          loopTargetRef.current = { start: sub.start, end: sub.end };
+                          setIsLooping(true);
+                          playerInstanceRef.current.seekTo(sub.start); playerInstanceRef.current.playVideo();
+                        }
+                      }}
+                      className="phys-btn"
+                      style={{
+                        flex: 1, padding: "10px", borderRadius: "5px",
+                        cursor: playerReady ? "pointer" : "not-allowed",
+                        fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
+                        letterSpacing: "0.1em", opacity: playerReady ? 1 : 0.4,
+                        background: isLooping ? "linear-gradient(180deg, #4f46e5, #3730a3) !important" : undefined,
+                        borderColor: isLooping ? "rgba(99,102,241,0.4) !important" : undefined,
+                        color: isLooping ? "#fff" : T.cockpit.labelColor,
+                      }}
+                    >
+                      <span className={`led ${isLooping ? "led-blue led-blink" : "led-off"}`} style={{ marginRight: "5px" }} />
+                      REPEAT
+                    </button>
+                    <button
+                      onClick={() => {
+                        const sub = subtitles[studyIndex];
+                        if (!playerReady || !playerInstanceRef.current || !sub) return;
+                        if (continuousPlayRef.current) {
+                          continuousPlayRef.current = false; setIsContinuousPlay(false);
+                          playerInstanceRef.current.pauseVideo();
+                        } else {
+                          loopTargetRef.current = null; setIsLooping(false);
+                          continuousPlayRef.current = true; setIsContinuousPlay(true);
+                          playerInstanceRef.current.seekTo(sub.start); playerInstanceRef.current.playVideo();
+                        }
+                      }}
+                      className="phys-btn"
+                      style={{
+                        flex: 1, padding: "10px", borderRadius: "5px",
+                        cursor: playerReady ? "pointer" : "not-allowed",
+                        fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
+                        letterSpacing: "0.1em", opacity: playerReady ? 1 : 0.4,
+                        color: isContinuousPlay ? T.cockpit.greenText : T.textMuted,
+                      }}
+                    >
+                      <span className={`led ${isContinuousPlay ? "led-green led-blink" : "led-off"}`} style={{ marginRight: "5px" }} />
+                      CONT
+                    </button>
+                  </div>
+
+                  {/* COMMAND — Edit / Split / Merge / Save / Cut */}
+                  <div style={{
+                    display: "flex", gap: "6px",
+                    paddingTop: "10px", borderTop: T.cockpit.seam,
+                  }}>
+                    {isEditing ? (
+                      <>
+                        <button onClick={saveEdit} disabled={isSaving} className="phys-btn"
+                          style={{
+                            flex: 1, padding: "10px", borderRadius: "5px",
+                            cursor: isSaving ? "not-allowed" : "pointer",
+                            fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
+                            letterSpacing: "0.1em", opacity: isSaving ? 0.6 : 1,
+                            background: "linear-gradient(180deg, #166534, #14532d) !important",
+                            borderColor: "rgba(52,211,153,0.4) !important",
+                            color: "#fff",
+                          }}
+                        >
+                          <span className={`led ${isSaving ? "led-amber led-blink" : "led-green"}`} style={{ marginRight: "5px" }} />
+                          {isSaving ? "SAVING..." : "SAVE"}
+                        </button>
+                        <button onClick={cancelEditing} className="phys-btn"
+                          style={{
+                            flex: 1, padding: "10px", borderRadius: "5px", cursor: "pointer",
+                            fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
+                            letterSpacing: "0.1em", color: T.textMuted,
+                          }}
+                        >CANCEL</button>
+                      </>
+                    ) : splitMode ? (
+                      <>
+                        <button onClick={confirmSplit} disabled={!splitAllSelected || isSplitting} className="phys-btn"
+                          style={{
+                            flex: 1, padding: "10px", borderRadius: "5px",
+                            cursor: splitAllSelected && !isSplitting ? "pointer" : "not-allowed",
+                            fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
+                            letterSpacing: "0.1em", opacity: splitAllSelected ? 1 : 0.4,
+                            background: splitAllSelected ? "linear-gradient(180deg, #991b1b, #7f1d1d) !important" : undefined,
+                            borderColor: splitAllSelected ? "rgba(239,68,68,0.4) !important" : undefined,
+                            color: splitAllSelected ? "#fff" : T.textMuted,
+                          }}
+                        >
+                          <span className={`led ${splitAllSelected ? "led-red" : "led-off"}`} style={{ marginRight: "5px" }} />
+                          CUT
+                        </button>
+                        <button onClick={cancelSplit} className="phys-btn"
+                          style={{
+                            flex: 1, padding: "10px", borderRadius: "5px", cursor: "pointer",
+                            fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
+                            letterSpacing: "0.1em", color: T.textMuted,
+                          }}
+                        >CANCEL</button>
+                        <div style={{
+                          display: "flex", gap: "6px", alignItems: "center",
+                          fontSize: "9px", fontFamily: "monospace", color: T.textMuted,
+                        }}>
+                          <span className={`led ${splitPoints.text != null ? "led-green" : "led-off"}`} />
+                          <span className={`led ${splitPoints.pronunciation != null ? "led-green" : "led-off"}`} />
+                          <span className={`led ${splitPoints.translation != null ? "led-green" : "led-off"}`} />
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <button
+                          onClick={startEditing}
+                          className="phys-btn"
+                          style={{
+                            flex: 1, padding: "10px", borderRadius: "5px", cursor: "pointer",
+                            fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
+                            letterSpacing: "0.1em", color: T.cockpit.amberText,
+                          }}
+                        >
+                          <span className="led led-amber" style={{ marginRight: "5px" }} />
+                          EDIT
+                        </button>
+                        <button
+                          onClick={startSplit}
+                          disabled={subtitles[studyIndex].text.split(/\s+/).length < 2}
+                          className="phys-btn"
+                          style={{
+                            flex: 1, padding: "10px", borderRadius: "5px",
+                            cursor: subtitles[studyIndex].text.split(/\s+/).length < 2 ? "not-allowed" : "pointer",
+                            fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
+                            letterSpacing: "0.1em",
+                            opacity: subtitles[studyIndex].text.split(/\s+/).length < 2 ? 0.4 : 1,
+                            color: T.cockpit.redText,
+                          }}
+                        >
+                          <span className="led led-red" style={{ marginRight: "5px" }} />
+                          SPLIT
+                        </button>
+                        {studyIndex > 0 && (
+                          <button
+                            onClick={mergeWithPrev}
+                            disabled={isMerging}
+                            className="phys-btn"
+                            style={{
+                              flex: 1, padding: "10px", borderRadius: "5px",
+                              cursor: isMerging ? "not-allowed" : "pointer",
+                              fontSize: "11px", fontWeight: "700", fontFamily: "monospace",
+                              letterSpacing: "0.1em", opacity: isMerging ? 0.4 : 1,
+                              color: T.textMuted,
+                            }}
+                          >
+                            <span className={`led ${isMerging ? "led-red led-blink" : "led-off"}`} style={{ marginRight: "5px" }} />
+                            MERGE
+                          </button>
+                        )}
+                      </>
+                    )}
                   </div>
                 </div>
               )}
