@@ -1,0 +1,187 @@
+[
+  {
+    "index": 1,
+    "start": 0.03,
+    "end": 2.04,
+    "text": "hello YouTube world I'm ed Sheeran this",
+    "pronunciation": "헬로 유투브 월드 아임 에드 시런 디스",
+    "translation": "안녕 유튜브 세상 나는 에드 시런이고 이건",
+    "notes": [
+      {
+        "word": "world I'm",
+        "actual": "월다임",
+        "meaning": "d+모음 연음으로 이어짐"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "start": 2.04,
+    "end": 56.74,
+    "text": "is where we",
+    "pronunciation": "이즈 웨어 위",
+    "translation": "여기가 우리가",
+    "notes": []
+  },
+  {
+    "index": 3,
+    "start": 61.6,
+    "end": 64.79,
+    "text": "honey now fellas singing ba ba ba",
+    "pronunciation": "허니 나우 펠러즈 씽잉 바 바 바",
+    "translation": "허니 자 친구들 바 바 바를 노래해",
+    "notes": []
+  },
+  {
+    "index": 4,
+    "start": 64.79,
+    "end": 67.01,
+    "text": "odo if you wanna go and take a ride with",
+    "pronunciation": "오도 이퓨 워나 고 앤 테이커 롸이드 윋",
+    "translation": "오도 만약 네가 나랑 드라이브 하고 싶다면",
+    "notes": [
+      {
+        "word": "wanna go and",
+        "actual": "워나 고앤",
+        "meaning": "want to→wanna 축약"
+      },
+      {
+        "word": "take a",
+        "actual": "테이커",
+        "meaning": "k+모음 연음"
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "start": 67.01,
+    "end": 70.85,
+    "text": "me but it me baby one more time paint a",
+    "pronunciation": "미 벗 잇 미 베이비 원 모어 타임 페인러",
+    "translation": "미 벗 잇 미 베이비 원 모어 타임 그려줘",
+    "notes": [
+      {
+        "word": "paint a",
+        "actual": "페인러",
+        "meaning": "t+모음 연음, t→ㄹ 플랩"
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "start": 70.85,
+    "end": 73.55,
+    "text": "picture of you and me on the dais and we",
+    "pronunciation": "픽쳐러뷰 앤 미 온 더 데이이스 앤 위",
+    "translation": "너와 나의 그림을 단상 위에 그리고 우리는",
+    "notes": [
+      {
+        "word": "picture of",
+        "actual": "픽쳐러",
+        "meaning": "r+모음 연음으로 이어짐"
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "start": 73.55,
+    "end": 83.0,
+    "text": "were singing at the top fast-forward to",
+    "pronunciation": "워 씽잉 앳 더 탑 패스트포워드 투",
+    "translation": "꼭대기에서 노래하고 있었어 빨리 감기해서",
+    "notes": []
+  },
+  {
+    "index": 8,
+    "start": 83.0,
+    "end": 89.27,
+    "text": "18 we are more than love we are holding",
+    "pronunciation": "에이틴 위 아 모어 댄 러브 위 아 홀딩",
+    "translation": "18살 우린 사랑 이상이야 우린 서로를 안고 있어",
+    "notes": []
+  },
+  {
+    "index": 9,
+    "start": 89.27,
+    "end": 113.87,
+    "text": "each other I'm like bye bye bye mo you",
+    "pronunciation": "이쳐더 아임 라잌 바이 바이 바이 모 유",
+    "translation": "서로를 안고 나는 바이 바이 바이 모 너",
+    "notes": [
+      {
+        "word": "each other I'm",
+        "actual": "이쳐더 아임",
+        "meaning": "ch+모음, r+모음 연음"
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "start": 113.87,
+    "end": 115.88,
+    "text": "wanna go and take a ride with me but",
+    "pronunciation": "워나 고 앤 테이커 롸이드 윋 미 벗",
+    "translation": "나랑 드라이브 하고 싶다면 하지만",
+    "notes": [
+      {
+        "word": "take a",
+        "actual": "테이커",
+        "meaning": "k+모음 연음"
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "start": 115.88,
+    "end": 120.17,
+    "text": "baby want a picture",
+    "pronunciation": "베이비 원러 픽쳐",
+    "translation": "베이비 사진 한 장 원해",
+    "notes": [
+      {
+        "word": "want a",
+        "actual": "원러",
+        "meaning": "t+모음 플랩으로 t→ㄹ"
+      }
+    ]
+  },
+  {
+    "index": 12,
+    "start": 120.17,
+    "end": 152.48,
+    "text": "Oh 99 problem singing bye-bye oh if you",
+    "pronunciation": "오 나이니나인 프라블럼 씽잉 바이바이 오 이퓨",
+    "translation": "오 99가지 문제 바이바이를 노래해 오 만약 네가",
+    "notes": [
+      {
+        "word": "99 problem",
+        "actual": "나이니나인 프라블럼",
+        "meaning": "ninety-nine 연음, 빠른 발화"
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "start": 152.48,
+    "end": 157.09,
+    "text": "wanna go and take a ride with me baby",
+    "pronunciation": "워나 고 앤 테이커 롸이드 윋 미 베이비",
+    "translation": "나랑 드라이브 하고 싶다면 베이비",
+    "notes": [
+      {
+        "word": "wanna",
+        "actual": "워나",
+        "meaning": "want to→wanna 축약"
+      }
+    ]
+  },
+  {
+    "index": 14,
+    "start": 201.52,
+    "end": 207.34,
+    "text": "No",
+    "pronunciation": "노",
+    "translation": "아니",
+    "notes": []
+  }
+]

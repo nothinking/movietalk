@@ -78,5 +78,23 @@
     "duration": 390,
     "hasPronunciation": true,
     "addedAt": "2026-02-11"
+  },
+  {
+    "id": "e1hik_dBuOA",
+    "title": "Gracie Abrams - Risk (Live From The Today Show/2024)",
+    "channel": "Gracie Abrams",
+    "subtitleCount": 69,
+    "duration": 199,
+    "hasPronunciation": true,
+    "addedAt": "2026-02-14"
+  },
+  {
+    "id": "u3ePPA0yzSU",
+    "title": "Anne-Marie & Ed Sheeran – 2002 [Official Acoustic Video]",
+    "channel": "Anne-Marie",
+    "subtitleCount": 14,
+    "duration": 206,
+    "hasPronunciation": true,
+    "addedAt": "2026-02-14"
   }
 ]

@@ -1,0 +1,968 @@
+[
+  {
+    "index": 1,
+    "start": 1.0,
+    "end": 2.94,
+    "text": "♪ ♪",
+    "pronunciation": "♪ ♪",
+    "translation": "(간주)",
+    "notes": []
+  },
+  {
+    "index": 2,
+    "start": 3.0,
+    "end": 8.31,
+    "text": "♪  ♪",
+    "pronunciation": "♪ ♪",
+    "translation": "(간주)",
+    "notes": []
+  },
+  {
+    "index": 3,
+    "start": 8.38,
+    "end": 10.51,
+    "text": "♪ ♪",
+    "pronunciation": "♪ ♪",
+    "translation": "(간주)",
+    "notes": []
+  },
+  {
+    "index": 4,
+    "start": 10.58,
+    "end": 11.64,
+    "text": "♪ LOOK AT ME NOW ♪",
+    "pronunciation": "루캣 미 나우",
+    "translation": "지금 나 좀 봐",
+    "notes": [
+      {
+        "word": "look at",
+        "actual": "루캣",
+        "meaning": "k+모음 연음으로 '루캣'"
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "start": 11.71,
+    "end": 13.71,
+    "text": "♪ SAID I WOULDN'T DO IT,\nBUT I HUNTED YOU DOWN ♪",
+    "pronunciation": "세다이 우든 두잇, 버라이 헌리쥬 다운",
+    "translation": "안 그러겠다고 했는데, 널 찾아냈어",
+    "notes": [
+      {
+        "word": "hunted you",
+        "actual": "헌리쥬",
+        "meaning": "t→ㄹ 플랩 + d+y 구개음화로 '리쥬'"
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "start": 13.78,
+    "end": 15.65,
+    "text": "♪ KNOW YOU HAD A GIRL,\nBUT IT DIDN'T WORK OUT ♪",
+    "pronunciation": "노유 해더 걸, 버릿 디든 워카웃",
+    "translation": "여자가 있었던 거 알아, 근데 잘 안 됐잖아",
+    "notes": [
+      {
+        "word": "had a",
+        "actual": "해더",
+        "meaning": "d+모음 연음으로 '해더'"
+      },
+      {
+        "word": "work out",
+        "actual": "워카웃",
+        "meaning": "k+모음 연음으로 '워카웃'"
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "start": 15.71,
+    "end": 18.75,
+    "text": "♪ KNOW YOU BOUGHT A HOUSE,\nBUT YOU HAD TO MOVE OUT,\nAND ♪",
+    "pronunciation": "노유 바러 하우스, 버츄 해투 무바웃, 앤",
+    "translation": "집도 샀잖아, 근데 나와야 했잖아, 그리고",
+    "notes": [
+      {
+        "word": "bought a",
+        "actual": "바러",
+        "meaning": "t+모음 → ㄹ 플랩으로 '바러'"
+      },
+      {
+        "word": "had to",
+        "actual": "해투",
+        "meaning": "d 탈락으로 '해투'"
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "start": 18.82,
+    "end": 20.05,
+    "text": "♪ I'M NOT PROUD ♪",
+    "pronunciation": "아임 낫 프라우드",
+    "translation": "자랑스럽진 않아",
+    "notes": []
+  },
+  {
+    "index": 9,
+    "start": 20.12,
+    "end": 22.02,
+    "text": "♪ GUESS I'M JUST SCARED\nOF YOU SHOOTIN' IT DOWN ♪",
+    "pronunciation": "게사임 저스 스케얼드 어브유 슈린잇 다운",
+    "translation": "네가 거절할까 봐 그냥 두려운 것 같아",
+    "notes": [
+      {
+        "word": "guess I'm",
+        "actual": "게사임",
+        "meaning": "s+모음 연음으로 '게사임'"
+      },
+      {
+        "word": "shootin' it",
+        "actual": "슈린잇",
+        "meaning": "t+모음 → ㄹ 플랩으로 '슈린잇'"
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "start": 22.09,
+    "end": 24.22,
+    "text": "♪ YOU CAN JUST TALK,\nAND I'LL STARE AT YOUR MOUTH ♪",
+    "pronunciation": "유캔 저스 톡, 앤 아일 스테어 랫츄어 마우쓰",
+    "translation": "넌 그냥 말만 해, 나는 네 입만 쳐다볼게",
+    "notes": [
+      {
+        "word": "at your",
+        "actual": "랫츄어",
+        "meaning": "t+y 구개음화로 '츄어'"
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "start": 24.29,
+    "end": 27.49,
+    "text": "♪ YOU COULD BE BAD,\nBUT I WANNA FIND OUT,\nAND ♪",
+    "pronunciation": "유 쿠비 배드, 버라이 워나 파인다웃, 앤",
+    "translation": "나쁜 사람일 수도 있지, 근데 알아보고 싶어, 그리고",
+    "notes": [
+      {
+        "word": "wanna",
+        "actual": "워나",
+        "meaning": "want to → wanna 축약"
+      },
+      {
+        "word": "find out",
+        "actual": "파인다웃",
+        "meaning": "d+모음 연음으로 '파인다웃'"
+      }
+    ]
+  },
+  {
+    "index": 12,
+    "start": 27.56,
+    "end": 31.9,
+    "text": "♪ AND I WAKE UP\nIN THE MIDDLE OF THE NIGHT ♪",
+    "pronunciation": "앤 아이 웨이컵 인더 미들 어브더 나잇",
+    "translation": "그리고 난 한밤중에 잠에서 깨",
+    "notes": [
+      {
+        "word": "wake up",
+        "actual": "웨이컵",
+        "meaning": "k+모음 연음으로 '웨이컵'"
+      },
+      {
+        "word": "middle of the",
+        "actual": "미들 어브더",
+        "meaning": "of the → '어브더' 약화"
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "start": 31.96,
+    "end": 36.04,
+    "text": "♪ WITH THE LIGHT ON,\nAND I FEEL LIKE I COULD DIE ♪",
+    "pronunciation": "위뜨 더 라이론, 앤 아이 필 라이 카이 쿠 다이",
+    "translation": "불을 켜놓고, 죽을 것 같은 기분이 들어",
+    "notes": [
+      {
+        "word": "light on",
+        "actual": "라이론",
+        "meaning": "t+모음 → ㄹ 플랩으로 '라이론'"
+      },
+      {
+        "word": "could die",
+        "actual": "쿠 다이",
+        "meaning": "could의 ld 약화로 '쿠'"
+      }
+    ]
+  },
+  {
+    "index": 14,
+    "start": 36.1,
+    "end": 40.11,
+    "text": "♪ 'CAUSE YOU'RE NOT HERE,\nAND IT DON'T FEEL RIGHT ♪",
+    "pronunciation": "커즈 유어 낫 히어, 앤잇 돈 필 라잇",
+    "translation": "네가 여기 없으니까, 뭔가 맞지가 않아",
+    "notes": [
+      {
+        "word": "and it",
+        "actual": "앤잇",
+        "meaning": "d+모음 연음으로 '앤잇'"
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "start": 40.17,
+    "end": 41.61,
+    "text": "♪ 'CAUSE YOU'RE NOT HERE ♪",
+    "pronunciation": "커즈 유어 낫 히어",
+    "translation": "네가 여기 없으니까",
+    "notes": []
+  },
+  {
+    "index": 16,
+    "start": 41.67,
+    "end": 43.88,
+    "text": "♪ ♪",
+    "pronunciation": "♪ ♪",
+    "translation": "(간주)",
+    "notes": []
+  },
+  {
+    "index": 17,
+    "start": 43.94,
+    "end": 46.78,
+    "text": "♪ GOD, I'M ACTUALLY INVESTED ♪",
+    "pronunciation": "갓, 아임 액츄얼리 인베스티드",
+    "translation": "세상에, 나 진짜 빠져들었어",
+    "notes": [
+      {
+        "word": "actually",
+        "actual": "액츄얼리",
+        "meaning": "t+u 구개음화로 '츄'"
+      }
+    ]
+  },
+  {
+    "index": 18,
+    "start": 46.85,
+    "end": 49.08,
+    "text": "♪ HAVEN'T EVEN MET HIM ♪",
+    "pronunciation": "해븐 이븐 메림",
+    "translation": "아직 만나보지도 않았는데",
+    "notes": [
+      {
+        "word": "met him",
+        "actual": "메림",
+        "meaning": "t+h → h 탈락 + t→ㄹ 플랩으로 '메림'"
+      }
+    ]
+  },
+  {
+    "index": 19,
+    "start": 49.15,
+    "end": 52.55,
+    "text": "♪ WATCH THIS BE THE WRONG THING, CLASSIC ♪",
+    "pronunciation": "왓 디스비 더 롱 띵, 클래식",
+    "translation": "이것도 잘못된 선택이겠지, 역시나",
+    "notes": [
+      {
+        "word": "watch this",
+        "actual": "왓 디스",
+        "meaning": "tch+th 연결에서 빠르게 '왓디스'"
+      }
+    ]
+  },
+  {
+    "index": 20,
+    "start": 52.62,
+    "end": 55.42,
+    "text": "♪ GOD,\nI'M JUMPIN' IN THE DEEP END ♪",
+    "pronunciation": "갓, 아임 점핀 인더 디펜드",
+    "translation": "세상에, 깊은 곳으로 뛰어드는 거야",
+    "notes": [
+      {
+        "word": "jumpin' in the",
+        "actual": "점핀 인더",
+        "meaning": "in the → '인더' 약화"
+      }
+    ]
+  },
+  {
+    "index": 21,
+    "start": 55.49,
+    "end": 57.52,
+    "text": "♪ IT'S MORE FUN TO SWIM IN ♪",
+    "pronunciation": "잇스 모어 펀 투 스위민",
+    "translation": "수영하는 게 더 재밌으니까",
+    "notes": [
+      {
+        "word": "swim in",
+        "actual": "스위민",
+        "meaning": "m+in 연음으로 '스위민'"
+      }
+    ]
+  },
+  {
+    "index": 22,
+    "start": 57.59,
+    "end": 61.16,
+    "text": "♪ HEARD THE RISK IS DROWNING,\nBUT I'M GONNA TAKE IT ♪",
+    "pronunciation": "허드 더 리스키즈 드라우닝, 버라임 거나 테이킷",
+    "translation": "위험하면 빠져죽을 수 있다던데, 그래도 해볼 거야",
+    "notes": [
+      {
+        "word": "gonna",
+        "actual": "거나",
+        "meaning": "going to → gonna 축약"
+      },
+      {
+        "word": "take it",
+        "actual": "테이킷",
+        "meaning": "k+모음 연음으로 '테이킷'"
+      }
+    ]
+  },
+  {
+    "index": 23,
+    "start": 61.23,
+    "end": 64.4,
+    "text": "♪ ♪",
+    "pronunciation": "♪ ♪",
+    "translation": "(간주)",
+    "notes": []
+  },
+  {
+    "index": 24,
+    "start": 64.46,
+    "end": 70.04,
+    "text": "♪ I'M GONNA TAKE IT\nOH-OH, OH, WOAH-OH ♪",
+    "pronunciation": "아임 거나 테이킷 오오, 오, 워오오",
+    "translation": "해볼 거야, 오오, 오, 워오오",
+    "notes": []
+  },
+  {
+    "index": 25,
+    "start": 70.1,
+    "end": 73.14,
+    "text": "♪ ISN'T IT FUN THINKIN'\nI'M RIGHT WHEN\nI'M PROBABLY WRONG? ♪",
+    "pronunciation": "이전릿 펀 띵킨 아임 롸이 웬 아임 프라블리 롱?",
+    "translation": "내가 맞다고 생각하는 게 재밌지 않아? 아마 틀렸을 텐데",
+    "notes": [
+      {
+        "word": "isn't it",
+        "actual": "이전릿",
+        "meaning": "t+모음 연음으로 '릿'이 연결됨, n't it→'닛잇'이 아니라 플랩으로 '넫잇→니릿'"
+      },
+      {
+        "word": "thinkin'",
+        "actual": "띵킨",
+        "meaning": "g 탈락, thinking→thinkin' 구어 축약"
+      }
+    ]
+  },
+  {
+    "index": 26,
+    "start": 73.21,
+    "end": 75.17,
+    "text": "♪ HOLDING MY BREATH\nLIKE I MET SOMEONE ♪",
+    "pronunciation": "홀딩 마이 브레쓰 라이카이 멧 썸원",
+    "translation": "누군가를 만난 것처럼 숨을 참으며",
+    "notes": [
+      {
+        "word": "like I",
+        "actual": "라이카이",
+        "meaning": "like+I 연음으로 k+모음 연결"
+      }
+    ]
+  },
+  {
+    "index": 27,
+    "start": 75.24,
+    "end": 78.48,
+    "text": "♪ KNOWING DAMN WELL THAT I\nHAVEN'T BEEN TOUCHED BY YOU ♪",
+    "pronunciation": "노잉 댐 웰 대라이 해번 빈 터치드 바이 유",
+    "translation": "네가 날 만져본 적 없다는 걸 뻔히 알면서",
+    "notes": [
+      {
+        "word": "that I",
+        "actual": "대라이",
+        "meaning": "that의 t+모음 연음으로 t→ㄹ 플랩, '대라이'로 연결"
+      },
+      {
+        "word": "haven't",
+        "actual": "해번",
+        "meaning": "t 탈락, haven't→'해번'으로 축약"
+      }
+    ]
+  },
+  {
+    "index": 28,
+    "start": 78.55,
+    "end": 81.41,
+    "text": "♪ IN MY HEAD,\nYOU'RE IN THE CAR,\nAND YOU'RE COMIN' TO ME ♪",
+    "pronunciation": "인 마이 헤드 유어 인 더 카 앤 유어 커민 투 미",
+    "translation": "내 머릿속에서 넌 차를 타고 나한테 오고 있어",
+    "notes": [
+      {
+        "word": "comin'",
+        "actual": "커민",
+        "meaning": "g 탈락, coming→comin' 구어 축약"
+      }
+    ]
+  },
+  {
+    "index": 29,
+    "start": 81.48,
+    "end": 83.58,
+    "text": "♪ AND YOU GET TO MY DOOR,\nAND YOU CAN'T EVEN SPEAK ♪",
+    "pronunciation": "앤 유 게루 마이 도어 앤 유 캔니븐 스피크",
+    "translation": "그리고 넌 내 문 앞에 도착하는데 말도 못 해",
+    "notes": [
+      {
+        "word": "get to",
+        "actual": "게루",
+        "meaning": "t+모음 플랩으로 t→ㄹ, get to→'게루'"
+      },
+      {
+        "word": "can't even",
+        "actual": "캔니븐",
+        "meaning": "t 탈락 후 n+even 연음, '캔니븐'"
+      }
+    ]
+  },
+  {
+    "index": 30,
+    "start": 83.65,
+    "end": 85.82,
+    "text": "♪ BUT I THINK THAT IT'S SWEET,\nYEAH,\nI THINK THAT YOU'RE SWEET ♪",
+    "pronunciation": "버라이 띵 대릿 스윗 예 아이 띵 대츄어 스윗",
+    "translation": "근데 난 그게 달콤하다고 생각해, 응, 네가 달콤하다고 생각해",
+    "notes": [
+      {
+        "word": "that it's",
+        "actual": "대릿",
+        "meaning": "that의 th→'대', t+it's 플랩 연음으로 '릿'"
+      },
+      {
+        "word": "that you're",
+        "actual": "대츄어",
+        "meaning": "t+y 구개음화로 '츄' 발음"
+      }
+    ]
+  },
+  {
+    "index": 31,
+    "start": 85.89,
+    "end": 87.29,
+    "text": "♪ ♪"
+  },
+  {
+    "index": 32,
+    "start": 87.35,
+    "end": 91.62,
+    "text": "♪ AND I WAKE UP (I WAKE UP)\nIN THE MIDDLE OF THE NIGHT\n(NIGHT) ♪",
+    "pronunciation": "앤나이 웨이컵 (아이 웨이컵) 인 더 미들 어브 더 나잇 (나잇)",
+    "translation": "그리고 난 한밤중에 깨어나 (깨어나)",
+    "notes": [
+      {
+        "word": "and I",
+        "actual": "앤나이",
+        "meaning": "d+I 연음으로 '앤나이' 연결"
+      },
+      {
+        "word": "wake up",
+        "actual": "웨이컵",
+        "meaning": "k+모음 연음으로 '웨이컵' 한 덩어리"
+      }
+    ]
+  },
+  {
+    "index": 33,
+    "start": 91.69,
+    "end": 94.89,
+    "text": "♪ WITH THE LIGHT ON,\nAND YOU'RE NOT HERE ♪",
+    "pronunciation": "위드 더 라이톤 앤 유어 낫 히어",
+    "translation": "불이 켜진 채로, 그리고 넌 여기 없어",
+    "notes": [
+      {
+        "word": "light on",
+        "actual": "라이톤",
+        "meaning": "t+모음 연음으로 '라이톤' 연결"
+      }
+    ]
+  },
+  {
+    "index": 34,
+    "start": 94.96,
+    "end": 97.83,
+    "text": "♪ GOD, I'M ACTUALLY INVESTED ♪",
+    "pronunciation": "갓 아임 액츄얼리 인베스티드",
+    "translation": "세상에, 나 진짜 빠져들었어",
+    "notes": [
+      {
+        "word": "actually",
+        "actual": "액츄얼리",
+        "meaning": "tu→'츄' 구개음화"
+      }
+    ]
+  },
+  {
+    "index": 35,
+    "start": 97.9,
+    "end": 99.93,
+    "text": "♪ HAVEN'T EVEN MET HIM ♪",
+    "pronunciation": "해번 이븐 메림",
+    "translation": "아직 만나보지도 않았는데",
+    "notes": [
+      {
+        "word": "met him",
+        "actual": "메림",
+        "meaning": "t+h 연음, h 탈락으로 '메림'"
+      }
+    ]
+  },
+  {
+    "index": 36,
+    "start": 100.0,
+    "end": 103.54,
+    "text": "♪ WATCH THIS\nBE THE WRONG THING, CLASSIC ♪",
+    "pronunciation": "워치 디스 비 더 롱 띵 클래식",
+    "translation": "이것도 잘못된 선택이 되겠지, 전형적이야",
+    "notes": []
+  },
+  {
+    "index": 37,
+    "start": 103.6,
+    "end": 106.41,
+    "text": "♪ GOD,\nI'M JUMPIN' IN THE DEEP END ♪",
+    "pronunciation": "갓 아임 점핀 인 더 딥 엔드",
+    "translation": "세상에, 나 깊은 곳으로 뛰어들어",
+    "notes": [
+      {
+        "word": "jumpin'",
+        "actual": "점핀",
+        "meaning": "g 탈락, jumping→jumpin' 구어 축약"
+      }
+    ]
+  },
+  {
+    "index": 38,
+    "start": 106.47,
+    "end": 108.61,
+    "text": "♪ IT'S MORE FUN TO SWIM IN ♪",
+    "pronunciation": "잇스 모어 펀 투 스위민",
+    "translation": "그 안에서 수영하는 게 더 재밌어",
+    "notes": [
+      {
+        "word": "swim in",
+        "actual": "스위민",
+        "meaning": "m+in 연음으로 '스위민' 한 덩어리"
+      }
+    ]
+  },
+  {
+    "index": 39,
+    "start": 108.67,
+    "end": 111.81,
+    "text": "♪ HEARD THE RISK IS DROWNING,\nBUT I'M GONNA TAKE IT ♪",
+    "pronunciation": "허드 더 리스키즈 드라우닝 버라임 거나 테이킷",
+    "translation": "위험은 익사라고 들었지만 감수할 거야",
+    "notes": [
+      {
+        "word": "risk is",
+        "actual": "리스키즈",
+        "meaning": "k+is 연음으로 '키즈' 연결"
+      },
+      {
+        "word": "gonna take it",
+        "actual": "거나 테이킷",
+        "meaning": "going to→gonna 축약, take it 플랩 연음"
+      }
+    ]
+  },
+  {
+    "index": 40,
+    "start": 111.88,
+    "end": 113.31,
+    "text": "♪ I'M GONNA BEND 'TIL I BREAK ♪",
+    "pronunciation": "아임 거나 벤 틸라이 브레이크",
+    "translation": "부러질 때까지 버틸 거야",
+    "notes": [
+      {
+        "word": "'til I",
+        "actual": "틸라이",
+        "meaning": "l+I 연음으로 '틸라이' 연결"
+      }
+    ]
+  },
+  {
+    "index": 41,
+    "start": 113.38,
+    "end": 115.81,
+    "text": "♪ AND YOU'LL BE\nMY FAVORITE MISTAKE ♪",
+    "pronunciation": "앤 율 비 마이 페이버릿 미스테이크",
+    "translation": "그리고 넌 내 최애 실수가 될 거야",
+    "notes": [
+      {
+        "word": "favorite",
+        "actual": "페이버릿",
+        "meaning": "v 다음 모음 사이 r이 부드럽게 연결, t→ㄹ 플랩은 아니지만 빠르게 '릿'"
+      }
+    ]
+  },
+  {
+    "index": 42,
+    "start": 115.88,
+    "end": 118.25,
+    "text": "♪ I WISH YOU COULD HOLD ME,\nHERE SHAKIN' ♪",
+    "pronunciation": "아이 위슈 쿠드 홀드 미 히어 쉐이킨",
+    "translation": "네가 나를 안아줄 수 있으면 좋겠어, 여기서 떨고 있어",
+    "notes": [
+      {
+        "word": "wish you",
+        "actual": "위슈",
+        "meaning": "sh+y 구개음화로 '슈' 결합"
+      }
+    ]
+  },
+  {
+    "index": 43,
+    "start": 118.32,
+    "end": 120.49,
+    "text": "♪ YOU'RE THE RISK,\nI'M GONNA TAKE IT ♪",
+    "pronunciation": "유어 더 리스크 아임 거나 테이킷",
+    "translation": "넌 그 위험이야, 감수할 거야",
+    "notes": [
+      {
+        "word": "take it",
+        "actual": "테이킷",
+        "meaning": "k+it 연음, 빠르게 '테이킷'"
+      }
+    ]
+  },
+  {
+    "index": 44,
+    "start": 120.55,
+    "end": 122.36,
+    "text": "♪ WHY AREN'T YOU HERE\nIN MY BEDROOM? ♪",
+    "pronunciation": "와이 아른츄 히어 인 마이 베드룸",
+    "translation": "왜 내 침실에 없는 거야",
+    "notes": [
+      {
+        "word": "aren't you",
+        "actual": "아른츄",
+        "meaning": "t+y 구개음화로 '츄' 발음"
+      }
+    ]
+  },
+  {
+    "index": 45,
+    "start": 122.42,
+    "end": 124.46,
+    "text": "♪ HOPELESSLY BORING\nWITHOUT YOU ♪",
+    "pronunciation": "호프리슬리 보어링 위다우츄",
+    "translation": "네가 없으면 절망적으로 지루해",
+    "notes": [
+      {
+        "word": "without you",
+        "actual": "위다우츄",
+        "meaning": "t+y 구개음화로 '츄' 발음"
+      }
+    ]
+  },
+  {
+    "index": 46,
+    "start": 124.52,
+    "end": 126.66,
+    "text": "♪ TOO SOON TO TELL YOU\n\"I LOVE YOU\" ♪",
+    "pronunciation": "투 순 투 텔 유 아이 러브 유",
+    "translation": "사랑한다고 말하기엔 너무 일러",
+    "notes": []
+  },
+  {
+    "index": 47,
+    "start": 126.73,
+    "end": 129.9,
+    "text": "♪ TOO SOON\nTO TELL YOU\n\"I LOVE YOU\" ♪",
+    "pronunciation": "투 순 투 텔 유 아이 러브 유",
+    "translation": "사랑한다고 말하기엔 너무 일러",
+    "notes": []
+  },
+  {
+    "index": 48,
+    "start": 129.96,
+    "end": 132.4,
+    "text": "♪ ♪"
+  },
+  {
+    "index": 49,
+    "start": 132.47,
+    "end": 133.9,
+    "text": "♪ AND I LOVE YOU ♪",
+    "pronunciation": "앤 아이 러브 유",
+    "translation": "그리고 난 널 사랑해",
+    "notes": []
+  },
+  {
+    "index": 50,
+    "start": 133.97,
+    "end": 137.27,
+    "text": "♪ ♪"
+  },
+  {
+    "index": 51,
+    "start": 137.34,
+    "end": 140.47,
+    "text": "♪ GOD,\nI'M ACTUALLY INVESTED ♪",
+    "pronunciation": "갓, 아임 액츄얼리 인베스티드",
+    "translation": "세상에, 나 진짜 빠져들었어",
+    "notes": [
+      {
+        "word": "actually",
+        "actual": "액츄얼리",
+        "meaning": "t+u 구개음화로 '츄' 발음"
+      }
+    ]
+  },
+  {
+    "index": 52,
+    "start": 140.54,
+    "end": 142.71,
+    "text": "♪ THINK I REALLY WANT THIS ♪",
+    "pronunciation": "띵카이 릴리 원 디스",
+    "translation": "진짜로 이걸 원하는 것 같아",
+    "notes": [
+      {
+        "word": "think I",
+        "actual": "띵카이",
+        "meaning": "k+I 연음으로 '카이'"
+      }
+    ]
+  },
+  {
+    "index": 53,
+    "start": 142.78,
+    "end": 145.15,
+    "text": "♪ I'M NOT EVEN KIDDING ♪",
+    "pronunciation": "아임 나리븐 키딩",
+    "translation": "농담도 아니야",
+    "notes": [
+      {
+        "word": "not even",
+        "actual": "나리븐",
+        "meaning": "t+모음 플랩으로 t→ㄹ, 연음"
+      }
+    ]
+  },
+  {
+    "index": 54,
+    "start": 145.21,
+    "end": 148.98,
+    "text": "♪ NO, I'M\nACTUALLY INVESTED ♪",
+    "pronunciation": "노, 아임 액츄얼리 인베스티드",
+    "translation": "아니, 나 진짜 빠져들었어",
+    "notes": [
+      {
+        "word": "actually",
+        "actual": "액츄얼리",
+        "meaning": "t+u 구개음화로 '츄' 발음"
+      }
+    ]
+  },
+  {
+    "index": 55,
+    "start": 149.05,
+    "end": 151.08,
+    "text": "♪ HAVEN'T EVEN MET YET ♪",
+    "pronunciation": "해븐 이븐 메려",
+    "translation": "아직 만나보지도 않았는데",
+    "notes": [
+      {
+        "word": "met yet",
+        "actual": "메려",
+        "meaning": "t+y 구개음화로 '려' 발음"
+      }
+    ]
+  },
+  {
+    "index": 56,
+    "start": 151.15,
+    "end": 154.45,
+    "text": "♪ WISH THAT I WAS KIDDING,\nI'M NOT AND I HATE IT ♪",
+    "pronunciation": "위시 대라이 워즈 키딩, 아임 낫 앤 아이 헤이릿",
+    "translation": "농담이었으면 좋겠는데, 아닌 게 싫어",
+    "notes": [
+      {
+        "word": "that I",
+        "actual": "대라이",
+        "meaning": "t+모음 플랩으로 t→ㄹ"
+      },
+      {
+        "word": "hate it",
+        "actual": "헤이릿",
+        "meaning": "t+모음 플랩으로 t→ㄹ 연음"
+      }
+    ]
+  },
+  {
+    "index": 57,
+    "start": 154.52,
+    "end": 157.49,
+    "text": "♪ GOD,\nI'M ACTUALLY INVESTED ♪",
+    "pronunciation": "갓, 아임 액츄얼리 인베스티드",
+    "translation": "세상에, 나 진짜 빠져들었어",
+    "notes": []
+  },
+  {
+    "index": 58,
+    "start": 157.56,
+    "end": 159.66,
+    "text": "♪ HAVEN'T EVEN MET YET ♪",
+    "pronunciation": "해븐 이븐 메려",
+    "translation": "아직 만나보지도 않았는데",
+    "notes": [
+      {
+        "word": "met yet",
+        "actual": "메려",
+        "meaning": "t+y 구개음화로 '려' 발음"
+      }
+    ]
+  },
+  {
+    "index": 59,
+    "start": 159.73,
+    "end": 163.1,
+    "text": "♪ WATCH THIS BE THE WRONG THING\nCLASSIC ♪",
+    "pronunciation": "워치 디스 비 더 롱 띵 클래식",
+    "translation": "이게 또 잘못된 선택이겠지, 전형적이야",
+    "notes": []
+  },
+  {
+    "index": 60,
+    "start": 163.16,
+    "end": 165.97,
+    "text": "♪ GOD,\nI'M JUMPIN' IN THE DEEP END ♪",
+    "pronunciation": "갓, 아임 점핀 인 더 딥 엔드",
+    "translation": "세상에, 나 깊은 곳에 뛰어드는 중이야",
+    "notes": [
+      {
+        "word": "jumpin' in",
+        "actual": "점피닌",
+        "meaning": "n+모음 연음으로 '니' 연결"
+      }
+    ]
+  },
+  {
+    "index": 61,
+    "start": 166.03,
+    "end": 168.33,
+    "text": "♪ IT'S MORE FUN TO SWIM IN ♪",
+    "pronunciation": "잇츠 모어 펀 투 스위민",
+    "translation": "헤엄치는 게 더 재밌으니까",
+    "notes": [
+      {
+        "word": "swim in",
+        "actual": "스위민",
+        "meaning": "m+in 연음으로 자연스럽게 연결"
+      }
+    ]
+  },
+  {
+    "index": 62,
+    "start": 168.4,
+    "end": 172.07,
+    "text": "♪ HEARD THE RISK IS DROWNING,\nBUT I'M GONNA TAKE IT ♪",
+    "pronunciation": "허드 더 리스키즈 드라우닝, 버라임 거나 테이킷",
+    "translation": "빠질 위험이 있다지만, 감수할 거야",
+    "notes": [
+      {
+        "word": "risk is",
+        "actual": "리스키즈",
+        "meaning": "k+is 연음"
+      },
+      {
+        "word": "gonna take it",
+        "actual": "거나 테이킷",
+        "meaning": "going to→gonna 축약, t+모음 연음"
+      }
+    ]
+  },
+  {
+    "index": 63,
+    "start": 172.14,
+    "end": 174.64,
+    "text": "♪ ♪"
+  },
+  {
+    "index": 64,
+    "start": 174.71,
+    "end": 176.44,
+    "text": "♪ I'M GONNA TAKE IT ♪",
+    "pronunciation": "아임 거나 테이킷",
+    "translation": "감수할 거야",
+    "notes": [
+      {
+        "word": "gonna take it",
+        "actual": "거나 테이킷",
+        "meaning": "going to→gonna 축약"
+      }
+    ]
+  },
+  {
+    "index": 65,
+    "start": 176.51,
+    "end": 180.21,
+    "text": "♪ HEARD THE RISK IS DROWNING,\nBUT I'M GONNA TAKE IT ♪",
+    "pronunciation": "허드 더 리스키즈 드라우닝, 버라임 거나 테이킷",
+    "translation": "빠질 위험이 있다지만, 감수할 거야",
+    "notes": []
+  },
+  {
+    "index": 66,
+    "start": 180.28,
+    "end": 181.88,
+    "text": "♪ TOO SOON TO TELL YOU\n\"I LOVE YOU\" ♪",
+    "pronunciation": "투 순 투 텔 유 아이 러브 유",
+    "translation": "사랑한다고 말하기엔 너무 이른데",
+    "notes": []
+  },
+  {
+    "index": 67,
+    "start": 181.95,
+    "end": 184.02,
+    "text": "♪ TOO SOON TO\nTELL YOU\n\"I LOVE YOU\" ♪",
+    "pronunciation": "투 순 투 텔 유 아이 러브 유",
+    "translation": "사랑한다고 말하기엔 너무 이른데",
+    "notes": []
+  },
+  {
+    "index": 68,
+    "start": 184.08,
+    "end": 186.35,
+    "text": "♪ TOO SOON TO TELL YOU\n\"I LOVE YOU\" ♪",
+    "pronunciation": "투 순 투 텔 유 아이 러브 유",
+    "translation": "사랑한다고 말하기엔 너무 이른데",
+    "notes": []
+  },
+  {
+    "index": 69,
+    "start": 186.42,
+    "end": 188.86,
+    "text": "♪ YOU'RE THE RISK,\nI'M GONNA TAKE IT ♪",
+    "pronunciation": "유어 더 리스크, 아임 거나 테이킷",
+    "translation": "네가 그 위험이야, 감수할 거야",
+    "notes": [
+      {
+        "word": "gonna take it",
+        "actual": "거나 테이킷",
+        "meaning": "going to→gonna 축약, t+모음 연음"
+      }
+    ]
+  }
+]

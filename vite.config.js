@@ -7,6 +7,7 @@ function subtitleEditPlugin() {
   return {
     name: 'subtitle-edit-api',
     configureServer(server) {
+      // 자막 편집 API 미들웨어
       server.middlewares.use((req, res, next) => {
         // POST /api/subtitle/merge/{videoId}/{index} — 해당 자막을 이전 자막에 합침
         const mergeMatch = req.url?.match(/^\/api\/subtitle\/merge\/([^/]+)\/(\d+)$/)
@@ -207,6 +208,6 @@ export default defineConfig({
   server: {
     host: true,
     port: 3000,
-    open: true,
+    open: false,
   },
 })

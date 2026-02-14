@@ -209,3 +209,7 @@ export async function resetUserSubtitles(videoId) {
 
   return { error };
 }
+
+// --- 영상 데이터는 static JSON (public/videos/) 사용 ---
+// 영상 등록: python add_video.py "YouTube URL"
+// 발음 생성: python add_video.py --generate-pronunciation --use-claude-code VIDEO_ID

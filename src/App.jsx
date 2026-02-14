@@ -301,6 +301,7 @@ const SkipForwardIcon = () => (
   </svg>
 );
 
+// ── Video Register Modal ──
 // ── Video List Screen ──
 function VideoListScreen({ videos, onSelect, favoriteIds, onToggleFavorite, user }) {
   const formatDuration = (sec) => {
@@ -340,22 +341,24 @@ function VideoListScreen({ videos, onSelect, favoriteIds, onToggleFavorite, user
         }}>
           영어 여행 출발 게이트
         </div>
-        <div style={{
-          display: "inline-flex",
-          alignItems: "center",
-          gap: "8px",
-          background: "linear-gradient(180deg, #1e1e2c, #161622)",
-          border: "1px solid rgba(80,80,100,0.4)",
-          borderRadius: "6px",
-          padding: "6px 16px",
-          boxShadow: "inset 0 1px 3px rgba(0,0,0,0.4)",
-        }}>
-          <span style={{ fontSize: "10px", color: T.cockpit.greenText, fontFamily: "monospace", fontWeight: "700", letterSpacing: "0.1em" }}>
-            AVAILABLE FLIGHTS
-          </span>
-          <span style={{ fontSize: "14px", color: T.cockpit.amberText, fontFamily: "monospace", fontWeight: "700" }}>
-            {videos.length}
-          </span>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "10px" }}>
+          <div style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "8px",
+            background: "linear-gradient(180deg, #1e1e2c, #161622)",
+            border: "1px solid rgba(80,80,100,0.4)",
+            borderRadius: "6px",
+            padding: "6px 16px",
+            boxShadow: "inset 0 1px 3px rgba(0,0,0,0.4)",
+          }}>
+            <span style={{ fontSize: "10px", color: T.cockpit.greenText, fontFamily: "monospace", fontWeight: "700", letterSpacing: "0.1em" }}>
+              AVAILABLE FLIGHTS
+            </span>
+            <span style={{ fontSize: "14px", color: T.cockpit.amberText, fontFamily: "monospace", fontWeight: "700" }}>
+              {videos.length}
+            </span>
+          </div>
         </div>
       </div>
 
@@ -557,7 +560,6 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
   const [hudDisplay, setHudDisplay] = useState({ original: false, pronunciation: true, translation: false });
   const studyModeRef = useRef(false);
   const studyIndexRef = useRef(0);
-
   const hasPronunciation =
     subtitles.length > 0 && "pronunciation" in subtitles[0];
 
@@ -3160,7 +3162,6 @@ function PlayerScreen({ video, subtitles, onBack, onUpdateSubtitle, onMergeSubti
                         textOverflow: "ellipsis",
                         whiteSpace: "nowrap",
                         transition: `color 0.2s ${T.ease}`,
-                        fontFamily: isActive ? "inherit" : "inherit",
                       }}
                     >
                       {sub.text}
@@ -3332,14 +3333,12 @@ export default function MovieEnglishApp() {
     };
   }, []);
 
-  // Load video index + handle permalink on init
+  // Load video index from static JSON + handle permalink on init
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}videos/index.json`)
-      .then((r) => {
-        if (!r.ok) throw new Error("index.json not found");
-        return r.json();
-      })
-      .then((data) => {
+    (async () => {
+      try {
+        const res = await fetch(`${import.meta.env.BASE_URL}videos/index.json`);
+        const data = await res.json();
         setVideos(data);
         // 해시에 영상 ID가 있으면 자동 선택
         const { videoId, subtitleIndex, mode } = parseHash();
@@ -3352,19 +3351,20 @@ export default function MovieEnglishApp() {
             return;
           }
         }
-      })
-      .catch((err) => console.log("영상 목록 로드 실패:", err.message))
-      .finally(() => setLoading(false));
+      } catch (err) {
+        console.log("영상 목록 로드 실패:", err.message);
+      } finally {
+        setLoading(false);
+      }
+    })();
   }, []);
 
-  // Load subtitle data (정적 JSON + Supabase 사용자 데이터 확인)
+  // Load subtitle data from static JSON
   const loadVideo = async (video) => {
     setLoading(true);
     try {
-      // 1. 기본 자막 로드 (정적 JSON)
-      const res = await fetch(
-        `${import.meta.env.BASE_URL}videos/${video.id}.json`
-      );
+      // 1. 기본 자막 로드 (static JSON)
+      const res = await fetch(`${import.meta.env.BASE_URL}videos/${video.id}.json`);
       if (!res.ok) throw new Error("data not found");
       const baseData = await res.json();
       setBaseSubtitles(baseData);
