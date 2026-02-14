@@ -1,0 +1,116 @@
+[
+  {
+    "index": 0,
+    "start": 0.64,
+    "end": 6.16,
+    "text": "I will always remember the day you kissed my lips.",
+    "pronunciation": "아이 윌 올웨이즈 리멤버 더 데이 유 키스드 마이 립스.",
+    "translation": "네가 내 입술에 키스한 그날을 난 항상 기억할 거야.",
+    "notes": [
+      {
+        "word": "kissed my",
+        "actual": "키스마이",
+        "meaning": "d 탈락 — 자음+자음 사이에서 d 생략"
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "start": 6.16,
+    "end": 8.77,
+    "text": "Light as a feather.",
+    "pronunciation": "라이래저 페더.",
+    "translation": "깃털처럼 가볍게.",
+    "notes": [
+      {
+        "word": "light as a",
+        "actual": "라이래저",
+        "meaning": "t+모음 플랩 → 라이래, as a 연음 → 저"
+      },
+      {
+        "word": "feather",
+        "actual": "페더",
+        "meaning": "th→ㄷ에 가까운 약화, t 플랩으로 '페더'"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "start": 8.77,
+    "end": 11.04,
+    "text": "And it went just like the snow.",
+    "pronunciation": "앤릿 웬 저스 라잌 더 스노우.",
+    "translation": "그리고 그건 마치 눈처럼 사라졌어.",
+    "notes": [
+      {
+        "word": "and it",
+        "actual": "앤릿",
+        "meaning": "d 탈락 후 n+it 연음 → 앤릿"
+      },
+      {
+        "word": "went just",
+        "actual": "웬 저스",
+        "meaning": "t 탈락 — n 뒤 자음 앞에서 t 생략"
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "start": 11.04,
+    "end": 22.53,
+    "text": "It's never been better than the summer of 2002. We were only 11,",
+    "pronunciation": "잇츠 네버 빈 베러 댄 더 서머럽 투 따우전 투. 위 워 오운리 일레븐,",
+    "translation": "2002년 여름보다 좋았던 적은 없었어. 우린 겨우 열한 살이었는데,",
+    "notes": [
+      {
+        "word": "better",
+        "actual": "베러",
+        "meaning": "모음 사이 tt → ㄹ 플랩"
+      },
+      {
+        "word": "summer of",
+        "actual": "서머럽",
+        "meaning": "r+of 연음, of의 v 약화"
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "start": 22.53,
+    "end": 28.88,
+    "text": "but acting like grownups like we are in the present.",
+    "pronunciation": "벗 액팅 라잌 그로운업스 라잌 위 아린 더 프레전트.",
+    "translation": "하지만 마치 지금의 우리처럼 어른인 척했어.",
+    "notes": [
+      {
+        "word": "we are in",
+        "actual": "위 아린",
+        "meaning": "are+in 모음끼리 연음 → 아린"
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "start": 28.88,
+    "end": 34.91,
+    "text": "Drinking from plastic cups, singing love is forever and ever.",
+    "pronunciation": "드링킹 프럼 플래스틱 컵스, 싱잉 러비즈 포레버 앤 에버.",
+    "translation": "플라스틱 컵으로 마시며, 사랑은 영원하다고 노래했어.",
+    "notes": [
+      {
+        "word": "love is",
+        "actual": "러비즈",
+        "meaning": "v+is 연음 → 비즈"
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "start": 34.91,
+    "end": 40.62,
+    "text": "Well, I guess that was true.",
+    "pronunciation": "웰, 아이 게스 댓 워즈 트루.",
+    "translation": "글쎄, 그게 사실이었나 봐.",
+    "notes": []
+  }
+]

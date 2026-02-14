@@ -96,5 +96,23 @@
     "duration": 206,
     "hasPronunciation": true,
     "addedAt": "2026-02-14"
+  },
+  {
+    "id": "KrOAGapsusE",
+    "title": "실제 원어민 영어 속도 체감해보기#영어듣기",
+    "channel": "temment English",
+    "subtitleCount": 31,
+    "duration": 51,
+    "hasPronunciation": false,
+    "addedAt": "2026-02-14"
+  },
+  {
+    "id": "KGnYfP9Aetc",
+    "title": "Anne Marie - 2002(1) 가사 한글발음 및 해석",
+    "channel": "팝송발음해석",
+    "subtitleCount": 7,
+    "duration": 41,
+    "hasPronunciation": true,
+    "addedAt": "2026-02-14"
   }
 ]

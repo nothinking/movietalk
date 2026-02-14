@@ -9,6 +9,7 @@ YouTube URL로 자막을 추출하고 발음 데이터를 생성하여
 사용법:
     # 자막 추출만 (API key 없을 때)
     python add_video.py "https://www.youtube.com/watch?v=VIDEO_ID"
+    python add_video.py "https://youtube.com/shorts/VIDEO_ID"
 
     # 자막 추출 + 발음 자동 생성 (API key 필요)
     ANTHROPIC_API_KEY=sk-... python add_video.py "https://www.youtube.com/watch?v=VIDEO_ID"
@@ -45,7 +46,7 @@ def extract_video_id(url: str) -> str:
         return url
 
     patterns = [
-        r'(?:youtube\.com/watch\?v=|youtu\.be/|youtube\.com/embed/)([a-zA-Z0-9_-]{11})',
+        r'(?:youtube\.com/(?:watch\?v=|shorts/|embed/)|youtu\.be/)([a-zA-Z0-9_-]{11})',
         r'youtube\.com/watch\?.*v=([a-zA-Z0-9_-]{11})',
     ]
     for pattern in patterns:

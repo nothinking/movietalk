@@ -51,7 +51,7 @@ class SubtitleExtractor:
     def _extract_video_id(url: str) -> Optional[str]:
         """YouTube URL에서 비디오 ID를 추출합니다."""
         patterns = [
-            r'(?:youtube\.com/watch\?v=|youtu\.be/|youtube\.com/embed/)([a-zA-Z0-9_-]{11})',
+            r'(?:youtube\.com/(?:watch\?v=|shorts/|embed/)|youtu\.be/)([a-zA-Z0-9_-]{11})',
             r'youtube\.com/watch\?.*v=([a-zA-Z0-9_-]{11})',
         ]
         for pattern in patterns:
@@ -70,6 +70,7 @@ class SubtitleExtractor:
         """유튜브 URL 유효성을 검사합니다."""
         youtube_patterns = [
             r'(?:https?://)?(?:www\.)?youtube\.com/watch\?v=[\w-]{11}',
+            r'(?:https?://)?(?:www\.)?youtube\.com/shorts/[\w-]{11}',
             r'(?:https?://)?youtu\.be/[\w-]{11}',
         ]
         for pattern in youtube_patterns:
