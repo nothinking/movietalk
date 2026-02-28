@@ -1,0 +1,1098 @@
+[
+  {
+    "index": 0,
+    "start": 4.33,
+    "end": 9.37,
+    "text": "So, as mentioned, I'm probably most well-known as one of the transformers authors.",
+    "pronunciation": "쏘, 애즈 멘션드, 아임 프라블리 모스트 웰노운 애즈 원 어브 더 트랜스포머즈 어서즈.",
+    "translation": "아시다시피, 저는 아마 트랜스포머 논문의 공동저자로 가장 잘 알려져 있을 겁니다."
+  },
+  {
+    "index": 1,
+    "start": 10.64,
+    "end": 20.45,
+    "text": "Transformers are, of course, the T in ChatGPT, and are the architectures that run most of the state-of-the-art artificial intelligence.",
+    "pronunciation": "트랜스포머즈 아, 어브 코스, 더 티 인 챗지피티, 앤 아 디 아키텍처즈 댓 런 모스트 어브 더 스테이러브디아트 아티피셜 인텔리전스.",
+    "translation": "트랜스포머는 물론 ChatGPT의 T이고, 최첨단 인공지능 대부분을 구동하는 아키텍처입니다."
+  },
+  {
+    "index": 2,
+    "start": 22.49,
+    "end": 33.98,
+    "text": "If I think back to that time when we were working on the transformers, I remember it as a very organic,",
+    "pronunciation": "이파이 싱크 백 투 댓 타임 웬 위 워 워킹 온 더 트랜스포머즈, 아이 리멤버 리래저 베리 오게닉,",
+    "translation": "트랜스포머를 개발하던 그 시절을 돌이켜보면, 매우 자연발생적이고,"
+  },
+  {
+    "index": 3,
+    "start": 33.98,
+    "end": 45.48,
+    "text": "bottom-up kind of project, where the idea came from talking over lunch or scribbling randomly on the whiteboards in the office.",
+    "pronunciation": "바텀업 카인더 프라젝트, 웨어 디 아이디어 케임 프럼 토킹 오버 런치 오어 스크리블링 랜덤리 온 더 와잇보즈 인 디 오피스.",
+    "translation": "상향식 프로젝트였다는 기억이 납니다. 점심 먹으면서 얘기하다가, 사무실 화이트보드에 낙서하면서 아이디어가 나왔죠."
+  },
+  {
+    "index": 4,
+    "start": 47.08,
+    "end": 52.11,
+    "text": "And importantly, when we felt like we did actually have a good idea,",
+    "pronunciation": "앤 임포턴리, 웬 위 펠 라이크 위 디 액츄얼리 해버 구 다이디어,",
+    "translation": "그리고 중요한 건, 우리가 정말 좋은 아이디어가 있다고 느꼈을 때,"
+  },
+  {
+    "index": 5,
+    "start": 52.11,
+    "end": 57.92,
+    "text": "we had the freedom to actually spend the time and go and work on it.",
+    "pronunciation": "위 해드 더 프리덤 투 액츄얼리 스펜드 더 타임 앤 고 앤 워커닛.",
+    "translation": "실제로 시간을 들여서 그걸 연구할 자유가 있었다는 거예요."
+  },
+  {
+    "index": 6,
+    "start": 58.66,
+    "end": 66.1,
+    "text": "And even more importantly, we didn't have any pressure that was coming down from management.",
+    "pronunciation": "앤 이븐 모어 임포턴리, 위 디든 해브 에니 프레셔 댓 워즈 커밍 다운 프럼 매니지먼트.",
+    "translation": "더 중요한 건, 경영진으로부터 내려오는 어떤 압박도 없었다는 겁니다."
+  },
+  {
+    "index": 7,
+    "start": 67.7,
+    "end": 77.47,
+    "text": "No pressure to work on any particular project, publish a number of papers, to push a certain number up.",
+    "pronunciation": "노 프레셔 투 워커 네니 파티큘러 프라젝트, 퍼블리셔 넘버 어브 페이퍼즈, 투 푸셔 서튼 넘버 업.",
+    "translation": "특정 프로젝트를 해야 한다거나, 논문을 몇 편 내야 한다거나, 어떤 수치를 올려야 한다는 압박이 없었어요."
+  },
+  {
+    "index": 8,
+    "start": 78.28,
+    "end": 81.65,
+    "text": "So that's the image I want you to have in your mind, right?",
+    "pronunciation": "쏘 대츠 디 이미지 아이 원 유 투 해빈 유어 마인드, 롸잇?",
+    "translation": "그게 바로 여러분이 머릿속에 그려주셨으면 하는 모습입니다."
+  },
+  {
+    "index": 9,
+    "start": 82.05,
+    "end": 89.09,
+    "text": "That is the kind of environment that allowed the transformer to come into existence.",
+    "pronunciation": "대리즈 더 카인더 벤바이런먼트 대럴라우드 더 트랜스포머 투 커민투 이그지스턴스.",
+    "translation": "바로 그런 환경이 트랜스포머가 탄생할 수 있게 해준 겁니다."
+  },
+  {
+    "index": 10,
+    "start": 90.79,
+    "end": 100.1,
+    "text": "An organic, open-ended and with a lot of freedom to pursue the ideas that we thought were interesting and important.",
+    "pronunciation": "앤 오게닉, 오프넨디드 앤 위더 라러 프리덤 투 퍼슈 디 아이디어즈 댓 위 쏫 워 인터레스팅 앤 임포턴트.",
+    "translation": "자연발생적이고, 열린 결말이며, 흥미롭고 중요하다고 생각하는 아이디어를 추구할 자유가 넘치는 환경이었죠."
+  },
+  {
+    "index": 11,
+    "start": 101.0,
+    "end": 108.87,
+    "text": "And my deep concern is that right now in the AI industry, we do not have this kind of environment.",
+    "pronunciation": "앤 마이 딥 컨선 이즈 댓 롸잇 나우 인 디 에이아이 인더스트리, 위 두 낫 해브 디스 카인더 벤바이런먼트.",
+    "translation": "그리고 제가 깊이 우려하는 건, 지금 AI 산업에는 이런 환경이 없다는 겁니다."
+  },
+  {
+    "index": 12,
+    "start": 110.71,
+    "end": 116.58,
+    "text": "And I want to talk about why not and what can we do about it.",
+    "pronunciation": "앤 아이 워너 토커바웃 와이 낫 앤 왓 캔 위 두 어바우릿.",
+    "translation": "왜 그런지, 그리고 우리가 뭘 할 수 있는지 얘기하고 싶습니다."
+  },
+  {
+    "index": 13,
+    "start": 117.52,
+    "end": 131.24,
+    "text": "So the main paradox that I see in artificial intelligence research, or the industry in general right now, is that despite the fact that there's never been",
+    "pronunciation": "쏘 더 메인 패러독스 대라이 씨 인 아티피셜 인텔리전스 리서치, 오어 디 인더스트리 인 제너럴 롸잇 나우, 이즈 댓 디스파잇 더 팩 댓 데어즈 네버 빈",
+    "translation": "제가 인공지능 연구, 혹은 업계 전반에서 보는 핵심 역설은, 이전에는 한 번도 없었던"
+  },
+  {
+    "index": 14,
+    "start": 131.24,
+    "end": 141.91,
+    "text": "so much interest and resources and money and talent, this has somehow caused a narrowing of the research that we're doing.",
+    "pronunciation": "쏘 머치 인터레스트 앤 리소시즈 앤 머니 앤 탤런트, 디스 해즈 섬하우 코즈더 내로잉 어브 더 리서치 댓 위아 두잉.",
+    "translation": "이렇게 많은 관심과 자원, 자금, 인재가 모였는데, 이것이 오히려 우리가 하는 연구의 폭을 좁혔다는 겁니다."
+  },
+  {
+    "index": 15,
+    "start": 142.71,
+    "end": 145.71,
+    "text": "And to me, I think the reason is fairly obvious.",
+    "pronunciation": "앤 투 미, 아이 씽크 더 리즌 이즈 페얼리 아비어스.",
+    "translation": "제가 보기에, 그 이유는 꽤 분명합니다."
+  },
+  {
+    "index": 16,
+    "start": 147.11,
+    "end": 151.48,
+    "text": "It's because the immense amount of pressure that comes with that, right?",
+    "pronunciation": "잇츠 비코즈 디 이멘스 어마운트 어브 프레셔 댓 컴즈 윗 댓, 롸잇?",
+    "translation": "그만큼 엄청난 압박이 따라오기 때문이죠, 그렇죠?"
+  },
+  {
+    "index": 17,
+    "start": 151.51,
+    "end": 160.22,
+    "text": "Pressure from investors that are going to ask for a return on their investment and pressure that comes from individuals,",
+    "pronunciation": "프레셔 프럼 인베스터즈 대라 고나 애스크 포러 리턴 온 데어 인베스먼트 앤 프레셔 댓 컴즈 프럼 인디비주얼즈,",
+    "translation": "투자 수익을 요구하는 투자자들로부터의 압박, 그리고 개인에게 오는 압박이죠,"
+  },
+  {
+    "index": 18,
+    "start": 160.22,
+    "end": 167.63,
+    "text": "because this is such an overcrowded industry right now, where it is very difficult to stand out.",
+    "pronunciation": "비코즈 디시즈 서츤 오버크라우디드 인더스트리 롸잇 나우, 웨어 리리즈 베리 디피컬 투 스탠다웃.",
+    "translation": "지금 이 업계는 너무 과밀해서, 눈에 띄기가 매우 어렵기 때문입니다."
+  },
+  {
+    "index": 19,
+    "start": 168.87,
+    "end": 173.07,
+    "text": "And the researchers are really feeling this pressure, right?",
+    "pronunciation": "앤 더 리서처즈 아 리얼리 필링 디스 프레셔, 롸잇?",
+    "translation": "그리고 연구자들이 이 압박을 정말로 느끼고 있죠?"
+  },
+  {
+    "index": 20,
+    "start": 173.1,
+    "end": 181.92,
+    "text": "If you're doing, let's say, standard AI research right now, you kind of have to assume that there's maybe three",
+    "pronunciation": "이퓨어 두잉, 렛세이, 스탠다드 에이아이 리서치 롸잇 나우, 유 카인더 해투 어슘 댓 데어즈 메이비 쓰리",
+    "translation": "지금 일반적인 AI 연구를 하고 있다면, 아마 서너 개의"
+  },
+  {
+    "index": 21,
+    "start": 181.92,
+    "end": 187.65,
+    "text": "or four other groups doing something very similar or maybe exactly the same.",
+    "pronunciation": "오어 포어 아더 그룹스 두잉 썸씽 베리 시밀러 오어 메이비 이그잭리 더 세임.",
+    "translation": "다른 그룹이 매우 비슷하거나 어쩌면 완전히 똑같은 연구를 하고 있다고 가정해야 합니다."
+  },
+  {
+    "index": 22,
+    "start": 187.69,
+    "end": 190.39,
+    "text": "So you have to spend the time checking to see",
+    "pronunciation": "쏘 유 해투 스펜드 더 타임 체킹 투 씨",
+    "translation": "그래서 시간을 들여서 확인해야 하죠"
+  },
+  {
+    "index": 23,
+    "start": 190.39,
+    "end": 194.43,
+    "text": "if you've been scooped, to see if someone else has put your idea out there.",
+    "pronunciation": "이퓨브 빈 스쿱트, 투 씨 이프 썸원 엘스 해즈 풋 유어 아이디어 아웃 데어.",
+    "translation": "누군가 먼저 당신의 아이디어를 발표했는지, 선수를 빼앗겼는지 말이에요."
+  },
+  {
+    "index": 24,
+    "start": 195.49,
+    "end": 199.95,
+    "text": "And even in academia, where you would hope you would have more freedom,",
+    "pronunciation": "앤 이브닌 아카데미아, 웨어 유 워 호프 유 워 해브 모어 프리덤,",
+    "translation": "그리고 좀 더 자유로울 거라 기대하는 학계에서조차,"
+  },
+  {
+    "index": 25,
+    "start": 199.95,
+    "end": 203.73,
+    "text": "there's pressure to publish, right, and to have your papers published.",
+    "pronunciation": "데어즈 프레셔 투 퍼블리시, 롸잇, 앤 투 해브 유어 페이퍼즈 퍼블리시트.",
+    "translation": "출판해야 한다는 압박이 있죠, 논문을 게재해야 한다는."
+  },
+  {
+    "index": 26,
+    "start": 203.77,
+    "end": 209.19,
+    "text": "So if you have an interesting idea that could create something very interesting,",
+    "pronunciation": "쏘 이퓨 해브 언 인터레스팅 아이디어 댓 쿠드 크리에잇 썸씽 베리 인터레스팅,",
+    "translation": "그래서 뭔가 아주 흥미로운 걸 만들어낼 수 있는 흥미로운 아이디어가 있더라도,"
+  },
+  {
+    "index": 27,
+    "start": 209.19,
+    "end": 220.45,
+    "text": "or you have kind of a mediocre idea that it'll probably get a paper and probably get accepted, the temptation is to go for the low-hanging fruit.",
+    "pronunciation": "오어 유 해브 카인더 미디오커 아이디어 대릴 프라블리 게러 페이퍼 앤 프라블리 게럭셉티드, 더 템테이션 이즈 투 고 포 더 로우행잉 프룻.",
+    "translation": "아니면 논문 하나 나오고 게재될 만한 평범한 아이디어가 있다면, 손쉬운 걸 선택하고 싶은 유혹이 있는 거죠."
+  },
+  {
+    "index": 28,
+    "start": 222.42,
+    "end": 230.55,
+    "text": "So unfortunately, this pressure damages the science, because people are rushing out papers,",
+    "pronunciation": "쏘 언포춘넷리, 디스 프레셔 대미지즈 더 사이언스, 비코즈 피플 아 러싱 아웃 페이퍼즈,",
+    "translation": "안타깝게도, 이런 압박이 과학을 훼손합니다. 사람들이 논문을 서둘러 내놓고 있고,"
+  },
+  {
+    "index": 29,
+    "start": 230.55,
+    "end": 236.8,
+    "text": "and it's reducing the amount of creativity that we have.",
+    "pronunciation": "앤 잇츠 리듀싱 디 어마운트 어브 크리에이티비티 댓 위 해브.",
+    "translation": "우리가 가진 창의성의 총량을 줄이고 있습니다."
+  },
+  {
+    "index": 30,
+    "start": 240.2,
+    "end": 243.64,
+    "text": "So I want to take an analogy from AI itself.",
+    "pronunciation": "쏘 아이 워너 테이컨 어낼러지 프럼 에이아이 잇셀프.",
+    "translation": "그래서 AI 자체에서 비유를 하나 가져오겠습니다."
+  },
+  {
+    "index": 31,
+    "start": 243.64,
+    "end": 252.35,
+    "text": "So when we're designing AI search algorithms, we have to trade off something called the exploration-exploitation trade off.",
+    "pronunciation": "쏘 웬 위아 디자이닝 에이아이 서치 앨거리듬즈, 위 해투 트레이돕 썸씽 콜드 디 익스플로레이션 익스플로이테이션 트레이돕.",
+    "translation": "AI 검색 알고리즘을 설계할 때, 탐색과 활용의 균형이라는 걸 맞춰야 합니다."
+  },
+  {
+    "index": 32,
+    "start": 254.05,
+    "end": 261.49,
+    "text": "When you're searching for a solution, you can either spend your time exploring or exploiting.",
+    "pronunciation": "웬 유어 서칭 포러 솔루션, 유 캔 이더 스펜드 유어 타임 익스플로링 오어 익스플로이팅.",
+    "translation": "해결책을 찾을 때, 탐색에 시간을 쓸 수도 있고 활용에 시간을 쓸 수도 있습니다."
+  },
+  {
+    "index": 33,
+    "start": 261.49,
+    "end": 268.17,
+    "text": "If you spend all your time exploring, then you will probably only find a large number of medical solutions.",
+    "pronunciation": "이퓨 스펜 돌 유어 타임 익스플로링, 덴 유 윌 프라블리 온리 파인더 라지 넘버 어브 미디오커 솔루션즈.",
+    "translation": "탐색에만 모든 시간을 쓰면, 아마 평범한 해결책만 많이 찾게 될 겁니다."
+  },
+  {
+    "index": 34,
+    "start": 269.8,
+    "end": 272.79,
+    "text": "If you spend your time just exploiting,",
+    "pronunciation": "이퓨 스펜드 유어 타임 저스트 익스플로이팅,",
+    "translation": "활용에만 시간을 쓰면,"
+  },
+  {
+    "index": 35,
+    "start": 272.79,
+    "end": 281.75,
+    "text": "then you might lose out on finding other alternative solutions that you might be able to exploit better and improve better.",
+    "pronunciation": "덴 유 마잇 루자우런 파인딩 아더 올터너티브 솔루션즈 댓 유 마잇 비 에이블 투 익스플로잇 베러 앤 임프루브 베터.",
+    "translation": "더 잘 활용하고 개선할 수 있는 다른 대안적 해결책을 놓칠 수 있습니다."
+  },
+  {
+    "index": 36,
+    "start": 283.58,
+    "end": 289.92,
+    "text": "And we are almost certainly in that situation right now in the AI industry.",
+    "pronunciation": "앤 위 아 올모스트 서튼리 인 댓 시추에이션 롸잇 나우 인 디 에이아이 인더스트리.",
+    "translation": "그리고 지금 AI 산업이 거의 확실히 그런 상황에 있습니다."
+  },
+  {
+    "index": 37,
+    "start": 290.62,
+    "end": 299.06,
+    "text": "So all I really want to ask you today is to consider just changing that balance a little bit, right?",
+    "pronunciation": "쏘 올 아이 리얼리 워너 애스큐 투데이 이즈 투 컨시더 저스트 체인징 댓 밸런스 어 리를 빗, 롸잇?",
+    "translation": "그래서 오늘 제가 정말 부탁드리고 싶은 건, 그 균형을 조금만 바꿔보자는 겁니다."
+  },
+  {
+    "index": 38,
+    "start": 299.1,
+    "end": 303.3,
+    "text": "Just turning up the dial and exploring more.",
+    "pronunciation": "저스트 터닝 업 더 다이얼 앤 익스플로링 모어.",
+    "translation": "다이얼을 돌려서 탐색을 좀 더 하자는 거죠."
+  },
+  {
+    "index": 39,
+    "start": 304.2,
+    "end": 307.23,
+    "text": "So I actually remember what it was like just before the transformers,",
+    "pronunciation": "쏘 아이 액츄얼리 리멤버 와릿 워즈 라이크 저스트 비포 더 트랜스포머즈,",
+    "translation": "저는 트랜스포머 직전이 어땠는지 실제로 기억합니다,"
+  },
+  {
+    "index": 40,
+    "start": 307.23,
+    "end": 310.01,
+    "text": "and I want to paint that picture for you as well.",
+    "pronunciation": "앤 아이 워너 페인트 댓 픽처 포 유 애즈 웰.",
+    "translation": "그 모습도 여러분께 그려드리고 싶습니다."
+  },
+  {
+    "index": 41,
+    "start": 310.04,
+    "end": 320.97,
+    "text": "Back then, my main memory was there were a lot of papers coming out, and they were always permutating the current architecture,",
+    "pronunciation": "백 덴, 마이 메인 메모리 워즈 데어 워러 라러 페이퍼즈 커밍 아웃, 앤 데이 워 올웨이즈 퍼뮤테이팅 더 커런트 아키텍처,",
+    "translation": "그때 제 주요 기억은, 수많은 논문이 나오고 있었는데, 항상 당시 아키텍처를 변형하고 있었다는 겁니다,"
+  },
+  {
+    "index": 42,
+    "start": 320.97,
+    "end": 331.4,
+    "text": "which was recurrent neural networks at the time, just endlessly trying different things, different gates, different layers, mostly for incremental gains.",
+    "pronunciation": "위치 워즈 리커런트 뉴럴 네트웍스 앳 더 타임, 저스트 엔들레슬리 트라잉 디퍼런트 씽즈, 디퍼런트 게이츠, 디퍼런트 레이어즈, 모슬리 포 인크리멘털 게인즈.",
+    "translation": "당시에는 순환 신경망이었는데, 끝없이 다른 것들을 시도하고, 다른 게이트, 다른 레이어를 시도하면서, 대부분 점진적인 개선을 위해서였죠."
+  },
+  {
+    "index": 43,
+    "start": 333.56,
+    "end": 336.44,
+    "text": "And then after the transformer came out,",
+    "pronunciation": "앤 덴 애프터 더 트랜스포머 케이마웃,",
+    "translation": "그리고 트랜스포머가 나온 후에,"
+  },
+  {
+    "index": 44,
+    "start": 336.44,
+    "end": 344.27,
+    "text": "all of that work that was spent on improving the recurrent neural network kind of felt a bit pointless.",
+    "pronunciation": "올 어브 댓 웍 댓 워즈 스펜트 온 임프루빙 더 리커런트 뉴럴 네트웍 카인더 펠터 비트 포인리스.",
+    "translation": "순환 신경망을 개선하는 데 쏟은 그 모든 노력이 좀 무의미하게 느껴졌죠."
+  },
+  {
+    "index": 45,
+    "start": 345.51,
+    "end": 349.71,
+    "text": "Maybe that's a bit too harsh, but think of it like this.",
+    "pronunciation": "메이비 대쓰어 비투 하쉬, 벗 씽커빗 라이크 디스.",
+    "translation": "좀 가혹한 말일 수 있지만, 이렇게 생각해 보세요."
+  },
+  {
+    "index": 46,
+    "start": 349.75,
+    "end": 357.56,
+    "text": "How much time do you think those researchers would have spent trying to improve the recurrent neural network",
+    "pronunciation": "하우 머치 타임 두 유 씽크 도즈 리서처즈 워드 해브 스펜트 트라잉 투 임프루브 더 리커런트 뉴럴 네트웍",
+    "translation": "그 연구자들이 순환 신경망을 개선하는 데 얼마나 시간을 들였을까요"
+  },
+  {
+    "index": 47,
+    "start": 357.56,
+    "end": 362.33,
+    "text": "if they knew something like transformers was around the corner, right?",
+    "pronunciation": "이프 데이 뉴 썸씽 라이크 트랜스포머즈 워저라운드 더 코너, 롸잇?",
+    "translation": "트랜스포머 같은 게 코앞에 있다는 걸 알았다면요, 그렇죠?"
+  },
+  {
+    "index": 48,
+    "start": 362.36,
+    "end": 366.03,
+    "text": "It turned out we needed a longer conceptual leap.",
+    "pronunciation": "잇 턴다웃 위 니디더 롱거 컨셉추얼 립.",
+    "translation": "알고 보니 우리에겐 더 큰 개념적 도약이 필요했던 겁니다."
+  },
+  {
+    "index": 49,
+    "start": 366.73,
+    "end": 369.6,
+    "text": "We needed to throw away recurrence completely.",
+    "pronunciation": "위 니디드 투 쓰로어웨이 리커런스 컴플리틀리.",
+    "translation": "순환 구조를 완전히 버려야 했죠."
+  },
+  {
+    "index": 50,
+    "start": 371.03,
+    "end": 379.84,
+    "text": "And again, I am worried that we're in that situation right now where we're just concentrating on one architecture",
+    "pronunciation": "앤 어겐, 아이 앰 워리드 댓 위아 인 댓 시추에이션 롸잇 나우 웨어 위아 저스트 컨센트레이팅 온 원 아키텍처",
+    "translation": "그리고 다시 말하지만, 지금 우리가 하나의 아키텍처에만 집중하면서"
+  },
+  {
+    "index": 51,
+    "start": 379.84,
+    "end": 388.19,
+    "text": "and just permuting it and trying different things where there might be a breakthrough just around the corner.",
+    "pronunciation": "앤 저스트 퍼뮤팅 잇 앤 트라잉 디퍼런트 씽즈 웨어 데어 마잇 비어 브레이크쓰루 저스트 어라운더 코너.",
+    "translation": "그걸 변형하고 다른 것들을 시도하고 있는 상황이 걱정됩니다. 코너만 돌면 돌파구가 있을 수 있는데 말이죠."
+  },
+  {
+    "index": 52,
+    "start": 388.79,
+    "end": 391.79,
+    "text": "And if there is, then we should be acting like it.",
+    "pronunciation": "앤 이프 데어 이즈, 덴 위 슈드 비 액팅 라이킷.",
+    "translation": "만약 그렇다면, 우리는 그에 맞게 행동해야 합니다."
+  },
+  {
+    "index": 53,
+    "start": 393.32,
+    "end": 402.57,
+    "text": "The next breakthrough, almost by definition, has to come from this sort of open-ended, much more speculative research, right?",
+    "pronunciation": "더 넥스트 브레이크쓰루, 올모스트 바이 데피니션, 해즈 투 컴 프럼 디스 소러브 오프넨디드, 머치 모어 스페큘레이티브 리서치, 롸잇?",
+    "translation": "다음 돌파구는 거의 정의상, 이런 열린 결말의, 훨씬 더 탐색적인 연구에서 나와야 합니다, 그렇죠?"
+  },
+  {
+    "index": 54,
+    "start": 403.77,
+    "end": 413.24,
+    "text": "And the only way to really hedge your bets against missing out on the next big thing is to invest in this kind of research.",
+    "pronunciation": "앤 디 온리 웨이 투 리얼리 헤지 유어 벳츠 어겐스트 미싱 아우런 더 넥스트 빅 씽 이즈 투 인베스트 인 디스 카인더 리서치.",
+    "translation": "다음 큰 것을 놓치지 않으려면 이런 종류의 연구에 투자하는 것이 유일한 방법입니다."
+  },
+  {
+    "index": 55,
+    "start": 413.94,
+    "end": 416.44,
+    "text": "So if I came up here and did nothing",
+    "pronunciation": "쏘 이파이 케이멉 히어 앤 디드 낫씽",
+    "translation": "그래서 제가 여기 올라와서 아무것도 하지 않고"
+  },
+  {
+    "index": 56,
+    "start": 416.44,
+    "end": 420.88,
+    "text": "but just moan about the current situation, I don't think it would be a great talk.",
+    "pronunciation": "벗 저스트 모운 어바웃 더 커런트 시추에이션, 아이 돈 씽킷 워 비어 그레잇 톡.",
+    "translation": "현 상황에 대해 불평만 한다면, 좋은 강연은 아닐 거라고 생각합니다."
+  },
+  {
+    "index": 57,
+    "start": 420.92,
+    "end": 424.35,
+    "text": "So I want to give you a couple of suggestions.",
+    "pronunciation": "쏘 아이 워너 기뷰 어 커플 어브 서제스천즈.",
+    "translation": "그래서 몇 가지 제안을 드리고 싶습니다."
+  },
+  {
+    "index": 58,
+    "start": 425.86,
+    "end": 432.96,
+    "text": "First of all, in my company, we champion having nature-inspired.",
+    "pronunciation": "퍼스트 어볼, 인 마이 컴퍼니, 위 챔피언 해빙 네이처 인스파이어드.",
+    "translation": "우선, 저희 회사에서는 자연에서 영감을 받는 것을 추구합니다."
+  },
+  {
+    "index": 59,
+    "start": 434.26,
+    "end": 442.87,
+    "text": "So there are still things, plenty of things that the human brain can do, that current state-of-the-art AI can't do.",
+    "pronunciation": "쏘 데어 아 스틸 씽즈, 플레니 어브 씽즈 댓 더 휴먼 브레인 캔 두, 댓 커런트 스테이러브디아트 에이아이 캔트 두.",
+    "translation": "인간의 뇌가 할 수 있는데 현재 최첨단 AI가 못하는 것들이 아직 많이 있습니다."
+  },
+  {
+    "index": 60,
+    "start": 443.31,
+    "end": 450.18,
+    "text": "So maybe if we take some inspiration from nature, we can get some of those properties.",
+    "pronunciation": "쏘 메이비 이프 위 테이크 썸 인스퍼레이션 프럼 네이처, 위 캔 겟 썸 어브 도즈 프라퍼티즈.",
+    "translation": "그래서 자연에서 영감을 좀 얻으면, 그런 특성 중 일부를 얻을 수 있을 겁니다."
+  },
+  {
+    "index": 61,
+    "start": 450.98,
+    "end": 453.15,
+    "text": "But that's kind of my bias.",
+    "pronunciation": "벗 대츠 카인더 마이 바이어스.",
+    "translation": "하지만 그건 제 편향이기도 하죠."
+  },
+  {
+    "index": 62,
+    "start": 453.75,
+    "end": 456.92,
+    "text": "You should follow what's interesting to you?",
+    "pronunciation": "유 슈드 팔로우 왓츠 인터레스팅 투 유?",
+    "translation": "여러분에게 흥미로운 것을 따라가야 합니다."
+  },
+  {
+    "index": 63,
+    "start": 458.69,
+    "end": 464.66,
+    "text": "There's actually a quote I heard two weeks ago and I thought, that's perfect, I'm having that for my talk.",
+    "pronunciation": "데어즈 액츄얼리 어 쿼트 아이 허드 투 윅스 어고 앤 아이 쏫, 대츠 퍼펙트, 아임 해빙 댓 포 마이 톡.",
+    "translation": "사실 2주 전에 들은 명언이 있는데, 완벽하다, 제 강연에 써야겠다고 생각했습니다."
+  },
+  {
+    "index": 64,
+    "start": 465.26,
+    "end": 468.9,
+    "text": "And I think I'm stealing it from a guy called Brian Chung.",
+    "pronunciation": "앤 아이 씽크 아임 스틸링 잇 프럼 어 가이 콜드 브라이언 정.",
+    "translation": "브라이언 정이라는 분한테서 훔치는 것 같은데요."
+  },
+  {
+    "index": 65,
+    "start": 468.93,
+    "end": 470.3,
+    "text": "And it goes like this.",
+    "pronunciation": "앤 잇 고즈 라이크 디스.",
+    "translation": "이런 말입니다."
+  },
+  {
+    "index": 66,
+    "start": 472.84,
+    "end": 480.44,
+    "text": "\u201cYou should only do research that wouldn\u2019t happen if you weren\u2019t working on it.\u201d",
+    "pronunciation": "유 슈드 온리 두 리서치 댓 우든 해픈 이퓨 원트 워킹 아닛.",
+    "translation": "\"당신이 하지 않으면 일어나지 않을 연구만 해야 한다.\""
+  },
+  {
+    "index": 67,
+    "start": 481.64,
+    "end": 483.85,
+    "text": "And I think that captures it perfectly.",
+    "pronunciation": "앤 아이 씽크 댓 캡처즈 잇 퍼펙리.",
+    "translation": "이 말이 완벽하게 요약한다고 생각합니다."
+  },
+  {
+    "index": 68,
+    "start": 483.88,
+    "end": 485.94,
+    "text": "And if we all did that,",
+    "pronunciation": "앤 이프 위 올 디드 댓,",
+    "translation": "그리고 우리 모두가 그렇게 한다면,"
+  },
+  {
+    "index": 69,
+    "start": 485.94,
+    "end": 491.09,
+    "text": "we wouldn't be stepping on each other's toes, and we'd be exploring much more efficiently.",
+    "pronunciation": "위 우든 비 스테핑 온 이치 아더즈 토즈, 앤 위드 비 익스플로링 머치 모어 이피션리.",
+    "translation": "서로 발을 밟지 않게 되고, 훨씬 더 효율적으로 탐색하게 될 겁니다."
+  },
+  {
+    "index": 70,
+    "start": 493.36,
+    "end": 496.16,
+    "text": "So I want to give you a concrete example.",
+    "pronunciation": "쏘 아이 워너 기뷰 어 컨크릿 이그잼플.",
+    "translation": "그래서 구체적인 예를 하나 들겠습니다."
+  },
+  {
+    "index": 71,
+    "start": 496.19,
+    "end": 500.76,
+    "text": "There's a piece of research that we put out recently called the Continuous Thought Machine.",
+    "pronunciation": "데어즈 어 피서 리서치 댓 위 풋 아웃 리슨리 콜드 더 컨티뉴어스 쏫 머신.",
+    "translation": "최근에 저희가 발표한 '연속 사고 기계'라는 연구가 있습니다."
+  },
+  {
+    "index": 72,
+    "start": 501.73,
+    "end": 505.2,
+    "text": "And all we did is we just took a little bit of inspiration from nature.",
+    "pronunciation": "앤 올 위 디디즈 위 저스트 투커 리를 비러 인스퍼레이션 프럼 네이처.",
+    "translation": "저희가 한 건 그저 자연에서 약간의 영감을 얻은 것뿐입니다."
+  },
+  {
+    "index": 73,
+    "start": 505.24,
+    "end": 509.84,
+    "text": "So in the human brain, synchronization is very important.",
+    "pronunciation": "쏘 인 더 휴먼 브레인, 싱크러나이제이션 이즈 베리 임포턴트.",
+    "translation": "인간의 뇌에서 동기화는 매우 중요합니다."
+  },
+  {
+    "index": 74,
+    "start": 510.81,
+    "end": 516.38,
+    "text": "And we try to add this kind of synchronization into artificial neural networks.",
+    "pronunciation": "앤 위 트라이 투 애드 디스 카인더 싱크러나이제이션 인투 아티피셜 뉴럴 네트웍스.",
+    "translation": "그래서 이런 종류의 동기화를 인공 신경망에 추가하려고 했습니다."
+  },
+  {
+    "index": 75,
+    "start": 517.78,
+    "end": 523.56,
+    "text": "I remember the employee coming to me with the idea and I said,",
+    "pronunciation": "아이 리멤버 디 임플로이 커밍 투 미 윗 디 아이디어 앤 아이 세드,",
+    "translation": "그 직원이 아이디어를 가지고 왔을 때 제가 말했죠,"
+  },
+  {
+    "index": 76,
+    "start": 523.56,
+    "end": 528.89,
+    "text": "OK, work on it for a week, and we'll see what happens.",
+    "pronunciation": "오케이, 워커닛 포러 윅, 앤 윌 씨 왓 해픈즈.",
+    "translation": "좋아, 일주일만 해보고, 어떻게 되는지 보자."
+  },
+  {
+    "index": 77,
+    "start": 530.09,
+    "end": 539.08,
+    "text": "That employee later confided in me that in his previous employment, or even in his academic position",
+    "pronunciation": "댓 임플로이 레이터 컨파이디드 인 미 댓 인 히즈 프리비어스 임플로이먼트, 오어 이브닌 히즈 아카데믹 포지션",
+    "translation": "그 직원이 나중에 고백하길, 이전 직장에서나 학계에 있을 때는"
+  },
+  {
+    "index": 78,
+    "start": 539.08,
+    "end": 547.54,
+    "text": "before that, that he probably would have gotten skepticism and told not to waste his time.",
+    "pronunciation": "비포 댓, 대히 프라블리 워드 해브 가튼 스켑티시즘 앤 톨드 낫 투 웨이스트 히즈 타임.",
+    "translation": "아마 회의적인 반응을 받고 시간 낭비하지 말라는 소릴 들었을 거라고요."
+  },
+  {
+    "index": 79,
+    "start": 548.21,
+    "end": 556.82,
+    "text": "But after that week, he started to find much more interesting properties of this model.",
+    "pronunciation": "벗 애프터 댓 윅, 히 스타티드 투 파인드 머치 모어 인터레스팅 프라퍼티즈 어브 디스 마들.",
+    "translation": "하지만 그 일주일이 지나자, 이 모델에서 훨씬 더 흥미로운 특성들을 발견하기 시작했습니다."
+  },
+  {
+    "index": 80,
+    "start": 558.52,
+    "end": 561.02,
+    "text": "And the project became a success.",
+    "pronunciation": "앤 더 프라젝트 비케이머 석세스.",
+    "translation": "그리고 그 프로젝트는 성공했습니다."
+  },
+  {
+    "index": 81,
+    "start": 561.99,
+    "end": 566.33,
+    "text": "We actually announced that we got a spotlight at NeurIPS this year.",
+    "pronunciation": "위 액츄얼리 어나운스트 댓 위 가러 스팟라잇 앳 뉴립스 디스 이어.",
+    "translation": "올해 NeurIPS에서 스포트라이트를 받았다고 발표했습니다."
+  },
+  {
+    "index": 82,
+    "start": 567.53,
+    "end": 569.83,
+    "text": "And I think there's a couple of reasons for that.",
+    "pronunciation": "앤 아이 씽크 데어저 커플 어브 리즌즈 포 댓.",
+    "translation": "거기엔 몇 가지 이유가 있다고 생각합니다."
+  },
+  {
+    "index": 83,
+    "start": 569.87,
+    "end": 576.81,
+    "text": "I think there's a hunger for this kind of new and differentiated research, and more interestingly,",
+    "pronunciation": "아이 씽크 데어저 헝거 포 디스 카인더 뉴 앤 디퍼렌시에이티드 리서치, 앤 모어 인터레스팅리,",
+    "translation": "이런 새롭고 차별화된 연구에 대한 갈증이 있다고 생각하고, 더 흥미로운 건,"
+  },
+  {
+    "index": 84,
+    "start": 576.81,
+    "end": 584.62,
+    "text": "at no point, when we were working on this project, did we have to worry about being scooped.",
+    "pronunciation": "앳 노 포인트, 웬 위 워 워킹 온 디스 프라젝트, 디드 위 해투 워리 어바웃 빙 스쿱트.",
+    "translation": "이 프로젝트를 하면서 단 한 번도 선수를 빼앗길 걱정을 할 필요가 없었다는 겁니다."
+  },
+  {
+    "index": 85,
+    "start": 585.48,
+    "end": 588.89,
+    "text": "So we could take our time, right, to do the science properly",
+    "pronunciation": "쏘 위 쿠드 테이카우어 타임, 롸잇, 투 두 더 사이언스 프라펄리",
+    "translation": "그래서 시간을 들여서, 과학을 제대로 할 수 있었고"
+  },
+  {
+    "index": 86,
+    "start": 588.89,
+    "end": 591.45,
+    "text": "and run the benchmarks that we wanted to run.",
+    "pronunciation": "앤 런 더 벤치막스 댓 위 원티드 투 런.",
+    "translation": "우리가 원하는 벤치마크를 돌릴 수 있었습니다."
+  },
+  {
+    "index": 87,
+    "start": 592.69,
+    "end": 596.56,
+    "text": "And I think that's the kind of research we should be doing.",
+    "pronunciation": "앤 아이 씽크 대츠 더 카인더 리서치 위 슈드 비 두잉.",
+    "translation": "그리고 그게 우리가 해야 할 연구라고 생각합니다."
+  },
+  {
+    "index": 88,
+    "start": 597.03,
+    "end": 605.04,
+    "text": "So hopefully, from that you can tell that I'm not just up here trying to make a talk that sounds good.",
+    "pronunciation": "쏘 호프풀리, 프럼 댓 유 캔 텔 대라임 낫 저스트 업 히어 트라잉 투 메이커 톡 댓 사운즈 굿.",
+    "translation": "그래서 제가 그냥 그럴듯한 강연을 하려고 여기 선 게 아니란 걸 아시겠죠."
+  },
+  {
+    "index": 89,
+    "start": 606.04,
+    "end": 608.0,
+    "text": "I actually believe this, right?",
+    "pronunciation": "아이 액츄얼리 빌리브 디스, 롸잇?",
+    "translation": "저는 진심으로 이걸 믿습니다."
+  },
+  {
+    "index": 90,
+    "start": 608.04,
+    "end": 614.5,
+    "text": "I am putting my money where my mouth is, and I am creating this kind of environment,",
+    "pronunciation": "아이 앰 푸팅 마이 머니 웨어 마이 마우쓰 이즈, 앤 아이 앰 크리에이팅 디스 카인더 벤바이런먼트,",
+    "translation": "말한 대로 실천하고 있고, 이런 환경을 만들고 있습니다,"
+  },
+  {
+    "index": 91,
+    "start": 614.5,
+    "end": 619.82,
+    "text": "the kind of environment that allow transformers to come into existence at my company.",
+    "pronunciation": "더 카인더 벤바이런먼트 대럴라우 트랜스포머즈 투 커민투 이그지스턴스 앳 마이 컴퍼니.",
+    "translation": "트랜스포머가 탄생할 수 있었던 그런 환경을 제 회사에서 만들고 있어요."
+  },
+  {
+    "index": 92,
+    "start": 620.45,
+    "end": 628.41,
+    "text": "I'm not sure if I should tell you this, because it's a bit of an advantage that the company has right now,",
+    "pronunciation": "아임 낫 슈어 이파이 슈드 텔유 디스, 비코짓서 비러밴 어드밴티지 댓 더 컴퍼니 해즈 롸잇 나우,",
+    "translation": "이걸 말해야 할지 모르겠는데, 지금 회사가 가진 약간의 경쟁 우위이기 때문이죠,"
+  },
+  {
+    "index": 93,
+    "start": 628.41,
+    "end": 632.03,
+    "text": "but it's a really, really good way of getting talent.",
+    "pronunciation": "버릿서 리얼리, 리얼리 굿 웨이 어브 게팅 탤런트.",
+    "translation": "하지만 인재를 확보하는 정말, 정말 좋은 방법입니다."
+  },
+  {
+    "index": 94,
+    "start": 632.06,
+    "end": 633.46,
+    "text": "Think about it.",
+    "pronunciation": "씽커바우릿.",
+    "translation": "생각해 보세요."
+  },
+  {
+    "index": 95,
+    "start": 633.5,
+    "end": 643.77,
+    "text": "Talented, intelligent people, ambitious people, will naturally seek out this kind of environment with high autonomy.",
+    "pronunciation": "탤런티드, 인텔리전트 피플, 앰비셔스 피플, 윌 내추럴리 시카웃 디스 카인더 벤바이런먼트 윗 하이 어타너미.",
+    "translation": "재능 있고, 똑똑하고, 야심 있는 사람들은 자연스럽게 이런 높은 자율성의 환경을 찾게 됩니다."
+  },
+  {
+    "index": 96,
+    "start": 643.77,
+    "end": 650.38,
+    "text": "And some of our best hires recently have been explicitly because of this reason.",
+    "pronunciation": "앤 썸 어바우어 베스트 하이어즈 리슨리 해브 빈 익스플리시리 비코저 디스 리즌.",
+    "translation": "최근 우리 최고의 채용 사례 중 일부가 명확히 이 이유 때문이었습니다."
+  },
+  {
+    "index": 97,
+    "start": 650.81,
+    "end": 655.15,
+    "text": "And by the way, it works better than just money.",
+    "pronunciation": "앤 바이 더 웨이, 잇 웍스 베터 댄 저스트 머니.",
+    "translation": "그리고 참고로, 돈보다 더 효과적입니다."
+  },
+  {
+    "index": 98,
+    "start": 656.22,
+    "end": 657.62,
+    "text": "Think about it.",
+    "pronunciation": "씽커바우릿.",
+    "translation": "생각해 보세요."
+  },
+  {
+    "index": 99,
+    "start": 658.32,
+    "end": 666.4,
+    "text": "These superstars that are apparently being snapped up for literally a million dollars a year in some cases,",
+    "pronunciation": "디즈 수퍼스타즈 대라 어패런리 빙 스냅트 업 포 리터럴리 어 밀리언 달러저 이어 인 썸 케이시즈,",
+    "translation": "어떤 경우에는 말 그대로 연봉 100만 달러에 스카우트되는 슈퍼스타들이,"
+  },
+  {
+    "index": 100,
+    "start": 666.4,
+    "end": 676.27,
+    "text": "do you think that when they start their new position, they feel empowered to try their mad ideas, their more speculative ideas?",
+    "pronunciation": "두 유 씽크 댓 웬 데이 스타트 데어 뉴 포지션, 데이 필 임파워드 투 트라이 데어 매드 아이디어즈, 데어 모어 스페큘레이티브 아이디어즈?",
+    "translation": "새 자리에서 일을 시작하면, 파격적인 아이디어, 좀 더 탐색적인 아이디어를 시도할 힘이 있다고 느낄까요?"
+  },
+  {
+    "index": 101,
+    "start": 677.07,
+    "end": 685.35,
+    "text": "Or do they feel immense pressure to prove their worth and will once again go for the low-hanging fruit?",
+    "pronunciation": "오어 두 데이 필 이멘스 프레셔 투 프루브 데어 워쓰 앤 윌 원서겐 고 포 더 로우행잉 프룻?",
+    "translation": "아니면 자기 가치를 증명해야 한다는 엄청난 압박을 느끼고 또다시 손쉬운 것을 택할까요?"
+  },
+  {
+    "index": 102,
+    "start": 686.25,
+    "end": 693.32,
+    "text": "So there's another reason, I think, that maybe we're not exploring quite as efficiently as we should be.",
+    "pronunciation": "쏘 데어즈 어나더 리즌, 아이 씽크, 댓 메이비 위아 낫 익스플로링 콰이트 애즈 이피션리 애즈 위 슈드 비.",
+    "translation": "우리가 충분히 효율적으로 탐색하지 못하는 또 다른 이유가 있다고 생각합니다."
+  },
+  {
+    "index": 103,
+    "start": 693.96,
+    "end": 698.53,
+    "text": "And that's because transformers are too good.",
+    "pronunciation": "앤 대츠 비코즈 트랜스포머즈 아 투 굿.",
+    "translation": "트랜스포머가 너무 좋기 때문입니다."
+  },
+  {
+    "index": 104,
+    "start": 699.96,
+    "end": 701.5,
+    "text": "I know, modesty.",
+    "pronunciation": "아이 노우, 마더스티.",
+    "translation": "네, 겸손하죠."
+  },
+  {
+    "index": 105,
+    "start": 701.8,
+    "end": 706.0,
+    "text": "(Laughter) But seriously, I mean, what can I mean by that?",
+    "pronunciation": "(래프터) 벗 시리어슬리, 아이 민, 왓 캐나이 민 바이 댓?",
+    "translation": "(웃음) 하지만 진지하게, 그게 무슨 뜻일까요?"
+  },
+  {
+    "index": 106,
+    "start": 707.07,
+    "end": 715.09,
+    "text": "What I mean is, I think the punchline is going to be that when we look back at this point in AI history,",
+    "pronunciation": "와라이 민 이즈, 아이 씽크 더 펀치라인 이즈 고나 비 댓 웬 위 룩 백 앳 디스 포인트 인 에이아이 히스토리,",
+    "translation": "제 말은, AI 역사의 이 시점을 돌이켜보면 핵심은 이것이 될 거라고 생각합니다,"
+  },
+  {
+    "index": 107,
+    "start": 715.09,
+    "end": 721.72,
+    "text": "the fact that the current technology is so powerful and flexible that it stopped us from looking for better.",
+    "pronunciation": "더 팩 댓 더 커런트 테크놀러지 이즈 쏘 파워풀 앤 플렉서블 댓 잇 스탑트 어스 프럼 루킹 포 베터.",
+    "translation": "현재 기술이 너무 강력하고 유연해서 더 나은 것을 찾지 않게 만들었다는 사실이요."
+  },
+  {
+    "index": 108,
+    "start": 722.28,
+    "end": 723.42,
+    "text": "It makes sense, right?",
+    "pronunciation": "잇 메익스 센스, 롸잇?",
+    "translation": "말이 되죠?"
+  },
+  {
+    "index": 109,
+    "start": 723.45,
+    "end": 728.16,
+    "text": "If the current technology was worse, more people would be looking for better.",
+    "pronunciation": "이프 더 커런트 테크놀러지 워즈 워스, 모어 피플 워드 비 루킹 포 베터.",
+    "translation": "현재 기술이 더 나빴다면, 더 많은 사람들이 더 나은 걸 찾고 있었을 겁니다."
+  },
+  {
+    "index": 110,
+    "start": 730.36,
+    "end": 733.16,
+    "text": "So there's two points I would like to clarify.",
+    "pronunciation": "쏘 데어즈 투 포인츠 아이 우드 라이크 투 클래리파이.",
+    "translation": "그래서 두 가지 명확히 하고 싶은 점이 있습니다."
+  },
+  {
+    "index": 111,
+    "start": 734.83,
+    "end": 745.38,
+    "text": "First of all, I'm not saying that there isn't already plenty of very interesting research happening.",
+    "pronunciation": "퍼스트 어볼, 아임 낫 세잉 댓 데어 이즌 올레디 플레니 어브 베리 인터레스팅 리서치 해프닝.",
+    "translation": "우선, 이미 매우 흥미로운 연구가 많이 이루어지고 있지 않다는 게 아닙니다."
+  },
+  {
+    "index": 112,
+    "start": 746.94,
+    "end": 750.77,
+    "text": "I'm just saying that given the amount of talent",
+    "pronunciation": "아임 저스트 세잉 댓 기븐 디 어마운트 어브 탤런트",
+    "translation": "저는 단지 현재 가진 인재와"
+  },
+  {
+    "index": 113,
+    "start": 750.77,
+    "end": 757.15,
+    "text": "and resources that we have currently, we can afford to do a lot more, right?",
+    "pronunciation": "앤 리소시즈 댓 위 해브 커런리, 위 캔 어포드 투 두 어 랏 모어, 롸잇?",
+    "translation": "자원의 양을 고려하면, 훨씬 더 많은 걸 할 수 있다는 겁니다, 그렇죠?"
+  },
+  {
+    "index": 114,
+    "start": 757.19,
+    "end": 766.2,
+    "text": "I and several other, many other researchers believe we're not done and we should be looking for better.",
+    "pronunciation": "아이 앤 세버럴 아더, 메니 아더 리서처즈 빌리브 위아 낫 던 앤 위 슈드 비 루킹 포 베터.",
+    "translation": "저를 포함해서 많은 연구자들이 아직 끝나지 않았고 더 나은 걸 찾아야 한다고 믿습니다."
+  },
+  {
+    "index": 115,
+    "start": 767.23,
+    "end": 771.6,
+    "text": "But I'm also not saying that we should throw away the current technology.",
+    "pronunciation": "벗 아임 올쏘 낫 세잉 댓 위 슈드 쓰로어웨이 더 커런트 테크놀러지.",
+    "translation": "하지만 현재 기술을 버려야 한다고 말하는 것도 아닙니다."
+  },
+  {
+    "index": 116,
+    "start": 772.07,
+    "end": 778.12,
+    "text": "No, there's still plenty of very important research to be done on the current technology",
+    "pronunciation": "노, 데어즈 스틸 플레니 어브 베리 임포턴트 리서치 투 비 던 온 더 커런트 테크놀러지",
+    "translation": "아니요, 현재 기술에 대해서도 매우 중요한 연구가 아직 많이 남아 있고"
+  },
+  {
+    "index": 117,
+    "start": 778.12,
+    "end": 782.55,
+    "text": "and will bring a lot of value in the coming years.",
+    "pronunciation": "앤 윌 브링 어 라러 밸류 인 더 커밍 이어즈.",
+    "translation": "앞으로 몇 년간 많은 가치를 가져올 겁니다."
+  },
+  {
+    "index": 118,
+    "start": 783.68,
+    "end": 795.02,
+    "text": "I personally made the decision at the beginning of this year that I'm going to drastically reduce the amount of time that I spend on transformers.",
+    "pronunciation": "아이 퍼서널리 메이드 더 디시전 앳 더 비기닝 어브 디스 이어 대라임 고나 드래스티클리 리듀스 디 어마운트 어브 타임 대라이 스펜돈 트랜스포머즈.",
+    "translation": "저는 개인적으로 올해 초에 트랜스포머에 쓰는 시간을 대폭 줄이기로 결정했습니다."
+  },
+  {
+    "index": 119,
+    "start": 796.23,
+    "end": 800.6,
+    "text": "I'm explicitly now exploring and looking for the next thing.",
+    "pronunciation": "아임 익스플리시리 나우 익스플로링 앤 루킹 포 더 넥스트 씽.",
+    "translation": "지금은 명시적으로 다음 것을 탐색하고 찾고 있습니다."
+  },
+  {
+    "index": 120,
+    "start": 803.1,
+    "end": 809.35,
+    "text": "Now it might sound a little controversial, maybe, to hear one of the transformers authors stand on stage",
+    "pronunciation": "나우 잇 마잇 사운더 리를 컨트러버셜, 메이비, 투 히어 원 어브 더 트랜스포머즈 어서즈 스탠돈 스테이지",
+    "translation": "트랜스포머 저자 중 한 명이 무대에 서서"
+  },
+  {
+    "index": 121,
+    "start": 809.35,
+    "end": 814.91,
+    "text": "and tell you that he's absolutely sick of them, but it's kind of fair enough, right?",
+    "pronunciation": "앤 텔유 대히즈 앱솔루틀리 시커 뎀, 버릿츠 카인더 페어 이너프, 롸잇?",
+    "translation": "완전히 질렸다고 말하면 좀 논란이 될 수 있지만, 충분히 그럴 만하죠?"
+  },
+  {
+    "index": 122,
+    "start": 814.95,
+    "end": 823.49,
+    "text": "I've been working on them longer than anyone, with the possible exception of seven other people. So ...",
+    "pronunciation": "아이브 빈 워킹 온 뎀 롱거 댄 에니원, 윗 더 파서블 익셉션 어브 세븐 아더 피플. 쏘...",
+    "translation": "다른 일곱 명을 제외하면 누구보다 오래 연구해왔으니까요. 그래서..."
+  },
+  {
+    "index": 123,
+    "start": 826.26,
+    "end": 827.69,
+    "text": "Are we bold enough?",
+    "pronunciation": "아 위 볼드 이너프?",
+    "translation": "우리는 충분히 대담한가요?"
+  },
+  {
+    "index": 124,
+    "start": 832.83,
+    "end": 846.34,
+    "text": "Researchers, are you bold enough to spend more time on the ideas that you think are important and interesting? Managers.",
+    "pronunciation": "리서처즈, 아 유 볼드 이너프 투 스펜드 모어 타임 온 디 아이디어즈 댓 유 씽카 임포턴트 앤 인터레스팅? 매니저즈.",
+    "translation": "연구자 여러분, 중요하고 흥미롭다고 생각하는 아이디어에 더 많은 시간을 쓸 만큼 대담한가요? 관리자 여러분."
+  },
+  {
+    "index": 125,
+    "start": 848.11,
+    "end": 859.99,
+    "text": "Are you bold enough to give the researchers some more freedom to pursue these ideas? Business leaders.",
+    "pronunciation": "아 유 볼드 이너프 투 기브 더 리서처즈 썸 모어 프리덤 투 퍼슈 디즈 아이디어즈? 비즈니스 리더즈.",
+    "translation": "연구자들에게 이런 아이디어를 추구할 자유를 좀 더 줄 만큼 대담한가요? 경영진 여러분."
+  },
+  {
+    "index": 126,
+    "start": 861.12,
+    "end": 879.41,
+    "text": "Are you bold enough to create businesses that create these kind of environments that will allow the managers to feel like they can afford to give the freedom to their researchers? And investors.",
+    "pronunciation": "아 유 볼드 이너프 투 크리에잇 비즈니시즈 댓 크리에잇 디즈 카인더 벤바이런먼츠 댓 윌 얼라우 더 매니저즈 투 필 라이크 데이 캔 어포드 투 기브 더 프리덤 투 데어 리서처즈? 앤 인베스터즈.",
+    "translation": "관리자들이 연구자들에게 자유를 줄 여유가 있다고 느낄 수 있는 환경을 만드는 기업을 세울 만큼 대담한가요? 그리고 투자자 여러분."
+  },
+  {
+    "index": 127,
+    "start": 880.78,
+    "end": 888.82,
+    "text": "Are you bold enough to invest in these kind of businesses, where, in my opinion,",
+    "pronunciation": "아 유 볼드 이너프 투 인베스트 인 디즈 카인더 비즈니시즈, 웨어, 인 마이 어피니언,",
+    "translation": "이런 종류의 기업에 투자할 만큼 대담한가요, 제 생각에,"
+  },
+  {
+    "index": 128,
+    "start": 888.82,
+    "end": 897.39,
+    "text": "these are the kind of businesses is where the next breakthrough is going to come from.",
+    "pronunciation": "디즈 아 더 카인더 비즈니시즈 이즈 웨어 더 넥스트 브레이크쓰루 이즈 고나 컴 프럼.",
+    "translation": "다음 돌파구가 나올 곳은 바로 이런 기업들입니다."
+  },
+  {
+    "index": 129,
+    "start": 898.5,
+    "end": 900.23,
+    "text": "And I will leave you with this.",
+    "pronunciation": "앤 아이 윌 리뷰 윗 디스.",
+    "translation": "마지막으로 이 말을 남기겠습니다."
+  },
+  {
+    "index": 130,
+    "start": 902.16,
+    "end": 907.87,
+    "text": "A lot of the pressure, like I said, comes from competition, right?",
+    "pronunciation": "어 라러 더 프레셔, 라이카이 세드, 컴즈 프럼 컴퍼티션, 롸잇?",
+    "translation": "제가 말했듯이, 많은 압박은 경쟁에서 옵니다, 그렇죠?"
+  },
+  {
+    "index": 131,
+    "start": 908.27,
+    "end": 917.95,
+    "text": "Competition between companies, between products, between researchers, fighting over the same idea.",
+    "pronunciation": "컴퍼티션 비트윈 컴퍼니즈, 비트윈 프라덕츠, 비트윈 리서처즈, 파이팅 오버 더 세이마이디어.",
+    "translation": "기업 간, 제품 간, 연구자 간 경쟁, 같은 아이디어를 놓고 다투는 것이죠."
+  },
+  {
+    "index": 132,
+    "start": 919.22,
+    "end": 925.45,
+    "text": "But genuinely, from my perspective, this is not a competition.",
+    "pronunciation": "벗 제뉴인리, 프럼 마이 퍼스펙티브, 디시즈 나러 컴퍼티션.",
+    "translation": "하지만 진심으로, 제 관점에서 이건 경쟁이 아닙니다."
+  },
+  {
+    "index": 133,
+    "start": 926.62,
+    "end": 929.12,
+    "text": "We all have the same goal.",
+    "pronunciation": "위 올 해브 더 세임 골.",
+    "translation": "우리 모두 같은 목표를 가지고 있습니다."
+  },
+  {
+    "index": 134,
+    "start": 930.73,
+    "end": 936.7,
+    "text": "We all want to see this technology perfected so that we can all benefit from it.",
+    "pronunciation": "위 올 원투 씨 디스 테크놀러지 퍼펙티드 쏘 댓 위 캔 올 베니핏 프러밋.",
+    "translation": "우리 모두가 이 기술이 완성되어 모두가 혜택을 받길 원합니다."
+  },
+  {
+    "index": 135,
+    "start": 939.44,
+    "end": 947.4,
+    "text": "So if we can all, collectively, turn up the explore dial",
+    "pronunciation": "쏘 이프 위 캔 올, 컬렉티블리, 턴 업 디 익스플로어 다이얼",
+    "translation": "그래서 우리 모두가 함께 탐색 다이얼을 올리고"
+  },
+  {
+    "index": 136,
+    "start": 947.4,
+    "end": 960.42,
+    "text": "and then openly share what we find, we can get to our goal much faster. Thank you. (Applause)",
+    "pronunciation": "앤 덴 오픈리 쉐어 왓 위 파인드, 위 캔 겟 투 아우어 골 머치 패스터. 땡큐. (어플로즈)",
+    "translation": "발견한 것을 공개적으로 공유한다면, 목표에 훨씬 빨리 도달할 수 있습니다. 감사합니다. (박수)"
+  }
+]
